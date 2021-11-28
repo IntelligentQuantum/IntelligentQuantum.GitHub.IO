@@ -103,15 +103,51 @@
         &--language
         {
             display: flex;
+            margin-top: 2rem;
+            margin-bottom: 2.3rem;
 
             div
             {
-                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 svg
                 {
                     margin: 1rem;
-                    overflow: initial;
+
+                    path
+                    {
+                        stroke: #FFC107;
+                    }
+
+                    path:nth-child(1)
+                    {
+                        fill: none;
+                        stroke: #191923 !important;
+                        stroke-width: 3.8;
+                    }
+
+                    path:nth-child(2)
+                    {
+                        fill: none;
+                        stroke-width: 2.8;
+                        stroke-linecap: round;
+                        animation: Progress 1s ease-out forwards;
+                    }
+
+                    text
+                    {
+                        fill: #8c8c8e;
+                        font-size: 0.6em;
+                        text-anchor: middle;
+                    }
+                }
+
+                h6
+                {
+                    font-size: 1.2rem;
+                    font-weight: font-weight(font-weight-regular);
                 }
             }
         }

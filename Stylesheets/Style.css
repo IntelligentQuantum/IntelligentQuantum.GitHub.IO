@@ -14,6 +14,11 @@ html[data-theme=dark] {
   --base-darker: #14141a;
 }
 
+@keyframes Progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
 *,
 *::after,
 *::before {
@@ -46,6 +51,11 @@ li {
   list-style: none;
 }
 
+h1, h2, h3,
+h4, h5, h6 {
+  color: #fafafc;
+}
+
 .container {
   display: grid;
   grid-template-columns: [aside-start] 29rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
@@ -73,35 +83,6 @@ li {
 
 .u-margin-top-large {
   margin-top: 6rem !important;
-}
-
-.circle-bg {
-  fill: none;
-  stroke: #29292f !important;
-  stroke-width: 3.8;
-}
-
-.circle {
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-.circular-chart path {
-  stroke: #ff9f00;
-}
-
-.percentage {
-  fill: #191923;
-  font-family: sans-serif;
-  font-size: 0.5em;
-  text-anchor: middle;
 }
 
 .aside {
@@ -176,13 +157,39 @@ li {
 }
 .aside__information--language {
   display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2.3rem;
 }
 .aside__information--language div {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .aside__information--language div svg {
   margin: 1rem;
-  overflow: initial;
+}
+.aside__information--language div svg path {
+  stroke: #FFC107;
+}
+.aside__information--language div svg path:nth-child(1) {
+  fill: none;
+  stroke: #191923 !important;
+  stroke-width: 3.8;
+}
+.aside__information--language div svg path:nth-child(2) {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: Progress 1s ease-out forwards;
+}
+.aside__information--language div svg text {
+  fill: #8c8c8e;
+  font-size: 0.6em;
+  text-anchor: middle;
+}
+.aside__information--language div h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 .aside__footer {
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
