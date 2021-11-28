@@ -75,6 +75,35 @@ li {
   margin-top: 6rem !important;
 }
 
+.circle-bg {
+  fill: none;
+  stroke: #29292f !important;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circular-chart path {
+  stroke: #ff9f00;
+}
+
+.percentage {
+  fill: #191923;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
 .aside {
   grid-template: aside-start/aside-end;
   display: grid;
@@ -152,39 +181,8 @@ li {
   position: relative;
 }
 .aside__information--language div svg {
-  width: 60%;
-  height: 20px;
+  margin: 1rem;
   overflow: initial;
-  transform: rotate(-90deg);
-}
-.aside__information--language div svg circle {
-  fill: none;
-  stroke: #191923;
-  stroke-width: 10px;
-}
-.aside__information--language div svg circle:nth-child(2) {
-  stroke: #ffc107;
-  stroke-width: 0.5rem;
-  position: relative;
-  z-index: 1;
-}
-.aside__information--language div span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.aside__information--language div:nth-child(1) svg circle:nth-child(2) {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 120;
-}
-.aside__information--language div:nth-child(2) svg circle:nth-child(2) {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 120;
-}
-.aside__information--language div:nth-child(3) svg circle:nth-child(2) {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 120;
 }
 .aside__footer {
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
