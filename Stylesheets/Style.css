@@ -90,6 +90,8 @@ h4, h5, h6 {
   display: grid;
   grid-template-rows: 23.5rem 1fr 5rem;
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 .aside__divider {
   background: #646466;
@@ -138,6 +140,11 @@ h4, h5, h6 {
 .aside__information {
   background-color: #20202A;
   padding: 2rem 3rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.aside__information::-webkit-scrollbar {
+  display: none;
 }
 .aside__information--personal {
   padding-bottom: 1.2rem;
@@ -191,8 +198,89 @@ h4, h5, h6 {
   font-size: 1.2rem;
   font-weight: 400;
 }
+.aside__information--skills {
+  margin: 3rem 0;
+}
+.aside__information--skills__bar {
+  margin: 1.8rem 0;
+}
+.aside__information--skills__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.aside__information--skills__info span:first-child {
+  color: #fafafc;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.aside__information--skills__progress {
+  position: relative;
+  height: 0.4rem;
+  width: 100%;
+  background-color: #191923;
+}
+.aside__information--skills__progress span {
+  position: absolute;
+  height: 100%;
+  background-color: #FFC107;
+}
+.aside__information--library {
+  margin: 2rem 0;
+}
+.aside__information--library li {
+  display: flex;
+  align-items: center;
+}
+.aside__information--library li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.aside__information--library svg {
+  fill: #ffc107;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 1rem;
+}
+.aside__information--library span {
+  font-size: 1.2rem;
+}
+.aside__information--cv {
+  margin-top: 2rem;
+}
+.aside__information--cv a:link,
+.aside__information--cv a:visited {
+  display: flex;
+  align-items: center;
+  color: #8c8c8e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.4s ease-out;
+}
+.aside__information--cv a:hover,
+.aside__information--cv a:active {
+  color: #fafafc;
+}
+.aside__information--cv svg {
+  fill: #8c8c8e;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: 0.8rem;
+}
 .aside__footer {
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.aside__footer svg {
+  fill: #8c8c8e;
+  width: 1.4rem;
+  height: 1.4rem;
+  transition: all 0.4s ease-out;
+}
+.aside__footer svg:hover {
+  fill: #fafafc;
 }
 
 .main {

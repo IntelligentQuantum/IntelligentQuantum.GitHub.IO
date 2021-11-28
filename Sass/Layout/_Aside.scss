@@ -7,6 +7,9 @@
 
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 
+    overflow-y: scroll;
+    scrollbar-width: none;
+
     &__divider
     {
         background: #646466;
@@ -73,8 +76,15 @@
     &__information
     {
         background-color: #20202A;
-
         padding: 2rem 3rem;
+
+        overflow-y: scroll;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar
+        {
+            display: none;
+        }
 
         &--personal
         {
@@ -151,10 +161,128 @@
                 }
             }
         }
+
+        &--skills
+        {
+            margin: 3rem 0;
+
+            &__bar
+            {
+                margin: 1.8rem 0;
+            }
+
+            &__info
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+
+                span:first-child
+                {
+                    color: #fafafc;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                }
+            }
+
+            &__progress
+            {
+                position: relative;
+
+                height: 0.4rem;
+                width: 100%;
+                background-color: #191923;
+
+                span
+                {
+                    position: absolute;
+                    height: 100%;
+                    background-color: #FFC107;
+                }
+            }
+        }
+
+        &--library
+        {
+            margin: 2rem 0;
+
+            li
+            {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child)
+                {
+                    margin-bottom: 0.8rem;
+                }
+            }
+
+            svg
+            {
+                fill: #ffc107;
+                width: 1.2rem;
+                height: 1.2rem;
+                margin-right: 1rem;
+            }
+
+            span
+            {
+                font-size: 1.2rem;
+            }
+        }
+
+        &--cv
+        {
+            margin-top: 2rem;
+
+            a:link,
+            a:visited
+            {
+                display: flex;
+                align-items: center;
+
+                color: #8c8c8e;
+                font-size: 1.2rem;
+                font-weight: font-weight(font-weight-medium);
+                transition: all 0.4s ease-out;
+            }
+
+            a:hover,
+            a:active
+            {
+                color: #fafafc;
+            }
+
+            svg
+            {
+                fill: #8c8c8e;
+                width: 1.4rem;
+                height: 1.4rem;
+                margin-left: 0.8rem;
+            }
+        }
     }
 
     &__footer
     {
         background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        svg
+        {
+            fill: #8c8c8e;
+            width: 1.4rem;
+            height: 1.4rem;
+            transition: all 0.4s ease-out;
+
+            &:hover
+            {
+                fill: #fafafc;
+            }
+        }
     }
 }
