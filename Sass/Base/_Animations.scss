@@ -5,3 +5,18 @@
         stroke-dasharray: 0 100;
     }
 }
+
+@keyframes Beat
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
