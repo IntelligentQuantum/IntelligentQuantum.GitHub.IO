@@ -110,52 +110,9 @@
 
                 svg
                 {
-                    width: 60%;
-                    height: 20px;
+                    margin: 1rem;
                     overflow: initial;
-                    transform: rotate(-90deg);
-
-                    circle
-                    {
-                        fill: none;
-                        stroke: #191923;
-                        stroke-width: 10px;
-                    }
-
-                    circle:nth-child(2)
-                    {
-                        stroke: #ffc107;
-                        stroke-width: 0.5rem;
-                        position: relative;
-                        z-index: 1;
-                    }
                 }
-
-                span
-                {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-
-            div:nth-child(1) svg circle:nth-child(2)
-            {
-                stroke-dasharray: calc(100 * 6);
-                stroke-dashoffset: calc((100 * 6) - ((100 * 6) * 80) / 100);
-            }
-
-            div:nth-child(2) svg circle:nth-child(2)
-            {
-                stroke-dasharray: calc(100 * 6);
-                stroke-dashoffset: calc((100 * 6) - ((100 * 6) * 80) / 100);
-            }
-
-            div:nth-child(3) svg circle:nth-child(2)
-            {
-                stroke-dasharray: calc(100 * 6);
-                stroke-dashoffset: calc((100 * 6) - ((100 * 6) * 80) / 100);
             }
         }
     }
