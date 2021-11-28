@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: font-weight(font-weight-light);
+    letter-spacing: 0.5px;
+    background-color: #191923;
+    color: #8c8c8e;
+    padding: 1.4rem;
+    overflow: hidden;
+    height: 100vh;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: [aside-start] 29rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
+}

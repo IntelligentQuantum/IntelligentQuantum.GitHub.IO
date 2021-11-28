@@ -1,0 +1,43 @@
+html
+{
+
+}
+
+html[data-theme='dark']
+{
+    --color-primary: #FFC107;
+    --color-primary-dark: #b78900;
+    --color-primary-darker: #936e00;
+    --color-primary-light: #ffca2b;
+    --color-primary-lighter: #ffd14a;
+
+    --color-base-text: #8c8c8e;
+    --color-base-text-bold: #e1e1e1;
+    --color-base-text-bolder: #fff;
+
+    --base: #191923;
+    --base-lighet: #2d2d38;
+    --base-ligheter: #454552;
+    --base-dark: #20202a;
+    --base-darker: #14141a;
+}
+
+$break-points:
+(
+    "break-point-600": 37.5em,   // 600px
+    "break-point-900": 56.25em,  // 900px
+    "break-point-1000": 52.5em,  // 1000px
+    "break-point-1100": 68.75em, // 1100px
+    "break-point-1200": 75em,    // 1200px
+    "break-point-1800": 112.5em, // 1800px
+);
+
+$font-weights:
+(
+    "font-weight-thin": 100,
+    "font-weight-light": 300,
+    "font-weight-regular": 400,
+    "font-weight-medium": 500,
+    "font-weight-bold": 700,
+    "font-weight-black": 900,
+);
