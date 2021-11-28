@@ -57,8 +57,8 @@
             height: 1rem;
             width: 1rem;
             border-radius: 50%;
-            -webkit-animation: beat 1s infinite ease-in-out;
-            animation: beat 1s infinite ease-in-out;
+            -webkit-animation: Beat 1s infinite ease-in-out;
+            animation: Beat 1s infinite ease-in-out;
             top: 50%;
             left: 50%;
             transform: translate(-53%, -53%);
@@ -78,6 +78,7 @@
                 opacity: 1;
             }
         }
+
         &--status::after
         {
             position: relative;
@@ -101,6 +102,7 @@
             transition: 0.4s ease-in-out;
             text-align: left;
         }
+
         &--status::before
         {
             content: '';
