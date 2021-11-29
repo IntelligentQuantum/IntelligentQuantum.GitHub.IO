@@ -21,9 +21,14 @@ const DiscordConnection = async () =>
             case 'online':
                 userStatus.classList.add('bg-green');
                 break;
+            case 'idle':
+                userStatus.classList.add('bg-yellow');
+                break;
             case 'offline':
                 userStatus.classList.add('bg-gray');
                 break;
+            default:
+                userStatus.classList.add('bg-gray');
         }
     }
     catch (error)
