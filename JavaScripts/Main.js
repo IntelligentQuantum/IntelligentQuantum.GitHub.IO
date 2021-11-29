@@ -32,4 +32,4 @@ const DiscordConnection = async () =>
 }
 
 DiscordConnection().then(() => { console.log('Discord Connection Function !') })
-setInterval(() => { DiscordConnection().then(() => { console.log('Discord Connection Function !') }) }, 10000);
+setInterval(() => { DiscordConnection().then(() => { console.log('Discord Connection Function !') }) }, 1000 * 60 * 10);
