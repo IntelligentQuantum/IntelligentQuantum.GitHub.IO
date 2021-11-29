@@ -18,11 +18,9 @@ const DiscordConnection = async () =>
             case 'dnd':
                 userStatus.classList.add('bg-red');
                 break;
-
             case 'online':
                 userStatus.classList.add('bg-green');
                 break;
-
             case 'offline':
                 userStatus.classList.add('bg-gray');
                 break;
