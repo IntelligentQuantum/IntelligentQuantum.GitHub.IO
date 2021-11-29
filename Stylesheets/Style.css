@@ -19,7 +19,7 @@ html[data-theme=dark] {
     stroke-dasharray: 0 100;
   }
 }
-@keyframes beat {
+@keyframes Beat {
   0% {
     opacity: 1;
   }
@@ -139,8 +139,7 @@ h4, h5, h6 {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  -webkit-animation: beat 1s infinite ease-in-out;
-  animation: beat 1s infinite ease-in-out;
+  animation: Beat 1s infinite ease-in-out;
   top: 50%;
   left: 50%;
   transform: translate(-53%, -53%);
@@ -158,38 +157,32 @@ h4, h5, h6 {
 .aside__user--status::after {
   position: relative;
   content: "I am available for freelance hire";
-  width: 115px;
+  width: 11.5rem;
   display: block;
-  padding: 5px 10px;
-  top: -10px;
-  left: 10px;
-  font-size: 10px;
-  font-weight: 200;
+  padding: 0.5rem 1rem;
+  top: -1rem;
+  left: 1rem;
+  font-weight: 300;
   color: #8c8c8e;
-  -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
   background: #191923;
   opacity: 0;
   pointer-events: none;
-  -webkit-transform: translateX(20px);
-  transform: translateX(20px);
-  -webkit-transition: 0.4s ease-in-out;
+  transform: translateX(2rem);
   transition: 0.4s ease-in-out;
   text-align: left;
 }
 .aside__user--status::before {
   content: "";
   position: absolute;
-  height: 5px;
-  width: 5px;
-  right: 3px;
-  top: 5px;
+  height: 0.5rem;
+  width: 0.5rem;
+  right: 0.3rem;
+  top: 0.5rem;
   opacity: 0;
   background: #191923;
   pointer-events: none;
-  -webkit-transform: translateX(20px) rotate(45deg);
-  transform: translateX(20px) rotate(45deg);
-  -webkit-transition: 0.4s ease-in-out;
+  transform: translateX(2rem) rotate(45deg);
   transition: 0.4s ease-in-out;
 }
 .aside__user--name {
@@ -211,9 +204,6 @@ h4, h5, h6 {
   padding: 2rem 3rem;
   overflow-y: scroll;
   scrollbar-width: none;
-}
-.aside__information::-webkit-scrollbar {
-  display: none;
 }
 .aside__information--personal {
   padding-bottom: 1.2rem;
@@ -327,14 +317,17 @@ h4, h5, h6 {
   transition: all 0.4s ease-out;
 }
 .aside__information--cv a:hover,
+.aside__information--cv a:hover svg,
 .aside__information--cv a:active {
   color: #fafafc;
+  fill: #fafafc;
 }
 .aside__information--cv svg {
   fill: #8c8c8e;
   width: 1.4rem;
   height: 1.4rem;
   margin-left: 0.8rem;
+  transition: all 0.4s ease-out;
 }
 .aside__footer {
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
