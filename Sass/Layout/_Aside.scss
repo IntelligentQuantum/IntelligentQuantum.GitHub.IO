@@ -145,11 +145,6 @@
         overflow-y: scroll;
         scrollbar-width: none;
 
-        &::-webkit-scrollbar
-        {
-            display: none;
-        }
-
         &--personal
         {
             padding-bottom: 1.2rem;
@@ -313,9 +308,11 @@
             }
 
             a:hover,
+            a:hover svg,
             a:active
             {
                 color: #fafafc;
+                fill: #fafafc;
             }
 
             svg
@@ -324,6 +321,7 @@
                 width: 1.4rem;
                 height: 1.4rem;
                 margin-left: 0.8rem;
+                transition: all 0.4s ease-out;
             }
         }
     }
