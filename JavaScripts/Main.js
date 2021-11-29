@@ -11,6 +11,7 @@ const DiscordConnection = async () =>
         const response = await axios.get(URL);
 
         userAvatar.src = response.data.userAvatar;
+        userAvatar.alt = response.data.userName;
 
         switch (response.data.userPresence)
         {
