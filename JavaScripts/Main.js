@@ -4,16 +4,13 @@ const URL = `https://persian-discord-api.herokuapp.com/user?id=${DiscordID}&json
 const userStatus = document.getElementById("aside__user--status");
 const userAvatar = document.getElementById("aside__user--image");
 
-
 const DiscordConnection = async () =>
 {
     try
     {
         const response = await axios.get(URL);
 
-
         userAvatar.src = response.data.userAvatar;
-
 
         switch (response.data.userPresence)
         {
