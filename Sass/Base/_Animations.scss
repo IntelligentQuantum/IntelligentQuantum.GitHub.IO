@@ -22,3 +22,16 @@
         height: 2.5rem;
     }
 }
+
+@keyframes ProgressBar
+{
+    0%
+    {
+        width: 0;
+    }
+
+    100%
+    {
+        width: 100%;
+    }
+}
