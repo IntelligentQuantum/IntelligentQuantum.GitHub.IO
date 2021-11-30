@@ -220,6 +220,7 @@
             }
         }
 
+
         &--skills
         {
             margin: 3rem 0;
@@ -248,14 +249,20 @@
             {
                 position: relative;
 
-                height: 0.4rem;
+                height: 0.5rem;
                 width: 100%;
+                border-radius: 5rem;
                 background-color: #191923;
 
                 span
                 {
+                    border-radius: 5rem;
+
+                    animation: ProgressBar 1s ease-in-out;
+                    animation-fill-mode: both;
+
                     position: absolute;
-                    height: 100%;
+                    height: 95%;
                     background-color: #FFC107;
                 }
             }

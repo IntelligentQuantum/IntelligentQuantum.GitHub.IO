@@ -82,6 +82,8 @@
 
         &--active
         {
+            transform: rotate(90deg);
+
             font-size: 1.2rem;
             font-weight: 500;
         }
@@ -116,4 +118,30 @@
             }
         }
     }
+}
+
+
+.nav.open
+{
+    &__content--active
+    {
+        display: none;
+    }
+    &__languages
+    {
+        flex-direction: row;
+
+        &span
+        {
+            margin: 1rem;
+        }
+    }
+}
+
+.nav__hamburger.open .nav__hamburger--line
+{
+    transition: all 0s;
+
+    left: 3rem;
+    right: auto;
 }
