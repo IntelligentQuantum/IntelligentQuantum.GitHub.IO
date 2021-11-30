@@ -1,41 +1,53 @@
 // 1800px
-@mixin media-1800 {
-    @media screen and (min-width: break-point(break-point-1800)) {
+@mixin media-1800
+{
+    @media screen and (min-width: break-point(break-point-1800))
+    {
         @content;
     }
 }
 
 // 1200px
-@mixin media-1200 {
-    @media screen and (max-width: break-point(break-point-1200)) {
+@mixin media-1200
+{
+    @media screen and (max-width: break-point(break-point-1200))
+    {
         @content;
     }
 }
 
 // 1100px
-@mixin media-1100 {
-    @media screen and (max-width: break-point(break-point-1100)) {
+@mixin media-1100
+{
+    @media screen and (max-width: break-point(break-point-1100))
+    {
         @content;
     }
 }
 
 // 1000px
-@mixin media-1000 {
-    @media screen and (max-width: break-point(break-point-1000)) {
+@mixin media-1000
+{
+    @media screen and (max-width: break-point(break-point-1000))
+    {
         @content;
     }
 }
 
 // 900px
-@mixin media-900 {
-    @media screen and (max-width: break-point(break-point-900)) {
+@mixin media-900
+{
+    @media screen and (max-width: break-point(break-point-900))
+    {
         @content;
     }
 }
 
 // 600px
-@mixin media-600 {
-    @media screen and (max-width: break-point(break-point-600)) {
+@mixin media-600
+{
+    @media screen and (max-width: break-point(break-point-600))
+    {
         @content;
     }
 }

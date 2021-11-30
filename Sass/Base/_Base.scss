@@ -1,21 +1,23 @@
 *,
 *::after,
-*::before {
+*::before
+{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    scroll-behavior: smooth;
 }
 
-html {
+html
+{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-body {
+body
+{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-weight: font-weight(font-weight-light);
+    font-weight: 300;
     letter-spacing: 0.5px;
     background-color: #191923;
     color: #8c8c8e;
@@ -24,27 +26,32 @@ body {
     height: 100vh;
 }
 
-a {
+a
+{
     text-decoration: none;
 }
 
-li {
+li
+{
     list-style: none;
 }
 
 h1, h2, h3,
-h4, h5, h6 {
+h4, h5, h6
+{
     color: #fafafc;
 }
 
-.container {
+.container
+{
     transition: all .8s;
 
     display: grid;
     grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
 }
 
-.container.navbarOpen {
+.container.navbarOpen
+{
     display: grid;
     grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 30rem [nav-end];
 }

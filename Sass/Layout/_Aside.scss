@@ -1,4 +1,5 @@
-.aside {
+.aside
+{
     grid-template: aside-start / aside-end;
 
     display: grid;
@@ -8,14 +9,16 @@
 
     overflow: hidden;
 
-    &__divider {
+    &__divider
+    {
         background: #646466;
         width: 100%;
         height: 1px;
         opacity: 0.3;
     }
 
-    &__user {
+    &__user
+    {
         background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
 
         display: flex;
@@ -23,18 +26,21 @@
         justify-content: center;
         flex-direction: column;
 
-        &--profile {
+        &--profile
+        {
             position: relative;
         }
 
-        &--image {
+        &--image
+        {
             height: 10rem;
             width: 10rem;
             background: #14141a;
             border-radius: 50%;
         }
 
-        &--status-parent {
+        &--status-parent
+        {
             position: absolute;
             bottom: 1.5rem;
             right: 0.4rem;
@@ -42,7 +48,8 @@
             width: 1.5rem;
         }
 
-        &--status-parent::before {
+        &--status-parent::before
+        {
             content: '';
             opacity: 0;
             position: absolute;
@@ -56,7 +63,8 @@
             transform: translate(-54%, -51%);
         }
 
-        &--status {
+        &--status
+        {
             position: absolute;
             height: 1.5rem;
             width: 1.5rem;
@@ -70,7 +78,8 @@
             }
         }
 
-        &--status::after {
+        &--status::after
+        {
             position: relative;
             content: 'I am available for freelance hire';
             width: 11.5rem;
@@ -78,7 +87,7 @@
             padding: .5rem 1rem;
             top: -1rem;
             left: 1rem;
-            font-weight: font-weight(font-weight-light);
+            font-weight: 200;
             color: #8c8c8e;
             box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
             background: #191923;
@@ -89,7 +98,8 @@
             text-align: left;
         }
 
-        &--status::before {
+        &--status::before
+        {
             content: '';
             position: absolute;
             height: .5rem;
@@ -103,117 +113,140 @@
             transition: 0.4s ease-in-out;
         }
 
-        &--name {
+        &--name
+        {
             margin: 1rem 0;
 
-            a {
+            a
+            {
                 color: #fafafc;
                 font-size: 1.2rem;
                 transition: 0.4s ease-out;
 
-                &:hover {
+                &:hover
+                {
                     color: #FFC107;
                 }
             }
         }
 
-        &--skills {
+        &--skills
+        {
             text-align: center;
         }
     }
 
-    &__information {
+    &__information
+    {
         background-color: #20202A;
         padding: 2rem 3rem;
 
         overflow-y: scroll;
         scrollbar-width: none;
 
-        &--personal {
+        &--personal
+        {
             padding-bottom: 1.2rem;
 
-            li {
+            li
+            {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 0.5rem;
             }
 
-            h6 {
+            h6
+            {
                 color: #fafafc;
                 font-size: 1.2rem;
-                font-weight: font-weight(font-weight-regular);
+                font-weight: 300;
             }
 
-            span {
+            span
+            {
                 font-size: 1.2rem;
             }
         }
 
-        &--language {
+        &--language
+        {
             display: flex;
             margin-top: 2rem;
             margin-bottom: 2.3rem;
 
-            div {
+            div
+            {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                svg {
+                svg
+                {
                     margin: 1rem;
 
-                    path {
+                    path
+                    {
                         stroke: #FFC107;
                     }
 
-                    path:nth-child(1) {
+                    path:nth-child(1)
+                    {
                         fill: none;
                         stroke: #191923 !important;
                         stroke-width: 3.8;
                     }
 
-                    path:nth-child(2) {
+                    path:nth-child(2)
+                    {
                         fill: none;
                         stroke-width: 2.8;
                         stroke-linecap: round;
                         animation: Progress 1s ease-out forwards;
                     }
 
-                    text {
+                    text
+                    {
                         fill: #8c8c8e;
                         font-size: 0.6em;
                         text-anchor: middle;
                     }
                 }
 
-                h6 {
+                h6
+                {
                     font-size: 1.2rem;
                     font-weight: font-weight(font-weight-regular);
                 }
             }
         }
 
-        &--skills {
+
+        &--skills
+        {
             margin: 3rem 0;
 
-            &__bar {
+            &__bar
+            {
                 margin: 1.8rem 0;
             }
 
-            &__info {
+            &__info
+            {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 margin-bottom: 1rem;
 
-                span:first-child {
+                span:first-child
+                {
                     color: #fafafc;
                     font-weight: 500;
                     font-size: 1.2rem;
                 }
             }
 
-            &__progress {
+            &__progress
+            {
                 position: relative;
 
                 height: 0.5rem;
@@ -221,10 +254,11 @@
                 border-radius: 50px;
                 background-color: #191923;
 
-                span {
+                span
+                {
                     border-radius: 50px;
 
-                    animation: ProgressBar 3s ease-in-out;
+                    animation: ProgressBar 1s ease-in-out;
                     animation-fill-mode: both;
 
                     position: absolute;
@@ -234,52 +268,61 @@
             }
         }
 
-        &--library {
+        &--library
+        {
             margin: 2rem 0;
 
-            li {
+            li
+            {
                 display: flex;
                 align-items: center;
 
-                &:not(:last-child) {
+                &:not(:last-child)
+                {
                     margin-bottom: 0.8rem;
                 }
             }
 
-            svg {
+            svg
+            {
                 fill: #ffc107;
                 width: 1.2rem;
                 height: 1.2rem;
                 margin-right: 1rem;
             }
 
-            span {
+            span
+            {
                 font-size: 1.2rem;
             }
         }
 
-        &--cv {
+        &--cv
+        {
             margin-top: 2rem;
 
             a:link,
-            a:visited {
+            a:visited
+            {
                 display: flex;
                 align-items: center;
 
                 color: #8c8c8e;
                 font-size: 1.2rem;
-                font-weight: font-weight(font-weight-medium);
+                font-weight: 400;
                 transition: all 0.4s ease-out;
             }
 
             a:hover,
             a:hover svg,
-            a:active {
+            a:active
+            {
                 color: #fafafc;
                 fill: #fafafc;
             }
 
-            svg {
+            svg
+            {
                 fill: #8c8c8e;
                 width: 1.4rem;
                 height: 1.4rem;
@@ -289,20 +332,23 @@
         }
     }
 
-    &__footer {
+    &__footer
+    {
         background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
 
         display: flex;
         align-items: center;
         justify-content: space-evenly;
 
-        svg {
+        svg
+        {
             fill: #8c8c8e;
             width: 1.4rem;
             height: 1.4rem;
             transition: all 0.4s ease-out;
 
-            &:hover {
+            &:hover
+            {
                 fill: #fafafc;
             }
         }
