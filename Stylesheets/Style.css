@@ -300,7 +300,7 @@ h4, h5, h6 {
 }
 .aside__information--language div h6 {
   font-size: 1.2rem;
-  font-weight: font-weight(font-weight-regular);
+  font-weight: 300;
 }
 .aside__information--skills {
   margin: 3rem 0;
