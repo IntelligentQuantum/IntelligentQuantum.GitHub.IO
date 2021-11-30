@@ -1,26 +1,27 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html data-theme="dark" lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Stylesheets/Style.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="Stylesheets/Style.css" rel="stylesheet">
 
     <title>IntelligentQuantum</title>
 </head>
-<body class="container">
+<body class="container" id="mainContainer">
 <aside class="aside">
 
     <div class="aside__user">
-        <a href="#" class="aside__user--profile">
-            <img id="aside__user--image" class="aside__user--image" src="Images/IntelligentQuantum.jpg" alt="IntelligentQuantum">
+        <a class="aside__user--profile" href="#">
+            <img alt="IntelligentQuantum" class="aside__user--image" src="Images/IntelligentQuantum.jpg">
 
             <div class="aside__user--status-parent">
-                <i id="aside__user--status" class="aside__user--status"></i>
+                <i class="aside__user--status"></i>
             </div>
         </a>
         <h5 class="aside__user--name">
@@ -58,7 +59,7 @@
             <div>
                 <svg viewBox="0 0 36 36">
                     <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                    <path stroke-dasharray="100, 100" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="100, 100"/>
                     <text x="18" y="20.35">100%</text>
                 </svg>
                 <h6>Persian</h6>
@@ -66,7 +67,7 @@
             <div>
                 <svg viewBox="0 0 36 36">
                     <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                    <path stroke-dasharray="50, 100" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="50, 100"/>
                     <text x="18" y="20.35">50%</text>
                 </svg>
                 <h6>English</h6>
@@ -74,7 +75,7 @@
             <div>
                 <svg viewBox="0 0 36 36">
                     <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                    <path stroke-dasharray="30, 100" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="30, 100"/>
                     <text x="18" y="20.35">30%</text>
                 </svg>
                 <h6>German</h6>
@@ -84,51 +85,57 @@
         <div class="aside__divider">&nbsp;</div>
 
         <div class="aside__information--skills">
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>HTML</span>
                     <span>87%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 87%"></span>
+                    <span style="max-width: 87%"></span>
                 </div>
             </div>
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>CSS</span>
                     <span>80%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 80%"></span>
+                    <span style="max-width: 80%"></span>
                 </div>
             </div>
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>Javascript</span>
                     <span>70%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 70%"></span>
+                    <span style="max-width: 70%"></span>
                 </div>
             </div>
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>Typescript</span>
                     <span>91%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 91%"></span>
+                    <span style="max-width: 91%"></span>
                 </div>
             </div>
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>C++</span>
                     <span>48%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 48%"></span>
+                    <span style="max-width: 48%;"></span>
                 </div>
             </div>
+
         </div>
 
         <div class="aside__divider">&nbsp;</div>
@@ -182,6 +189,7 @@
     </div>
 
     <div class="aside__footer">
+
         <a href="https://www.instagram.com/intelligentquantum/">
             <svg>
                 <use xlink:href="Images/Sprite.svg#icon-instagram"></use>
@@ -207,45 +215,41 @@
                 <use xlink:href="Images/Sprite.svg#icon-linkedin"></use>
             </svg>
         </a>
+
     </div>
 
 </aside>
 
 <main class="main">
-    <div class="main__background"></div>
-
-    <section class="home">
-        <header class="home__header">
-            <div class="home__header--top">&nbsp;</div>
-
-            <div class="home__header--content">
-                <h1>What do I make?</h1>
-                <div class="home__header--content__description">
-                    &lt;<i>code</i>&gt; I build
-                    <span>ios and android a</span>
-                    &lt;/<i>code</i>&gt;
-                </div>
-                <a href="#" class="button" style="align-self: start">EXPLORE NOW</a>
-            </div>
-        </header>
-    </section>
+    main
 </main>
 
-<nav class="nav">
+<nav class="nav" id="nav">
+
     <div class="nav__hamburger">
         <div class="nav__hamburger--line">&nbsp;</div>
     </div>
+
     <div class="nav__content">
-        <span class="nav__content--active">Home</span>
+
+        <div class="nav__content--active">
+            <p>Home</p>
+        </div>
+
     </div>
+
     <div class="nav__languages">
+
         <span class="nav__languages--active">EN</span>
         <span>GR</span>
         <span>PR</span>
+
     </div>
+
 </nav>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="JavaScripts/Main.js"></script>
+
 </body>
 </html>

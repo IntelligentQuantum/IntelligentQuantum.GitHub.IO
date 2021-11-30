@@ -1,20 +1,19 @@
+// DiscordConnection
+
 const DiscordID = "550013353171484682";
 const URL = `https://persian-discord-api.herokuapp.com/user?id=${DiscordID}&json=true`;
+const container = document.querySelector(".container");
+const userAvatar = document.querySelector(".aside__user--image");
+const userStatus = document.querySelector(".aside__user--status");
 
-const userStatus = document.getElementById("aside__user--status");
-const userAvatar = document.getElementById("aside__user--image");
-
-const DiscordConnection = async () =>
-{
-    try
-    {
+const DiscordConnection = async () => {
+    try {
         const response = await axios.get(URL);
 
         userAvatar.src = response.data.userAvatar;
         userAvatar.alt = response.data.userName;
 
-        switch (response.data.userPresence)
-        {
+        switch (response.data.userPresence) {
             case 'dnd':
                 userStatus.classList.add('bg-red');
                 break;
@@ -30,12 +29,28 @@ const DiscordConnection = async () =>
             default:
                 userStatus.classList.add('bg-gray');
         }
-    }
-    catch (error)
-    {
+    } catch (error) {
         console.error(error);
     }
 }
 
-DiscordConnection().then(() => { console.log('Discord Connection Function !') });
-setInterval(() => { DiscordConnection().then(() => { console.log('Discord Connection Function !') }) }, 1000 * 60 * 10);
+DiscordConnection().then(() => {
+    console.log('Discord Connection Function !')
+});
+setInterval(() => {
+    DiscordConnection().then(() => {
+        console.log('Discord Connection Function !')
+    })
+}, 1000 * 60 * 10);
+
+
+// NavBar
+
+const nav = document.querySelector(".nav");
+const navHamburger = document.querySelector(".nav__hamburger");
+
+navHamburger.addEventListener("click", () => {
+    container.classList.toggle('navbarOpen');
+    nav.classList.toggle('open');
+    navHamburger.classList.toggle('open');
+});

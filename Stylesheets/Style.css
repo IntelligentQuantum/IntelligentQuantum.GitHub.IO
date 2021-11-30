@@ -31,12 +31,21 @@ html[data-theme=dark] {
     height: 2.5rem;
   }
 }
+@keyframes ProgressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -70,8 +79,14 @@ h4, h5, h6 {
 }
 
 .container {
+  transition: all 0.8s;
   display: grid;
-  grid-template-columns: [aside-start] 29rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
+  grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
+}
+
+.container.navbarOpen {
+  display: grid;
+  grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 30rem [nav-end];
 }
 
 .u-margin-bottom-small {
@@ -112,18 +127,6 @@ h4, h5, h6 {
 
 .bg-gray {
   background: #c1c1c1 !important;
-}
-
-.button {
-  padding: 1.5rem 3.5rem;
-  text-transform: uppercase;
-  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
-  color: #20202a;
-  background: #FFC107;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-  border: none;
-  transition: 0.4s ease-in-out;
 }
 
 .aside {
@@ -193,7 +196,7 @@ h4, h5, h6 {
   padding: 0.5rem 1rem;
   top: -1rem;
   left: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   color: #8c8c8e;
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
   background: #191923;
@@ -247,7 +250,7 @@ h4, h5, h6 {
 .aside__information--personal h6 {
   color: #fafafc;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .aside__information--personal span {
   font-size: 1.2rem;
@@ -286,7 +289,7 @@ h4, h5, h6 {
 }
 .aside__information--language div h6 {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .aside__information--skills {
   margin: 3rem 0;
@@ -307,13 +310,17 @@ h4, h5, h6 {
 }
 .aside__information--skills__progress {
   position: relative;
-  height: 0.4rem;
+  height: 0.5rem;
   width: 100%;
+  border-radius: 50px;
   background-color: #191923;
 }
 .aside__information--skills__progress span {
+  border-radius: 50px;
+  animation: ProgressBar 3s ease-in-out;
+  animation-fill-mode: both;
   position: absolute;
-  height: 100%;
+  height: 95%;
   background-color: #FFC107;
 }
 .aside__information--library {
@@ -344,7 +351,7 @@ h4, h5, h6 {
   align-items: center;
   color: #8c8c8e;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.4s ease-out;
 }
 .aside__information--cv a:hover,
@@ -377,17 +384,8 @@ h4, h5, h6 {
 }
 
 .main {
+  background-color: green;
   grid-template: main-start/main-end;
-  background: #202029;
-  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
-}
-.main__background {
-  background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.93) 0%, rgba(30, 30, 40, 0.96) 70%, rgba(30, 30, 40, 0.99) 80%, #1e1e28 100%), url("../Images/background.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 40rem;
-  overflow: hidden;
 }
 
 .nav {
@@ -444,8 +442,8 @@ h4, h5, h6 {
   text-align: center;
 }
 .nav__content--active {
+  transform: rotate(90deg);
   font-size: 1.2rem;
-  font-weight: 500;
 }
 .nav__languages {
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
@@ -469,42 +467,22 @@ h4, h5, h6 {
   margin-bottom: 0.6rem;
 }
 
-.home__header--top {
-  position: relative;
-  top: -37rem;
-  width: 80%;
-  height: 3rem;
-  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background: rgba(30, 30, 40, 0.88);
-  margin: 0 auto;
+.nav.open .nav__content--active {
+  display: none;
 }
-.home__header--content {
-  position: relative;
-  top: -37rem;
-  margin: 0 auto;
-  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%), url("../Images/background.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 96%;
-  height: 35rem;
-  padding: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+
+.nav.open .nav__languages {
+  flex-direction: row;
 }
-.home__header--content h1 {
-  font-size: 5rem;
+
+.nav.open .nav__languages span {
+  margin: 1rem;
 }
-.home__header--content__description {
-  color: white;
-  font-size: 1.7rem;
-  font-weight: 500;
-  margin-top: -2rem;
-}
-.home__header--content__description i {
-  color: #FFC107;
+
+.nav__hamburger.open .nav__hamburger--line {
+  transition: all 0s;
+  left: 3rem;
+  right: auto;
 }
 
 /*# sourceMappingURL=Style.css.map */
