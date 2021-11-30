@@ -1,9 +1,9 @@
 // DiscordConnection
-const DiscordID = "550013353171484682";
+const DiscordID = '550013353171484682';
 const URL = `https://persian-discord-api.herokuapp.com/user?id=${DiscordID}&json=true`;
-const container = document.querySelector(".container");
-const userAvatar = document.querySelector(".aside__user--image");
-const userStatus = document.querySelector(".aside__user--status");
+const container = document.querySelector('.container');
+const userAvatar = document.querySelector('.aside__user--image');
+const userStatus = document.querySelector('.aside__user--status');
 
 const DiscordConnection = async () =>
 {
@@ -51,10 +51,10 @@ setInterval(() =>
 }, 1000 * 60 * 10);
 
 // NavBar
-const nav = document.querySelector(".nav");
-const navHamburger = document.querySelector(".nav__hamburger");
+const nav = document.querySelector('.nav');
+const navHamburger = document.querySelector('.nav__hamburger');
 
-navHamburger.addEventListener("click", () =>
+navHamburger.addEventListener('click', () =>
 {
     container.classList.toggle('navbar-open');
     nav.classList.toggle('open');
@@ -96,7 +96,7 @@ class TypeWriter
         }
 
         // Insert text into element
-        this.textElement.innerHTML = `<span class="build__cursor">${this.text}</span>`;
+        this.textElement.innerHTML = `<span class='build__cursor'>${this.text}</span>`;
 
         // Initial Type Speed
         let typeSpeed = 150;

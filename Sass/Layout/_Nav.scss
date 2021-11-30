@@ -72,6 +72,14 @@
         {
             top: 0;
         }
+
+        &.open &--line
+        {
+            transition: all 0s;
+
+            left: 3rem;
+            right: auto;
+        }
     }
 
     &__content
@@ -87,6 +95,11 @@
             font-size: 1.2rem;
             font-weight: 500;
         }
+    }
+
+    &.open &__content--active
+    {
+        display: none;
     }
 
     &__languages
@@ -118,30 +131,14 @@
             }
         }
     }
-}
 
-
-.nav.open
-{
-    &__content--active
-    {
-        display: none;
-    }
-    &__languages
+    &.open &__languages
     {
         flex-direction: row;
 
-        &span
+        span
         {
             margin: 1rem;
         }
     }
-}
-
-.nav__hamburger.open .nav__hamburger--line
-{
-    transition: all 0s;
-
-    left: 3rem;
-    right: auto;
 }

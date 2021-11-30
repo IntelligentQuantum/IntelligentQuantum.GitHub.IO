@@ -460,6 +460,11 @@ h4, h5, h6 {
 .nav__hamburger.open .nav__hamburger--line::before, .nav__hamburger.open .nav__hamburger--line::after {
   top: 0;
 }
+.nav__hamburger.open .nav__hamburger--line {
+  transition: all 0s;
+  left: 3rem;
+  right: auto;
+}
 .nav__content {
   background-color: #20202A;
   padding-top: 3rem;
@@ -469,6 +474,9 @@ h4, h5, h6 {
   transform: rotate(90deg);
   font-size: 1.2rem;
   font-weight: 500;
+}
+.nav.open .nav__content--active {
+  display: none;
 }
 .nav__languages {
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
@@ -491,21 +499,11 @@ h4, h5, h6 {
 .nav__languages span:not(:last-child) {
   margin-bottom: 0.6rem;
 }
-
-.nav.open__content--active {
-  display: none;
-}
-.nav.open__languages {
+.nav.open .nav__languages {
   flex-direction: row;
 }
-.nav.open__languagesspan {
+.nav.open .nav__languages span {
   margin: 1rem;
-}
-
-.nav__hamburger.open .nav__hamburger--line {
-  transition: all 0s;
-  left: 3rem;
-  right: auto;
 }
 
 .home__header--top {
