@@ -1,5 +1,4 @@
-.nav
-{
+.nav {
     grid-template: nav-start / nav-end;
 
     display: grid;
@@ -7,8 +6,7 @@
 
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 
-    &__hamburger
-    {
+    &__hamburger {
         background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
 
         display: flex;
@@ -20,8 +18,7 @@
 
         &--line,
         &--line::before,
-        &--line::after
-        {
+        &--line::after {
             content: '';
             position: absolute;
             width: 1.5rem;
@@ -35,61 +32,51 @@
             transition: all 0.5s ease-in-out;
         }
 
-        &--line::before
-        {
+        &--line::before {
             top: -1rem;
         }
 
-        &--line::after
-        {
+        &--line::after {
             top: 0.7rem;
         }
 
         &:hover &--line,
         &:hover &--line::after,
-        &:hover &--line::before
-        {
+        &:hover &--line::before {
             background-color: #ffffff;
         }
 
-        &.open &--line
-        {
+        &.open &--line {
             background-color: transparent;
         }
 
-        &.open &--line::before
-        {
+        &.open &--line::before {
             transform: rotate(45deg);
         }
 
-        &.open &--line::after
-        {
+        &.open &--line::after {
             transform: rotate(-45deg);
         }
 
         &.open &--line::before,
-        &.open &--line::after
-        {
+        &.open &--line::after {
             top: 0;
         }
     }
 
-    &__content
-    {
+    &__content {
         background-color: #20202A;
         padding-top: 3rem;
         text-align: center;
 
-        &--active
-        {
+        &--active {
             transform: rotate(90deg);
             font-size: 1.2rem;
             font-weight: font-weight(font-weight(font-weight-bold));
         }
     }
 
-    &__languages
-    {
+    &__languages {
         background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
 
         display: flex;
@@ -97,43 +84,38 @@
         flex-direction: column;
         justify-content: center;
 
-        &--active
-        {
+        &--active {
             background-color: #FFC107 !important;
             color: #1e1e28 !important;
         }
 
-        span
-        {
+        span {
             padding: 0.5rem;
             border-radius: 50%;
             background-color: #1E1E28;
             color: #8c8c8e;
             font-weight: 600;
 
-            &:not(:last-child)
-            {
+            &:not(:last-child) {
                 margin-bottom: 0.6rem;
             }
         }
     }
 }
 
-.nav.open .nav__content--active
-{
+.nav.open .nav__content--active {
     display: none;
 }
 
-.nav.open .nav__languages
-{
+.nav.open .nav__languages {
     flex-direction: row;
 }
-.nav.open .nav__languages span
-{
+
+.nav.open .nav__languages span {
     margin: 1rem;
 }
-.nav__hamburger.open .nav__hamburger--line
-{
+
+.nav__hamburger.open .nav__hamburger--line {
     transition: all 0s;
 
     left: 3rem;
