@@ -2,8 +2,3 @@
 {
     @return map-get($break-points, $break-point-limit);
 }
-
-@function font-weight($font-weight-style)
-{
-    @return map-get($font-weights, $font-weight-style);
-}

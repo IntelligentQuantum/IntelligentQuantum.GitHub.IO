@@ -1,5 +1,17 @@
 .main
 {
-    background-color: green;
     grid-template: main-start / main-end;
+    background: #202029;
+
+    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+
+    &__background
+    {
+        background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.93) 0%, rgba(30, 30, 40, 0.96) 70%, rgba(30, 30, 40, 0.99) 80%, #1e1e28 100%), url("../Images/background.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 40rem;
+        overflow: hidden;
+    }
 }

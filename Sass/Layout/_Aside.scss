@@ -87,7 +87,7 @@
             padding: .5rem 1rem;
             top: -1rem;
             left: 1rem;
-            font-weight: font-weight(font-weight-light);
+            font-weight: 200;
             color: #8c8c8e;
             box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
             background: #191923;
@@ -159,7 +159,7 @@
             {
                 color: #fafafc;
                 font-size: 1.2rem;
-                font-weight: font-weight(font-weight-regular);
+                font-weight: 300;
             }
 
             span
@@ -215,7 +215,7 @@
                 h6
                 {
                     font-size: 1.2rem;
-                    font-weight: font-weight(font-weight-regular);
+                    font-weight: 300;
                 }
             }
         }
@@ -302,7 +302,7 @@
 
                 color: #8c8c8e;
                 font-size: 1.2rem;
-                font-weight: font-weight(font-weight-medium);
+                font-weight: 400;
                 transition: all 0.4s ease-out;
             }
 
