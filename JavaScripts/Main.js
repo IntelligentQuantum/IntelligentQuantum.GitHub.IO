@@ -50,7 +50,6 @@ setInterval(() =>
     })
 }, 1000 * 60 * 10);
 
-
 // NavBar
 const nav = document.querySelector(".nav");
 const navHamburger = document.querySelector(".nav__hamburger");

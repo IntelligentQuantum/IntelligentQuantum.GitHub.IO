@@ -121,19 +121,21 @@
 }
 
 
-.nav.open .nav__content--active
+.nav.open
 {
-    display: none;
-}
+    &__content--active
+    {
+        display: none;
+    }
+    &__languages
+    {
+        flex-direction: row;
 
-.nav.open .nav__languages
-{
-    flex-direction: row;
-}
-
-.nav.open .nav__languages span
-{
-    margin: 1rem;
+        &span
+        {
+            margin: 1rem;
+        }
+    }
 }
 
 .nav__hamburger.open .nav__hamburger--line
