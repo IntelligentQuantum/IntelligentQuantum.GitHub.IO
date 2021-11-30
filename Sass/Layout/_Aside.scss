@@ -7,8 +7,7 @@
 
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 
-    overflow-y: scroll;
-    scrollbar-width: none;
+    overflow: hidden;
 
     &__divider
     {
@@ -145,11 +144,6 @@
         overflow-y: scroll;
         scrollbar-width: none;
 
-        &::-webkit-scrollbar
-        {
-            display: none;
-        }
-
         &--personal
         {
             padding-bottom: 1.2rem;
@@ -254,14 +248,20 @@
             {
                 position: relative;
 
-                height: 0.4rem;
+                height: 0.5rem;
                 width: 100%;
+                border-radius: 50px;
                 background-color: #191923;
 
                 span
                 {
+                    border-radius: 50px;
+
+                    animation: ProgressBar 3s ease-in-out;
+                    animation-fill-mode:both;
+
                     position: absolute;
-                    height: 100%;
+                    height: 95%;
                     background-color: #FFC107;
                 }
             }
@@ -313,9 +313,11 @@
             }
 
             a:hover,
+            a:hover svg,
             a:active
             {
                 color: #fafafc;
+                fill: #fafafc;
             }
 
             svg
@@ -324,6 +326,7 @@
                 width: 1.4rem;
                 height: 1.4rem;
                 margin-left: 0.8rem;
+                transition: all 0.4s ease-out;
             }
         }
     }

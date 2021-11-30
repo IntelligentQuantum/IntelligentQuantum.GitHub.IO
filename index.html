@@ -12,15 +12,15 @@
 
     <title>IntelligentQuantum</title>
 </head>
-<body class="container">
+<body class="container" id="mainContainer">
 <aside class="aside">
 
     <div class="aside__user">
         <a href="#" class="aside__user--profile">
-            <img id="aside__user--image" class="aside__user--image" src="Images/IntelligentQuantum.jpg" alt="IntelligentQuantum">
+            <img id="asideUserImage" class="aside__user--image" src="Images/IntelligentQuantum.jpg" alt="IntelligentQuantum">
 
             <div class="aside__user--status-parent">
-                <i id="aside__user--status" class="aside__user--status"></i>
+                <i id="asideUserStatus" class="aside__user--status"></i>
             </div>
         </a>
         <h5 class="aside__user--name">
@@ -84,51 +84,57 @@
         <div class="aside__divider">&nbsp;</div>
 
         <div class="aside__information--skills">
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>HTML</span>
                     <span>87%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 87%"></span>
+                    <span style="max-width: 87%"></span>
                 </div>
             </div>
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>CSS</span>
                     <span>80%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 80%"></span>
+                    <span style="max-width: 80%"></span>
                 </div>
             </div>
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>Javascript</span>
                     <span>70%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 70%"></span>
+                    <span style="max-width: 70%"></span>
                 </div>
             </div>
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>Typescript</span>
                     <span>91%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 91%"></span>
+                    <span style="max-width: 91%"></span>
                 </div>
             </div>
+
             <div class="aside__information--skills__bar">
                 <div class="aside__information--skills__info">
                     <span>C++</span>
                     <span>48%</span>
                 </div>
                 <div class="aside__information--skills__progress">
-                    <span style="width: 48%"></span>
+                    <span style="max-width: 48%;"></span>
                 </div>
             </div>
+
         </div>
 
         <div class="aside__divider">&nbsp;</div>
@@ -182,6 +188,7 @@
     </div>
 
     <div class="aside__footer">
+
         <a href="https://www.instagram.com/intelligentquantum/">
             <svg>
                 <use xlink:href="Images/Sprite.svg#icon-instagram"></use>
@@ -207,14 +214,39 @@
                 <use xlink:href="Images/Sprite.svg#icon-linkedin"></use>
             </svg>
         </a>
+
     </div>
 
 </aside>
 
 <main class="main">main</main>
-<nav class="nav">nav</nav>
+
+<nav class="nav" id="nav">
+
+    <div class="nav__hamburger" id="navHamburger">
+        <div class="nav__hamburger--line">&nbsp;</div>
+    </div>
+
+    <div class="nav__content">
+
+        <div class="nav__content--active">
+            <p>Home</p>
+        </div>
+
+    </div>
+
+    <div class="nav__languages">
+
+        <span class="nav__languages--active">EN</span>
+        <span>GR</span>
+        <span>PR</span>
+
+    </div>
+
+</nav>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="JavaScripts/Main.js"></script>
+
 </body>
 </html>

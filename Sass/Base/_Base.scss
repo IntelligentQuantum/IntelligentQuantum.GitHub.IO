@@ -5,11 +5,13 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 html
 {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body
@@ -43,6 +45,14 @@ h4, h5, h6
 
 .container
 {
+    transition: all .8s;
+
     display: grid;
-    grid-template-columns: [aside-start] 29rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
+    grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
+}
+
+.container.navbarOpen
+{
+    display: grid;
+    grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 30rem [nav-end];
 }
