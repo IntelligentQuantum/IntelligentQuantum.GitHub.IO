@@ -50,7 +50,7 @@ h4, h5, h6
     grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
 }
 
-.container.navbarOpen
+.container.navbar-open
 {
     display: grid;
     grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 30rem [nav-end];

@@ -57,7 +57,7 @@ const navHamburger = document.querySelector(".nav__hamburger");
 
 navHamburger.addEventListener("click", () =>
 {
-    container.classList.toggle('navbarOpen');
+    container.classList.toggle('navbar-open');
     nav.classList.toggle('open');
     navHamburger.classList.toggle('open');
 });
