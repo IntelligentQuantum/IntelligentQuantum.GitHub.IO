@@ -55,3 +55,11 @@ h4, h5, h6
     display: grid;
     grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 30rem [nav-end];
 }
+
+.build
+{
+    &__cursor
+    {
+        border-right: 0.1rem solid #fafafc;
+    }
+}

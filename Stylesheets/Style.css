@@ -88,6 +88,10 @@ h4, h5, h6 {
   grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 30rem [nav-end];
 }
 
+.build__cursor {
+  border-right: 0.1rem solid #fafafc;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 0.4rem !important;
 }
@@ -488,15 +492,13 @@ h4, h5, h6 {
   margin-bottom: 0.6rem;
 }
 
-.nav.open .nav__content--active {
+.nav.open__content--active {
   display: none;
 }
-
-.nav.open .nav__languages {
+.nav.open__languages {
   flex-direction: row;
 }
-
-.nav.open .nav__languages span {
+.nav.open__languagesspan {
   margin: 1rem;
 }
 
@@ -537,7 +539,7 @@ h4, h5, h6 {
 .home__header--content__description {
   color: white;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: -2rem;
 }
 .home__header--content__description i {
