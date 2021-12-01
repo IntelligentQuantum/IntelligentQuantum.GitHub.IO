@@ -138,6 +138,10 @@ h4, h5, h6 {
   background: #c1c1c1 !important;
 }
 
+.align-self-start {
+  align-self: start;
+}
+
 .button {
   padding: 1.5rem 3.5rem;
   text-transform: uppercase;
@@ -148,6 +152,9 @@ h4, h5, h6 {
   font-weight: 600;
   border: none;
   transition: 0.4s ease-in-out;
+}
+.button:hover {
+  background: #ffcd32;
 }
 
 .button-secondary {
@@ -164,6 +171,10 @@ h4, h5, h6 {
   height: 1.5rem;
   width: 1.5rem;
   fill: #FFC107;
+  transition: all 0.2s;
+}
+.button-secondary:hover svg {
+  margin-left: 0.4rem;
 }
 
 .aside {
@@ -420,6 +431,29 @@ h4, h5, h6 {
   fill: #fafafc;
 }
 
+.footer {
+  padding: 0 3rem;
+  width: 100%;
+  display: flex;
+}
+.footer--parent {
+  padding: 2.5rem 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+}
+
+a {
+  color: #8c8c8e;
+  transition: all 0.2s;
+}
+a:hover {
+  color: #FFC107;
+}
+
 .main {
   grid-template: main-start/main-end;
   overflow-y: scroll;
@@ -531,7 +565,7 @@ h4, h5, h6 {
 }
 
 .home {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 .home__header {
