@@ -92,6 +92,12 @@ h4, h5, h6 {
   border-right: 0.1rem solid #fafafc;
 }
 
+.heading {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 2rem 3rem 0 3rem;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 0.4rem !important;
 }
@@ -142,6 +148,22 @@ h4, h5, h6 {
   font-weight: 600;
   border: none;
   transition: 0.4s ease-in-out;
+}
+
+.button-secondary {
+  display: flex;
+  align-items: center;
+}
+.button-secondary, .button-secondary:link, .button-secondary:visited {
+  color: #FFC107;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.button-secondary svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #FFC107;
 }
 
 .aside {
@@ -508,9 +530,13 @@ h4, h5, h6 {
   margin: 1rem;
 }
 
+.home {
+  height: 100%;
+  width: 100%;
+}
 .home__header {
   position: relative;
-  padding: 0 30px;
+  padding: 0 3rem;
 }
 .home__header--top {
   position: absolute;
@@ -569,6 +595,27 @@ h4, h5, h6 {
   font-size: 1.2rem;
   font-weight: 400;
   color: #fafafc;
+}
+.home__services {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+}
+.home__services--content {
+  background-color: #2C2C38;
+  padding: 3rem;
+}
+.home__services--content h5 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.home__services--content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=Style.css.map */
