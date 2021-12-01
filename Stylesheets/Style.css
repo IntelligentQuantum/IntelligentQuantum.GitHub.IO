@@ -175,7 +175,7 @@ h4, h5, h6 {
   transition: all 0.2s;
 }
 .button-secondary:hover svg {
-  margin-right: -0.4rem;
+  margin-left: 0.4rem;
 }
 
 .aside {
