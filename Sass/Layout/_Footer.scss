@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
 
-    &--parent
+    &__box
     {
         padding: 2.5rem 3rem;
         width: 100%;
@@ -14,15 +14,15 @@
         background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
         box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
     }
-}
 
-a
-{
-    color: #8c8c8e;
-    transition: all .2s;
-
-    &:hover
+    a
     {
-        color: #FFC107;
+        color: #8c8c8e;
+        transition: all .2s;
+
+        &:hover
+        {
+            color: #FFC107;
+        }
     }
 }
