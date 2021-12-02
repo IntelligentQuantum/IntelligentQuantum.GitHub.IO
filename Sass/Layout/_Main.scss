@@ -3,10 +3,16 @@
     grid-template: main-start / main-end;
 
     overflow-y: scroll;
+    -ms-overflow-style: none;
     scrollbar-width: none;
     background: #202029;
 
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
 
     &__background
     {
