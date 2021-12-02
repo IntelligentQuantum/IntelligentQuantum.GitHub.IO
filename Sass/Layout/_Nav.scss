@@ -18,6 +18,8 @@
         position: relative;
         cursor: pointer;
 
+        transition: all .2s;
+
         &--line,
         &--line::before,
         &--line::after
@@ -124,10 +126,18 @@
             background-color: #1E1E28;
             color: #8c8c8e;
             font-weight: 600;
+            transition: all .2s;
+            cursor: pointer;
 
             &:not(:last-child)
             {
                 margin-bottom: 0.6rem;
+            }
+
+            &:hover
+            {
+                color: #cbcbcb;
+                background-color: #1b1b21;
             }
         }
     }
