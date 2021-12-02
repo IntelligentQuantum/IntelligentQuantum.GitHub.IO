@@ -133,10 +133,32 @@
             padding: 3rem;
             background-color: #2D2D39;
 
+            position: relative;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            &--active::before
+            {
+                font-size: 10px;
+                position: absolute;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                z-index: 99;
+                top: 1.7rem;
+                -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+                box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+                font-weight: 600;
+                color: #1e1e28;
+                right: -7.2rem;
+                content: 'POPULAR';
+                padding: .2rem;
+                width: 20rem;
+                text-align: center;
+                background: #FFC107;
+            }
 
             h5
             {
