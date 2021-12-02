@@ -189,16 +189,16 @@
     &__recommendations
     {
         padding: 0 3rem;
-
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-columns: repeat(3, minmax(30rem, 1fr));
         grid-gap: 2rem;
+        grid-template-rows: repeat(1, 1fr);
 
         &--content
         {
             padding: 3rem;
             background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
-
+            width: auto !important;
             position: relative;
             margin-bottom: 2rem;
 
