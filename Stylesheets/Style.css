@@ -283,10 +283,14 @@ h4, h5, h6 {
   text-align: center;
 }
 .aside__information {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   background-color: #20202A;
   padding: 2rem 3rem;
-  overflow-y: scroll;
-  scrollbar-width: none;
+}
+.aside__information::-webkit-scrollbar {
+  display: none;
 }
 .aside__information--personal {
   padding-bottom: 1.2rem;
@@ -306,6 +310,7 @@ h4, h5, h6 {
 }
 .aside__information--language {
   display: flex;
+  justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2.3rem;
 }
@@ -316,6 +321,8 @@ h4, h5, h6 {
 }
 .aside__information--language div svg {
   margin: 1rem;
+  width: 5rem;
+  height: 5rem;
 }
 .aside__information--language div svg path {
   stroke: #FFC107;
@@ -438,7 +445,7 @@ h4, h5, h6 {
   display: flex;
 }
 .footer__box {
-  padding: 2.5rem 3rem;
+  padding: 1.6rem 3rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -446,20 +453,24 @@ h4, h5, h6 {
   background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
 }
-.footer a {
+.footer__box a {
   color: #8c8c8e;
   transition: all 0.2s;
 }
-.footer a:hover {
+.footer__box a:hover {
   color: #FFC107;
 }
 
 .main {
   grid-template: main-start/main-end;
   overflow-y: scroll;
+  -ms-overflow-style: none;
   scrollbar-width: none;
   background: #202029;
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+}
+.main::-webkit-scrollbar {
+  display: none;
 }
 .main__background {
   background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.93) 0%, rgba(30, 30, 40, 0.96) 70%, rgba(30, 30, 40, 0.99) 80%, #1e1e28 100%), url("../Images/background.jpg");

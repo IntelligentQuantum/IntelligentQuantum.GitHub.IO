@@ -138,11 +138,17 @@
 
     &__information
     {
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
         background-color: #20202A;
         padding: 2rem 3rem;
 
-        overflow-y: scroll;
-        scrollbar-width: none;
+        &::-webkit-scrollbar
+        {
+            display: none;
+        }
 
         &--personal
         {
@@ -171,6 +177,7 @@
         &--language
         {
             display: flex;
+            justify-content: center;
             margin-top: 2rem;
             margin-bottom: 2.3rem;
 
@@ -183,6 +190,8 @@
                 svg
                 {
                     margin: 1rem;
+                    width: 5rem;
+                    height: 5rem;
 
                     path
                     {
