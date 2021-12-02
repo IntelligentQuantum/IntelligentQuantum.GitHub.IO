@@ -494,6 +494,7 @@ h4, h5, h6 {
   align-items: center;
   position: relative;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .nav__hamburger--line, .nav__hamburger--line::before, .nav__hamburger--line::after {
   content: "";
@@ -541,11 +542,12 @@ h4, h5, h6 {
 }
 .nav__content--active {
   transform: rotate(90deg);
+  transition: all 0.35s;
   font-size: 1.2rem;
   font-weight: 500;
 }
 .nav.open .nav__content--active {
-  display: none;
+  opacity: 0;
 }
 .nav__languages {
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
@@ -564,9 +566,15 @@ h4, h5, h6 {
   background-color: #1E1E28;
   color: #8c8c8e;
   font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 .nav__languages span:not(:last-child) {
   margin-bottom: 0.6rem;
+}
+.nav__languages span:hover {
+  color: #cbcbcb;
+  background-color: #1b1b21;
 }
 .nav.open .nav__languages {
   flex-direction: row;

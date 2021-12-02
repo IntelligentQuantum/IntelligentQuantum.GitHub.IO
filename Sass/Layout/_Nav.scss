@@ -93,7 +93,7 @@
         &--active
         {
             transform: rotate(90deg);
-
+            transition: all .35s;
             font-size: 1.2rem;
             font-weight: 500;
         }
@@ -101,7 +101,7 @@
 
     &.open &__content--active
     {
-        display: none;
+        opacity: 0;
     }
 
     &__languages
