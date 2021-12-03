@@ -207,10 +207,12 @@ h4, h5, h6 {
   height: 100%;
   transition: opacity 0.2s;
 }
-.filter.active {
-  display: block;
-  z-index: 99;
-  opacity: 1;
+@media screen and (max-width: 62.5em) {
+  .filter.active {
+    display: block;
+    z-index: 99;
+    opacity: 1;
+  }
 }
 
 .aside {
@@ -686,23 +688,6 @@ h4, h5, h6 {
 .nav__hamburger:hover .nav__hamburger--line, .nav__hamburger:hover .nav__hamburger--line::after, .nav__hamburger:hover .nav__hamburger--line::before {
   background-color: #ffffff;
 }
-.nav__hamburger.open .nav__hamburger--line {
-  background-color: transparent;
-}
-.nav__hamburger.open .nav__hamburger--line::before {
-  transform: rotate(45deg);
-}
-.nav__hamburger.open .nav__hamburger--line::after {
-  transform: rotate(-45deg);
-}
-.nav__hamburger.open .nav__hamburger--line::before, .nav__hamburger.open .nav__hamburger--line::after {
-  top: 0;
-}
-.nav__hamburger.open .nav__hamburger--line {
-  transition: all 0s;
-  left: 3rem;
-  right: auto;
-}
 @media screen and (max-width: 62.5em) {
   .nav__hamburger {
     width: 100%;
@@ -797,6 +782,23 @@ h4, h5, h6 {
 .nav.open .nav__languages span {
   margin: 1rem;
 }
+.nav.open .nav__hamburger--line {
+  background-color: transparent;
+}
+.nav.open .nav__hamburger--line::before {
+  transform: rotate(45deg);
+}
+.nav.open .nav__hamburger--line::after {
+  transform: rotate(-45deg);
+}
+.nav.open .nav__hamburger--line::before, .nav.open .nav__hamburger--line::after {
+  top: 0;
+}
+.nav.open .nav__hamburger--line {
+  transition: all 0s;
+  left: 3rem;
+  right: auto;
+}
 @media screen and (max-width: 62.5em) {
   .nav.open {
     right: 0;
@@ -838,7 +840,7 @@ h4, h5, h6 {
   background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%), url("../Images/background.jpg");
   background-position: center;
   background-size: cover;
-  width: 96%;
+  width: 100%;
   height: 35rem;
   padding: 6rem;
   display: flex;
@@ -847,16 +849,13 @@ h4, h5, h6 {
 }
 @media screen and (max-width: 62.5em) {
   .home__header--content {
-    width: 100%;
     left: 50%;
     transform: translate(-50%, 0);
     top: -39rem !important;
   }
 }
-@media screen and (max-width: 62.5em) {
-  .home__header--content__parent {
-    position: relative;
-  }
+.home__header--content__parent {
+  position: relative;
 }
 .home__header--content h1 {
   font-size: 5rem;

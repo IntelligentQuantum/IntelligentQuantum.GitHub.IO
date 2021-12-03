@@ -141,35 +141,6 @@
             background-color: #ffffff;
         }
 
-        &.open &--line
-        {
-            background-color: transparent;
-        }
-
-        &.open &--line::before
-        {
-            transform: rotate(45deg);
-        }
-
-        &.open &--line::after
-        {
-            transform: rotate(-45deg);
-        }
-
-        &.open &--line::before,
-        &.open &--line::after
-        {
-            top: 0;
-        }
-
-        &.open &--line
-        {
-            transition: all 0s;
-
-            left: 3rem;
-            right: auto;
-        }
-
         @include media-1000
         {
             width: 100%;
@@ -307,6 +278,38 @@
 
     &.open
     {
+        & .nav__hamburger
+        {
+            &--line
+            {
+                background-color: transparent;
+            }
+
+            &--line::before
+            {
+                transform: rotate(45deg);
+            }
+
+            &--line::after
+            {
+                transform: rotate(-45deg);
+            }
+
+            &--line::before,
+            &--line::after
+            {
+                top: 0;
+            }
+
+            &--line
+            {
+                transition: all 0s;
+
+                left: 3rem;
+                right: auto;
+            }
+        }
+
         @include media-1000
         {
             right: 0;
