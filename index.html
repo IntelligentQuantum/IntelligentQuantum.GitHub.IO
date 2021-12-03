@@ -15,8 +15,13 @@
 
 <body class="container">
 
+<div class="filter"></div>
+
 <aside class="aside">
     <div class="aside__user">
+
+        <div class="aside__user--icon"></div>
+
         <a class="aside__user--profile">
             <img alt="IntelligentQuantum" class="aside__user--image" src="Images/IntelligentQuantum.jpg">
 
@@ -219,6 +224,14 @@
     </div>
 </aside>
 
+<nav class="nav__mobile">
+    <div class="nav__mobile--3dot" style="width: 3rem; height: 3rem; background: red; display: flex; align-items: center; margin: auto 0;"></div>
+
+    <div class="nav__mobile--hamburger">
+        <div class="nav__mobile--hamburger__line">&nbsp;</div>
+    </div>
+</nav>
+
 <main class="main">
     <div class="main__background"></div>
 
@@ -226,19 +239,21 @@
         <header class="home__header">
             <div class="home__header--top">&nbsp;</div>
 
-            <div class="home__header--content">
-                <h1>What do i make Or am i?</h1>
-                <div class="home__header--content__description">
-                    &lt;<i>code</i>&gt;
-                    <span
-                        class="build"
-                        data-wite="3000"
-                        data-words='["I build ios and android applications.", "I build web interfaces.", "I am Node.Js developer", "I am React and React Native developer"]'
-                    >
+            <div class="home__header--content__parent">
+                <div class="home__header--content">
+                    <h1>What do i make Or am i?</h1>
+                    <div class="home__header--content__description">
+                        &lt;<i>code</i>&gt;
+                        <span
+                            class="build"
+                            data-wite="3000"
+                            data-words='["I build ios and android applications.", "I build web interfaces.", "I am Node.Js developer", "I am React and React Native developer"]'
+                        >
                     </span>
-                    &lt;/<i>code</i>&gt;
+                        &lt;/<i>code</i>&gt;
+                    </div>
+                    <a href="#" class="button align-self-start">EXPLORE NOW</a>
                 </div>
-                <a href="#" class="button align-self-start">EXPLORE NOW</a>
             </div>
 
             <div class="home__header--logs">

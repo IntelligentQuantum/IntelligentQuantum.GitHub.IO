@@ -11,6 +11,46 @@
 
     @include media-1000
     {
+        box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 1);
+
+        transition: .4s;
+        left: -100%;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: absolute;
+        display: block;
+        top: 0;
+        z-index: 101;
+        height: 100%;
+
+        & .aside__user
+        {
+            height: 30%;
+        }
+        & .aside__information
+        {
+            height: 70%;
+            padding-bottom: 6rem;
+        }
+        & .aside__footer
+        {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 100000;
+            width: 100%;
+            height: 5.5rem;
+        }
+    }
+
+    &.open
+    {
+        transition: .4s;
+        left: 0;
+    }
+
+    @include media-1000
+    {
         opacity: 0;
         visibility: hidden;
     }
@@ -31,6 +71,21 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        @include media-1000
+        {
+            background: linear-gradient(159deg, rgba(37, 37, 50, 1) 0%, rgba(35, 35, 45, 1) 100%);
+        }
+
+        &--icon
+        {
+            width: 2rem;
+            height: 2rem;
+            background: red;
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+        }
 
         &--profile
         {

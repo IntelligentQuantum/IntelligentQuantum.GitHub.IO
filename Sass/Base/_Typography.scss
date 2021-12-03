@@ -3,4 +3,9 @@
     font-size: 1.7rem;
     font-weight: 600;
     padding: 2rem 3rem;
+
+    @include media-1000
+    {
+        padding: 1.5rem;
+    }
 }
