@@ -9,6 +9,12 @@
 
     overflow: hidden;
 
+    @include media-1000
+    {
+        opacity: 0;
+        visibility: hidden;
+    }
+
     &__divider
     {
         background: #646466;
@@ -68,7 +74,7 @@
             position: absolute;
             height: 1.5rem;
             width: 1.5rem;
-            background-color: #ffffff;
+            background-color: #FFC107;
             border-radius: 50%;
 
             &:hover::after,

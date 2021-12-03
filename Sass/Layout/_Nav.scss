@@ -7,6 +7,12 @@
 
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 
+    @include media-1000
+    {
+        opacity: 0;
+        visibility: hidden;
+    }
+
     &__hamburger
     {
         background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);

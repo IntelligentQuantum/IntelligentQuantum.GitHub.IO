@@ -7,6 +7,24 @@
     }
 }
 
+// 1400px
+@mixin media-1400
+{
+    @media screen and (max-width: break-point(break-point-1400))
+    {
+        @content;
+    }
+}
+
+// 1400px
+@mixin media-1300
+{
+    @media screen and (max-width: break-point(break-point-1300))
+    {
+        @content;
+    }
+}
+
 // 1200px
 @mixin media-1200
 {

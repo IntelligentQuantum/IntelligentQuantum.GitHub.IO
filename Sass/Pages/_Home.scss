@@ -19,6 +19,11 @@
             border-top-right-radius: 3px;
             background: rgba(30, 30, 40, 0.88);
             margin-left: 3%;
+
+            @include media-1400
+            {
+                display: none;
+            }
         }
 
         &--content
@@ -46,11 +51,45 @@
                 color: white;
                 font-size: 1.7rem;
                 font-weight: 400;
-                margin-top: -2rem;
 
                 i
                 {
                     color: #FFC107;
+                }
+            }
+
+            @include media-1400
+            {
+                top: -37rem;
+            }
+
+            @include media-1200
+            {
+                h1
+                {
+                    font-size: 2.8rem
+                }
+            }
+
+            @include media-1000
+            {
+                justify-content: center;
+                align-items: center;
+
+                h1
+                {
+                    font-size: 3rem;
+                    padding-bottom: 2rem;
+                }
+
+                a
+                {
+                    align-self: initial;
+                }
+
+                &__description
+                {
+                    padding-bottom: 2rem;
                 }
             }
         }
@@ -59,14 +98,29 @@
         {
             padding-top: 3rem;
 
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            place-items: center;
+
+            @include media-1300
+            {
+                grid-template-columns: repeat(2, minmax(20rem, 1fr));
+            }
+
+            @include media-1000
+            {
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            }
 
             &__box
             {
-                flex: 0 0 25%;
-
                 display: flex;
                 align-items: center;
+
+                @include media-1300
+                {
+                    margin: 1rem 0;
+                }
 
                 span
                 {
