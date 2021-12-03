@@ -79,12 +79,15 @@
 
         &--icon
         {
-            width: 2rem;
-            height: 2rem;
-            background: red;
-            position: absolute;
-            right: 2rem;
-            top: 2rem;
+            svg
+            {
+                width: 2rem;
+                height: 2rem;
+                fill: #8c8c8e;
+                position: absolute;
+                right: 2rem;
+                top: 2rem;
+            }
         }
 
         &--profile

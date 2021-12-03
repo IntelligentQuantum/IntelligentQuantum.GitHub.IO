@@ -36,6 +36,15 @@
             box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
         }
 
+        &--3dot
+        {
+            display: flex;
+            margin: auto 0;
+            height: 2rem;
+            width: 2rem;
+            fill: #8c8c8e;
+        }
+
         &--hamburger
         {
             display: flex;
