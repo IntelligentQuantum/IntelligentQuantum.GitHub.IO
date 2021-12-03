@@ -178,6 +178,10 @@ h4, h5, h6 {
   margin-left: 0.4rem;
 }
 
+.swiper-slide {
+  max-width: 40rem;
+}
+
 .aside {
   grid-template: aside-start/aside-end;
   display: grid;
@@ -716,18 +720,21 @@ h4, h5, h6 {
   font-weight: 500;
 }
 .home__recommendations {
-  padding: 0 3rem;
+  padding: 0 0 0 3rem;
 }
 .home__recommendations--slide {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-gap: 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
 }
 .home__recommendations--content {
   padding: 3rem;
   background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
   position: relative;
   margin-bottom: 2rem;
+  margin-right: 2rem;
+  min-width: 35rem;
 }
 .home__recommendations--content div {
   margin-bottom: 1rem;
@@ -777,6 +784,7 @@ h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 0 3rem;
   margin-bottom: 2rem;
 }
 .home__recommendations--page svg {

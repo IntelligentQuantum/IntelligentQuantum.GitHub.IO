@@ -188,13 +188,14 @@
 
     &__recommendations
     {
-        padding: 0 3rem;
+        padding: 0 0 0 3rem;
 
         &--slide
         {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-            grid-gap: 2rem;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
         }
 
         &--content
@@ -204,6 +205,8 @@
 
             position: relative;
             margin-bottom: 2rem;
+            margin-right: 2rem;
+            min-width: 35rem;
 
             div
             {
@@ -273,7 +276,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-
+            padding: 0 3rem;
             margin-bottom: 2rem;
 
             svg
