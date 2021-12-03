@@ -155,7 +155,6 @@ new Swiper(".swiper",
                 nextEl: ".home__recommendations--next",
                 prevEl: ".home__recommendations--prev",
             },
-
         mousewheel: true,
-        keyboard: true,
+        keyboard: true
     });
