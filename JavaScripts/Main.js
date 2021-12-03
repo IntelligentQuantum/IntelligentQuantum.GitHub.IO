@@ -143,18 +143,18 @@ function init()
 
 // slider
 new Swiper(".swiper",
+{
+    centeredSlides: true,
+    autoplay:
+        {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    navigation:
     {
-        centeredSlides: true,
-        autoplay:
-            {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        navigation:
-            {
-                nextEl: ".home__recommendations--next",
-                prevEl: ".home__recommendations--prev",
-            },
-        mousewheel: true,
-        keyboard: true
-    });
+        nextEl: ".home__recommendations--next",
+        prevEl: ".home__recommendations--prev",
+    },
+    mousewheel: true,
+    keyboard: true
+});
