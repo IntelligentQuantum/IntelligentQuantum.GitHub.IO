@@ -24,6 +24,11 @@ body
     padding: 1.4rem;
     overflow: hidden;
     height: 100vh;
+
+    @include media-1000
+    {
+        padding: 0;
+    }
 }
 
 a
@@ -56,7 +61,12 @@ h4, h5, h6
 
     @include media-1000
     {
-        grid-template-columns: [navbar-start] 0 [aside-end main-start] 1fr [main-end nav-start] 0 [nav-end];
+        grid-template-columns: [main-start] 100% [main-end];
+
+        &.navbar-open
+        {
+            grid-template-columns: [main-start] 100% [main-end];
+        }
     }
 }
 

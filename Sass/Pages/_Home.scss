@@ -8,6 +8,12 @@
         position: relative;
         padding: 0 3rem;
 
+
+        @include media-1000
+        {
+            padding: 1.5rem;
+        }
+
         &--top
         {
             position: absolute;
@@ -40,6 +46,23 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
+            @include media-1000
+            {
+                width: 100%;
+                left: 50%;
+                transform: translate(-50%, 0);
+
+                top: -39rem !important;
+            }
+
+            &__parent
+            {
+                @include media-1000
+                {
+                    position: relative;
+                }
+            }
 
             h1
             {
@@ -152,6 +175,11 @@
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-gap: 2rem;
 
+        @include media-1000
+        {
+            padding: 1.5rem;
+        }
+
         &--content
         {
             background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
@@ -181,6 +209,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-gap: 2rem;
+
+        @include media-1000
+        {
+            padding: 1.5rem;
+        }
 
         &--content
         {
@@ -243,6 +276,11 @@
     &__recommendations
     {
         padding-left: 3rem;
+
+        @include media-1000
+        {
+            padding: 1.5rem;
+        }
 
         &:last-child
         {

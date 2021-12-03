@@ -1,13 +1,38 @@
 // NavBar
-const container = document.querySelector('.container');
 const nav = document.querySelector('.nav');
+const filter = document.querySelector('.filter');
+const container = document.querySelector('.container');
 const navHamburger = document.querySelector('.nav__hamburger');
+const navMobileHamburger = document.querySelector('.nav__mobile--hamburger');
 
 navHamburger.addEventListener('click', () =>
 {
     container.classList.toggle('navbar-open');
     nav.classList.toggle('open');
     navHamburger.classList.toggle('open');
+});
+navMobileHamburger.addEventListener('click', () =>
+{
+    filter.classList.toggle('active');
+    container.classList.toggle('navbar-open');
+    nav.classList.toggle('open');
+    navMobileHamburger.classList.toggle('open');
+});
+
+// Aside
+const aside = document.querySelector('.aside');
+const navbarAsideOpenIcons = document.querySelector('.nav__mobile--3dot');
+const asideOpenIcons = document.querySelector('.aside__user--icon');
+
+navbarAsideOpenIcons.addEventListener('click', () =>
+{
+    filter.classList.toggle('active');
+    aside.classList.toggle('open');
+});
+asideOpenIcons.addEventListener('click', () =>
+{
+    filter.classList.toggle('active');
+    aside.classList.toggle('open');
 });
 
 // Auto write

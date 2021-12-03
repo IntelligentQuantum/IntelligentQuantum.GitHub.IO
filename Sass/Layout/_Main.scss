@@ -23,4 +23,9 @@
         height: 40rem;
         overflow: hidden;
     }
+
+    @include media-1000
+    {
+        padding-top: 6rem;
+    }
 }

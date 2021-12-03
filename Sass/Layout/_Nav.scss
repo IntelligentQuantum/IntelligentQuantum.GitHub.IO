@@ -9,8 +9,101 @@
 
     @include media-1000
     {
-        opacity: 0;
-        visibility: hidden;
+        transition: .4s;
+        z-index: 101;
+        display: block;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: -50%;
+    }
+
+    &__mobile
+    {
+        display: none;
+
+        @include media-1000
+        {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 3rem;
+            position: fixed;
+            background: #20202a;
+            z-index: 100;
+            box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+        }
+
+        &--hamburger
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+            cursor: pointer;
+
+            padding-right: 1rem;
+
+            transition: all .2s;
+
+            &__line,
+            &__line::before,
+            &__line::after
+            {
+                content: '';
+                position: absolute;
+                width: 1.5rem;
+                height: 0.3rem;
+                background-color: #8c8c8e;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                transition: all 0.5s ease-in-out;
+            }
+
+            &__line::before
+            {
+                top: -1rem;
+            }
+
+            &__line::after
+            {
+                top: 0.7rem;
+            }
+
+            &:hover &__line,
+            &:hover &__line::after,
+            &:hover &__line::before
+            {
+                background-color: #ffffff;
+            }
+
+            &.open &__line
+            {
+                background-color: transparent;
+            }
+
+            &.open &__line::before
+            {
+                transform: rotate(45deg);
+            }
+
+            &.open &__line::after
+            {
+                transform: rotate(-45deg);
+            }
+
+            &.open &__line::before,
+            &.open &__line::after
+            {
+                top: 0;
+            }
+        }
     }
 
     &__hamburger
@@ -88,6 +181,12 @@
             left: 3rem;
             right: auto;
         }
+
+        @include media-1000
+        {
+            width: 100%;
+            height: 7rem;
+        }
     }
 
     &__content
@@ -102,12 +201,17 @@
 
             font-size: 1.2rem;
             font-weight: 500;
-        }
-    }
 
-    &.open &__content--active
-    {
-        display: none;
+            @include media-1000
+            {
+                opacity: 0 !important;
+            }
+        }
+
+        @include media-1000
+        {
+            height: 100%;
+        }
     }
 
     &__languages
@@ -146,6 +250,21 @@
                 background-color: #1b1b21;
             }
         }
+
+        @include media-1000
+        {
+            transition: .4s;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 7rem;
+        }
+    }
+
+
+    &.open &__content--active
+    {
+        display: none;
     }
 
     &.open &__languages
@@ -155,6 +274,14 @@
         span
         {
             margin: 1rem;
+        }
+    }
+
+    &.open
+    {
+        @include media-1000
+        {
+            right: 0;
         }
     }
 }
