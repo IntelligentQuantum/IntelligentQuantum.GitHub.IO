@@ -140,3 +140,5 @@ function init()
 
     new TypeWriter(textElement, words, wait);
 }
+
+// slider

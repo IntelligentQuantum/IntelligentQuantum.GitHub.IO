@@ -190,9 +190,12 @@
     {
         padding: 0 3rem;
 
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-gap: 2rem;
+        &--slide
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            grid-gap: 2rem;
+        }
 
         &--content
         {
@@ -262,6 +265,22 @@
                         fill: #ffc107;
                     }
                 }
+            }
+        }
+
+        &--page
+        {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            margin-bottom: 2rem;
+
+            svg
+            {
+                height: 2rem;
+                width: 2rem;
+                fill: #8c8c8e;;
             }
         }
     }
