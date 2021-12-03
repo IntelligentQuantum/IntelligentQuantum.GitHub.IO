@@ -142,6 +142,10 @@ h4, h5, h6 {
   align-self: start;
 }
 
+.swiper-slide {
+  max-width: 40rem;
+}
+
 .button {
   padding: 1.5rem 3.5rem;
   text-transform: uppercase;
@@ -176,10 +180,6 @@ h4, h5, h6 {
 }
 .button-secondary:hover svg {
   margin-left: 0.4rem;
-}
-
-.swiper-slide {
-  max-width: 40rem;
 }
 
 .aside {
@@ -720,7 +720,10 @@ h4, h5, h6 {
   font-weight: 500;
 }
 .home__recommendations {
-  padding: 0 0 0 3rem;
+  padding-left: 3rem;
+}
+.home__recommendations:last-child {
+  padding: 0 3rem;
 }
 .home__recommendations--slide {
   display: flex;
@@ -733,8 +736,7 @@ h4, h5, h6 {
   background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
   position: relative;
   margin-bottom: 2rem;
-  margin-right: 2rem;
-  min-width: 35rem;
+  min-width: 47rem;
 }
 .home__recommendations--content div {
   margin-bottom: 1rem;

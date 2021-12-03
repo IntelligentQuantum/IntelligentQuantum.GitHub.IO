@@ -139,22 +139,19 @@ function init()
     const wait = textElement.getAttribute('data-wait');
 
     new TypeWriter(textElement, words, wait);
-}
 
-// slider
-new Swiper(".swiper",
-{
-    centeredSlides: true,
-    autoplay:
+    // slider
+    new Swiper(".swiper",
     {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    navigation:
-    {
-        nextEl: ".home__recommendations--next",
-        prevEl: ".home__recommendations--prev",
-    },
-    mousewheel: true,
-    keyboard: true
-});
+        slidesPerView: 3,
+        slidesPerColumn: 3,
+        spaceBetween: 20,
+        navigation:
+        {
+            nextEl: ".home__recommendations--next",
+            prevEl: ".home__recommendations--prev",
+        },
+        mousewheel: true,
+        keyboard: true
+    });
+}
