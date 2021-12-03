@@ -10,13 +10,13 @@
     @include media-1000
     {
         transition: .4s;
-        z-index: 101;
+        z-index: 100;
         display: block;
         top: 0;
-        width: 50%;
+        width: 27.6517rem;
         height: 100%;
         position: absolute;
-        right: -50%;
+        right: -27.6517rem;
     }
 
     &__mobile
@@ -32,7 +32,7 @@
             padding: 0 3rem;
             position: fixed;
             background: #20202a;
-            z-index: 100;
+            z-index: 98;
             box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
         }
 
@@ -81,27 +81,6 @@
             &:hover &__line::before
             {
                 background-color: #ffffff;
-            }
-
-            &.open &__line
-            {
-                background-color: transparent;
-            }
-
-            &.open &__line::before
-            {
-                transform: rotate(45deg);
-            }
-
-            &.open &__line::after
-            {
-                transform: rotate(-45deg);
-            }
-
-            &.open &__line::before,
-            &.open &__line::after
-            {
-                top: 0;
             }
         }
     }
@@ -186,6 +165,46 @@
         {
             width: 100%;
             height: 7rem;
+
+            &:hover &--line
+            {
+                background-color: transparent;
+            }
+
+            &:hover &--line::after,
+            &:hover &--line::before
+            {
+                background-color: #ffffff;
+            }
+
+            &--line
+            {
+                background-color: transparent;
+            }
+
+            &--line::before
+            {
+                transform: rotate(45deg);
+            }
+
+            &--line::after
+            {
+                transform: rotate(-45deg);
+            }
+
+            &--line::before,
+            &--line::after
+            {
+                top: 0;
+            }
+
+            &--line
+            {
+                transition: all 0s;
+
+                left: 3rem;
+                right: auto;
+            }
         }
     }
 

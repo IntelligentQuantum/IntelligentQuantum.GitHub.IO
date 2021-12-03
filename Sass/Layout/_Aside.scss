@@ -5,12 +5,14 @@
     display: grid;
     grid-template-rows: 23.5rem 1fr 5rem;
 
-    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 1);
+    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 
     overflow: hidden;
 
     @include media-1000
     {
+        box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 1);
+
         transition: .4s;
         left: -100%;
         visibility: visible !important;
@@ -63,12 +65,17 @@
 
     &__user
     {
-        background: linear-gradient(159deg, rgba(37, 37, 50, 1) 0%, rgba(35, 35, 45, 1) 100%);
+        background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
 
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        @include media-1000
+        {
+            background: linear-gradient(159deg, rgba(37, 37, 50, 1) 0%, rgba(35, 35, 45, 1) 100%);
+        }
 
         &--icon
         {

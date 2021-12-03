@@ -10,6 +10,7 @@ navHamburger.addEventListener('click', () =>
     container.classList.toggle('navbar-open');
     nav.classList.toggle('open');
     navHamburger.classList.toggle('open');
+    filter.classList.remove('active');
 });
 navMobileHamburger.addEventListener('click', () =>
 {
