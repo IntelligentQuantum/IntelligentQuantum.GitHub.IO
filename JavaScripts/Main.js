@@ -146,10 +146,10 @@ new Swiper(".swiper",
 {
     centeredSlides: true,
     autoplay:
-        {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
+    {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     navigation:
     {
         nextEl: ".home__recommendations--next",
