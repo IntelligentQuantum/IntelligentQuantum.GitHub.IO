@@ -1011,6 +1011,7 @@ h4, h5, h6 {
 }
 .home__recommendations {
   padding-left: 3rem;
+  overflow: hidden;
 }
 @media screen and (max-width: 62.5em) {
   .home__recommendations {
@@ -1025,6 +1026,7 @@ h4, h5, h6 {
   justify-content: left;
   align-items: center;
   width: 100%;
+  padding-top: 2.5rem;
 }
 .home__recommendations--content {
   padding: 3rem;

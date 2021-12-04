@@ -272,6 +272,7 @@
     &__recommendations
     {
         padding-left: 3rem;
+        overflow: hidden;
 
         @include media-1000
         {
@@ -289,6 +290,7 @@
             justify-content: left;
             align-items: center;
             width: 100%;
+            padding-top: 2.5rem;
         }
 
         &--content
