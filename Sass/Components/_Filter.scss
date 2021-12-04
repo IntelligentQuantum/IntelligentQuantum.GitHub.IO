@@ -8,10 +8,13 @@
     height: 100%;
     transition: opacity .2s;
 
-    &.active
+    @include media-1000
     {
-        display: block;
-        z-index: 99;
-        opacity: 1;
+        &.active
+        {
+            display: block;
+            z-index: 99;
+            opacity: 1;
+        }
     }
 }
