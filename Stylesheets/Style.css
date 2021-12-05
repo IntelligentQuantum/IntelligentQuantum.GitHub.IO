@@ -158,6 +158,10 @@ h4, h5, h6 {
   align-self: start;
 }
 
+.z-index-100 {
+  z-index: 100;
+}
+
 .swiper-slide {
   max-width: 40rem;
 }
@@ -206,6 +210,11 @@ h4, h5, h6 {
   width: 100%;
   height: 100%;
   transition: opacity 0.2s;
+}
+.filter.active {
+  display: block;
+  z-index: 95;
+  opacity: 1;
 }
 @media screen and (max-width: 62.5em) {
   .filter.active {
@@ -546,6 +555,8 @@ h4, h5, h6 {
   align-items: center;
   background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 @media screen and (max-width: 62.5em) {
   .footer__box {
@@ -555,6 +566,11 @@ h4, h5, h6 {
 .footer__box a {
   color: #8c8c8e;
   transition: all 0.2s;
+  display: flex;
+  align-items: center;
+}
+.footer__box a svg {
+  margin-right: 0.5rem;
 }
 .footer__box a:hover {
   color: #FFC107;
@@ -666,7 +682,18 @@ h4, h5, h6 {
   cursor: pointer;
   transition: all 0.2s;
 }
-.nav__hamburger--line, .nav__hamburger--line::before, .nav__hamburger--line::after {
+.nav__hamburger--line {
+  position: absolute;
+  width: 1.5rem;
+  height: 0.3rem;
+  background-color: #8c8c8e;
+  top: 3.5rem;
+  left: 3.5rem;
+  margin: auto;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+.nav__hamburger--line::before, .nav__hamburger--line::after {
   content: "";
   position: absolute;
   width: 1.5rem;
@@ -724,6 +751,7 @@ h4, h5, h6 {
 }
 .nav__content--active {
   transform: rotate(90deg);
+  transition: opacity 0.5s;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -774,7 +802,7 @@ h4, h5, h6 {
   }
 }
 .nav.open .nav__content--active {
-  display: none;
+  opacity: 0;
 }
 .nav.open .nav__languages {
   flex-direction: row;
@@ -795,7 +823,7 @@ h4, h5, h6 {
   top: 0;
 }
 .nav.open .nav__hamburger--line {
-  transition: all 0s;
+  transition: all 0;
   left: 3rem;
   right: auto;
 }
