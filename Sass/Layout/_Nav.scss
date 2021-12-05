@@ -107,7 +107,19 @@
 
         transition: all .2s;
 
-        &--line,
+        &--line
+        {
+            position: absolute;
+            width: 1.5rem;
+            height: 0.3rem;
+            background-color: #8c8c8e;
+            top: 3.5rem;
+            left: 3.5rem;
+            margin: auto;
+            z-index: 100;
+            transition: all 0.5s ease-in-out;
+        }
+
         &--line::before,
         &--line::after
         {
@@ -197,6 +209,7 @@
         &--active
         {
             transform: rotate(90deg);
+            transition: opacity .5s;
 
             font-size: 1.2rem;
             font-weight: 500;
@@ -263,7 +276,7 @@
 
     &.open &__content--active
     {
-        display: none;
+        opacity: 0;
     }
 
     &.open &__languages
@@ -303,7 +316,7 @@
 
             &--line
             {
-                transition: all 0s;
+                transition: all 0;
 
                 left: 3rem;
                 right: auto;
