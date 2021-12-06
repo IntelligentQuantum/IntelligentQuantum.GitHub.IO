@@ -6,7 +6,7 @@
     &__header
     {
         position: relative;
-        padding: 0 3rem;
+        padding: 3rem 3rem 0;
 
 
         @include media-1000
@@ -34,8 +34,7 @@
 
         &--content
         {
-            position: absolute;
-            top: -34rem;
+            border-radius: 1rem;
             background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%), url("../Images/background.jpg");
             background-position: center;
             background-size: cover;
@@ -46,19 +45,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-
-            @include media-1000
-            {
-                left: 50%;
-                transform: translate(-50%, 0);
-
-                top: -39rem !important;
-            }
-
-            &__parent
-            {
-                position: relative;
-            }
 
             h1
             {
@@ -178,6 +164,7 @@
 
         &--content
         {
+            border-radius: 1rem;
             background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
             padding: 3rem;
 
@@ -213,6 +200,8 @@
 
         &--content
         {
+            border-radius: 1rem;
+
             padding: 3rem;
             background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
 

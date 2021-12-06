@@ -3,6 +3,8 @@
     padding: 0 3rem;
     width: 100%;
     display: flex;
+    position: relative;
+    z-index: 95;
 
     @include media-1000
     {
@@ -11,6 +13,7 @@
 
     &__box
     {
+        border-radius: 1rem 1rem 0 0;
         padding: 1.6rem 3rem;
         width: 100%;
         display: flex;

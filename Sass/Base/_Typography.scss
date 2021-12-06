@@ -8,4 +8,31 @@
     {
         padding: 1.5rem;
     }
+
+    &__small
+    {
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 2rem 3rem;
+
+        li
+        {
+            transition: 0.4s ease-in-out;
+            color: #8c8c8e;
+            margin-right: 1rem;
+            cursor: pointer;
+
+            &:hover
+            {
+                color: #fafafc;
+            }
+
+            &.active
+            {
+                font-weight: 600;
+                color: #fafafc;
+            }
+        }
+    }
 }
