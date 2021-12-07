@@ -4,10 +4,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5rem;
-    grid-template-areas:
-    "content"
-    "footer";
+    grid-template-rows: [content-start] 1fr [content-end footer-start] 5rem [footer-end];
 
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -25,12 +22,12 @@
 
     & .footer
     {
-        grid-area: footer;
+        grid-area: footer-start / footer-end;
     }
 
     &__content
     {
-        grid-area: content;
+        grid-area: content-start / content-end;
         height: 100%;
     }
 

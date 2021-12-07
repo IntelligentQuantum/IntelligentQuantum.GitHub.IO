@@ -927,7 +927,7 @@ h4, h5, h6 {
 .contact__information--content__personal span {
   font-size: 1.2rem;
 }
-.contact__inTouch {
+.contact__in-touch {
   background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
   padding: 3rem;
@@ -935,7 +935,7 @@ h4, h5, h6 {
   width: 100%;
   border-radius: 1rem;
 }
-.contact__inTouch--parent {
+.contact__in-touch--parent {
   width: 100%;
   padding: 0 3rem;
   display: flex;
@@ -943,17 +943,17 @@ h4, h5, h6 {
   align-items: center;
 }
 @media screen and (max-width: 62.5em) {
-  .contact__inTouch--parent {
+  .contact__in-touch--parent {
     padding: 0 1.5rem;
   }
 }
-.contact__inTouch--form__group {
+.contact__in-touch--form__group {
   display: flex;
   margin: auto;
   height: 5rem;
   direction: ltr;
 }
-.contact__inTouch--form__group label {
+.contact__in-touch--form__group label {
   direction: ltr;
   text-align: center;
   color: #8c8c8e;
@@ -964,8 +964,8 @@ h4, h5, h6 {
   transition: 0.4s ease-in-out;
   border-radius: 1rem 0 0 1rem;
 }
-.contact__inTouch--form__group input,
-.contact__inTouch--form__group textarea {
+.contact__in-touch--form__group input,
+.contact__in-touch--form__group textarea {
   direction: ltr;
   resize: none;
   height: 100%;
@@ -978,29 +978,29 @@ h4, h5, h6 {
   transition: 0.4s ease-in-out;
   border-radius: 0 1rem 1rem 0;
 }
-.contact__inTouch--form__group input:focus-within + label,
-.contact__inTouch--form__group textarea:focus-within + label {
+.contact__in-touch--form__group input:focus-within + label,
+.contact__in-touch--form__group textarea:focus-within + label {
   background: #ffc107;
 }
-.contact__inTouch--form__group input:focus,
-.contact__inTouch--form__group textarea:focus {
+.contact__in-touch--form__group input:focus,
+.contact__in-touch--form__group textarea:focus {
   border: none;
   outline: none;
 }
-.contact__inTouch--form__group input::placeholder,
-.contact__inTouch--form__group textarea::placeholder {
+.contact__in-touch--form__group input::placeholder,
+.contact__in-touch--form__group textarea::placeholder {
   color: #646466;
 }
-.contact__inTouch--form__group.input {
+.contact__in-touch--form__group.input {
   margin-bottom: 3rem;
   direction: rtl;
 }
-.contact__inTouch--form__group.message {
+.contact__in-touch--form__group.message {
   height: 15rem;
 }
-.contact__inTouch--form__group.message input,
-.contact__inTouch--form__group.message textarea,
-.contact__inTouch--form__group.message label {
+.contact__in-touch--form__group.message input,
+.contact__in-touch--form__group.message textarea,
+.contact__in-touch--form__group.message label {
   height: 100%;
 }
 
