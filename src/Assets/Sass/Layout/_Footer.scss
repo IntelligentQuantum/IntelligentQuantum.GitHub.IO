@@ -1,0 +1,50 @@
+.footer
+{
+    padding: 0 3rem;
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 95;
+
+    @include media-1000
+    {
+        padding: 0;
+    }
+
+    &__box
+    {
+        border-radius: 1rem 1rem 0 0;
+        padding: 1.6rem 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--base-light);
+        box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+        font-size: 1.1rem;
+        font-weight: 500;
+
+        @include media-1000
+        {
+            padding: 2rem 3.5rem;
+        }
+
+        a
+        {
+            color: #8c8c8e;
+            transition: all .2s;
+            display: flex;
+            align-items: center;
+
+            svg
+            {
+                margin: 0 .5rem;
+            }
+
+            &:hover
+            {
+                color: var(--color-primary);
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.error
+{
+  position: relative;
+  z-index: 95;
+  width: 100%;
+  height: 100%;
+
+  &__header
+  {
+    position: absolute;
+    padding: 3rem;
+    height: auto;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+
+    & h1
+    {
+      font-family: sans, serif;
+      font-weight: 600;
+      text-align: center;
+      background: -webkit-linear-gradient(45deg, var(--color-primary), var(--color-primary-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    & p
+    {
+      text-align: center;
+    }
+
+    & hr
+    {
+      display: flex;
+      width: 50%;
+      border: none;
+      text-align: center;
+      border-top: 1px dashed var(--color-base-text-bold);
+      margin: 2rem auto 5rem;
+    }
+  }
+}

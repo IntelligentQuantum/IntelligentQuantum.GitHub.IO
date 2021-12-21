@@ -1,0 +1,842 @@
+{
+  "en":
+  {
+    "language": "en",
+    "myName": "im-parsa",
+    "mySkill":
+    [
+      "Full-Stack Developer",
+      "Graphic Designer"
+    ],
+    "currency": "$",
+    "dataWords": ["I build desktop and android applications.", "I build web interfaces.", "I am Node.js developer", "I am React and React Native developer"],
+    "downloadCV": "Download CV",
+    "orderNow": "Order Now",
+    "sourceCode": "Source Code",
+    "source": "Source",
+    "sendMessage": "Send Message",
+    "exploreMore": "Explore More",
+    "readMore": "Read More",
+    "blogNotFound": "This blog could not be found",
+    "phone": "Phone Number",
+    "myPhone": "+98 917070566",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "email": "Email",
+    "gmail": "Gmail",
+    "chmail": "Chmail",
+    "instagram": "Instagram",
+    "Github": "Instagram",
+    "myEmail": "hello@parsa-firoozi.ir",
+    "myGmail": "parsa.firoozi20@gmail.com",
+    "myChmail": "parsafiroozi20@chmail.ir",
+    "name": "Name",
+    "message": "Message",
+    "residence": "Residence",
+    "city": "City",
+    "age": "Age",
+    "myResidence": "Iran",
+    "myCity": "Shiraz",
+    "myAge": "17",
+    "english": "English",
+    "persian": "Persian",
+    "german": "German",
+    "home": "Home",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "blogs": "Blogs",
+    "funny": "Funny Time",
+    "error":
+    {
+      "title": "Error in request",
+      "description": "The requested page could not be found"
+    },
+    "titles":
+    [
+      "What do i make Or am i?",
+      "My Services",
+      "My Plans",
+      "Contact Information",
+      "Get in Touch",
+      "My Funny Facts",
+      "My Blogs"
+    ],
+    "headers":
+    [
+      "Happy Customers",
+      "Completed Projects",
+      "Years Experience",
+      "Honors and Awards"
+    ],
+    "categories":
+    [
+      "All Categories",
+      "Web Development",
+      "App Development",
+      "Robot Development",
+      "Graphic Design"
+    ],
+    "myBlogs":
+    [
+    ],
+    "myFunny":
+    [
+      {
+        "title": "Football",
+        "type": "football",
+        "description": "In fact I have been watching & playing football since I can remember and my favorite player is the best player in football history, Lionel Messi who has most Ballon d'Or in football and most G+A, in other side I really like Antoine Griezmann football & life style he is definitely one of the smartest players in history.\nMy favorite national team is Argentina & France and I am Barça & Juve fan."
+      },
+      {
+        "title": "Space",
+        "type": "space",
+        "description": "In fact, I love learning about space and the universe, and everything connected to it, like quantum physics, which proves a variety of dizzying theories, such as parallel universes, Continuity, singularity, time travel, black holes, and white holes."
+      },
+      {
+        "title": "Call Of Duty",
+        "type": "cod",
+        "description": "In fact, I loved playing, and it is only 'TIME' that has separated me between my love. I enjoy the series of games that the Call Of Duty brings out and Warzone was one of the best, that was wonderfully designed and it was really fun to play."
+      },
+      {
+        "title": "Music",
+        "type": "music",
+        "description": "In fact, I love listening to music, I always listen to music when I do work and it makes me feel great. I really enjoy Shadmehr Aghili's songs and voice, and it doubles my energy and makes me feel good."
+      },
+      {
+        "title": "Guitar",
+        "type": "guitar",
+        "description": "In fact, I have been playing the guitar since I was 9 years old and I love this instrument and its music. I look for the acoustic version of every song I want to listen. I have 2 concert that in Honar Aftab sallon from Navaafrin  academy."
+      },
+      {
+        "title": "My Discord",
+        "type": "discord",
+        "description": "In fact I came to Discord around 2017. I really like to be best in everything I am there and in Discord I develop the first, best, open-source, persian economy discord-bot, soo it is very enjoyable for me that I am some of the best persian Discord developer."
+      },
+      {
+        "title": "My Instagram",
+        "type": "instagram",
+        "description": "In fact I am graphic designer, too & I have to many poster of football players in my account. I came to Instagram around 2014 and I always wanted to work in social media, and the same thing happened on Instagram and I started producing content in this community."
+      }
+    ],
+    "myPlans":
+    [
+      {
+        "title": "Front-End Development",
+        "price": "29",
+        "a": "High-quality Code",
+        "b": "React.js / HTML",
+        "c": "Dedicated Support"
+      },
+      {
+        "title": "Back-End Development",
+        "price": "19",
+        "a": "High-quality code",
+        "b": "Node.js / Nest.js",
+        "c": "Dedicated Support"
+      },
+      {
+        "title": "Cross-Platform Development",
+        "price": "39",
+        "a": "Well-organized code",
+        "b": "Supports all operating systems",
+        "c": "Dedicated Support"
+      }
+    ],
+    "myServices":
+    [
+      {
+        "title": "Front-End Development",
+        "description": "Quick and professional JavaScript, HTML5 and CSS3 conversion based on current trends."
+      },
+      {
+        "title": "Back-End Development",
+        "description": "Quick and professional coding based on Express & Nest for your product."
+      },
+      {
+        "title": "Cross-Platform Development",
+        "description": "Desktop, Mobile and ... application development based on React, React Native Library."
+      }
+    ],
+    "myWorks":
+    [
+      {
+        "title": "Paraffin",
+        "tag": "web_development",
+        "description": "Paraffin website for teaching and learning with great content in various categories (programming, graphic design, games, technology, tricks)",
+        "link": "https://paraffin-tutorials.ir",
+        "img": "/img/works/paraffin-web.png"
+      },
+      {
+        "title": "Headinfo",
+        "tag": "web_development",
+        "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day (updating)",
+        "link": "https://headinfo.ir",
+        "img": "/img/works/headinfo-web.png"
+      },
+      {
+        "title": "Nava",
+        "tag": "web_development",
+        "description": "Website of the first and best Persian language music and video player with quality and support for all formats along with Discord RPC",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava-web.png"
+      },
+      {
+        "title": "random-pic.js",
+        "tag": "web_development",
+        "description": "Website and module for receiving random images in different categories and the ability to size and set limits and restrictions",
+        "link": "https://random-picjs.herokuapp.com",
+        "img": "/img/works/random-pic_js-web.png"
+      },
+      {
+        "title": "MrCheat",
+        "tag": "web_development",
+        "description": "Website for making, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games (Under Developing - Team Member)",
+        "link": "/",
+        "img": "/img/works/mrcheat-web.png"
+      },
+      {
+        "title": "Dubist",
+        "tag": "graphic_design",
+        "description": "English, Persian, German language learning website with features such as flash card and ranking (Under Developing - Team Member)",
+        "link": "/",
+        "img": "/img/works/dubist-web.png"
+      },
+      {
+        "title": "PDA",
+        "tag": "web_development",
+        "description": "The first open-source persian Discord API with high and unique quality and speed",
+        "link": "https://github.com/im-parsa/persian-discord-api",
+        "img": "/img/works/pda-web.png"
+      },
+      {
+        "title": "LiveSoccer",
+        "tag": "web_development",
+        "description": "Website to see the table of the best and biggest football leagues along with the goal difference scores and the games played",
+        "link": "https://livesoccer.herokuapp.com/",
+        "img": "/img/works/livesoccer-web.png"
+      },
+      {
+        "title": "Elite",
+        "tag": "web_development",
+        "description": "Website of Elite Discord Robot Programming Team with 2 officially verified Discord bots",
+        "link": "https://github.com/im-parsa/elite-website",
+        "img": "/img/works/elite-web.png"
+      },
+      {
+        "title": "Personal Website",
+        "tag": "web_development",
+        "description": "Open-source personal website",
+        "link": "https://github.com/im-parsa/my-personal-website",
+        "img": "/img/works/parsa-web.png"
+      },
+      {
+        "title": "Personal Website",
+        "tag": "web_development",
+        "description": "Personal website for Mr. Shadmehr",
+        "link": "https://shadmehr.info",
+        "img": "/img/works/shadmehr-web.png"
+      },
+      {
+        "title": "Wintube",
+        "tag": "app_development",
+        "description": "Desktop application for Linux/Windows/Mac for displaying YouTube videos and movies without filtering and high speed and download capability (Team Member)",
+        "link": "https://wintube.herokuapp.com",
+        "img": "/img/works/wintube-app.png"
+      },
+      {
+        "title": "Nava Video Player",
+        "tag": "app_development",
+        "description": "Video player with the support of all files, the ability of RCC, dedicated discord, etc ...",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava_video_player-app.png"
+      },
+      {
+        "title": "Nava Music Player",
+        "tag": "app_development",
+        "description": "Music player with the support of all files, the ability of RPC, dedicated discord, etc ...",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava_music_player-app.png"
+      },
+      {
+        "title": "Setar",
+        "tag": "robot_development",
+        "description": "First & Best persian music player bot in discord community (Team Member)",
+        "link": "https://github.com/SeTar-Bot",
+        "img": "/img/works/setar-bot.png"
+      },
+      {
+        "title": "Elite",
+        "tag": "robot_development",
+        "description": "Best persian security bot in discord community",
+        "link": "https://top.gg/bot/730584726401843221",
+        "img": "/img/works/elite-bot.png"
+      }
+    ]
+  },
+  "gr":
+  {
+    "language": "gr",
+    "myName": "im-parsa",
+    "mySkill":
+    [
+      "Full-Stack-Entwickler",
+      "Grafikdesigner"
+    ],
+    "currency": "€",
+    "sendMessage": "Nachricht Senden",
+    "sourceCode": "Quell Code",
+    "source": "Quell",
+    "message": "Nachricht",
+    "exploreMore": "JETZT ENTDECKEN",
+    "downloadCV": "Lebenslauf HERUNTERLADEN",
+    "readMore": "Weiterlesen",
+    "blogNotFound": "Der Blog konnte nicht gefunden werden",
+    "phone": "Telefon Nummer",
+    "myPhone": "+98 917070566",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "email": "Email",
+    "gmail": "Gmail",
+    "chmail": "Chmail",
+    "myEmail": "hello@parsa-firoozi.ir",
+    "myGmail": "parsa.firoozi20@gmail.com",
+    "myChmail": "parsafiroozi20@chmail.ir",
+    "name": "Name",
+    "myResidence": "Iran",
+    "myCity": "Shiraz",
+    "myAge": "17",
+    "dataWords": ["I build desktop and android applications.", "I build web interfaces.", "I am Node.js developer", "I am React and React Native developer"],
+    "residence": "Residenz",
+    "city": "Stadt",
+    "age": "Alter",
+    "english": "Englisch",
+    "persian": "Persisch",
+    "german": "Deutsch",
+    "home": "Heimat",
+    "contact": "Kontakt",
+    "portfolio": "Portfolio",
+    "blogs": "Blogs",
+    "funny": "Lustige Zeit",
+    "error":
+    {
+      "title": "Fehler bei der Anfrage",
+      "description": "Die angeforderte Seite konnte nicht gefunden werden"
+    },
+    "titles":
+    [
+      "Was mache ich oder bin ich?",
+      "Meine Dienstleistungen",
+      "Meine Pläne",
+      "Kontakt Informationen",
+      "In Kontakt Kommen",
+      "Meine lustigen Fakten",
+      "Meine Blogs"
+    ],
+    "myBlogs":
+    [
+    ],
+    "orderNow": "Jetzt Bestellen",
+    "headers":
+    [
+      "Zufriedene Kunden",
+      "Fertige Projekte",
+      "Jahre Erfahrung",
+      "Ehren und Auszeichnungen"
+    ],
+    "categories":
+    [
+      "Alle Kategorien",
+      "Web Entwicklung",
+      "App Entwicklung",
+      "Roboter Entwicklung",
+      "Grafik Design"
+    ],
+    "myFunny":
+    [
+      {
+        "title": "Fußball",
+        "type": "football",
+        "description": "Tatsächlich schaue und spiele ich Fußball seit ich denken kann und mein Lieblingsspieler ist der beste Spieler in der Fußballgeschichte, Lionel Messi, der die meisten Ballon d'Or im Fußball und die meisten G+A hat, auf der anderen Seite Ich mag Antoine Griezmanns Fußball und seinen Lebensstil sehr, er ist definitiv einer der klügsten Spieler der Geschichte.\nMeine Lieblingsnationalmannschaft sind Argentinien und Frankreich und ich bin Barça- und Juve-Fan."
+      },
+      {
+        "title": "Platz",
+        "type": "space",
+        "description": "Eigentlich liebe ich es, über den Weltraum und das Universum zu lernen und alles, was damit zusammenhängt, wie die Quantenphysik, die eine Vielzahl von schwindelerregenden Theorien beweist, wie Paralleluniversen, Kontinuität, Singularität, Zeitreisen, Schwarze Löcher, und weiße Löcher."
+      },
+      {
+        "title": "Ruf der Pflicht",
+        "type": "cod",
+        "description": "Tatsächlich habe ich es geliebt zu spielen, und nur die ZEIT hat mich zwischen meiner Liebe getrennt. Ich genieße die Reihe von Spielen, die Call Of Duty herausbringt, und Warzone war eines der besten, das war wunderbar gestaltet und es hat wirklich Spaß gemacht zu spielen."
+      },
+      {
+        "title": "Musik",
+        "type": "music",
+        "description": "Eigentlich höre ich sehr gerne Musik, ich höre immer Musik, wenn ich arbeite, und es gibt mir ein tolles Gefühl. Ich mag Shadmehr Aghilis Lieder und Stimme wirklich, und es verdoppelt meine Energie und gibt mir ein gutes Gefühl. "
+      },
+      {
+        "title": "Gitarre",
+        "type": "guitar",
+        "description": "Tatsächlich spiele ich Gitarre seit ich 9 Jahre alt bin und ich liebe dieses Instrument und seine Musik. Ich suche die akustische Version jedes Liedes, das ich hören möchte. Ich habe 2 Konzerte in Honar Aftab-Salon von der Navaafrin-Akademie."
+      },
+      {
+        "title": "Mein Discord",
+        "type": "discord",
+        "description": "Eigentlich bin ich um 2017 zu Discord gekommen. Ich mag es wirklich, in allem, was ich dort habe, der Beste zu sein und in Discord entwickle ich den ersten, besten, quelloffenen, persischen Wirtschafts-Discord-Bot, also macht es sehr viel Spaß für mich, dass ich einer der besten persischen Discord-Entwickler bin."
+      },
+      {
+        "title": "Mein Instagram",
+        "type": "instagram",
+        "description": "Eigentlich bin ich auch Grafikdesigner und habe zu viele Poster von Fußballspielern in meinem Account. Ich bin um 2014 zu Instagram gekommen und wollte immer in sozialen Medien arbeiten, und das gleiche passierte auf Instagram und Ich habe angefangen, Inhalte in dieser Community zu produzieren."
+      }
+    ],
+    "myPlans":
+    [
+      {
+        "title": "Front-End Entwicklung",
+        "price": "29",
+        "a": "Hochwertiger Code",
+        "b": "React.js / HTML",
+        "c": "Engagierte Unterstützung"
+      },
+      {
+        "title": "Back-End Entwicklung",
+        "price": "19",
+        "a": "Hochwertiger Code",
+        "b": "Node.js / Nest.js",
+        "c": "Engagierte Unterstützung"
+      },
+      {
+        "title": "Plattformübergreifende Entwicklung",
+        "price": "39",
+        "a": "Gut-Organisierter Code",
+        "b": "Unterstützt alle Betriebssysteme",
+        "c": "Engagierte Unterstützung"
+      }
+    ],
+    "myServices":
+    [
+      {
+        "title": "Front-End Entwicklung",
+        "description": "Schnelle und professionelle JavaScript-, HTML5- und CSS3-Konvertierung nach aktuellen Trends."
+      },
+      {
+        "title": "Back-End Entwicklung",
+        "description": "Schnelle und professionelle Programmierung basierend auf Express & Nest für Ihr Produkt."
+      },
+      {
+        "title": "Plattformübergreifende Entwicklung",
+        "description": "Desktop-, Mobil- und ... Anwendungsentwicklung basierend auf React, React Native Library."
+      }
+    ],
+    "myWorks":
+    [
+      {
+        "title": "Paraffin",
+        "tag": "web_development",
+        "description": "Paraffin-Website zum Lehren und Lernen mit tollen Inhalten in verschiedenen Kategorien (Programmierung, Grafikdesign, Spiele, Technik, Tricks)",
+        "link": "https://paraffin-tutorials.ir",
+        "img": "/img/works/paraffin-web.png"
+      },
+      {
+        "title": "Headinfo",
+        "tag": "web_development",
+        "description": "Website für alltägliche Aufgaben und leicht zu erledigende Aufgaben, mit denen Sie sich tagsüber viel beschäftigen (Aktualisierung)",
+        "link": "https://headinfo.ir",
+        "img": "/img/works/headinfo-web.png"
+      },
+      {
+        "title": "Nava",
+        "tag": "web_development",
+        "description": "Website des ersten und besten persischen Musik- und Videoplayers mit Qualität und Unterstützung für alle Formate zusammen mit RPC Discord",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava-web.png"
+      },
+      {
+        "title": "random-pic.js",
+        "tag": "web_development",
+        "description": "Website und Anwendungsmodul zum Empfangen von Zufallsbildern in verschiedenen Kategorien und der Möglichkeit, Größen und Grenzen und Beschränkungen festzulegen",
+        "link": "https://random-picjs.herokuapp.com",
+        "img": "/img/works/random-pic_js-web.png"
+      },
+      {
+        "title": "MrCheat",
+        "tag": "web_development",
+        "description": "Website zum Erstellen, Entwickeln und Verkaufen aller Arten von Cheats und Cheats in verschiedenen Spielen wie Counter, Zola, CS Go und den meisten anderen Shooter-Spielen (im Aufbau - Teammitglied)",
+        "link": "/",
+        "img": "/img/works/mrcheat-web.png"
+      },
+      {
+        "title": "Dubist",
+        "tag": "graphic_design",
+        "description": "Englisch, Persisch, Deutsch-Sprachlernwebsite mit Funktionen wie Lernkarte und Ranking (im Aufbau - Teammitglied)",
+        "link": "/",
+        "img": "/img/works/dubist-web.png"
+      },
+      {
+        "title": "PDA",
+        "tag": "web_development",
+        "description": "Der erste dediziert persischsprachige Webservice in Form von Open Source mit hoher Qualität und beispielloser Geschwindigkeit",
+        "link": "https://github.com/im-parsa/persian-discord-api",
+        "img": "/img/works/pda-web.png"
+      },
+      {
+        "title": "LiveSoccer",
+        "tag": "web_development",
+        "description": "Website, um die Tabelle der besten und größten Fußballligen mit Tordifferenzergebnissen und gespielten Spielen zu sehen",
+        "link": "https://livesoccer.herokuapp.com/",
+        "img": "/img/works/livesoccer-web.png"
+      },
+      {
+        "title": "Elite",
+        "tag": "web_development",
+        "description": "Website der Elite Discord Robot Programming Company mit 2 offiziell verifizierten Discord-Bots",
+        "link": "https://github.com/im-parsa/elite-website",
+        "img": "/img/works/elite-web.png"
+      },
+      {
+        "title": "Persönliche Website",
+        "tag": "web_development",
+        "description": "Open-Source-persönliche Website",
+        "link": "https://github.com/im-parsa/my-personal-website",
+        "img": "/img/works/parsa-web.png"
+      },
+      {
+        "title": "Persönliche Website",
+        "tag": "web_development",
+        "description": "Persönliche Website für Herrn Shadmehr",
+        "link": "https://shadmehr.info",
+        "img": "/img/works/shadmehr-web.png"
+      },
+      {
+        "title": "Wintube",
+        "tag": "app_development",
+        "description": "Desktop-Anwendung mit Linux / Windows / Mac-Unterstützung zum Anzeigen von YouTube-Videos und -Filmen ohne Filterung und Hochgeschwindigkeits- und Download-Fähigkeit (Teammitglied)",
+        "link": "https://wintube.herokuapp.com",
+        "img": "/img/works/wintube-app.png"
+      },
+      {
+        "title": "Nava-Video-Player",
+        "tag": "app_development",
+        "description": "Video mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava_video_player-app.png"
+      },
+      {
+        "title": "Nava-Music-Player",
+        "tag": "app_development",
+        "description": "Musik mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava_music_player-app.png"
+      },
+      {
+        "title": "Setar",
+        "tag": "robot_development",
+        "description": "Der erste und beste offizielle Songplayer und verifizierte Zwietracht (Teammitglied)",
+        "link": "https://github.com/SeTar-Bot",
+        "img": "/img/works/setar-bot.png"
+      },
+      {
+        "title": "Elite",
+        "tag": "robot_development",
+        "description": "Der beste und beliebteste Roboter für Sicherheit und Sicherheit der offiziellen und verifizierten offiziellen Zwietracht",
+        "link": "https://top.gg/bot/730584726401843221",
+        "img": "/img/works/elite-bot.png"
+      }
+    ]
+  },
+  "pr":
+  {
+    "language": "pr",
+    "myName": "پارسا",
+    "mySkill":
+    [
+      "توسعه دهنده فول استک",
+      "طراح گرافیک"
+    ],
+    "currency": "ریال",
+    "dataWords": ["من اپلیکیشن دسکتاپ و اندروید توسعه میدهم.", "من رابط کاربری وبسایت هارا توسعه میدهم.", "من یک توسعه دهند Node.js هستم.", "من یک توسعه دهنده React و React Native هستم."],
+    "downloadCV": "دانلود رزومه",
+    "sendMessage": "ارسال پیام",
+    "sourceCode": "منبع کد",
+    "source": "منبع",
+    "readMore": "بیشتر بخوانید",
+    "phone": "شماره تلفن",
+    "createdAt": "تاریخ ساخت",
+    "blogNotFound": "بلاگ مورد نظر یافت نشد",
+    "myPhone": "09170700566",
+    "whatsapp": "واتساپ",
+    "telegram": "تلگرام",
+    "email": "ایمیل",
+    "gmail": "جیمیل",
+    "chmail": "چیمیل",
+    "myEmail": "hello@parsa-firoozi.ir",
+    "myGmail": "parsa.firoozi20@gmail.com",
+    "myChmail": "parsafiroozi20@chmail.ir",
+    "name": "نام",
+    "message": "پیام",
+    "exploreMore": "پروژه ها",
+    "orderNow": "سفارش",
+    "residence": "محل اقامت",
+    "city": "شهر",
+    "age": "سن",
+    "myResidence": "ایران",
+    "myCity": "شیراز",
+    "myAge": "17",
+    "english": "انگلیسی",
+    "persian": "فارسی",
+    "german": "آلمانی",
+    "home": "خانه",
+    "contact": "تماس",
+    "portfolio": "نمونه کار ها",
+    "blogs": "بلاگ ها",
+    "funny": "حقایق جالب",
+    "error":
+    {
+      "title": "خطا در درخواست",
+      "description": "صفحه مورد نظر یافت نشد"
+    },
+    "titles":
+    [
+      "من کی هستم و چکار میکنم؟",
+      "خدمات من",
+      "پکیج های من",
+      "اطلاعات تماس",
+      "با من در تماس باش",
+      "حقایق جالب من",
+      "بلاگ های من"
+    ],
+    "headers":
+    [
+      "مشتریان راضی",
+      "پروژه های تمام شده",
+      "سال تجربه",
+      "جوایز و عنواین"
+    ],
+    "categories":
+    [
+      "تمام گروه ها",
+      "توسعه وب",
+      "توسعه اپلیکیشن",
+      "توسعه ربات",
+      "طراحی گرافیک"
+    ],
+    "myBlogs":
+    [
+      {
+        "name": "geometry_similarity_triangle_1",
+        "description": "اثبات قضیه تشابه مثلث ها ۱",
+        "createdAt": "1639673079877",
+        "source": "تمام مطالب کتب معتبر هندسه",
+        "img": "/img/blogs/background_math.webp",
+        "content": "سلام"
+      },
+      {
+        "name": "geometry_similarity_triangle_2",
+        "description": "اثبات قضیه تشابه مثلث ها ۲",
+        "createdAt": "1639673079877",
+        "source": "تمام مطالب کتب معتبر هندسه",
+        "img": "/img/blogs/background_math.webp",
+        "content": "سلام"
+      },
+      {
+        "name": "geometry_similarity_triangle_3",
+        "description": "اثبات قضیه تشابه مثلث ها ۳",
+        "createdAt": "1639673079877",
+        "source": "تمام مطالب کتب معتبر هندسه",
+        "img": "/img/blogs/background_math.webp",
+        "content": "سلام"
+      }
+    ],
+    "myFunny":
+    [
+      {
+        "title": "فوتبال",
+        "type": "football",
+        "description": "من از وقتی که یادم می آید عاشق بازی کردن و دیدن فوتبال بودم. بازیکن مورد علاقه من بهترین بازیکن تاریخ فوتبال هست کسی که بیشترین توپ طلا را دارد و بیشترین گل + پاس گل را دارد همچنین از سبک بازی و زندگی شخصی گریزمان خیلی خوشم می آید او صد در صد یکی از برترین و باهوش ترین هافبک های تهاجمی فوتبال است. و تیم های مورد علاقه من آرژانتین - فرانسه و بارسلونا - یوونتوس است."
+      },
+      {
+        "title": "کیهان",
+        "type": "space",
+        "description": "من همیشه از یادگیری درباره فضا و کیهان لذت میبردم و همچنین فیزیک کوآنتوم که نظریه های سرگیجه آوری را اثبات میکند مانند جهان های موازی، شیاه چاله ها و سفید چاله ها، تکینگی، پیوستگی."
+      },
+      {
+        "title": "کال آف دیوتی",
+        "type": "cod",
+        "description": "منم از بازی کردن خیلی لذت میبرم و تنها زمان است که بین من و بازی کردن فاصله انداخته. کال آف دیوتی بهترین بازی های شوتر را میسازد و یکی از بهترین های ان وارزون است که بازی کردنش بسیار لذت بخش و هیجان انگیز است."
+      },
+      {
+        "title": "آهنگ",
+        "type": "music",
+        "description": "من همیشه موقع کارم آهنگ گوش میدهم زیرا به من حس بسیار خوبی میدهد چه بسا آهنگ شادمهر عقیلی باشد آن وقت انرژیم هم چند برابر میشود به راستی بازگشت همه به سوی اوست و آهنگی جز او سو تفاهم است."
+      },
+      {
+        "title": "گیتار",
+        "type": "guitar",
+        "description": "گیتار ساز محبوب من است و از نظر من بهترین بهترین ساز. از ۹ سالگی به دنبال یادگیری گیتار بودم و ۲ کنسرت در سالن هنر آفتاب شیراز با آکادمی نواآفرین برگذار کرده ام. هر آهنگی که بخواهم گوش بدهم اول به دنبال ورژن آکوستیک آن میگردم زیرا از ریتمی که با گیتار درست میشود بیشتر لذت میبرم و انرژی میگیرم."
+      },
+      {
+        "title": "دیسکورد من",
+        "type": "discord",
+        "description": "من از ۲۰۱۷ وارد دیسکورد شدم و از عادت همیشه ام دوست داشتم بهترین هر جایی باشم و با یادگیری ماژول ها و لایبری های دیسکورد توانستم دو ربات تایید شده دیسکورد را توسعه دهم و در تیم بهترین ربات های دیسکورد باشم."
+      },
+      {
+        "title": "اینستاگرام من",
+        "type": "instagram",
+        "description": "من از سال ۲۰۱۴ وارد اینستاگرام شده با اینکه اوایل فعالیت خاصی نمیکردم ولی از علاقه ام در فعالیت در فضای مجازی چند سال است که طرح های گرافیکی ام را در آنجا به اشتراک میگذارم."
+      }
+    ],
+    "myPlans":
+    [
+      {
+        "title": "توسعه فرانت-اند",
+        "price": "7,900,000",
+        "a": "کد کیفیت بالا",
+        "b": "React.js / HTML",
+        "c": "پشتیبانی اختصاصی"
+      },
+      {
+        "title": "توسعه بک-اند",
+        "price": "5,900,000",
+        "a": "کد کیفیت بالا",
+        "b": "Node.js / Nest.js",
+        "c": "پشتیبانی اختصاصی"
+      },
+      {
+        "title": "توسعه کراس-پلتفورم",
+        "price": "9,900,000",
+        "a": "کد سازماندهی شده",
+        "b": "پشتیبانی از تمامی سیستم عامل ها",
+        "c": "پشتیبانی اختصاصی"
+      }
+    ],
+    "myServices":
+    [
+      {
+        "title": "توسعه فرانت-اند",
+        "description": "توسعه سریع و بی نقص وبسایت با HTML5، CSS3، JS"
+      },
+      {
+        "title": "توسعه بک-اند",
+        "description": "توسعه سریع و بی نقص بک-اند وبسایت با Express، Nest، Next"
+      },
+      {
+        "title": "توسعه کراس-پلتفورم",
+        "description": "برنامه های دسکتاپ، اندورید، آی او اس ساخته شده با React، React Native"
+      }
+    ],
+    "myWorks":
+    [
+      {
+        "title": "پارافین",
+        "tag": "web_development",
+        "description": "پارافین وبسایت آموزش و یادگیری با مطالب فوق العاده در دسته بندی ها مختلف (برنامه نویسی، طراحی گرافیک، بازی، تکنولوژی، ترفند)",
+        "link": "https://paraffin-tutorials.ir",
+        "img": "/img/works/paraffin-web.png"
+      },
+      {
+        "title": "Headinfo",
+        "tag": "web_development",
+        "description": "وبسایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (درحال بروزرسانی)",
+        "link": "https://headinfo.ir",
+        "img": "/img/works/headinfo-web.png"
+      },
+      {
+        "title": "نوآ",
+        "tag": "web_development",
+        "description": "وب سایت اولین و برترین موزیک و ویدیو پلیر فارسی زبان با کیفیت و پشتیبانی تمامی فرمت ها به همراه آر پی سی دیسکورد",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava-web.png"
+      },
+      {
+        "title": "random-pic.js",
+        "tag": "web_development",
+        "description": "وبسایت و ماژولی کاربردی برای دریافت تصاویر تصادفی در دسته بندی های مختلف و قابلیت سایز بندی و گذاشتن لیمیت و محدودیت",
+        "link": "https://random-picjs.herokuapp.com",
+        "img": "/img/works/random-pic_js-web.png"
+      },
+      {
+        "title": "MrCheat",
+        "tag": "web_development",
+        "description": "وبسایت ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت - عضو تیم)",
+        "link": "/",
+        "img": "/img/works/mrcheat-web.png"
+      },
+      {
+        "title": "Dubist",
+        "tag": "graphic_design",
+        "description": "وبسایت آموزش زبان انگلیسی، فارسی، آلمانی به همراه قابلیت هایی نظیر فلش کارت و رنک بندی (در دست ساخت - عضو تیم)",
+        "link": "/",
+        "img": "/img/works/dubist-web.png"
+      },
+      {
+        "title": "PDA",
+        "tag": "web_development",
+        "description": "اولین وب سرویس اختصاصی فارسی زبان دیسکورد به صورت اوپن سورس با کیفیت و سرعتی بالا و بی نظیر",
+        "link": "https://github.com/im-parsa/persian-discord-api",
+        "img": "/img/works/pda-web.png"
+      },
+      {
+        "title": "LiveSoccer",
+        "tag": "web_development",
+        "description": "وبسایتی برای دیدن جدول برترین و بزرگ ترین لیگ های فوتبال به همراه امتیازات تفاضل گل و بازی های انجام شده",
+        "link": "https://livesoccer.herokuapp.com/",
+        "img": "/img/works/livesoccer-web.png"
+      },
+      {
+        "title": "Elite",
+        "tag": "web_development",
+        "description": "وبسایت شرکت الایت تیم برنامه نویسی ربات های دیسکورد با ۲ بات وریفای شده رسمی دیسکورد",
+        "link": "https://github.com/im-parsa/elite-website",
+        "img": "/img/works/elite-web.png"
+      },
+      {
+        "title": "وبسایت شخصی",
+        "tag": "web_development",
+        "description": "وبسایت شخصی اوپن سورس",
+        "link": "https://github.com/im-parsa/my-personal-website",
+        "img": "/img/works/parsa-web.png"
+      },
+      {
+        "title": "وبسایت شخصی",
+        "tag": "web_development",
+        "description": "وبسایت شخصی برای آقای شادمهر",
+        "link": "https://shadmehr.info",
+        "img": "/img/works/shadmehr-web.png"
+      },
+      {
+        "title": "Wintube",
+        "tag": "app_development",
+        "description": "اپلیکیشنی برای دسکتاپ قابلیت پشتیبانی لینوکس/ویندوز/مک برای نمایش ویدیو و فیلم های یوتیوب بدون فیلتر و سرعت بالا و قبالیت دانلود (عضو تیم)",
+        "link": "https://wintube.herokuapp.com",
+        "img": "/img/works/wintube-app.png"
+      },
+      {
+        "title": "پخش کننده ویدیو نوآ",
+        "tag": "app_development",
+        "description": "پخش کننده ویدیو و فیلم با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava_video_player-app.png"
+      },
+      {
+        "title": "پخش کننده آهنگ نوآ",
+        "tag": "app_development",
+        "description": "پخش کننده موزیک و آهنگ با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
+        "link": "https://nava-org.herokuapp.com",
+        "img": "/img/works/nava_music_player-app.png"
+      },
+      {
+        "title": "ستار",
+        "tag": "robot_development",
+        "description": "اولین و برترین ربات پخش کننده آهنگ و وریفای شده رسمی دیسکورد (عضو تیم)",
+        "link": "https://github.com/SeTar-Bot",
+        "img": "/img/works/setar-bot.png"
+      },
+      {
+        "title": "Elite",
+        "tag": "robot_development",
+        "description": "برترین و محبوب ترین ربات سکوریتی و امنیت سرور و وریفای شده رسمی دیسکورد",
+        "link": "https://top.gg/bot/730584726401843221",
+        "img": "/img/works/elite-bot.png"
+      }
+    ]
+  }
+}

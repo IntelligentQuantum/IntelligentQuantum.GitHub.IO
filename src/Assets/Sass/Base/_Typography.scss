@@ -1,0 +1,63 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+@font-face
+{
+    font-family: 'yekan';
+    src: url('../../Fonts/yekan/IRANYekanWeb.eot');
+    src: url('../../Fonts/yekan/IRANYekanWeb.svg') format('svg'),
+    url('../../Fonts/yekan/IRANYekanWeb.woff2') format('woff2'),
+    url('../../Fonts/yekan/IRANYekanWeb.woff') format('woff'),
+    url('../../Fonts/yekan/IRANYekanWeb.ttf') format('truetype');
+}
+
+.heading
+{
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    z-index: 92;
+    position: relative;
+
+    @include media-1000
+    {
+        padding: 1.5rem;
+    }
+
+    &__small
+    {
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 0 3rem 2rem;
+
+        @include media-1000
+        {
+            display: block;
+            text-align: center;
+        }
+
+        li
+        {
+            transition: 0.4s ease-in-out;
+            color: #8c8c8e;
+            margin-right: 1rem;
+            cursor: pointer;
+
+            &:hover
+            {
+                color: #fafafc;
+            }
+
+            &.active
+            {
+                color: #fafafc;
+                text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
+            }
+
+            @include media-1000
+            {
+                margin: 1rem 0;
+            }
+        }
+    }
+}
