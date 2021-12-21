@@ -1,11 +1,11 @@
 <h1 align="center">
-    <img width="200px" src="https://parsa-firoozi.ir/favicon.png"/>
+    <img width="200px" src="https://parsa-firoozi.ir/favicon.png" alt="parsa-firoozi im-parsa"/>
     <br/>
     My Personal Website ( portfolio )
 </h1>
 
 <div align="center">
-    <img width="200px" src="https://github.com/im-parsa/im-parsa.github.io/blob/im-parsa.github.io/screenshot.png?raw=true"/>
+    <img src="https://github.com/im-parsa/im-parsa.github.io/blob/im-parsa.github.io/screenshot.png?raw=true" alt="parsa-firoozi im-parsa"/>
 </div>
 
 <p align="center">Personal website that written in React.js & its user interface design is like apps</p>
