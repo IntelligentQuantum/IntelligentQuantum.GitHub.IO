@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Switch ,Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom'
 import { HandleLanguage, HandleTheme, GetParameterByName } from "./Utils/Utils.service";
 
 import Home from './Pages/Home/Home.component';
@@ -38,16 +38,16 @@ const App = () =>
     }, [LanguageParam]);
 
     return (
-        <Switch>
-            <Route exact path="/" component={ Home } />
-            <Route exact path="/contact" component={ Contact } />
-            <Route exact path="/portfolio" component={ Portfolio } />
-            <Route exact path="/funny" component={ Funny } />
-            <Route exact path="/blogs/:name" component={ BlogView } />
-            <Route exact path="/blogs" component={ Blog } />
+        <Routes>
+            <Route path="/" element={ <Home /> } />
+            <Route path="contact" element={ <Contact /> } />
+            <Route path="portfolio" element={ <Portfolio /> } />
+            <Route path="funny" element={ <Funny /> } />
+            <Route path="blogs/:name" element={ <BlogView /> } />
+            <Route path="blogs" element={ <Blog /> } />
 
-            <Route path="*" component={ Error } />
-        </Switch>
+            <Route path="*" element={ <Error /> } />
+        </Routes>
     );
 }
 
