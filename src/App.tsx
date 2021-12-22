@@ -29,8 +29,6 @@ const App = () =>
             case 'pr':
                 localStorage.setItem("language", "pr");
                 break;
-            default:
-                localStorage.setItem("language", "en");
         }
 
         HandleTheme(localStorage.getItem('theme') || 'light', false)
