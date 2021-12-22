@@ -1,5 +1,8 @@
 node_modules
+build
 
-# Idea
+package-lock.json
+LICENSE
+
 .idea
 .vscode

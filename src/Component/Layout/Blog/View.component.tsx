@@ -1,11 +1,12 @@
 import React  from "react";
 import Moment  from "moment";
+import { Helmet } from "react-helmet";
+import ReactHtmlParser from 'html-react-parser';
+
 import 'moment/locale/en-gb';
 import 'moment/locale/de';
 import 'moment/locale/fa';
-import ReactMarkdown from 'react-markdown'
 import Error from "../../UI/Error.component";
-import {Helmet} from "react-helmet";
 
 const BlogView = (props: any) =>
 {
@@ -76,7 +77,7 @@ const BlogView = (props: any) =>
                         </span>
                         </div>
                         <article className="blog__view--card">
-                            <ReactMarkdown>{props.blog.content}</ReactMarkdown>
+                            {ReactHtmlParser(props.blog.content)}
                         </article>
                     </section>
                     <div className="hr"/>
