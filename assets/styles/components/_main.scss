@@ -1,0 +1,90 @@
+.main
+{
+    grid-template: main-start / main-end;
+    display: grid;
+    grid-template-rows: [content-start] 1fr [content-end footer-start] 5rem [footer-end];
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background: rgba(30, 30, 40, 0.88);
+    position: relative;
+    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    & .footer
+    {
+        grid-row: footer-start / footer-end;
+    }
+
+    &__content
+    {
+        grid-row: content-start / content-end;
+        height: 100%;
+    }
+
+    &__background
+    {
+        background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.95) 0%, rgba(30, 30, 40, 0.96) 70%, rgba(30, 30, 40, 0.99) 80%, #1e1e28 100%), url("../../images/background-2.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 40rem;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+    }
+
+    @include media-1000
+    {
+        height: 100%;
+        padding-top: 6rem;
+    }
+}
+
+html[data-language='pr']
+{
+    & .aside
+    {
+        @include media-1000
+        {
+            left: auto;
+            right: -100%;
+
+            & .aside__footer
+            {
+                left: auto;
+                right: 0;
+            }
+        }
+
+        &__user--icon svg
+        {
+            right: auto;
+            left: 2rem;
+        }
+
+        &.open
+        {
+            transition: .4s;
+            right: 0;
+        }
+    }
+    & .nav
+    {
+        @include media-1000
+        {
+            right: auto;
+            left: -100%;
+        }
+
+        &.open
+        {
+            transition: .4s;
+            left: 0;
+        }
+    }
+}

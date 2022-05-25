@@ -1,0 +1,359 @@
+.funny
+{
+  height: auto;
+  width: 100%;
+
+  &__header
+  {
+    position: relative;
+    padding: 0 3rem;
+
+    @include media-1000
+    {
+      padding: 1.5rem;
+    }
+
+    &--content
+    {
+      position: relative;
+      border-radius: 1rem;
+      margin-bottom: 8rem;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 35rem;
+      padding: 6rem 3rem 0 6rem;
+      display: flex;
+      justify-content: space-between;
+
+      &.football
+      {
+        background-image: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url("../../images/football_bg.jpg");
+      }
+      &.instagram
+      {
+        padding: 6rem 3rem 6rem 6rem;
+        background-image: radial-gradient(rgba(26, 29, 38, 0.7) 0%, rgba(26, 26, 33, 0.8) 10%, rgba(24, 24, 31, 0.9) 50%, rgba(29, 29, 40, 0.95) 80%), url("../../images/backgroud_ig.jpg");
+      }
+      &.discord
+      {
+        padding: 6rem 3rem 6rem 6rem;
+        background-image: radial-gradient(rgba(26, 29, 38, 0.7) 0%, rgba(26, 26, 33, 0.8) 10%, rgba(24, 24, 31, 0.9) 50%, rgba(29, 29, 40, 0.95) 80%), url("../../images/background_discord.png");
+      }
+      &.cod
+      {
+        background-image: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url("../../images/backgroud_cod.png");
+      }
+      &.music
+      {
+        background-image: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url("../../images/backgroud_music.jpg");
+      }
+      &.guitar
+      {
+        background-image: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url("../../images/backgroud_guitar.jpg");
+      }
+      &.space
+      {
+        background-image: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url("../../images/backgroud_space.jpg");
+      }
+
+      @include media-1400
+      {
+        height: auto;
+        padding: 4rem 4rem 0;
+      }
+
+      @include media-1300
+      {
+        margin-bottom: 3rem;
+      }
+
+      @include media-1000
+      {
+        margin: 0;
+      }
+
+      h1
+      {
+        color: var(--color-base-text-bolder);
+        font-size: 4rem;
+
+        @include media-1400
+        {
+          font-size: 3rem;
+        }
+      }
+
+      &__box
+      {
+        width:55%;
+
+        @include media-1300
+        {
+          width: 45%;
+        }
+
+        @include media-1200
+        {
+          width: 100%;
+        }
+      }
+
+      &__description
+      {
+        color: var(--color-base-text-bold);
+        font-size: 2rem;
+        font-weight: 400;
+        display: flex;
+        margin: auto auto 0;
+
+        @include media-1400
+        {
+          margin-bottom: 4rem;
+          font-size: 1.5rem;
+        }
+
+        &.instagram,
+        &.discord
+        {
+          margin: 0;
+        }
+      }
+
+      &__images
+      {
+        width: 40%;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        height: auto;
+
+        &--img
+        {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+
+          .two,
+          .three,
+          .four
+          {
+            max-width: 31rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transition: 0.4s ease-in-out;
+            z-index: 92;
+
+            @include media-1400
+            {
+              max-width: 80%;
+            }
+          }
+
+          .three,
+          .four
+          {
+            right: 0 !important;
+            max-width: 40rem;
+
+            @include media-1400
+            {
+              max-width: 90%;
+            }
+          }
+
+          .four
+          {
+            margin-bottom: 1rem;
+          }
+
+          .one
+          {
+            filter: blur(3px);
+            max-width: 29rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transition: 0.4s ease-in-out;
+            z-index: 92;
+
+            @include media-1400
+            {
+              max-width: 70%;
+            }
+
+            &:hover
+            {
+              filter: blur(0);
+              max-width: 31rem;
+
+              @include media-1400
+              {
+                max-width: 80%;
+              }
+            }
+
+            &:hover + .two
+            {
+              filter: blur(3px);
+              max-width: 29rem;
+
+              @include media-1400
+              {
+                max-width: 70%;
+              }
+            }
+          }
+
+          &.hover img:hover
+          {
+            animation: Scale .6s ease-in-out;
+            z-index: 93;
+          }
+
+          img:last-child
+          {
+            right: 12rem;
+
+            @include media-1400
+            {
+              right: 5rem;
+            }
+
+            &:hover
+            {
+              animation: none;
+            }
+          }
+
+          &__instagram
+          {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            img
+            {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 20rem;
+              height: 20rem;
+            }
+          }
+
+          &__discord
+          {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            img
+            {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              height: 20rem;
+            }
+          }
+        }
+
+        @include media-1400
+        {
+          width: 30%;
+        }
+        @include media-1200
+        {
+          display: none;
+        }
+      }
+
+      @include media-1000
+      {
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        h1
+        {
+          font-size: 3rem;
+          padding-bottom: 2rem;
+        }
+
+        a
+        {
+          align-self: initial;
+        }
+
+        &__description
+        {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+html[data-language='pr']
+{
+  .funny
+  {
+    height: auto;
+    width: 100%;
+
+    &__header
+    {
+      &--content
+      {
+        &__images
+        {
+          left: 0;
+          right: auto;
+
+          &--img
+          {
+            left: 0;
+            right: auto;
+
+            .two,
+            .three,
+            .four
+            {
+              left: 0;
+              right: auto;
+            }
+
+            .three,
+            .four
+            {
+              left: 0 !important;
+              right: auto !important;
+            }
+
+            .one
+            {
+              left: 0;
+              right: auto;
+            }
+
+            img:last-child
+            {
+              right: auto;
+              left: 12rem;
+
+              @include media-1400
+              {
+                left: 5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
