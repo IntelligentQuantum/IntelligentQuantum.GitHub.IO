@@ -1,6 +1,6 @@
 import ButtonSecondary from '../buttons/secondary-button.component';
 
-const BlogCard = (props: { text: string, blog: { img: string, name: string, description: string }}) =>
+const BlogCard = (props: { text: string, blog: { image: string, name: string, description: string }}) =>
 {
     return (
         <div className='blog__item active'>

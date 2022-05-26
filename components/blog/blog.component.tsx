@@ -1,17 +1,14 @@
 import Card from './card.component';
 
-import data from '../../assets/data/data.json';
-
 const Blog = (props: any) =>
 {
-    const language: 'en' | 'de' | 'fa' = props?.content?.language;
-    const cards = data[language].myBlogs.map((blog: any, i: number) =>
+    const cards = props?.content?.my_blogs.map((blog: any, i: number) =>
         {
             return (
                 <Card
                     key={i}
                     blog={blog}
-                    text={props?.content?.readMore}
+                    text={props?.content?.read_more}
                 />
             );
         }

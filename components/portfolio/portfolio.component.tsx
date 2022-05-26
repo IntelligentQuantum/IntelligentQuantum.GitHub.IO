@@ -10,14 +10,13 @@ import { setTagPortfolio } from '../../app/portfolio/portfolio.actions';
 const Portfolio = (props: any) =>
 {
     const dispatch = useDispatch();
-    const language: 'en' | 'de' | 'fa' = props?.content?.language;
-    const cards = data[language]?.myPortfolio?.map((portfolio: any, i: number) =>
+    const cards = props?.content?.my_portfolio?.map((portfolio: any, i: number) =>
         {
             return (
                 <Card
                     key={i}
                     portfolio={ portfolio }
-                    text={ props?.content?.readMore }
+                    text={ props?.content?.read_more }
                 />
             );
         }

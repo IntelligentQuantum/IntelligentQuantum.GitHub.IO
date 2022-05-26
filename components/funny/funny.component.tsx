@@ -5,7 +5,7 @@ import data from '../../assets/data/data.json';
 const Funny = (props: any) =>
 {
     const language: 'en' | 'de' | 'fa' = props?.content?.language;
-    const Facts = data[language].myFunny.map((fact: any, i: number) =>
+    const Facts = data[language].funny_facts.map((fact: any, i: number) =>
         {
             return (
                 <Card

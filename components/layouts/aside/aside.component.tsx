@@ -26,14 +26,14 @@ const Aside = (props: any) =>
                 <h5 className='aside__user--name'>
                     <Link href='/'>
                         <a>
-                            {props?.content?.myName}
+                            {props?.content?.my_name}
                         </a>
                     </Link>
                 </h5>
                 <div className='aside__user--skills'>
-                    {props?.content?.mySkill[0]}
+                    {props?.content?.my_skills[0]}
                     <br/>
-                    {props?.content?.mySkill[1]}
+                    {props?.content?.my_skills[1]}
                 </div>
             </div>
             <div className='aside__information'>
@@ -41,15 +41,15 @@ const Aside = (props: any) =>
                     <ul>
                         <li>
                             <h6>{props?.content?.residence}:</h6>
-                            <span>{props?.content?.myResidence}</span>
+                            <span>{props?.content?.my_residence}</span>
                         </li>
                         <li>
                             <h6>{props?.content?.city}:</h6>
-                            <span>{props?.content?.myCity}</span>
+                            <span>{props?.content?.my_city}</span>
                         </li>
                         <li>
                             <h6>{props?.content?.age}:</h6>
-                            <span>{props?.content?.myAge}</span>
+                            <span>{props?.content?.my_age}</span>
                         </li>
                     </ul>
                 </div>
@@ -192,7 +192,7 @@ const Aside = (props: any) =>
 
                 <div className='aside__information--cv uppercase'>
                     <a href={`/document/parsa_firoozi_cv-${props?.content?.language}.pdf`} rel='noreferrer' target='_blank'>
-                        <span>{props?.content?.downloadCV}</span>
+                        <span>{props?.content?.download_cv}</span>
                         <svg>
                             <use xlinkHref='/svg/sprite.svg#icon-download'/>
                         </svg>

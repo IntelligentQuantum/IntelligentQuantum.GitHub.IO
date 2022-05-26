@@ -13,15 +13,15 @@ const Contact = (props: any) =>
                                 <ul>
                                     <li>
                                         <h6>{props?.content?.residence}:</h6>
-                                        <span>{props?.content?.myResidence}</span>
+                                        <span>{props?.content?.my_residence}</span>
                                     </li>
                                     <li>
                                         <h6>{props?.content?.city}:</h6>
-                                        <span>{props?.content?.myCity}</span>
+                                        <span>{props?.content?.my_city}</span>
                                     </li>
                                     <li>
                                         <h6>{props?.content?.age}:</h6>
-                                        <span>{props?.content?.myAge}</span>
+                                        <span>{props?.content?.my_age}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -31,15 +31,15 @@ const Contact = (props: any) =>
                                 <ul>
                                     <li>
                                         <h6>{props?.content?.email}:</h6>
-                                        <span>{props?.content?.myEmail}</span>
+                                        <span>{props?.content?.my_email}</span>
                                     </li>
                                     <li>
                                         <h6>{props?.content?.gmail}:</h6>
-                                        <span>{props?.content?.myGmail}</span>
+                                        <span>{props?.content?.my_gmail}</span>
                                     </li>
                                     <li>
                                         <h6>{props?.content?.chmail}:</h6>
-                                        <span>{props?.content?.myChmail}</span>
+                                        <span>{props?.content?.my_chmail}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -49,7 +49,7 @@ const Contact = (props: any) =>
                                 <ul>
                                     <li>
                                         <h6>{props?.content?.phone}:</h6>
-                                        <span>{props?.content?.myPhone}</span>
+                                        <span>{props?.content?.my_phone}</span>
                                     </li>
                                     <li>
                                         <h6>{props?.content?.whatsapp}:</h6>
@@ -80,7 +80,7 @@ const Contact = (props: any) =>
                                     <label htmlFor='message'><i className='bi-text-paragraph'/></label>
                                 </div>
                                 <div className='contact__in-touch--form__group'>
-                                    <button onClick={() => {  }} className='button align-self-start'>{props?.content?.sendMessage}</button>
+                                    <button onClick={() => {  }} className='button align-self-start'>{props?.content?.send_message}</button>
                                 </div>
                             </form>
                         </div>

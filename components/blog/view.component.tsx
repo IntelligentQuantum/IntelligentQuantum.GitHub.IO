@@ -38,8 +38,8 @@ const BlogView = (props: any) =>
                     <div className='hr'/>
                     <div className='blog__view--card__header'>
                         <span>
-                            <p>{props?.content?.createdAt}:</p>
-                            {moment(Number(props.blog.createdAt)).format('MMM Do YY')}
+                            <p>{props?.content?.created_at}:</p>
+                            {moment(Number(props.blog.created_at)).format('MMM Do YY')}
                         </span>
                         <span>
                              <p>
@@ -59,7 +59,7 @@ const BlogView = (props: any) =>
                 <div className='main__background'/>
                 <Error
                     title='404'
-                    description={props?.content?.blogNotFound}
+                    description={props?.content?.blog_not_found}
                     content={props?.content}
                 />
                 <div className='hr'/>

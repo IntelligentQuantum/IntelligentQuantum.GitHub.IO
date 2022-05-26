@@ -16,8 +16,7 @@ const BlogView: NextPage = (props: any) =>
 
     useEffect(() =>
     {
-        // @ts-ignore
-        const blogs = data[props?.content?.language].myBlogs;
+        const blogs = props?.content?.my_blogs;
 
         for (let i = 0; i < blogs.length; i++)
         {

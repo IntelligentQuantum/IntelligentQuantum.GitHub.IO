@@ -11,25 +11,25 @@ import data from '../../assets/data/data.json';
 const Home = (props: any) =>
 {
     const language: 'en' | 'de' | 'fa' = props?.content?.language;
-    const servicesCard = data[language].myServices.map((service: any, i: number) =>
+    const servicesCard = data[language].services.map((service: any, i: number) =>
         {
             return (
                 <ServiceCard
                     key={i}
                     service={service}
-                    text={props?.content?.readMore}
+                    text={props?.content?.read_more}
                 />
             );
         }
     )
-    const plansCard = data[language].myPlans.map((plan: any, i: number) =>
+    const plansCard = data[language].plans.map((plan: any, i: number) =>
         {
             return (
                 <PlanCard
                     key={i}
                     plan={plan}
                     content={props?.content}
-                    text={props?.content?.orderNow}
+                    text={props?.content?.order_now}
                 />
             );
         }
@@ -49,7 +49,7 @@ const Home = (props: any) =>
                             <span className='build'>
                                 <span className='build__cursor'>
                                     <ReactTypingEffect
-                                        text={props?.content?.dataWords || [ '' ]}
+                                        text={props?.content?.typing_effect || [ '' ]}
                                     />
                                 </span>
                             </span>
@@ -57,7 +57,7 @@ const Home = (props: any) =>
                         </div>
                         <Link href='/portfolio'>
                             <a className='button align-self-start'>
-                                {props?.content?.exploreMore}
+                                {props?.content?.explore_more}
                             </a>
                         </Link>
                     </div>
