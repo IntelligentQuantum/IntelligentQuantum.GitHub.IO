@@ -66,9 +66,10 @@ const Home = (props: any) =>
                             <span>
                                 <CountUp
                                     start={0}
-                                    end={75}
+                                    end={99}
                                     duration={5}
                                 />
+                                +
                             </span>
                             <p>
                                 {props?.content?.headers[0]}
@@ -78,9 +79,10 @@ const Home = (props: any) =>
                             <span>
                                 <CountUp
                                     start={0}
-                                    end={80}
+                                    end={100}
                                     duration={5}
                                 />
+                                +
                             </span>
                             <p>
                                 {props?.content?.headers[1]}
@@ -93,6 +95,7 @@ const Home = (props: any) =>
                                     end={5}
                                     duration={5}
                                 />
+                                +
                             </span>
                             <p>
                                 {props?.content?.headers[2]}
@@ -102,9 +105,10 @@ const Home = (props: any) =>
                             <span>
                                 <CountUp
                                     start={0}
-                                    end={15}
+                                    end={20}
                                     duration={5}
                                 />
+                                +
                             </span>
                             <p>
                                 {props?.content?.headers[3]}

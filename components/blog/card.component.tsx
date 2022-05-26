@@ -13,7 +13,7 @@ const BlogCard = (props: { text: string, blog: { image: string, name: string, de
                     {props.blog.description}
                 </p>
                 <ButtonSecondary
-                    link={`/blogs/${props.blog.name}`}
+                    link={`/blog/${props.blog.name}`}
                     text={props.text}
                 />
             </div>

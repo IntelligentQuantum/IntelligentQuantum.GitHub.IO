@@ -32,7 +32,7 @@
         transition: all .35s;
         position: relative;
         background: var(--base-lighter);
-        box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+        box-shadow: 0 3px 8px 0 var(--base-transparent);
         min-height: 30rem;
         overflow: hidden;
 
@@ -52,7 +52,7 @@
             z-index: 96;
             padding: 3rem;
             background: var(--base-light);
-            box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+            box-shadow: 0 3px 8px 0 var(--base-transparent);
             transition: 0.55s ease-in-out;
 
             h2

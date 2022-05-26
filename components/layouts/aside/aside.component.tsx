@@ -37,6 +37,12 @@ const Aside = (props: any) =>
                 </div>
             </div>
             <div className='aside__information'>
+                <div className='aside__information--theme'>
+                    <span onClick={() => { props.handleLanguage('en') }} className={props?.content?.language === 'en' ? 'aside__information--theme__active' : ''}>EN</span>
+                    <span onClick={() => { props.handleLanguage('de') }} className={props?.content?.language === 'de' ? 'aside__information--theme__active' : ''}>GR</span>
+                    <span onClick={() => { props.handleLanguage('fa') }} className={props?.content?.language === 'fa' ? 'aside__information--theme__active' : ''}>FA</span>
+                </div>
+                <div className='aside__divider'>&nbsp;</div>
                 <div className='aside__information--personal'>
                     <ul>
                         <li>
@@ -87,7 +93,16 @@ const Aside = (props: any) =>
                 <div className='aside__information--skills'>
                     <div className='aside__information--skills__bar'>
                         <div className='aside__information--skills__info'>
-                            <span>HTML</span>
+                            <span>Javascript, Typescript</span>
+                            <span>90%</span>
+                        </div>
+                        <div className='aside__information--skills__progress'>
+                            <span style={{ maxWidth: '90%' }}/>
+                        </div>
+                    </div>
+                    <div className='aside__information--skills__bar'>
+                        <div className='aside__information--skills__info'>
+                            <span>Node.js, Deno.js</span>
                             <span>95%</span>
                         </div>
                         <div className='aside__information--skills__progress'>
@@ -96,7 +111,16 @@ const Aside = (props: any) =>
                     </div>
                     <div className='aside__information--skills__bar'>
                         <div className='aside__information--skills__info'>
-                            <span>CSS</span>
+                            <span>React.js, Next.js</span>
+                            <span>95%</span>
+                        </div>
+                        <div className='aside__information--skills__progress'>
+                            <span style={{ maxWidth: '95%' }}/>
+                        </div>
+                    </div>
+                    <div className='aside__information--skills__bar'>
+                        <div className='aside__information--skills__info'>
+                            <span>Styled, Sass, Scss</span>
                             <span>90%</span>
                         </div>
                         <div className='aside__information--skills__progress'>
@@ -110,24 +134,6 @@ const Aside = (props: any) =>
                         </div>
                         <div className='aside__information--skills__progress'>
                             <span style={{ maxWidth: '95%' }}/>
-                        </div>
-                    </div>
-                    <div className='aside__information--skills__bar'>
-                        <div className='aside__information--skills__info'>
-                            <span>Javascript</span>
-                            <span>85%</span>
-                        </div>
-                        <div className='aside__information--skills__progress'>
-                            <span style={{ maxWidth: '85%' }}/>
-                        </div>
-                    </div>
-                    <div className='aside__information--skills__bar'>
-                        <div className='aside__information--skills__info'>
-                            <span>Typescript</span>
-                            <span>90%</span>
-                        </div>
-                        <div className='aside__information--skills__progress'>
-                            <span style={{ maxWidth: '90%' }}/>
                         </div>
                     </div>
                     <div className='aside__information--skills__bar'>
@@ -153,13 +159,13 @@ const Aside = (props: any) =>
                             <svg>
                                 <use xlinkHref='/svg/sprite.svg#icon-check'/>
                             </svg>
-                            <span>Sass, Styled Components</span>
+                            <span>Sass, Scss, Styled</span>
                         </li>
                         <li>
                             <svg>
                                 <use xlinkHref='/svg/sprite.svg#icon-check'/>
                             </svg>
-                            <span>React, React Native, Electron</span>
+                            <span>Next.js, React.js, React Native</span>
                         </li>
                         <li>
                             <svg>
@@ -171,13 +177,13 @@ const Aside = (props: any) =>
                             <svg>
                                 <use xlinkHref='/svg/sprite.svg#icon-check'/>
                             </svg>
-                            <span>Node.js, Deno</span>
+                            <span>Node.js, Deno.js</span>
                         </li>
                         <li>
                             <svg>
                                 <use xlinkHref='/svg/sprite.svg#icon-check'/>
                             </svg>
-                            <span>Express, Nest</span>
+                            <span>Express.js, Nest.js</span>
                         </li>
                         <li>
                             <svg>
@@ -187,9 +193,7 @@ const Aside = (props: any) =>
                         </li>
                     </ul>
                 </div>
-
                 <div className='aside__divider'>&nbsp;</div>
-
                 <div className='aside__information--cv uppercase'>
                     <a href={`/document/parsa_firoozi_cv-${props?.content?.language}.pdf`} rel='noreferrer' target='_blank'>
                         <span>{props?.content?.download_cv}</span>
@@ -200,9 +204,14 @@ const Aside = (props: any) =>
                 </div>
             </div>
             <div className='aside__footer'>
-                <a href='https://www.instagram.com/hello_im_parsa/' rel='noreferrer' target='_blank'>
+                <a href='https://www.instagram.com/hello_im_parsa' rel='noreferrer' target='_blank'>
                     <svg>
                         <use xlinkHref='/svg/sprite.svg#icon-instagram'/>
+                    </svg>
+                </a>
+                <a href='https://rarible.com/im-parsa' rel='noreferrer' target='_blank'>
+                    <svg>
+                        <use xlinkHref='/svg/sprite.svg#icon-rarible'/>
                     </svg>
                 </a>
                 <a href='https://dribbble.com/hello_im_parsa' rel='noreferrer' target='_blank'>

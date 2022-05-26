@@ -23,7 +23,7 @@ body
     color: var(--color-base-text);
 }
 
-html[data-language="pr"]
+html[data-language='fa']
 {
     *
     {
@@ -45,7 +45,7 @@ li
 h1, h2, h3,
 h4, h5, h6
 {
-    color: #fafafc;
+    color: var(--color-base-text-bolder);
 }
 
 .container

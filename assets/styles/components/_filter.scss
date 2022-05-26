@@ -9,11 +9,11 @@
     visibility: visible;
     transition: opacity .2s;
 
-    background: rgba(20, 20, 26, 0.9);
+    background: var(--base-transparent-dark);
 
     &.filter__plus
     {
-        background: rgba(20, 20, 26, 0.98);
+        background: var(--base-transparent-darker);
     }
 
     @include media-1000

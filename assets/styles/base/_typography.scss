@@ -39,19 +39,19 @@
         li
         {
             transition: 0.4s ease-in-out;
-            color: #8c8c8e;
+            color: var(--color-base-text);
             margin-right: 1rem;
             cursor: pointer;
 
             &:hover
             {
-                color: #fafafc;
+                color: var(--color-base-text-bolder);
             }
 
             &.active
             {
-                color: #fafafc;
-                text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
+                color: var(--color-base-text-bolder);
+                text-shadow: 0 0 3px var(--color-base-text-shadow);
             }
 
             @include media-1000

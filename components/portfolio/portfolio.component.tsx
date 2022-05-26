@@ -3,8 +3,6 @@ import { useDispatch } from 'react-redux';
 
 import Card from './card.component';
 
-import data from '../../assets/data/data.json';
-
 import { setTagPortfolio } from '../../app/portfolio/portfolio.actions';
 
 const Portfolio = (props: any) =>

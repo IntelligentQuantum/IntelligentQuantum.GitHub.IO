@@ -31,7 +31,7 @@
 
         a
         {
-            color: #8c8c8e;
+            color: var(--color-base-text);
             transition: all .2s;
             display: flex;
             align-items: center;

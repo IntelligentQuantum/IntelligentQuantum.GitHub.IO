@@ -6,9 +6,9 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background: rgba(30, 30, 40, 0.88);
+    background: var(--base);
     position: relative;
-    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+    box-shadow: 0 3px 8px 0 var(--base-transparent);
 
     &::-webkit-scrollbar
     {
@@ -28,7 +28,7 @@
 
     &__background
     {
-        background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.95) 0%, rgba(30, 30, 40, 0.96) 70%, rgba(30, 30, 40, 0.99) 80%, #1e1e28 100%), url("../../images/background-2.jpg");
+        background-image: var(--base-gradiant-image-2);
         background-position: center;
         background-size: cover;
         width: 100%;

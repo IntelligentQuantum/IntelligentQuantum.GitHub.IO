@@ -42,7 +42,30 @@ function AppProps({ Component, pageProps }: CustomAppProps)
     const filter = useSelector(((state: any) => state.filter.activeFilter));
     const openNavbar: boolean = useSelector(((state: any) => state.navbar.openNavbar));
     const imagePortfolio = useSelector(((state: any) => state.portfolio.imagePortfolio));
+    const [theme, setTheme]: [theme: 'dark' | 'dim' | 'light', setTheme: any] = useState<any>('dark');
     const [language, setLanguage]: [language: 'en' | 'de' | 'fa', setLanguage: any] = useState<any>('en');
+    const handleTheme = useCallback(
+        (theme?: string) =>
+        {
+            if (theme)
+            {
+                const htmlElement: HTMLElement | any = document.querySelector('html');
+
+                localStorage.setItem('theme', theme);
+                htmlElement.setAttribute('data-theme', theme);
+
+                setTheme(theme);
+            }
+            else
+            {
+                const storageTheme: string = localStorage.getItem('theme') || 'dark';
+                const htmlElement: HTMLElement | any = document.querySelector('html');
+
+                htmlElement.setAttribute('data-theme', storageTheme);
+
+                setTheme(storageTheme);
+            }
+        }, [setLanguage]);
     const handleLanguage = useCallback(
         (language?: string) =>
         {
@@ -72,8 +95,9 @@ function AppProps({ Component, pageProps }: CustomAppProps)
 
     useEffect(() =>
     {
+        handleTheme();
         handleLanguage();
-    }, [handleLanguage]);
+    }, [handleLanguage, handleTheme]);
 
     useEffect(() =>
     {
@@ -120,6 +144,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                 }
                 <Aside
                     content={data[language]}
+                    handleLanguage={handleLanguage}
                 />
                 <Navbar
                     mobile={true}
@@ -129,9 +154,10 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                     {...pageProps}
                 />
                 <Navbar
-                    page={router.pathname.split('/')[1] || 'home'}
+                    theme={theme}
                     content={data[language]}
-                    handleLanguage={handleLanguage}
+                    handleTheme={handleTheme}
+                    page={router.pathname.split('/')[1] || 'home'}
                 />
             </main>
     )

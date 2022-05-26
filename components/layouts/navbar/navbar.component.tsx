@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 
+import Dim from '../../../assets/icons/icon-dim.svg';
+import Dark from '../../../assets/icons/icon-dark.svg';
+import Light from '../../../assets/icons/icon-light.svg';
+
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setOpenNavbar } from '../../../app/navbar/navbar.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
@@ -62,10 +66,16 @@ const Navbar = (props: any) =>
                         </Link>
                     </div>
                 </div>
-                <div className='nav__languages'>
-                    <span onClick={() => { props.handleLanguage('en') }} className={props?.content?.language === 'en' ? 'nav__languages--active' : ''}>EN</span>
-                    <span onClick={() => { props.handleLanguage('de') }} className={props?.content?.language === 'de' ? 'nav__languages--active' : ''}>GR</span>
-                    <span onClick={() => { props.handleLanguage('fa') }} className={props?.content?.language === 'fa' ? 'nav__languages--active' : ''}>FA</span>
+                <div className='nav__themes'>
+                    <span onClick={() => { props.handleTheme('dark') }} className={props?.theme === 'dark' ? 'nav__themes--active' : ''}>
+                        <Dark />
+                    </span>
+                    <span onClick={() => { props.handleTheme('dim') }} className={props?.theme === 'dim' ? 'nav__themes--active' : ''}>
+                        <Dim />
+                    </span>
+                    <span onClick={() => { props.handleTheme('light') }} className={props?.theme === 'light' ? 'nav__themes--active' : ''}>
+                        <Light />
+                    </span>
                 </div>
             </nav>
     );

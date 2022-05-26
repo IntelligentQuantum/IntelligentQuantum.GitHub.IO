@@ -16,7 +16,7 @@
         &--content
         {
             border-radius: 1rem;
-            background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.75) 0%, rgba(30, 30, 40, 0.80) 70%, rgba(30, 30, 40, 0.85) 80%, #1e1e28 90%), url("../../images/background.jpg");
+            background-image: var(--base-gradiant-image);
             background-position: center;
             background-size: cover;
             width: 100%;
@@ -320,7 +320,7 @@
             ul
             {
                 display: inline-flex;
-                box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+                box-shadow: inset 0 3px 8px 0 var(--base-transparent);
                 background: var(--base-dark);
                 padding: 0.5rem;
                 border-radius: 1rem;
@@ -351,7 +351,7 @@
             {
                 height: 2rem;
                 width: 2rem;
-                fill: #8c8c8e;;
+                fill: var(--color-base-text);;
             }
         }
     }
