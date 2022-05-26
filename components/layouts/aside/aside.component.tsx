@@ -1,13 +1,18 @@
 import Link from 'next/link';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { asideToggle } from '../../lib/utils';
+import { setOpenAside } from '../../../app/aside/aside.actions';
+import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 const Aside = (props: any) =>
 {
+    const dispatch = useDispatch();
+    const openAside: boolean = useSelector(((state: any) => state.aside.openAside));
+
     return (
-        <nav className='aside z-index__101'>
+        <nav className={`aside z-index__101 ${openAside ? 'open' : null}`}>
             <div className='aside__user'>
-                <div className='aside__user--icon' onClick={() => { asideToggle() }}>
+                <div className='aside__user--icon' onClick={() => { dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!openAside)) }}>
                     <svg>
                         <use xlinkHref='/svg/sprite.svg#icon-ellipsis-v'/>
                     </svg>

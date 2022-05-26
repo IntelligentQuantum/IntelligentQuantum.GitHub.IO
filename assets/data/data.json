@@ -84,7 +84,7 @@
                 "description": "Proving the theorem of similarity of triangles 1",
                 "createdAt": "1639673079877",
                 "source": "All the contents of authentic geometry books",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
@@ -92,7 +92,7 @@
                 "description": "Proving the theorem of similarity of triangles 2",
                 "createdAt": "1639673079877",
                 "source": "All the contents of authentic geometry books",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
@@ -100,7 +100,7 @@
                 "description": "Proving the theorem of similarity of triangles 3",
                 "createdAt": "1639673079877",
                 "source": "All the contents of authentic geometry books",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -181,125 +181,125 @@
                 "description": "Desktop, Mobile and ... application development based on React, React Native Library."
             }
         ],
-        "myWorks":
+        "myPortfolio":
         [
             {
                 "title": "Paraffin",
                 "tag": "web_development",
                 "description": "Paraffin website for teaching and learning with great content in various categories (programming, graphic design, games, technology, tricks)",
                 "link": "https://paraffin-tutorials.ir",
-                "img": "/image/works/paraffin-web.png"
+                "image": "/image/portfolio/paraffin-web.png"
             },
             {
                 "title": "Headinfo",
                 "tag": "web_development",
                 "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day (updating)",
                 "link": "https://headinfo.ir",
-                "img": "/image/works/headinfo-web.png"
+                "image": "/image/portfolio/headinfo-web.png"
             },
             {
                 "title": "Nava",
                 "tag": "web_development",
                 "description": "Website of the first and best Persian language music and video player with quality and support for all formats along with Discord RPC",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava-web.png"
+                "image": "/image/portfolio/nava-web.png"
             },
             {
                 "title": "random-pic.js",
                 "tag": "web_development",
                 "description": "Website and module for receiving random images in different categories and the ability to size and set limits and restrictions",
                 "link": "https://random-picjs.herokuapp.com",
-                "img": "/image/works/random-pic_js-web.png"
+                "image": "/image/portfolio/random-pic_js-web.png"
             },
             {
                 "title": "MrCheat",
                 "tag": "web_development",
                 "description": "Website for making, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games (Under Developing - Team Member)",
                 "link": "/",
-                "img": "/image/works/mrcheat-web.png"
+                "image": "/image/portfolio/mrcheat-web.png"
             },
             {
                 "title": "Dubist",
                 "tag": "graphic_design",
                 "description": "English, Persian, German language learning website with features such as flash card and ranking (Under Developing - Team Member)",
                 "link": "/",
-                "img": "/image/works/dubist-web.png"
+                "image": "/image/portfolio/dubist-web.png"
             },
             {
                 "title": "PDA",
                 "tag": "web_development",
                 "description": "The first open-source persian Discord API with high and unique quality and speed",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "img": "/image/works/pda-web.png"
+                "image": "/image/portfolio/pda-web.png"
             },
             {
                 "title": "LiveSoccer",
                 "tag": "web_development",
                 "description": "Website to see the table of the best and biggest football leagues along with the goal difference scores and the games played",
                 "link": "https://livesoccer.herokuapp.com/",
-                "img": "/image/works/livesoccer-web.png"
+                "image": "/image/portfolio/livesoccer-web.png"
             },
             {
                 "title": "Elite",
                 "tag": "web_development",
                 "description": "Website of Elite Discord Robot Programming Team with 2 officially verified Discord bots",
                 "link": "https://github.com/im-parsa/elite-website",
-                "img": "/image/works/elite-web.png"
+                "image": "/image/portfolio/elite-web.png"
             },
             {
                 "title": "Personal Website",
                 "tag": "web_development",
                 "description": "Open-source personal website",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "img": "/image/works/parsa-web.png"
+                "image": "/image/portfolio/parsa-web.png"
             },
             {
                 "title": "Personal Website",
                 "tag": "web_development",
                 "description": "Personal website for Mr. Shadmehr",
                 "link": "https://shadmehr.info",
-                "img": "/image/works/shadmehr-web.png"
+                "image": "/image/portfolio/shadmehr-web.png"
             },
             {
                 "title": "Wintube",
                 "tag": "app_development",
                 "description": "Desktop application for Linux/Windows/Mac for displaying YouTube videos and movies without filtering and high speed and download capability (Team Member)",
                 "link": "https://wintube.herokuapp.com",
-                "img": "/image/works/wintube-app.png"
+                "image": "/image/portfolio/wintube-app.png"
             },
             {
                 "title": "Nava Video Player",
                 "tag": "app_development",
                 "description": "Video player with the support of all files, the ability of RCC, dedicated discord, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava_video_player-app.png"
+                "image": "/image/portfolio/nava_video_player-app.png"
             },
             {
                 "title": "Nava Music Player",
                 "tag": "app_development",
                 "description": "Music player with the support of all files, the ability of RPC, dedicated discord, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava_music_player-app.png"
+                "image": "/image/portfolio/nava_music_player-app.png"
             },
             {
                 "title": "Setar",
                 "tag": "robot_development",
                 "description": "First & Best persian music player bot in discord community (Team Member)",
                 "link": "https://github.com/SeTar-Bot",
-                "img": "/image/works/setar-bot.png"
+                "image": "/image/portfolio/setar-bot.png"
             },
             {
                 "title": "Elite",
                 "tag": "robot_development",
                 "description": "Best persian security bot in discord community",
                 "link": "https://top.gg/bot/730584726401843221",
-                "img": "/image/works/elite-bot.png"
+                "image": "/image/portfolio/elite-bot.png"
             }
         ]
     },
-    "gr":
+    "de":
     {
-        "language": "gr",
+        "language": "de",
         "myName": "im-parsa",
         "mySkill":
         [
@@ -364,7 +364,7 @@
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 1",
                 "createdAt": "1639673079877",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
@@ -372,7 +372,7 @@
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 2",
                 "createdAt": "1639673079877",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
@@ -380,7 +380,7 @@
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 3",
                 "createdAt": "1639673079877",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -477,125 +477,125 @@
                 "description": "Desktop-, Mobil- und ... Anwendungsentwicklung basierend auf React, React Native Library."
             }
         ],
-        "myWorks":
+        "myPortfolio":
         [
             {
                 "title": "Paraffin",
                 "tag": "web_development",
                 "description": "Paraffin-Website zum Lehren und Lernen mit tollen Inhalten in verschiedenen Kategorien (Programmierung, Grafikdesign, Spiele, Technik, Tricks)",
                 "link": "https://paraffin-tutorials.ir",
-                "img": "/image/works/paraffin-web.png"
+                "image": "/image/portfolio/paraffin-web.png"
             },
             {
                 "title": "Headinfo",
                 "tag": "web_development",
                 "description": "Website für alltägliche Aufgaben und leicht zu erledigende Aufgaben, mit denen Sie sich tagsüber viel beschäftigen (Aktualisierung)",
                 "link": "https://headinfo.ir",
-                "img": "/image/works/headinfo-web.png"
+                "image": "/image/portfolio/headinfo-web.png"
             },
             {
                 "title": "Nava",
                 "tag": "web_development",
                 "description": "Website des ersten und besten persischen Musik- und Videoplayers mit Qualität und Unterstützung für alle Formate zusammen mit RPC Discord",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava-web.png"
+                "image": "/image/portfolio/nava-web.png"
             },
             {
                 "title": "random-pic.js",
                 "tag": "web_development",
                 "description": "Website und Anwendungsmodul zum Empfangen von Zufallsbildern in verschiedenen Kategorien und der Möglichkeit, Größen und Grenzen und Beschränkungen festzulegen",
                 "link": "https://random-picjs.herokuapp.com",
-                "img": "/image/works/random-pic_js-web.png"
+                "image": "/image/portfolio/random-pic_js-web.png"
             },
             {
                 "title": "MrCheat",
                 "tag": "web_development",
                 "description": "Website zum Erstellen, Entwickeln und Verkaufen aller Arten von Cheats und Cheats in verschiedenen Spielen wie Counter, Zola, CS Go und den meisten anderen Shooter-Spielen (im Aufbau - Teammitglied)",
                 "link": "/",
-                "img": "/image/works/mrcheat-web.png"
+                "image": "/image/portfolio/mrcheat-web.png"
             },
             {
                 "title": "Dubist",
                 "tag": "graphic_design",
                 "description": "Englisch, Persisch, Deutsch-Sprachlernwebsite mit Funktionen wie Lernkarte und Ranking (im Aufbau - Teammitglied)",
                 "link": "/",
-                "img": "/image/works/dubist-web.png"
+                "image": "/image/portfolio/dubist-web.png"
             },
             {
                 "title": "PDA",
                 "tag": "web_development",
                 "description": "Der erste dediziert persischsprachige Webservice in Form von Open Source mit hoher Qualität und beispielloser Geschwindigkeit",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "img": "/image/works/pda-web.png"
+                "image": "/image/portfolio/pda-web.png"
             },
             {
                 "title": "LiveSoccer",
                 "tag": "web_development",
                 "description": "Website, um die Tabelle der besten und größten Fußballligen mit Tordifferenzergebnissen und gespielten Spielen zu sehen",
                 "link": "https://livesoccer.herokuapp.com/",
-                "img": "/image/works/livesoccer-web.png"
+                "image": "/image/portfolio/livesoccer-web.png"
             },
             {
                 "title": "Elite",
                 "tag": "web_development",
                 "description": "Website der Elite Discord Robot Programming Company mit 2 offiziell verifizierten Discord-Bots",
                 "link": "https://github.com/im-parsa/elite-website",
-                "img": "/image/works/elite-web.png"
+                "image": "/image/portfolio/elite-web.png"
             },
             {
                 "title": "Persönliche Website",
                 "tag": "web_development",
                 "description": "Open-Source-persönliche Website",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "img": "/image/works/parsa-web.png"
+                "image": "/image/portfolio/parsa-web.png"
             },
             {
                 "title": "Persönliche Website",
                 "tag": "web_development",
                 "description": "Persönliche Website für Herrn Shadmehr",
                 "link": "https://shadmehr.info",
-                "img": "/image/works/shadmehr-web.png"
+                "image": "/image/portfolio/shadmehr-web.png"
             },
             {
                 "title": "Wintube",
                 "tag": "app_development",
                 "description": "Desktop-Anwendung mit Linux / Windows / Mac-Unterstützung zum Anzeigen von YouTube-Videos und -Filmen ohne Filterung und Hochgeschwindigkeits- und Download-Fähigkeit (Teammitglied)",
                 "link": "https://wintube.herokuapp.com",
-                "img": "/image/works/wintube-app.png"
+                "image": "/image/portfolio/wintube-app.png"
             },
             {
                 "title": "Nava-Video-Player",
                 "tag": "app_development",
                 "description": "Video mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava_video_player-app.png"
+                "image": "/image/portfolio/nava_video_player-app.png"
             },
             {
                 "title": "Nava-Music-Player",
                 "tag": "app_development",
                 "description": "Musik mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava_music_player-app.png"
+                "image": "/image/portfolio/nava_music_player-app.png"
             },
             {
                 "title": "Setar",
                 "tag": "robot_development",
                 "description": "Der erste und beste offizielle Songplayer und verifizierte Zwietracht (Teammitglied)",
                 "link": "https://github.com/SeTar-Bot",
-                "img": "/image/works/setar-bot.png"
+                "image": "/image/portfolio/setar-bot.png"
             },
             {
                 "title": "Elite",
                 "tag": "robot_development",
                 "description": "Der beste und beliebteste Roboter für Sicherheit und Sicherheit der offiziellen und verifizierten offiziellen Zwietracht",
                 "link": "https://top.gg/bot/730584726401843221",
-                "img": "/image/works/elite-bot.png"
+                "image": "/image/portfolio/elite-bot.png"
             }
         ]
     },
-    "pr":
+    "fa":
     {
-        "language": "pr",
+        "language": "fa",
         "myName": "پارسا",
         "mySkill":
         [
@@ -676,7 +676,7 @@
                 "description": "اثبات قضیه تشابه مثلث ها ۱",
                 "createdAt": "1639673079877",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
@@ -684,7 +684,7 @@
                 "description": "اثبات قضیه تشابه مثلث ها ۲",
                 "createdAt": "1639673079877",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
@@ -692,7 +692,7 @@
                 "description": "اثبات قضیه تشابه مثلث ها ۳",
                 "createdAt": "1639673079877",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "img": "/image/blogs/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -706,7 +706,7 @@
             {
                 "title": "کیهان",
                 "type": "space",
-                "description": "من همیشه از یادگیری درباره فضا و کیهان لذت میبردم و همچنین فیزیک کوآنتوم که نظریه های سرگیجه آوری را اثبات میکند مانند جهان های موازی، شیاه چاله ها و سفید چاله ها، تکینگی، پیوستگی."
+                "description": "من همیشه از یادگیری درباره فضا و کیهان لذت میبردم و همچنین فیزیک کوآنتوم که نظریه های سرگیجه آوری را اثبات میکند مانند جهان های موازی، سیاه چاله ها و سفید چاله ها، تکینگی، پیوستگی."
             },
             {
                 "title": "کال آف دیوتی",
@@ -773,119 +773,126 @@
                 "description": "برنامه های دسکتاپ، اندورید، آی او اس ساخته شده با React، React Native"
             }
         ],
-        "myWorks":
+        "myPortfolio":
         [
             {
                 "title": "پارافین",
                 "tag": "web_development",
                 "description": "پارافین وبسایت آموزش و یادگیری با مطالب فوق العاده در دسته بندی ها مختلف (برنامه نویسی، طراحی گرافیک، بازی، تکنولوژی، ترفند)",
                 "link": "https://paraffin-tutorials.ir",
-                "img": "/image/works/paraffin-web.png"
+                "image": "/image/portfolio/paraffin-web.png"
+            },
+            {
+                "title": "دیسکوردز سیتی",
+                "tag": "web_development",
+                "description": "وبسایتی برای کاربران کامینیوتی دیسکورد که سرور، ربات یا اکانت خودشان را در آن ثبت نام کنند و در اکسپلور ما دیده شوند تا ممبر های بیشتری بدست بیاورند و صفحه بخصوص خود را داشته باشند",
+                "link": "https://discords.city",
+                "image": "/image/portfolio/discords-city-web.png"
             },
             {
                 "title": "Headinfo",
                 "tag": "web_development",
                 "description": "وبسایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (درحال بروزرسانی)",
                 "link": "https://headinfo.ir",
-                "img": "/image/works/headinfo-web.png"
+                "image": "/image/portfolio/headinfo-web.png"
             },
             {
                 "title": "نوآ",
                 "tag": "web_development",
                 "description": "وب سایت اولین و برترین موزیک و ویدیو پلیر فارسی زبان با کیفیت و پشتیبانی تمامی فرمت ها به همراه آر پی سی دیسکورد",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava-web.png"
+                "image": "/image/portfolio/nava-web.png"
             },
             {
                 "title": "random-pic.js",
                 "tag": "web_development",
                 "description": "وبسایت و ماژولی کاربردی برای دریافت تصاویر تصادفی در دسته بندی های مختلف و قابلیت سایز بندی و گذاشتن لیمیت و محدودیت",
                 "link": "https://random-picjs.herokuapp.com",
-                "img": "/image/works/random-pic_js-web.png"
+                "image": "/image/portfolio/random-pic_js-web.png"
             },
             {
                 "title": "MrCheat",
                 "tag": "web_development",
                 "description": "وبسایت ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت - عضو تیم)",
                 "link": "/",
-                "img": "/image/works/mrcheat-web.png"
+                "image": "/image/portfolio/mrcheat-web.png"
             },
             {
                 "title": "Dubist",
                 "tag": "graphic_design",
                 "description": "وبسایت آموزش زبان انگلیسی، فارسی، آلمانی به همراه قابلیت هایی نظیر فلش کارت و رنک بندی (در دست ساخت - عضو تیم)",
                 "link": "/",
-                "img": "/image/works/dubist-web.png"
+                "image": "/image/portfolio/dubist-web.png"
             },
             {
                 "title": "PDA",
                 "tag": "web_development",
                 "description": "اولین وب سرویس اختصاصی فارسی زبان دیسکورد به صورت اوپن سورس با کیفیت و سرعتی بالا و بی نظیر",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "img": "/image/works/pda-web.png"
+                "image": "/image/portfolio/pda-web.png"
             },
             {
                 "title": "LiveSoccer",
                 "tag": "web_development",
                 "description": "وبسایتی برای دیدن جدول برترین و بزرگ ترین لیگ های فوتبال به همراه امتیازات تفاضل گل و بازی های انجام شده",
                 "link": "https://livesoccer.herokuapp.com/",
-                "img": "/image/works/livesoccer-web.png"
+                "image": "/image/portfolio/livesoccer-web.png"
             },
             {
                 "title": "Elite",
                 "tag": "web_development",
                 "description": "وبسایت شرکت الایت تیم برنامه نویسی ربات های دیسکورد با ۲ بات وریفای شده رسمی دیسکورد",
                 "link": "https://github.com/im-parsa/elite-website",
-                "img": "/image/works/elite-web.png"
+                "image": "/image/portfolio/elite-web.png"
             },
             {
                 "title": "وبسایت شخصی",
                 "tag": "web_development",
                 "description": "وبسایت شخصی اوپن سورس",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "img": "/image/works/parsa-web.png"
+                "image": "/image/portfolio/parsa-web.png"
             },
             {
                 "title": "وبسایت شخصی",
                 "tag": "web_development",
                 "description": "وبسایت شخصی برای آقای شادمهر",
                 "link": "https://shadmehr.info",
-                "img": "/image/works/shadmehr-web.png"
+                "image": "/image/portfolio/shadmehr-web.png"
             },
             {
                 "title": "Wintube",
                 "tag": "app_development",
                 "description": "اپلیکیشنی برای دسکتاپ قابلیت پشتیبانی لینوکس/ویندوز/مک برای نمایش ویدیو و فیلم های یوتیوب بدون فیلتر و سرعت بالا و قبالیت دانلود (عضو تیم)",
                 "link": "https://wintube.herokuapp.com",
-                "img": "/image/works/wintube-app.png"
+                "image": "/image/portfolio/wintube-app.png"
             },
             {
                 "title": "پخش کننده ویدیو نوآ",
                 "tag": "app_development",
                 "description": "پخش کننده ویدیو و فیلم با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava_video_player-app.png"
+                "image": "/image/portfolio/nava_video_player-app.png"
             },
             {
                 "title": "پخش کننده آهنگ نوآ",
                 "tag": "app_development",
                 "description": "پخش کننده موزیک و آهنگ با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
                 "link": "https://nava-org.herokuapp.com",
-                "img": "/image/works/nava_music_player-app.png"
+                "image": "/image/portfolio/nava_music_player-app.png"
             },
             {
                 "title": "ستار",
                 "tag": "robot_development",
                 "description": "اولین و برترین ربات پخش کننده آهنگ و وریفای شده رسمی دیسکورد (عضو تیم)",
                 "link": "https://github.com/SeTar-Bot",
-                "img": "/image/works/setar-bot.png"
+                "image": "/image/portfolio/setar-bot.png"
             },
             {
                 "title": "Elite",
                 "tag": "robot_development",
                 "description": "برترین و محبوب ترین ربات سکوریتی و امنیت سرور و وریفای شده رسمی دیسکورد",
                 "link": "https://top.gg/bot/730584726401843221",
-                "img": "/image/works/elite-bot.png"
+                "image": "/image/portfolio/elite-bot.png"
             }
         ]
     }

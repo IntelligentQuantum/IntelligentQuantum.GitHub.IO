@@ -1,25 +1,33 @@
 import Link from 'next/link';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { asideToggle, navbarToggle, handleLanguage } from '../../lib/utils';
+import { setOpenAside } from '../../../app/aside/aside.actions';
+import { setOpenNavbar } from '../../../app/navbar/navbar.actions';
+import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 const Navbar = (props: any) =>
 {
+    const dispatch = useDispatch();
+    const openAside: boolean = useSelector(((state: any) => state.aside.openAside));
+    const openNavbar: boolean = useSelector(((state: any) => state.navbar.openNavbar));
+    const activeFilter: boolean = useSelector(((state: any) => state.filter.activeFilter));
+
     return (
         props.mobile
             ?
             <nav className='nav__mobile z-index__100'>
-                <div className='nav__mobile--3dot' onClick={() => { asideToggle() }}>
+                <div className='nav__mobile--3dot' onClick={() => { dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!activeFilter)) }}>
                     <svg>
                         <use xlinkHref='/svg/sprite.svg#icon-ellipsis-v'/>
                     </svg>
                 </div>
-                <div className='nav__mobile--hamburger' onClick={() => { navbarToggle() }}>
+                <div className='nav__mobile--hamburger' onClick={() => { dispatch(setOpenNavbar(!openNavbar)); dispatch(setActiveFilter(!activeFilter)) }}>
                     <div className='nav__mobile--hamburger__line open'>&nbsp;</div>
                 </div>
             </nav>
             :
-            <nav className='nav z-index__101'>
-                <div className='nav__hamburger' onClick={() => { navbarToggle() }}>
+            <nav className={`nav z-index__101 ${openNavbar ? 'open' : null}`}>
+                <div className='nav__hamburger' onClick={() => { dispatch(setOpenNavbar(!openNavbar)); dispatch(setActiveFilter(!activeFilter)) }}>
                     <div className='nav__hamburger--line'>&nbsp;</div>
                 </div>
                 <div className='nav__content'>
@@ -55,9 +63,9 @@ const Navbar = (props: any) =>
                     </div>
                 </div>
                 <div className='nav__languages'>
-                    <span onClick={() => { handleLanguage('en'); props.handleLanguage() }} id='en-lang' className={props?.content?.language === 'en' ? 'nav__languages--active' : ''}>EN</span>
-                    <span onClick={() => { handleLanguage('gr'); props.handleLanguage() }} id='gr-lang' className={props?.content?.language === 'gr' ? 'nav__languages--active' : ''}>GR</span>
-                    <span onClick={() => { handleLanguage('pr'); props.handleLanguage() }} id='pr-lang' className={props?.content?.language === 'pr' ? 'nav__languages--active' : ''}>PR</span>
+                    <span onClick={() => { props.handleLanguage('en') }} className={props?.content?.language === 'en' ? 'nav__languages--active' : ''}>EN</span>
+                    <span onClick={() => { props.handleLanguage('de') }} className={props?.content?.language === 'de' ? 'nav__languages--active' : ''}>GR</span>
+                    <span onClick={() => { props.handleLanguage('fa') }} className={props?.content?.language === 'fa' ? 'nav__languages--active' : ''}>FA</span>
                 </div>
             </nav>
     );

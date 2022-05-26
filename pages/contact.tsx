@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
 
-import Main from '../components/main/main.component';
+import Main from '../components/layouts/main/main.component';
 import ContactComponent from '../components/contact/contact.component';
 
 const Contact: NextPage = (props: any) =>

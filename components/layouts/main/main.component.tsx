@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Footer from '../footer/footer.component';
 
 const Main = (props: any) =>

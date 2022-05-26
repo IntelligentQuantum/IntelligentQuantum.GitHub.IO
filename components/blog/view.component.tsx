@@ -9,17 +9,17 @@ import Error from '../error/error.component';
 
 const BlogView = (props: any) =>
 {
-    const Language: 'en' | 'gr' | 'pr' = props?.content?.language;
+    const language: 'en' | 'de' | 'fa' = props?.content?.language;
 
-    switch (Language)
+    switch (language)
     {
         case 'en':
             moment.locale('en');
             break;
-        case 'gr':
+        case 'de':
             moment.locale('de');
             break;
-        case 'pr':
+        case 'fa':
             moment.locale('fa');
             break;
         default:
@@ -29,33 +29,31 @@ const BlogView = (props: any) =>
     return (
         props.blog?.name
             ?
-            <>
-                <div className='main__content'>
-                    <div className='main__background'/>
-                    <section className='blog'>
-                        <div className='blog__view--image'>
-                            <img src={props.blog.img} alt={props.blog.name}/>
-                        </div>
-                        <div className='hr'/>
-                        <div className='blog__view--card__header'>
+            <div className='main__content'>
+                <div className='main__background'/>
+                <section className='blog'>
+                    <div className='blog__view--image'>
+                        <img src={props.blog.image} alt={props.blog.name}/>
+                    </div>
+                    <div className='hr'/>
+                    <div className='blog__view--card__header'>
                         <span>
                             <p>{props?.content?.createdAt}:</p>
                             {moment(Number(props.blog.createdAt)).format('MMM Do YY')}
                         </span>
-                            <span>
+                        <span>
                              <p>
                                  {props?.content?.source}:
                              </p>
-                                {props.blog.source}
+                            {props.blog.source}
                         </span>
-                        </div>
-                        <article className='blog__view--card'>
-                            {reactHtmlParser(props.blog.content)}
-                        </article>
-                    </section>
-                    <div className='hr'/>
-                </div>
-            </>
+                    </div>
+                    <article className='blog__view--card'>
+                        {reactHtmlParser(props.blog.content)}
+                    </article>
+                </section>
+                <div className='hr'/>
+            </div>
             :
             <div className='main__content'>
                 <div className='main__background'/>

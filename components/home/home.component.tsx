@@ -1,18 +1,17 @@
 import Link from 'next/link';
-import { useEffect } from 'react';
 import CountUp from 'react-countup';
+import ReactTypingEffect from 'react-typing-effect';
 
 import PlanCard from './plan-card.component';
 import ServiceCard from './service-card.component';
 
 import data from '../../assets/data/data.json';
 
-import { typeWriter } from '../../lib/utils';
 
 const Home = (props: any) =>
 {
-    const language: 'en' | 'gr' | 'pr' = props?.content?.language;
-    const ServicesCard = data[language].myServices.map((service: any, i: number) =>
+    const language: 'en' | 'de' | 'fa' = props?.content?.language;
+    const servicesCard = data[language].myServices.map((service: any, i: number) =>
         {
             return (
                 <ServiceCard
@@ -23,7 +22,7 @@ const Home = (props: any) =>
             );
         }
     )
-    const PlansCard = data[language].myPlans.map((plan: any, i: number) =>
+    const plansCard = data[language].myPlans.map((plan: any, i: number) =>
         {
             return (
                 <PlanCard
@@ -36,29 +35,6 @@ const Home = (props: any) =>
         }
     );
 
-    useEffect(() =>
-    {
-        let dataWords: any = [ '', '', '', '' ];
-
-        if (language === 'en')
-        {
-            dataWords = data.en.dataWords;
-        }
-        else if (language === 'gr')
-        {
-            dataWords = data.gr.dataWords;
-        }
-        else if (language === 'pr')
-        {
-            dataWords = data.pr.dataWords;
-        }
-
-        const textElement: HTMLElement | any = document.querySelector('.build');
-        const wait: any = textElement.getAttribute('data-wait');
-
-        new typeWriter(textElement, dataWords, wait);
-    }, [language]);
-
     return (
         <div className='main__content'>
             <div className='main__background'/>
@@ -70,7 +46,13 @@ const Home = (props: any) =>
                         </h1>
                         <div className='home__header--content__description'>
                             &lt;<i>code</i>&gt;
-                            <span className='build'/>
+                            <span className='build'>
+                                <span className='build__cursor'>
+                                    <ReactTypingEffect
+                                        text={props?.content?.dataWords || [ '' ]}
+                                    />
+                                </span>
+                            </span>
                             &lt;/<i>code</i>&gt;
                         </div>
                         <Link href='/portfolio'>
@@ -135,13 +117,13 @@ const Home = (props: any) =>
                     {props?.content?.titles[1]}
                 </h4>
                 <div className='home__services'>
-                    {ServicesCard}
+                    {servicesCard}
                 </div>
                 <h4 className='heading'>
                     {props?.content?.titles[2]}
                 </h4>
                 <div className='home__plans'>
-                    {PlansCard}
+                    {plansCard}
                 </div>
                 <div className='hr'/>
             </section>

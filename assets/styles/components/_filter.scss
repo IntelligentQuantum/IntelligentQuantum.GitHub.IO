@@ -1,32 +1,23 @@
 .filter
 {
-    background: rgba(20, 20, 26, 0.9);
     position: fixed;
-    visibility: hidden;
-    opacity: 0;
+    z-index: 97;
+
     width: 100%;
     height: 100%;
+    opacity: 1;
+    visibility: visible;
     transition: opacity .2s;
+
+    background: rgba(20, 20, 26, 0.9);
 
     &.filter__plus
     {
         background: rgba(20, 20, 26, 0.98);
     }
 
-    &.active
-    {
-        visibility: visible;
-        z-index: 97;
-        opacity: 1;
-    }
-
     @include media-1000
     {
-        &.active
-        {
-            visibility: visible;
-            z-index: 99;
-            opacity: 1;
-        }
+        z-index: 99;
     }
 }

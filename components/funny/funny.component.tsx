@@ -4,7 +4,7 @@ import data from '../../assets/data/data.json';
 
 const Funny = (props: any) =>
 {
-    const language: 'en' | 'gr' | 'pr' = props?.content?.language;
+    const language: 'en' | 'de' | 'fa' = props?.content?.language;
     const Facts = data[language].myFunny.map((fact: any, i: number) =>
         {
             return (

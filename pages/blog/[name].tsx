@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-import Main from '../../components/main/main.component';
+import Main from '../../components/layouts/main/main.component';
 import BlogViewComponent from '../../components/blog/view.component';
 
 import data from '../../assets/data/data.json';
@@ -14,19 +14,17 @@ const BlogView: NextPage = (props: any) =>
     const { name } = router.query;
     const [blog, setBlog]: any = useState('loading');
 
-    console.log(name)
-
     useEffect(() =>
     {
         // @ts-ignore
         const blogs = data[props?.content?.language].myBlogs;
-        console.log(blogs)
 
         for (let i = 0; i < blogs.length; i++)
         {
             if (blogs[i].name === name)
             {
-                setBlog(blogs[1]);
+
+                setBlog(blogs[i]);
             }
         }
     }, [data, props, setBlog, name]);
@@ -59,7 +57,10 @@ const BlogView: NextPage = (props: any) =>
                 <meta property='twitter:description' content='Parsa Firoozi Contact'/>
             </Head>
             <Main content={props?.content}>
-                <BlogViewComponent content={props?.content} />
+                <BlogViewComponent
+                    blog={blog}
+                    content={props?.content}
+                />
             </Main>
         </>
     )

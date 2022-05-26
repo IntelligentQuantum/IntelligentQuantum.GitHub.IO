@@ -1,21 +1,32 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
 import Card from './card.component';
+
 import data from '../../assets/data/data.json';
-import { addClass, removeClass } from '../../lib/utils';
+
+import { setTagPortfolio } from '../../app/portfolio/portfolio.actions';
 
 const Portfolio = (props: any) =>
 {
-    let language: 'en' | 'gr' | 'pr' = props?.content?.language;
-    let cards = data[language].myWorks.map((work: any, i: number) =>
+    const dispatch = useDispatch();
+    const language: 'en' | 'de' | 'fa' = props?.content?.language;
+    const cards = data[language]?.myPortfolio?.map((portfolio: any, i: number) =>
         {
             return (
                 <Card
                     key={i}
-                    work={ work }
+                    portfolio={ portfolio }
                     text={ props?.content?.readMore }
                 />
             );
         }
     )
+
+    useEffect(() =>
+    {
+        dispatch(setTagPortfolio('all'));
+    }, []);
 
     return (
         <>
@@ -24,11 +35,21 @@ const Portfolio = (props: any) =>
                 <div className='hr'/>
                 <section className='portfolio'>
                     <ul className='heading__small'>
-                        <li className='portfolio__item--card active all_categories' onClick={() => { removeClass('.portfolio__item--card', 'active'); addClass('.all_categories', 'active'); addClass('.portfolio__item', 'active') }}>{props?.content?.categories[0]}</li>
-                        <li className='portfolio__item--card web_development' onClick={() => { console.log('hi'); removeClass('.portfolio__item--card', 'active'); addClass('.web_development', 'active') }}>{props?.content?.categories[1]}</li>
-                        <li className='portfolio__item--card app_development' onClick={() => { removeClass('.portfolio__item--card', 'active'); addClass('.app_development', 'active') }}>{props?.content?.categories[2]}</li>
-                        <li className='portfolio__item--card robot_development' onClick={() => { removeClass('.portfolio__item--card', 'active'); addClass('.robot_development', 'active') }}>{props?.content?.categories[3]}</li>
-                        <li className='portfolio__item--card graphic_design' onClick={() => { removeClass('.portfolio__item--card', 'active'); addClass('.graphic_design', 'active') }}>{props?.content?.categories[4]}</li>
+                        <li className='portfolio__item--card active' onClick={() => { dispatch(setTagPortfolio('all')) }}>
+                            {props?.content?.categories[0]}
+                        </li>
+                        <li className='portfolio__item--card' onClick={() => { dispatch(setTagPortfolio('web_development')) }}>
+                            {props?.content?.categories[1]}
+                        </li>
+                        <li className='portfolio__item--card' onClick={() => { dispatch(setTagPortfolio('app_development')) }}>
+                            {props?.content?.categories[2]}
+                        </li>
+                        <li className='portfolio__item--card' onClick={() => { dispatch(setTagPortfolio('robot_development')) }}>
+                            {props?.content?.categories[3]}
+                        </li>
+                        <li className='portfolio__item--card' onClick={() => { dispatch(setTagPortfolio('graphic_design')) }}>
+                            {props?.content?.categories[4]}
+                        </li>
                     </ul>
                     <div className='portfolio__items'>
                         { cards }

@@ -4,7 +4,7 @@ import data from '../../assets/data/data.json';
 
 const Blog = (props: any) =>
 {
-    const language: 'en' | 'gr' | 'pr' = props?.content?.language;
+    const language: 'en' | 'de' | 'fa' = props?.content?.language;
     const cards = data[language].myBlogs.map((blog: any, i: number) =>
         {
             return (

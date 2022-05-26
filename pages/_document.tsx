@@ -1,6 +1,6 @@
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
 
-class ParsaDocument extends Document
+class MyDocument extends Document
 {
     static async getInitialProps(ctx: DocumentContext)
     {
@@ -41,4 +41,4 @@ class ParsaDocument extends Document
     }
 }
 
-export default ParsaDocument;
+export default MyDocument;
