@@ -1,8 +1,12 @@
 import Head from 'next/head';
+import classnames from 'classnames';
 import type { NextPage } from 'next';
 
 import Main from '../components/layouts/main/main.component';
-import ContactComponent from '../components/contact/contact.component';
+
+import stylesMain from '../../styles/components/main.module.scss';
+import stylesContact from '../../styles/pages/contact.module.scss';
+import stylesButton from '../../styles/components/button.module.scss';
 
 const Contact: NextPage = (props: any) =>
 {
@@ -34,7 +38,94 @@ const Contact: NextPage = (props: any) =>
                 <meta property='twitter:description' content='Parsa Firoozi Contact'/>
             </Head>
             <Main content={props?.content}>
-                <ContactComponent content={props?.content} />
+                <div className={stylesMain.mainContent}>
+                    <div className={stylesMain.mainBackground}/>
+                    <div className='hr'/>
+                    <section className={stylesContact.contact}>
+                        <h4 className='heading'>{props?.content?.titles[3]}</h4>
+                        <div className={stylesContact.contactInformation}>
+                            <div className={stylesContact.contactInformationContent}>
+                                <div className={stylesContact.contactInformationContentPersonal}>
+                                    <ul>
+                                        <li>
+                                            <h6>{props?.content?.residence}:</h6>
+                                            <span>{props?.content?.my_residence}</span>
+                                        </li>
+                                        <li>
+                                            <h6>{props?.content?.city}:</h6>
+                                            <span>{props?.content?.my_city}</span>
+                                        </li>
+                                        <li>
+                                            <h6>{props?.content?.age}:</h6>
+                                            <span>{props?.content?.my_age}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className={stylesContact.contactInformationContent}>
+                                <div className={stylesContact.contactInformationContentPersonal}>
+                                    <ul>
+                                        <li>
+                                            <h6>{props?.content?.email}:</h6>
+                                            <span>{props?.content?.my_email}</span>
+                                        </li>
+                                        <li>
+                                            <h6>{props?.content?.gmail}:</h6>
+                                            <span>{props?.content?.my_gmail}</span>
+                                        </li>
+                                        <li>
+                                            <h6>{props?.content?.chmail}:</h6>
+                                            <span>{props?.content?.my_chmail}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className={stylesContact.contactInformationContent}>
+                                <div className={stylesContact.contactInformationContentPersonal}>
+                                    <ul>
+                                        <li>
+                                            <h6>{props?.content?.phone}:</h6>
+                                            <span>{props?.content?.my_phone}</span>
+                                        </li>
+                                        <li>
+                                            <h6>{props?.content?.whatsapp}:</h6>
+                                            <span>+</span>
+                                        </li>
+                                        <li>
+                                            <h6>{props?.content?.telegram}:</h6>
+                                            <span>+</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 className='heading'>{props?.content?.titles[4]}</h4>
+                        <div className={stylesContact.contactInTouchParent}>
+                            <div className={stylesContact.contactInTouch}>
+                                <form>
+                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)}>
+                                        <input id='name' name='name' type='text' placeholder={props?.content?.name} required={true}/>
+                                        <label htmlFor='name'><i className='bi-person'/></label>
+                                    </div>
+                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)}>
+                                        <input id='email' name='email' type='email' placeholder={props?.content?.email} required={true}/>
+                                        <label htmlFor='email'><i className='bi-envelope'/></label>
+                                    </div>
+                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupMessageInput)}>
+                                        <textarea id='message' name='message' placeholder={props?.content?.message} required={true}/>
+                                        <label htmlFor='message'><i className='bi-text-paragraph'/></label>
+                                    </div>
+                                    <div className={stylesContact.contactInTouchFormGroup}>
+                                        <button onClick={() => {  }} className={classnames(stylesButton.button, 'align-self-start')}>
+                                            {props?.content?.send_message}
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <div className='hr'/>
+                </div>
             </Main>
         </>
     )

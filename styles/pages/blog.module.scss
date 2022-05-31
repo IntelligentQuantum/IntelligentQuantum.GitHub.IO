@@ -1,0 +1,245 @@
+.blog
+{
+    position: relative;
+    z-index: 95;
+    height: auto;
+    width: 100%;
+    padding: 3rem;
+
+    @media only screen and (max-width: 1000px)
+    {
+        padding: 1.5rem;
+    }
+
+    &Items
+    {
+        padding: 0 3rem;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+
+        @media only screen and (max-width: 1400px)
+        {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &Item
+    {
+        border-radius: 1rem;
+        transition: all .35s;
+        position: relative;
+        background: var(--base-lighter);
+        box-shadow: 0 3px 8px 0 var(--base-transparent);
+        min-height: 30rem;
+        overflow: hidden;
+
+        &Box
+        {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            bottom: -70%;
+            z-index: 96;
+            padding: 3rem;
+            background: var(--base-light);
+            box-shadow: 0 3px 8px 0 var(--base-transparent);
+            transition: 0.55s ease-in-out;
+
+            h2
+            {
+                width: 100%;
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--color-base-text-bold);
+                margin-bottom: 1rem;
+            }
+
+            p
+            {
+                width: 100%;
+                font-size: 13px;
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+            }
+
+            & .button-secondary
+            {
+                width: 100%;
+                display: flex;
+                margin: auto auto 0;
+            }
+        }
+
+        img
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(85%) blur(0);
+            transition: 0.4s ease-in-out;
+        }
+
+        i
+        {
+            opacity: 0;
+            color: var(--color-base-text-bold);
+            background: var(--base-light);
+            border-radius: 50%;
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            font-size: 1.2rem;
+            padding: .8rem 1rem 1rem;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+
+            &:hover
+            {
+                color: var(--color-base-text-bolder);
+                background: var(--base-dark);
+            }
+        }
+
+        &:hover
+        {
+            i
+            {
+                opacity: 1;
+            }
+
+            img
+            {
+                transform: scale(1.07);
+                filter: brightness(100%) blur(0);
+            }
+
+            & .blogItemBox
+            {
+                bottom: 0;
+            }
+        }
+
+
+        @media only screen and (max-width: 1000px)
+        {
+            min-height: 40rem;
+
+            img
+            {
+                height: 55%;
+                bottom: 45%;
+            }
+
+            &Box
+            {
+                height: 45%;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+
+    &View
+    {
+        &Image
+        {
+            position: relative;
+
+            width: 100%;
+            height: 50rem;
+            overflow: hidden;
+            border-radius: 1rem;
+
+            & img
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                filter: brightness(85%) blur(0);
+                transition: 0.4s ease-in-out;
+
+                background: var(--base-lighter);
+
+                &:hover
+                {
+                    transform: scale(1.07);
+                    filter: brightness(100%) blur(0);
+                }
+            }
+        }
+
+        &Card
+        {
+            padding: 3rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+            min-height: 50rem;
+            border-radius:  0 0 1rem 1rem;
+
+            background: var(--base-light);
+
+            @media only screen and (max-width: 1000px)
+            {
+                padding: 1.5rem;
+            }
+
+            & img
+            {
+                display: flex;
+                justify-content: center;
+
+                max-width: 100% !important;
+                margin: auto;
+            }
+
+            &Header
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                padding:  0 3rem;
+                min-height: 5rem;
+                font-size: 1.2rem;
+                border-radius:  1rem 1rem 0 0;
+
+                background: var(--base-lighter);
+                color: var(--color-base-text-bold);
+
+                @media only screen and (max-width: 1000px)
+                {
+                    padding: 0 1.5rem;
+                }
+
+                & span
+                {
+                    display: flex;
+
+                    & p
+                    {
+                        font-weight: 600;
+                        margin: 0 .5rem;
+                    };
+                }
+            }
+        }
+    }
+}

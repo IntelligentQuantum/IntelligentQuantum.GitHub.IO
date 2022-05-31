@@ -12,7 +12,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "watch:sass": "sass assets/styles/globals.scss src/Assets/Sass/Stylesheets/Main.css -w"
+        "watch:sass": "sass styles/globals.scss src/Assets/Sass/Stylesheets/Main.css -w"
     },
     "dependencies": {
         "classnames": "^2.3.1",

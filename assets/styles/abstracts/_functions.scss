@@ -1,4 +1,0 @@
-@function break-point($break-point-limit)
-{
-    @return map-get($break-points, $break-point-limit);
-}

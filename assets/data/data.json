@@ -84,7 +84,7 @@
                 "description": "Proving the theorem of similarity of triangles 1",
                 "created_at": "1639673079877",
                 "source": "All the contents of authentic geometry books",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
@@ -92,7 +92,7 @@
                 "description": "Proving the theorem of similarity of triangles 2",
                 "created_at": "1639673079877",
                 "source": "All the contents of authentic geometry books",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
@@ -100,7 +100,7 @@
                 "description": "Proving the theorem of similarity of triangles 3",
                 "created_at": "1639673079877",
                 "source": "All the contents of authentic geometry books",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -145,6 +145,7 @@
         "plans":
         [
             {
+                "id": 0,
                 "title": "Front-End Development",
                 "price": "29",
                 "a": "High-quality Code",
@@ -152,6 +153,7 @@
                 "c": "Dedicated Support"
             },
             {
+                "id": 1,
                 "title": "Back-End Development",
                 "price": "19",
                 "a": "High-quality code",
@@ -159,6 +161,7 @@
                 "c": "Dedicated Support"
             },
             {
+                "id": 2,
                 "title": "Cross-Platform Development",
                 "price": "39",
                 "a": "Well-organized code",
@@ -169,14 +172,17 @@
         "services":
         [
             {
+                "id": 0,
                 "title": "Front-End Development",
                 "description": "Quick and professional JavaScript, HTML5 and CSS3 conversion based on current trends."
             },
             {
+                "id": 1,
                 "title": "Back-End Development",
                 "description": "Quick and professional coding based on Express & Nest for your product."
             },
             {
+                "id": 2,
                 "title": "Cross-Platform Development",
                 "description": "Desktop, Mobile and ... application development based on React, React Native Library."
             }
@@ -377,7 +383,7 @@
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 1",
                 "created_at": "1639673079877",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
@@ -385,7 +391,7 @@
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 2",
                 "created_at": "1639673079877",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
@@ -393,7 +399,7 @@
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 3",
                 "created_at": "1639673079877",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -453,6 +459,7 @@
         "plans":
         [
             {
+                "id": 0,
                 "title": "Front-End Entwicklung",
                 "price": "29",
                 "a": "Hochwertiger Code",
@@ -460,6 +467,7 @@
                 "c": "Engagierte Unterstützung"
             },
             {
+                "id": 1,
                 "title": "Back-End Entwicklung",
                 "price": "19",
                 "a": "Hochwertiger Code",
@@ -467,6 +475,7 @@
                 "c": "Engagierte Unterstützung"
             },
             {
+                "id": 2,
                 "title": "Plattformübergreifende Entwicklung",
                 "price": "39",
                 "a": "Gut-Organisierter Code",
@@ -477,14 +486,17 @@
         "services":
         [
             {
+                "id": 0,
                 "title": "Front-End Entwicklung",
                 "description": "Schnelle und professionelle JavaScript-, HTML5- und CSS3-Konvertierung nach aktuellen Trends."
             },
             {
+                "id": 1,
                 "title": "Back-End Entwicklung",
                 "description": "Schnelle und professionelle Programmierung basierend auf Express & Nest für Ihr Produkt."
             },
             {
+                "id": 2,
                 "title": "Plattformübergreifende Entwicklung",
                 "description": "Desktop-, Mobil- und ... Anwendungsentwicklung basierend auf React, React Native Library."
             }
@@ -695,7 +707,7 @@
                 "description": "اثبات قضیه تشابه مثلث ها ۱",
                 "created_at": "1639673079877",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
@@ -703,7 +715,7 @@
                 "description": "اثبات قضیه تشابه مثلث ها ۲",
                 "created_at": "1639673079877",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
@@ -711,7 +723,7 @@
                 "description": "اثبات قضیه تشابه مثلث ها ۳",
                 "created_at": "1639673079877",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "image": "/image/blog/background_math.webp",
+                "image": "/image/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -756,6 +768,7 @@
         "plans":
         [
             {
+                "id": 0,
                 "title": "توسعه فرانت-اند",
                 "price": "7,900,000",
                 "a": "کد کیفیت بالا",
@@ -763,6 +776,7 @@
                 "c": "پشتیبانی اختصاصی"
             },
             {
+                "id": 1,
                 "title": "توسعه بک-اند",
                 "price": "6,900,000",
                 "a": "کد کیفیت بالا",
@@ -770,6 +784,7 @@
                 "c": "پشتیبانی اختصاصی"
             },
             {
+                "id": 2,
                 "title": "توسعه کراس-پلتفورم",
                 "price": "9,900,000",
                 "a": "کد سازماندهی شده",
@@ -780,14 +795,17 @@
         "services":
         [
             {
+                "id": 0,
                 "title": "توسعه فرانت-اند",
                 "description": "توسعه سریع و بی نقص وبسایت با HTML5، CSS3، JS"
             },
             {
+                "id": 1,
                 "title": "توسعه بک-اند",
                 "description": "توسعه سریع و بی نقص بک-اند وبسایت با Express، Nest، Next"
             },
             {
+                "id": 2,
                 "title": "توسعه کراس-پلتفورم",
                 "description": "برنامه های دسکتاپ، اندورید، آی او اس ساخته شده با React، React Native"
             }

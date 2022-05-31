@@ -1,3 +1,4 @@
+import classnames from 'classnames';
 import { useRouter } from 'next/router';
 import type { AppProps } from 'next/app';
 import { useCallback, useEffect, useState } from 'react';
@@ -11,19 +12,22 @@ import { setOpenAside } from '../app/aside/aside.actions';
 import { setActiveAlert } from '../app/alert/alert.actions';
 import { setOpenNavbar } from '../app/navbar/navbar.actions';
 import { setActiveFilter } from '../app/filter/filter.actions';
-import { setImagePortfolio } from '../app/portfolio/portfolio.actions';
+import {setImagePortfolio, setTagPortfolio} from '../app/portfolio/portfolio.actions';
 
 import Aside from '../components/layouts/aside/aside.component';
 import Navbar from '../components/layouts/navbar/navbar.component';
 
-import '../assets/styles/globals.scss';
+import '../styles/globals.scss';
+import stylesNav from '../styles/components/nav.module.scss';
+import stylesAlert from '../styles/components/alert.module.scss';
+import stylesFilter from '../styles/components/filter.module.scss';
+import stylesPortfolio from '../styles/pages/portfolio.module.scss';
 
 interface CustomAppProps
 {
     Component: AppProps['Component']
     pageProps: AppProps['pageProps']
 }
-
 
 function MyApp({ Component, pageProps }: CustomAppProps)
 {
@@ -101,6 +105,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
 
     useEffect(() =>
     {
+        dispatch(setTagPortfolio('all'));
         dispatch(setOpenAside(false));
         dispatch(setOpenNavbar(false));
         dispatch(setActiveFilter(false));
@@ -112,7 +117,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                 {
                     alert?.status
                         ?
-                        <div className={`alert alert__${alert?.type}`}>
+                        <div className={classnames(stylesAlert.alert, stylesAlert['alert' + alert?.type.charAt(0).toUpperCase() + alert?.type.slice(1)])}>
                             {alert?.message}
                         </div>
                         :
@@ -121,7 +126,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                 {
                     filter
                         ?
-                        <div className='filter'/>
+                        <div className={stylesFilter.filter}/>
                         :
                         null
                 }
@@ -129,11 +134,11 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                     imagePortfolio?.status
                         ?
                         <>
-                            <div className='filter filter__plus z-index__104'/>
-                            <div className='portfolio__image'>
+                            <div className={classnames(stylesFilter.filter, stylesFilter.filterPlus, 'z-index__104')} onClick={() => { dispatch(setImagePortfolio(false)); }}/>
+                            <div className={stylesPortfolio.portfolioImage}>
                                 <nav>
-                                    <div className='nav__mobile--hamburger__open' onClick={() => { dispatch(setImagePortfolio(false));}}>
-                                        <div className='nav__mobile--hamburger__open--line'>&nbsp;</div>
+                                    <div className={stylesNav.navMobileHamburgerOpen} onClick={() => { dispatch(setImagePortfolio(false)); }}>
+                                        <div className={stylesNav.navMobileHamburgerOpenLine}>&nbsp;</div>
                                     </div>
                                 </nav>
                                 <img src={imagePortfolio.image} alt={imagePortfolio.title} onClick={() => { dispatch(setImagePortfolio(false)); }}/>

@@ -1,0 +1,90 @@
+.main
+{
+    grid-template: main-start / main-end;
+    display: grid;
+    grid-template-rows: [content-start] 1fr [content-end footer-start] 5rem [footer-end];
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background: var(--base);
+    position: relative;
+    box-shadow: 0 3px 8px 0 var(--base-transparent);
+
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    & .footer
+    {
+        grid-row: footer-start / footer-end;
+    }
+
+    &Content
+    {
+        grid-row: content-start / content-end;
+        height: 100%;
+    }
+
+    &Background
+    {
+        background-image: var(--base-gradiant-image-2);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 40rem;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+    }
+
+    @media only screen and (max-width: 1000px)
+    {
+        height: 100%;
+        padding-top: 6rem;
+    }
+}
+
+html[data-language='fa']
+{
+    & .aside
+    {
+        @media only screen and (max-width: 1000px)
+        {
+            left: auto;
+            right: -100%;
+
+            & .asideFooter
+            {
+                left: auto;
+                right: 0;
+            }
+        }
+
+        &UserIcon svg
+        {
+            right: auto;
+            left: 2rem;
+        }
+
+        &.open
+        {
+            transition: .4s;
+            right: 0;
+        }
+    }
+    & .nav
+    {
+        @media only screen and (max-width: 1000px)
+        {
+            right: auto;
+            left: -100%;
+        }
+
+        &.open
+        {
+            transition: .4s;
+            left: 0;
+        }
+    }
+}

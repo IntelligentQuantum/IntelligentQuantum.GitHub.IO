@@ -3,6 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import ButtonSecondary from '../buttons/secondary-button.component';
 import { setImagePortfolio } from '../../app/portfolio/portfolio.actions';
 
+import stylesPortfolio from '../../styles/pages/portfolio.module.scss';
+
+import ArrowsFullscreen from '../../../assets/icons/arrows-fullscreen.svg';
+
 const PortfolioCard = (props: { text: string, portfolio: { image: string, title: string, tag: string, description: string, link: string }}) =>
 {
     const dispatch = useDispatch();
@@ -11,10 +15,10 @@ const PortfolioCard = (props: { text: string, portfolio: { image: string, title:
     return (
         tagPortfolio === 'all' || props.portfolio?.tag === tagPortfolio
             ?
-            <div className={`portfolio__item--card portfolio__item active ${props.portfolio?.tag}`}>
-                <img src={props.portfolio?.image} alt={props.portfolio?.title}/>
-                <i className='bi-arrows-fullscreen' onClick={() => { dispatch(setImagePortfolio(true, props.portfolio?.image, props.portfolio?.title)) }}/>
-                <div className='portfolio__item--box'>
+            <div className={stylesPortfolio.portfolioItem}>
+                <img src={props.portfolio?.image} alt={props.portfolio?.title} />
+                <ArrowsFullscreen onClick={() => { dispatch(setImagePortfolio(true, props.portfolio?.image, props.portfolio?.title)) }} />
+                <div className={stylesPortfolio.portfolioItemBox}>
                     <h2>
                         {props.portfolio?.title}
                     </h2>

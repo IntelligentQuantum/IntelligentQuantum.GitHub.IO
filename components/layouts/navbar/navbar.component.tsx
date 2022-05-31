@@ -1,13 +1,17 @@
 import Link from 'next/link';
+import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 
-import Dim from '../../../assets/icons/icon-dim.svg';
-import Dark from '../../../assets/icons/icon-dark.svg';
-import Light from '../../../assets/icons/icon-light.svg';
+import Dim from '../../../assets/icons/icon-theme_dim.svg';
+import Dark from '../../../assets/icons/icon-theme_dark.svg';
+import Light from '../../../assets/icons/icon-theme_light.svg';
+import Ellipsis from '../../../assets/icons/icon-ellipsis.svg';
 
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setOpenNavbar } from '../../../app/navbar/navbar.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
+
+import stylesNav from '../../../styles/components/nav.module.scss';
 
 const Navbar = (props: any) =>
 {
@@ -19,61 +23,59 @@ const Navbar = (props: any) =>
     return (
         props.mobile
             ?
-            <nav className='nav__mobile z-index__100'>
-                <div className='nav__mobile--3dot' onClick={() => { dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!activeFilter)) }}>
-                    <svg>
-                        <use xlinkHref='/svg/sprite.svg#icon-ellipsis-v'/>
-                    </svg>
+            <nav className={classnames(stylesNav.navMobile, 'z-index__100')}>
+                <div className={stylesNav.navMobileDots} onClick={() => { dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!activeFilter)) }}>
+                    <Ellipsis />
                 </div>
-                <div className='nav__mobile--hamburger' onClick={() => { dispatch(setOpenNavbar(!openNavbar)); dispatch(setActiveFilter(!activeFilter)) }}>
-                    <div className='nav__mobile--hamburger__line open'>&nbsp;</div>
+                <div className={stylesNav.navMobileHamburger} onClick={() => { dispatch(setOpenNavbar(!openNavbar)); dispatch(setActiveFilter(!activeFilter)) }}>
+                    <div className={classnames(stylesNav.navMobileHamburgerLine, stylesNav.navMobileHamburgerLineOpen)}>&nbsp;</div>
                 </div>
             </nav>
             :
-            <nav className={`nav z-index__101 ${openNavbar ? 'open' : null}`}>
-                <div className='nav__hamburger' onClick={() => { dispatch(setOpenNavbar(!openNavbar)); dispatch(setActiveFilter(!activeFilter)) }}>
-                    <div className='nav__hamburger--line'>&nbsp;</div>
+            <nav className={classnames(stylesNav.nav, 'z-index__101')} data-open={openNavbar ? 'true' : 'false'}>
+                <div className={stylesNav.navHamburger} onClick={() => { dispatch(setOpenNavbar(!openNavbar)); dispatch(setActiveFilter(!activeFilter)) }}>
+                    <div className={stylesNav.navHamburgerLine} data-open={openNavbar ? 'true' : 'false'}>&nbsp;</div>
                 </div>
-                <div className='nav__content'>
-                    <div className='nav__content--active'>
+                <div className={stylesNav.navContent}>
+                    <div className={stylesNav.navContentActive} data-open={openNavbar ? 'true' : 'false'}>
                         <p>{props?.content ? props?.content[props?.page] : null}</p>
                     </div>
-                    <div className='nav__content--items'>
+                    <div className={stylesNav.navContentList} data-open={openNavbar ? 'true' : 'false'}>
                         <Link href='/' passHref>
-                            <a className={`nav__content--item ${props.page}-page`}>
+                            <a data-active={props.page === 'home' ? 'true' : 'false'} className={stylesNav.navContentItem}>
                                 {props?.content?.home}
                             </a>
                         </Link>
                         <Link href='/portfolio' passHref>
-                            <a className={`nav__content--item ${props.page}-page`}>
+                            <a data-active={props.page === 'portfolio' ? 'true' : 'false'} className={stylesNav.navContentItem}>
                                 {props?.content?.portfolio}
                             </a>
                         </Link>
                         <Link href='/contact' passHref>
-                            <a className={`nav__content--item ${props.page}-page`}>
+                            <a data-active={props.page === 'contact' ? 'true' : 'false'} className={stylesNav.navContentItem}>
                                 {props?.content?.contact}
                             </a>
                         </Link>
                         <Link href='/funny' passHref>
-                            <a className={`nav__content--item ${props.page}-page`}>
+                            <a data-active={props.page === 'funny' ? 'true' : 'false'} className={stylesNav.navContentItem}>
                                 {props?.content?.funny}
                             </a>
                         </Link>
                         <Link href='/blogs' passHref>
-                            <a className={`nav__content--item ${props.page}-page`}>
+                            <a data-active={props.page === 'blogs' ? 'true' : 'false'} className={stylesNav.navContentItem}>
                                 {props?.content?.blogs}
                             </a>
                         </Link>
                     </div>
                 </div>
-                <div className='nav__themes'>
-                    <span onClick={() => { props.handleTheme('dark') }} className={props?.theme === 'dark' ? 'nav__themes--active' : ''}>
+                <div className={stylesNav.navThemes} data-open={openNavbar ? 'true' : 'false'}>
+                    <span onClick={() => { props.handleTheme('dark') }} className={props?.theme === 'dark' ? stylesNav.navThemesActive : ''}>
                         <Dark />
                     </span>
-                    <span onClick={() => { props.handleTheme('dim') }} className={props?.theme === 'dim' ? 'nav__themes--active' : ''}>
+                    <span onClick={() => { props.handleTheme('dim') }} className={props?.theme === 'dim' ? stylesNav.navThemesActive : ''}>
                         <Dim />
                     </span>
-                    <span onClick={() => { props.handleTheme('light') }} className={props?.theme === 'light' ? 'nav__themes--active' : ''}>
+                    <span onClick={() => { props.handleTheme('light') }} className={props?.theme === 'light' ? stylesNav.navThemesActive : ''}>
                         <Light />
                     </span>
                 </div>

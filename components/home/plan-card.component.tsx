@@ -1,33 +1,34 @@
 import ButtonSecondary from '../buttons/secondary-button.component';
 
+import stylesHome from '../../styles/pages/home.module.scss';
+
+import Check from '../../assets/icons/icon-check.svg';
+
 const PlanCard = (props: { text: string, content: { currency: string }, plan: { a: string, b: string, c: string, title: string, price: string }}) =>
 {
     return (
-        <div className='home__plans--content'>
+        <div className={stylesHome.homePlansContent}>
             <h5>{props.plan.title}</h5>
             <div>
                 {props.plan.price}
                 <span>{props?.content?.currency}</span>
             </div>
-
             <ul>
                 <li>
-                    <svg>
-                        <use xlinkHref='/svg/sprite.svg#icon-check'/>
-                    </svg>
-                    <span>{props.plan.a}</span>
+                    <Check />
+                    <span>
+                        {props.plan.a}
+                    </span>
                 </li>
                 <li>
-                    <svg>
-                        <use xlinkHref='/svg/sprite.svg#icon-check'/>
-                    </svg>
+                    <Check />
                     <span>{props.plan.b}</span>
                 </li>
                 <li>
-                    <svg>
-                        <use xlinkHref='/svg/sprite.svg#icon-check'/>
-                    </svg>
-                    <span>{props.plan.c}</span>
+                    <Check />
+                    <span>
+                        {props.plan.c}
+                    </span>
                 </li>
             </ul>
             <ButtonSecondary

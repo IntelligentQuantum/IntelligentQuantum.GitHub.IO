@@ -18,7 +18,7 @@ const Error = (props: any) =>
     return (
         <>
             <main className='error'>
-                <div className='error__header'>
+                <div className='errorHeader'>
                     <h1>
                         {title}
                     </h1>

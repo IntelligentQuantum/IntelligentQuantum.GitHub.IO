@@ -1,11 +1,25 @@
 import Head from 'next/head';
+
 import type { NextPage } from 'next';
 
+import data from '../assets/data/data.json';
+
+import Card from '../components/funny/card.component';
 import Main from '../components/layouts/main/main.component';
-import FunnyComponent from '../components/funny/funny.component';
+
+import stylesFunny from '../styles/pages/funny.module.scss';
+import stylesMain from '../styles/components/main.module.scss';
 
 const Funny: NextPage = (props: any) =>
 {
+    const language: 'en' | 'de' | 'fa' = props?.content?.language;
+    const facts = data[language].funny_facts.map((fact: any, i: number) =>
+        <Card
+            key={i}
+            fact={fact}
+        />
+    );
+
     return (
         <>
             <Head>
@@ -35,7 +49,17 @@ const Funny: NextPage = (props: any) =>
                 <meta property='twitter:description' content='Parsa Firoozi Funny Time'/>
             </Head>
             <Main content={props?.content}>
-                <FunnyComponent content={props?.content} />
+                <div className={stylesMain.mainContent}>
+                    <div className={stylesMain.mainBackground}/>
+                    <div className='hr'/>
+                    <section className={stylesFunny.funny}>
+                        <h4 className='heading'>
+                            {props?.content?.titles[5]}
+                        </h4>
+                        { facts }
+                    </section>
+                    <div className='hr'/>
+                </div>
             </Main>
         </>
     )

@@ -1,24 +1,25 @@
 import ButtonSecondary from '../buttons/secondary-button.component';
 
+import stylesBlog from '../../styles/pages/blog.module.scss';
+
 const BlogCard = (props: { text: string, blog: { image: string, name: string, description: string }}) =>
-{
-    return (
-        <div className='blog__item active'>
+    (
+        <div className={stylesBlog.blogItem}>
             <img src={props.blog.image} alt={props.blog.name}/>
-            <div className='blog__item--box'>
+            <div className={stylesBlog.blogItemBox}>
                 <h2>
-                    {props.blog.name.split('_').join(' ')}
+                    { props.blog.name.split('_').join(' ') }
                 </h2>
                 <p>
-                    {props.blog.description}
+                    { props.blog.description }
                 </p>
                 <ButtonSecondary
-                    link={`/blog/${props.blog.name}`}
-                    text={props.text}
+                    link={` /blogs/${props.blog.name}` }
+                    text={ props.text }
                 />
             </div>
         </div>
     );
-};
+
 
 export default BlogCard;

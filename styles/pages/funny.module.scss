@@ -1,0 +1,365 @@
+.funny
+{
+    height: auto;
+    width: 100%;
+
+    &Header
+    {
+        position: relative;
+        padding: 0 3rem;
+
+        @media only screen and (max-width: 1000px)
+        {
+            padding: 1.5rem;
+        }
+
+        &Content
+        {
+            display: flex;
+            justify-content: space-between;
+
+            position: relative;
+            border-radius: 1rem;
+            margin-bottom: 8rem;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 35rem;
+            padding: 6rem 3rem 0 6rem;
+
+            &[data-type='football']
+            {
+                background-image: var(--base-gradiant-image_football);
+            }
+            &[data-type='instagram']
+            {
+                padding: 6rem 3rem 6rem 6rem;
+                background-image: var(--base-gradiant-image_instagram);
+            }
+            &[data-type='discord']
+            {
+                padding: 6rem 3rem 6rem 6rem;
+                background-image: var(--base-gradiant-image_discord);
+            }
+            &[data-type='cod']
+            {
+                background-image: var(--base-gradiant-image_cod);
+            }
+            &[data-type='music']
+            {
+                background-image: var(--base-gradiant-image_music);
+            }
+            &[data-type='guitar']
+            {
+                background-image: var(--base-gradiant-image_guitar);
+            }
+            &[data-type='space']
+            {
+                background-image: var(--base-gradiant-image_space);
+            }
+
+            @media only screen and (max-width: 1400px)
+            {
+                height: auto;
+                padding: 4rem 4rem 0;
+            }
+
+            @media only screen and (max-width: 1300px)
+            {
+                margin-bottom: 3rem;
+            }
+
+            @media only screen and (max-width: 1000px)
+            {
+                padding: 2.5rem 2.5rem 0;
+                margin: 0;
+            }
+
+            & h1
+            {
+                color: var(--color-base-text-bolder);
+                font-size: 4rem;
+
+                @media only screen and (max-width: 1400px)
+                {
+                    font-size: 3rem;
+                }
+            }
+
+            &Box
+            {
+                width:55%;
+
+                @media only screen and (max-width: 1300px)
+                {
+                    width: 45%;
+                }
+
+                @media only screen and (max-width: 1200px)
+                {
+                    width: 100%;
+                }
+            }
+
+            &Description
+            {
+                color: var(--color-base-text-bold);
+                font-size: 2rem;
+                font-weight: 400;
+                display: flex;
+                margin: auto auto 0;
+
+                @media only screen and (max-width: 1400px)
+                {
+                    margin-bottom: 4rem;
+                    font-size: 1.5rem;
+                }
+
+                &.instagram,
+                &.discord
+                {
+                    margin: 0;
+                }
+            }
+
+            &Images
+            {
+                width: 40%;
+                position: relative;
+                bottom: 0;
+                right: 0;
+                height: auto;
+
+                &Background
+                {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    &Two,
+                    &Three,
+                    &Four
+                    {
+                        max-width: 31rem;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        transition: 0.4s ease-in-out;
+                        z-index: 92;
+
+                        @media only screen and (max-width: 1400px)
+                        {
+                            max-width: 80%;
+                        }
+                    }
+
+                    &Three,
+                    &Four
+                    {
+                        right: 0 !important;
+                        max-width: 40rem;
+
+                        @media only screen and (max-width: 1400px)
+                        {
+                            max-width: 90%;
+                        }
+                    }
+
+                    &Four
+                    {
+                        margin-bottom: 1rem;
+                    }
+
+                    &One
+                    {
+                        filter: blur(3px);
+                        max-width: 29rem;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        transition: 0.4s ease-in-out;
+                        z-index: 92;
+
+                        @media only screen and (max-width: 1400px)
+                        {
+                            max-width: 70%;
+                        }
+
+                        &:hover
+                        {
+                            filter: blur(0);
+                            max-width: 31rem;
+
+                            @media only screen and (max-width: 1400px)
+                            {
+                                max-width: 80%;
+                            }
+                        }
+
+                        &:hover + [data-image='two']
+                        {
+                            filter: blur(3px);
+                            max-width: 29rem;
+
+                            @media only screen and (max-width: 1400px)
+                            {
+                                max-width: 70%;
+                            }
+                        }
+                    }
+
+                    &[data-hover='true'] img:hover
+                    {
+                        animation: Scale .6s ease-in-out;
+                        z-index: 93;
+                    }
+
+                    & img:last-child
+                    {
+                        right: 12rem;
+
+                        @media only screen and (max-width: 1400px)
+                        {
+                            right: 5rem;
+                        }
+
+                        &:hover
+                        {
+                            animation: none;
+                        }
+                    }
+
+                    &Instagram
+                    {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 20rem;
+                        height: 20rem;
+                    }
+
+                    &Discord
+                    {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        height: 20rem;
+                    }
+                }
+
+                @media only screen and (max-width: 1400px)
+                {
+                    width: 30%;
+                }
+                @media only screen and (max-width: 1200px)
+                {
+                    display: none;
+                }
+            }
+
+            @media only screen and (max-width: 1000px)
+            {
+                margin-top: 1rem;
+                justify-content: center;
+                align-items: center;
+
+                & h1
+                {
+                    font-size: 3rem;
+                    padding-bottom: 2rem;
+                }
+
+                & a
+                {
+                    align-self: initial;
+                }
+
+                &Description
+                {
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+html[data-language='fa']
+{
+    .funny
+    {
+        height: auto;
+        width: 100%;
+
+        &Header
+        {
+            &Content
+            {
+                &Images
+                {
+                    left: 0;
+                    right: auto;
+
+                    &Background
+                    {
+                        left: 0;
+                        right: auto;
+
+                        & .two,
+                        & .three,
+                        & .four
+                        {
+                            left: 0;
+                            right: auto;
+                        }
+
+                        & .three,
+                        & .four
+                        {
+                            left: 0 !important;
+                            right: auto !important;
+                        }
+
+                        & .one
+                        {
+                            left: 0;
+                            right: auto;
+                        }
+
+                        & img:last-child
+                        {
+                            right: auto;
+                            left: 12rem;
+
+                            @media only screen and (max-width: 1400px)
+                            {
+                                left: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes Scale
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    0%
+    {
+        opacity: .5;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
