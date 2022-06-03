@@ -57,6 +57,10 @@
             {
                 background-image: var(--base-gradiant-image_space);
             }
+            &[data-fact_type='rarible']
+            {
+                background-image: var(--base-gradiant-image_rarible);
+            }
 
             @media only screen and (max-width: 1400px)
             {
@@ -113,12 +117,6 @@
                 {
                     margin-bottom: 4rem;
                     font-size: 1.5rem;
-                }
-
-                &.instagram,
-                &.discord
-                {
-                    margin: 0;
                 }
             }
 
@@ -231,7 +229,8 @@
                         }
                     }
 
-                    &Instagram
+                    &Instagram,
+                    &Rarible
                     {
                         position: absolute;
                         top: 50%;
@@ -239,6 +238,7 @@
                         transform: translate(-50%, -50%);
                         width: 20rem;
                         height: 20rem;
+                        border-radius: 3rem;
                     }
 
                     &Discord
@@ -308,22 +308,22 @@ html[data-language='fa']
                         left: 0;
                         right: auto;
 
-                        & .two,
-                        & .three,
-                        & .four
+                        &Two,
+                        &Three,
+                        &Four
                         {
                             left: 0;
                             right: auto;
                         }
 
-                        & .three,
-                        & .four
+                        &Three,
+                        &Four
                         {
                             left: 0 !important;
                             right: auto !important;
                         }
 
-                        & .one
+                        &One
                         {
                             left: 0;
                             right: auto;

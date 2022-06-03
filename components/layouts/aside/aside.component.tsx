@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -9,15 +10,15 @@ import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 import stylesAside from '../../../styles/components/aside.module.scss';
 
-import Check from '../../../assets/icons/icon-check.svg';
+import Check from '../../../public/static/icons/icon-check.svg';
 
-import Github from '../../../assets/icons/icon-github.svg';
-import Rarible from '../../../assets/icons/icon-rarible.svg';
-import Download from '../../../assets/icons/icon-download.svg';
-import Ellipsis from '../../../assets/icons/icon-ellipsis.svg';
-import Dribbble from '../../../assets/icons/icon-dribbble.svg';
-import Linkedin from '../../../assets/icons/icon-linkedin.svg';
-import Instagram from '../../../assets/icons/icon-instagram.svg';
+import Github from '../../../public/static/icons/icon-github.svg';
+import Rarible from '../../../public/static/icons/icon-rarible.svg';
+import Download from '../../../public/static/icons/icon-download.svg';
+import Ellipsis from '../../../public/static/icons/icon-ellipsis.svg';
+import Dribbble from '../../../public/static/icons/icon-dribbble.svg';
+import Linkedin from '../../../public/static/icons/icon-linkedin.svg';
+import Instagram from '../../../public/static/icons/icon-instagram.svg';
 
 const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
 {
@@ -30,12 +31,16 @@ const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
                 <div className={stylesAside.asideUserIcon} onClick={() => { dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!openAside)) }}>
                     <Ellipsis />
                 </div>
-                <span className={stylesAside.asideUserProfile}>
-                    <img alt='im-parsa' className={stylesAside.asideUserImage} src='/image/my-profile.png'/>
+                <div className={stylesAside.asideUserProfile}>
+                    <Image
+                        src='/static/images/my-profile.png'
+                        alt='im-parsa - Parsa Firoozi'
+                        layout='fill'
+                    />
                     <div className={stylesAside.asideUserStatusParent}>
                         <i className={stylesAside.asideUserStatus}/>
                     </div>
-                </span>
+                </div>
                 <h5 className={stylesAside.asideUserName}>
                     <Link href='/'>
                         <a>

@@ -49,34 +49,28 @@ const Contact: (props: { content: IContent }) => JSX.Element = (props: { content
                                 <div className={stylesContact.contactInformationContentPersonal}>
                                     <ul>
                                         <li>
-                                            <h6>{props?.content?.residence}:</h6>
-                                            <span>{props?.content?.my_residence}</span>
+                                            <h6>
+                                                {props?.content?.residence}:
+                                            </h6>
+                                            <span>
+                                                {props?.content?.my_residence}
+                                            </span>
                                         </li>
                                         <li>
-                                            <h6>{props?.content?.city}:</h6>
-                                            <span>{props?.content?.my_city}</span>
+                                            <h6>
+                                                {props?.content?.city}:
+                                            </h6>
+                                            <span>
+                                                {props?.content?.my_city}
+                                            </span>
                                         </li>
                                         <li>
-                                            <h6>{props?.content?.age}:</h6>
-                                            <span>{props?.content?.my_age}</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={stylesContact.contactInformationContent}>
-                                <div className={stylesContact.contactInformationContentPersonal}>
-                                    <ul>
-                                        <li>
-                                            <h6>{props?.content?.email}:</h6>
-                                            <span>{props?.content?.my_email}</span>
-                                        </li>
-                                        <li>
-                                            <h6>{props?.content?.gmail}:</h6>
-                                            <span>{props?.content?.my_gmail}</span>
-                                        </li>
-                                        <li>
-                                            <h6>{props?.content?.chmail}:</h6>
-                                            <span>{props?.content?.my_chmail}</span>
+                                            <h6>
+                                                {props?.content?.age}:
+                                            </h6>
+                                            <span>
+                                                {props?.content?.my_age}
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -85,22 +79,66 @@ const Contact: (props: { content: IContent }) => JSX.Element = (props: { content
                                 <div className={stylesContact.contactInformationContentPersonal}>
                                     <ul>
                                         <li>
-                                            <h6>{props?.content?.phone}:</h6>
-                                            <span>{props?.content?.my_phone}</span>
+                                            <h6>
+                                                {props?.content?.email}:
+                                            </h6>
+                                            <span>
+                                                {props?.content?.my_email}
+                                            </span>
                                         </li>
                                         <li>
-                                            <h6>{props?.content?.whatsapp}:</h6>
-                                            <span>+</span>
+                                            <h6>
+                                                {props?.content?.gmail}:
+                                            </h6>
+                                            <span>
+                                                {props?.content?.my_gmail}
+                                            </span>
                                         </li>
                                         <li>
-                                            <h6>{props?.content?.telegram}:</h6>
-                                            <span>+</span>
+                                            <h6>
+                                                {props?.content?.chmail}:
+                                            </h6>
+                                            <span>
+                                                {props?.content?.my_chmail}
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className={stylesContact.contactInformationContent}>
+                                <div className={stylesContact.contactInformationContentPersonal}>
+                                    <ul>
+                                        <li>
+                                            <h6>
+                                                {props?.content?.phone}:
+                                            </h6>
+                                            <span>
+                                                {props?.content?.my_phone}
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <h6>
+                                                {props?.content?.whatsapp}:
+                                            </h6>
+                                            <span>
+                                                +
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <h6>
+                                                {props?.content?.telegram}:
+                                            </h6>
+                                            <span>
+                                                +
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <h4 className='heading'>{props?.content?.titles[4]}</h4>
+                        <h4 className='heading'>
+                            {props?.content?.titles[4]}
+                        </h4>
                         <div className={stylesContact.contactInTouchParent}>
                             <div className={stylesContact.contactInTouch}>
                                 <form>

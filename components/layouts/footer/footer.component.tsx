@@ -1,6 +1,6 @@
 import stylesFooter from '../../../styles/components/footer.module.scss';
 
-import Github from '../../../assets/icons/icon-github.svg';
+import Github from '../../../public/static/icons/icon-github.svg';
 
 const Footer = (props: any) =>
 {

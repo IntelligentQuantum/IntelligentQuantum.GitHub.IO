@@ -5,7 +5,7 @@ import ButtonSecondary from '../buttons/secondary-button.component';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
-import Check from '../../assets/icons/icon-check.svg';
+import Check from '../../public/static/icons/icon-check.svg';
 
 const PlanCard = (props: { text: string, content: IContent, plan: IPlan }) =>
 {
@@ -29,7 +29,9 @@ const PlanCard = (props: { text: string, content: IContent, plan: IPlan }) =>
                 </li>
                 <li>
                     <Check />
-                    <span>{props.plan.b}</span>
+                    <span>
+                        {props.plan.b}
+                    </span>
                 </li>
                 <li>
                     <Check />

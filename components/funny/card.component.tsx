@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import classnames from 'classnames';
 
 import stylesFunny from '../../styles/pages/funny.module.scss';
@@ -24,37 +25,41 @@ const FunnyCard = (props: { fact: IFunny }) =>
                             props.fact.type === 'football'
                                 ?
                                 <>
-                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundOne} src='/image/funny/Antoine_Griezmann.png' alt='Antoine Griezmann'/>
-                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundTwo} data-image='two' src='/image/funny/Lionel_Messi.png' alt='Lionel Messi'/>
+                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundOne} src='/static/images/funny/antoine_griezmann.png' alt='Antoine Griezmann'/>
+                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundTwo} data-image='two' src='/static/images/funny/lionel_messi.png' alt='Lionel Messi'/>
                                 </>
                                 :
                                 props.fact.type === 'space'
                                     ?
-                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundFour} src='/image/funny/Astronaut.png' alt='Astronaut'/>
+                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundFour} src='/static/images/funny/astronaut.png' alt='Astronaut'/>
                                     :
                                     props.fact.type === 'guitar'
                                         ?
-                                        <img className={stylesFunny.funnyHeaderContentImagesBackgroundFour} src='/image/funny/Guitar.png' alt='Guitar'/>
+                                        <img className={stylesFunny.funnyHeaderContentImagesBackgroundFour} src='/static/images/funny/guitar.png' alt='Guitar'/>
                                         :
                                         props.fact.type === 'music'
                                             ?
-                                            <img className={stylesFunny.funnyHeaderContentImagesBackgroundThree} src='/image/funny/Shadmehr_Aghili.png' alt='Shadmehr Aghili'/>
+                                            <img className={stylesFunny.funnyHeaderContentImagesBackgroundThree} src='/static/images/funny/shadmehr_aghili.png' alt='Shadmehr Aghili'/>
                                             :
                                             props.fact.type === 'cod'
                                                 ?
                                                 <>
-                                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundOne} src='/image/funny/Azur.png' alt='Azur'/>
-                                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundTwo} data-image='two' src='/image/funny/Ghost_Reckoner.png' alt='Ghost Reckoner'/>
+                                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundOne} src='/static/images/funny/azur.png' alt='Azur'/>
+                                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundTwo} data-image='two' src='/static/images/funny/ghost_reckoner.png' alt='Ghost Reckoner'/>
                                                 </>
                                                 :
                                                 props.fact.type === 'discord'
                                                     ?
-                                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundDiscord} src='/image/funny/Discord.png' alt='Discord'/>
+                                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundDiscord} src='/static/images/funny/discord.png' alt='Discord'/>
                                                     :
                                                     props.fact.type === 'instagram'
                                                         ?
-                                                        <img className={stylesFunny.funnyHeaderContentImagesBackgroundInstagram} src='/image/funny/Instagram.png' alt='Instagram'/>
+                                                        <img className={stylesFunny.funnyHeaderContentImagesBackgroundInstagram} src='/static/images/funny/instagram.png' alt='Instagram'/>
                                                         :
+                                                        props.fact.type === 'rarible'
+                                                            ?
+                                                            <img className={stylesFunny.funnyHeaderContentImagesBackgroundRarible} src='/static/images/funny/rarible.jpg' alt='Rarible'/>
+                                                            :
                                                         null
                         }
                     </div>

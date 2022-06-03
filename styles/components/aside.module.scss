@@ -27,7 +27,7 @@
         }
     }
 
-    &[data-open=true]
+    &[data-open='true']
     {
         transition: .4s;
         left: 0;
@@ -72,14 +72,16 @@
         &Profile
         {
             position: relative;
-        }
 
-        &Image
-        {
-            height: 10rem;
-            width: 10rem;
-            background: var(--base-darker);
-            border-radius: 2rem;
+            & span
+            {
+                position: relative !important;
+
+                height: 10rem !important;
+                width: 10rem !important;
+                background: var(--base-darker) !important;
+                border-radius: 2rem !important;
+            }
         }
 
         &StatusParent

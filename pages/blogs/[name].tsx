@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import moment  from 'moment';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import reactHtmlParser from 'html-react-parser';
@@ -10,7 +11,7 @@ import 'moment/locale/de';
 import 'moment/locale/fa';
 import 'moment/locale/en-gb';
 
-import data from '../../assets/data/data.json';
+import data from '../../public/static/data/data.json';
 
 import Error from '../../components/error/error.component';
 import Main from '../../components/layouts/main/main.component';
@@ -56,7 +57,7 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
     return (
         <>
             <Head>
-                <title>Parsa Firoozi &mdash; {blog?.name}</title>
+                <title>Parsa Firoozi &mdash; {blog?.name || ''}</title>
 
                 <meta charSet='UTF-8' />
                 <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
@@ -88,7 +89,11 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
                             <div className={stylesMain.mainBackground}/>
                             <section className={stylesBlog.blog}>
                                 <div className={stylesBlog.blogViewImage}>
-                                    <img src={blog.image} alt={blog.name}/>
+                                    <Image
+                                        src={blog.image}
+                                        alt={blog.name}
+                                        layout='fill'
+                                    />
                                 </div>
                                 <div className='hr'/>
                                 <div className={stylesBlog.blogViewCardHeader}>

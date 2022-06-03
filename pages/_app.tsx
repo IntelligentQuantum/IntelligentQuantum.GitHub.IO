@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import classnames from 'classnames';
 import { DefaultSeo } from 'next-seo';
 import { useRouter } from 'next/router';
@@ -5,9 +6,9 @@ import type { AppProps } from 'next/app';
 import { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector, Provider } from 'react-redux';
 
+import seo from '../seo.config';
 import store from '../app/store';
-import seo from '../assets/data/seo.config';
-import data from '../assets/data/data.json';
+import data from '../public/static/data/data.json';
 
 import { setOpenAside } from '../app/aside/aside.actions';
 import { setActiveAlert } from '../app/alert/alert.actions';
@@ -170,7 +171,12 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                                         <div className={stylesNav.navMobileHamburgerOpenLine}>&nbsp;</div>
                                     </div>
                                 </nav>
-                                <img src={imagePortfolio.image} alt={imagePortfolio.title} onClick={() => { dispatch(setImagePortfolio(false)); }}/>
+                                <Image
+                                    onClick={() => { dispatch(setImagePortfolio(false)); }}
+                                    src={imagePortfolio.image}
+                                    alt={imagePortfolio.title}
+                                    layout='fill'
+                                />
                             </div>
                         </>
                         :

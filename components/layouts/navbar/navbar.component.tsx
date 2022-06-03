@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import type { IContent } from '../../../contracts/IContent';
 
-import Dim from '../../../assets/icons/icon-theme_dim.svg';
-import Dark from '../../../assets/icons/icon-theme_dark.svg';
-import Light from '../../../assets/icons/icon-theme_light.svg';
-import Ellipsis from '../../../assets/icons/icon-ellipsis.svg';
+import Dim from '../../../public/static/icons/icon-theme_dim.svg';
+import Dark from '../../../public/static/icons/icon-theme_dark.svg';
+import Light from '../../../public/static/icons/icon-theme_light.svg';
+import Ellipsis from '../../../public/static/icons/icon-ellipsis.svg';
 
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setOpenNavbar } from '../../../app/navbar/navbar.actions';
