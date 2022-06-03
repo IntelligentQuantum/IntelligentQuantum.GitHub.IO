@@ -1,5 +1,8 @@
+import axios from 'axios';
 import Head from 'next/head';
+import Swal from 'sweetalert2';
 import classnames from 'classnames';
+import withReactContent from 'sweetalert2-react-content';
 
 import type { IContent } from '../contracts/IContent';
 
@@ -11,6 +14,41 @@ import stylesButton from '../styles/components/button.module.scss';
 
 const Contact: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {
+    const modal = withReactContent(Swal);
+    // const handleSubmitComment = async (event: any) =>
+    // {
+    //     event.preventDefault();
+    //
+    //     try
+    //     {
+    //         const gRecaptchaResponse: HTMLElement | any = document.getElementById('g-recaptcha-response');
+    //
+    //         await axios.post('/comment', { type: 'BOT', typeId: singleBot?.botId, content, rating, gRecaptchaResponse: gRecaptchaResponse.value });
+    //
+    //         await modal.fire(
+    //             {
+    //                 title: 'Comment created successfully',
+    //                 icon: 'success',
+    //                 timer: 5000
+    //             });
+    //
+    //         const textareaElement: any = document.getElementById('content');
+    //         textareaElement.value = '';
+    //
+    //         setContent('');
+    //     }
+    //     catch (error: any)
+    //     {
+    //         await modal.fire(
+    //             {
+    //                 confirmButtonColor: '#5865F2',
+    //                 title: error?.response?.data?.message,
+    //                 icon: 'error',
+    //                 timer: 5000
+    //             });
+    //     }
+    // }
+
     return (
         <>
             <Head>

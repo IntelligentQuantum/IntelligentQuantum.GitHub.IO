@@ -25,7 +25,7 @@ html[data-theme='dark']
     --base-gradiant-image_football: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url('../../public/static/images/funny/background_football.jpg');
     --base-gradiant-image_instagram: radial-gradient(rgba(26, 29, 38, 0.7) 0%, rgba(26, 26, 33, 0.8) 10%, rgba(24, 24, 31, 0.9) 50%, rgba(29, 29, 40, 0.95) 80%), url('../../public/static/images/funny/background_ig.jpg');
     --base-gradiant-image_discord: radial-gradient(rgba(26, 29, 38, 0.7) 0%, rgba(26, 26, 33, 0.8) 10%, rgba(24, 24, 31, 0.9) 50%, rgba(29, 29, 40, 0.95) 80%), url('../../public/static/images/funny/background_discord.png');
-    --base-gradiant-image_cod: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url('../../public/static/images/funny/background_cod.png');
+    --base-gradiant-image_cod: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url('../../public/static/images/funny/background_cod.jpg');
     --base-gradiant-image_music: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url('../../public/static/images/funny/background_music.jpg');
     --base-gradiant-image_guitar: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url('../../public/static/images/funny/background_guitar.jpg');
     --base-gradiant-image_rarible: radial-gradient(rgba(26, 29, 38, 0.5) 0%, rgba(26, 26, 33, 0.6) 10%, rgba(24, 24, 31, 0.7) 50%, rgba(29, 29, 40, 0.8) 80%), url('../../public/static/images/funny/background_rarible.jpg');
@@ -54,12 +54,12 @@ html[data-theme='dim']
     --base-transparent-dark: rgba(20, 20, 26, 0.8);
     --base-transparent-darker: rgba(20, 20, 26, 0.9);
     --base-gradiant: linear-gradient(159deg, rgb(57, 60, 73) 0%, rgb(46, 49, 59) 100%);
-    --base-gradiant-image: linear-gradient(180deg, rgba(76, 76, 102, 0.7) 0%, rgba(78, 78, 97, 0.7) 70%, rgb(70, 70, 88, .75) 80%, rgb(64, 64, 82, .8) 90%), url('../../public/static/images/background_dim.png');
+    --base-gradiant-image: linear-gradient(180deg, rgba(76, 76, 102, 0.7) 0%, rgba(78, 78, 97, 0.7) 70%, rgb(70, 70, 88, .75) 80%, rgb(64, 64, 82, .8) 90%), url('../../public/static/images/background_dim.jpg');
     --base-gradiant-image-2: linear-gradient(180deg, rgb(42, 46, 59) 0%, rgb(45, 49, 62) 70%, rgb(49, 53, 66, 8) 80%, rgb(55, 59, 73, 9) 100%), url('../../public/static/images/background_dim-2.jpg');
     --base-gradiant-image_football: radial-gradient(rgba(44, 47, 59, 0.5) 0%, rgba(49, 49, 59, 0.6) 10%, rgba(46, 46, 56, 0.7) 50%, rgba(47, 47, 62, 0.8) 80%), url('../../public/static/images/funny/background_football.jpg');
     --base-gradiant-image_instagram: radial-gradient(rgba(45, 50, 62, 0.7) 0%, rgba(46, 46, 57, 0.8) 10%, rgba(46, 46, 57, 0.9) 50%, rgba(43, 43, 57, 0.95) 80%), url('../../public/static/images/funny/background_ig.jpg');
     --base-gradiant-image_discord: radial-gradient(rgba(39, 42, 54, 0.7) 0%, rgba(46, 46, 57, 0.8) 10%, rgba(47, 47, 59, 0.9) 50%, rgba(43, 43, 57, 0.95) 80%), url('../../public/static/images/funny/background_discord.png');
-    --base-gradiant-image_cod: radial-gradient(rgba(45, 49, 62, 0.5) 0%, rgba(51, 51, 62, 0.6) 10%, rgba(40, 40, 50, 0.7) 50%, rgba(46, 46, 62, 0.8) 80%), url('../../public/static/images/funny/background_cod.png');
+    --base-gradiant-image_cod: radial-gradient(rgba(45, 49, 62, 0.5) 0%, rgba(51, 51, 62, 0.6) 10%, rgba(40, 40, 50, 0.7) 50%, rgba(46, 46, 62, 0.8) 80%), url('../../public/static/images/funny/background_cod.jpg');
     --base-gradiant-image_music: radial-gradient(rgba(45, 49, 62, 0.5) 0%, rgba(41, 41, 52, 0.6) 10%, rgba(37, 37, 47, 0.7) 50%, rgba(41, 41, 54, 0.8) 80%), url('../../public/static/images/funny/background_music.jpg');
     --base-gradiant-image_guitar: radial-gradient(rgba(39, 43, 54, 0.5) 0%, rgba(45, 45, 56, 0.6) 10%, rgba(41, 41, 52, 0.7) 50%, rgba(38, 38, 50, 0.8) 80%), url('../../public/static/images/funny/background_guitar.jpg');
     --base-gradiant-image_rarible: radial-gradient(rgba(39, 43, 54, 0.5) 0%, rgba(45, 45, 56, 0.6) 10%, rgba(41, 41, 52, 0.7) 50%, rgba(38, 38, 50, 0.8) 80%), url('../../public/static/images/funny/background_rarible.jpg');
@@ -93,7 +93,7 @@ html[data-theme='light']
     --base-gradiant-image_football: radial-gradient(rgb(241, 235, 235, 0.5) 0%, rgb(236, 228, 228, 0.5) 10%, rgb(239, 235, 235, 0.5) 50%, rgb(238, 227, 227, 0.5) 80%), url('../../public/static/images/funny/background_football.jpg');
     --base-gradiant-image_instagram: radial-gradient(rgb(226, 209, 209, 0.8) 0%, rgb(234, 226, 226, 0.8) 10%, rgb(231, 220, 220, 0.8) 50%, rgb(227, 214, 214, 0.8) 80%), url('../../public/static/images/funny/background_ig.jpg');
     --base-gradiant-image_discord: radial-gradient(rgb(203, 188, 188, 0.8) 0%, rgb(213, 198, 198, 0.8) 10%, rgb(227, 216, 216, 0.8) 50%, rgb(210, 201, 201, 0.8) 80%), url('../../public/static/images/funny/background_discord.png');
-    --base-gradiant-image_cod: radial-gradient(rgb(241, 235, 235, 0.5) 0%, rgb(245, 239, 239, 0.5) 10%, rgb(236, 230, 230, 0.5) 50%, rgb(236, 226, 226, 0.5) 80%), url('../../public/static/images/funny/background_cod.png');
+    --base-gradiant-image_cod: radial-gradient(rgb(241, 235, 235, 0.5) 0%, rgb(245, 239, 239, 0.5) 10%, rgb(236, 230, 230, 0.5) 50%, rgb(236, 226, 226, 0.5) 80%), url('../../public/static/images/funny/background_cod.jpg');
     --base-gradiant-image_music: radial-gradient(rgb(241, 235, 235, 0.5) 0%, rgb(246, 241, 241, 0.5) 10%, rgb(245, 236, 236, 0.5) 50%, rgb(246, 242, 242, 0.5) 80%), url('../../public/static/images/funny/background_music.jpg');
     --base-gradiant-image_guitar: radial-gradient(rgb(241, 235, 235, 0.5) 0%, rgb(238, 230, 230, 0.5) 10%, rgb(246, 240, 240, 0.5) 50%, rgb(246, 241, 241, 0.5) 80%), url('../../public/static/images/funny/background_guitar.jpg');
     --base-gradiant-image_rarible: radial-gradient(rgb(241, 235, 235, 0.5) 0%, rgb(238, 231, 231, 0.5) 10%, rgb(241, 234, 234, 0.5) 50%, rgb(227, 214, 214, 0.5) 80%), url('../../public/static/images/funny/background_rarible.jpg');

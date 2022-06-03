@@ -6,5 +6,6 @@ export interface IBlog
     created_at: string,
     source: string,
     image: string,
+    category: string,
     content: string
 }

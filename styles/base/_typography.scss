@@ -36,7 +36,7 @@
             text-align: center;
         }
 
-        li
+        & li
         {
             transition: 0.4s ease-in-out;
             color: var(--color-base-text);
@@ -48,7 +48,7 @@
                 color: var(--color-base-text-bolder);
             }
 
-            &.active
+            &[data-active='true']
             {
                 color: var(--color-base-text-bolder);
                 text-shadow: 0 0 3px var(--color-base-text-shadow);

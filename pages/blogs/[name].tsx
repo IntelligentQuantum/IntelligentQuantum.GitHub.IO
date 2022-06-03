@@ -23,7 +23,7 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
 {
     const router = useRouter();
     const { name } = router.query;
-    const [blog, setBlog]: any = useState('');
+    const [blog, setBlog]: any  = useState('');
 
     useEffect(() =>
     {
@@ -88,6 +88,14 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
                         <div className={stylesMain.mainContent}>
                             <div className={stylesMain.mainBackground}/>
                             <section className={stylesBlog.blog}>
+                                <div className={stylesBlog.blogHeader}>
+                                    <h1>
+                                        {blog?.name?.split('_').join(' ').charAt(0).toUpperCase() + blog?.name?.split('_').join(' ').slice(1)}
+                                    </h1>
+                                    <span>
+                                        {blog?.category}
+                                    </span>
+                                </div>
                                 <div className={stylesBlog.blogViewImage}>
                                     <Image
                                         src={blog.image}
@@ -96,23 +104,47 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
                                     />
                                 </div>
                                 <div className='hr'/>
-                                <div className={stylesBlog.blogViewCardHeader}>
-                                    <span>
-                                        <p>
-                                            {props?.content?.created_at}:
-                                        </p>
-                                        {moment(Number(blog.created_at)).format('MMM Do YY')}
-                                    </span>
-                                    <span>
-                                        <p>
-                                            {props?.content?.source}:
-                                        </p>
-                                        {blog.source}
-                                    </span>
+                                <div className={stylesBlog.blogView}>
+                                    <article className={stylesBlog.blogViewCard}>
+                                        <h3>
+                                            {blog?.description}
+                                        </h3>
+                                        <div className='hr'/>
+                                        {reactHtmlParser(blog.content)}
+                                    </article>
+                                    <div className={stylesBlog.blogViewCardHeader}>
+                                         <span>
+                                            <p>
+                                                {props?.content?.id}:
+                                            </p>
+                                             {blog.id}
+                                        </span>
+                                        <span>
+                                            <p>
+                                                {props?.content?.author}:
+                                            </p>
+                                            {props.content.my_name}
+                                        </span>
+                                        <span>
+                                            <p>
+                                                {props?.content?.source}:
+                                            </p>
+                                            {blog.source}
+                                        </span>
+                                        <span>
+                                            <p>
+                                                {props?.content?.created_at}:
+                                            </p>
+                                            {moment(Number(blog.created_at)).format('MMM Do YY')}
+                                        </span>
+                                        <span>
+                                            <p>
+                                                {props?.content?.category}:
+                                            </p>
+                                            {blog.category}
+                                        </span>
+                                    </div>
                                 </div>
-                                <article className={stylesBlog.blogViewCard}>
-                                    {reactHtmlParser(blog.content)}
-                                </article>
                             </section>
                             <div className='hr'/>
                         </div>

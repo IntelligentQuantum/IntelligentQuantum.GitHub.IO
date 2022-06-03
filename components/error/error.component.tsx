@@ -2,14 +2,16 @@ import React from 'react';
 
 import type { IContent } from '../../contracts/IContent';
 
+import stylesError from '../../styles/components/error.module.scss';
+
 const Error = (props: { content: IContent, title: string, description: string }) =>
 {
     const { title, description }: { title: string, description: string } = props?.content?.error;
 
     return (
         <>
-            <main className='error'>
-                <div className='errorHeader'>
+            <main className={stylesError.error}>
+                <div className={stylesError.errorHeader}>
                     <h1>
                         { props.title ? props.title : title }
                     </h1>

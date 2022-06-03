@@ -2,7 +2,7 @@
     "en":
     {
         "language": "en",
-        "my_name": "im-parsa",
+        "my_name": "Parsa Firoozi",
         "my_skills":
         [
             "Full-Stack Developer",
@@ -20,6 +20,9 @@
         "read_more": "Read More",
         "blog_not_found": "This blog could not be found",
         "phone": "Phone Number",
+        "author": "Author",
+        "id": "ID",
+        "category": "Category",
         "my_phone": "+98 917070566",
         "whatsapp": "WhatsApp",
         "telegram": "Telegram",
@@ -82,6 +85,7 @@
                 "name": "geometry_similarity_triangle_1",
                 "description": "Proving the theorem of similarity of triangles 1",
                 "created_at": "1639673079877",
+                "category": "educational",
                 "source": "All the contents of authentic geometry books",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
@@ -91,6 +95,7 @@
                 "name": "geometry_similarity_triangle_2",
                 "description": "Proving the theorem of similarity of triangles 2",
                 "created_at": "1639673079877",
+                "category": "educational",
                 "source": "All the contents of authentic geometry books",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
@@ -100,6 +105,7 @@
                 "name": "geometry_similarity_triangle_3",
                 "description": "Proving the theorem of similarity of triangles 3",
                 "created_at": "1639673079877",
+                "category": "educational",
                 "source": "All the contents of authentic geometry books",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
@@ -221,11 +227,11 @@
             },
             {
                 "id": 2,
-                "title": "Headinfo",
+                "title": "MrCheat",
                 "tag": "web_development",
-                "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day (updating)",
-                "link": "https://headinfo.ir",
-                "image": "/static/images/portfolio/headinfo-web.png"
+                "description": "Website for making, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games (Under Developing - Team Member)",
+                "link": "https://mrcheat.cc/",
+                "image": "/static/images/portfolio/mrcheat-web.jpg"
             },
             {
                 "id": 3,
@@ -245,11 +251,11 @@
             },
             {
                 "id": 5,
-                "title": "MrCheat",
+                "title": "Headinfo",
                 "tag": "web_development",
-                "description": "Website for making, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games (Under Developing - Team Member)",
-                "link": "/",
-                "image": "/static/images/portfolio/mrcheat-web.png"
+                "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day (updating)",
+                "link": "https://headinfo.ir",
+                "image": "/static/images/portfolio/headinfo-web.png"
             },
             {
                 "id": 6,
@@ -344,7 +350,7 @@
     "de":
     {
         "language": "de",
-        "my_name": "im-parsa",
+        "my_name": "Parsa Firoozi",
         "my_skills":
         [
             "Full-Stack-Entwickler",
@@ -362,6 +368,9 @@
         "read_more": "Weiterlesen",
         "blog_not_found": "Der Blog konnte nicht gefunden werden",
         "phone": "Telefon Nummer",
+        "author": "Autor",
+        "id": "ID",
+        "category": "Kategorie",
         "my_phone": "+98 917070566",
         "whatsapp": "WhatsApp",
         "telegram": "Telegram",
@@ -414,6 +423,7 @@
                 "name": "geometry_similarity_triangle_1",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 1",
                 "created_at": "1639673079877",
+                "category": "lehrreich",
                 "source": "Alle Inhalte authentischer Geometriebücher",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
@@ -423,6 +433,7 @@
                 "name": "geometry_similarity_triangle_2",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 2",
                 "created_at": "1639673079877",
+                "category": "lehrreich",
                 "source": "Alle Inhalte authentischer Geometriebücher",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
@@ -432,6 +443,7 @@
                 "name": "geometry_similarity_triangle_3",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 3",
                 "created_at": "1639673079877",
+                "category": "lehrreich",
                 "source": "Alle Inhalte authentischer Geometriebücher",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
@@ -551,7 +563,7 @@
         "my_portfolio":
         [
             {
-                "id": 1,
+                "id": 0,
                 "title": "Paraffin",
                 "tag": "web_development",
                 "description": "Paraffin-Website zum Lehren und Lernen mit tollen Inhalten in verschiedenen Kategorien (Programmierung, Grafikdesign, Spiele, Technik, Tricks)",
@@ -559,7 +571,7 @@
                 "image": "/static/images/portfolio/paraffin-web.png"
             },
             {
-                "id": 2,
+                "id": 1,
                 "title": "Discords City",
                 "tag": "web_development",
                 "description": "Erweitern Sie Ihr Discords Geschäft in Discords City Sie können Ihren Bot oder Server hinzufügen, um Ihr Geschäft auszubauen, und unsere Blogs lesen, um über alle Discord Aktualisierung und Tricks auf dem Laufenden zu bleiben",
@@ -567,15 +579,15 @@
                 "image": "/static/images/portfolio/discords-city-web.png"
             },
             {
-                "id": 3,
-                "title": "Headinfo",
+                "id": 2,
+                "title": "MrCheat",
                 "tag": "web_development",
-                "description": "Website für alltägliche Aufgaben und leicht zu erledigende Aufgaben, mit denen Sie sich tagsüber viel beschäftigen (Aktualisierung)",
-                "link": "https://headinfo.ir",
-                "image": "/static/images/portfolio/headinfo-web.png"
+                "description": "Website zum Erstellen, Entwickeln und Verkaufen aller Arten von Cheats und Cheats in verschiedenen Spielen wie Counter, Zola, CS Go und den meisten anderen Shooter-Spielen (im Aufbau - Teammitglied)",
+                "link": "https://mrcheat.cc/",
+                "image": "/static/images/portfolio/mrcheat-web.jpg"
             },
             {
-                "id": 4,
+                "id": 3,
                 "title": "Nava",
                 "tag": "web_development",
                 "description": "Website des ersten und besten persischen Musik- und Videoplayers mit Qualität und Unterstützung für alle Formate zusammen mit RPC Discord",
@@ -583,7 +595,7 @@
                 "image": "/static/images/portfolio/nava-web.png"
             },
             {
-                "id": 5,
+                "id": 4,
                 "title": "random-pic.js",
                 "tag": "web_development",
                 "description": "Website und Anwendungsmodul zum Empfangen von Zufallsbildern in verschiedenen Kategorien und der Möglichkeit, Größen und Grenzen und Beschränkungen festzulegen",
@@ -591,15 +603,15 @@
                 "image": "/static/images/portfolio/random-pic_js-web.png"
             },
             {
-                "id": 6,
-                "title": "MrCheat",
+                "id": 5,
+                "title": "Headinfo",
                 "tag": "web_development",
-                "description": "Website zum Erstellen, Entwickeln und Verkaufen aller Arten von Cheats und Cheats in verschiedenen Spielen wie Counter, Zola, CS Go und den meisten anderen Shooter-Spielen (im Aufbau - Teammitglied)",
-                "link": "/",
-                "image": "/static/images/portfolio/mrcheat-web.png"
+                "description": "Website für alltägliche Aufgaben und leicht zu erledigende Aufgaben, mit denen Sie sich tagsüber viel beschäftigen (Aktualisierung)",
+                "link": "https://headinfo.ir",
+                "image": "/static/images/portfolio/headinfo-web.png"
             },
             {
-                "id": 7,
+                "id": 6,
                 "title": "Dubist",
                 "tag": "graphic_design",
                 "description": "Englisch, Persisch, Deutsch-Sprachlernwebsite mit Funktionen wie Lernkarte und Ranking (im Aufbau - Teammitglied)",
@@ -607,7 +619,7 @@
                 "image": "/static/images/portfolio/dubist-web.png"
             },
             {
-                "id": 8,
+                "id": 7,
                 "title": "PDA",
                 "tag": "web_development",
                 "description": "Der erste dediziert persischsprachige Webservice in Form von Open Source mit hoher Qualität und beispielloser Geschwindigkeit",
@@ -615,7 +627,7 @@
                 "image": "/static/images/portfolio/pda-web.png"
             },
             {
-                "id": 9,
+                "id": 8,
                 "title": "LiveSoccer",
                 "tag": "web_development",
                 "description": "Website, um die Tabelle der besten und größten Fußballligen mit Tordifferenzergebnissen und gespielten Spielen zu sehen",
@@ -623,7 +635,7 @@
                 "image": "/static/images/portfolio/livesoccer-web.png"
             },
             {
-                "id": 10,
+                "id": 9,
                 "title": "Elite",
                 "tag": "web_development",
                 "description": "Website der Elite Discord Robot Programming Company mit 2 offiziell verifizierten Discord-Bots",
@@ -631,7 +643,7 @@
                 "image": "/static/images/portfolio/elite-web.png"
             },
             {
-                "id": 11,
+                "id": 10,
                 "title": "Persönliche Website",
                 "tag": "web_development",
                 "description": "Open-Source-persönliche Website",
@@ -639,7 +651,7 @@
                 "image": "/static/images/portfolio/parsa-web.png"
             },
             {
-                "id": 12,
+                "id": 11,
                 "title": "Persönliche Website",
                 "tag": "web_development",
                 "description": "Persönliche Website für Herrn Shadmehr",
@@ -647,7 +659,7 @@
                 "image": "/static/images/portfolio/shadmehr-web.png"
             },
             {
-                "id": 13,
+                "id": 12,
                 "title": "Wintube",
                 "tag": "app_development",
                 "description": "Desktop-Anwendung mit Linux / Windows / Mac-Unterstützung zum Anzeigen von YouTube-Videos und -Filmen ohne Filterung und Hochgeschwindigkeits- und Download-Fähigkeit (Teammitglied)",
@@ -655,7 +667,7 @@
                 "image": "/static/images/portfolio/wintube-app.png"
             },
             {
-                "id": 14,
+                "id": 13,
                 "title": "Nava-Video-Player",
                 "tag": "app_development",
                 "description": "Video mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
@@ -663,7 +675,7 @@
                 "image": "/static/images/portfolio/nava_video_player-app.png"
             },
             {
-                "id": 15,
+                "id": 14,
                 "title": "Nava-Music-Player",
                 "tag": "app_development",
                 "description": "Musik mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
@@ -671,7 +683,7 @@
                 "image": "/static/images/portfolio/nava_music_player-app.png"
             },
             {
-                "id": 16,
+                "id": 15,
                 "title": "Setar",
                 "tag": "robot_development",
                 "description": "Der erste und beste offizielle Songplayer und verifizierte Zwietracht (Teammitglied)",
@@ -679,7 +691,7 @@
                 "image": "/static/images/portfolio/setar-bot.png"
             },
             {
-                "id": "17",
+                "id": 16,
                 "title": "Elite",
                 "tag": "robot_development",
                 "description": "Der beste und beliebteste Roboter für Sicherheit und Sicherheit der offiziellen und verifizierten offiziellen Zwietracht",
@@ -691,7 +703,7 @@
     "fa":
     {
         "language": "fa",
-        "my_name": "پارسا",
+        "my_name": "پارسا فیروزی",
         "my_skills":
         [
             "توسعه دهنده فول استک",
@@ -709,6 +721,9 @@
         "blog_not_found": "بلاگ مورد نظر یافت نشد",
         "my_phone": "09170700566",
         "whatsapp": "واتساپ",
+        "author": "نویسنده",
+        "id": "آیدی",
+        "category": "دسته",
         "telegram": "تلگرام",
         "email": "ایمیل",
         "gmail": "جیمیل",
@@ -771,6 +786,7 @@
                 "name": "geometry_similarity_triangle_1",
                 "description": "اثبات قضیه تشابه مثلث ها ۱",
                 "created_at": "1639673079877",
+                "category": "آموزشی",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
@@ -780,6 +796,7 @@
                 "name": "geometry_similarity_triangle_2",
                 "description": "اثبات قضیه تشابه مثلث ها ۲",
                 "created_at": "1639673079877",
+                "category": "آموزشی",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
@@ -789,6 +806,7 @@
                 "name": "geometry_similarity_triangle_3",
                 "description": "اثبات قضیه تشابه مثلث ها ۳",
                 "created_at": "1639673079877",
+                "category": "آموزشی",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
                 "image": "/static/images/blogs/background_math.webp",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
@@ -910,11 +928,11 @@
             },
             {
                 "id": 2,
-                "title": "Headinfo",
+                "title": "MrCheat",
                 "tag": "web_development",
-                "description": "وبسایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (درحال بروزرسانی)",
-                "link": "https://headinfo.ir",
-                "image": "/static/images/portfolio/headinfo-web.png"
+                "description": "وبسایت ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت - عضو تیم)",
+                "link": "https://mrcheat.cc/",
+                "image": "/static/images/portfolio/mrcheat-web.jpg"
             },
             {
                 "id": 3,
@@ -934,11 +952,11 @@
             },
             {
                 "id": 5,
-                "title": "MrCheat",
+                "title": "Headinfo",
                 "tag": "web_development",
-                "description": "وبسایت ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت - عضو تیم)",
-                "link": "/",
-                "image": "/static/images/portfolio/mrcheat-web.png"
+                "description": "وبسایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (درحال بروزرسانی)",
+                "link": "https://headinfo.ir",
+                "image": "/static/images/portfolio/headinfo-web.png"
             },
             {
                 "id": 6,

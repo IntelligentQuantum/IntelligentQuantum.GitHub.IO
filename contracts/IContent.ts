@@ -8,6 +8,9 @@ export interface IContent
 {
     language: string,
     my_name: string,
+    category: string,
+    author: string,
+    id: string,
     my_skills: string[],
     currency: string,
     typing_effect: string[],

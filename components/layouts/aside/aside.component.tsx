@@ -245,7 +245,7 @@ const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
                 </div>
                 <div className={stylesAside.asideDivider}>&nbsp;</div>
                 <div className={classnames(stylesAside.asideInformationCV, 'uppercase')}>
-                    <a href={`/document/parsa_firoozi_cv-${props?.content?.language}.pdf`} target='_blank' rel='noreferrer'>
+                    <a href={`/static/document/parsa_firoozi_cv-${props?.content?.language}.pdf`} target='_blank' rel='noreferrer'>
                         <span>{props?.content?.download_cv}</span>
                         <Download />
                     </a>
