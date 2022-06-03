@@ -2,6 +2,8 @@ import Link from 'next/link';
 import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 
+import type { IContent } from '../../../contracts/IContent';
+
 import Dim from '../../../assets/icons/icon-theme_dim.svg';
 import Dark from '../../../assets/icons/icon-theme_dark.svg';
 import Light from '../../../assets/icons/icon-theme_light.svg';
@@ -13,7 +15,7 @@ import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 import stylesNav from '../../../styles/components/nav.module.scss';
 
-const Navbar = (props: any) =>
+const Navbar: any = (props: { content: IContent, theme?: 'dark' | 'dim' | 'light', handleTheme?: any, mobile?: boolean, page?: 'home' | 'contact' | 'funny' | 'portfolio' | 'blogs' }) =>
 {
     const dispatch = useDispatch();
     const openAside: boolean = useSelector(((state: any) => state.aside.openAside));
@@ -38,7 +40,9 @@ const Navbar = (props: any) =>
                 </div>
                 <div className={stylesNav.navContent}>
                     <div className={stylesNav.navContentActive} data-open={openNavbar ? 'true' : 'false'}>
-                        <p>{props?.content ? props?.content[props?.page] : null}</p>
+                        <p>
+                            { props?.content && props?.page ? props?.content[props?.page] : null }
+                        </p>
                     </div>
                     <div className={stylesNav.navContentList} data-open={openNavbar ? 'true' : 'false'}>
                         <Link href='/' passHref>

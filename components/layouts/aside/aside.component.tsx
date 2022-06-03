@@ -2,6 +2,8 @@ import Link from 'next/link';
 import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 
+import type { IContent } from '../../../contracts/IContent';
+
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
 
@@ -17,7 +19,7 @@ import Dribbble from '../../../assets/icons/icon-dribbble.svg';
 import Linkedin from '../../../assets/icons/icon-linkedin.svg';
 import Instagram from '../../../assets/icons/icon-instagram.svg';
 
-const Aside = (props: any) =>
+const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
 {
     const dispatch = useDispatch();
     const openAside: boolean = useSelector(((state: any) => state.aside.openAside));
@@ -26,7 +28,7 @@ const Aside = (props: any) =>
         <nav className={classnames(stylesAside.aside, 'z-index__101')} data-open={openAside}>
             <div className={stylesAside.asideUser}>
                 <div className={stylesAside.asideUserIcon} onClick={() => { dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!openAside)) }}>
-                   <Ellipsis />
+                    <Ellipsis />
                 </div>
                 <span className={stylesAside.asideUserProfile}>
                     <img alt='im-parsa' className={stylesAside.asideUserImage} src='/image/my-profile.png'/>
@@ -192,7 +194,7 @@ const Aside = (props: any) =>
                 <div className={stylesAside.asideInformationLibrary}>
                     <ul>
                         <li>
-                           <Check />
+                            <Check />
                             <span>
                                 Pug, HBS, EJS
                             </span>
@@ -238,26 +240,26 @@ const Aside = (props: any) =>
                 </div>
                 <div className={stylesAside.asideDivider}>&nbsp;</div>
                 <div className={classnames(stylesAside.asideInformationCV, 'uppercase')}>
-                    <a href={`/document/parsa_firoozi_cv-${props?.content?.language}.pdf`} target='_blank'>
+                    <a href={`/document/parsa_firoozi_cv-${props?.content?.language}.pdf`} target='_blank' rel='noreferrer'>
                         <span>{props?.content?.download_cv}</span>
                         <Download />
                     </a>
                 </div>
             </div>
             <div className={stylesAside.asideFooter}>
-                <a href='https://www.instagram.com/hello_im_parsa' target='_blank'>
+                <a href='https://www.instagram.com/hello_im_parsa' target='_blank' rel='noreferrer'>
                     <Instagram />
                 </a>
-                <a href='https://rarible.com/im-parsa' target='_blank'>
+                <a href='https://rarible.com/im-parsa' target='_blank' rel='noreferrer'>
                     <Rarible />
                 </a>
-                <a href='https://dribbble.com/hello_im_parsa' target='_blank'>
+                <a href='https://dribbble.com/hello_im_parsa' target='_blank' rel='noreferrer'>
                     <Dribbble />
                 </a>
-                <a href='https://github.com/im-parsa' target='_blank'>
+                <a href='https://github.com/im-parsa' target='_blank' rel='noreferrer'>
                     <Github />
                 </a>
-                <a href='https://www.linkedin.com/in/im-parsa-144247223/' target='_blank'>
+                <a href='https://www.linkedin.com/in/im-parsa-144247223/' target='_blank' rel='noreferrer'>
                     <Linkedin />
                 </a>
             </div>

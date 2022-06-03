@@ -1,8 +1,10 @@
 import ButtonSecondary from '../buttons/secondary-button.component';
 
+import type { IBlog } from '../../contracts/IBlog';
+
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
-const BlogCard = (props: { text: string, blog: { image: string, name: string, description: string }}) =>
+const BlogCard = (props: { blog: IBlog, text: string }) =>
     (
         <div className={stylesBlog.blogItem}>
             <img src={props.blog.image} alt={props.blog.name}/>

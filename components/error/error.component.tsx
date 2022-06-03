@@ -1,30 +1,21 @@
 import React from 'react';
-import data from '../../assets/data/data.json';
 
-const Error = (props: any) =>
+import type { IContent } from '../../contracts/IContent';
+
+const Error = (props: { content: IContent, title: string, description: string }) =>
 {
-    // @ts-ignore
-    let { title, description }: string = data[props?.content?.language].error;
-
-    if (props.title)
-    {
-        title = props.title;
-    }
-    if (props.description)
-    {
-        description = props.description;
-    }
+    const { title, description }: { title: string, description: string } = props?.content?.error;
 
     return (
         <>
             <main className='error'>
                 <div className='errorHeader'>
                     <h1>
-                        {title}
+                        { props.title ? props.title : title }
                     </h1>
                     <hr />
                     <p>
-                        {description}
+                        { props.description ? props.description : description }
                     </p>
                 </div>
             </main>

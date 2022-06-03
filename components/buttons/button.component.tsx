@@ -4,7 +4,7 @@ import stylesButton from '../../styles/components/button.module.scss';
 
 import ArrowKeyboardRight from '../../assets/icons/icon-arrow_keyboard_right.svg';
 
-const ButtonSecondary = (props: any) =>
+const ButtonSecondary = (props: { link: string, text: string }) =>
 {
     return (
         <Link href={props.link}>

@@ -8,7 +8,7 @@ const Footer = (props: any) =>
         <footer className={stylesFooter.footer}>
             <div className={stylesFooter.footerBox}>
                 <div>© 2021 {props?.content?.my_name}</div>
-                <a href='https://github.com/im-parsa/im-parsa.github.io' target='_blank'>
+                <a href='https://github.com/im-parsa/im-parsa.github.io' target='_blank' rel='noreferrer'>
                     <Github />
                     {props?.content?.source_code}
                 </a>

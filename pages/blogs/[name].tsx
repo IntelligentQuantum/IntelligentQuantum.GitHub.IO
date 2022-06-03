@@ -4,11 +4,11 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import reactHtmlParser from 'html-react-parser';
 
+import type { IContent } from '../../contracts/IContent';
+
 import 'moment/locale/de';
 import 'moment/locale/fa';
 import 'moment/locale/en-gb';
-
-import type { NextPage } from 'next';
 
 import data from '../../assets/data/data.json';
 
@@ -18,12 +18,11 @@ import Main from '../../components/layouts/main/main.component';
 import stylesBlog from '../../styles/pages/blog.module.scss';
 import stylesMain from '../../styles/components/main.module.scss';
 
-const BlogView: NextPage = (props: any) =>
+const BlogView: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {
     const router = useRouter();
     const { name } = router.query;
     const [blog, setBlog]: any = useState('');
-    const language: 'en' | 'de' | 'fa' = props?.content?.language;
 
     useEffect(() =>
     {
@@ -39,7 +38,7 @@ const BlogView: NextPage = (props: any) =>
         }
     }, [data, props, setBlog, name]);
 
-    switch (language)
+    switch (props?.content?.language)
     {
         case 'en':
             moment.locale('en');
@@ -57,29 +56,29 @@ const BlogView: NextPage = (props: any) =>
     return (
         <>
             <Head>
-                <title>Parsa Firoozi &mdash; Contact with im-parsa from your mail</title>
+                <title>Parsa Firoozi &mdash; {blog?.name}</title>
 
                 <meta charSet='UTF-8' />
                 <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
                 <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
                 <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
 
-                <meta name='Classification' content='Contact'/>
-                <meta name='subject' content='Contact'/>
-                <meta name='description' content='Parsa Firoozi Contact'/>
-                <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Contact'/>
+                <meta name='Classification' content='Blogs'/>
+                <meta name='subject' content='Blogs'/>
+                <meta name='description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
+                <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Blogs'/>
                 <meta name='author' content='Parsa Firoozi'/>
 
                 <meta property='og:type' content='website'/>
-                <meta property='og:url' content='https://parsa-firoozi.ir/contact'/>
+                <meta property='og:url' content={'https://parsa-firoozi.ir/blogs' + blog?.name}/>
                 <meta property='og:title' content='Parsa Firoozi'/>
-                <meta property='og:description' content='Parsa Firoozi Contact'/>
+                <meta property='og:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
                 <meta property='og:image' content='https://parsa-firoozi.ir/favicon.png'/>
 
                 <meta property='twitter:card' content='summary'/>
-                <meta property='twitter:url' content='https://parsa-firoozi.ir/contact'/>
+                <meta property='twitter:url' content={'https://parsa-firoozi.ir/blogs' + blog?.name}/>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
-                <meta property='twitter:description' content='Parsa Firoozi Contact'/>
+                <meta property='twitter:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
             </Head>
             <Main content={props?.content}>
                 {

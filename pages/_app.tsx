@@ -1,18 +1,19 @@
 import classnames from 'classnames';
+import { DefaultSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 import type { AppProps } from 'next/app';
 import { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector, Provider } from 'react-redux';
 
 import store from '../app/store';
-
+import seo from '../assets/data/seo.config';
 import data from '../assets/data/data.json';
 
 import { setOpenAside } from '../app/aside/aside.actions';
 import { setActiveAlert } from '../app/alert/alert.actions';
 import { setOpenNavbar } from '../app/navbar/navbar.actions';
 import { setActiveFilter } from '../app/filter/filter.actions';
-import {setImagePortfolio, setTagPortfolio} from '../app/portfolio/portfolio.actions';
+import { setImagePortfolio, setTagPortfolio } from '../app/portfolio/portfolio.actions';
 
 import Aside from '../components/layouts/aside/aside.component';
 import Navbar from '../components/layouts/navbar/navbar.component';
@@ -42,6 +43,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
 {
     const router = useRouter();
     const dispatch = useDispatch();
+    const page = router.pathname.split('/')[1];
     const alert = useSelector(((state: any) => state.alert.activeFilter));
     const filter = useSelector(((state: any) => state.filter.activeFilter));
     const openNavbar: boolean = useSelector(((state: any) => state.navbar.openNavbar));
@@ -113,6 +115,33 @@ function AppProps({ Component, pageProps }: CustomAppProps)
     }, []);
 
     return (
+        <>
+            <div>
+                <meta property='theme-color' content='#4f40f8'/>
+                <meta name='language' content='en'/>
+                <meta name='Classification' content='Portfolio'/>
+                <meta name='subject' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
+                <meta name='description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
+                <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Portfolio, Full-Stack Developer, Graphic Designer'/>
+                <meta name='author' content='im-parsa'/>
+
+                <meta property='og:type' content='website'/>
+                <meta property='og:url' content='https://parsa-firoozi.ir/'/>
+                <meta property='og:title' content='im-parsa'/>
+                <meta property='og:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
+                <meta property='og:image' content='https://parsa-firoozi.ir/favicon.png'/>
+
+                <meta property='twitter:card'/>
+                <meta property='twitter:url' content='https://parsa-firoozi.ir/'/>
+                <meta property='twitter:title' content='im-parsa'/>
+                <meta property='twitter:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
+                <meta property='twitter:image' content='https://parsa-firoozi.ir/favicon.png'/>
+            </div>
+            <DefaultSeo
+                title = 'This is my title'
+                titleTemplate = 'Next SEO | %s'
+                {...seo}
+            />
             <main className={`container ${openNavbar ? 'navbar-open' : null}`}>
                 {
                     alert?.status
@@ -153,6 +182,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                 />
                 <Navbar
                     mobile={true}
+                    content={data[language]}
                 />
                 <Component
                     content={data[language]}
@@ -162,9 +192,10 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                     theme={theme}
                     content={data[language]}
                     handleTheme={handleTheme}
-                    page={router.pathname.split('/')[1] || 'home'}
+                    page={page === 'contact' || page === 'funny' || page === 'portfolio' || page === 'blogs' || page === 'home' ? page : 'home'}
                 />
             </main>
+        </>
     )
 }
 

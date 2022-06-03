@@ -1,14 +1,15 @@
 import Head from 'next/head';
 import classnames from 'classnames';
-import type { NextPage } from 'next';
+
+import type { IContent } from '../contracts/IContent';
 
 import Main from '../components/layouts/main/main.component';
 
-import stylesMain from '../../styles/components/main.module.scss';
-import stylesContact from '../../styles/pages/contact.module.scss';
-import stylesButton from '../../styles/components/button.module.scss';
+import stylesMain from '../styles/components/main.module.scss';
+import stylesContact from '../styles/pages/contact.module.scss';
+import stylesButton from '../styles/components/button.module.scss';
 
-const Contact: NextPage = (props: any) =>
+const Contact: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {
     return (
         <>

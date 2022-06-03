@@ -5,7 +5,7 @@ import { setImagePortfolio } from '../../app/portfolio/portfolio.actions';
 
 import stylesPortfolio from '../../styles/pages/portfolio.module.scss';
 
-import ArrowsFullscreen from '../../../assets/icons/arrows-fullscreen.svg';
+import ArrowsFullscreen from '../../assets/icons/icon-arrows_fullscreen.svg';
 
 const PortfolioCard = (props: { text: string, portfolio: { image: string, title: string, tag: string, description: string, link: string }}) =>
 {

@@ -2,22 +2,24 @@ import classnames from 'classnames';
 
 import stylesFunny from '../../styles/pages/funny.module.scss';
 
-const FunnyCard = (props: { fact: { title: string, description: string, type: string }}) =>
+import type { IFunny } from '../../contracts/IFunny';
+
+const FunnyCard = (props: { fact: IFunny }) =>
 {
     return (
         <section className={stylesFunny.funnyHeader}>
-            <div className={stylesFunny.funnyHeaderContent} data-type={props.fact.type}>
+            <div className={stylesFunny.funnyHeaderContent} data-fact_type={props.fact.type}>
                 <div className={stylesFunny.funnyHeaderContentBox}>
                     <h1>
                         {props.fact.title}
                     </h1>
                     <br/><br/>
-                    <div className={stylesFunny.funnyHeaderContentDescription} data-type={props.fact.type}>
+                    <div className={stylesFunny.funnyHeaderContentDescription} data-fact_type={props.fact.type}>
                         {props.fact.description}
                     </div>
                 </div>
                 <div className={stylesFunny.funnyHeaderContentImages}>
-                    <div className={classnames(stylesFunny.funnyHeaderContentImagesBackground)} data-hover='true' data-type={props.fact.type}>
+                    <div className={classnames(stylesFunny.funnyHeaderContentImagesBackground)} data-hover='true' data-fact_type={props.fact.type}>
                         {
                             props.fact.type === 'football'
                                 ?

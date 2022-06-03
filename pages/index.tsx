@@ -4,9 +4,9 @@ import classnames from 'classnames';
 import CountUp from 'react-countup';
 import ReactTypingEffect from 'react-typing-effect';
 
-import type { NextPage } from 'next';
-
-import data from '../assets/data/data.json';
+import type { IPlan } from '../contracts/IPlan';
+import type { IService } from '../contracts/IService';
+import type { IContent } from '../contracts/IContent';
 
 import Main from '../components/layouts/main/main.component';
 import PlanCard from '../components/home/plan-card.component';
@@ -16,17 +16,16 @@ import stylesMain from '../styles/components/main.module.scss';
 import stylesHome from '../styles/pages/home.module.scss';
 import stylesButtons from '../styles/components/button.module.scss';
 
-const Home: NextPage = (props: any) =>
+const Home: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {
-    const language: 'en' | 'de' | 'fa' = props?.content?.language;
-    const servicesCard = data[language].services.map((service: any) =>
+    const servicesCard = props?.content?.services?.map((service: IService) =>
         <ServiceCard
             key={ service?.id }
             service={ service }
             text={ props?.content?.read_more }
         />
     );
-    const plansCard = data[language].plans.map((plan: any) =>
+    const plansCard = props?.content?.plans?.map((plan: IPlan) =>
         <PlanCard
             key={ plan?.id }
             plan={ plan }

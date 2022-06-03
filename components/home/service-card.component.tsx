@@ -1,8 +1,10 @@
+import type { IService } from '../../contracts/IService';
+
 import ButtonSecondary from '../buttons/secondary-button.component';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
-const ServiceCard = (props: { text: string, service: { title: string, description: string }}) =>
+const ServiceCard = (props: { text: string, service: IService }) =>
 {
     return (
         <div className={stylesHome.homeServicesContent}>

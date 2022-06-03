@@ -26,8 +26,6 @@
         "email": "Email",
         "gmail": "Gmail",
         "chmail": "Chmail",
-        "instagram": "Instagram",
-        "Github": "Instagram",
         "my_email": "hello@parsa-firoozi.ir",
         "my_gmail": "parsa.firoozi20@gmail.com",
         "my_chmail": "parsafiroozi20@chmail.ir",
@@ -46,7 +44,7 @@
         "contact": "Contact",
         "portfolio": "Portfolio",
         "blogs": "Blogs",
-        "funny": "Funny Time",
+        "funny": "Funny Facts",
         "error":
         {
             "title": "Error in request",
@@ -80,6 +78,7 @@
         "my_blogs":
         [
             {
+                "id": 0,
                 "name": "geometry_similarity_triangle_1",
                 "description": "Proving the theorem of similarity of triangles 1",
                 "created_at": "1639673079877",
@@ -88,6 +87,7 @@
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
+                "id": 1,
                 "name": "geometry_similarity_triangle_2",
                 "description": "Proving the theorem of similarity of triangles 2",
                 "created_at": "1639673079877",
@@ -96,6 +96,7 @@
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
+                "id": 2,
                 "name": "geometry_similarity_triangle_3",
                 "description": "Proving the theorem of similarity of triangles 3",
                 "created_at": "1639673079877",
@@ -107,36 +108,43 @@
         "funny_facts":
         [
             {
+                "id": 0,
                 "title": "Football",
                 "type": "football",
                 "description": "In fact I have been watching & playing football since I can remember and my favorite player is the best player in football history, Lionel Messi who has most Ballon d'Or in football and most G+A, in other side I really like Antoine Griezmann football & life style he is definitely one of the smartest players in history.\nMy favorite national team is Argentina & France and I am Barça & Juve fan."
             },
             {
+                "id": 1,
                 "title": "Space",
                 "type": "space",
                 "description": "In fact, I love learning about space and the universe, and everything connected to it, like quantum physics, which proves a variety of dizzying theories, such as parallel universes, Continuity, singularity, time travel, black holes, and white holes."
             },
             {
+                "id": 2,
                 "title": "Call Of Duty",
                 "type": "cod",
                 "description": "In fact, I loved playing, and it is only 'TIME' that has separated me between my love. I enjoy the series of games that the Call Of Duty brings out and Warzone was one of the best, that was wonderfully designed and it was really fun to play."
             },
             {
+                "id": 3,
                 "title": "Music",
                 "type": "music",
                 "description": "In fact, I love listening to music, I always listen to music when I do work and it makes me feel great. I really enjoy Shadmehr Aghili's songs and voice, and it doubles my energy and makes me feel good."
             },
             {
+                "id": 4,
                 "title": "Guitar",
                 "type": "guitar",
                 "description": "In fact, I have been playing the guitar since I was 9 years old and I love this instrument and its music. I look for the acoustic version of every song I want to listen. I have 2 concert that in Honar Aftab sallon from Navaafrin  academy."
             },
             {
+                "id": 5,
                 "title": "My Discord",
                 "type": "discord",
                 "description": "In fact I came to Discord around 2017. I really like to be best in everything I am there and in Discord I develop the first, best, open-source, persian economy discord-bot, soo it is very enjoyable for me that I am some of the best persian Discord developer."
             },
             {
+                "id": 6,
                 "title": "My Instagram",
                 "type": "instagram",
                 "description": "In fact I am graphic designer, too & I have to many poster of football players in my account. I came to Instagram around 2014 and I always wanted to work in social media, and the same thing happened on Instagram and I started producing content in this community."
@@ -190,6 +198,7 @@
         "my_portfolio":
         [
             {
+                "id": 0,
                 "title": "Paraffin",
                 "tag": "web_development",
                 "description": "Paraffin website for teaching and learning with great content in various categories (programming, graphic design, games, technology, tricks)",
@@ -197,6 +206,7 @@
                 "image": "/image/portfolio/paraffin-web.png"
             },
             {
+                "id": 1,
                 "title": "Discords City",
                 "tag": "web_development",
                 "description": "Grow your Discord Business in Discords City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks",
@@ -204,6 +214,7 @@
                 "image": "/image/portfolio/discords-city-web.png"
             },
             {
+                "id": 2,
                 "title": "Headinfo",
                 "tag": "web_development",
                 "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day (updating)",
@@ -211,6 +222,7 @@
                 "image": "/image/portfolio/headinfo-web.png"
             },
             {
+                "id": 3,
                 "title": "Nava",
                 "tag": "web_development",
                 "description": "Website of the first and best Persian language music and video player with quality and support for all formats along with Discord RPC",
@@ -218,6 +230,7 @@
                 "image": "/image/portfolio/nava-web.png"
             },
             {
+                "id": 4,
                 "title": "random-pic.js",
                 "tag": "web_development",
                 "description": "Website and module for receiving random images in different categories and the ability to size and set limits and restrictions",
@@ -225,6 +238,7 @@
                 "image": "/image/portfolio/random-pic_js-web.png"
             },
             {
+                "id": 5,
                 "title": "MrCheat",
                 "tag": "web_development",
                 "description": "Website for making, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games (Under Developing - Team Member)",
@@ -232,6 +246,7 @@
                 "image": "/image/portfolio/mrcheat-web.png"
             },
             {
+                "id": 6,
                 "title": "Dubist",
                 "tag": "graphic_design",
                 "description": "English, Persian, German language learning website with features such as flash card and ranking (Under Developing - Team Member)",
@@ -239,6 +254,7 @@
                 "image": "/image/portfolio/dubist-web.png"
             },
             {
+                "id": 7,
                 "title": "PDA",
                 "tag": "web_development",
                 "description": "The first open-source persian Discord API with high and unique quality and speed",
@@ -246,6 +262,7 @@
                 "image": "/image/portfolio/pda-web.png"
             },
             {
+                "id": 8,
                 "title": "LiveSoccer",
                 "tag": "web_development",
                 "description": "Website to see the table of the best and biggest football leagues along with the goal difference scores and the games played",
@@ -253,6 +270,7 @@
                 "image": "/image/portfolio/livesoccer-web.png"
             },
             {
+                "id": 9,
                 "title": "Elite",
                 "tag": "web_development",
                 "description": "Website of Elite Discord Robot Programming Team with 2 officially verified Discord bots",
@@ -260,6 +278,7 @@
                 "image": "/image/portfolio/elite-web.png"
             },
             {
+                "id": 10,
                 "title": "Personal Website",
                 "tag": "web_development",
                 "description": "Open-source personal website",
@@ -267,6 +286,7 @@
                 "image": "/image/portfolio/parsa-web.png"
             },
             {
+                "id": 11,
                 "title": "Personal Website",
                 "tag": "web_development",
                 "description": "Personal website for Mr. Shadmehr",
@@ -274,6 +294,7 @@
                 "image": "/image/portfolio/shadmehr-web.png"
             },
             {
+                "id": 12,
                 "title": "Wintube",
                 "tag": "app_development",
                 "description": "Desktop application for Linux/Windows/Mac for displaying YouTube videos and movies without filtering and high speed and download capability (Team Member)",
@@ -281,6 +302,7 @@
                 "image": "/image/portfolio/wintube-app.png"
             },
             {
+                "id": 13,
                 "title": "Nava Video Player",
                 "tag": "app_development",
                 "description": "Video player with the support of all files, the ability of RCC, dedicated discord, etc ...",
@@ -288,6 +310,7 @@
                 "image": "/image/portfolio/nava_video_player-app.png"
             },
             {
+                "id": 14,
                 "title": "Nava Music Player",
                 "tag": "app_development",
                 "description": "Music player with the support of all files, the ability of RPC, dedicated discord, etc ...",
@@ -295,6 +318,7 @@
                 "image": "/image/portfolio/nava_music_player-app.png"
             },
             {
+                "id": 15,
                 "title": "Setar",
                 "tag": "robot_development",
                 "description": "First & Best persian music player bot in discord community (Team Member)",
@@ -302,6 +326,7 @@
                 "image": "/image/portfolio/setar-bot.png"
             },
             {
+                "id": 16,
                 "title": "Elite",
                 "tag": "robot_development",
                 "description": "Best persian security bot in discord community",
@@ -379,6 +404,7 @@
         "my_blogs":
         [
             {
+                "id": 0,
                 "name": "geometry_similarity_triangle_1",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 1",
                 "created_at": "1639673079877",
@@ -387,6 +413,7 @@
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
+                "id": 1,
                 "name": "geometry_similarity_triangle_2",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 2",
                 "created_at": "1639673079877",
@@ -395,6 +422,7 @@
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
+                "id": 2,
                 "name": "geometry_similarity_triangle_3",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 3",
                 "created_at": "1639673079877",
@@ -421,36 +449,43 @@
         "funny_facts":
         [
             {
+                "id": 0,
                 "title": "Fußball",
                 "type": "football",
                 "description": "Tatsächlich schaue und spiele ich Fußball seit ich denken kann und mein Lieblingsspieler ist der beste Spieler in der Fußballgeschichte, Lionel Messi, der die meisten Ballon d'Or im Fußball und die meisten G+A hat, auf der anderen Seite Ich mag Antoine Griezmanns Fußball und seinen Lebensstil sehr, er ist definitiv einer der klügsten Spieler der Geschichte.\nMeine Lieblingsnationalmannschaft sind Argentinien und Frankreich und ich bin Barça- und Juve-Fan."
             },
             {
+                "id": 1,
                 "title": "Platz",
                 "type": "space",
                 "description": "Eigentlich liebe ich es, über den Weltraum und das Universum zu lernen und alles, was damit zusammenhängt, wie die Quantenphysik, die eine Vielzahl von schwindelerregenden Theorien beweist, wie Paralleluniversen, Kontinuität, Singularität, Zeitreisen, Schwarze Löcher, und weiße Löcher."
             },
             {
+                "id": 2,
                 "title": "Ruf der Pflicht",
                 "type": "cod",
                 "description": "Tatsächlich habe ich es geliebt zu spielen, und nur die ZEIT hat mich zwischen meiner Liebe getrennt. Ich genieße die Reihe von Spielen, die Call Of Duty herausbringt, und Warzone war eines der besten, das war wunderbar gestaltet und es hat wirklich Spaß gemacht zu spielen."
             },
             {
+                "id": 3,
                 "title": "Musik",
                 "type": "music",
                 "description": "Eigentlich höre ich sehr gerne Musik, ich höre immer Musik, wenn ich arbeite, und es gibt mir ein tolles Gefühl. Ich mag Shadmehr Aghilis Lieder und Stimme wirklich, und es verdoppelt meine Energie und gibt mir ein gutes Gefühl. "
             },
             {
+                "id": 4,
                 "title": "Gitarre",
                 "type": "guitar",
                 "description": "Tatsächlich spiele ich Gitarre seit ich 9 Jahre alt bin und ich liebe dieses Instrument und seine Musik. Ich suche die akustische Version jedes Liedes, das ich hören möchte. Ich habe 2 Konzerte in Honar Aftab-Salon von der Navaafrin-Akademie."
             },
             {
+                "id": 5,
                 "title": "Mein Discord",
                 "type": "discord",
                 "description": "Eigentlich bin ich um 2017 zu Discord gekommen. Ich mag es wirklich, in allem, was ich dort habe, der Beste zu sein und in Discord entwickle ich den ersten, besten, quelloffenen, persischen Wirtschafts-Discord-Bot, also macht es sehr viel Spaß für mich, dass ich einer der besten persischen Discord-Entwickler bin."
             },
             {
+                "id": 6,
                 "title": "Mein Instagram",
                 "type": "instagram",
                 "description": "Eigentlich bin ich auch Grafikdesigner und habe zu viele Poster von Fußballspielern in meinem Account. Ich bin um 2014 zu Instagram gekommen und wollte immer in sozialen Medien arbeiten, und das gleiche passierte auf Instagram und Ich habe angefangen, Inhalte in dieser Community zu produzieren."
@@ -504,6 +539,7 @@
         "my_portfolio":
         [
             {
+                "id": 1,
                 "title": "Paraffin",
                 "tag": "web_development",
                 "description": "Paraffin-Website zum Lehren und Lernen mit tollen Inhalten in verschiedenen Kategorien (Programmierung, Grafikdesign, Spiele, Technik, Tricks)",
@@ -511,6 +547,7 @@
                 "image": "/image/portfolio/paraffin-web.png"
             },
             {
+                "id": 2,
                 "title": "Discords City",
                 "tag": "web_development",
                 "description": "Erweitern Sie Ihr Discords Geschäft in Discords City Sie können Ihren Bot oder Server hinzufügen, um Ihr Geschäft auszubauen, und unsere Blogs lesen, um über alle Discord Aktualisierung und Tricks auf dem Laufenden zu bleiben",
@@ -518,6 +555,7 @@
                 "image": "/image/portfolio/discords-city-web.png"
             },
             {
+                "id": 3,
                 "title": "Headinfo",
                 "tag": "web_development",
                 "description": "Website für alltägliche Aufgaben und leicht zu erledigende Aufgaben, mit denen Sie sich tagsüber viel beschäftigen (Aktualisierung)",
@@ -525,6 +563,7 @@
                 "image": "/image/portfolio/headinfo-web.png"
             },
             {
+                "id": 4,
                 "title": "Nava",
                 "tag": "web_development",
                 "description": "Website des ersten und besten persischen Musik- und Videoplayers mit Qualität und Unterstützung für alle Formate zusammen mit RPC Discord",
@@ -532,6 +571,7 @@
                 "image": "/image/portfolio/nava-web.png"
             },
             {
+                "id": 5,
                 "title": "random-pic.js",
                 "tag": "web_development",
                 "description": "Website und Anwendungsmodul zum Empfangen von Zufallsbildern in verschiedenen Kategorien und der Möglichkeit, Größen und Grenzen und Beschränkungen festzulegen",
@@ -539,6 +579,7 @@
                 "image": "/image/portfolio/random-pic_js-web.png"
             },
             {
+                "id": 6,
                 "title": "MrCheat",
                 "tag": "web_development",
                 "description": "Website zum Erstellen, Entwickeln und Verkaufen aller Arten von Cheats und Cheats in verschiedenen Spielen wie Counter, Zola, CS Go und den meisten anderen Shooter-Spielen (im Aufbau - Teammitglied)",
@@ -546,6 +587,7 @@
                 "image": "/image/portfolio/mrcheat-web.png"
             },
             {
+                "id": 7,
                 "title": "Dubist",
                 "tag": "graphic_design",
                 "description": "Englisch, Persisch, Deutsch-Sprachlernwebsite mit Funktionen wie Lernkarte und Ranking (im Aufbau - Teammitglied)",
@@ -553,6 +595,7 @@
                 "image": "/image/portfolio/dubist-web.png"
             },
             {
+                "id": 8,
                 "title": "PDA",
                 "tag": "web_development",
                 "description": "Der erste dediziert persischsprachige Webservice in Form von Open Source mit hoher Qualität und beispielloser Geschwindigkeit",
@@ -560,6 +603,7 @@
                 "image": "/image/portfolio/pda-web.png"
             },
             {
+                "id": 9,
                 "title": "LiveSoccer",
                 "tag": "web_development",
                 "description": "Website, um die Tabelle der besten und größten Fußballligen mit Tordifferenzergebnissen und gespielten Spielen zu sehen",
@@ -567,6 +611,7 @@
                 "image": "/image/portfolio/livesoccer-web.png"
             },
             {
+                "id": 10,
                 "title": "Elite",
                 "tag": "web_development",
                 "description": "Website der Elite Discord Robot Programming Company mit 2 offiziell verifizierten Discord-Bots",
@@ -574,6 +619,7 @@
                 "image": "/image/portfolio/elite-web.png"
             },
             {
+                "id": 11,
                 "title": "Persönliche Website",
                 "tag": "web_development",
                 "description": "Open-Source-persönliche Website",
@@ -581,6 +627,7 @@
                 "image": "/image/portfolio/parsa-web.png"
             },
             {
+                "id": 12,
                 "title": "Persönliche Website",
                 "tag": "web_development",
                 "description": "Persönliche Website für Herrn Shadmehr",
@@ -588,6 +635,7 @@
                 "image": "/image/portfolio/shadmehr-web.png"
             },
             {
+                "id": 13,
                 "title": "Wintube",
                 "tag": "app_development",
                 "description": "Desktop-Anwendung mit Linux / Windows / Mac-Unterstützung zum Anzeigen von YouTube-Videos und -Filmen ohne Filterung und Hochgeschwindigkeits- und Download-Fähigkeit (Teammitglied)",
@@ -595,6 +643,7 @@
                 "image": "/image/portfolio/wintube-app.png"
             },
             {
+                "id": 14,
                 "title": "Nava-Video-Player",
                 "tag": "app_development",
                 "description": "Video mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
@@ -602,6 +651,7 @@
                 "image": "/image/portfolio/nava_video_player-app.png"
             },
             {
+                "id": 15,
                 "title": "Nava-Music-Player",
                 "tag": "app_development",
                 "description": "Musik mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
@@ -609,6 +659,7 @@
                 "image": "/image/portfolio/nava_music_player-app.png"
             },
             {
+                "id": 16,
                 "title": "Setar",
                 "tag": "robot_development",
                 "description": "Der erste und beste offizielle Songplayer und verifizierte Zwietracht (Teammitglied)",
@@ -616,6 +667,7 @@
                 "image": "/image/portfolio/setar-bot.png"
             },
             {
+                "id": "17",
                 "title": "Elite",
                 "tag": "robot_development",
                 "description": "Der beste und beliebteste Roboter für Sicherheit und Sicherheit der offiziellen und verifizierten offiziellen Zwietracht",
@@ -703,6 +755,7 @@
         "my_blogs":
         [
             {
+                "id": 0,
                 "name": "geometry_similarity_triangle_1",
                 "description": "اثبات قضیه تشابه مثلث ها ۱",
                 "created_at": "1639673079877",
@@ -711,6 +764,7 @@
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
+                "id": 1,
                 "name": "geometry_similarity_triangle_2",
                 "description": "اثبات قضیه تشابه مثلث ها ۲",
                 "created_at": "1639673079877",
@@ -719,6 +773,7 @@
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
+                "id": 2,
                 "name": "geometry_similarity_triangle_3",
                 "description": "اثبات قضیه تشابه مثلث ها ۳",
                 "created_at": "1639673079877",
@@ -730,36 +785,43 @@
         "funny_facts":
         [
             {
+                "id": 0,
                 "title": "فوتبال",
                 "type": "football",
                 "description": "من از وقتی که یادم می آید عاشق بازی کردن و دیدن فوتبال بودم. بازیکن مورد علاقه من بهترین بازیکن تاریخ فوتبال هست کسی که بیشترین توپ طلا را دارد و بیشترین گل + پاس گل را دارد همچنین از سبک بازی و زندگی شخصی گریزمان خیلی خوشم می آید او صد در صد یکی از برترین و باهوش ترین هافبک های تهاجمی فوتبال است. و تیم های مورد علاقه من آرژانتین - فرانسه و بارسلونا - یوونتوس است."
             },
             {
+                "id": 1,
                 "title": "کیهان",
                 "type": "space",
                 "description": "من همیشه از یادگیری درباره فضا و کیهان لذت میبردم و همچنین فیزیک کوآنتوم که نظریه های سرگیجه آوری را اثبات میکند مانند جهان های موازی، سیاه چاله ها و سفید چاله ها، تکینگی، پیوستگی."
             },
             {
+                "id": 2,
                 "title": "کال آف دیوتی",
                 "type": "cod",
                 "description": "منم از بازی کردن خیلی لذت میبرم و تنها زمان است که بین من و بازی کردن فاصله انداخته. کال آف دیوتی بهترین بازی های شوتر را میسازد و یکی از بهترین های ان وارزون است که بازی کردنش بسیار لذت بخش و هیجان انگیز است."
             },
             {
+                "id": 3,
                 "title": "آهنگ",
                 "type": "music",
                 "description": "من همیشه موقع کارم آهنگ گوش میدهم زیرا به من حس بسیار خوبی میدهد چه بسا آهنگ شادمهر عقیلی باشد آن وقت انرژیم هم چند برابر میشود به راستی بازگشت همه به سوی اوست و آهنگی جز او سو تفاهم است."
             },
             {
+                "id": 4,
                 "title": "گیتار",
                 "type": "guitar",
                 "description": "گیتار ساز محبوب من است و از نظر من بهترین بهترین ساز. از ۹ سالگی به دنبال یادگیری گیتار بودم و ۲ کنسرت در سالن هنر آفتاب شیراز با آکادمی نواآفرین برگذار کرده ام. هر آهنگی که بخواهم گوش بدهم اول به دنبال ورژن آکوستیک آن میگردم زیرا از ریتمی که با گیتار درست میشود بیشتر لذت میبرم و انرژی میگیرم."
             },
             {
+                "id": 5,
                 "title": "دیسکورد من",
                 "type": "discord",
                 "description": "من از ۲۰۱۷ وارد دیسکورد شدم و از عادت همیشه ام دوست داشتم بهترین هر جایی باشم و با یادگیری ماژول ها و لایبری های دیسکورد توانستم دو ربات تایید شده دیسکورد را توسعه دهم و در تیم بهترین ربات های دیسکورد باشم."
             },
             {
+                "id": 6,
                 "title": "اینستاگرام من",
                 "type": "instagram",
                 "description": "من از سال ۲۰۱۴ وارد اینستاگرام شده با اینکه اوایل فعالیت خاصی نمیکردم ولی از علاقه ام در فعالیت در فضای مجازی چند سال است که طرح های گرافیکی ام را در آنجا به اشتراک میگذارم."
@@ -813,6 +875,7 @@
         "my_portfolio":
         [
             {
+                "id": 0,
                 "title": "پارافین",
                 "tag": "web_development",
                 "description": "پارافین وبسایت آموزش و یادگیری با مطالب فوق العاده در دسته بندی ها مختلف (برنامه نویسی، طراحی گرافیک، بازی، تکنولوژی، ترفند)",
@@ -820,6 +883,7 @@
                 "image": "/image/portfolio/paraffin-web.png"
             },
             {
+                "id": 1,
                 "title": "دیسکوردز سیتی",
                 "tag": "web_development",
                 "description": "وبسایتی برای کاربران کامینیوتی دیسکورد که سرور، ربات یا اکانت خودشان را در آن ثبت نام کنند و در اکسپلور ما دیده شوند تا ممبر های بیشتری بدست بیاورند و صفحه بخصوص خود را داشته باشند",
@@ -827,6 +891,7 @@
                 "image": "/image/portfolio/discords-city-web.png"
             },
             {
+                "id": 2,
                 "title": "Headinfo",
                 "tag": "web_development",
                 "description": "وبسایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (درحال بروزرسانی)",
@@ -834,6 +899,7 @@
                 "image": "/image/portfolio/headinfo-web.png"
             },
             {
+                "id": 3,
                 "title": "نوآ",
                 "tag": "web_development",
                 "description": "وب سایت اولین و برترین موزیک و ویدیو پلیر فارسی زبان با کیفیت و پشتیبانی تمامی فرمت ها به همراه آر پی سی دیسکورد",
@@ -841,6 +907,7 @@
                 "image": "/image/portfolio/nava-web.png"
             },
             {
+                "id": 4,
                 "title": "random-pic.js",
                 "tag": "web_development",
                 "description": "وبسایت و ماژولی کاربردی برای دریافت تصاویر تصادفی در دسته بندی های مختلف و قابلیت سایز بندی و گذاشتن لیمیت و محدودیت",
@@ -848,6 +915,7 @@
                 "image": "/image/portfolio/random-pic_js-web.png"
             },
             {
+                "id": 5,
                 "title": "MrCheat",
                 "tag": "web_development",
                 "description": "وبسایت ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت - عضو تیم)",
@@ -855,6 +923,7 @@
                 "image": "/image/portfolio/mrcheat-web.png"
             },
             {
+                "id": 6,
                 "title": "Dubist",
                 "tag": "graphic_design",
                 "description": "وبسایت آموزش زبان انگلیسی، فارسی، آلمانی به همراه قابلیت هایی نظیر فلش کارت و رنک بندی (در دست ساخت - عضو تیم)",
@@ -862,6 +931,7 @@
                 "image": "/image/portfolio/dubist-web.png"
             },
             {
+                "id": 7,
                 "title": "PDA",
                 "tag": "web_development",
                 "description": "اولین وب سرویس اختصاصی فارسی زبان دیسکورد به صورت اوپن سورس با کیفیت و سرعتی بالا و بی نظیر",
@@ -869,6 +939,7 @@
                 "image": "/image/portfolio/pda-web.png"
             },
             {
+                "id": 8,
                 "title": "LiveSoccer",
                 "tag": "web_development",
                 "description": "وبسایتی برای دیدن جدول برترین و بزرگ ترین لیگ های فوتبال به همراه امتیازات تفاضل گل و بازی های انجام شده",
@@ -876,6 +947,7 @@
                 "image": "/image/portfolio/livesoccer-web.png"
             },
             {
+                "id": 9,
                 "title": "Elite",
                 "tag": "web_development",
                 "description": "وبسایت شرکت الایت تیم برنامه نویسی ربات های دیسکورد با ۲ بات وریفای شده رسمی دیسکورد",
@@ -883,6 +955,7 @@
                 "image": "/image/portfolio/elite-web.png"
             },
             {
+                "id": 10,
                 "title": "وبسایت شخصی",
                 "tag": "web_development",
                 "description": "وبسایت شخصی اوپن سورس",
@@ -890,6 +963,7 @@
                 "image": "/image/portfolio/parsa-web.png"
             },
             {
+                "id": 11,
                 "title": "وبسایت شخصی",
                 "tag": "web_development",
                 "description": "وبسایت شخصی برای آقای شادمهر",
@@ -897,6 +971,7 @@
                 "image": "/image/portfolio/shadmehr-web.png"
             },
             {
+                "id": 12,
                 "title": "Wintube",
                 "tag": "app_development",
                 "description": "اپلیکیشنی برای دسکتاپ قابلیت پشتیبانی لینوکس/ویندوز/مک برای نمایش ویدیو و فیلم های یوتیوب بدون فیلتر و سرعت بالا و قبالیت دانلود (عضو تیم)",
@@ -904,6 +979,7 @@
                 "image": "/image/portfolio/wintube-app.png"
             },
             {
+                "id": 13,
                 "title": "پخش کننده ویدیو نوآ",
                 "tag": "app_development",
                 "description": "پخش کننده ویدیو و فیلم با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
@@ -911,6 +987,7 @@
                 "image": "/image/portfolio/nava_video_player-app.png"
             },
             {
+                "id": 15,
                 "title": "پخش کننده آهنگ نوآ",
                 "tag": "app_development",
                 "description": "پخش کننده موزیک و آهنگ با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
@@ -918,6 +995,7 @@
                 "image": "/image/portfolio/nava_music_player-app.png"
             },
             {
+                "id": 16,
                 "title": "ستار",
                 "tag": "robot_development",
                 "description": "اولین و برترین ربات پخش کننده آهنگ و وریفای شده رسمی دیسکورد (عضو تیم)",
@@ -925,6 +1003,7 @@
                 "image": "/image/portfolio/setar-bot.png"
             },
             {
+                "id": "17",
                 "title": "Elite",
                 "tag": "robot_development",
                 "description": "برترین و محبوب ترین ربات سکوریتی و امنیت سرور و وریفای شده رسمی دیسکورد",

@@ -27,33 +27,33 @@
             height: 35rem;
             padding: 6rem 3rem 0 6rem;
 
-            &[data-type='football']
+            &[data-fact_type='football']
             {
                 background-image: var(--base-gradiant-image_football);
             }
-            &[data-type='instagram']
+            &[data-fact_type='instagram']
             {
                 padding: 6rem 3rem 6rem 6rem;
                 background-image: var(--base-gradiant-image_instagram);
             }
-            &[data-type='discord']
+            &[data-fact_type='discord']
             {
                 padding: 6rem 3rem 6rem 6rem;
                 background-image: var(--base-gradiant-image_discord);
             }
-            &[data-type='cod']
+            &[data-fact_type='cod']
             {
                 background-image: var(--base-gradiant-image_cod);
             }
-            &[data-type='music']
+            &[data-fact_type='music']
             {
                 background-image: var(--base-gradiant-image_music);
             }
-            &[data-type='guitar']
+            &[data-fact_type='guitar']
             {
                 background-image: var(--base-gradiant-image_guitar);
             }
-            &[data-type='space']
+            &[data-fact_type='space']
             {
                 background-image: var(--base-gradiant-image_space);
             }

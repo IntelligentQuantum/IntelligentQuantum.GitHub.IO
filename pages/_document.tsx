@@ -33,8 +33,8 @@ class MyDocument extends Document
                     <meta property='twitter:image' content='https://parsa-firoozi.ir/favicon.png'/>
                 </Head>
                 <body>
-                <Main />
-                <NextScript />
+                    <Main />
+                    <NextScript />
                 </body>
             </Html>
         );

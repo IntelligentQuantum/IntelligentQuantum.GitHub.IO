@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 
-import type { NextPage } from 'next';
+import type { IContent } from '../contracts/IContent';
+import type { IPortfolio } from '../contracts/IPortfolio';
 
 import Card from '../components/portfolio/card.component';
 import Main from '../components/layouts/main/main.component';
@@ -11,13 +12,13 @@ import stylesPortfolio from '../styles/pages/portfolio.module.scss';
 
 import { setTagPortfolio } from '../app/portfolio/portfolio.actions';
 
-const Portfolio: NextPage = (props: any) =>
+const Portfolio: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {
     const dispatch = useDispatch();
-    const cards = props?.content?.my_portfolio?.map((portfolio: any) =>
+    const cards = props?.content?.my_portfolio?.map((portfolio: IPortfolio) =>
         (
             <Card
-                key={ portfolio?.name?.split(' ').join('_') }
+                key={ portfolio?.id }
                 portfolio={ portfolio }
                 text={ props?.content?.read_more }
             />
