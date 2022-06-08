@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img width="200px" src="[https://github.com/im-parsa/im-parsa.github.io/blob/im-parsa.github.io/public/static/images/favicon.png?raw=true](https://parsa-firoozi.ir/_next/image?url=%2Fstatic%2Fimages%2Fmy-profile.png&w=1920&q=75)" alt="parsa-firoozi im-parsa"/>
+    <img width="200px" src="https://github.com/im-parsa/im-parsa.github.io/blob/im-parsa.github.io/public/static/images/favicon.png" alt="parsa-firoozi im-parsa"/>
     <br/>
     My Personal Website ( portfolio )
 </h1>
