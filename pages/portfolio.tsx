@@ -46,7 +46,7 @@ const Portfolio: (props: { content: IContent }) => JSX.Element = (props: { conte
                 <meta property='og:url' content='https://parsa-firoozi.ir/portfolio'/>
                 <meta property='og:title' content='Parsa Firoozi'/>
                 <meta property='og:description' content='Parsa Firoozi Portfolio'/>
-                <meta property='og:image' content='https://parsa-firoozi.ir/favicon.png'/>
+                <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                 <meta property='twitter:card' content='summary'/>
                 <meta property='twitter:url' content='https://parsa-firoozi.ir/portfolio'/>

@@ -117,7 +117,7 @@
                 "id": 0,
                 "title": "Football",
                 "type": "football",
-                "description": "I have been watching & playing football since I can remember and my favorite player is the best player in football history, Lionel Messi who has most Ballon d'Or in football and most G+A, in other side I really like Antoine Griezmann football & life style he is definitely one of the smartest players in history.\nMy favorite national team is Argentina & France and I am Barça & Juve fan."
+                "description": "I have been watching & playing football since I can remember and my favorite player is the best player in football history, Lionel Messi who has most Ballon d'Or in football and most G+A, in other side I really like Antoine Griezmann football & life style he is definitely one of the smartest players in history. Also, Ferran Torres, a new football talent who is one of the best playmakers in the world right now.\nMy favorite teams are Argentina, France and Spain - Barçelona, Juventus and Arsenal."
             },
             {
                 "id": 1,
@@ -470,7 +470,7 @@
                 "id": 0,
                 "title": "Fußball",
                 "type": "football",
-                "description": "Seitdem schaue und spiele ich Fußball seit ich denken kann und mein Lieblingsspieler ist der beste Spieler in der Fußballgeschichte, Lionel Messi, der die meisten Ballon d'Or im Fußball und die meisten G+A hat, auf der anderen Seite Ich mag Antoine Griezmanns Fußball und seinen Lebensstil sehr, er ist definitiv einer der klügsten Spieler der Geschichte.\nMeine Lieblingsnationalmannschaft sind Argentinien und Frankreich und ich bin Barça- und Juve-Fan."
+                "description": "Seitdem schaue und spiele ich Fußball seit ich denken kann und mein Lieblingsspieler ist der beste Spieler in der Fußballgeschichte, Lionel Messi, der die meisten Ballon d'Or im Fußball und die meisten G+A hat, auf der anderen Seite Ich mag Antoine Griezmann Fußball und seinen Lebensstil sehr, er ist definitiv einer der klügsten Spieler der Geschichte. Außerdem Ferran Torres, ein neues Fußballtalent, das derzeit einer der besten Spielmacher der Welt ist.\nMeine Lieblingsmannschaften sind Argentinien, Frankreich und Spanien."
             },
             {
                 "id": 1,
@@ -818,7 +818,7 @@
                 "id": 0,
                 "title": "فوتبال",
                 "type": "football",
-                "description": "من از وقتی که یادم می آید عاشق بازی کردن و دیدن فوتبال بودم. بازیکن مورد علاقه من بهترین بازیکن تاریخ فوتبال هست کسی که بیشترین توپ طلا را دارد و بیشترین گل + پاس گل را دارد همچنین از سبک بازی و زندگی شخصی گریزمان خیلی خوشم می آید او صد در صد یکی از برترین و باهوش ترین هافبک های تهاجمی فوتبال است. و تیم های مورد علاقه من آرژانتین - فرانسه و بارسلونا - یوونتوس است."
+                "description": "من از وقتی که یادم می آید عاشق بازی کردن و دیدن فوتبال بودم. بازیکن مورد علاقه من بهترین بازیکن تاریخ فوتبال هست کسی که بیشترین توپ طلا را دارد و بیشترین گل + پاس گل را دارد همچنین از سبک بازی و زندگی شخصی گریزمان خیلی خوشم می آید او صد در صد یکی از برترین و باهوش ترین هافبک های تهاجمی فوتبال است. همچنین فران تورس استعداد جدید فوتبال که یکی از بهترین وینگر های بازیساز حال حاضر جهان هست. تیم های مورد علاقه من آرژانتین، فرانسه و اسپانیا - بارسلونا، یوونتوس و آرسنال هستند."
             },
             {
                 "id": 1,
@@ -1039,7 +1039,7 @@
                 "image": "/static/images/portfolio/setar-bot.png"
             },
             {
-                "id": "17",
+                "id": 17,
                 "title": "Elite",
                 "tag": "robot_development",
                 "description": "برترین و محبوب ترین ربات سکوریتی و امنیت سرور و وریفای شده رسمی دیسکورد",

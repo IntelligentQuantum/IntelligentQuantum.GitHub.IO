@@ -39,7 +39,7 @@ const Funny: (props: { content: IContent }) => JSX.Element = (props: { content: 
                 <meta property='og:url' content='https://parsa-firoozi.ir/funny'/>
                 <meta property='og:title' content='Parsa Firoozi'/>
                 <meta property='og:description' content='Parsa Firoozi Funny Facts'/>
-                <meta property='og:image' content='https://parsa-firoozi.ir/favicon.png'/>
+                <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                 <meta property='twitter:card' content='summary'/>
                 <meta property='twitter:url' content='https://parsa-firoozi.ir/funny'/>

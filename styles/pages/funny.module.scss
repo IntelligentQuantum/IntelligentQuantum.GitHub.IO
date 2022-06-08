@@ -24,7 +24,7 @@
             background-position: center;
             background-size: cover;
             width: 100%;
-            height: 35rem;
+            height: 38rem;
             padding: 6rem 3rem 0 6rem;
 
             &[data-fact_type='football']
@@ -89,6 +89,11 @@
                 {
                     font-size: 3rem;
                 }
+            }
+
+            & p
+            {
+                margin-bottom: 3rem;
             }
 
             &Box
@@ -181,30 +186,53 @@
                         transition: 0.4s ease-in-out;
                         z-index: 92;
 
+                        &[data-image='three']
+                        {
+                            max-width: 24rem;
+                        }
+
                         @media only screen and (max-width: 1400px)
                         {
-                            max-width: 70%;
+                            max-width: 73%;
+
+                            &[data-image='three']
+                            {
+                                max-width: 68%;
+                            }
                         }
 
                         &:hover
                         {
                             filter: blur(0);
                             max-width: 31rem;
+                            z-index: 95 !important;
 
-                            @media only screen and (max-width: 1400px)
+                            &[data-image='three']
                             {
-                                max-width: 80%;
+                                max-width: 27rem;
+                                z-index: 96 !important;
                             }
-                        }
-
-                        &:hover + [data-image='two']
-                        {
-                            filter: blur(3px);
-                            max-width: 29rem;
 
                             @media only screen and (max-width: 1400px)
                             {
-                                max-width: 70%;
+                                max-width: 82%;
+
+                                &[data-image='three']
+                                {
+                                    max-width: 75%;
+                                }
+                            }
+
+                            & ~ [data-image='two']
+                            {
+                                filter: blur(3px);
+                                max-width: 29rem;
+                                z-index: 92;
+
+                                @media only screen and (max-width: 1400px)
+                                {
+                                    max-width: 70%;
+                                }
                             }
                         }
                     }
@@ -217,11 +245,41 @@
 
                     & img:last-child
                     {
-                        right: 12rem;
+                        right: 16.5rem;
 
                         @media only screen and (max-width: 1400px)
                         {
-                            right: 5rem;
+                            right: 9rem;
+                        }
+
+                        &:hover
+                        {
+                            animation: none;
+                        }
+                    }
+
+                    & img:nth-child(2)
+                    {
+                        right: 6rem;
+
+                        @media only screen and (max-width: 1400px)
+                        {
+                            right: 2rem;
+                        }
+
+                        &:hover
+                        {
+                            animation: none;
+                        }
+                    }
+
+                    & img:first-child
+                    {
+                        right: -2rem;
+
+                        @media only screen and (max-width: 1400px)
+                        {
+                            right: -3rem;
                         }
 
                         &:hover

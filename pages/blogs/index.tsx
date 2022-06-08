@@ -24,7 +24,7 @@ const Blog: (props: { content: IContent }) => JSX.Element = (props: { content: I
     return (
         <>
             <Head>
-                <title>Parsa Firoozi &mdash; im-parsa educational and research blogs</title>
+                <title>Parsa Firoozi &mdash; Educational and research blogs</title>
 
                 <meta charSet='UTF-8' />
                 <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
@@ -41,7 +41,7 @@ const Blog: (props: { content: IContent }) => JSX.Element = (props: { content: I
                 <meta property='og:url' content='https://parsa-firoozi.ir/blogs'/>
                 <meta property='og:title' content='Parsa Firoozi'/>
                 <meta property='og:description' content='Parsa Firoozi Blogs'/>
-                <meta property='og:image' content='https://parsa-firoozi.ir/favicon.png'/>
+                <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                 <meta property='twitter:card' content='summary'/>
                 <meta property='twitter:url' content='https://parsa-firoozi.ir/blogs'/>

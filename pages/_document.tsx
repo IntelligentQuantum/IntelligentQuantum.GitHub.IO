@@ -12,6 +12,10 @@ class MyDocument extends Document
         return (
             <Html lang='EN' data-theme='dark' data-language='en' dir='ltr'>
                 <Head>
+                    <link rel="icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>
+                    <link rel="apple-touch-icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>
+                    <link rel="manifest" href="https://parsa-firoozi.ir/static/manifest.json"/>
+
                     <meta property='theme-color' content='#4f40f8'/>
                     <meta name='language' content='en'/>
                     <meta name='Classification' content='Portfolio'/>
@@ -24,13 +28,13 @@ class MyDocument extends Document
                     <meta property='og:url' content='https://parsa-firoozi.ir/'/>
                     <meta property='og:title' content='im-parsa'/>
                     <meta property='og:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
-                    <meta property='og:image' content='https://parsa-firoozi.ir/favicon.png'/>
+                    <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                     <meta property='twitter:card'/>
                     <meta property='twitter:url' content='https://parsa-firoozi.ir/'/>
                     <meta property='twitter:title' content='im-parsa'/>
                     <meta property='twitter:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
-                    <meta property='twitter:image' content='https://parsa-firoozi.ir/favicon.png'/>
+                    <meta property='twitter:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
                 </Head>
                 <body>
                     <Main />

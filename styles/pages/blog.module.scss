@@ -138,6 +138,11 @@
                 transform: scale(1.07);
                 filter: brightness(100%) blur(0);
             }
+
+            & > div
+            {
+                bottom: 0 !important;
+            }
         }
 
 

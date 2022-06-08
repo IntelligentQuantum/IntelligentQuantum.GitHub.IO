@@ -25,9 +25,9 @@ const FunnyCard = (props: { fact: IFunny }) =>
                             props.fact.type === 'football'
                                 ?
                                 <>
-                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundOne} src='/static/images/funny/antoine_griezmann.png' alt='Antoine Griezmann'/>
-                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundTwo} data-image='two' src='/static/images/funny/lionel_messi.png' alt='Lionel Messi'/>
-                                </>
+                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundOne} data-image='three' src='/static/images/funny/ferran_torres.png' alt='Ferran Torres'/>
+                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundOne} data-image='one' src='/static/images/funny/antoine_griezmann.png' alt='Antoine Griezmann'/>
+                                    <img className={stylesFunny.funnyHeaderContentImagesBackgroundTwo} data-image='two' src='/static/images/funny/lionel_messi.png' alt='Lionel Messi'/></>
                                 :
                                 props.fact.type === 'space'
                                     ?

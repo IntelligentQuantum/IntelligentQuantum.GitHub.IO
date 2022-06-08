@@ -15,39 +15,6 @@ import stylesButton from '../styles/components/button.module.scss';
 const Contact: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {
     const modal = withReactContent(Swal);
-    // const handleSubmitComment = async (event: any) =>
-    // {
-    //     event.preventDefault();
-    //
-    //     try
-    //     {
-    //         const gRecaptchaResponse: HTMLElement | any = document.getElementById('g-recaptcha-response');
-    //
-    //         await axios.post('/comment', { type: 'BOT', typeId: singleBot?.botId, content, rating, gRecaptchaResponse: gRecaptchaResponse.value });
-    //
-    //         await modal.fire(
-    //             {
-    //                 title: 'Comment created successfully',
-    //                 icon: 'success',
-    //                 timer: 5000
-    //             });
-    //
-    //         const textareaElement: any = document.getElementById('content');
-    //         textareaElement.value = '';
-    //
-    //         setContent('');
-    //     }
-    //     catch (error: any)
-    //     {
-    //         await modal.fire(
-    //             {
-    //                 confirmButtonColor: '#5865F2',
-    //                 title: error?.response?.data?.message,
-    //                 icon: 'error',
-    //                 timer: 5000
-    //             });
-    //     }
-    // }
 
     return (
         <>
@@ -69,7 +36,7 @@ const Contact: (props: { content: IContent }) => JSX.Element = (props: { content
                 <meta property='og:url' content='https://parsa-firoozi.ir/contact'/>
                 <meta property='og:title' content='Parsa Firoozi'/>
                 <meta property='og:description' content='Parsa Firoozi Contact'/>
-                <meta property='og:image' content='https://parsa-firoozi.ir/favicon.png'/>
+                <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                 <meta property='twitter:card' content='summary'/>
                 <meta property='twitter:url' content='https://parsa-firoozi.ir/contact'/>

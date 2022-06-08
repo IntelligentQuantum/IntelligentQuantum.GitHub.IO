@@ -1,26 +1,16 @@
 {
-    "short_name": "Parsa Firoozi",
-    "name": "Parsa Firoozi Full-Stack Developer & Graphic Designer (im-parsa)",
+    "short_name": "im-parsa",
+    "name": "Parsa Firoozi - im-parsa",
     "icons":
     [
         {
-            "src": "favicon.png",
+            "src": "/static/images/favicon.png",
             "sizes": "64x64 32x32 24x24 16x16",
             "type": "image/x-icon"
-        },
-        {
-            "src": "favicon.png",
-            "type": "image/png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "favicon.png",
-            "type": "image/png",
-            "sizes": "512x512"
         }
     ],
-    "start_url": ".",
+    "start_url": "https://im-parsa.tech",
     "display": "standalone",
-    "theme_color": "#4f40f8",
-    "background_color": "#ffffff"
+    "theme_color": "#5294E2",
+    "background_color": "#323540"
 }
