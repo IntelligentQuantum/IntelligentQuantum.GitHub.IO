@@ -5,12 +5,12 @@ export default
             type: 'website',
             locale: 'en_IE',
             url: 'https://parsa-firoozi.ir/',
-            site_name: 'Parsa Firoozi - Full-Stack Developer',
+            site_name: 'Parsa Firoozi',
         },
     twitter:
         {
             handle: '@handle',
             site: '@im-parsa',
             cardType: 'summary_large_image',
-        },
+        }
 };
