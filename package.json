@@ -7,12 +7,14 @@
         "name": "im-parsa",
         "url": "https://parsa-firoozi.ir/"
     },
+    "main": "server.js",
     "scripts": {
         "dev": "next dev",
         "export": "next export",
         "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
+        "next-start": "next start",
+        "lint": "next lint",
+        "start": "NODE_ENV=production node server.js"
     },
     "dependencies": {
         "@ionic/react": "^6.1.8",
