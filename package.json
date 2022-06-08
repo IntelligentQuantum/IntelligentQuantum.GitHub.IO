@@ -12,8 +12,7 @@
         "export": "next export",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
-        "watch:sass": "sass stylesheets/globals.scss src/Assets/Sass/Stylesheets/Main.css -w"
+        "lint": "next lint"
     },
     "dependencies": {
         "@ionic/react": "^6.1.8",
