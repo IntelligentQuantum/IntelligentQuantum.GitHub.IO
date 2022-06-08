@@ -2,15 +2,15 @@ export default
 {
     openGraph:
         {
-        type: 'website',
-        locale: 'en_IE',
-        url: 'https://parsa-firoozi.ir/',
-        site_name: 'Parsa Firoozi - Full-Stack Developer',
-    },
+            type: 'website',
+            locale: 'en_IE',
+            url: 'https://parsa-firoozi.ir/',
+            site_name: 'Parsa Firoozi - Full-Stack Developer',
+        },
     twitter:
         {
-        handle: '@handle',
-        site: '@im-parsa',
-        cardType: 'summary_large_image',
-    },
+            handle: '@handle',
+            site: '@im-parsa',
+            cardType: 'summary_large_image',
+        },
 };

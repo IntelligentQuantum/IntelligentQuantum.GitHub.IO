@@ -71,13 +71,13 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
                 <meta name='author' content='Parsa Firoozi'/>
 
                 <meta property='og:type' content='website'/>
-                <meta property='og:url' content={'https://parsa-firoozi.ir/blogs' + blog?.name}/>
+                <meta property='og:url' content={'https://parsa-firoozi.ir/blogs/' + blog?.name}/>
                 <meta property='og:title' content='Parsa Firoozi'/>
                 <meta property='og:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
-                <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
+                <meta property='og:image' content={'https://parsa-firoozi.ir/' + blog?.image}/>
 
-                <meta property='twitter:card' content='summary'/>
-                <meta property='twitter:url' content={'https://parsa-firoozi.ir/blogs' + blog?.name}/>
+                <meta name='twitter:card' content='summary_large_image'/>
+                <meta property='twitter:url' content={'https://parsa-firoozi.ir/blogs/' + blog?.name}/>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
                 <meta property='twitter:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
             </Head>

@@ -1,14 +1,16 @@
 <h1 align="center">
-    <img width="200px" src="https://github.com/im-parsa/im-parsa.github.io/blob/im-parsa.github.io/public/static/images/favicon.png?raw=true" alt="parsa-firoozi im-parsa"/>
+    <img width="200px" src="https://cdn.discordapp.com/attachments/776425421968244768/984131895694598214/favicon.png" alt="parsa-firoozi im-parsa"/>
     <br/>
     My Personal Website ( portfolio )
 </h1>
 
 <div align="center">
-    <img src="https://github.com/im-parsa/im-parsa.github.io/blob/im-parsa.github.io/screenshot.png?raw=true" alt="parsa-firoozi im-parsa"/>
+    <img src="https://cdn.discordapp.com/attachments/776425421968244768/984131726060187688/screenshot.png" alt="parsa-firoozi im-parsa"/>
 </div>
 
-<p align="center">Personal website that written in React.js & its user interface design is like apps</p>
+<p align="center">
+    Personal website that written in React.js & Next.js, Also its user interface design is like apps
+</p>
 
 <br/>
 
@@ -43,7 +45,8 @@
     <img src="https://img.shields.io/badge/TypeScript-323540?style=for-the-badge&logo=TypeScript&logoColor=5294E2" alt="JavaScript" style="border-radius:15px"/>
     <img src="https://img.shields.io/badge/SASS-323540?style=for-the-badge&logo=SASS&logoColor=5294E2" alt="SASS" style="border-radius:15px"/>
     <br/>
-    <img src="https://img.shields.io/badge/React-323540?style=for-the-badge&logo=React&logoColor=5294E2" alt="React" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/React.js-323540?style=for-the-badge&logo=React&logoColor=5294E2" alt="React.js" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/Next.js-323540?style=for-the-badge&logo=Next.js&logoColor=5294E2" alt="Next.js" style="border-radius:15px"/>
     <img src="https://img.shields.io/badge/NPM-323540?style=for-the-badge&logo=NPM&logoColor=5294E2" alt="npm" style="border-radius:15px"/>
     <img src="https://img.shields.io/badge/Json DB-323540?style=for-the-badge&logo=Json&logoColor=5294E2" alt="React" style="border-radius:15px"/>
 </div>

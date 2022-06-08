@@ -16,7 +16,7 @@ class MyDocument extends Document
                     <link rel="apple-touch-icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>
                     <link rel="manifest" href="https://parsa-firoozi.ir/static/manifest.json"/>
 
-                    <meta property='theme-color' content='#4f40f8'/>
+                    <meta property='theme-color' content='#5294E2'/>
                     <meta name='language' content='en'/>
                     <meta name='Classification' content='Portfolio'/>
                     <meta name='subject' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>

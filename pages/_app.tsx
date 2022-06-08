@@ -49,7 +49,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
     const filter = useSelector(((state: any) => state.filter.activeFilter));
     const openNavbar: boolean = useSelector(((state: any) => state.navbar.openNavbar));
     const imagePortfolio = useSelector(((state: any) => state.portfolio.imagePortfolio));
-    const [theme, setTheme]: [theme: 'dark' | 'dim' | 'light', setTheme: any] = useState<any>('dark');
+    const [theme, setTheme]: [theme: 'dark' | 'dim' | 'light', setTheme: any] = useState<any>('dim');
     const [language, setLanguage]: [language: 'en' | 'de' | 'fa', setLanguage: any] = useState<any>('en');
     const handleTheme = useCallback(
         (theme?: string) =>
@@ -65,7 +65,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
             }
             else
             {
-                const storageTheme: string = localStorage.getItem('theme') || 'dark';
+                const storageTheme: string = localStorage.getItem('theme') || 'dim';
                 const htmlElement: HTMLElement | any = document.querySelector('html');
 
                 htmlElement.setAttribute('data-theme', storageTheme);
@@ -118,7 +118,7 @@ function AppProps({ Component, pageProps }: CustomAppProps)
     return (
         <>
             <div>
-                <meta property='theme-color' content='#4f40f8'/>
+                <meta property='theme-color' content='#5294E2'/>
                 <meta name='language' content='en'/>
                 <meta name='Classification' content='Portfolio'/>
                 <meta name='subject' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
