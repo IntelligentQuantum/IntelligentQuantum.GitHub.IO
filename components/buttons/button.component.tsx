@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import stylesButton from '../../styles/components/button.module.scss';
+import stylesButton from '../../stylesheets/components/button.module.scss';
 
 import ArrowKeyboardRight from '../../public/static/icons/icon-arrow_keyboard_right.svg';
 

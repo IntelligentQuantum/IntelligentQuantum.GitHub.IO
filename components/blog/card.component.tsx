@@ -3,7 +3,7 @@ import ButtonSecondary from '../buttons/secondary-button.component';
 
 import type { IBlog } from '../../contracts/IBlog';
 
-import stylesBlog from '../../styles/pages/blog.module.scss';
+import stylesBlog from '../../stylesheets/pages/blog.module.scss';
 
 const BlogCard = (props: { blog: IBlog, text: string }) =>
     (

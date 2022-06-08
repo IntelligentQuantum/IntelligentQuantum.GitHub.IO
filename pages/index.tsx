@@ -12,9 +12,9 @@ import Main from '../components/layouts/main/main.component';
 import PlanCard from '../components/home/plan-card.component';
 import ServiceCard from '../components/home/service-card.component';
 
-import stylesMain from '../styles/components/main.module.scss';
-import stylesHome from '../styles/pages/home.module.scss';
-import stylesButtons from '../styles/components/button.module.scss';
+import stylesMain from '../stylesheets/components/main.module.scss';
+import stylesHome from '../stylesheets/pages/home.module.scss';
+import stylesButtons from '../stylesheets/components/button.module.scss';
 
 const Home: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {

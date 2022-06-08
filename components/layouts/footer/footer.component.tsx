@@ -1,4 +1,4 @@
-import stylesFooter from '../../../styles/components/footer.module.scss';
+import stylesFooter from '../../../stylesheets/components/footer.module.scss';
 
 import Github from '../../../public/static/icons/icon-github.svg';
 

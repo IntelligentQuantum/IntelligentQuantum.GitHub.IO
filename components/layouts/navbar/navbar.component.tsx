@@ -13,7 +13,7 @@ import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setOpenNavbar } from '../../../app/navbar/navbar.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
 
-import stylesNav from '../../../styles/components/nav.module.scss';
+import stylesNav from '../../../stylesheets/components/nav.module.scss';
 
 const Navbar: any = (props: { content: IContent, theme?: 'dark' | 'dim' | 'light', handleTheme?: any, mobile?: boolean, page?: 'home' | 'contact' | 'funny' | 'portfolio' | 'blogs' }) =>
 {

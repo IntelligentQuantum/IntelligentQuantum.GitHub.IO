@@ -3,7 +3,7 @@ import type { IContent } from '../../contracts/IContent';
 
 import ButtonSecondary from '../buttons/secondary-button.component';
 
-import stylesHome from '../../styles/pages/home.module.scss';
+import stylesHome from '../../stylesheets/pages/home.module.scss';
 
 import Check from '../../public/static/icons/icon-check.svg';
 

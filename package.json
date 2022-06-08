@@ -13,7 +13,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "watch:sass": "sass styles/globals.scss src/Assets/Sass/Stylesheets/Main.css -w"
+        "watch:sass": "sass stylesheets/globals.scss src/Assets/Sass/Stylesheets/Main.css -w"
     },
     "dependencies": {
         "@ionic/react": "^6.1.8",

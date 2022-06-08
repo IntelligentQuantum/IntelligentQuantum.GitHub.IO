@@ -39,13 +39,13 @@
 </h1>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/JavaScript-20202a?style=for-the-badge&logo=JavaScript&logoColor=4f40f8" alt="JavaScript" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/TypeScript-20202a?style=for-the-badge&logo=TypeScript&logoColor=4f40f8" alt="JavaScript" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/SASS-20202a?style=for-the-badge&logo=SASS&logoColor=4f40f8" alt="SASS" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/JavaScript-323540?style=for-the-badge&logo=JavaScript&logoColor=5294E2" alt="JavaScript" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/TypeScript-323540?style=for-the-badge&logo=TypeScript&logoColor=5294E2" alt="JavaScript" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/SASS-323540?style=for-the-badge&logo=SASS&logoColor=5294E2" alt="SASS" style="border-radius:15px"/>
     <br/>
-    <img src="https://img.shields.io/badge/React-20202a?style=for-the-badge&logo=React&logoColor=4f40f8" alt="React" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/NPM-20202a?style=for-the-badge&logo=NPM&logoColor=4f40f8" alt="npm" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/Json DB-20202a?style=for-the-badge&logo=Json&logoColor=4f40f8" alt="React" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/React-323540?style=for-the-badge&logo=React&logoColor=5294E2" alt="React" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/NPM-323540?style=for-the-badge&logo=NPM&logoColor=5294E2" alt="npm" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/Json DB-323540?style=for-the-badge&logo=Json&logoColor=5294E2" alt="React" style="border-radius:15px"/>
 </div>
 
 <h1 align="center">
@@ -61,23 +61,7 @@
 2. Start the development server
 
    ```sh
-   npm start
-   ```
-
-<h1 align="center">
-    🚀  Building and Running for Production
-</h1>
-
-1. Generate a full static production build
-
-   ```sh
-   npm run build
-   ```
-
-1. Preview the site as it will appear once deployed
-
-   ```sh
-   npm run start
+   npm dev
    ```
 
 <h1 align="center">
@@ -88,14 +72,14 @@
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Blurple           | ![#0a192f](https://via.placeholder.com/10/4f40f8?text=+) `#4f40f8` |
-| Dark Blurple     | ![#112240](https://via.placeholder.com/10/2d20c9?text=+) `#2d20c9` |
-| Darkest Blurple  | ![#233554](https://via.placeholder.com/10/281cb3?text=+) `#281cb3` |
-| Light Blurple          | ![#8892b0](https://via.placeholder.com/10/7667ff?text=+) `#7667ff` |
-| Lightest Blurple    | ![#a8b2d1](https://via.placeholder.com/10/988eff?text=+) `#988eff` |
-| Background | ![#ccd6f6](https://via.placeholder.com/10/191923?text=+) `#191923` |
-| Light Background         | ![#e6f1ff](https://via.placeholder.com/10/2d2d38?text=+) `#2d2d38` |
-| Dark Background          | ![#64ffda](https://via.placeholder.com/10/20202a?text=+) `#20202a` |
+| Blurple           | ![#5294E2](https://via.placeholder.com/10/5294E2?text=+) `#5294E2` |
+| Dark Blurple     | ![#4385d4](https://via.placeholder.com/10/4385d4?text=+) `#4385d4` |
+| Darkest Blurple  | ![#3b79c4](https://via.placeholder.com/10/3b79c4?text=+) `#3b79c4` |
+| Light Blurple          | ![#64a1ea](https://via.placeholder.com/10/64a1ea?text=+) `#64a1ea` |
+| Lightest Blurple    | ![#7cb5fa](https://via.placeholder.com/10/7cb5fa?text=+) `#7cb5fa` |
+| Background | ![#383c4a](https://via.placeholder.com/10/383c4a?text=+) `#383c4a` |
+| Light Background         | ![#464b5a](https://via.placeholder.com/10/464b5a?text=+) `#464b5a` |
+| Dark Background          | ![#404350](https://via.placeholder.com/10/404350?text=+) `#404350` |
 
 </div>
 

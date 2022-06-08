@@ -1,6 +1,6 @@
 import Footer from '../footer/footer.component';
 
-import stylesMain from '../../../styles/components/main.module.scss';
+import stylesMain from '../../../stylesheets/components/main.module.scss';
 
 const Main = (props: any) =>
 {

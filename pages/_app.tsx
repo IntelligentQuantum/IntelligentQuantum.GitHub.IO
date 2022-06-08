@@ -19,11 +19,11 @@ import { setImagePortfolio, setTagPortfolio } from '../app/portfolio/portfolio.a
 import Aside from '../components/layouts/aside/aside.component';
 import Navbar from '../components/layouts/navbar/navbar.component';
 
-import '../styles/globals.scss';
-import stylesNav from '../styles/components/nav.module.scss';
-import stylesAlert from '../styles/components/alert.module.scss';
-import stylesFilter from '../styles/components/filter.module.scss';
-import stylesPortfolio from '../styles/pages/portfolio.module.scss';
+import '../stylesheets/globals.scss';
+import stylesNav from '../stylesheets/components/nav.module.scss';
+import stylesAlert from '../stylesheets/components/alert.module.scss';
+import stylesFilter from '../stylesheets/components/filter.module.scss';
+import stylesPortfolio from '../stylesheets/pages/portfolio.module.scss';
 
 interface CustomAppProps
 {

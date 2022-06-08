@@ -1,14 +1,16 @@
-export default {
-
-    openGraph: {
+export default
+{
+    openGraph:
+        {
         type: 'website',
         locale: 'en_IE',
-        url: 'https://www.url.ie/',
-        site_name: 'SiteName',
+        url: 'https://parsa-firoozi.ir/',
+        site_name: 'Parsa Firoozi - Full-Stack Developer',
     },
-    twitter: {
+    twitter:
+        {
         handle: '@handle',
-        site: '@site',
+        site: '@im-parsa',
         cardType: 'summary_large_image',
     },
 };

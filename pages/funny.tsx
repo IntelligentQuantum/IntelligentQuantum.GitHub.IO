@@ -6,8 +6,8 @@ import type { IContent } from '../contracts/IContent';
 import Card from '../components/funny/card.component';
 import Main from '../components/layouts/main/main.component';
 
-import stylesFunny from '../styles/pages/funny.module.scss';
-import stylesMain from '../styles/components/main.module.scss';
+import stylesFunny from '../stylesheets/pages/funny.module.scss';
+import stylesMain from '../stylesheets/components/main.module.scss';
 
 const Funny: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {

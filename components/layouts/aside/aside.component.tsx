@@ -8,7 +8,7 @@ import type { IContent } from '../../../contracts/IContent';
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
 
-import stylesAside from '../../../styles/components/aside.module.scss';
+import stylesAside from '../../../stylesheets/components/aside.module.scss';
 
 import Check from '../../../public/static/icons/icon-check.svg';
 

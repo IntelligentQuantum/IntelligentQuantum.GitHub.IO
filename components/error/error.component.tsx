@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { IContent } from '../../contracts/IContent';
 
-import stylesError from '../../styles/components/error.module.scss';
+import stylesError from '../../stylesheets/components/error.module.scss';
 
 const Error = (props: { content: IContent, title: string, description: string }) =>
 {

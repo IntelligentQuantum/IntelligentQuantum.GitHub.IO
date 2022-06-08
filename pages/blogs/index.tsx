@@ -6,8 +6,8 @@ import type { IContent } from '../../contracts/IContent';
 import Card from '../../components/blog/card.component';
 import Main from '../../components/layouts/main/main.component';
 
-import stylesBlog from '../../styles/pages/blog.module.scss';
-import stylesMain from '../../styles/components/main.module.scss';
+import stylesBlog from '../../stylesheets/pages/blog.module.scss';
+import stylesMain from '../../stylesheets/components/main.module.scss';
 
 const Blog: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {

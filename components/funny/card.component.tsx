@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import classnames from 'classnames';
 
-import stylesFunny from '../../styles/pages/funny.module.scss';
+import stylesFunny from '../../stylesheets/pages/funny.module.scss';
 
 import type { IFunny } from '../../contracts/IFunny';
 

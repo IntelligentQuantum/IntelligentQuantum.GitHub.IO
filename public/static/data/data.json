@@ -9,7 +9,13 @@
             "Graphic Designer"
         ],
         "currency": "$",
-        "typing_effect": ["I build desktop and android applications.", "I build web interfaces.", "I am Node.js developer", "I am React and React Native developer"],
+        "typing_effect":
+        [
+            "I build desktop and android applications.",
+            "I build web interfaces.",
+            "I am JavaScripts, TypeScript, PHP, C++ developer.",
+            "I am React.js, React Native and Next.js developer."
+        ],
         "download_cv": "Download CV",
         "order_now": "Order Now",
         "source_code": "Source Code",
@@ -386,9 +392,10 @@
         "my_age": "17",
         "typing_effect":
         [
-            "I build desktop and android applications.",
-            "I build web interfaces.", "I am Node.js developer",
-            "I am React and React Native developer"
+            "Ich erstelle Desktop- und Android-Anwendungen.",
+            "Ich baue Webinterfaces.",
+            "Ich bin JavaScript, TypeScript, PHP  und C++ Entwickler.",
+            "Ich bin React.js, React Native und Next.js Entwickler."
         ],
         "residence": "Residenz",
         "city": "Stadt",
@@ -710,7 +717,13 @@
             "طراح گرافیک"
         ],
         "currency": "ریال",
-        "typing_effect": ["من اپلیکیشن دسکتاپ و اندروید توسعه میدهم.", "من رابط کاربری وبسایت هارا توسعه میدهم.", "من یک توسعه دهند Node.js هستم.", "من یک توسعه دهنده React و React Native هستم."],
+        "typing_effect":
+        [
+            "من اپلیکیشن دسکتاپ و اندروید توسعه میدهم.",
+            "من رابط کاربری وبسایت هارا توسعه میدهم.",
+            "من یک توسعه دهند JavaScript، TypeScript، PHP، C++ هستم.",
+            "من یک توسعه دهنده React.js، React Native و Next.js هستم."
+        ],
         "download_cv": "دانلود رزومه",
         "send_message": "ارسال پیام",
         "source_code": "منبع کد",

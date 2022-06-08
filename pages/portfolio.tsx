@@ -7,8 +7,8 @@ import type { IPortfolio } from '../contracts/IPortfolio';
 import Card from '../components/portfolio/card.component';
 import Main from '../components/layouts/main/main.component';
 
-import stylesMain from '../styles/components/main.module.scss';
-import stylesPortfolio from '../styles/pages/portfolio.module.scss';
+import stylesMain from '../stylesheets/components/main.module.scss';
+import stylesPortfolio from '../stylesheets/pages/portfolio.module.scss';
 
 import { setTagPortfolio } from '../app/portfolio/portfolio.actions';
 

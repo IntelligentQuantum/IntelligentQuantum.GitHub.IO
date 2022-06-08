@@ -16,8 +16,8 @@ import data from '../../public/static/data/data.json';
 import Error from '../../components/error/error.component';
 import Main from '../../components/layouts/main/main.component';
 
-import stylesBlog from '../../styles/pages/blog.module.scss';
-import stylesMain from '../../styles/components/main.module.scss';
+import stylesBlog from '../../stylesheets/pages/blog.module.scss';
+import stylesMain from '../../stylesheets/components/main.module.scss';
 
 const BlogView: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
 {

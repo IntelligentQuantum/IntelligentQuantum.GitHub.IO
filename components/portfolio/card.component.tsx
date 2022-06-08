@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ButtonSecondary from '../buttons/secondary-button.component';
 import { setImagePortfolio } from '../../app/portfolio/portfolio.actions';
 
-import stylesPortfolio from '../../styles/pages/portfolio.module.scss';
+import stylesPortfolio from '../../stylesheets/pages/portfolio.module.scss';
 
 import ArrowsFullscreen from '../../public/static/icons/icon-arrows_fullscreen.svg';
 
