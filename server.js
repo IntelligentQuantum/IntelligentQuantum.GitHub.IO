@@ -16,20 +16,14 @@ app.prepare().then(() =>
         try
         {
             const parsedUrl = parse(req.url, true);
-            const { pathname, query } = parsedUrl;
+            // const { pathname, query } = parsedUrl;
 
-            if (pathname === '/a')
-            {
-                await app.render(req, res, '/a', query)
-            }
-            else if (pathname === '/b')
-            {
-                await app.render(req, res, '/b', query)
-            }
-            else
-            {
-                await handle(req, res, parsedUrl)
-            }
+            // if (pathname === '/a')
+            // {
+            //     await app.render(req, res, '/a', query)
+            // }
+
+            await handle(req, res, parsedUrl)
         }
         catch (err)
         {
@@ -38,7 +32,7 @@ app.prepare().then(() =>
             res.end('internal server error')
         }
     })
-        .listen(port, (err) =>
+        .listen((port), (err) =>
         {
             if (err) throw err
             console.log(`> Ready on http://${hostname}:${port}`)

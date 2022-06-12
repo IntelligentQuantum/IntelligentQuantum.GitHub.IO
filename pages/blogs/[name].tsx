@@ -11,8 +11,6 @@ import 'moment/locale/de';
 import 'moment/locale/fa';
 import 'moment/locale/en-gb';
 
-import data from '../../public/static/data/data.json';
-
 import Error from '../../components/error/error.component';
 import Main from '../../components/layouts/main/main.component';
 
