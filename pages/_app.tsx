@@ -138,11 +138,6 @@ function AppProps({ Component, pageProps }: CustomAppProps)
                 <meta property='twitter:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta property='twitter:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
             </div>
-            <DefaultSeo
-                title = 'Parsa Firoozi Full-Stack Developer & Graphic Designer'
-                titleTemplate = 'Parsa Firoozi &mdash; %s'
-                {...seo}
-            />
             <main className={`container ${openNavbar ? 'navbar-open' : null}`}>
                 {
                     alert?.status

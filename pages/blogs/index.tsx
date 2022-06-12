@@ -51,11 +51,14 @@ const Blog: (props: { content: IContent }) => JSX.Element = (props: { content: I
             <Main content={props?.content}>
                 <div className={stylesMain.mainContent}>
                     <div className={stylesMain.mainBackground}/>
-                    <h4 className='heading'>
-                        {props?.content?.titles[6]}
-                    </h4>
-                    <section className={stylesBlog.blogItems}>
-                        { cards }
+                    <div className="hr"></div>
+                    <section className={stylesBlog.blogSection}>
+                        <h4 className='heading'>
+                            {props?.content?.titles[6]}
+                        </h4>
+                        <section className={stylesBlog.blogItems}>
+                            { cards }
+                        </section>
                     </section>
                     <div className='hr'/>
                 </div>

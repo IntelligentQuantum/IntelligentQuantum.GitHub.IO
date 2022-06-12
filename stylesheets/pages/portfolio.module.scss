@@ -63,7 +63,6 @@
     }
 
     &List
-
     {
         padding: 0 3rem;
 
@@ -74,6 +73,10 @@
         @media only screen and (max-width: 1400px)
         {
             grid-template-columns: repeat(1, 1fr);
+        }
+        @media only screen and (max-width: 1000px)
+        {
+            padding: 0 1.5rem;
         }
     }
 

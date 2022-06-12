@@ -11,6 +11,10 @@
         padding: 1.5rem;
     }
 
+    &Section
+    {
+    }
+
     &Header
     {
         display: flex;
@@ -29,6 +33,13 @@
             border-radius: 1.5rem;
             font-size: 1rem;
         }
+
+        @media only screen and (max-width: 1000px)
+        {
+            margin-top: 2rem;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
     }
 
     &Items
@@ -42,6 +53,10 @@
         @media only screen and (max-width: 1400px)
         {
             grid-template-columns: repeat(1, 1fr);
+        }
+        @media only screen and (max-width: 1000px)
+        {
+            padding: 0 1.5rem;
         }
     }
 
@@ -68,6 +83,11 @@
             background: var(--base-light);
             box-shadow: 0 3px 8px 0 var(--base-transparent);
             transition: 0.55s ease-in-out;
+
+            @media only screen and (max-width: 1000px)
+            {
+                padding: 2rem;
+            }
 
             & h2
             {
@@ -169,7 +189,19 @@
     {
         display: grid;
         grid-gap: 2rem;
-        grid-template-columns: [blog_main-start] 10fr [blog_main-end blog_aside-start] 3fr [blog_aside-end];
+        grid-template-areas: 'main main main header';
+
+        @media only screen and (max-width: 1450px)
+        {
+            grid-template-areas: 'main main main main main header';
+        }
+
+        @media only screen and (max-width: 1350px)
+        {
+            grid-template-areas:
+                'header'
+                'main';
+        }
 
         &Image
         {
@@ -213,7 +245,7 @@
 
         &Card
         {
-            grid-template: blog_main-start / blog_main-end;
+            grid-area: main;
 
             padding: 3rem;
             font-weight: 500;
@@ -253,8 +285,9 @@
 
             &Header
             {
-                grid-template: blog_aside-start / blog_aside-end;
+                grid-area: header;
 
+                width: 100%;
                 min-height: 30rem;
                 margin: auto;
                 margin-top: 0;
@@ -267,7 +300,7 @@
 
                 @media only screen and (max-width: 1000px)
                 {
-                    padding: 1.5rem;
+                    padding: 2.5rem 2rem;
                 }
 
                 & span

@@ -67,7 +67,8 @@
             "Contact Information",
             "Get in Touch",
             "My Funny Facts",
-            "My Blogs"
+            "My Blogs",
+            "My Portfolio"
         ],
         "headers":
         [
@@ -421,7 +422,8 @@
             "Kontakt Informationen",
             "In Kontakt Kommen",
             "Meine lustigen Fakten",
-            "Meine Blogs"
+            "Meine Blogs",
+            "Meine Portfolio"
         ],
         "my_blogs":
         [
@@ -775,7 +777,8 @@
             "اطلاعات تماس",
             "با من در تماس باش",
             "حقایق جالب من",
-            "بلاگ های من"
+            "بلاگ های من",
+            "نمونه کار های من"
         ],
         "headers":
         [

@@ -58,6 +58,9 @@ const Portfolio: (props: { content: IContent }) => JSX.Element = (props: { conte
                     <div className={stylesMain.mainBackground}/>
                     <div className='hr'/>
                     <section className={stylesPortfolio.portfolio}>
+                        <h4 className='heading'>
+                            {props?.content?.titles[7]}
+                        </h4>
                         <ul className='heading__small'>
                             <li data-active={tagPortfolio === 'all'} onClick={() => { dispatch(setTagPortfolio('all')) }}>
                                 {props?.content?.categories[0]}

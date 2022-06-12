@@ -10,7 +10,7 @@ class MyDocument extends Document
     render(): JSX.Element
     {
         return (
-            <Html lang='EN' data-theme='dark' data-language='en' dir='ltr'>
+            <Html lang='EN' data-theme='dim' data-language='en' dir='ltr'>
                 <Head>
                     <link rel="icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>
                     <link rel="apple-touch-icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>

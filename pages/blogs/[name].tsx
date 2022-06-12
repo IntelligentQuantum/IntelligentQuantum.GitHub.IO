@@ -23,7 +23,7 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
 {
     const router = useRouter();
     const { name } = router.query;
-    const [blog, setBlog]: any  = useState('');
+    const [blog, setBlog]: any  = useState('loading');
 
     useEffect(() =>
     {
@@ -33,11 +33,10 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
         {
             if (blogs[i].name === name)
             {
-
                 setBlog(blogs[i]);
             }
         }
-    }, [data, props, setBlog, name]);
+    }, [props, setBlog, name, blog]);
 
     switch (props?.content?.language)
     {
@@ -56,32 +55,76 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
 
     return (
         <>
-            <Head>
-                <title>Parsa Firoozi &mdash; {blog?.name || ''}</title>
+            {
+                blog?.name
+                ?
+                    <Head>
+                        <title>Parsa Firoozi &mdash; {blog?.name || ''}</title>
 
-                <meta charSet='UTF-8' />
-                <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-                <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
+                        <meta charSet='UTF-8' />
+                        <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
+                        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+                        <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
 
-                <meta name='Classification' content='Blogs'/>
-                <meta name='subject' content='Blogs'/>
-                <meta name='description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
-                <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Blogs'/>
-                <meta name='author' content='Parsa Firoozi'/>
+                        <meta name='Classification' content='Blogs'/>
+                        <meta name='subject' content='Blogs'/>
+                        <meta name='description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
+                        <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Blogs'/>
+                        <meta name='author' content='Parsa Firoozi'/>
 
-                <meta property='og:type' content='website'/>
-                <meta property='og:url' content={'https://parsa-firoozi.ir/blogs/' + blog?.name}/>
-                <meta property='og:title' content='Parsa Firoozi'/>
-                <meta property='og:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
-                <meta property='og:image' content={'https://parsa-firoozi.ir/' + blog?.image}/>
+                        <meta property='og:type' content='website'/>
+                        <meta property='og:url' content={'https://parsa-firoozi.ir/blogs/' + blog?.name}/>
+                        <meta property='og:title' content='Parsa Firoozi'/>
+                        <meta property='og:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
+                        <meta property='og:image' content={'https://parsa-firoozi.ir/' + blog?.image}/>
 
-                <meta name='twitter:card' content='summary_large_image'/>
-                <meta property='twitter:url' content={'https://parsa-firoozi.ir/blogs/' + blog?.name}/>
-                <meta property='twitter:title' content='Parsa Firoozi'/>
-                <meta property='twitter:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
-            </Head>
+                        <meta name='twitter:card' content='summary_large_image'/>
+                        <meta property='twitter:url' content={'https://parsa-firoozi.ir/blogs/' + blog?.name}/>
+                        <meta property='twitter:title' content='Parsa Firoozi'/>
+                        <meta property='twitter:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
+                    </Head>
+                    :
+                    <Head>
+                        <title>Parsa Firoozi &mdash; Blog page</title>
+
+                        <meta charSet='UTF-8' />
+                        <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
+                        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+                        <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
+
+                        <meta name='Classification' content='Blogs'/>
+                        <meta name='subject' content='Blogs'/>
+                        <meta name='description' content='Parsa Firoozi blog page'/>
+                        <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Blogs'/>
+                        <meta name='author' content='Parsa Firoozi'/>
+
+                        <meta property='og:type' content='website'/>
+                        <meta property='og:url' content='https://parsa-firoozi.ir/blogs/'/>
+                        <meta property='og:title' content='Parsa Firoozi'/>
+                        <meta property='og:description' content='Parsa Firoozi blog page'/>
+                        <meta property='og:image' content='https://parsa-firoozi.ir/'/>
+
+                        <meta name='twitter:card' content='summary_large_image'/>
+                        <meta property='twitter:url' content='https://parsa-firoozi.ir/blogs/'/>
+                        <meta property='twitter:title' content='Parsa Firoozi'/>
+                        <meta property='twitter:description' content='Parsa Firoozi blogs page'/>
+                    </Head>
+            }
             <Main content={props?.content}>
+                {
+                    blog === 'loading'
+                        ?
+                        <div className='loadingParent'>
+                            <div className='loading'>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        :
+                        null
+                }
                 {
                     blog?.name
                         ?
@@ -105,13 +148,6 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
                                 </div>
                                 <div className='hr'/>
                                 <div className={stylesBlog.blogView}>
-                                    <article className={stylesBlog.blogViewCard}>
-                                        <h3>
-                                            {blog?.description}
-                                        </h3>
-                                        <div className='hr'/>
-                                        {reactHtmlParser(blog.content)}
-                                    </article>
                                     <div className={stylesBlog.blogViewCardHeader}>
                                          <span>
                                             <p>
@@ -144,11 +180,23 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
                                             {blog.category}
                                         </span>
                                     </div>
+                                    <article className={stylesBlog.blogViewCard}>
+                                        <h3>
+                                            {blog?.description}
+                                        </h3>
+                                        <div className='hr'/>
+                                        {reactHtmlParser(blog.content)}
+                                    </article>
                                 </div>
                             </section>
                             <div className='hr'/>
                         </div>
                         :
+                        null
+                }
+                {
+                    blog === 'undefined'
+                    ?
                         <div className={stylesMain.mainContent}>
                             <div className={stylesMain.mainBackground}/>
                             <Error
@@ -158,6 +206,8 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
                             />
                             <div className='hr'/>
                         </div>
+                        :
+                        null
                 }
             </Main>
         </>

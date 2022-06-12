@@ -16,6 +16,7 @@
         @media only screen and (max-width: 1000px)
         {
             padding: 0 1.5rem;
+            grid-template-columns: repeat(auto-fit, 100%);
         }
 
         &Content
