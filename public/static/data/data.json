@@ -14,7 +14,8 @@
             "I build desktop and android applications.",
             "I build web interfaces.",
             "I am JavaScripts, TypeScript, PHP, C++ developer.",
-            "I am React.js, React Native and Next.js developer."
+            "I am React.js, React Native and Next.js developer.",
+            "I am Node.js, Deno.js and NestJS developer."
         ],
         "download_cv": "Download CV",
         "order_now": "Order Now",
@@ -45,7 +46,7 @@
         "age": "Age",
         "my_residence": "Iran",
         "my_city": "Shiraz",
-        "my_age": "17",
+        "my_age": "18",
         "english": "English",
         "persian": "Persian",
         "german": "German",
@@ -63,12 +64,13 @@
         [
             "What do i make Or am i?",
             "My Services",
-            "My Plans",
+            "Price Plans",
             "Contact Information",
             "Get in Touch",
             "My Funny Facts",
             "My Blogs",
-            "My Portfolio"
+            "My Portfolio",
+            "Recommendations"
         ],
         "headers":
         [
@@ -85,6 +87,64 @@
             "Robot Development",
             "Graphic Design"
         ],
+        "recommendations":
+            [
+                {
+                    "id": 0,
+                    "author":
+                    {
+                        "name": "string",
+                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
+                        "description": "string"
+                    },
+                    "message": "string",
+                    "rate": 80
+                },
+                {
+                    "id": 1,
+                    "author":
+                    {
+                        "name": "string",
+                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
+                        "description": "string"
+                    },
+                    "message": "string",
+                    "rate": 80
+                },
+                {
+                    "id": 2,
+                    "author":
+                    {
+                        "name": "string",
+                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
+                        "description": "string"
+                    },
+                    "message": "string",
+                    "rate": 80
+                },
+                {
+                    "id": 3,
+                    "author":
+                    {
+                        "name": "string",
+                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
+                        "description": "string"
+                    },
+                    "message": "string",
+                    "rate": 80
+                },
+                {
+                    "id": 4,
+                    "author":
+                    {
+                        "name": "string",
+                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
+                        "description": "string"
+                    },
+                    "message": "string",
+                    "rate": 80
+                }
+            ],
         "my_blogs":
         [
             {
@@ -174,23 +234,23 @@
             {
                 "id": 0,
                 "title": "Front-End Development",
-                "price": "29",
+                "price": "99",
                 "a": "High-quality Code",
-                "b": "React.js / HTML",
+                "b": "React.js, Next.js and HTML",
                 "c": "Dedicated Support"
             },
             {
                 "id": 1,
                 "title": "Back-End Development",
-                "price": "19",
+                "price": "129",
                 "a": "High-quality code",
-                "b": "Node.js / Nest.js",
+                "b": "Node.js, NestJS, Deno.js",
                 "c": "Dedicated Support"
             },
             {
                 "id": 2,
                 "title": "Cross-Platform Development",
-                "price": "39",
+                "price": "159",
                 "a": "Well-organized code",
                 "b": "Supports all operating systems",
                 "c": "Dedicated Support"
@@ -201,17 +261,17 @@
             {
                 "id": 0,
                 "title": "Front-End Development",
-                "description": "Quick and professional JavaScript, HTML5 and CSS3 conversion based on current trends."
+                "description": "Quick and professional website front-end development with React.js, Next.js, HTML."
             },
             {
                 "id": 1,
                 "title": "Back-End Development",
-                "description": "Quick and professional coding based on Express & Nest for your product."
+                "description": "Quick and professional website back-end development with Express.js, NestJS and Next.js."
             },
             {
                 "id": 2,
                 "title": "Cross-Platform Development",
-                "description": "Desktop, Mobile and ... application development based on React, React Native Library."
+                "description": "Quick and professional Desktop, Android and iOS applications development built with Electron and React Native."
             }
         ],
         "my_portfolio":
@@ -236,7 +296,7 @@
                 "id": 2,
                 "title": "MrCheat",
                 "tag": "web_development",
-                "description": "Website for making, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games (Under Developing - Team Member)",
+                "description": "Website for making, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games",
                 "link": "https://mrcheat.cc/",
                 "image": "/static/images/portfolio/mrcheat-web.jpg"
             },
@@ -260,7 +320,7 @@
                 "id": 5,
                 "title": "Headinfo",
                 "tag": "web_development",
-                "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day (updating)",
+                "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day (Under Developing)",
                 "link": "https://headinfo.ir",
                 "image": "/static/images/portfolio/headinfo-web.png"
             },
@@ -268,7 +328,7 @@
                 "id": 6,
                 "title": "Dubist",
                 "tag": "graphic_design",
-                "description": "English, Persian, German language learning website with features such as flash card and ranking (Under Developing - Team Member)",
+                "description": "English, Persian, German language learning website with features such as flash card and ranking (Under Developing)",
                 "link": "/",
                 "image": "/static/images/portfolio/dubist-web.png"
             },
@@ -316,7 +376,7 @@
                 "id": 12,
                 "title": "Wintube",
                 "tag": "app_development",
-                "description": "Desktop application for Linux/Windows/Mac for displaying YouTube videos and movies without filtering and high speed and download capability (Team Member)",
+                "description": "Desktop application for Linux/Windows/Mac for displaying YouTube videos and movies without filtering and high speed and download capability",
                 "link": "https://wintube.herokuapp.com",
                 "image": "/static/images/portfolio/wintube-app.png"
             },
@@ -340,7 +400,7 @@
                 "id": 15,
                 "title": "Setar",
                 "tag": "robot_development",
-                "description": "First & Best persian music player bot in discord community (Team Member)",
+                "description": "First & Best persian music player bot in discord community",
                 "link": "https://github.com/SeTar-Bot",
                 "image": "/static/images/portfolio/setar-bot.png"
             },
@@ -390,13 +450,14 @@
         "name": "Name",
         "my_residence": "Iran",
         "my_city": "Shiraz",
-        "my_age": "17",
+        "my_age": "18",
         "typing_effect":
         [
             "Ich erstelle Desktop- und Android-Anwendungen.",
             "Ich baue Webinterfaces.",
             "Ich bin JavaScript, TypeScript, PHP  und C++ Entwickler.",
-            "Ich bin React.js, React Native und Next.js Entwickler."
+            "Ich bin React.js, React Native und Next.js Entwickler.",
+            "Ich bin Node.js, Deno.js und NestJS Entwickler."
         ],
         "residence": "Residenz",
         "city": "Stadt",
@@ -418,12 +479,27 @@
         [
             "Was mache ich oder bin ich?",
             "Meine Dienstleistungen",
-            "Meine Pläne",
+            "Preispläne",
             "Kontakt Informationen",
             "In Kontakt Kommen",
             "Meine lustigen Fakten",
             "Meine Blogs",
-            "Meine Portfolio"
+            "Meine Portfolio",
+            "Empfehlungen"
+        ],
+        "recommendations":
+        [
+            {
+                "id": 0,
+                "author":
+                {
+                    "name": "string",
+                    "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
+                    "description": "string"
+                },
+                "message": "string",
+                "rate": 80
+            }
         ],
         "my_blogs":
         [
@@ -529,23 +605,23 @@
             {
                 "id": 0,
                 "title": "Front-End Entwicklung",
-                "price": "29",
+                "price": "99",
                 "a": "Hochwertiger Code",
-                "b": "React.js / HTML",
+                "b": "React.js, Next.js, HTML",
                 "c": "Engagierte Unterstützung"
             },
             {
                 "id": 1,
                 "title": "Back-End Entwicklung",
-                "price": "19",
+                "price": "129",
                 "a": "Hochwertiger Code",
-                "b": "Node.js / Nest.js",
+                "b": "Node.js, NestJS, Deno.js",
                 "c": "Engagierte Unterstützung"
             },
             {
                 "id": 2,
                 "title": "Plattformübergreifende Entwicklung",
-                "price": "39",
+                "price": "159",
                 "a": "Gut-Organisierter Code",
                 "b": "Unterstützt alle Betriebssysteme",
                 "c": "Engagierte Unterstützung"
@@ -556,17 +632,17 @@
             {
                 "id": 0,
                 "title": "Front-End Entwicklung",
-                "description": "Schnelle und professionelle JavaScript-, HTML5- und CSS3-Konvertierung nach aktuellen Trends."
+                "description": "Schnelle und professionelle website front-end entwicklung mit React.js, Next.js und HTML"
             },
             {
                 "id": 1,
                 "title": "Back-End Entwicklung",
-                "description": "Schnelle und professionelle Programmierung basierend auf Express & Nest für Ihr Produkt."
+                "description": "Schnelle und professionelle website back-end entwicklung mit Express.js, NestJS und Next.js"
             },
             {
                 "id": 2,
                 "title": "Plattformübergreifende Entwicklung",
-                "description": "Desktop-, Mobil- und ... Anwendungsentwicklung basierend auf React, React Native Library."
+                "description": "Schnelle und professionelle Entwicklung von Desktop, Android und iOS anwendungen mit Electron und React Native."
             }
         ],
         "my_portfolio":
@@ -715,16 +791,17 @@
         "my_name": "پارسا فیروزی",
         "my_skills":
         [
-            "توسعه دهنده فول استک",
+            "توسعه دهنده فول-استک",
             "طراح گرافیک"
         ],
         "currency": "ریال",
         "typing_effect":
         [
             "من اپلیکیشن دسکتاپ و اندروید توسعه میدهم.",
-            "من رابط کاربری وبسایت هارا توسعه میدهم.",
+            "من رابط کاربری وب‌سایت هارا توسعه میدهم.",
             "من یک توسعه دهند JavaScript، TypeScript، PHP، C++ هستم.",
-            "من یک توسعه دهنده React.js، React Native و Next.js هستم."
+            "من یک توسعه دهنده React.js، React Native و Next.js هستم.",
+            "من یک توسعه دهنده Node.js، Deno.js و NestJS هستم."
         ],
         "download_cv": "دانلود رزومه",
         "send_message": "ارسال پیام",
@@ -755,7 +832,7 @@
         "age": "سن",
         "my_residence": "ایران",
         "my_city": "شیراز",
-        "my_age": "17",
+        "my_age": "18",
         "english": "انگلیسی",
         "persian": "فارسی",
         "german": "آلمانی",
@@ -773,12 +850,13 @@
         [
             "من کی هستم و چکار میکنم؟",
             "خدمات من",
-            "پکیج های من",
+            "طرح های قیمت",
             "اطلاعات تماس",
             "با من در تماس باش",
             "حقایق جالب من",
             "بلاگ های من",
-            "نمونه کار های من"
+            "نمونه کار های من",
+            "نطرات همکاران و مشتریان"
         ],
         "headers":
         [
@@ -794,6 +872,20 @@
             "توسعه اپلیکیشن",
             "توسعه ربات",
             "طراحی گرافیک"
+        ],
+        "recommendations":
+        [
+            {
+                "id": 0,
+                "author":
+                {
+                    "name": "string",
+                    "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
+                    "description": "string"
+                },
+                "message": "string",
+                "rate": 80
+            }
         ],
         "my_blogs":
         [
@@ -884,23 +976,23 @@
             {
                 "id": 0,
                 "title": "توسعه فرانت-اند",
-                "price": "7,900,000",
+                "price": "19,000,000",
                 "a": "کد کیفیت بالا",
-                "b": "React.js / Next.js",
+                "b": "React.js, Next.js",
                 "c": "پشتیبانی اختصاصی"
             },
             {
                 "id": 1,
                 "title": "توسعه بک-اند",
-                "price": "6,900,000",
+                "price": "29,000,000",
                 "a": "کد کیفیت بالا",
-                "b": "Node.js / Nest.js",
+                "b": "Node.js, NestJS, Deno.js",
                 "c": "پشتیبانی اختصاصی"
             },
             {
                 "id": 2,
                 "title": "توسعه کراس-پلتفورم",
-                "price": "9,900,000",
+                "price": "39,000,000",
                 "a": "کد سازماندهی شده",
                 "b": "پشتیبانی از تمامی سیستم عامل ها",
                 "c": "پشتیبانی اختصاصی"
@@ -911,17 +1003,17 @@
             {
                 "id": 0,
                 "title": "توسعه فرانت-اند",
-                "description": "توسعه سریع و بی نقص وبسایت با HTML5، CSS3، JS"
+                "description": "توسعه سریع و بی نقص فرانت-اند وب‌سایت با React.js, Next.js و HTML"
             },
             {
                 "id": 1,
                 "title": "توسعه بک-اند",
-                "description": "توسعه سریع و بی نقص بک-اند وبسایت با Express، Nest، Next"
+                "description": "توسعه سریع و بی نقص بک-اند وب‌سایت با Express.js، NestJS و Next.js"
             },
             {
                 "id": 2,
                 "title": "توسعه کراس-پلتفورم",
-                "description": "برنامه های دسکتاپ، اندورید، آی او اس ساخته شده با React، React Native"
+                "description": "توسعه برنامه های Desktop، Android، iOS ساخته شده با Electron و React Native"
             }
         ],
         "my_portfolio":
@@ -930,7 +1022,7 @@
                 "id": 0,
                 "title": "پارافین",
                 "tag": "web_development",
-                "description": "پارافین وبسایت آموزش و یادگیری با مطالب فوق العاده در دسته بندی ها مختلف (برنامه نویسی، طراحی گرافیک، بازی، تکنولوژی، ترفند)",
+                "description": "پارافین وب‌سایت آموزش و یادگیری با مطالب فوق العاده در دسته بندی ها مختلف (برنامه نویسی، طراحی گرافیک، بازی، تکنولوژی، ترفند)",
                 "link": "https://paraffin-tutorials.ir",
                 "image": "/static/images/portfolio/paraffin-web.png"
             },
@@ -938,7 +1030,7 @@
                 "id": 1,
                 "title": "دیسکوردز سیتی",
                 "tag": "web_development",
-                "description": "وبسایتی برای کاربران کامینیوتی دیسکورد که سرور، ربات یا اکانت خودشان را در آن ثبت نام کنند و در اکسپلور ما دیده شوند تا ممبر های بیشتری بدست بیاورند و صفحه بخصوص خود را داشته باشند",
+                "description": "وب‌سایتی برای کاربران کامینیوتی دیسکورد که سرور، ربات یا اکانت خودشان را در آن ثبت نام کنند و در اکسپلور ما دیده شوند تا ممبر های بیشتری بدست بیاورند و صفحه بخصوص خود را داشته باشند",
                 "link": "https://discords.city",
                 "image": "/static/images/portfolio/discords-city-web.png"
             },
@@ -946,7 +1038,7 @@
                 "id": 2,
                 "title": "MrCheat",
                 "tag": "web_development",
-                "description": "وبسایت ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت - عضو تیم)",
+                "description": "وب‌سایت ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت)",
                 "link": "https://mrcheat.cc/",
                 "image": "/static/images/portfolio/mrcheat-web.jpg"
             },
@@ -962,7 +1054,7 @@
                 "id": 4,
                 "title": "random-pic.js",
                 "tag": "web_development",
-                "description": "وبسایت و ماژولی کاربردی برای دریافت تصاویر تصادفی در دسته بندی های مختلف و قابلیت سایز بندی و گذاشتن لیمیت و محدودیت",
+                "description": "وب‌سایت و ماژولی کاربردی برای دریافت تصاویر تصادفی در دسته بندی های مختلف و قابلیت سایز بندی و گذاشتن لیمیت و محدودیت",
                 "link": "https://random-picjs.herokuapp.com",
                 "image": "/static/images/portfolio/random-pic_js-web.png"
             },
@@ -970,7 +1062,7 @@
                 "id": 5,
                 "title": "Headinfo",
                 "tag": "web_development",
-                "description": "وبسایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (درحال بروزرسانی)",
+                "description": "وب‌سایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (در دست ساخت)",
                 "link": "https://headinfo.ir",
                 "image": "/static/images/portfolio/headinfo-web.png"
             },
@@ -978,7 +1070,7 @@
                 "id": 6,
                 "title": "Dubist",
                 "tag": "graphic_design",
-                "description": "وبسایت آموزش زبان انگلیسی، فارسی، آلمانی به همراه قابلیت هایی نظیر فلش کارت و رنک بندی (در دست ساخت - عضو تیم)",
+                "description": "وب‌سایت آموزش زبان انگلیسی، فارسی، آلمانی به همراه قابلیت هایی نظیر فلش کارت و رنک بندی (در دست ساخت)",
                 "link": "/",
                 "image": "/static/images/portfolio/dubist-web.png"
             },
@@ -994,7 +1086,7 @@
                 "id": 8,
                 "title": "LiveSoccer",
                 "tag": "web_development",
-                "description": "وبسایتی برای دیدن جدول برترین و بزرگ ترین لیگ های فوتبال به همراه امتیازات تفاضل گل و بازی های انجام شده",
+                "description": "وب‌سایتی برای دیدن جدول برترین و بزرگ ترین لیگ های فوتبال به همراه امتیازات تفاضل گل و بازی های انجام شده",
                 "link": "https://livesoccer.herokuapp.com/",
                 "image": "/static/images/portfolio/livesoccer-web.png"
             },
@@ -1002,23 +1094,23 @@
                 "id": 9,
                 "title": "Elite",
                 "tag": "web_development",
-                "description": "وبسایت شرکت الایت تیم برنامه نویسی ربات های دیسکورد با ۲ بات وریفای شده رسمی دیسکورد",
+                "description": "وب‌سایت شرکت الایت تیم برنامه نویسی ربات های دیسکورد با ۲ بات وریفای شده رسمی دیسکورد",
                 "link": "https://github.com/im-parsa/elite-website",
                 "image": "/static/images/portfolio/elite-web.png"
             },
             {
                 "id": 10,
-                "title": "وبسایت شخصی",
+                "title": "وب‌سایت شخصی",
                 "tag": "web_development",
-                "description": "وبسایت شخصی اوپن سورس",
+                "description": "وب‌سایت شخصی اوپن سورس",
                 "link": "https://github.com/im-parsa/my-personal-website",
                 "image": "/static/images/portfolio/parsa-web.png"
             },
             {
                 "id": 11,
-                "title": "وبسایت شخصی",
+                "title": "وب‌سایت شخصی",
                 "tag": "web_development",
-                "description": "وبسایت شخصی برای آقای شادمهر",
+                "description": "وب‌سایت شخصی برای آقای شادمهر",
                 "link": "https://shadmehr.info",
                 "image": "/static/images/portfolio/shadmehr-web.png"
             },
@@ -1026,7 +1118,7 @@
                 "id": 12,
                 "title": "Wintube",
                 "tag": "app_development",
-                "description": "اپلیکیشنی برای دسکتاپ قابلیت پشتیبانی لینوکس/ویندوز/مک برای نمایش ویدیو و فیلم های یوتیوب بدون فیلتر و سرعت بالا و قبالیت دانلود (عضو تیم)",
+                "description": "اپلیکیشنی برای دسکتاپ قابلیت پشتیبانی لینوکس/ویندوز/مک برای نمایش ویدیو و فیلم های یوتیوب بدون فیلتر و سرعت بالا و قبالیت دانلود",
                 "link": "https://wintube.herokuapp.com",
                 "image": "/static/images/portfolio/wintube-app.png"
             },
@@ -1050,7 +1142,7 @@
                 "id": 16,
                 "title": "ستار",
                 "tag": "robot_development",
-                "description": "اولین و برترین ربات پخش کننده آهنگ و وریفای شده رسمی دیسکورد (عضو تیم)",
+                "description": "اولین و برترین ربات پخش کننده آهنگ و وریفای شده رسمی دیسکورد",
                 "link": "https://github.com/SeTar-Bot",
                 "image": "/static/images/portfolio/setar-bot.png"
             },

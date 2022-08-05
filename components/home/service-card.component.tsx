@@ -1,12 +1,14 @@
-import type { IService } from '../../contracts/IService';
+import React from 'react';
+import dynamic from 'next/dynamic';
 
-import ButtonSecondary from '../buttons/secondary-button.component';
+import type { IService } from '../../interfaces/service';
 
-import stylesHome from '../../stylesheets/pages/home.module.scss';
+import stylesHome from '../../styles/pages/home.module.scss';
+
+const ButtonSecondary = dynamic(() => import('../buttons/secondary-button.component'));
 
 const ServiceCard = (props: { text: string, service: IService }) =>
-{
-    return (
+    (
         <div className={stylesHome.homeServicesContent}>
             <h5>
                 { props.service.title }
@@ -20,6 +22,5 @@ const ServiceCard = (props: { text: string, service: IService }) =>
             />
         </div>
     );
-};
 
 export default ServiceCard;

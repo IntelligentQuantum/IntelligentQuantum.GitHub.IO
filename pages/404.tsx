@@ -1,26 +1,32 @@
-import type { IContent } from '../contracts/IContent';
+import React from 'react';
+import dynamic from 'next/dynamic';
+
+import type { IContent } from '../interfaces/content';
 
 import 'moment/locale/de';
 import 'moment/locale/fa';
 import 'moment/locale/en-gb';
 
-import Error from '../components/error/error.component';
+import stylesMain from '../styles/components/main.module.scss';
 
-import stylesMain from '../../stylesheets/components/main.module.scss';
+const Error = dynamic(() => import('../components/error/error.component'));
+const Main = dynamic(() => import('../components/layouts/main/main.component'));
 
-const ErrorPage: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
+const ErrorPage = (props: { content: IContent }) =>
 {
     return (
-        <div className={stylesMain.mainContent}>
-            <div className={stylesMain.mainBackground}/>
-            <Error
-                title='404'
-                description={props?.content?.blog_not_found}
-                content={props?.content}
-            />
-            <div className='hr'/>
-        </div>
-    )
-}
+        <Main content={props?.content}>
+            <div className={stylesMain.mainContent}>
+                <div className={stylesMain.mainBackground}/>
+                <Error
+                    title='404'
+                    description={props?.content?.blog_not_found}
+                    content={props?.content}
+                />
+                <div className='hr'/>
+            </div>
+        </Main>
+    );
+};
 
 export default ErrorPage;

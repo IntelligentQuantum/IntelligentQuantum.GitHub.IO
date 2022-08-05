@@ -3,7 +3,7 @@ import { NavbarActionTypes } from './navbar.types';
 const INITIAL_STATE =
 {
     openNavbar: null
-}
+};
 
 export const navbarReducer = (state = INITIAL_STATE, action: any) =>
 {
@@ -13,8 +13,8 @@ export const navbarReducer = (state = INITIAL_STATE, action: any) =>
             return {
                 ...state,
                 openNavbar: action.payload
-            }
+            };
         default:
             return state;
     }
-}
+};

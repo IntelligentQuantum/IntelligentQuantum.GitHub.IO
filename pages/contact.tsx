@@ -1,20 +1,53 @@
 import axios from 'axios';
 import Head from 'next/head';
-import Swal from 'sweetalert2';
+import validator from 'validator';
+import dynamic from 'next/dynamic';
 import classnames from 'classnames';
-import withReactContent from 'sweetalert2-react-content';
+import Tooltip from '@tippyjs/react/headless';
+import React, { useState, ChangeEvent } from 'react';
+import { BsEnvelope, BsPerson, BsTextParagraph } from 'react-icons/bs';
 
-import type { IContent } from '../contracts/IContent';
+import type { IContent } from '../interfaces/content';
 
-import Main from '../components/layouts/main/main.component';
+import 'tippy.js/dist/tippy.css';
+import stylesMain from '../styles/components/main.module.scss';
+import stylesContact from '../styles/pages/contact.module.scss';
+import stylesButton from '../styles/components/button.module.scss';
 
-import stylesMain from '../stylesheets/components/main.module.scss';
-import stylesContact from '../stylesheets/pages/contact.module.scss';
-import stylesButton from '../stylesheets/components/button.module.scss';
+const Main = dynamic(() => import('../components/layouts/main/main.component'));
 
-const Contact: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
+const Contact = (props: { content: IContent }) =>
 {
-    const modal = withReactContent(Swal);
+    const [name, setName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [message, setMessage] = useState<string>('');
+    const [error, setError] = useState<{ name: string | null, email: string | null, message: string | null }>(
+        {
+            name: null,
+            email: null,
+            message: null
+        }
+    );
+
+    const sendMessage = async(event: { preventDefault: () => void; }) =>
+    {
+        event.preventDefault();
+
+        if (email === 'fdg')
+        {
+            const response = await axios.post(
+                '/contact/mail',
+                {
+                    name,
+                    email,
+                    message
+                }
+            );
+
+            if (response.status === 200 && response)
+                console.log(response);
+        }
+    };
 
     return (
         <>
@@ -146,21 +179,86 @@ const Contact: (props: { content: IContent }) => JSX.Element = (props: { content
                         </h4>
                         <div className={stylesContact.contactInTouchParent}>
                             <div className={stylesContact.contactInTouch}>
-                                <form>
-                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)}>
-                                        <input id='name' name='name' type='text' placeholder={props?.content?.name} required={true}/>
-                                        <label htmlFor='name'><i className='bi-person'/></label>
+                                <form onSubmit={sendMessage}>
+                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.name}>
+                                        <input
+                                            id='name'
+                                            name='name'
+                                            type='text'
+                                            required={true}
+                                            placeholder={props?.content?.name}
+                                            onBlur={(event: any) =>
+                                            {
+                                                if (!event?.target?.value)
+                                                    setError({ ...error, name: 'empty' });
+                                                else
+                                                    setError({ ...error, email: null });
+                                            }}
+                                            onFocus={() => setError({ ...error, name: null })}
+                                            onChange={(event: ChangeEvent<HTMLInputElement>) => setName(event?.target?.value)}
+                                        />
+                                        <label htmlFor='name'>
+                                            <BsPerson />
+                                        </label>
                                     </div>
-                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)}>
-                                        <input id='email' name='email' type='email' placeholder={props?.content?.email} required={true}/>
-                                        <label htmlFor='email'><i className='bi-envelope'/></label>
-                                    </div>
-                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupMessageInput)}>
-                                        <textarea id='message' name='message' placeholder={props?.content?.message} required={true}/>
-                                        <label htmlFor='message'><i className='bi-text-paragraph'/></label>
+                                    <Tooltip
+                                        render={() =>
+                                            (
+                                                error.email
+                                                    ? (
+                                                        <span className={stylesContact.contactTooltip}>
+                                                            { error.email }
+                                                        </span>
+                                                    )
+                                                    : null
+                                            )}
+                                    >
+                                        <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.email}>
+                                            <input
+                                                id='email'
+                                                name='email'
+                                                type='email'
+                                                required={true}
+                                                placeholder={props?.content?.email}
+                                                onBlur={(event: any) =>
+                                                {
+                                                    if (!event?.target?.value)
+                                                        setError({ ...error, email: 'empty' });
+                                                    else if (!validator.isEmail(event?.target?.value))
+                                                        setError({ ...error, email: 'incorrect' });
+                                                    else
+                                                        setError({ ...error, email: null });
+                                                }}
+                                                onFocus={() => setError({ ...error, email: null })}
+                                                onChange={(event: ChangeEvent<HTMLInputElement>) => setEmail(event?.target?.value)}
+                                            />
+                                            <label htmlFor='email'>
+                                                <BsEnvelope />
+                                            </label>
+                                        </div>
+                                    </Tooltip>
+                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupMessageInput)} data-error={error.message}>
+                                        <textarea
+                                            id='message'
+                                            name='message'
+                                            required={true}
+                                            placeholder={props?.content?.message}
+                                            onBlur={(event: any) =>
+                                            {
+                                                if (!event?.target?.value)
+                                                    setError({ ...error, message: 'empty' });
+                                                else
+                                                    setError({ ...error, message: null });
+                                            }}
+                                            onFocus={() => setError({ ...error, message: null })}
+                                            onChange={(event: ChangeEvent<HTMLTextAreaElement>) => setMessage(event?.target?.value)}
+                                        />
+                                        <label htmlFor='message'>
+                                            <BsTextParagraph />
+                                        </label>
                                     </div>
                                     <div className={stylesContact.contactInTouchFormGroup}>
-                                        <button onClick={() => {  }} className={classnames(stylesButton.button, 'align-self-start')}>
+                                        <button onClick={sendMessage} className={classnames(stylesButton.button, 'align-self-start')}>
                                             {props?.content?.send_message}
                                         </button>
                                     </div>
@@ -172,7 +270,7 @@ const Contact: (props: { content: IContent }) => JSX.Element = (props: { content
                 </div>
             </Main>
         </>
-    )
-}
+    );
+};
 
 export default Contact;

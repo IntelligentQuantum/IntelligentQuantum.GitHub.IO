@@ -1,39 +1,32 @@
+import React, {useState} from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
+import { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import ReactTypingEffect from 'react-typing-effect';
 
-import type { IPlan } from '../contracts/IPlan';
-import type { IService } from '../contracts/IService';
-import type { IContent } from '../contracts/IContent';
+import type { IPlan } from '../interfaces/plan';
+import type { IService } from '../interfaces/service';
+import type { IContent } from '../interfaces/content';
+import type { IRecommendation } from '../interfaces/recommendation';
 
-import Main from '../components/layouts/main/main.component';
-import PlanCard from '../components/home/plan-card.component';
-import ServiceCard from '../components/home/service-card.component';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import stylesHome from '../styles/pages/home.module.scss';
+import stylesMain from '../styles/components/main.module.scss';
+import stylesButtons from '../styles/components/button.module.scss';
 
-import stylesMain from '../stylesheets/components/main.module.scss';
-import stylesHome from '../stylesheets/pages/home.module.scss';
-import stylesButtons from '../stylesheets/components/button.module.scss';
+const Main = dynamic(() => import('../components/layouts/main/main.component'));
+const PlanCard = dynamic(() => import('../components/home/plan-card.component'));
+const ServiceCard = dynamic(() => import('../components/home/service-card.component'));
+const RecommendationCard = dynamic(() => import('../components/home/recommendation-card.component'));
 
-const Home: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
+const Home = (props: { content: IContent }) =>
 {
-    const servicesCard = props?.content?.services?.map((service: IService) =>
-        <ServiceCard
-            key={ service?.id }
-            service={ service }
-            text={ props?.content?.read_more }
-        />
-    );
-    const plansCard = props?.content?.plans?.map((plan: IPlan) =>
-        <PlanCard
-            key={ plan?.id }
-            plan={ plan }
-            content={ props?.content}
-            text={ props?.content?.order_now }
-        />
-    );
-
     return (
         <>
             <Head>
@@ -54,19 +47,20 @@ const Home: (props: { content: IContent }) => JSX.Element = (props: { content: I
                                     {props?.content?.titles[0]}
                                 </h1>
                                 <div className={stylesHome.homeHeaderContentDescription}>
-                            <span>
+                                    <span>
                                 &lt;<i>code</i>&gt;
-                            </span>
+                                    </span>
                                     <span className='build'>
-                                <span className='build__cursor'>
-                                    <ReactTypingEffect
-                                        text={props?.content?.typing_effect || [ '' ]}
-                                    />
-                                </span>
-                            </span>
+                                        <span className='build__cursor'>
+                                            <ReactTypingEffect
+                                                speed={90}
+                                                text={props?.content?.typing_effect || ['']}
+                                            />
+                                        </span>
+                                    </span>
                                     <span>
                                 &lt;/<i>code</i>&gt;
-                            </span>
+                                    </span>
                                 </div>
                                 <Link href='/portfolio'>
                                     <a className={classnames(stylesButtons.button, 'align-self-start')}>
@@ -76,53 +70,53 @@ const Home: (props: { content: IContent }) => JSX.Element = (props: { content: I
                             </div>
                             <div className={stylesHome.homeHeaderLogs}>
                                 <div className={stylesHome.homeHeaderLogsBox}>
-                            <span>
-                                <CountUp
-                                    start={0}
-                                    end={99}
-                                    duration={5}
-                                />
+                                    <span>
+                                        <CountUp
+                                            start={0}
+                                            end={99}
+                                            duration={5}
+                                        />
                                 +
-                            </span>
+                                    </span>
                                     <p>
                                         {props?.content?.headers[0]}
                                     </p>
                                 </div>
                                 <div className={stylesHome.homeHeaderLogsBox}>
-                            <span>
-                                <CountUp
-                                    start={0}
-                                    end={100}
-                                    duration={5}
-                                />
+                                    <span>
+                                        <CountUp
+                                            start={0}
+                                            end={100}
+                                            duration={5}
+                                        />
                                 +
-                            </span>
+                                    </span>
                                     <p>
                                         {props?.content?.headers[1]}
                                     </p>
                                 </div>
                                 <div className={stylesHome.homeHeaderLogsBox}>
-                            <span>
-                                <CountUp
-                                    start={0}
-                                    end={5}
-                                    duration={5}
-                                />
+                                    <span>
+                                        <CountUp
+                                            start={0}
+                                            end={5}
+                                            duration={5}
+                                        />
                                 +
-                            </span>
+                                    </span>
                                     <p>
                                         {props?.content?.headers[2]}
                                     </p>
                                 </div>
                                 <div className={stylesHome.homeHeaderLogsBox}>
-                            <span>
-                                <CountUp
-                                    start={0}
-                                    end={20}
-                                    duration={5}
-                                />
+                                    <span>
+                                        <CountUp
+                                            start={0}
+                                            end={20}
+                                            duration={5}
+                                        />
                                 +
-                            </span>
+                                    </span>
                                     <p>
                                         {props?.content?.headers[3]}
                                     </p>
@@ -134,20 +128,85 @@ const Home: (props: { content: IContent }) => JSX.Element = (props: { content: I
                             {props?.content?.titles[1]}
                         </h4>
                         <div className={stylesHome.homeServices}>
-                            {servicesCard}
+                            {
+                                props?.content?.services?.map((service: IService) =>
+                                    <ServiceCard
+                                        key={ service?.id }
+                                        service={ service }
+                                        text={ props?.content?.read_more }
+                                    />
+                                )
+                            }
                         </div>
                         <h4 className='heading'>
                             {props?.content?.titles[2]}
                         </h4>
                         <div className={stylesHome.homePlans}>
-                            {plansCard}
+                            {
+                                props?.content?.plans?.map((plan: IPlan) =>
+                                    <PlanCard
+                                        key={ plan?.id }
+                                        plan={ plan }
+                                        content={ props?.content}
+                                        text={ props?.content?.order_now }
+                                    />
+                                )
+                            }
+                        </div>
+                        <h4 className='heading'>
+                            {props?.content?.titles[8]}
+                        </h4>
+                        <div className={stylesHome.homeRecommendations}>
+                            <Swiper
+                                navigation={true}
+                                modules={
+                                    [
+                                        Navigation,
+                                        Pagination
+                                    ]}
+                                pagination={
+                                    {
+                                        clickable: true
+                                    }}
+                                breakpoints={
+                                    {
+                                        0:
+                                            {
+                                                slidesPerView: 1,
+                                                spaceBetween: 20
+                                            },
+                                        650:
+                                            {
+                                                slidesPerView: 2,
+                                                spaceBetween: 20
+                                            },
+                                        1400:
+                                            {
+                                                slidesPerView: 3,
+                                                spaceBetween: 20
+                                            }
+                                    }}
+                            >
+                                {
+                                    props?.content?.recommendations?.map((recommendation: IRecommendation) =>
+                                        (
+                                            <SwiperSlide key={ recommendation?.id }>
+                                                <RecommendationCard
+                                                    language={ props?.content?.language }
+                                                    recommendation={ recommendation }
+                                                />
+                                            </SwiperSlide>
+                                        ))
+                                }
+                            </Swiper>
                         </div>
                         <div className='hr'/>
                     </section>
                 </div>
             </Main>
         </>
-    )
-}
+    );
+};
 
 export default Home;
+

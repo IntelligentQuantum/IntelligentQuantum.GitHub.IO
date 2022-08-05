@@ -1,15 +1,18 @@
-import Footer from '../footer/footer.component';
+import dynamic from 'next/dynamic';
+import React, { ReactNode } from 'react';
 
-import stylesMain from '../../../stylesheets/components/main.module.scss';
+import type { IContent } from '../../../interfaces/content';
 
-const Main = (props: any) =>
-{
-    return (
+import stylesMain from '../../../styles/components/main.module.scss';
+
+const Footer = dynamic(() => import('../footer/footer.component'));
+
+const Main = (props: { content: IContent, children: ReactNode }) =>
+    (
         <main className={stylesMain.main}>
             { props.children }
-            <Footer content={props?.content} />
+            <Footer content={props?.content}/>
         </main>
     );
-};
 
 export default Main;

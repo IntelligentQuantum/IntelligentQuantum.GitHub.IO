@@ -1,14 +1,15 @@
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 
-import type { IContent } from '../../../contracts/IContent';
+import type { IContent } from '../../../interfaces/content';
 
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
 
-import stylesAside from '../../../stylesheets/components/aside.module.scss';
+import stylesAside from '../../../styles/components/aside.module.scss';
 
 import Check from '../../../public/static/icons/icon-check.svg';
 
@@ -20,15 +21,18 @@ import Dribbble from '../../../public/static/icons/icon-dribbble.svg';
 import Linkedin from '../../../public/static/icons/icon-linkedin.svg';
 import Instagram from '../../../public/static/icons/icon-instagram.svg';
 
-const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
+const Aside = (props: { content: IContent, handleLanguage: any }) =>
 {
     const dispatch = useDispatch();
-    const openAside: boolean = useSelector(((state: any) => state.aside.openAside));
+    const openAside: boolean = useSelector((state: any) => state.aside.openAside);
 
     return (
         <nav className={classnames(stylesAside.aside, 'z-index__101')} data-open={openAside}>
             <div className={stylesAside.asideUser}>
-                <div className={stylesAside.asideUserIcon} onClick={() => { dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!openAside)) }}>
+                <div className={stylesAside.asideUserIcon} onClick={() =>
+                {
+                    dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!openAside));
+                }}>
                     <Ellipsis />
                 </div>
                 <div className={stylesAside.asideUserProfile}>
@@ -56,9 +60,18 @@ const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
             </div>
             <div className={stylesAside.asideInformation}>
                 <div className={stylesAside.asideInformationLanguage}>
-                    <span onClick={() => { props.handleLanguage('en') }} className={props?.content?.language === 'en' ? stylesAside.asideInformationLanguageActive : ''}>EN</span>
-                    <span onClick={() => { props.handleLanguage('de') }} className={props?.content?.language === 'de' ? stylesAside.asideInformationLanguageActive : ''}>GR</span>
-                    <span onClick={() => { props.handleLanguage('fa') }} className={props?.content?.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</span>
+                    <span onClick={() =>
+                    {
+                        props.handleLanguage('en');
+                    }} className={props?.content?.language === 'en' ? stylesAside.asideInformationLanguageActive : ''}>EN</span>
+                    <span onClick={() =>
+                    {
+                        props.handleLanguage('de');
+                    }} className={props?.content?.language === 'de' ? stylesAside.asideInformationLanguageActive : ''}>DE</span>
+                    <span onClick={() =>
+                    {
+                        props.handleLanguage('fa');
+                    }} className={props?.content?.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</span>
                 </div>
                 <div className={stylesAside.asideDivider}>&nbsp;</div>
                 <div className={stylesAside.asideInformationPersonal}>
@@ -132,7 +145,7 @@ const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
                     <div className={stylesAside.asideInformationSkillsBar}>
                         <div className={stylesAside.asideInformationSkillsInfo}>
                             <span>
-                                Node.js, Deno.js
+                                Node.js, NestJS, Deno.js
                             </span>
                             <span>
                                 95%
@@ -201,19 +214,49 @@ const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                Pug, HBS, EJS
-                            </span>
-                        </li>
-                        <li>
-                            <Check />
-                            <span>
-                                Sass, Scss, Styled
+                                JavaScript, TypeScript, PHP, Lua
                             </span>
                         </li>
                         <li>
                             <Check />
                             <span>
                                 Next.js, React.js, React Native
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                Electron, Express.js, Discord.js
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                Mongodb, Redis, SQL
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                Node.js, Deno.js, NestJS
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                Pug, HBS, EJS
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                HTML5, CSS3, JS
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                Sass, Scss, Styled, Less
                             </span>
                         </li>
                         <li>
@@ -226,13 +269,7 @@ const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                Node.js, Deno.js
-                            </span>
-                        </li>
-                        <li>
-                            <Check />
-                            <span>
-                                Express.js, Nest.js
+                                Git, GitLab
                             </span>
                         </li>
                         <li>
@@ -245,7 +282,7 @@ const Aside: any = (props: { content: IContent, handleLanguage: any }) =>
                 </div>
                 <div className={stylesAside.asideDivider}>&nbsp;</div>
                 <div className={classnames(stylesAside.asideInformationCV, 'uppercase')}>
-                    <a href={`/static/document/parsa_firoozi_cv-${props?.content?.language}.pdf`} target='_blank' rel='noreferrer'>
+                    <a href={`/static/document/parsa_firoozi_cv-${ props?.content?.language }.pdf`} target='_blank' rel='noreferrer'>
                         <span>{props?.content?.download_cv}</span>
                         <Download />
                     </a>

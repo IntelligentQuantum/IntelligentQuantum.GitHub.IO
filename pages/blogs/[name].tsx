@@ -1,27 +1,30 @@
+import moment from 'moment';
 import Head from 'next/head';
-import moment  from 'moment';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 import reactHtmlParser from 'html-react-parser';
+import React, { useEffect, useState } from 'react';
 
-import type { IContent } from '../../contracts/IContent';
+import type { Blog } from '../../interfaces/blog';
+import type { IContent } from '../../interfaces/content';
 
 import 'moment/locale/de';
 import 'moment/locale/fa';
 import 'moment/locale/en-gb';
 
-import Error from '../../components/error/error.component';
-import Main from '../../components/layouts/main/main.component';
+import stylesBlog from '../../styles/pages/blog.module.scss';
+import stylesMain from '../../styles/components/main.module.scss';
 
-import stylesBlog from '../../stylesheets/pages/blog.module.scss';
-import stylesMain from '../../stylesheets/components/main.module.scss';
+const Error = dynamic(() => import('../../components/error/error.component'));
+const Main = dynamic(() => import('../../components/layouts/main/main.component'));
 
-const BlogView: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
+const BlogView = (props: { content: IContent }) =>
 {
     const router = useRouter();
     const { name } = router.query;
-    const [blog, setBlog]: any  = useState('loading');
+    const [blog, setBlog] = useState<Blog>();
+    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() =>
     {
@@ -30,10 +33,10 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
         for (let i = 0; i < blogs.length; i++)
         {
             if (blogs[i].name === name)
-            {
                 setBlog(blogs[i]);
-            }
         }
+
+        setLoading(false);
     }, [props, setBlog, name, blog]);
 
     switch (props?.content?.language)
@@ -55,8 +58,7 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
         <>
             {
                 blog?.name
-                ?
-                    <Head>
+                    ? <Head>
                         <title>Parsa Firoozi &mdash; {blog?.name || ''}</title>
 
                         <meta charSet='UTF-8' />
@@ -81,8 +83,7 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
                         <meta property='twitter:title' content='Parsa Firoozi'/>
                         <meta property='twitter:description' content={'Parsa Firoozi Blogs - ' + blog?.name}/>
                     </Head>
-                    :
-                    <Head>
+                    : <Head>
                         <title>Parsa Firoozi &mdash; Blog page</title>
 
                         <meta charSet='UTF-8' />
@@ -110,106 +111,106 @@ const BlogView: (props: { content: IContent }) => JSX.Element = (props: { conten
             }
             <Main content={props?.content}>
                 {
-                    blog === 'loading'
-                        ?
-                        <div className='loadingParent'>
-                            <div className='loading'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                    loading
+                        ? (
+                            <div className='loadingParent'>
+                                <div className='loading'>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
                             </div>
-                        </div>
-                        :
-                        null
+                        )
+                        : null
                 }
                 {
                     blog?.name
-                        ?
-                        <div className={stylesMain.mainContent}>
-                            <div className={stylesMain.mainBackground}/>
-                            <section className={stylesBlog.blog}>
-                                <div className={stylesBlog.blogHeader}>
-                                    <h1>
-                                        {blog?.name?.split('_').join(' ').charAt(0).toUpperCase() + blog?.name?.split('_').join(' ').slice(1)}
-                                    </h1>
-                                    <span>
-                                        {blog?.category}
-                                    </span>
-                                </div>
-                                <div className={stylesBlog.blogViewImage}>
-                                    <Image
-                                        src={blog.image}
-                                        alt={blog.name}
-                                        layout='fill'
-                                    />
-                                </div>
-                                <div className='hr'/>
-                                <div className={stylesBlog.blogView}>
-                                    <div className={stylesBlog.blogViewCardHeader}>
-                                         <span>
-                                            <p>
-                                                {props?.content?.id}:
-                                            </p>
-                                             {blog.id}
-                                        </span>
+                        ? (
+                            <div className={stylesMain.mainContent}>
+                                <div className={stylesMain.mainBackground}/>
+                                <section className={stylesBlog.blog}>
+                                    <div className={stylesBlog.blogHeader}>
+                                        <h1>
+                                            {blog?.name?.split('_').join(' ').charAt(0).toUpperCase() + blog?.name?.split('_').join(' ').slice(1)}
+                                        </h1>
                                         <span>
-                                            <p>
-                                                {props?.content?.author}:
-                                            </p>
-                                            {props.content.my_name}
-                                        </span>
-                                        <span>
-                                            <p>
-                                                {props?.content?.source}:
-                                            </p>
-                                            {blog.source}
-                                        </span>
-                                        <span>
-                                            <p>
-                                                {props?.content?.created_at}:
-                                            </p>
-                                            {moment(Number(blog.created_at)).format('MMM Do YY')}
-                                        </span>
-                                        <span>
-                                            <p>
-                                                {props?.content?.category}:
-                                            </p>
-                                            {blog.category}
+                                            {blog?.category}
                                         </span>
                                     </div>
-                                    <article className={stylesBlog.blogViewCard}>
-                                        <h3>
-                                            {blog?.description}
-                                        </h3>
-                                        <div className='hr'/>
-                                        {reactHtmlParser(blog.content)}
-                                    </article>
-                                </div>
-                            </section>
-                            <div className='hr'/>
-                        </div>
-                        :
-                        null
+                                    <div className={stylesBlog.blogViewImage}>
+                                        <Image
+                                            src={blog.image}
+                                            alt={blog.name}
+                                            layout='fill'
+                                        />
+                                    </div>
+                                    <div className='hr'/>
+                                    <div className={stylesBlog.blogView}>
+                                        <div className={stylesBlog.blogViewCardHeader}>
+                                            <span>
+                                                <p>
+                                                    {props?.content?.id}:
+                                                </p>
+                                                {blog.id}
+                                            </span>
+                                            <span>
+                                                <p>
+                                                    {props?.content?.author}:
+                                                </p>
+                                                {props.content.my_name}
+                                            </span>
+                                            <span>
+                                                <p>
+                                                    {props?.content?.source}:
+                                                </p>
+                                                {blog.source}
+                                            </span>
+                                            <span>
+                                                <p>
+                                                    {props?.content?.created_at}:
+                                                </p>
+                                                {moment(Number(blog.created_at)).format('MMM Do YY')}
+                                            </span>
+                                            <span>
+                                                <p>
+                                                    {props?.content?.category}:
+                                                </p>
+                                                {blog.category}
+                                            </span>
+                                        </div>
+                                        <article className={stylesBlog.blogViewCard}>
+                                            <h3>
+                                                {blog?.description}
+                                            </h3>
+                                            <div className='hr'/>
+                                            {reactHtmlParser(blog.content)}
+                                        </article>
+                                    </div>
+                                </section>
+                                <div className='hr'/>
+                            </div>
+                        )
+                        : null
                 }
                 {
-                    blog === 'undefined'
-                    ?
-                        <div className={stylesMain.mainContent}>
-                            <div className={stylesMain.mainBackground}/>
-                            <Error
-                                title='404'
-                                description={props?.content?.blog_not_found}
-                                content={props?.content}
-                            />
-                            <div className='hr'/>
-                        </div>
-                        :
-                        null
+                    !blog && !loading
+                        ? (
+                            <div className={stylesMain.mainContent}>
+                                <div className={stylesMain.mainBackground}/>
+                                <Error
+                                    title='404'
+                                    description={props?.content?.blog_not_found}
+                                    content={props?.content}
+                                />
+                                <div className='hr'/>
+                            </div>
+                        )
+                        : null
                 }
             </Main>
         </>
-    )
-}
+    );
+};
 
 export default BlogView;

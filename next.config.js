@@ -7,12 +7,12 @@ const nextConfig = withReactSvg(
         reactStrictMode: true,
         sassOptions:
             {
-                includePaths: [path.join(__dirname, 'styles')],
+                includePaths: [path.join(__dirname, 'styles')]
             },
         include: path.resolve(__dirname, 'public/static/icons'),
         webpack(config)
         {
-            return config
+            return config;
         }
     });
 

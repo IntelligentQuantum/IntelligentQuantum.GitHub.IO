@@ -1,11 +1,14 @@
+import React from 'react';
 import Image from 'next/image';
-import ButtonSecondary from '../buttons/secondary-button.component';
+import dynamic from 'next/dynamic';
 
-import type { IBlog } from '../../contracts/IBlog';
+import type { Blog } from '../../interfaces/blog';
 
-import stylesBlog from '../../stylesheets/pages/blog.module.scss';
+import stylesBlog from '../../styles/pages/blog.module.scss';
 
-const BlogCard = (props: { blog: IBlog, text: string }) =>
+const ButtonSecondary = dynamic(() => import('../buttons/secondary-button.component'));
+
+const BlogCard = (props: { blog: Blog, text: string }) =>
     (
         <div className={stylesBlog.blogItem}>
             <Image
@@ -21,12 +24,11 @@ const BlogCard = (props: { blog: IBlog, text: string }) =>
                     { props.blog.description }
                 </p>
                 <ButtonSecondary
-                    link={` /blogs/${props.blog.name}` }
+                    link={`/blogs/${ props.blog.name }`}
                     text={ props.text }
                 />
             </div>
         </div>
     );
-
 
 export default BlogCard;

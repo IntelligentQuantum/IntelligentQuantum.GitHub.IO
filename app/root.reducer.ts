@@ -7,10 +7,10 @@ import { filterReducer } from './filter/filter.reducer';
 import { portfolioReducer } from './portfolio/portfolio.reducer';
 
 export default combineReducers(
-{
-    aside: asideReducer,
-    alert: alertReducer,
-    filter: filterReducer,
-    navbar: navbarReducer,
-    portfolio: portfolioReducer
-});
+    {
+        aside: asideReducer,
+        alert: alertReducer,
+        filter: filterReducer,
+        navbar: navbarReducer,
+        portfolio: portfolioReducer
+    });

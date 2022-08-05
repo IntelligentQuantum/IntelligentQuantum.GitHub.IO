@@ -1,30 +1,24 @@
+import React from 'react';
 import Head from 'next/head';
-import {useDispatch, useSelector} from 'react-redux';
-
-import type { IContent } from '../contracts/IContent';
-import type { IPortfolio } from '../contracts/IPortfolio';
-
-import Card from '../components/portfolio/card.component';
-import Main from '../components/layouts/main/main.component';
-
-import stylesMain from '../stylesheets/components/main.module.scss';
-import stylesPortfolio from '../stylesheets/pages/portfolio.module.scss';
+import dynamic from 'next/dynamic';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { setTagPortfolio } from '../app/portfolio/portfolio.actions';
 
-const Portfolio: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
+import type { IContent } from '../interfaces/content';
+import type { IPortfolio } from '../interfaces/portfolio';
+
+import stylesMain from '../styles/components/main.module.scss';
+import stylesPortfolio from '../styles/pages/portfolio.module.scss';
+
+const Card = dynamic(() => import('../components/portfolio/card.component'));
+const Main = dynamic(() => import('../components/layouts/main/main.component'));
+
+const Portfolio = (props: { content: IContent }) =>
 {
     const dispatch = useDispatch();
-    const tagPortfolio = useSelector(((state: any) => state.portfolio.tagPortfolio));
-    const cards = props?.content?.my_portfolio?.map((portfolio: IPortfolio) =>
-        (
-            <Card
-                key={ portfolio?.id }
-                portfolio={ portfolio }
-                text={ props?.content?.read_more }
-            />
-        )
-    );
+
+    const tagPortfolio = useSelector((state: any) => state.portfolio.tagPortfolio);
 
     return (
         <>
@@ -62,31 +56,55 @@ const Portfolio: (props: { content: IContent }) => JSX.Element = (props: { conte
                             {props?.content?.titles[7]}
                         </h4>
                         <ul className='heading__small'>
-                            <li data-active={tagPortfolio === 'all'} onClick={() => { dispatch(setTagPortfolio('all')) }}>
+                            <li data-active={tagPortfolio === 'all'} onClick={() =>
+                            {
+                                dispatch(setTagPortfolio('all'));
+                            }}>
                                 {props?.content?.categories[0]}
                             </li>
-                            <li data-active={tagPortfolio === 'web_development'} onClick={() => { dispatch(setTagPortfolio('web_development')) }}>
+                            <li data-active={tagPortfolio === 'web_development'} onClick={() =>
+                            {
+                                dispatch(setTagPortfolio('web_development'));
+                            }}>
                                 {props?.content?.categories[1]}
                             </li>
-                            <li data-active={tagPortfolio === 'app_development'} onClick={() => { dispatch(setTagPortfolio('app_development')) }}>
+                            <li data-active={tagPortfolio === 'app_development'} onClick={() =>
+                            {
+                                dispatch(setTagPortfolio('app_development'));
+                            }}>
                                 {props?.content?.categories[2]}
                             </li>
-                            <li data-active={tagPortfolio === 'robot_development'} onClick={() => { dispatch(setTagPortfolio('robot_development')) }}>
+                            <li data-active={tagPortfolio === 'robot_development'} onClick={() =>
+                            {
+                                dispatch(setTagPortfolio('robot_development'));
+                            }}>
                                 {props?.content?.categories[3]}
                             </li>
-                            <li data-active={tagPortfolio === 'graphic_design'} onClick={() => { dispatch(setTagPortfolio('graphic_design')) }}>
+                            <li data-active={tagPortfolio === 'graphic_design'} onClick={() =>
+                            {
+                                dispatch(setTagPortfolio('graphic_design'));
+                            }}>
                                 {props?.content?.categories[4]}
                             </li>
                         </ul>
                         <div className={stylesPortfolio.portfolioList}>
-                            { cards }
+                            {
+                                props?.content?.my_portfolio?.map((portfolio: IPortfolio) =>
+                                    (
+                                        <Card
+                                            key={ portfolio?.id }
+                                            portfolio={ portfolio }
+                                            text={ props?.content?.read_more }
+                                        />
+                                    ))
+                            }
                         </div>
                     </section>
                     <div className='hr'/>
                 </div>
             </Main>
         </>
-    )
-}
+    );
+};
 
 export default Portfolio;

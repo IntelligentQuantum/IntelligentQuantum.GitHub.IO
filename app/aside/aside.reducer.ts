@@ -3,7 +3,7 @@ import { AsideActionTypes } from './aside.types';
 const INITIAL_STATE =
 {
     openAside: null
-}
+};
 
 export const asideReducer = (state = INITIAL_STATE, action: any) =>
 {
@@ -13,8 +13,8 @@ export const asideReducer = (state = INITIAL_STATE, action: any) =>
             return {
                 ...state,
                 openAside: action.payload
-            }
+            };
         default:
             return state;
     }
-}
+};

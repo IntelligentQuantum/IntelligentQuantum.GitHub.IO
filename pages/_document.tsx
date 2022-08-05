@@ -1,3 +1,4 @@
+import React from 'react';
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document
@@ -7,7 +8,7 @@ class MyDocument extends Document
         return await Document.getInitialProps(ctx);
     }
 
-    render(): JSX.Element
+    render()
     {
         return (
             <Html lang='EN' data-theme='dim' data-language='en' dir='ltr'>

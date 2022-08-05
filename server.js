@@ -1,5 +1,5 @@
 const next = require('next');
-const { parse } = require('url');
+const { URL } = require('url');
 const { createServer } = require('http');
 
 const hostname = process.env.HOST;
@@ -11,11 +11,11 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(() =>
 {
-    createServer(async (req, res) =>
+    createServer(async(req, res) =>
     {
         try
         {
-            const parsedUrl = parse(req.url, true);
+            const parsedUrl = URL(req.url, true);
             // const { pathname, query } = parsedUrl;
 
             // if (pathname === '/a')
@@ -23,18 +23,18 @@ app.prepare().then(() =>
             //     await app.render(req, res, '/a', query)
             // }
 
-            await handle(req, res, parsedUrl)
+            await handle(req, res, parsedUrl);
         }
         catch (err)
         {
-            console.error('Error occurred handling', req.url, err)
-            res.statusCode = 500
-            res.end('internal server error')
+            console.error('Error occurred handling', req.url, err);
+            res.statusCode = 500;
+            res.end('internal server error');
         }
     })
         .listen((port), (err) =>
         {
-            if (err) throw err
-            console.log(`> Ready on http://${hostname}:${port}`)
-        })
-})
+            if (err) throw err;
+            console.log(`> Ready on http://${ hostname }:${ port }`);
+        });
+});

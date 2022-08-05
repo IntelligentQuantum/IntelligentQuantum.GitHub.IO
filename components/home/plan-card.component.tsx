@@ -1,15 +1,17 @@
-import type { IPlan } from '../../contracts/IPlan';
-import type { IContent } from '../../contracts/IContent';
+import React from 'react';
+import dynamic from 'next/dynamic';
 
-import ButtonSecondary from '../buttons/secondary-button.component';
+import type { IPlan } from '../../interfaces/plan';
+import type { IContent } from '../../interfaces/content';
 
-import stylesHome from '../../stylesheets/pages/home.module.scss';
+import stylesHome from '../../styles/pages/home.module.scss';
 
 import Check from '../../public/static/icons/icon-check.svg';
 
+const ButtonSecondary = dynamic(() => import('../buttons/secondary-button.component'));
+
 const PlanCard = (props: { text: string, content: IContent, plan: IPlan }) =>
-{
-    return (
+    (
         <div className={stylesHome.homePlansContent}>
             <h5>
                 {props.plan.title}
@@ -46,6 +48,5 @@ const PlanCard = (props: { text: string, content: IContent, plan: IPlan }) =>
             />
         </div>
     );
-};
 
 export default PlanCard;

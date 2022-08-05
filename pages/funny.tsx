@@ -1,23 +1,18 @@
+import React from 'react';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 
-import type { IFunny } from '../contracts/IFunny';
-import type { IContent } from '../contracts/IContent';
+import type { IFunny } from '../interfaces/funny';
+import type { IContent } from '../interfaces/content';
 
-import Card from '../components/funny/card.component';
-import Main from '../components/layouts/main/main.component';
+import stylesFunny from '../styles/pages/funny.module.scss';
+import stylesMain from '../styles/components/main.module.scss';
 
-import stylesFunny from '../stylesheets/pages/funny.module.scss';
-import stylesMain from '../stylesheets/components/main.module.scss';
+const Card = dynamic(() => import('../components/funny/card.component'));
+const Main = dynamic(() => import('../components/layouts/main/main.component'));
 
-const Funny: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
+const Funny = (props: { content: IContent }) =>
 {
-    const facts = props?.content?.funny_facts.map((fact: IFunny) =>
-        <Card
-            key={ fact?.id }
-            fact={ fact }
-        />
-    );
-
     return (
         <>
             <Head>
@@ -54,13 +49,20 @@ const Funny: (props: { content: IContent }) => JSX.Element = (props: { content: 
                         <h4 className='heading'>
                             {props?.content?.titles[5]}
                         </h4>
-                        { facts }
+                        {
+                            props?.content?.funny_facts.map((fact: IFunny) =>
+                                <Card
+                                    key={ fact?.id }
+                                    fact={ fact }
+                                />
+                            )
+                        }
                     </section>
                     <div className='hr'/>
                 </div>
             </Main>
         </>
-    )
-}
+    );
+};
 
 export default Funny;

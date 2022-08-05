@@ -1,26 +1,18 @@
+import React from 'react';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 
-import type { IBlog } from '../../contracts/IBlog';
-import type { IContent } from '../../contracts/IContent';
+import type { IBlog } from '../../interfaces/blog';
+import type { IContent } from '../../interfaces/content';
 
-import Card from '../../components/blog/card.component';
-import Main from '../../components/layouts/main/main.component';
+import stylesBlog from '../../styles/pages/blog.module.scss';
+import stylesMain from '../../styles/components/main.module.scss';
 
-import stylesBlog from '../../stylesheets/pages/blog.module.scss';
-import stylesMain from '../../stylesheets/components/main.module.scss';
+const Card = dynamic(() => import('../../components/blog/card.component'));
+const Main = dynamic(() => import('../../components/layouts/main/main.component'));
 
-const Blog: (props: { content: IContent }) => JSX.Element = (props: { content: IContent }) =>
+const Blog = (props: { content: IContent }) =>
 {
-    const cards = props?.content?.my_blogs?.map((blog: IBlog) =>
-        (
-            <Card
-                key={ blog.name }
-                blog={ blog }
-                text={ props?.content?.read_more }
-            />
-        )
-    );
-
     return (
         <>
             <Head>
@@ -57,7 +49,16 @@ const Blog: (props: { content: IContent }) => JSX.Element = (props: { content: I
                             {props?.content?.titles[6]}
                         </h4>
                         <section className={stylesBlog.blogItems}>
-                            { cards }
+                            {
+                                props?.content?.my_blogs?.map((blog: IBlog) =>
+                                    (
+                                        <Card
+                                            key={ blog.name }
+                                            blog={ blog }
+                                            text={ props?.content?.read_more }
+                                        />
+                                    ))
+                            }
                         </section>
                     </section>
                     <div className='hr'/>
