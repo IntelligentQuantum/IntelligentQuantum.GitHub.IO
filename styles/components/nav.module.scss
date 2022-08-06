@@ -15,6 +15,12 @@
     &__Open
     {
         width: 30rem;
+
+        @media only screen and (max-width: 1000px)
+        {
+            box-shadow: 0 3px 50px -25px rgb(15, 15, 20);
+            right: 0 !important;
+        }
     }
 
     @media only screen and (max-width: 1000px)

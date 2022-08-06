@@ -178,7 +178,13 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 }
                 {
                     filter
-                        ? <div className={stylesFilter.filter}/>
+                        ? <div className={stylesFilter.filter} onClick={() =>
+                        {
+                            dispatch(setOpenAside(false));
+                            dispatch(setOpenNavbar(false));
+                            dispatch(setActiveFilter(false));
+                        }
+                        }/>
                         : null
                 }
                 {

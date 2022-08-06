@@ -1,4 +1,5 @@
 import requestIp from 'request-ip';
+import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { BrowserFingerprint } from 'browser_fingerprint';
 
@@ -20,6 +21,13 @@ const fingerPrinter = new BrowserFingerprint(
 
 export default async(request: NextApiRequest, response: NextApiResponse) =>
 {
+    await NextCors(request, response,
+        {
+            methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+            origin: '*',
+            optionsSuccessStatus: 200
+        });
+
     try
     {
         await dbConnect();

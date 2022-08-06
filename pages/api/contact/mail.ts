@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import validator from 'validator';
+import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import rateLimit from '../../../lib/rate-limit';
@@ -12,6 +13,13 @@ const limiter = rateLimit(
 
 export default async(request: NextApiRequest, response: NextApiResponse) =>
 {
+    await NextCors(request, response,
+        {
+            methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+            origin: '*',
+            optionsSuccessStatus: 200
+        });
+
     const { method, body } = request;
 
     switch (method)
