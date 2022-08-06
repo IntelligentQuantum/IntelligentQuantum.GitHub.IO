@@ -27,7 +27,7 @@ const Aside = dynamic(() => import('../components/layouts/aside/aside.component'
 const Navbar = dynamic(() => import('../components/layouts/navbar/navbar.component'));
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://localhost:3000/api/';
+axios.defaults.baseURL = 'https://parsa-firoozi.ir/api/';
 
 interface CustomAppProps
 {

@@ -24,7 +24,7 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
     await NextCors(request, response,
         {
             methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-            origin: '*',
+            origin: 'https://parsa-firoozi.ir',
             optionsSuccessStatus: 200
         });
 
