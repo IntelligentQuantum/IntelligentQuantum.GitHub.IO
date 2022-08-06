@@ -1,5 +1,5 @@
 const next = require('next');
-const { URL } = require('url');
+const { parse } = require('url');
 const { createServer } = require('http');
 
 const hostname = process.env.HOST;
@@ -15,13 +15,8 @@ app.prepare().then(() =>
     {
         try
         {
-            const parsedUrl = URL(req.url, true);
-            // const { pathname, query } = parsedUrl;
-
-            // if (pathname === '/a')
-            // {
-            //     await app.render(req, res, '/a', query)
-            // }
+            const parsedUrl = parse(req.url, true);
+          
 
             await handle(req, res, parsedUrl);
         }
