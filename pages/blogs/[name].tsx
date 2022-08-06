@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import reactHtmlParser from 'html-react-parser';
 import React, { useEffect, useState } from 'react';
 
-import type { Blog } from '../../interfaces/blog';
+import type { IBlog } from '../../interfaces/blog';
 import type { IContent } from '../../interfaces/content';
 
 import 'moment/locale/de';
@@ -23,7 +23,7 @@ const BlogView = (props: { content: IContent }) =>
 {
     const router = useRouter();
     const { name } = router.query;
-    const [blog, setBlog] = useState<Blog>();
+    const [blog, setBlog] = useState<IBlog>();
     const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() =>

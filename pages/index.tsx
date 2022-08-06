@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
@@ -209,4 +209,3 @@ const Home = (props: { content: IContent }) =>
 };
 
 export default Home;
-

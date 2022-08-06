@@ -33,7 +33,7 @@ const Contact = (props: { content: IContent }) =>
     {
         event.preventDefault();
 
-        if (email === 'fdg')
+        if (validator.isEmail(email) && name && message)
         {
             const response = await axios.post(
                 '/contact/mail',

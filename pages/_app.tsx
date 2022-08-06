@@ -124,6 +124,12 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 
     useEffect(() =>
     {
+        axios.get('/fingerprint').then(() =>
+        { });
+    });
+
+    useEffect(() =>
+    {
         handleTheme();
         handleLanguage();
     }, [handleLanguage, handleTheme]);

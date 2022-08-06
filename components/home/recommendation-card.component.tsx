@@ -1,11 +1,11 @@
 import React from 'react';
 import { Rating } from 'react-simple-star-rating';
 
-import type { Recommendation } from '../../interfaces/recommendation';
+import type { IRecommendation } from '../../interfaces/recommendation';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
-const RecommendationCard = (props: { recommendation: Recommendation, language: string }) =>
+const RecommendationCard = (props: { recommendation: IRecommendation, language: string }) =>
     (
         <div className={stylesHome.homeRecommendationsContent}>
             <div>

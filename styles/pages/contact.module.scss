@@ -7,16 +7,25 @@
 
     &Information
     {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(30rem, 1fr));
+        grid-gap: 2rem;
+
         padding: 0 3rem;
 
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-gap: 2rem;
+        @media only screen and (max-width: 1400px)
+        {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         @media only screen and (max-width: 1000px)
         {
-            padding: 0 1.5rem;
-            grid-template-columns: repeat(auto-fit, 100%);
+            padding: 1.5rem;
+        }
+
+        @media only screen and (max-width: 650px)
+        {
+            grid-template-columns: repeat(1, 1fr);
         }
 
         &Content

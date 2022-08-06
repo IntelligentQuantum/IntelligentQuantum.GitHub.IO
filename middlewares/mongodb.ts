@@ -1,11 +1,9 @@
 import mongoose from 'mongoose';
 
-console.log(process.env.MONGODB_URI)
-
 const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI)
-    throw new Error('Please define the MONGODB_URI environment variable inside .env local')
+    throw new Error('Please define the MONGODB_URI environment variable inside .env local');
 
 // @ts-ignore
 let cached = global.mongoose;
@@ -26,14 +24,16 @@ async function dbConnect()
         const options =
             {
                 bufferCommands: false
-            }
+            };
 
         if (MONGODB_URI)
+        {
             cached.promise = mongoose.connect(MONGODB_URI, options).then(
                 (mongoose: any) =>
                 {
-                    return mongoose
+                    return mongoose;
                 });
+        }
     }
 
     cached.conn = await cached.promise;
@@ -41,4 +41,4 @@ async function dbConnect()
     return cached.conn;
 }
 
-export default dbConnect
+export default dbConnect;

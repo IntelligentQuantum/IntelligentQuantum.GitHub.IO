@@ -18,27 +18,29 @@ const fingerPrinter = new BrowserFingerprint(
             }
     });
 
-export default async (request: NextApiRequest, response: NextApiResponse) =>
+export default async(request: NextApiRequest, response: NextApiResponse) =>
 {
-    await dbConnect();
-    const fingerprints = await FingerprintEntity.find();
-
-    console.log(fingerprints);
-
     try
     {
+        await dbConnect();
+
         const ip = requestIp.getClientIp(request);
-        const fingerprint = fingerPrinter.fingerprint(request);
+        const { fingerprint } = fingerPrinter.fingerprint(request);
 
-        const newFingerprint = new FingerprintEntity(
-            {
-                ip,
-                fingerprint,
-                createdAt: Date.now()
-            }
-        );
+        const fetchFingerprint = await FingerprintEntity.find({ ip, fingerprint });
 
-        newFingerprint.save();
+        if (!fetchFingerprint)
+        {
+            const newFingerprint = new FingerprintEntity(
+                {
+                    ip,
+                    fingerprint,
+                    createdAt: Date.now()
+                }
+            );
+
+            newFingerprint.save();
+        }
 
         response.status(200).json({ status: 'success' });
     }
