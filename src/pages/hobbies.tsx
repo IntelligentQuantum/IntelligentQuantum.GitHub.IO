@@ -8,7 +8,7 @@ import type { IContent } from '../interfaces/content';
 import stylesMain from '../styles/components/main.module.scss';
 import stylesHobbies from '../styles/pages/hobbies.module.scss';
 
-const Card = dynamic(() => import('../components/hobby/card.component'));
+const Card = dynamic(() => import('../components/hobbies/card.component'));
 const Main = dynamic(() => import('../components/layouts/main/main.component'));
 
 const Hobbies = (props: { content: IContent }) =>
