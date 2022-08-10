@@ -26,6 +26,17 @@ body
 
 html[data-language="fa"]
 {
+    & .swiper-button-next
+    {
+        left: 0 !important;
+        right: 2.5rem !important;
+    }
+    & .swiper-button-prev
+    {
+        right: 0 !important;
+        left: auto !important;
+    }
+
     & #button-secondary
     {
         svg
@@ -37,6 +48,7 @@ html[data-language="fa"]
         {
             svg
             {
+                margin-left: 0;
                 margin-right: 0.4rem;
             }
         }

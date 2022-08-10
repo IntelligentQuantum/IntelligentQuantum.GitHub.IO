@@ -17,7 +17,8 @@
             "I am ReactJS, React Native and NextJS developer.",
             "I am  NodeJS, DenoJS and NestJS developer."
         ],
-        "about_me": "Parsa is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with hobbies and C++ as well as their frameworks such as Laravel and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.",
+        "technologies": "Frameworks and Technologies",
+        "about_me": "Parsa is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Laravel and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.",
         "download_cv": "Download CV",
         "order_now": "Order Now",
         "source_code": "Source Code",
@@ -182,12 +183,12 @@
             {
                 "id": 1,
                 "title": "Back-End Development",
-                "description": "Back-End development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS, Laravel and C++."
+                "description": "Back-End development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
             },
             {
                 "id": 2,
                 "title": "Cross-Platform Development",
-                "description": "Cross-Platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and QT."
+                "description": "Cross-Platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt."
             },
             {
                 "id": 3,
@@ -354,7 +355,8 @@
             "Full-Stack-Entwickler",
             "Grafikdesigner"
         ],
-        "about_me": "Parsa ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrung in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit hobbies und C++ sowie deren Frameworks wie Laravel und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native.",
+        "technologies": "Frameworks und Technologien",
+        "about_me": "Parsa ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrung in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Laravel und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native.",
         "currency": "€",
         "send_message": "Nachricht Senden",
         "source_code": "Quell Code",
@@ -522,18 +524,33 @@
         [
             {
                 "id": 0,
-                "title": "Front-End Entwicklung",
-                "description": "Schnelle und professionelle website front-end entwicklung mit ReactJS, NextJS und HTML"
+                "title": "Front-End Development",
+                "description": "Front-End web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website."
             },
             {
                 "id": 1,
-                "title": "Back-End Entwicklung",
-                "description": "Schnelle und professionelle website back-end entwicklung mit Express.js, NestJS und NextJS"
+                "title": "Back-End Development",
+                "description": "Back-End development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
             },
             {
                 "id": 2,
-                "title": "Plattformübergreifende Entwicklung",
-                "description": "Schnelle und professionelle Entwicklung von Desktop, Android und iOS anwendungen mit Electron und React Native."
+                "title": "Cross-Platform Development",
+                "description": "Cross-Platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt."
+            },
+            {
+                "id": 3,
+                "title": "Game Development",
+                "description": "Game development is the art of creating games and describes the design, development, and release of a game with Unreal, Frostbite and Unity engines."
+            },
+            {
+                "id": 4,
+                "title": "Cyber Security Enthusiast",
+                "description": "In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
+            },
+            {
+                "id": 5,
+                "title": "Search Engine Optimization",
+                "description": "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."
             }
         ],
         "my_portfolio":
@@ -694,7 +711,8 @@
             "من یک توسعه دهنده ReactJS، React Native و NextJS هستم.",
             "من یک توسعه دهنده  NodeJS، DenoJS و NestJS هستم."
         ],
-        "about_me": "پارسا یکی از علاقه مندان بزرگ مشکلات حل نشده و یک مهندس نرم افزار بسیار ماهر با بیش از پنج سال تجربه در زمینه توسعه وب، موبایل و نرم افزار است که برای شرکت ها از استارتاپ های کوچک تا بزرگ کار می کند. او از کار با مردم لذت می برد، از تغییرات نمی ترسد، در مهارت های بین فردی بسیار خوب است و همیشه پذیرای چالش های جدید است. او تجربه کار با hobbies و C++ و همچنین فریمورک\u200Cهای آن\u200Cها مانند Laravel و Qt را دارد، اما روی فناوری\u200Cهای مرتبط با جاوا اسکریپت مانند Typescript، NodeJS، DenoJS، NestJS، NextJS، React و React Native تمرکز دارد.",
+        "technologies": "فریم ورک ها و فناوری ها",
+        "about_me": "پارسا یکی از علاقه مندان بزرگ مشکلات حل نشده و یک مهندس نرم افزار بسیار ماهر با بیش از پنج سال تجربه در زمینه توسعه وب، موبایل و نرم افزار است که برای شرکت ها از استارتاپ های کوچک تا بزرگ کار می کند. او از کار با مردم لذت می برد، از تغییرات نمی ترسد، در مهارت های بین فردی بسیار خوب است و همیشه پذیرای چالش های جدید است. او تجربه کار با PHP و C++ و همچنین فریمورک\u200Cهای آن\u200Cها مانند Laravel و Qt را دارد، اما روی فناوری\u200Cهای مرتبط با جاوا اسکریپت مانند Typescript، NodeJS، DenoJS، NestJS، NextJS، React و React Native تمرکز دارد.",
         "download_cv": "دانلود رزومه",
         "send_message": "ارسال پیام",
         "source_code": "منبع کد",
@@ -853,18 +871,33 @@
         [
             {
                 "id": 0,
-                "title": "توسعه فرانت-اند",
-                "description": "توسعه سریع و بی نقص فرانت-اند وب‌سایت با ReactJS, NextJS و HTML"
+                "title": "Front-End Development",
+                "description": "Front-End web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website."
             },
             {
                 "id": 1,
-                "title": "توسعه بک-اند",
-                "description": "توسعه سریع و بی نقص بک-اند وب‌سایت با Express.js، NestJS و NextJS"
+                "title": "Back-End Development",
+                "description": "Back-End development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
             },
             {
                 "id": 2,
-                "title": "توسعه کراس-پلتفورم",
-                "description": "توسعه برنامه های Desktop، Android، iOS ساخته شده با Electron و React Native"
+                "title": "Cross-Platform Development",
+                "description": "Cross-Platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt."
+            },
+            {
+                "id": 3,
+                "title": "Game Development",
+                "description": "Game development is the art of creating games and describes the design, development, and release of a game with Unreal, Frostbite and Unity engines."
+            },
+            {
+                "id": 4,
+                "title": "Cyber Security Enthusiast",
+                "description": "In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
+            },
+            {
+                "id": 5,
+                "title": "Search Engine Optimization",
+                "description": "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."
             }
         ],
         "my_portfolio":

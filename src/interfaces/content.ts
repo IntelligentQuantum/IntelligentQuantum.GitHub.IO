@@ -6,6 +6,7 @@ import type { IPortfolio } from './portfolio';
 export interface IContent
 {
     language: string,
+    technologies: string,
     about_me: string,
     my_name: string,
     my_skills: string[],

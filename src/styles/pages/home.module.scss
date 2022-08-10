@@ -437,8 +437,7 @@
 
             &Info
             {
-                padding: 3rem;
-                margin-bottom: 1rem;
+                padding: 3rem 3rem 0;
 
                 & > a
                 {
@@ -601,6 +600,12 @@ html[data-language="fa"]
                     direction: ltr;
                 }
             }
+        }
+
+        &AboutMeAsideItemList > li:not(:first-child)
+        {
+            margin-left: 0;
+            margin-right: -1.75rem;
         }
 
         &RecommendationsContent > div

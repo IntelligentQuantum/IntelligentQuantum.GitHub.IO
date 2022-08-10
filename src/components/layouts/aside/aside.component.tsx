@@ -241,7 +241,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                C++, Qt
+                                C++, Qt, Poco
                             </span>
                         </li>
                         <li>
@@ -290,7 +290,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                Poco, Curl, Apt
+                                Curl, Apt, Apt-Get
                             </span>
                         </li>
                     </ul>

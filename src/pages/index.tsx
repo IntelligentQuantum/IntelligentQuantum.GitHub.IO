@@ -175,23 +175,23 @@ const Home = (props: { content: IContent }) =>
                         <div className='hr'/>
 
                         <h4 className='heading'>
-                            {props?.content?.titles[8]}
+                            { props?.content?.titles[8] }
                         </h4>
                         <div className={stylesHome.homeAboutMe}>
                             <h2 className='paragraph'>
-                                {props?.content?.about_me}
+                                { props?.content?.about_me }
                             </h2>
 
                             <ul className={stylesHome.homeAboutMeAside}>
                                 <li className={stylesHome.homeAboutMeAsideItem}>
                                     <h6>
-                                        Frameworks and Technologies
+                                        { props.content.technologies }
                                     </h6>
                                 </li>
 
                                 <li className={stylesHome.homeAboutMeAsideItem}>
                                     <h5>
-                                        Front-End:
+                                        { props.content.services[0]?.title?.split(' ')[0] }:
                                     </h5>
 
                                     <ul className={stylesHome.homeAboutMeAsideItemList}>
@@ -266,7 +266,7 @@ const Home = (props: { content: IContent }) =>
 
                                 <li className={stylesHome.homeAboutMeAsideItem}>
                                     <h5>
-                                        Back-End:
+                                        { props.content.services[1]?.title?.split(' ')[0] }:
                                     </h5>
 
                                     <ul className={stylesHome.homeAboutMeAsideItemList}>
@@ -319,7 +319,7 @@ const Home = (props: { content: IContent }) =>
 
                                 <li className={stylesHome.homeAboutMeAsideItem}>
                                     <h5>
-                                        Cross-Platform:
+                                        { props.content.services[2]?.title?.split(' ')[0] }:
                                     </h5>
 
                                     <ul className={stylesHome.homeAboutMeAsideItemList}>
