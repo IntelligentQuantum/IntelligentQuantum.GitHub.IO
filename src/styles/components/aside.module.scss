@@ -3,12 +3,10 @@
     grid-template: aside-start / aside-end;
     display: grid;
     grid-template-rows: 25rem 1fr 5rem;
-    box-shadow: 0 3px 8px 0 var(--base-transparent);
     overflow: hidden;
 
     @media only screen and (max-width: 1000px)
     {
-        box-shadow: 0 3px 8px 0 rgb(15 15 20 / 100%);
         transition: 0.4s;
         left: -100%;
         position: fixed;

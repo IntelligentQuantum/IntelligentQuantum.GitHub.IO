@@ -11,7 +11,7 @@ const Main = (props: { content: IContent, children: ReactNode }) =>
     (
         <main className={stylesMain.main}>
             { props.children }
-            <Footer content={props?.content}/>
+            <Footer content={ props?.content }/>
         </main>
     );
 

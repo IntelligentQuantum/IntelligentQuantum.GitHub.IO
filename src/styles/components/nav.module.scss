@@ -7,7 +7,6 @@
     right: 0;
     top: 0;
 
-    box-shadow: 0 3px 8px 0 var(--base-transparent);
     transition: all 0.8s;
     width: 8rem;
     height: 100%;
@@ -18,7 +17,6 @@
 
         @media only screen and (max-width: 1000px)
         {
-            box-shadow: 0 3px 50px -25px rgb(15, 15, 20);
             right: 0 !important;
         }
     }
@@ -51,7 +49,6 @@
             position: fixed;
             background: var(--base-dark);
             z-index: 98;
-            box-shadow: 0 3px 8px 0 var(--base-transparent);
         }
 
         &Dots

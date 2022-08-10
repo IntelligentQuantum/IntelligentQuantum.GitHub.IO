@@ -11,15 +11,15 @@ import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 import stylesAside from '../../../styles/components/aside.module.scss';
 
-import Check from '../../../public/static/icons/icon-check.svg';
+import Check from '../../../../public/static/icons/icon-check.svg';
 
-import Github from '../../../public/static/icons/icon-github.svg';
-import Rarible from '../../../public/static/icons/icon-rarible.svg';
-import Download from '../../../public/static/icons/icon-download.svg';
-import Ellipsis from '../../../public/static/icons/icon-ellipsis.svg';
-import Dribbble from '../../../public/static/icons/icon-dribbble.svg';
-import Linkedin from '../../../public/static/icons/icon-linkedin.svg';
-import Instagram from '../../../public/static/icons/icon-instagram.svg';
+import Github from '../../../../public/static/icons/icon-github.svg';
+import Rarible from '../../../../public/static/icons/icon-rarible.svg';
+import Download from '../../../../public/static/icons/icon-download.svg';
+import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
+import Dribbble from '../../../../public/static/icons/icon-dribbble.svg';
+import Linkedin from '../../../../public/static/icons/icon-linkedin.svg';
+import Instagram from '../../../../public/static/icons/icon-instagram.svg';
 
 const Aside = (props: { content: IContent, handleLanguage: any }) =>
 {
@@ -171,7 +171,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                     <div className={stylesAside.asideInformationSkillsBar}>
                         <div className={stylesAside.asideInformationSkillsInfo}>
                             <span>
-                                Styled, Sass, Scss
+                                Sass, Styled, Css
                             </span>
                             <span>
                                 90%
@@ -214,13 +214,31 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                JavaScript, TypeScript, PHP, Lua
+                                JavaScript, TypeScript
                             </span>
                         </li>
                         <li>
                             <Check />
                             <span>
                                 NextJS, ReactJS, React Native
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                 NodeJS, DenoJS, NestJS
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                PHP, Laravel
+                            </span>
+                        </li>
+                        <li>
+                            <Check />
+                            <span>
+                                C++, Qt
                             </span>
                         </li>
                         <li>
@@ -238,12 +256,6 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                 NodeJS, DenoJS, NestJS
-                            </span>
-                        </li>
-                        <li>
-                            <Check />
-                            <span>
                                 Pug, HBS, EJS
                             </span>
                         </li>
@@ -256,7 +268,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                Sass, Scss, Styled, Less
+                                Sass, Styled, Less
                             </span>
                         </li>
                         <li>

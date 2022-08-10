@@ -9,7 +9,7 @@ const nextConfig = withReactSvg(
             {
                 includePaths: [path.join(__dirname, 'src/styles')]
             },
-        include: path.resolve(__dirname, 'src/public/static/icons'),
+        include: path.resolve(__dirname, 'public/static/icons'),
         webpack(config)
         {
             return config;

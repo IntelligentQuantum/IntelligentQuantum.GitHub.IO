@@ -1,0 +1,37 @@
+.tooltip
+{
+    display: inline-block;
+
+    color: var(--color-base-text-bold);
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: .65rem;
+    background: var(--base-darker);
+    margin-bottom: .25rem;
+
+    &::after
+    {
+        content: "";
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        margin-top: -.25rem;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--base-darker) transparent transparent;
+    }
+
+    &[data-light]
+    {
+        background: var(--base-light);
+
+        &::after
+        {
+            border-color: var(--base-light) transparent transparent;
+        }
+    }
+}

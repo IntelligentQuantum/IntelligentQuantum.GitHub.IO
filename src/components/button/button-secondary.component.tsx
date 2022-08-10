@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import stylesButton from '../../styles/components/button.module.scss';
 
-import ArrowKeyboardRight from '../../public/static/icons/icon-arrow_keyboard_right.svg';
+import ArrowKeyboardRight from '../../../public/static/icons/icon-arrow_keyboard_right.svg';
 
 const ButtonSecondary = (props: { a?: boolean, link: string, text: string }) =>
     (

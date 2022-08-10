@@ -1,4 +1,4 @@
-import axios, {AxiosResponse} from 'axios';
+import axios from 'axios';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
@@ -9,7 +9,7 @@ import { useDispatch, useSelector, Provider } from 'react-redux';
 import type { AppProps } from 'next/app';
 
 import store from '../app/store';
-import data from '../public/static/data/data.json';
+import data from '../../public/static/data/data.json';
 
 import { setOpenAside } from '../app/aside/aside.actions';
 import { setActiveAlert } from '../app/alert/alert.actions';
@@ -250,7 +250,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                     theme={theme}
                     content={data[language]}
                     handleTheme={handleTheme}
-                    page={page === 'contact' || page === 'funny' || page === 'portfolio' || page === 'blogs' || page === 'home' ? page : 'home'}
+                    page={page === 'contact' || page === 'hobbies' || page === 'portfolio' || page === 'blogs' || page === 'home' ? page : 'home'}
                 />
             </main>
         </>

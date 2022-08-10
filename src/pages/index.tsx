@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
@@ -7,6 +8,7 @@ import axios, { AxiosResponse } from 'axios';
 import Tooltip from '@tippyjs/react/headless';
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useSpring, animated } from 'react-spring';
 import ReactTypingEffect from 'react-typing-effect';
 import { Keyboard, Autoplay, Navigation, Pagination } from 'swiper';
 
@@ -23,14 +25,63 @@ import stylesHome from '../styles/pages/home.module.scss';
 import stylesMain from '../styles/components/main.module.scss';
 import stylesButtons from '../styles/components/button.module.scss';
 
+import QtLogo from '../../public/static/images/logos/logo-qt.png';
+import NodeLogo from '../../public/static/images/logos/logo-node.png';
+import NestLogo from '../../public/static/images/logos/logo-nest.png';
+import DenoLogo from '../../public/static/images/logos/logo-deno.png';
+import SassLogo from '../../public/static/images/logos/logo-sass.png';
+import NextLogo from '../../public/static/images/logos/logo-next.png';
+import HtmlLogo from '../../public/static/images/logos/logo-html.png';
+import ReactLogo from '../../public/static/images/logos/logo-react.png';
+import LaravelLogo from '../../public/static/images/logos/logo-laravel.png';
+import ReactQueryLogo from '../../public/static/images/logos/logo-react-query.png';
+import ReactNativeLogo from '../../public/static/images/logos/logo-react-native.png';
+import TooltipPrimary from "../components/tooltip/tooltip-primary.component";
+
 const Main = dynamic(() => import('../components/layouts/main/main.component'));
 const ServiceCard = dynamic(() => import('../components/home/service-card.component'));
 const RepositoriesCard = dynamic(() => import('../components/home/repository-card.component'));
 
 const Home = (props: { content: IContent }) =>
 {
+    const stylesConfig =
+        {
+            tension: 300,
+            friction: 15
+        };
+    const initialStyles =
+        {
+            transform: 'scale(1)',
+            opacity: 0
+        };
+
+    const [spring, setSpring] = useSpring(() => initialStyles);
     const [organs, setOrgans] = useState<IOrgan[]>([]);
     const [repositories, setRepositories] = useState<IRepository[]>([]);
+
+    const onMount = () =>
+    {
+        setSpring(
+            {
+                opacity: 1,
+                onRest: () => {},
+                config: stylesConfig
+            });
+    }
+
+    const onHide = ({ unmount }: any) =>
+    {
+        setSpring(
+            {
+                ...initialStyles,
+                onRest: unmount,
+                config:
+                    {
+                        ...stylesConfig,
+                        clamp: true
+                    }
+            });
+    }
 
     const getRepositories = async () =>
     {
@@ -156,7 +207,9 @@ const Home = (props: { content: IContent }) =>
                                 </div>
                             </div>
                         </header>
+
                         <div className='hr'/>
+
                         <h4 className='heading'>
                             {props?.content?.titles[8]}
                         </h4>
@@ -165,10 +218,163 @@ const Home = (props: { content: IContent }) =>
                                 {props?.content?.about_me}
                             </h2>
 
-                            <div className={stylesHome.homeAboutMeAside}>
+                            <ul className={stylesHome.homeAboutMeAside}>
+                                <li className={stylesHome.homeAboutMeAsideItem}>
+                                    <h6>
+                                        Tools and Technologies
+                                    </h6>
+                                </li>
 
-                            </div>
+                                <li className={stylesHome.homeAboutMeAsideItem}>
+                                    <h5>
+                                        Front-End:
+                                    </h5>
+
+                                    <ul className={stylesHome.homeAboutMeAsideItemList}>
+                                        <TooltipPrimary title='HTML'>
+                                            <li>
+                                                <span data-html_logo={true}>
+                                                    <Image
+                                                        src={HtmlLogo}
+                                                        alt='HTML Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='Sass Stylesheet'>
+                                            <li>
+                                                <span>
+                                                    <Image
+                                                        src={SassLogo}
+                                                        alt='Sass Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='ReactJS'>
+                                            <li>
+                                               <span>
+                                                    <Image
+                                                        src={ReactLogo}
+                                                        alt='React Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='React Query'>
+                                            <li>
+                                               <span>
+                                                    <Image
+                                                        src={ReactQueryLogo}
+                                                        alt='React Query Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='NextJS'>
+                                            <li>
+                                                <span>
+                                                    <Image
+                                                        src={NextLogo}
+                                                        alt='Next Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                    </ul>
+                                </li>
+
+                                <li className={stylesHome.homeAboutMeAsideItem}>
+                                    <h5>
+                                        Back-End:
+                                    </h5>
+
+                                    <ul className={stylesHome.homeAboutMeAsideItemList}>
+                                        <TooltipPrimary title='Laravel'>
+                                            <li>
+                                               <span>
+                                                    <Image
+                                                        src={LaravelLogo}
+                                                        alt='Laravel Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='NodeJS'>
+                                            <li>
+                                                <span>
+                                                    <Image
+                                                        src={NodeLogo}
+                                                        alt='NodeJS Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='NestJS'>
+                                            <li>
+                                                <span>
+                                                    <Image
+                                                        src={NestLogo}
+                                                        alt='Nest Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='DenoJS'>
+                                            <li>
+                                               <span>
+                                                    <Image
+                                                        src={DenoLogo}
+                                                        alt='Deno Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                    </ul>
+                                </li>
+
+                                <li className={stylesHome.homeAboutMeAsideItem}>
+                                    <h5>
+                                        Cross-Platform:
+                                    </h5>
+
+                                    <ul className={stylesHome.homeAboutMeAsideItemList}>
+                                        <TooltipPrimary title='React Native'>
+                                            <li>
+                                                <span>
+                                                    <Image
+                                                        src={ReactNativeLogo}
+                                                        alt='React Native Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='Qt'>
+                                            <li>
+                                               <span>
+                                                    <Image
+                                                        src={QtLogo}
+                                                        alt='QT Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
+
                         <h4 className='heading'>
                             {props?.content?.titles[1]}
                         </h4>
@@ -178,7 +384,7 @@ const Home = (props: { content: IContent }) =>
                                     <ServiceCard
                                         key={ service?.id }
                                         service={ service }
-                                        text={ props?.content?.read_more }
+                                        text={ props?.content?.order_now }
                                     />
                                 )
                             }
@@ -237,6 +443,7 @@ const Home = (props: { content: IContent }) =>
                                 }
                             </Swiper>
                         </div>
+
                         <div className={stylesHome.homeOrgans}>
                             <Swiper
                                 modules={
@@ -260,9 +467,14 @@ const Home = (props: { content: IContent }) =>
                                                 slidesPerView: 1,
                                                 spaceBetween: 20
                                             },
-                                        650:
+                                        450:
                                             {
                                                 slidesPerView: 2,
+                                                spaceBetween: 20
+                                            },
+                                        650:
+                                            {
+                                                slidesPerView: 3,
                                                 spaceBetween: 20
                                             },
                                         1400:
@@ -276,23 +488,17 @@ const Home = (props: { content: IContent }) =>
                                     organs?.map((organ: IOrgan) =>
                                         (
                                             <SwiperSlide key={ organ.node_id }>
-                                                <Tooltip
-                                                    render={() =>
-                                                        (
-                                                            <span className={stylesHome.homeOrgansTooltip}>
-                                                                {organ?.login}
-                                                            </span>
-                                                        )}
-                                                >
+                                                <TooltipPrimary title={ organ?.login }>
                                                     <a href={`https://github.com/${organ?.login}`} target='_blank' className={stylesHome.homeOrgansContent}>
                                                         <img src={organ?.avatar_url} alt={organ?.login}/>
                                                     </a>
-                                                </Tooltip>
+                                                </TooltipPrimary>
                                             </SwiperSlide>
                                         ))
                                 }
                             </Swiper>
                         </div>
+
                         <div className='hr'/>
                     </section>
                 </div>

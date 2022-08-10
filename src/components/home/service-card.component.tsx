@@ -5,7 +5,7 @@ import type { IService } from '../../interfaces/service';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
-const ButtonSecondary = dynamic(() => import('../buttons/secondary-button.component'));
+const ButtonSecondary = dynamic(() => import('../button/button-secondary.component'));
 
 const ServiceCard = (props: { text: string, service: IService }) =>
     (
@@ -17,7 +17,7 @@ const ServiceCard = (props: { text: string, service: IService }) =>
                 { props.service.description }
             </p>
             <ButtonSecondary
-                link='/portfolio'
+                link='/contact'
                 text={props.text}
             />
         </div>

@@ -7,9 +7,9 @@ import { setImagePortfolio } from '../../app/portfolio/portfolio.actions';
 
 import stylesPortfolio from '../../styles/pages/portfolio.module.scss';
 
-import ArrowsFullscreen from '../../public/static/icons/icon-arrows_fullscreen.svg';
+import ArrowsFullscreen from '../../../public/static/icons/icon-arrows_fullscreen.svg';
 
-const ButtonSecondary = dynamic(() => import('../buttons/secondary-button.component'));
+const ButtonSecondary = dynamic(() => import('../button/button-secondary.component'));
 
 const PortfolioCard = (props: { text: string, portfolio: { image: string, title: string, tag: string, description: string, link: string }}) =>
 {

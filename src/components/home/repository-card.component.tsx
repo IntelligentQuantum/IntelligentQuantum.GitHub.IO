@@ -3,14 +3,14 @@ import React from 'react';
 import type { IRepository } from '../../interfaces/repository';
 
 import stylesHome from '../../styles/pages/home.module.scss';
-import Star from '../../public/static/icons/icon-github_star.svg';
-import Fork from '../../public/static/icons/icon-github_fork.svg';
-import Watch from '../../public/static/icons/icon-github_watch.svg';
+import Star from '../../../public/static/icons/icon-github_star.svg';
+import Fork from '../../../public/static/icons/icon-github_fork.svg';
+import Watch from '../../../public/static/icons/icon-github_watch.svg';
 
 const RepositoriesCard = (props: { repository: IRepository }) =>
     (
         <div className={stylesHome.homeReposContent}>
-            <div>
+            <div className={stylesHome.homeReposContentInfo}>
                 <a href={props?.repository?.html_url} target='_blank'>
                     { props?.repository?.name }
                     <span>
@@ -19,7 +19,7 @@ const RepositoriesCard = (props: { repository: IRepository }) =>
                 </a>
             </div>
 
-            <ul>
+            <ul className={stylesHome.homeReposContentStats}>
                 <li>
                     <a href={`https://github.com/${props?.repository?.owner?.login}/${props?.repository?.name}/stargazers`}>
                         <Star />
