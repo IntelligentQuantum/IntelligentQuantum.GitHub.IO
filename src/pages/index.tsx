@@ -32,8 +32,9 @@ import NextLogo from '../../public/static/images/logos/logo-next.png';
 import HtmlLogo from '../../public/static/images/logos/logo-html.png';
 import ReactLogo from '../../public/static/images/logos/logo-react.png';
 import ExpressLogo from '../../public/static/images/logos/logo-express.png';
-import LaravelLogo from '../../public/static/images/logos/logo-laravel.png';
+import ElectronLogo from '../../public/static/images/logos/logo-electron.png';
 import ReactQueryLogo from '../../public/static/images/logos/logo-react-query.png';
+import StyledLogo from '../../public/static/images/logos/logo-styled-component.png';
 import ReactNativeLogo from '../../public/static/images/logos/logo-react-native.png';
 
 const Main = dynamic(() => import('../components/layouts/main/main.component'));
@@ -184,7 +185,7 @@ const Home = (props: { content: IContent }) =>
                             <ul className={stylesHome.homeAboutMeAside}>
                                 <li className={stylesHome.homeAboutMeAsideItem}>
                                     <h6>
-                                        Tools and Technologies
+                                        Frameworks and Technologies
                                     </h6>
                                 </li>
 
@@ -222,6 +223,17 @@ const Home = (props: { content: IContent }) =>
                                                     <Image
                                                         src={ReactLogo}
                                                         alt='React Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='Styled Component'>
+                                            <li>
+                                                <span>
+                                                    <Image
+                                                        src={StyledLogo}
+                                                        alt='Styled Component Logo'
                                                         layout='fill'
                                                     />
                                                 </span>
@@ -311,6 +323,17 @@ const Home = (props: { content: IContent }) =>
                                     </h5>
 
                                     <ul className={stylesHome.homeAboutMeAsideItemList}>
+                                        <TooltipPrimary title='ElectronJS'>
+                                            <li>
+                                                <span>
+                                                    <Image
+                                                        src={ElectronLogo}
+                                                        alt='Electron Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
                                         <TooltipPrimary title='React Native'>
                                             <li>
                                                 <span>
