@@ -11,8 +11,8 @@ import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 import stylesAside from '../../../styles/components/aside.module.scss';
 
+import Profilo from '../../../../public/static/images/im-parsa.png';
 import Check from '../../../../public/static/icons/icon-check.svg';
-
 import Github from '../../../../public/static/icons/icon-github.svg';
 import Rarible from '../../../../public/static/icons/icon-rarible.svg';
 import Download from '../../../../public/static/icons/icon-download.svg';
@@ -37,9 +37,12 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                 </div>
                 <div className={stylesAside.asideUserProfile}>
                     <Image
-                        src='/static/images/my-profile.png'
-                        alt='im-parsa - Parsa Firoozi'
-                        layout='fill'
+                        src={Profilo}
+                        alt='im-parsa - Parsa Firoozi - Portfolio'
+                        className={stylesAside.asideUserProfile}
+                        layout='intrinsic'
+                        width={100}
+                        height={100}
                     />
                     <div className={stylesAside.asideUserStatusParent}>
                         <i className={stylesAside.asideUserStatus}/>
@@ -232,7 +235,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                PHP, Laravel
+                                PHP
                             </span>
                         </li>
                         <li>

@@ -35,7 +35,7 @@ export default function rateLimit(options?: Options)
                     isRateLimited ? 0 : limit - currentUsage
                 );
 
-                return isRateLimited ? reject() : resolve();
+                return isRateLimited ? reject(new Error('This route was not found')) : resolve();
             })
     };
 }

@@ -546,7 +546,7 @@
 
             border-radius: 1rem;
 
-            & > img
+            & img
             {
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
@@ -557,7 +557,7 @@
                 transition: all .2s;
             }
 
-            &:hover > img
+            &:hover img
             {
                 opacity: .75;
             }

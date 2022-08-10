@@ -5,10 +5,8 @@ import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
 import axios, { AxiosResponse } from 'axios';
-import Tooltip from '@tippyjs/react/headless';
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useSpring, animated } from 'react-spring';
 import ReactTypingEffect from 'react-typing-effect';
 import { Keyboard, Autoplay, Navigation, Pagination } from 'swiper';
 
@@ -33,57 +31,22 @@ import SassLogo from '../../public/static/images/logos/logo-sass.png';
 import NextLogo from '../../public/static/images/logos/logo-next.png';
 import HtmlLogo from '../../public/static/images/logos/logo-html.png';
 import ReactLogo from '../../public/static/images/logos/logo-react.png';
+import ExpressLogo from '../../public/static/images/logos/logo-express.png';
 import LaravelLogo from '../../public/static/images/logos/logo-laravel.png';
 import ReactQueryLogo from '../../public/static/images/logos/logo-react-query.png';
 import ReactNativeLogo from '../../public/static/images/logos/logo-react-native.png';
-import TooltipPrimary from "../components/tooltip/tooltip-primary.component";
 
 const Main = dynamic(() => import('../components/layouts/main/main.component'));
 const ServiceCard = dynamic(() => import('../components/home/service-card.component'));
+const TooltipPrimary = dynamic(() => import('../components/tooltip/tooltip-primary.component'));
 const RepositoriesCard = dynamic(() => import('../components/home/repository-card.component'));
 
 const Home = (props: { content: IContent }) =>
 {
-    const stylesConfig =
-        {
-            tension: 300,
-            friction: 15
-        };
-    const initialStyles =
-        {
-            transform: 'scale(1)',
-            opacity: 0
-        };
-
-    const [spring, setSpring] = useSpring(() => initialStyles);
     const [organs, setOrgans] = useState<IOrgan[]>([]);
     const [repositories, setRepositories] = useState<IRepository[]>([]);
 
-    const onMount = () =>
-    {
-        setSpring(
-            {
-                opacity: 1,
-                onRest: () => {},
-                config: stylesConfig
-            });
-    }
-
-    const onHide = ({ unmount }: any) =>
-    {
-        setSpring(
-            {
-                ...initialStyles,
-                onRest: unmount,
-                config:
-                    {
-                        ...stylesConfig,
-                        clamp: true
-                    }
-            });
-    }
-
-    const getRepositories = async () =>
+    const getRepositories = async() =>
     {
         await axios.get('/github/repositories')
             .then((response: AxiosResponse) =>
@@ -94,8 +57,8 @@ const Home = (props: { content: IContent }) =>
             {
                 console.log(error);
             });
-    }
-    const getOrgans = async () =>
+    };
+    const getOrgans = async() =>
     {
         await axios.get('/github/organs')
             .then((response: AxiosResponse) =>
@@ -106,7 +69,7 @@ const Home = (props: { content: IContent }) =>
             {
                 console.log(error);
             });
-    }
+    };
 
     useEffect(() =>
     {
@@ -255,7 +218,7 @@ const Home = (props: { content: IContent }) =>
                                         </TooltipPrimary>
                                         <TooltipPrimary title='ReactJS'>
                                             <li>
-                                               <span>
+                                                <span>
                                                     <Image
                                                         src={ReactLogo}
                                                         alt='React Logo'
@@ -266,7 +229,7 @@ const Home = (props: { content: IContent }) =>
                                         </TooltipPrimary>
                                         <TooltipPrimary title='React Query'>
                                             <li>
-                                               <span>
+                                                <span>
                                                     <Image
                                                         src={ReactQueryLogo}
                                                         alt='React Query Logo'
@@ -295,23 +258,23 @@ const Home = (props: { content: IContent }) =>
                                     </h5>
 
                                     <ul className={stylesHome.homeAboutMeAsideItemList}>
-                                        <TooltipPrimary title='Laravel'>
-                                            <li>
-                                               <span>
-                                                    <Image
-                                                        src={LaravelLogo}
-                                                        alt='Laravel Logo'
-                                                        layout='fill'
-                                                    />
-                                                </span>
-                                            </li>
-                                        </TooltipPrimary>
                                         <TooltipPrimary title='NodeJS'>
                                             <li>
                                                 <span>
                                                     <Image
                                                         src={NodeLogo}
                                                         alt='NodeJS Logo'
+                                                        layout='fill'
+                                                    />
+                                                </span>
+                                            </li>
+                                        </TooltipPrimary>
+                                        <TooltipPrimary title='ExpressJS'>
+                                            <li>
+                                                <span>
+                                                    <Image
+                                                        src={ExpressLogo}
+                                                        alt='Express Logo'
                                                         layout='fill'
                                                     />
                                                 </span>
@@ -330,7 +293,7 @@ const Home = (props: { content: IContent }) =>
                                         </TooltipPrimary>
                                         <TooltipPrimary title='DenoJS'>
                                             <li>
-                                               <span>
+                                                <span>
                                                     <Image
                                                         src={DenoLogo}
                                                         alt='Deno Logo'
@@ -361,7 +324,7 @@ const Home = (props: { content: IContent }) =>
                                         </TooltipPrimary>
                                         <TooltipPrimary title='Qt'>
                                             <li>
-                                               <span>
+                                                <span>
                                                     <Image
                                                         src={QtLogo}
                                                         alt='QT Logo'
@@ -405,7 +368,7 @@ const Home = (props: { content: IContent }) =>
                                     ]}
                                 keyboard={
                                     {
-                                        enabled: true,
+                                        enabled: true
                                     }}
                                 autoplay={
                                     {
@@ -453,7 +416,7 @@ const Home = (props: { content: IContent }) =>
                                     ]}
                                 keyboard={
                                     {
-                                        enabled: true,
+                                        enabled: true
                                     }}
                                 autoplay={
                                     {
@@ -489,8 +452,13 @@ const Home = (props: { content: IContent }) =>
                                         (
                                             <SwiperSlide key={ organ.node_id }>
                                                 <TooltipPrimary title={ organ?.login }>
-                                                    <a href={`https://github.com/${organ?.login}`} target='_blank' className={stylesHome.homeOrgansContent}>
-                                                        <img src={organ?.avatar_url} alt={organ?.login}/>
+                                                    <a href={`https://github.com/${ organ?.login }`} target='_blank' className={stylesHome.homeOrgansContent} rel="noreferrer">
+                                                        <Image
+                                                            src={organ?.avatar_url}
+                                                            alt={organ?.login}
+                                                            width={120}
+                                                            height={120}
+                                                        />
                                                     </a>
                                                 </TooltipPrimary>
                                             </SwiperSlide>

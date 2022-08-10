@@ -1,4 +1,3 @@
-import classnames from 'classnames';
 import Tooltip from '@tippyjs/react';
 import React, { ReactElement } from 'react';
 import { animated, useSpring } from 'react-spring';
@@ -25,10 +24,11 @@ const TooltipPrimary = (props: { title: string | number, light?: boolean, childr
         setSpring(
             {
                 opacity: 1,
-                onRest: () => {},
+                onRest: () =>
+                {},
                 config: stylesConfig
             });
-    }
+    };
 
     const onHide = ({ unmount }: any) =>
     {
@@ -42,7 +42,7 @@ const TooltipPrimary = (props: { title: string | number, light?: boolean, childr
                         clamp: true
                     }
             });
-    }
+    };
 
     return (
         <Tooltip
@@ -62,7 +62,7 @@ const TooltipPrimary = (props: { title: string | number, light?: boolean, childr
         >
             { props.children }
         </Tooltip>
-    )
+    );
 };
 
 export default TooltipPrimary;

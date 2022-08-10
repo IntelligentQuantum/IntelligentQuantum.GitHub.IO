@@ -29,13 +29,12 @@ const Navbar = dynamic(() => import('../components/layouts/navbar/navbar.compone
 axios.defaults.withCredentials = true;
 
 if (process.env.NODE_ENV === 'development')
-{
+
     axios.defaults.baseURL = 'http://localhost:3000/api/';
-}
+
 else if (process.env.NODE_ENV === 'production')
-{
+
     axios.defaults.baseURL = 'https://parsa-firoozi.ir/api/';
-}
 
 interface CustomAppProps
 {
@@ -87,7 +86,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                     setTheme('dim');
                 }
             }
-        }, [setLanguage]);
+        }, []);
     const handleLanguage = useCallback(
         (language?: string) =>
         {
@@ -156,7 +155,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
         dispatch(setOpenNavbar(false));
         dispatch(setActiveFilter(false));
         dispatch(setActiveAlert(false, '', ''));
-    }, []);
+    }, [dispatch]);
 
     return (
         <>

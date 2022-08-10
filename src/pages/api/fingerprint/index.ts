@@ -6,6 +6,7 @@ import { BrowserFingerprint } from 'browser_fingerprint';
 
 import dbConnect from '../../../middlewares/mongodb';
 import FingerprintEntity from '../../../entities/fingerprint.entity';
+import Repositories from '../github/repositories';
 
 const limiter = rateLimit(
     {
@@ -26,7 +27,7 @@ const fingerPrinter = new BrowserFingerprint(
             }
     });
 
-export default async(request: NextApiRequest, response: NextApiResponse) =>
+const Fingerprint = async(request: NextApiRequest, response: NextApiResponse) =>
 {
     await NextCors(request, response,
         {
@@ -67,3 +68,5 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
         response.status(500).json({ status: 'fail' });
     }
 };
+
+export default Fingerprint;

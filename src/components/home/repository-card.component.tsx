@@ -11,7 +11,7 @@ const RepositoriesCard = (props: { repository: IRepository }) =>
     (
         <div className={stylesHome.homeReposContent}>
             <div className={stylesHome.homeReposContentInfo}>
-                <a href={props?.repository?.html_url} target='_blank'>
+                <a href={props?.repository?.html_url} target='_blank' rel="noreferrer">
                     { props?.repository?.name }
                     <span>
                         { props?.repository?.description }
@@ -21,19 +21,19 @@ const RepositoriesCard = (props: { repository: IRepository }) =>
 
             <ul className={stylesHome.homeReposContentStats}>
                 <li>
-                    <a href={`https://github.com/${props?.repository?.owner?.login}/${props?.repository?.name}/stargazers`}>
+                    <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/stargazers`}>
                         <Star />
                         { props?.repository?.stargazers_count }
                     </a>
                 </li>
                 <li>
-                    <a href={`https://github.com/${props?.repository?.owner?.login}/${props?.repository?.name}/watchers`}>
+                    <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/watchers`}>
                         <Watch />
                         { props?.repository?.watchers_count }
                     </a>
                 </li>
                 <li>
-                    <a href={`https://github.com/${props?.repository?.owner?.login}/${props?.repository?.name}/network/members`}>
+                    <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/network/members`}>
                         <Fork />
                         { props?.repository?.forks_count }
                     </a>

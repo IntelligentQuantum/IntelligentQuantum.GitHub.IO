@@ -4,6 +4,13 @@ const withReactSvg = require('next-react-svg');
 
 const nextConfig = withReactSvg(
     {
+        images:
+            {
+                domains:
+                    [
+                        'avatars.githubusercontent.com'
+                    ],
+            },
         reactStrictMode: true,
         sassOptions:
             {

@@ -12,7 +12,7 @@ const limiter = rateLimit(
         uniqueTokenPerInterval: 500
     });
 
-export default async(request: NextApiRequest, response: NextApiResponse) =>
+const Organs = async(request: NextApiRequest, response: NextApiResponse) =>
 {
     await NextCors(request, response,
         {
@@ -36,7 +36,7 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
                     {
                         headers:
                             {
-                                'Authorization': `token ${process.env.GITHUB_ACCESS_TOKEN}`
+                                Authorization: `token ${ process.env.GITHUB_ACCESS_TOKEN }`
                             }
                     });
 
@@ -48,7 +48,7 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
                                 ...data
                                     .filter((organ: IOrgan) =>
                                     {
-                                        return organ?.login !== 'HAGH-Team'
+                                        return organ?.login !== 'HAGH-Team';
                                     })
                             ]
                     });
@@ -71,3 +71,5 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
         }
     }
 };
+
+export default Organs;

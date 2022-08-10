@@ -1,10 +1,11 @@
 import axios from 'axios';
 import NextCors from 'nextjs-cors';
-import {NextApiRequest, NextApiResponse} from 'next';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 import type { IRepository } from '../../../interfaces/repository';
 
 import rateLimit from '../../../lib/rate-limit';
+import Contact from '../../contact';
 
 const limiter = rateLimit(
     {
@@ -12,7 +13,7 @@ const limiter = rateLimit(
         uniqueTokenPerInterval: 500
     });
 
-export default async(request: NextApiRequest, response: NextApiResponse) =>
+const Repositories = async(request: NextApiRequest, response: NextApiResponse) =>
 {
     await NextCors(request, response,
         {
@@ -36,7 +37,7 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
                     {
                         headers:
                             {
-                                'Authorization': `token ${process.env.GITHUB_ACCESS_TOKEN}`
+                                Authorization: `token ${ process.env.GITHUB_ACCESS_TOKEN }`
                             }
                     });
 
@@ -48,11 +49,11 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
                             ...data
                                 .filter((repo: IRepository) =>
                                 {
-                                    return repo?.stargazers_count >= 10
+                                    return repo?.stargazers_count >= 10;
                                 })
                                 .sort((firstRepo: IRepository, secondRepo: IRepository) =>
                                 {
-                                    return secondRepo?.stargazers_count - firstRepo?.stargazers_count
+                                    return secondRepo?.stargazers_count - firstRepo?.stargazers_count;
                                 })
                         ]
                     });
@@ -75,3 +76,5 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
         }
     }
 };
+
+export default Repositories;

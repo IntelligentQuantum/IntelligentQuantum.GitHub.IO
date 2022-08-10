@@ -4,6 +4,7 @@ import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import rateLimit from '../../../lib/rate-limit';
+import Fingerprint from '../fingerprint';
 
 const limiter = rateLimit(
     {
@@ -11,7 +12,7 @@ const limiter = rateLimit(
         uniqueTokenPerInterval: 500
     });
 
-export default async(request: NextApiRequest, response: NextApiResponse) =>
+const Contact = async(request: NextApiRequest, response: NextApiResponse) =>
 {
     await NextCors(request, response,
         {
@@ -93,3 +94,5 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
         }
     }
 };
+
+export default Contact;
