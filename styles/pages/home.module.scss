@@ -179,6 +179,27 @@
         }
     }
 
+    &AboutMe
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2rem;
+
+        padding: 0 3rem;
+
+        &Aside
+        {
+            display: flex;
+            flex-direction: column;
+
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            background: var(--base-light);
+            padding: 3rem;
+        }
+    }
+
     &Services
     {
         display: grid;

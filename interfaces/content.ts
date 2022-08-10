@@ -1,8 +1,7 @@
 import type { IBlog } from './blog';
-import type { IFunny } from './funny';
+import type { IHobby } from './hobby';
 import type { IService } from './service';
 import type { IPortfolio } from './portfolio';
-import type { IRecommendation } from './recommendation';
 
 export interface IContent
 {
@@ -49,7 +48,7 @@ export interface IContent
     contact: string,
     portfolio: string,
     blogs: string,
-    funny: string,
+    hobbies: string,
     error:
         {
             title: string,
@@ -58,9 +57,8 @@ export interface IContent
     titles: string[],
     headers: string[],
     categories: string[],
-    recommendations: IRecommendation[],
     my_blogs: IBlog[],
-    funny_facts: IFunny[],
+    my_hobbies: IHobby[],
     services: IService[],
     my_portfolio: IPortfolio[]
 }

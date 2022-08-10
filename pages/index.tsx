@@ -160,9 +160,15 @@ const Home = (props: { content: IContent }) =>
                         <h4 className='heading'>
                             {props?.content?.titles[8]}
                         </h4>
-                        <h2 className='paragraph'>
-                            {props?.content?.about_me}
-                        </h2>
+                        <div className={stylesHome.homeAboutMe}>
+                            <h2 className='paragraph'>
+                                {props?.content?.about_me}
+                            </h2>
+
+                            <div className={stylesHome.homeAboutMeAside}>
+
+                            </div>
+                        </div>
                         <h4 className='heading'>
                             {props?.content?.titles[1]}
                         </h4>

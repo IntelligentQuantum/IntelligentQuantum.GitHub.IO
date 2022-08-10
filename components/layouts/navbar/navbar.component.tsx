@@ -16,7 +16,7 @@ import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 import stylesNav from '../../../styles/components/nav.module.scss';
 
-const Navbar = (props: { content: IContent, theme?: 'dark' | 'dim' | 'light', handleTheme: (theme: string) => void, mobile?: boolean, page?: 'home' | 'contact' | 'funny' | 'portfolio' | 'blogs' }) =>
+const Navbar = (props: { content: IContent, theme?: 'dark' | 'dim' | 'light', handleTheme: (theme: string) => void, mobile?: boolean, page?: 'home' | 'contact' | 'hobbies' | 'portfolio' | 'blogs' }) =>
 {
     const dispatch = useDispatch();
     const openAside: boolean = useSelector((state: any) => state.aside.openAside);
@@ -73,9 +73,9 @@ const Navbar = (props: { content: IContent, theme?: 'dark' | 'dim' | 'light', ha
                                     {props?.content?.contact}
                                 </a>
                             </Link>
-                            <Link href='/funny' passHref>
-                                <a data-active={props.page === 'funny' ? 'true' : 'false'} className={stylesNav.navContentItem}>
-                                    {props?.content?.funny}
+                            <Link href='/hobbies' passHref>
+                                <a data-active={props.page === 'hobbies' ? 'true' : 'false'} className={stylesNav.navContentItem}>
+                                    {props?.content?.hobbies}
                                 </a>
                             </Link>
                             <Link href='/blogs' passHref>
