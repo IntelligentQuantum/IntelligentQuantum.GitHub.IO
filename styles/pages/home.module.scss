@@ -52,11 +52,36 @@
 
                 & span
                 {
+                    display: flex;
+                    align-items: center;
+
                     color: var(--color-base-text-bolder);
+
+                    & > div
+                    {
+                        position: relative !important;
+
+                        &:after
+                        {
+                            content: '|';
+
+                            display: inline-block;
+
+                            position: relative;
+
+                            animation: opacity .8s infinite ease-in-out;
+                        }
+                    }
+
+                    & > span
+                    {
+                        display: none !important;
+                    }
                 }
 
                 & i
                 {
+                    font-style: normal;
                     color: var(--color-primary);
                 }
             }
@@ -179,6 +204,9 @@
 
         &Content
         {
+            display: flex;
+            flex-direction: column;
+
             border-radius: 1rem;
             background: var(--base-light);
             padding: 3rem;
@@ -196,6 +224,11 @@
                 line-height: 1.7;
                 font-size: 1.1rem;
                 font-weight: 500;
+            }
+
+            & a
+            {
+                margin: auto auto 0 0;
             }
         }
     }
@@ -447,5 +480,17 @@ html[data-language="fa"]
                 top: -2.2rem;
             }
         }
+    }
+}
+
+@keyframes opacity
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
     }
 }

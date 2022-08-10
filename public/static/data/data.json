@@ -17,6 +17,7 @@
             "I am ReactJS, React Native and NextJS developer.",
             "I am  NodeJS, DenoJS and NestJS developer."
         ],
+        "about_me": "Parsa is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.",
         "download_cv": "Download CV",
         "order_now": "Order Now",
         "source_code": "Source Code",
@@ -171,49 +172,37 @@
                 "description": "I make a lot of my artwork as NFT and sell some of them. I have some activities in the NFT and metaverse world. I use Rarible for  NFT marketplace and Decentraland for the web3 platform. I also use ethereum for blockchain because of its ease of use, better community and more security than other blockchains."
             }
         ],
-        "plans":
-        [
-            {
-                "id": 0,
-                "title": "Front-End Development",
-                "price": "99",
-                "a": "High-quality Code",
-                "b": "ReactJS, NextJS and HTML",
-                "c": "Dedicated Support"
-            },
-            {
-                "id": 1,
-                "title": "Back-End Development",
-                "price": "129",
-                "a": "High-quality code",
-                "b": " NodeJS, NestJS, DenoJS",
-                "c": "Dedicated Support"
-            },
-            {
-                "id": 2,
-                "title": "Cross-Platform Development",
-                "price": "159",
-                "a": "Well-organized code",
-                "b": "Supports all operating systems",
-                "c": "Dedicated Support"
-            }
-        ],
         "services":
         [
             {
                 "id": 0,
                 "title": "Front-End Development",
-                "description": "Quick and professional website front-end development with ReactJS, NextJS, HTML."
+                "description": "Front-End web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website."
             },
             {
                 "id": 1,
                 "title": "Back-End Development",
-                "description": "Quick and professional website back-end development with Express.js, NestJS and NextJS."
+                "description": "Back-End development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS, Laravel and C++."
             },
             {
                 "id": 2,
                 "title": "Cross-Platform Development",
-                "description": "Quick and professional Desktop, Android and iOS applications development built with Electron and React Native."
+                "description": "Cross-Platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and QT."
+            },
+            {
+                "id": 3,
+                "title": "Game Development",
+                "description": "Game development is the art of creating games and describes the design, development, and release of a game with Unreal, Frostbite and Unity engines."
+            },
+            {
+                "id": 4,
+                "title": "Cyber Security Enthusiast",
+                "description": "In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
+            },
+            {
+                "id": 5,
+                "title": "Search Engine Optimization",
+                "description": "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."
             }
         ],
         "my_portfolio":
@@ -365,6 +354,7 @@
             "Full-Stack-Entwickler",
             "Grafikdesigner"
         ],
+        "about_me": "Parsa ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Software-Ingenieur mit mehr als fünf Jahren Erfahrung in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er konzentriert sich auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native.",
         "currency": "€",
         "send_message": "Nachricht Senden",
         "source_code": "Quell Code",
@@ -526,33 +516,6 @@
                 "title": "Rarible",
                 "type": "rarible",
                 "description": "Ich mache viele meiner Kunstwerke als NFT und verkaufe einige davon. Ich habe einige Aktivitäten in der NFT- und Metaverse-Welt. Ich verwende Rarible für den NFT-Marktplatz und Decentraland für die web3-Plattform. Ich verwende Ethereum auch für Blockchain wegen seiner Benutzerfreundlichkeit, besseren Community und mehr Sicherheit als andere Blockchains."
-            }
-        ],
-        "plans":
-        [
-            {
-                "id": 0,
-                "title": "Front-End Entwicklung",
-                "price": "99",
-                "a": "Hochwertiger Code",
-                "b": "ReactJS, NextJS, HTML",
-                "c": "Engagierte Unterstützung"
-            },
-            {
-                "id": 1,
-                "title": "Back-End Entwicklung",
-                "price": "129",
-                "a": "Hochwertiger Code",
-                "b": " NodeJS, NestJS, DenoJS",
-                "c": "Engagierte Unterstützung"
-            },
-            {
-                "id": 2,
-                "title": "Plattformübergreifende Entwicklung",
-                "price": "159",
-                "a": "Gut-Organisierter Code",
-                "b": "Unterstützt alle Betriebssysteme",
-                "c": "Engagierte Unterstützung"
             }
         ],
         "services":
@@ -731,6 +694,7 @@
             "من یک توسعه دهنده ReactJS، React Native و NextJS هستم.",
             "من یک توسعه دهنده  NodeJS، DenoJS و NestJS هستم."
         ],
+        "about_me": "پارسا یکی از علاقه مندان بزرگ مشکلات حل نشده و یک مهندس نرم افزار بسیار ماهر با بیش از پنج سال تجربه در زمینه توسعه وب، موبایل و نرم افزار است که برای شرکت ها از استارتاپ های کوچک تا بزرگ کار می کند. او از کار با مردم لذت می برد، از تغییرات نمی ترسد، در مهارت های بین فردی بسیار خوب است و همیشه پذیرای چالش های جدید است. او بر روی فناوری\u200Cهای مرتبط با جاوا اسکریپت مانند Typescript، NodeJS، DenoJS، NestJS، NextJS، React و React Native تمرکز می\u200Cکند.",
         "download_cv": "دانلود رزومه",
         "send_message": "ارسال پیام",
         "source_code": "منبع کد",
@@ -883,33 +847,6 @@
                 "title": "راریبل",
                 "type": "rarible",
                 "description": "من بسیاری از آثار هنری خود را به عنوان ان اف تی می سازم و برخی از آنها را می فروشم. من در دنیای ان اف تی و متاورس فعالیت هایی دارم. من از راریبل برای بازار ان اف تی و دیسنترالند برای پلت فرم وب۳ استفاده می کنم. من همچنین از اتریوم برای بلاک چین استفاده می کنم، زیرا استفاده آسان، جامعه بهتر و امنیت بیشتر نسبت به سایر بلاک چین ها است."
-            }
-        ],
-        "plans":
-        [
-            {
-                "id": 0,
-                "title": "توسعه فرانت-اند",
-                "price": "19,000,000",
-                "a": "کد کیفیت بالا",
-                "b": "ReactJS, NextJS",
-                "c": "پشتیبانی اختصاصی"
-            },
-            {
-                "id": 1,
-                "title": "توسعه بک-اند",
-                "price": "29,000,000",
-                "a": "کد کیفیت بالا",
-                "b": " NodeJS, NestJS, DenoJS",
-                "c": "پشتیبانی اختصاصی"
-            },
-            {
-                "id": 2,
-                "title": "توسعه کراس-پلتفورم",
-                "price": "39,000,000",
-                "a": "کد سازماندهی شده",
-                "b": "پشتیبانی از تمامی سیستم عامل ها",
-                "c": "پشتیبانی اختصاصی"
             }
         ],
         "services":

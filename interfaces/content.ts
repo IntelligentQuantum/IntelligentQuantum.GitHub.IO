@@ -1,5 +1,4 @@
 import type { IBlog } from './blog';
-import type { IPlan } from './plan';
 import type { IFunny } from './funny';
 import type { IService } from './service';
 import type { IPortfolio } from './portfolio';
@@ -8,6 +7,7 @@ import type { IRecommendation } from './recommendation';
 export interface IContent
 {
     language: string,
+    about_me: string,
     my_name: string,
     my_skills: string[],
     currency: string,
@@ -61,7 +61,6 @@ export interface IContent
     recommendations: IRecommendation[],
     my_blogs: IBlog[],
     funny_facts: IFunny[],
-    plans: IPlan[],
     services: IService[],
     my_portfolio: IPortfolio[]
 }

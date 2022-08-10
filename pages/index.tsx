@@ -87,14 +87,10 @@ const Home = (props: { content: IContent }) =>
                                     <span>
                                 &lt;<i>code</i>&gt;
                                     </span>
-                                    <span className='build'>
-                                        <span className='build__cursor'>
-                                            <ReactTypingEffect
-                                                speed={90}
-                                                text={props?.content?.typing_effect || ['']}
-                                            />
-                                        </span>
-                                    </span>
+                                    <ReactTypingEffect
+                                        speed={90}
+                                        text={props?.content?.typing_effect || ['']}
+                                    />
                                     <span>
                                 &lt;/<i>code</i>&gt;
                                     </span>
@@ -164,19 +160,13 @@ const Home = (props: { content: IContent }) =>
                         <h4 className='heading'>
                             {props?.content?.titles[8]}
                         </h4>
+                        <h2 className='paragraph'>
+                            {props?.content?.about_me}
+                        </h2>
                         <h4 className='heading'>
                             {props?.content?.titles[1]}
                         </h4>
                         <div className={stylesHome.homeServices}>
-                            {
-                                props?.content?.services?.map((service: IService) =>
-                                    <ServiceCard
-                                        key={ service?.id }
-                                        service={ service }
-                                        text={ props?.content?.read_more }
-                                    />
-                                )
-                            }
                             {
                                 props?.content?.services?.map((service: IService) =>
                                     <ServiceCard
