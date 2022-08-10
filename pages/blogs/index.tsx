@@ -46,7 +46,7 @@ const Blog = (props: { content: IContent }) =>
                     <div className="hr"></div>
                     <section className={stylesBlog.blogSection}>
                         <h4 className='heading'>
-                            {props?.content?.titles[6]}
+                            {props?.content?.titles[5]}
                         </h4>
                         <section className={stylesBlog.blogItems}>
                             {

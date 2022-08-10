@@ -14,8 +14,8 @@
             "I build desktop and android applications.",
             "I build web interfaces.",
             "I am JavaScripts, TypeScript, PHP, C++ developer.",
-            "I am React.js, React Native and Next.js developer.",
-            "I am Node.js, Deno.js and NestJS developer."
+            "I am ReactJS, React Native and NextJS developer.",
+            "I am  NodeJS, DenoJS and NestJS developer."
         ],
         "download_cv": "Download CV",
         "order_now": "Order Now",
@@ -63,14 +63,14 @@
         "titles":
         [
             "What do i make Or am i?",
-            "My Services",
-            "Price Plans",
+            "Services",
             "Contact Information",
             "Get in Touch",
-            "My Funny Facts",
-            "My Blogs",
-            "My Portfolio",
-            "Recommendations"
+            "Funny Facts",
+            "Blogs",
+            "Portfolio",
+            "Repositories",
+            "About me"
         ],
         "headers":
         [
@@ -87,64 +87,6 @@
             "Robot Development",
             "Graphic Design"
         ],
-        "recommendations":
-            [
-                {
-                    "id": 0,
-                    "author":
-                    {
-                        "name": "string",
-                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
-                        "description": "string"
-                    },
-                    "message": "string",
-                    "rate": 80
-                },
-                {
-                    "id": 1,
-                    "author":
-                    {
-                        "name": "string",
-                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
-                        "description": "string"
-                    },
-                    "message": "string",
-                    "rate": 80
-                },
-                {
-                    "id": 2,
-                    "author":
-                    {
-                        "name": "string",
-                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
-                        "description": "string"
-                    },
-                    "message": "string",
-                    "rate": 80
-                },
-                {
-                    "id": 3,
-                    "author":
-                    {
-                        "name": "string",
-                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
-                        "description": "string"
-                    },
-                    "message": "string",
-                    "rate": 80
-                },
-                {
-                    "id": 4,
-                    "author":
-                    {
-                        "name": "string",
-                        "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
-                        "description": "string"
-                    },
-                    "message": "string",
-                    "rate": 80
-                }
-            ],
         "my_blogs":
         [
             {
@@ -236,7 +178,7 @@
                 "title": "Front-End Development",
                 "price": "99",
                 "a": "High-quality Code",
-                "b": "React.js, Next.js and HTML",
+                "b": "ReactJS, NextJS and HTML",
                 "c": "Dedicated Support"
             },
             {
@@ -244,7 +186,7 @@
                 "title": "Back-End Development",
                 "price": "129",
                 "a": "High-quality code",
-                "b": "Node.js, NestJS, Deno.js",
+                "b": " NodeJS, NestJS, DenoJS",
                 "c": "Dedicated Support"
             },
             {
@@ -261,12 +203,12 @@
             {
                 "id": 0,
                 "title": "Front-End Development",
-                "description": "Quick and professional website front-end development with React.js, Next.js, HTML."
+                "description": "Quick and professional website front-end development with ReactJS, NextJS, HTML."
             },
             {
                 "id": 1,
                 "title": "Back-End Development",
-                "description": "Quick and professional website back-end development with Express.js, NestJS and Next.js."
+                "description": "Quick and professional website back-end development with Express.js, NestJS and NextJS."
             },
             {
                 "id": 2,
@@ -456,8 +398,8 @@
             "Ich erstelle Desktop- und Android-Anwendungen.",
             "Ich baue Webinterfaces.",
             "Ich bin JavaScript, TypeScript, PHP  und C++ Entwickler.",
-            "Ich bin React.js, React Native und Next.js Entwickler.",
-            "Ich bin Node.js, Deno.js und NestJS Entwickler."
+            "Ich bin ReactJS, React Native und NextJS Entwickler.",
+            "Ich bin  NodeJS, DenoJS und NestJS Entwickler."
         ],
         "residence": "Residenz",
         "city": "Stadt",
@@ -478,28 +420,14 @@
         "titles":
         [
             "Was mache ich oder bin ich?",
-            "Meine Dienstleistungen",
-            "Preispläne",
+            "Dienstleistungen",
             "Kontakt Informationen",
             "In Kontakt Kommen",
-            "Meine lustigen Fakten",
-            "Meine Blogs",
-            "Meine Portfolio",
-            "Empfehlungen"
-        ],
-        "recommendations":
-        [
-            {
-                "id": 0,
-                "author":
-                {
-                    "name": "string",
-                    "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
-                    "description": "string"
-                },
-                "message": "string",
-                "rate": 80
-            }
+            "lustigen Fakten",
+            "Blogs",
+            "Portfolio",
+            "Lagerstätten",
+            "über mich"
         ],
         "my_blogs":
         [
@@ -607,7 +535,7 @@
                 "title": "Front-End Entwicklung",
                 "price": "99",
                 "a": "Hochwertiger Code",
-                "b": "React.js, Next.js, HTML",
+                "b": "ReactJS, NextJS, HTML",
                 "c": "Engagierte Unterstützung"
             },
             {
@@ -615,7 +543,7 @@
                 "title": "Back-End Entwicklung",
                 "price": "129",
                 "a": "Hochwertiger Code",
-                "b": "Node.js, NestJS, Deno.js",
+                "b": " NodeJS, NestJS, DenoJS",
                 "c": "Engagierte Unterstützung"
             },
             {
@@ -632,12 +560,12 @@
             {
                 "id": 0,
                 "title": "Front-End Entwicklung",
-                "description": "Schnelle und professionelle website front-end entwicklung mit React.js, Next.js und HTML"
+                "description": "Schnelle und professionelle website front-end entwicklung mit ReactJS, NextJS und HTML"
             },
             {
                 "id": 1,
                 "title": "Back-End Entwicklung",
-                "description": "Schnelle und professionelle website back-end entwicklung mit Express.js, NestJS und Next.js"
+                "description": "Schnelle und professionelle website back-end entwicklung mit Express.js, NestJS und NextJS"
             },
             {
                 "id": 2,
@@ -800,8 +728,8 @@
             "من اپلیکیشن دسکتاپ و اندروید توسعه میدهم.",
             "من رابط کاربری وب‌سایت هارا توسعه میدهم.",
             "من یک توسعه دهند JavaScript، TypeScript، PHP، C++ هستم.",
-            "من یک توسعه دهنده React.js، React Native و Next.js هستم.",
-            "من یک توسعه دهنده Node.js، Deno.js و NestJS هستم."
+            "من یک توسعه دهنده ReactJS، React Native و NextJS هستم.",
+            "من یک توسعه دهنده  NodeJS، DenoJS و NestJS هستم."
         ],
         "download_cv": "دانلود رزومه",
         "send_message": "ارسال پیام",
@@ -849,14 +777,14 @@
         "titles":
         [
             "من کی هستم و چکار میکنم؟",
-            "خدمات من",
-            "طرح های قیمت",
+            "خدمات",
             "اطلاعات تماس",
             "با من در تماس باش",
-            "حقایق جالب من",
-            "بلاگ های من",
-            "نمونه کار های من",
-            "نطرات همکاران و مشتریان"
+            "حقایق جالب درباره من",
+            "بلاگ ها",
+            "نمونه کار ها",
+            "مخازن",
+            "درباره من"
         ],
         "headers":
         [
@@ -872,20 +800,6 @@
             "توسعه اپلیکیشن",
             "توسعه ربات",
             "طراحی گرافیک"
-        ],
-        "recommendations":
-        [
-            {
-                "id": 0,
-                "author":
-                {
-                    "name": "string",
-                    "profile": "https://intelligentquantum.github.io/Images/IntelligentQuantum.jpg",
-                    "description": "string"
-                },
-                "message": "string",
-                "rate": 80
-            }
         ],
         "my_blogs":
         [
@@ -978,7 +892,7 @@
                 "title": "توسعه فرانت-اند",
                 "price": "19,000,000",
                 "a": "کد کیفیت بالا",
-                "b": "React.js, Next.js",
+                "b": "ReactJS, NextJS",
                 "c": "پشتیبانی اختصاصی"
             },
             {
@@ -986,7 +900,7 @@
                 "title": "توسعه بک-اند",
                 "price": "29,000,000",
                 "a": "کد کیفیت بالا",
-                "b": "Node.js, NestJS, Deno.js",
+                "b": " NodeJS, NestJS, DenoJS",
                 "c": "پشتیبانی اختصاصی"
             },
             {
@@ -1003,12 +917,12 @@
             {
                 "id": 0,
                 "title": "توسعه فرانت-اند",
-                "description": "توسعه سریع و بی نقص فرانت-اند وب‌سایت با React.js, Next.js و HTML"
+                "description": "توسعه سریع و بی نقص فرانت-اند وب‌سایت با ReactJS, NextJS و HTML"
             },
             {
                 "id": 1,
                 "title": "توسعه بک-اند",
-                "description": "توسعه سریع و بی نقص بک-اند وب‌سایت با Express.js، NestJS و Next.js"
+                "description": "توسعه سریع و بی نقص بک-اند وب‌سایت با Express.js، NestJS و NextJS"
             },
             {
                 "id": 2,

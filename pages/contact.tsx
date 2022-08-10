@@ -81,7 +81,7 @@ const Contact = (props: { content: IContent }) =>
                     <div className={stylesMain.mainBackground}/>
                     <div className='hr'/>
                     <section className={stylesContact.contact}>
-                        <h4 className='heading'>{props?.content?.titles[3]}</h4>
+                        <h4 className='heading'>{props?.content?.titles[2]}</h4>
                         <div className={stylesContact.contactInformation}>
                             <div className={stylesContact.contactInformationContent}>
                                 <div className={stylesContact.contactInformationContentPersonal}>
@@ -175,7 +175,7 @@ const Contact = (props: { content: IContent }) =>
                             </div>
                         </div>
                         <h4 className='heading'>
-                            {props?.content?.titles[4]}
+                            {props?.content?.titles[3]}
                         </h4>
                         <div className={stylesContact.contactInTouchParent}>
                             <div className={stylesContact.contactInTouch}>

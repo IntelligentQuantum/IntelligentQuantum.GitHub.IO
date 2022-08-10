@@ -1,32 +1,68 @@
-import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
-import { Navigation, Pagination } from 'swiper';
+import axios, { AxiosResponse } from 'axios';
+import Tooltip from '@tippyjs/react/headless';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ReactTypingEffect from 'react-typing-effect';
+import { Keyboard, Autoplay, Navigation, Pagination } from 'swiper';
 
-import type { IPlan } from '../interfaces/plan';
+import type { IOrgan } from '../interfaces/organ';
 import type { IService } from '../interfaces/service';
 import type { IContent } from '../interfaces/content';
-import type { IRecommendation } from '../interfaces/recommendation';
+import type { IRepository } from '../interfaces/repository';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'tippy.js/dist/tippy.css';
 import stylesHome from '../styles/pages/home.module.scss';
 import stylesMain from '../styles/components/main.module.scss';
 import stylesButtons from '../styles/components/button.module.scss';
 
 const Main = dynamic(() => import('../components/layouts/main/main.component'));
-const PlanCard = dynamic(() => import('../components/home/plan-card.component'));
 const ServiceCard = dynamic(() => import('../components/home/service-card.component'));
-const RecommendationCard = dynamic(() => import('../components/home/recommendation-card.component'));
+const RepositoriesCard = dynamic(() => import('../components/home/repository-card.component'));
 
 const Home = (props: { content: IContent }) =>
 {
+    const [organs, setOrgans] = useState<IOrgan[]>([]);
+    const [repositories, setRepositories] = useState<IRepository[]>([]);
+
+    const getRepositories = async () =>
+    {
+        await axios.get('/github/repositories')
+            .then((response: AxiosResponse) =>
+            {
+                setRepositories(response.data?.items);
+            })
+            .catch((error) =>
+            {
+                console.log(error);
+            });
+    }
+    const getOrgans = async () =>
+    {
+        await axios.get('/github/organs')
+            .then((response: AxiosResponse) =>
+            {
+                setOrgans(response.data?.items);
+            })
+            .catch((error) =>
+            {
+                console.log(error);
+            });
+    }
+
+    useEffect(() =>
+    {
+        getOrgans();
+        getRepositories();
+    }, []);
+
     return (
         <>
             <Head>
@@ -37,6 +73,7 @@ const Home = (props: { content: IContent }) =>
                 <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
                 <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
             </Head>
+
             <Main content={props?.content}>
                 <div className={stylesMain.mainContent}>
                     <div className={stylesMain.mainBackground}/>
@@ -125,6 +162,9 @@ const Home = (props: { content: IContent }) =>
                         </header>
                         <div className='hr'/>
                         <h4 className='heading'>
+                            {props?.content?.titles[8]}
+                        </h4>
+                        <h4 className='heading'>
                             {props?.content?.titles[1]}
                         </h4>
                         <div className={stylesHome.homeServices}>
@@ -137,36 +177,38 @@ const Home = (props: { content: IContent }) =>
                                     />
                                 )
                             }
-                        </div>
-                        <h4 className='heading'>
-                            {props?.content?.titles[2]}
-                        </h4>
-                        <div className={stylesHome.homePlans}>
                             {
-                                props?.content?.plans?.map((plan: IPlan) =>
-                                    <PlanCard
-                                        key={ plan?.id }
-                                        plan={ plan }
-                                        content={ props?.content}
-                                        text={ props?.content?.order_now }
+                                props?.content?.services?.map((service: IService) =>
+                                    <ServiceCard
+                                        key={ service?.id }
+                                        service={ service }
+                                        text={ props?.content?.read_more }
                                     />
                                 )
                             }
                         </div>
+
                         <h4 className='heading'>
-                            {props?.content?.titles[8]}
+                            {props?.content?.titles[7]}
                         </h4>
-                        <div className={stylesHome.homeRecommendations}>
+                        <div className={stylesHome.homeRepos}>
                             <Swiper
                                 navigation={true}
                                 modules={
                                     [
+                                        Keyboard,
+                                        Autoplay,
                                         Navigation,
                                         Pagination
                                     ]}
-                                pagination={
+                                keyboard={
                                     {
-                                        clickable: true
+                                        enabled: true,
+                                    }}
+                                autoplay={
+                                    {
+                                        delay: 2500,
+                                        disableOnInteraction: false
                                     }}
                                 breakpoints={
                                     {
@@ -188,13 +230,68 @@ const Home = (props: { content: IContent }) =>
                                     }}
                             >
                                 {
-                                    props?.content?.recommendations?.map((recommendation: IRecommendation) =>
+                                    repositories?.map((repository: IRepository) =>
                                         (
-                                            <SwiperSlide key={ recommendation?.id }>
-                                                <RecommendationCard
-                                                    language={ props?.content?.language }
-                                                    recommendation={ recommendation }
+                                            <SwiperSlide key={ repository?.node_id }>
+                                                <RepositoriesCard
+                                                    repository={ repository }
                                                 />
+                                            </SwiperSlide>
+                                        ))
+                                }
+                            </Swiper>
+                        </div>
+                        <div className={stylesHome.homeOrgans}>
+                            <Swiper
+                                modules={
+                                    [
+                                        Keyboard,
+                                        Autoplay
+                                    ]}
+                                keyboard={
+                                    {
+                                        enabled: true,
+                                    }}
+                                autoplay={
+                                    {
+                                        delay: 2500,
+                                        disableOnInteraction: false
+                                    }}
+                                breakpoints={
+                                    {
+                                        0:
+                                            {
+                                                slidesPerView: 1,
+                                                spaceBetween: 20
+                                            },
+                                        650:
+                                            {
+                                                slidesPerView: 2,
+                                                spaceBetween: 20
+                                            },
+                                        1400:
+                                            {
+                                                slidesPerView: 5,
+                                                spaceBetween: 20
+                                            }
+                                    }}
+                            >
+                                {
+                                    organs?.map((organ: IOrgan) =>
+                                        (
+                                            <SwiperSlide key={ organ.node_id }>
+                                                <Tooltip
+                                                    render={() =>
+                                                        (
+                                                            <span className={stylesHome.homeOrgansTooltip}>
+                                                                {organ?.login}
+                                                            </span>
+                                                        )}
+                                                >
+                                                    <a href={`https://github.com/${organ?.login}`} target='_blank' className={stylesHome.homeOrgansContent}>
+                                                        <img src={organ?.avatar_url} alt={organ?.login}/>
+                                                    </a>
+                                                </Tooltip>
                                             </SwiperSlide>
                                         ))
                                 }

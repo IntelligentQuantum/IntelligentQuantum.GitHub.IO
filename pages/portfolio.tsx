@@ -53,7 +53,7 @@ const Portfolio = (props: { content: IContent }) =>
                     <div className='hr'/>
                     <section className={stylesPortfolio.portfolio}>
                         <h4 className='heading'>
-                            {props?.content?.titles[7]}
+                            {props?.content?.titles[6]}
                         </h4>
                         <ul className='heading__small'>
                             <li data-active={tagPortfolio === 'all'} onClick={() =>

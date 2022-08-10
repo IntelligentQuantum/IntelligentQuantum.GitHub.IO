@@ -9,7 +9,7 @@
 </div>
 
 <p align="center">
-    Personal website that written in React.js & Next.js, Also its user interface design is like apps
+    Personal website that written in ReactJS & NextJS, Also its user interface design is like apps
 </p>
 
 <br/>
@@ -45,7 +45,7 @@
     <img src="https://img.shields.io/badge/TypeScript-323540?style=for-the-badge&logo=TypeScript&logoColor=5294E2" alt="JavaScript" style="border-radius:15px"/>
     <img src="https://img.shields.io/badge/SASS-323540?style=for-the-badge&logo=SASS&logoColor=5294E2" alt="SASS" style="border-radius:15px"/>
     <br/>
-    <img src="https://img.shields.io/badge/React.js-323540?style=for-the-badge&logo=React&logoColor=5294E2" alt="React.js" style="border-radius:15px"/>
+    <img src="https://img.shields.io/badge/ReactJS-323540?style=for-the-badge&logo=React&logoColor=5294E2" alt="ReactJS" style="border-radius:15px"/>
     <img src="https://img.shields.io/badge/Next.js-323540?style=for-the-badge&logo=Next.js&logoColor=5294E2" alt="Next.js" style="border-radius:15px"/>
     <img src="https://img.shields.io/badge/NPM-323540?style=for-the-badge&logo=NPM&logoColor=5294E2" alt="npm" style="border-radius:15px"/>
     <img src="https://img.shields.io/badge/Json DB-323540?style=for-the-badge&logo=Json&logoColor=5294E2" alt="React" style="border-radius:15px"/>

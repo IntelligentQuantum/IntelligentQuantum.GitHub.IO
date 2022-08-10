@@ -1,10 +1,17 @@
 import requestIp from 'request-ip';
 import NextCors from 'nextjs-cors';
+import rateLimit from '../../../lib/rate-limit';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { BrowserFingerprint } from 'browser_fingerprint';
 
 import dbConnect from '../../../middlewares/mongodb';
 import FingerprintEntity from '../../../entities/fingerprint.entity';
+
+const limiter = rateLimit(
+    {
+        interval: 60 * 1000,
+        uniqueTokenPerInterval: 500
+    });
 
 const fingerPrinter = new BrowserFingerprint(
     {
@@ -30,6 +37,8 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
 
     try
     {
+        await limiter.check(response, 10, 'CACHE_TOKEN');
+
         await dbConnect();
 
         const ip = requestIp.getClientIp(request);
@@ -42,8 +51,7 @@ export default async(request: NextApiRequest, response: NextApiResponse) =>
             const newFingerprint = new FingerprintEntity(
                 {
                     ip,
-                    fingerprint,
-                    createdAt: Date.now()
+                    fingerprint
                 }
             );
 

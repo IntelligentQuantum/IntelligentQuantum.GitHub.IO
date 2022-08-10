@@ -47,7 +47,7 @@ const Funny = (props: { content: IContent }) =>
                     <div className='hr'/>
                     <section className={stylesFunny.funny}>
                         <h4 className='heading'>
-                            {props?.content?.titles[5]}
+                            {props?.content?.titles[4]}
                         </h4>
                         {
                             props?.content?.funny_facts.map((fact: IFunny) =>

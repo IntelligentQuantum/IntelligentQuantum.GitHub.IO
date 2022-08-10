@@ -145,7 +145,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                     <div className={stylesAside.asideInformationSkillsBar}>
                         <div className={stylesAside.asideInformationSkillsInfo}>
                             <span>
-                                Node.js, NestJS, Deno.js
+                                 NodeJS, NestJS, DenoJS
                             </span>
                             <span>
                                 95%
@@ -158,7 +158,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                     <div className={stylesAside.asideInformationSkillsBar}>
                         <div className={stylesAside.asideInformationSkillsInfo}>
                             <span>
-                                React.js, Next.js
+                                ReactJS, NextJS
                             </span>
                             <span>
                                 95%
@@ -220,7 +220,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                Next.js, React.js, React Native
+                                NextJS, ReactJS, React Native
                             </span>
                         </li>
                         <li>
@@ -238,7 +238,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                Node.js, Deno.js, NestJS
+                                 NodeJS, DenoJS, NestJS
                             </span>
                         </li>
                         <li>
@@ -269,7 +269,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <li>
                             <Check />
                             <span>
-                                Git, GitLab
+                                Git, Github, GitLab
                             </span>
                         </li>
                         <li>
@@ -301,7 +301,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                 <a href='https://github.com/im-parsa' target='_blank' rel='noreferrer'>
                     <Github />
                 </a>
-                <a href='https://www.linkedin.com/in/im-parsa-144247223/' target='_blank' rel='noreferrer'>
+                <a href='https://www.linkedin.com/in/im-parsa/' target='_blank' rel='noreferrer'>
                     <Linkedin />
                 </a>
             </div>

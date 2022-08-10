@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, {AxiosResponse} from 'axios';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
@@ -27,7 +27,15 @@ const Aside = dynamic(() => import('../components/layouts/aside/aside.component'
 const Navbar = dynamic(() => import('../components/layouts/navbar/navbar.component'));
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'https://parsa-firoozi.ir/api/';
+
+if (process.env.NODE_ENV === 'development')
+{
+    axios.defaults.baseURL = 'http://localhost:3000/api/';
+}
+else if (process.env.NODE_ENV === 'production')
+{
+    axios.defaults.baseURL = 'https://parsa-firoozi.ir/api/';
+}
 
 interface CustomAppProps
 {
@@ -124,8 +132,15 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 
     useEffect(() =>
     {
-        axios.get('/fingerprint').then(() =>
-        { });
+        axios.get('/fingerprint')
+            .then((response) =>
+            {
+                console.log(response);
+            })
+            .catch((error) =>
+            {
+                console.log(error);
+            });
     });
 
     useEffect(() =>
