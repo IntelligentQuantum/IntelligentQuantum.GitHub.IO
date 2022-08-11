@@ -191,7 +191,12 @@ const Home = (props: { content: IContent }) =>
 
                                 <li className={stylesHome.homeAboutMeAsideItem}>
                                     <h5>
-                                        { props.content.services[0]?.title?.split(' ')[0] }:
+                                        { props.content.language === 'fa'
+                                            ?
+                                            props.content.services[0]?.title?.split(' ')[1]
+                                            :
+                                            props.content.services[0]?.title?.split(' ')[0]
+                                        }:
                                     </h5>
 
                                     <ul className={stylesHome.homeAboutMeAsideItemList}>
@@ -266,7 +271,12 @@ const Home = (props: { content: IContent }) =>
 
                                 <li className={stylesHome.homeAboutMeAsideItem}>
                                     <h5>
-                                        { props.content.services[1]?.title?.split(' ')[0] }:
+                                        { props.content.language === 'fa'
+                                            ?
+                                            props.content.services[1]?.title?.split(' ')[1]
+                                            :
+                                            props.content.services[1]?.title?.split(' ')[0]
+                                        }:
                                     </h5>
 
                                     <ul className={stylesHome.homeAboutMeAsideItemList}>
@@ -319,7 +329,12 @@ const Home = (props: { content: IContent }) =>
 
                                 <li className={stylesHome.homeAboutMeAsideItem}>
                                     <h5>
-                                        { props.content.services[2]?.title?.split(' ')[0] }:
+                                        { props.content.language === 'fa'
+                                            ?
+                                            props.content.services[2]?.title?.split(' ')[1]
+                                            :
+                                            props.content.services[2]?.title?.split(' ')[0]
+                                        }:
                                     </h5>
 
                                     <ul className={stylesHome.homeAboutMeAsideItemList}>

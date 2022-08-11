@@ -18,7 +18,7 @@
             "I am  NodeJS, DenoJS and NestJS developer."
         ],
         "technologies": "Frameworks and Technologies",
-        "about_me": "Parsa is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Laravel and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.",
+        "about_me": "Parsa is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.",
         "download_cv": "Download CV",
         "order_now": "Order Now",
         "source_code": "Source Code",
@@ -178,26 +178,26 @@
             {
                 "id": 0,
                 "title": "Front-End Development",
-                "description": "Front-End web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website."
+                "description": "Front-end web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website."
             },
             {
                 "id": 1,
                 "title": "Back-End Development",
-                "description": "Back-End development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
+                "description": "Back-end development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
             },
             {
                 "id": 2,
                 "title": "Cross-Platform Development",
-                "description": "Cross-Platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt."
+                "description": "Cross-platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt."
             },
             {
                 "id": 3,
                 "title": "Game Development",
-                "description": "Game development is the art of creating games and describes the design, development, and release of a game with Unreal, Frostbite and Unity engines."
+                "description": "Game Development is the art of creating games and describes the design, development and release of a game with Unreal, Frostbite and Unity engines. It may involve concept generation, design, build, test and release."
             },
             {
                 "id": 4,
-                "title": "Cyber Security Enthusiast",
+                "title": "Cyber-Security",
                 "description": "In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
             },
             {
@@ -212,9 +212,9 @@
                 "id": 0,
                 "title": "Paraffin",
                 "tag": "web_development",
-                "description": "Paraffin website for teaching and learning with great content in various categories (programming, graphic design, games, technology, tricks)",
+                "description": "Paraffin platform for teaching and learning with great content in various categories",
                 "link": "https://paraffin-tutorials.ir",
-                "image": "/static/images/portfolio/paraffin-web.png"
+                "image": "/static/images/portfolio/web-paraffin.png"
             },
             {
                 "id": 1,
@@ -222,23 +222,39 @@
                 "tag": "web_development",
                 "description": "Grow your Discord Business in Discords City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks",
                 "link": "https://discords.city",
-                "image": "/static/images/portfolio/discords-city-web.png"
+                "image": "/static/images/portfolio/web-discords-city.png"
             },
             {
                 "id": 2,
                 "title": "MrCheat",
                 "tag": "web_development",
-                "description": "Website for making, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games",
+                "description": "Creating, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games",
                 "link": "https://mrcheat.cc/",
-                "image": "/static/images/portfolio/mrcheat-web.jpg"
+                "image": "/static/images/portfolio/web-mrcheat.png"
+            },
+            {
+                "id": 17,
+                "title": "Skyro",
+                "tag": "web_development",
+                "description": "Skyro Travel Service Agency is always up-to-date and progressive. We made a pact to make your travel experience pleasant and beautiful.",
+                "link": "https://github.com/skyro-ir",
+                "image": "/static/images/portfolio/web-skyro.png"
+            },
+            {
+                "id": 18,
+                "title": "Infinity RP",
+                "tag": "web_development",
+                "description": "The Infinity Roleplay server is one of the newest and best RP servers in Iran at the moment, which is managed by experienced people on the FiveM platform.",
+                "link": "https://infinity-tm.net",
+                "image": "/static/images/portfolio/web-infinity.png"
             },
             {
                 "id": 3,
                 "title": "Nava",
                 "tag": "web_development",
-                "description": "Website of the first and best Persian language music and video player with quality and support for all formats along with Discord RPC",
+                "description": "First and best Persian language music and video player with quality and support for all formats along with Discord RPC",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava-web.png"
+                "image": "/static/images/portfolio/web-nava.png"
             },
             {
                 "id": 4,
@@ -246,23 +262,23 @@
                 "tag": "web_development",
                 "description": "Website and module for receiving random images in different categories and the ability to size and set limits and restrictions",
                 "link": "https://random-picjs.herokuapp.com",
-                "image": "/static/images/portfolio/random-pic_js-web.png"
+                "image": "/static/images/portfolio/web-random-pic-js.png"
             },
             {
                 "id": 5,
                 "title": "Headinfo",
                 "tag": "web_development",
-                "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day (Under Developing)",
+                "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day",
                 "link": "https://headinfo.ir",
-                "image": "/static/images/portfolio/headinfo-web.png"
+                "image": "/static/images/portfolio/web-headinfo.png"
             },
             {
                 "id": 6,
                 "title": "Dubist",
                 "tag": "graphic_design",
-                "description": "English, Persian, German language learning website with features such as flash card and ranking (Under Developing)",
+                "description": "English, Persian, German language learning website with features such as flash card and ranking",
                 "link": "/",
-                "image": "/static/images/portfolio/dubist-web.png"
+                "image": "/static/images/portfolio/web-dubist.png"
             },
             {
                 "id": 7,
@@ -270,15 +286,15 @@
                 "tag": "web_development",
                 "description": "The first open-source persian Discord API with high and unique quality and speed",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "image": "/static/images/portfolio/pda-web.png"
+                "image": "/static/images/portfolio/web-pda.png"
             },
             {
                 "id": 8,
                 "title": "LiveSoccer",
                 "tag": "web_development",
-                "description": "Website to see the table of the best and biggest football leagues along with the goal difference scores and the games played",
+                "description": "Observation and analysis the table of the best and biggest football leagues along with the goal difference scores and the games played",
                 "link": "https://livesoccer.herokuapp.com/",
-                "image": "/static/images/portfolio/livesoccer-web.png"
+                "image": "/static/images/portfolio/web-livesoccer.png"
             },
             {
                 "id": 9,
@@ -286,7 +302,7 @@
                 "tag": "web_development",
                 "description": "Website of Elite Discord Robot Programming Team with 2 officially verified Discord bots",
                 "link": "https://github.com/im-parsa/elite-website",
-                "image": "/static/images/portfolio/elite-web.png"
+                "image": "/static/images/portfolio/web-elite.png"
             },
             {
                 "id": 10,
@@ -294,7 +310,7 @@
                 "tag": "web_development",
                 "description": "Open-source personal website",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "image": "/static/images/portfolio/parsa-web.png"
+                "image": "/static/images/portfolio/web-parsa.png"
             },
             {
                 "id": 11,
@@ -302,7 +318,7 @@
                 "tag": "web_development",
                 "description": "Personal website for Mr. Shadmehr",
                 "link": "https://shadmehr.info",
-                "image": "/static/images/portfolio/shadmehr-web.png"
+                "image": "/static/images/portfolio/web-shadmehr.png"
             },
             {
                 "id": 12,
@@ -310,7 +326,7 @@
                 "tag": "app_development",
                 "description": "Desktop application for Linux/Windows/Mac for displaying YouTube videos and movies without filtering and high speed and download capability",
                 "link": "https://wintube.herokuapp.com",
-                "image": "/static/images/portfolio/wintube-app.png"
+                "image": "/static/images/portfolio/app-wintube.png"
             },
             {
                 "id": 13,
@@ -318,7 +334,7 @@
                 "tag": "app_development",
                 "description": "Video player with the support of all files, the ability of RCC, dedicated discord, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava_video_player-app.png"
+                "image": "/static/images/portfolio/app-nava-video-player.png"
             },
             {
                 "id": 14,
@@ -326,7 +342,7 @@
                 "tag": "app_development",
                 "description": "Music player with the support of all files, the ability of RPC, dedicated discord, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava_music_player-app.png"
+                "image": "/static/images/portfolio/app-nava-music-player.png"
             },
             {
                 "id": 15,
@@ -334,7 +350,7 @@
                 "tag": "robot_development",
                 "description": "First & Best persian music player bot in discord community",
                 "link": "https://github.com/SeTar-Bot",
-                "image": "/static/images/portfolio/setar-bot.png"
+                "image": "/static/images/portfolio/bot-setar.png"
             },
             {
                 "id": 16,
@@ -342,7 +358,7 @@
                 "tag": "robot_development",
                 "description": "Best persian security bot in discord community",
                 "link": "https://top.gg/bot/730584726401843221",
-                "image": "/static/images/portfolio/elite-bot.png"
+                "image": "/static/images/portfolio/bot-elite.png"
             }
         ]
     },
@@ -356,7 +372,7 @@
             "Grafikdesigner"
         ],
         "technologies": "Frameworks und Technologien",
-        "about_me": "Parsa ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrung in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Laravel und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native.",
+        "about_me": "Parsa ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrung in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Poco und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native.",
         "currency": "€",
         "send_message": "Nachricht Senden",
         "source_code": "Quell Code",
@@ -524,33 +540,33 @@
         [
             {
                 "id": 0,
-                "title": "Front-End Development",
-                "description": "Front-End web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website."
+                "title": "Front-End Entwicklung",
+                "description": "Front-End-Webentwicklung ist die Entwicklung der grafischen Benutzeroberfläche einer Website durch die Verwendung von HTML, ReactJS und NextJS, damit Benutzer diese Website anzeigen und mit ihr interagieren können."
             },
             {
                 "id": 1,
-                "title": "Back-End Development",
-                "description": "Back-End development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
+                "title": "Back-End Entwicklung",
+                "description": "Back-End-Entwicklung bedeutet, an serverseitiger Software zu arbeiten, die sich auf alles konzentriert, was Sie auf einer Website basierend auf NodeJS, DenoJS, NestJS, NextJS und Poco nicht sehen können."
             },
             {
                 "id": 2,
-                "title": "Cross-Platform Development",
-                "description": "Cross-Platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt."
+                "title": "Plattformübergreifende Entwicklung",
+                "description": "Plattformübergreifende Entwicklung ist die Praxis der Entwicklung von Softwareprodukten oder -diensten für mehrere Plattformen wie Windows, Linux, macOS, Android, iOS oder Softwareumgebungen auf Basis von Electron, React Native und Qt."
             },
             {
                 "id": 3,
-                "title": "Game Development",
-                "description": "Game development is the art of creating games and describes the design, development, and release of a game with Unreal, Frostbite and Unity engines."
+                "title": "Spielentwicklung",
+                "description": "Spieleentwicklung ist die Kunst des Erstellens von Spielen und beschreibt das Design, die Entwicklung und die Veröffentlichung eines Spiels mit Unreal-, Frostbite- und Unity-Engines. Es kann die Konzepterstellung, das Design, den Aufbau, das Testen und die Freigabe umfassen."
             },
             {
                 "id": 4,
-                "title": "Cyber Security Enthusiast",
-                "description": "In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
+                "title": "Internet-Sicherheit",
+                "description": "In der digitalen Welt sind unsere Daten sicher, solange wir uns dessen bewusst sind. Die meisten Hacks, die passieren, sind in erster Linie Social-Engineering-Angriffe, bei denen die menschliche Psychologie ausgenutzt wird, indem Daten verwendet werden, die bewusst von Menschen in sozialen Medien bereitgestellt werden."
             },
             {
                 "id": 5,
-                "title": "Search Engine Optimization",
-                "description": "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."
+                "title": "Suchmaschinenoptimierung",
+                "description": "Suchmaschinenoptimierung ist der Prozess der Verbesserung der Qualität und Quantität des Website-Traffics auf eine Website oder eine Webseite von Suchmaschinen. SEO zielt eher auf unbezahlten Verkehr ab als auf direkten oder bezahlten Verkehr."
             }
         ],
         "my_portfolio":
@@ -559,9 +575,9 @@
                 "id": 0,
                 "title": "Paraffin",
                 "tag": "web_development",
-                "description": "Paraffin-Website zum Lehren und Lernen mit tollen Inhalten in verschiedenen Kategorien (Programmierung, Grafikdesign, Spiele, Technik, Tricks)",
+                "description": "Paraffin-Plattform zum Lehren und Lernen mit tollen Inhalten in verschiedenen Kategorien",
                 "link": "https://paraffin-tutorials.ir",
-                "image": "/static/images/portfolio/paraffin-web.png"
+                "image": "/static/images/portfolio/web-paraffin.png"
             },
             {
                 "id": 1,
@@ -569,23 +585,39 @@
                 "tag": "web_development",
                 "description": "Erweitern Sie Ihr Discords Geschäft in Discords City Sie können Ihren Bot oder Server hinzufügen, um Ihr Geschäft auszubauen, und unsere Blogs lesen, um über alle Discord Aktualisierung und Tricks auf dem Laufenden zu bleiben",
                 "link": "https://discords.city",
-                "image": "/static/images/portfolio/discords-city-web.png"
+                "image": "/static/images/portfolio/web-discords-city.png"
             },
             {
                 "id": 2,
                 "title": "MrCheat",
                 "tag": "web_development",
-                "description": "Website zum Erstellen, Entwickeln und Verkaufen aller Arten von Cheats und Cheats in verschiedenen Spielen wie Counter, Zola, CS Go und den meisten anderen Shooter-Spielen (im Aufbau - Teammitglied)",
+                "description": "Erstellen, Entwickeln und Verkaufen aller Arten von Cheats und Cheats in verschiedenen Spielen wie Counter, Zola, CS Go und den meisten anderen Shooter-Spielen",
                 "link": "https://mrcheat.cc/",
-                "image": "/static/images/portfolio/mrcheat-web.jpg"
+                "image": "/static/images/portfolio/web-mrcheat.png"
+            },
+            {
+                "id": 17,
+                "title": "Skyro",
+                "tag": "web_development",
+                "description": "Skyro Travel Service Agency ist immer aktuell und fortschrittlich. Wir haben einen Pakt geschlossen, um Ihr Reiseerlebnis angenehm und schön zu gestalten.",
+                "link": "https://github.com/skyro-ir",
+                "image": "/static/images/portfolio/web-skyro.png"
+            },
+            {
+                "id": 18,
+                "title": "Infinity RP",
+                "tag": "web_development",
+                "description": "Der Infinity Roleplay-Server ist derzeit einer der neuesten und besten RP-Server im Iran, der von erfahrenen Personen auf der FiveM-Plattform verwaltet wird.",
+                "link": "https://infinity-tm.net",
+                "image": "/static/images/portfolio/web-infinity.png"
             },
             {
                 "id": 3,
                 "title": "Nava",
                 "tag": "web_development",
-                "description": "Website des ersten und besten persischen Musik- und Videoplayers mit Qualität und Unterstützung für alle Formate zusammen mit RPC Discord",
+                "description": "Ersten und besten persischen Musik- und Videoplayers mit Qualität und Unterstützung für alle Formate zusammen mit RPC Discord",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava-web.png"
+                "image": "/static/images/portfolio/web-nava.png"
             },
             {
                 "id": 4,
@@ -593,23 +625,23 @@
                 "tag": "web_development",
                 "description": "Website und Anwendungsmodul zum Empfangen von Zufallsbildern in verschiedenen Kategorien und der Möglichkeit, Größen und Grenzen und Beschränkungen festzulegen",
                 "link": "https://random-picjs.herokuapp.com",
-                "image": "/static/images/portfolio/random-pic_js-web.png"
+                "image": "/static/images/portfolio/web-random-pic-js.png"
             },
             {
                 "id": 5,
                 "title": "Headinfo",
                 "tag": "web_development",
-                "description": "Website für alltägliche Aufgaben und leicht zu erledigende Aufgaben, mit denen Sie sich tagsüber viel beschäftigen (Aktualisierung)",
+                "description": "Website für alltägliche Aufgaben und leicht zu erledigende Aufgaben, mit denen Sie sich tagsüber viel beschäftigen",
                 "link": "https://headinfo.ir",
-                "image": "/static/images/portfolio/headinfo-web.png"
+                "image": "/static/images/portfolio/web-headinfo.png"
             },
             {
                 "id": 6,
                 "title": "Dubist",
                 "tag": "graphic_design",
-                "description": "Englisch, Persisch, Deutsch-Sprachlernwebsite mit Funktionen wie Lernkarte und Ranking (im Aufbau - Teammitglied)",
+                "description": "Englisch, Persisch, Deutsch-Sprachlernwebsite mit Funktionen wie Lernkarte und Ranking",
                 "link": "/",
-                "image": "/static/images/portfolio/dubist-web.png"
+                "image": "/static/images/portfolio/web-dubist.png"
             },
             {
                 "id": 7,
@@ -617,23 +649,23 @@
                 "tag": "web_development",
                 "description": "Der erste dediziert persischsprachige Webservice in Form von Open Source mit hoher Qualität und beispielloser Geschwindigkeit",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "image": "/static/images/portfolio/pda-web.png"
+                "image": "/static/images/portfolio/web-pda.png"
             },
             {
                 "id": 8,
                 "title": "LiveSoccer",
                 "tag": "web_development",
-                "description": "Website, um die Tabelle der besten und größten Fußballligen mit Tordifferenzergebnissen und gespielten Spielen zu sehen",
+                "description": "Beobachtung und analyse Tabelle der besten und größten Fußballligen mit Tordifferenzergebnissen und gespielten Spielen zu sehen",
                 "link": "https://livesoccer.herokuapp.com/",
-                "image": "/static/images/portfolio/livesoccer-web.png"
+                "image": "/static/images/portfolio/web-livesoccer.png"
             },
             {
                 "id": 9,
                 "title": "Elite",
                 "tag": "web_development",
-                "description": "Website der Elite Discord Robot Programming Company mit 2 offiziell verifizierten Discord-Bots",
+                "description": "Elite discord bot programming company mit 2 offiziell verifizierten Discord-Bots",
                 "link": "https://github.com/im-parsa/elite-website",
-                "image": "/static/images/portfolio/elite-web.png"
+                "image": "/static/images/portfolio/web-elite.png"
             },
             {
                 "id": 10,
@@ -641,7 +673,7 @@
                 "tag": "web_development",
                 "description": "Open-Source-persönliche Website",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "image": "/static/images/portfolio/parsa-web.png"
+                "image": "/static/images/portfolio/web-parsa.png"
             },
             {
                 "id": 11,
@@ -649,15 +681,15 @@
                 "tag": "web_development",
                 "description": "Persönliche Website für Herrn Shadmehr",
                 "link": "https://shadmehr.info",
-                "image": "/static/images/portfolio/shadmehr-web.png"
+                "image": "/static/images/portfolio/web-shadmehr.png"
             },
             {
                 "id": 12,
                 "title": "Wintube",
                 "tag": "app_development",
-                "description": "Desktop-Anwendung mit Linux / Windows / Mac-Unterstützung zum Anzeigen von YouTube-Videos und -Filmen ohne Filterung und Hochgeschwindigkeits- und Download-Fähigkeit (Teammitglied)",
+                "description": "Desktop-Anwendung mit Linux / Windows / Mac-Unterstützung zum Anzeigen von YouTube-Videos und -Filmen ohne Filterung und Hochgeschwindigkeits- und Download-Fähigkeit",
                 "link": "https://wintube.herokuapp.com",
-                "image": "/static/images/portfolio/wintube-app.png"
+                "image": "/static/images/portfolio/app-wintube.png"
             },
             {
                 "id": 13,
@@ -665,7 +697,7 @@
                 "tag": "app_development",
                 "description": "Video mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava_video_player-app.png"
+                "image": "/static/images/portfolio/app-nava-video-player.png"
             },
             {
                 "id": 14,
@@ -673,15 +705,15 @@
                 "tag": "app_development",
                 "description": "Musik mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava_music_player-app.png"
+                "image": "/static/images/portfolio/app-nava-music-player.png"
             },
             {
                 "id": 15,
                 "title": "Setar",
                 "tag": "robot_development",
-                "description": "Der erste und beste offizielle Songplayer und verifizierte Zwietracht (Teammitglied)",
+                "description": "Der erste und beste offizielle Songplayer und verifizierte Zwietracht",
                 "link": "https://github.com/SeTar-Bot",
-                "image": "/static/images/portfolio/setar-bot.png"
+                "image": "/static/images/portfolio/bot-setar.png"
             },
             {
                 "id": 16,
@@ -689,7 +721,7 @@
                 "tag": "robot_development",
                 "description": "Der beste und beliebteste Roboter für Sicherheit und Sicherheit der offiziellen und verifizierten offiziellen Zwietracht",
                 "link": "https://top.gg/bot/730584726401843221",
-                "image": "/static/images/portfolio/elite-bot.png"
+                "image": "/static/images/portfolio/bot-elite.png"
             }
         ]
     },
@@ -712,7 +744,7 @@
             "من یک توسعه دهنده  NodeJS، DenoJS و NestJS هستم."
         ],
         "technologies": "فریم ورک ها و فناوری ها",
-        "about_me": "پارسا یکی از علاقه مندان بزرگ مشکلات حل نشده و یک مهندس نرم افزار بسیار ماهر با بیش از پنج سال تجربه در زمینه توسعه وب، موبایل و نرم افزار است که برای شرکت ها از استارتاپ های کوچک تا بزرگ کار می کند. او از کار با مردم لذت می برد، از تغییرات نمی ترسد، در مهارت های بین فردی بسیار خوب است و همیشه پذیرای چالش های جدید است. او تجربه کار با PHP و C++ و همچنین فریمورک\u200Cهای آن\u200Cها مانند Laravel و Qt را دارد، اما روی فناوری\u200Cهای مرتبط با جاوا اسکریپت مانند Typescript، NodeJS، DenoJS، NestJS، NextJS، React و React Native تمرکز دارد.",
+        "about_me": "پارسا یکی از علاقه مندان بزرگ مشکلات حل نشده و یک مهندس نرم افزار بسیار ماهر با بیش از پنج سال تجربه در زمینه توسعه وب، موبایل و نرم افزار است که برای شرکت ها از استارتاپ های کوچک تا بزرگ کار می کند. او از کار با مردم لذت می برد، از تغییرات نمی ترسد، در مهارت های بین فردی بسیار خوب است و همیشه پذیرای چالش های جدید است. او تجربه کار با PHP و C++ و همچنین فریمورک\u200Cهای آن\u200Cها مانند Poco و Qt را دارد، اما روی فناوری\u200Cهای مرتبط با جاوا اسکریپت مانند Typescript، NodeJS، DenoJS، NestJS، NextJS، React و React Native تمرکز دارد.",
         "download_cv": "دانلود رزومه",
         "send_message": "ارسال پیام",
         "source_code": "منبع کد",
@@ -871,33 +903,33 @@
         [
             {
                 "id": 0,
-                "title": "Front-End Development",
-                "description": "Front-End web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website."
+                "title": "توسعه فرانت-اند",
+                "description": "توسعه وب فرانت-اند توسعه رابط کاربری گرافیکی یک وب‌سایت با استفاده از HTML، ReactJS و NextJS است تا کاربران بتوانند آن وب‌سایت را مشاهده کرده و با آن تعامل داشته باشند."
             },
             {
                 "id": 1,
-                "title": "Back-End Development",
-                "description": "Back-End development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
+                "title": "توسعه بک-اند",
+                "description": "توسعه بک-اند به معنای کار بر روی نرم\u200Cافزار سمت سرور است که بر روی هر چیزی که نمی\u200Cتوانید در یک وب\u200Cسایت ببینید مبتنی بر NodeJS، DenoJS، NestJS، NextJS و Poco."
             },
             {
                 "id": 2,
-                "title": "Cross-Platform Development",
-                "description": "Cross-Platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt."
+                "title": "توسعه کراس-پلتفرم",
+                "description": "توسعه کراس-پلتفرم تمرین توسعه محصولات یا خدمات نرم افزاری برای پلتفرم های متعدد مانند ویندوز، لینوکس، macOS، Android، iOS یا محیط های نرم افزاری مبتنی بر Electron، React Native و Qt است."
             },
             {
                 "id": 3,
-                "title": "Game Development",
-                "description": "Game development is the art of creating games and describes the design, development, and release of a game with Unreal, Frostbite and Unity engines."
+                "title": "توسعه بازی",
+                "description": "توسعه بازی هنر ساخت بازی است و طراحی، توسعه و انتشار یک بازی با موتورهای Unreal، Frostbite و Unity را توصیف می کند. ممکن است شامل تولید مفهوم، طراحی، ساخت، آزمایش و انتشار باشد."
             },
             {
                 "id": 4,
-                "title": "Cyber Security Enthusiast",
-                "description": "In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
+                "title": "امنیت سایبری",
+                "description": "در دنیای دیجیتال، تا زمانی که ما آگاه باشیم، داده های ما امن هستند. بیشتر هک\u200Cهایی که اتفاق می\u200Cافتند، عمدتاً حملات مهندسی اجتماعی هستند که در آن\u200Cها از روان\u200Cشناسی انسان با استفاده از داده\u200Cهایی که آگاهانه توسط افراد در رسانه\u200Cهای اجتماعی قرار می\u200Cگیرد، سوء استفاده می\u200Cشود."
             },
             {
                 "id": 5,
-                "title": "Search Engine Optimization",
-                "description": "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."
+                "title": "بهینه سازی موتورهای جستجو",
+                "description": "بهینه سازی موتورهای جستجو فرآیند بهبود کیفیت و کمیت ترافیک وب‌سایت به یک وب‌سایت یا یک صفحه وب از موتورهای جستجو است. سئو به جای ترافیک مستقیم یا ترافیک پولی، ترافیک بدون پرداخت را هدف قرار می دهد."
             }
         ],
         "my_portfolio":
@@ -906,33 +938,49 @@
                 "id": 0,
                 "title": "پارافین",
                 "tag": "web_development",
-                "description": "پارافین وب‌سایت آموزش و یادگیری با مطالب فوق العاده در دسته بندی ها مختلف (برنامه نویسی، طراحی گرافیک، بازی، تکنولوژی، ترفند)",
+                "description": "پارافین پلتفرم آموزش و یادگیری با مطالب فوق العاده در دسته بندی ها مختلف (برنامه نویسی، طراحی گرافیک، بازی، تکنولوژی، ترفند)",
                 "link": "https://paraffin-tutorials.ir",
-                "image": "/static/images/portfolio/paraffin-web.png"
+                "image": "/static/images/portfolio/web-paraffin.png"
             },
             {
                 "id": 1,
                 "title": "دیسکوردز سیتی",
                 "tag": "web_development",
-                "description": "وب‌سایتی برای کاربران کامینیوتی دیسکورد که سرور، ربات یا اکانت خودشان را در آن ثبت نام کنند و در اکسپلور ما دیده شوند تا ممبر های بیشتری بدست بیاورند و صفحه بخصوص خود را داشته باشند",
+                "description": "پلتفرمی برای کاربران کامینیوتی دیسکورد که سرور، ربات یا اکانت خودشان را در آن ثبت نام کنند و در اکسپلور ما دیده شوند تا ممبر های بیشتری بدست بیاورند و صفحه بخصوص خود را داشته باشند",
                 "link": "https://discords.city",
-                "image": "/static/images/portfolio/discords-city-web.png"
+                "image": "/static/images/portfolio/web-discords-city.png"
             },
             {
                 "id": 2,
                 "title": "MrCheat",
                 "tag": "web_development",
-                "description": "وب‌سایت ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت)",
+                "description": "ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت)",
                 "link": "https://mrcheat.cc/",
-                "image": "/static/images/portfolio/mrcheat-web.jpg"
+                "image": "/static/images/portfolio/web-mrcheat.png"
+            },
+            {
+                "id": 17,
+                "title": "اسکای\u200Cرو",
+                "tag": "web_development",
+                "description": "آژانس خدمات سفر اسکای رو همیشه بروز و پیشرو. ما پیمان بستیم تا تجربه سفر را برایتان دلنشین و زیبا رقم بزنیم.",
+                "link": "https://github.com/skyro-ir",
+                "image": "/static/images/portfolio/web-skyro.png"
+            },
+            {
+                "id": 18,
+                "title": "Infinity RP",
+                "tag": "web_development",
+                "description": "سرور Infinity Roleplay یکی از جدیدترین و بهترین سرورهای RP در حال حاضر ایران است که توسط افراد با تجربه در پلتفرم FiveM مدیریت می شود.",
+                "link": "https://infinity-tm.net",
+                "image": "/static/images/portfolio/web-infinity.png"
             },
             {
                 "id": 3,
                 "title": "نوآ",
                 "tag": "web_development",
-                "description": "وب سایت اولین و برترین موزیک و ویدیو پلیر فارسی زبان با کیفیت و پشتیبانی تمامی فرمت ها به همراه آر پی سی دیسکورد",
+                "description": "اولین و برترین موزیک و ویدیو پلیر فارسی زبان با کیفیت و پشتیبانی تمامی فرمت ها به همراه آر پی سی دیسکورد",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava-web.png"
+                "image": "/static/images/portfolio/web-nava.png"
             },
             {
                 "id": 4,
@@ -940,7 +988,7 @@
                 "tag": "web_development",
                 "description": "وب‌سایت و ماژولی کاربردی برای دریافت تصاویر تصادفی در دسته بندی های مختلف و قابلیت سایز بندی و گذاشتن لیمیت و محدودیت",
                 "link": "https://random-picjs.herokuapp.com",
-                "image": "/static/images/portfolio/random-pic_js-web.png"
+                "image": "/static/images/portfolio/web-random-pic-js.png"
             },
             {
                 "id": 5,
@@ -948,15 +996,15 @@
                 "tag": "web_development",
                 "description": "وب‌سایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (در دست ساخت)",
                 "link": "https://headinfo.ir",
-                "image": "/static/images/portfolio/headinfo-web.png"
+                "image": "/static/images/portfolio/web-headinfo.png"
             },
             {
                 "id": 6,
                 "title": "Dubist",
                 "tag": "graphic_design",
-                "description": "وب‌سایت آموزش زبان انگلیسی، فارسی، آلمانی به همراه قابلیت هایی نظیر فلش کارت و رنک بندی (در دست ساخت)",
+                "description": "آموزش زبان انگلیسی، فارسی، آلمانی به همراه قابلیت هایی نظیر فلش کارت و رنک بندی (در دست ساخت)",
                 "link": "/",
-                "image": "/static/images/portfolio/dubist-web.png"
+                "image": "/static/images/portfolio/web-dubist.png"
             },
             {
                 "id": 7,
@@ -964,23 +1012,23 @@
                 "tag": "web_development",
                 "description": "اولین وب سرویس اختصاصی فارسی زبان دیسکورد به صورت اوپن سورس با کیفیت و سرعتی بالا و بی نظیر",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "image": "/static/images/portfolio/pda-web.png"
+                "image": "/static/images/portfolio/web-pda.png"
             },
             {
                 "id": 8,
                 "title": "LiveSoccer",
                 "tag": "web_development",
-                "description": "وب‌سایتی برای دیدن جدول برترین و بزرگ ترین لیگ های فوتبال به همراه امتیازات تفاضل گل و بازی های انجام شده",
+                "description": "مشاهده و آنالیز جدول برترین و بزرگ ترین لیگ های فوتبال به همراه امتیازات تفاضل گل و بازی های انجام شده",
                 "link": "https://livesoccer.herokuapp.com/",
-                "image": "/static/images/portfolio/livesoccer-web.png"
+                "image": "/static/images/portfolio/web-livesoccer.png"
             },
             {
                 "id": 9,
                 "title": "Elite",
                 "tag": "web_development",
-                "description": "وب‌سایت شرکت الایت تیم برنامه نویسی ربات های دیسکورد با ۲ بات وریفای شده رسمی دیسکورد",
+                "description": "شرکت الایت تیم برنامه نویسی ربات های دیسکورد با ۲ بات وریفای شده رسمی دیسکورد",
                 "link": "https://github.com/im-parsa/elite-website",
-                "image": "/static/images/portfolio/elite-web.png"
+                "image": "/static/images/portfolio/web-elite.png"
             },
             {
                 "id": 10,
@@ -988,7 +1036,7 @@
                 "tag": "web_development",
                 "description": "وب‌سایت شخصی اوپن سورس",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "image": "/static/images/portfolio/parsa-web.png"
+                "image": "/static/images/portfolio/web-parsa.png"
             },
             {
                 "id": 11,
@@ -996,7 +1044,7 @@
                 "tag": "web_development",
                 "description": "وب‌سایت شخصی برای آقای شادمهر",
                 "link": "https://shadmehr.info",
-                "image": "/static/images/portfolio/shadmehr-web.png"
+                "image": "/static/images/portfolio/web-shadmehr.png"
             },
             {
                 "id": 12,
@@ -1004,7 +1052,7 @@
                 "tag": "app_development",
                 "description": "اپلیکیشنی برای دسکتاپ قابلیت پشتیبانی لینوکس/ویندوز/مک برای نمایش ویدیو و فیلم های یوتیوب بدون فیلتر و سرعت بالا و قبالیت دانلود",
                 "link": "https://wintube.herokuapp.com",
-                "image": "/static/images/portfolio/wintube-app.png"
+                "image": "/static/images/portfolio/app-wintube.png"
             },
             {
                 "id": 13,
@@ -1012,7 +1060,7 @@
                 "tag": "app_development",
                 "description": "پخش کننده ویدیو و فیلم با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava_video_player-app.png"
+                "image": "/static/images/portfolio/app-nava-video-player.png"
             },
             {
                 "id": 15,
@@ -1020,7 +1068,7 @@
                 "tag": "app_development",
                 "description": "پخش کننده موزیک و آهنگ با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/nava_music_player-app.png"
+                "image": "/static/images/portfolio/app-nava-music-player.png"
             },
             {
                 "id": 16,
@@ -1028,7 +1076,7 @@
                 "tag": "robot_development",
                 "description": "اولین و برترین ربات پخش کننده آهنگ و وریفای شده رسمی دیسکورد",
                 "link": "https://github.com/SeTar-Bot",
-                "image": "/static/images/portfolio/setar-bot.png"
+                "image": "/static/images/portfolio/bot-setar.png"
             },
             {
                 "id": 17,
@@ -1036,7 +1084,7 @@
                 "tag": "robot_development",
                 "description": "برترین و محبوب ترین ربات سکوریتی و امنیت سرور و وریفای شده رسمی دیسکورد",
                 "link": "https://top.gg/bot/730584726401843221",
-                "image": "/static/images/portfolio/elite-bot.png"
+                "image": "/static/images/portfolio/bot-elite.png"
             }
         ]
     }

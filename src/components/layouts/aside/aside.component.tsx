@@ -38,7 +38,7 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                 <div className={stylesAside.asideUserProfile}>
                     <Image
                         src={Profilo}
-                        alt='im-parsa - Parsa Firoozi - Portfolio'
+                        alt='Parsa Firoozi'
                         className={stylesAside.asideUserProfile}
                         layout='intrinsic'
                         width={100}
@@ -195,6 +195,19 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         </div>
                         <div className={stylesAside.asideInformationSkillsProgress}>
                             <span style={{ maxWidth: '95%' }}/>
+                        </div>
+                    </div>
+                    <div className={stylesAside.asideInformationSkillsBar}>
+                        <div className={stylesAside.asideInformationSkillsInfo}>
+                            <span>
+                                C++, Poco, Qt
+                            </span>
+                            <span>
+                                35%
+                            </span>
+                        </div>
+                        <div className={stylesAside.asideInformationSkillsProgress}>
+                            <span style={{ maxWidth: '35%' }}/>
                         </div>
                     </div>
                     <div className={stylesAside.asideInformationSkillsBar}>
