@@ -1,13 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
+import { BsArrowsFullscreen } from 'react-icons/bs';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { setImagePortfolio } from '../../app/portfolio/portfolio.actions';
 
 import stylesPortfolio from '../../styles/pages/portfolio.module.scss';
-
-import ArrowsFullscreen from '../../../public/static/icons/icon-arrows_fullscreen.svg';
 
 const ButtonSecondary = dynamic(() => import('../button/button-secondary.component'));
 
@@ -25,23 +24,27 @@ const PortfolioCard = (props: { text: string, portfolio: { image: string, title:
                         {
                             dispatch(setImagePortfolio(true, props.portfolio?.image, props.portfolio?.title));
                         }}
-                        src={props.portfolio?.image}
-                        alt={props.portfolio?.title}
+                        src={ props.portfolio?.image }
+                        alt={ props.portfolio?.title }
                         layout='fill'
                     />
+
                     <i onClick={() =>
                     {
                         dispatch(setImagePortfolio(true, props.portfolio?.image, props.portfolio?.title));
                     }}>
-                        <ArrowsFullscreen />
+                        <BsArrowsFullscreen size={17}/>
                     </i>
+
                     <div className={stylesPortfolio.portfolioItemBox}>
                         <h2>
-                            {props.portfolio?.title}
+                            { props.portfolio?.title }
                         </h2>
+
                         <p>
-                            {props.portfolio?.description}
+                            { props.portfolio?.description }
                         </p>
+
                         <ButtonSecondary
                             a={true}
                             link={props.portfolio?.link}

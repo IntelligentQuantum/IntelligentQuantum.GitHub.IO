@@ -3,13 +3,16 @@
     height: auto;
     width: 100%;
 
-    &Header
+    &Box
     {
         position: relative;
+
         padding: 0 3rem;
+        max-width: calc(100vw - 38rem);
 
         @media only screen and (max-width: 1000px)
         {
+            max-width: 100vw;
             padding: 1.5rem;
         }
 
@@ -19,13 +22,14 @@
             justify-content: space-between;
 
             position: relative;
+
             border-radius: 1rem;
             margin-bottom: 8rem;
             background-position: center;
             background-size: cover;
             width: 100%;
             height: 38rem;
-            padding: 6rem 3rem 0 6rem;
+            padding: 0 6rem;
 
             &[data-fact_type="football"]
             {
@@ -87,244 +91,126 @@
                 margin: 0;
             }
 
-            & h1
-            {
-                color: var(--color-base-text-bolder);
-                font-size: 4rem;
-
-                @media only screen and (max-width: 1400px)
-                {
-                    font-size: 3rem;
-                }
-            }
-
-            & p
-            {
-                margin-bottom: 3rem;
-            }
-
             &Box
             {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 4rem;
+
+                padding: 6rem 0;
                 width: 55%;
 
-                @media only screen and (max-width: 1300px)
+                &Title
                 {
-                    width: 45%;
+                    color: var(--color-base-text-bolder);
+                    font-size: 4rem;
+
+                    @media only screen and (max-width: 1400px)
+                    {
+                        font-size: 3rem;
+                    }
                 }
 
-                @media only screen and (max-width: 1200px)
+                &Description
                 {
-                    width: 100%;
-                }
-            }
+                    color: var(--color-base-text-bold);
+                    font-size: 2rem;
+                    font-weight: 400;
 
-            &Description
-            {
-                color: var(--color-base-text-bold);
-                font-size: 2rem;
-                font-weight: 400;
-                display: flex;
-                margin: auto auto 0;
-
-                @media only screen and (max-width: 1400px)
-                {
-                    margin-bottom: 4rem;
-                    font-size: 1.5rem;
+                    @media only screen and (max-width: 1400px)
+                    {
+                        margin-bottom: 4rem;
+                        font-size: 1.5rem;
+                    }
                 }
             }
 
             &Images
             {
-                width: 40%;
-                position: relative;
-                bottom: 0;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+
+                position: absolute;
                 right: 0;
-                height: auto;
+                bottom: 0;
 
-                &Background
+                padding-right: 3rem;
+                width: 45%;
+                height: 120%;
+                overflow: hidden;
+
+                & > span
                 {
-                    position: absolute;
-                    right: 0;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+
+                    position: relative;
                     bottom: 0;
-                    width: 100%;
-                    height: 100%;
 
-                    &Two,
-                    &Three,
-                    &Four
+                    height: 42rem;
+                    width: auto;
+                    margin-left: -14.5rem;
+                    margin-bottom: 0;
+                    transition: all .2s;
+                    cursor: pointer;
+
+                    & *
                     {
-                        max-width: 31rem;
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        transition: 0.4s ease-in-out;
-                        z-index: 92;
-
-                        @media only screen and (max-width: 1400px)
-                        {
-                            max-width: 80%;
-                        }
+                        overflow: visible !important;
                     }
 
-                    &Three,
-                    &Four
+                    & img
                     {
-                        right: 0 !important;
-                        max-width: 40rem;
-
-                        @media only screen and (max-width: 1400px)
-                        {
-                            max-width: 90%;
-                        }
+                        transition: all .2s;
+                        filter: drop-shadow(50px 20px 7px rgba(0, 0, 0, 0.5));
                     }
 
-                    &Four
+                    & > span
                     {
-                        margin-bottom: 1rem;
+                        transition: all .2s;
                     }
 
-                    &One
+                    &:nth-child(1)
                     {
-                        filter: blur(3px);
-                        max-width: 29rem;
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        transition: 0.4s ease-in-out;
-                        z-index: 92;
-
-                        &[data-image="three"]
-                        {
-                            max-width: 24rem;
-                        }
-
-                        @media only screen and (max-width: 1400px)
-                        {
-                            max-width: 73%;
-
-                            &[data-image="three"]
-                            {
-                                max-width: 68%;
-                            }
-                        }
-
-                        &:hover
-                        {
-                            filter: blur(0);
-                            max-width: 31rem;
-                            z-index: 95 !important;
-
-                            &[data-image="three"]
-                            {
-                                max-width: 27rem;
-                                z-index: 96 !important;
-                            }
-
-                            @media only screen and (max-width: 1400px)
-                            {
-                                max-width: 82%;
-
-                                &[data-image="three"]
-                                {
-                                    max-width: 75%;
-                                }
-                            }
-
-                            & ~ [data-image="two"]
-                            {
-                                filter: blur(3px);
-                                max-width: 29rem;
-                                z-index: 92;
-
-                                @media only screen and (max-width: 1400px)
-                                {
-                                    max-width: 70%;
-                                }
-                            }
-                        }
+                        z-index: 50;
+                    }
+                    &:nth-child(2)
+                    {
+                        z-index: 49;
+                    }
+                    &:nth-child(3)
+                    {
+                        z-index: 48;
                     }
 
-                    &[data-hover="true"] img:hover
+                    &:hover
                     {
-                        animation: scale 0.6s ease-in-out;
-                        z-index: 93;
-                    }
+                        z-index: 51;
+                        transform: scale(1.125);
+                        margin-bottom: 2.65rem;
 
-                    & img:last-child
-                    {
-                        right: 16.5rem;
-
-                        @media only screen and (max-width: 1400px)
+                        & img
                         {
-                            right: 9rem;
+                            filter: drop-shadow(60px 50px 12px rgba(0, 0, 0, 0.5));
                         }
-
-                        &:hover
-                        {
-                            animation: none;
-                        }
-                    }
-
-                    & img:nth-child(2)
-                    {
-                        right: 6rem;
-
-                        @media only screen and (max-width: 1400px)
-                        {
-                            right: 2rem;
-                        }
-
-                        &:hover
-                        {
-                            animation: none;
-                        }
-                    }
-
-                    & img:first-child
-                    {
-                        right: -2rem;
-
-                        @media only screen and (max-width: 1400px)
-                        {
-                            right: -3rem;
-                        }
-
-                        &:hover
-                        {
-                            animation: none;
-                        }
-                    }
-
-                    &Instagram,
-                    &Rarible
-                    {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        width: 20rem;
-                        height: 20rem;
-                        border-radius: 3rem;
-                    }
-
-                    &Discord
-                    {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        height: 20rem;
                     }
                 }
 
-                @media only screen and (max-width: 1400px)
+                &:hover > span:not(:hover)
                 {
-                    width: 30%;
-                }
+                    &:first-child
+                    {
+                        z-index: 47;
+                    }
 
-                @media only screen and (max-width: 1200px)
-                {
-                    display: none;
+                    & > span
+                    {
+                        filter: blur(.2rem);
+                    }
                 }
             }
 
@@ -334,7 +220,7 @@
                 justify-content: center;
                 align-items: center;
 
-                & h1
+                & h2
                 {
                     font-size: 3rem;
                     padding-bottom: 2rem;
@@ -356,7 +242,7 @@
 
 html[data-language="fa"]
 {
-    .funny
+    .hobbies
     {
         height: auto;
         width: 100%;

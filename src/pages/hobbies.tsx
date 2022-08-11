@@ -41,14 +41,17 @@ const Hobbies = (props: { content: IContent }) =>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
                 <meta property='twitter:description' content='Parsa Firoozi Hobbies'/>
             </Head>
+
             <Main content={props?.content}>
                 <div className={stylesMain.mainContent}>
-                    <div className={stylesMain.mainBackground}/>
-                    <div className='hr'/>
+                    <span className={stylesMain.mainBackground}/>
+                    <span className='hr'/>
+
                     <section className={stylesHobbies.hobbies}>
                         <h4 className='heading'>
                             {props?.content?.titles[4]}
                         </h4>
+
                         {
                             props?.content?.my_hobbies.map((hobby: IHobby) =>
                                 <Card
@@ -58,7 +61,8 @@ const Hobbies = (props: { content: IContent }) =>
                             )
                         }
                     </section>
-                    <div className='hr'/>
+
+                    <span className='hr'/>
                 </div>
             </Main>
         </>

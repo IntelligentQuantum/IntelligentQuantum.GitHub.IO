@@ -18,9 +18,12 @@
 
     &Secondary
     {
-        text-transform: uppercase;
         display: flex;
         align-items: center;
+        justify-content: center;
+        gap: .5rem;
+
+        text-transform: uppercase;
         transition: 0.2s ease-in-out;
         cursor: pointer;
 
@@ -36,8 +39,8 @@
         & svg
         {
             transition: 0.4s ease-in-out;
-            height: 1.5rem;
-            width: 1.5rem;
+            height: 1.4rem;
+            width: 1.4rem;
             fill: var(--color-primary-light);
         }
 

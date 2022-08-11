@@ -11,9 +11,9 @@ const Error = (props: { content: IContent, title: string, description: string })
     return (
         <main className={stylesError.error}>
             <div className={stylesError.errorHeader}>
-                <h1>
+                <h2>
                     { props.title ? props.title : error?.title }
-                </h1>
+                </h2>
 
                 <hr />
 

@@ -76,12 +76,17 @@ const Contact = (props: { content: IContent }) =>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
                 <meta property='twitter:description' content='Parsa Firoozi Contact'/>
             </Head>
+
             <Main content={props?.content}>
                 <div className={stylesMain.mainContent}>
-                    <div className={stylesMain.mainBackground}/>
-                    <div className='hr'/>
+                    <span className={stylesMain.mainBackground}/>
+                    <span className='hr'/>
+
                     <section className={stylesContact.contact}>
-                        <h4 className='heading'>{props?.content?.titles[2]}</h4>
+                        <h4 className='heading'>
+                            { props?.content?.titles[2] }
+                        </h4>
+
                         <div className={stylesContact.contactInformation}>
                             <div className={stylesContact.contactInformationContent}>
                                 <div className={stylesContact.contactInformationContentPersonal}>
@@ -266,7 +271,7 @@ const Contact = (props: { content: IContent }) =>
                             </div>
                         </div>
                     </section>
-                    <div className='hr'/>
+                    <span className='hr'/>
                 </div>
             </Main>
         </>

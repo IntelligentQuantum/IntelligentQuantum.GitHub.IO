@@ -49,8 +49,8 @@ const Portfolio = (props: { content: IContent }) =>
             </Head>
             <Main content={props?.content}>
                 <div className={stylesMain.mainContent}>
-                    <div className={stylesMain.mainBackground}/>
-                    <div className='hr'/>
+                    <span className={stylesMain.mainBackground}/>
+                    <span className='hr'/>
                     <section className={stylesPortfolio.portfolio}>
                         <h4 className='heading'>
                             {props?.content?.titles[6]}
@@ -100,7 +100,7 @@ const Portfolio = (props: { content: IContent }) =>
                             }
                         </div>
                     </section>
-                    <div className='hr'/>
+                    <span className='hr'/>
                 </div>
             </Main>
         </>

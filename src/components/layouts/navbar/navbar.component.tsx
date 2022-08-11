@@ -2,12 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
+import { BsMoonFill, BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
 
 import type { IContent } from '../../../interfaces/content';
 
-import Dim from '../../../../public/static/icons/icon-theme_dim.svg';
-import Dark from '../../../../public/static/icons/icon-theme_dark.svg';
-import Light from '../../../../public/static/icons/icon-theme_light.svg';
 import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
 
 import { setOpenAside } from '../../../app/aside/aside.actions';
@@ -33,6 +31,7 @@ const Navbar = (props: { content: IContent, theme?: 'dark' | 'dim' | 'light', ha
                     }}>
                         <Ellipsis />
                     </div>
+
                     <div className={stylesNav.navMobileHamburger} onClick={() =>
                     {
                         dispatch(setOpenNavbar(!openNavbar)); dispatch(setActiveFilter(!activeFilter));
@@ -88,13 +87,13 @@ const Navbar = (props: { content: IContent, theme?: 'dark' | 'dim' | 'light', ha
 
                     <div className={stylesNav.navThemes} data-open={openNavbar ? 'true' : 'false'}>
                         <span onClick={() => props.handleTheme('dark')} className={props?.theme === 'dark' ? stylesNav.navThemesActive : ''}>
-                            <Dark />
+                            <BsMoonFill />
                         </span>
                         <span onClick={() => props.handleTheme('dim')} className={props?.theme === 'dim' ? stylesNav.navThemesActive : ''}>
-                            <Dim />
+                            <BsCloudMoonFill />
                         </span>
                         <span onClick={() => props.handleTheme('light')} className={props?.theme === 'light' ? stylesNav.navThemesActive : ''}>
-                            <Light />
+                            <BsSunFill />
                         </span>
                     </div>
                 </nav>

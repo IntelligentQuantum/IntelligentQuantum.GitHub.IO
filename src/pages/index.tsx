@@ -91,13 +91,14 @@ const Home = (props: { content: IContent }) =>
 
             <Main content={props?.content}>
                 <div className={stylesMain.mainContent}>
-                    <div className={stylesMain.mainBackground}/>
+                    <span className={stylesMain.mainBackground}/>
                     <section className={stylesHome.home}>
                         <header className={stylesHome.homeHeader}>
                             <div className={stylesHome.homeHeaderContent}>
-                                <h1>
+                                <h2>
                                     {props?.content?.titles[0]}
-                                </h1>
+                                </h2>
+
                                 <div className={stylesHome.homeHeaderContentDescription}>
                                     <span>
                                 &lt;<i>code</i>&gt;
@@ -172,7 +173,7 @@ const Home = (props: { content: IContent }) =>
                             </div>
                         </header>
 
-                        <div className='hr'/>
+                        <span className='hr'/>
 
                         <h4 className='heading'>
                             { props?.content?.titles[8] }
@@ -505,7 +506,7 @@ const Home = (props: { content: IContent }) =>
                             </Swiper>
                         </div>
 
-                        <div className='hr'/>
+                        <span className='hr'/>
                     </section>
                 </div>
             </Main>

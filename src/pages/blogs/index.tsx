@@ -42,7 +42,7 @@ const Blog = (props: { content: IContent }) =>
             </Head>
             <Main content={props?.content}>
                 <div className={stylesMain.mainContent}>
-                    <div className={stylesMain.mainBackground}/>
+                    <span className={stylesMain.mainBackground}/>
                     <div className="hr"></div>
                     <section className={stylesBlog.blogSection}>
                         <h4 className='heading'>
@@ -61,7 +61,7 @@ const Blog = (props: { content: IContent }) =>
                             }
                         </section>
                     </section>
-                    <div className='hr'/>
+                    <span className='hr'/>
                 </div>
             </Main>
         </>

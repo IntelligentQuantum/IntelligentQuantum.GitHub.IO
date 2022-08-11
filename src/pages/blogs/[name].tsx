@@ -128,12 +128,13 @@ const BlogView = (props: { content: IContent }) =>
                     blog?.name
                         ? (
                             <div className={stylesMain.mainContent}>
-                                <div className={stylesMain.mainBackground}/>
+                                <span className={stylesMain.mainBackground}/>
                                 <section className={stylesBlog.blog}>
                                     <div className={stylesBlog.blogHeader}>
-                                        <h1>
+                                        <h2>
                                             {blog?.name?.split('_').join(' ').charAt(0).toUpperCase() + blog?.name?.split('_').join(' ').slice(1)}
-                                        </h1>
+                                        </h2>
+
                                         <span>
                                             {blog?.category}
                                         </span>
@@ -145,7 +146,7 @@ const BlogView = (props: { content: IContent }) =>
                                             layout='fill'
                                         />
                                     </div>
-                                    <div className='hr'/>
+                                    <span className='hr'/>
                                     <div className={stylesBlog.blogView}>
                                         <div className={stylesBlog.blogViewCardHeader}>
                                             <span>
@@ -183,12 +184,12 @@ const BlogView = (props: { content: IContent }) =>
                                             <h3>
                                                 {blog?.description}
                                             </h3>
-                                            <div className='hr'/>
+                                            <span className='hr'/>
                                             {reactHtmlParser(blog.content)}
                                         </article>
                                     </div>
                                 </section>
-                                <div className='hr'/>
+                                <span className='hr'/>
                             </div>
                         )
                         : null
@@ -197,13 +198,13 @@ const BlogView = (props: { content: IContent }) =>
                     !blog && !loading
                         ? (
                             <div className={stylesMain.mainContent}>
-                                <div className={stylesMain.mainBackground}/>
+                                <span className={stylesMain.mainBackground}/>
                                 <Error
                                     title='404'
                                     description={props?.content?.blog_not_found}
                                     content={props?.content}
                                 />
-                                <div className='hr'/>
+                                <span className='hr'/>
                             </div>
                         )
                         : null

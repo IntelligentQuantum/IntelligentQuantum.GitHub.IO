@@ -17,13 +17,13 @@ const ErrorPage = (props: { content: IContent }) =>
     return (
         <Main content={props?.content}>
             <div className={stylesMain.mainContent}>
-                <div className={stylesMain.mainBackground}/>
+                <span className={stylesMain.mainBackground}/>
                 <Error
                     title='404'
                     description={props?.content?.blog_not_found}
                     content={props?.content}
                 />
-                <div className='hr'/>
+                <span className='hr'/>
             </div>
         </Main>
     );

@@ -132,7 +132,11 @@
 
         &Skills
         {
+            font-weight: 300;
+            font-size: 1.25rem;
+            color: var(--color-base-text);
             text-align: center;
+            line-height: 2rem;
         }
     }
 
@@ -339,8 +343,8 @@
             & svg
             {
                 fill: var(--color-primary);
-                width: 1.2rem;
-                height: 1.2rem;
+                width: 2rem;
+                height: 2rem;
                 margin-right: 1rem;
             }
 

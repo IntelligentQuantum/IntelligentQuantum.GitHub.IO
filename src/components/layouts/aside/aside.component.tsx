@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
+import { BsGithub, BsCheck, BsDownload, BsInstagram, BsLinkedin, BsDribbble } from 'react-icons/bs';
 
 import type { IContent } from '../../../interfaces/content';
 
@@ -11,15 +12,9 @@ import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 import stylesAside from '../../../styles/components/aside.module.scss';
 
-import Profilo from '../../../../public/static/images/im-parsa.png';
-import Check from '../../../../public/static/icons/icon-check.svg';
-import Github from '../../../../public/static/icons/icon-github.svg';
+import Profile from '../../../../public/static/images/im-parsa.png';
 import Rarible from '../../../../public/static/icons/icon-rarible.svg';
-import Download from '../../../../public/static/icons/icon-download.svg';
 import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
-import Dribbble from '../../../../public/static/icons/icon-dribbble.svg';
-import Linkedin from '../../../../public/static/icons/icon-linkedin.svg';
-import Instagram from '../../../../public/static/icons/icon-instagram.svg';
 
 const Aside = (props: { content: IContent, handleLanguage: any }) =>
 {
@@ -35,9 +30,10 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                 }}>
                     <Ellipsis />
                 </div>
+
                 <div className={stylesAside.asideUserProfile}>
                     <Image
-                        src={Profilo}
+                        src={Profile}
                         alt='Parsa Firoozi'
                         className={stylesAside.asideUserProfile}
                         layout='intrinsic'
@@ -48,19 +44,22 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         <i className={stylesAside.asideUserStatus}/>
                     </div>
                 </div>
-                <h5 className={stylesAside.asideUserName}>
+
+                <h1 className={stylesAside.asideUserName}>
                     <Link href='/'>
                         <a>
-                            {props?.content?.my_name}
+                            { props?.content?.my_name }
                         </a>
                     </Link>
-                </h5>
-                <div className={stylesAside.asideUserSkills}>
-                    {props?.content?.my_skills[0]}
+                </h1>
+
+                <h3 className={stylesAside.asideUserSkills}>
+                    { props?.content?.my_skills[0] }
                     <br/>
-                    {props?.content?.my_skills[1]}
-                </div>
+                    { props?.content?.my_skills[1] }
+                </h3>
             </div>
+
             <div className={stylesAside.asideInformation}>
                 <div className={stylesAside.asideInformationLanguage}>
                     <span onClick={() =>
@@ -76,7 +75,9 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         props.handleLanguage('fa');
                     }} className={props?.content?.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</span>
                 </div>
-                <div className={stylesAside.asideDivider}>&nbsp;</div>
+
+                <div className={stylesAside.asideDivider} />
+
                 <div className={stylesAside.asideInformationPersonal}>
                     <ul>
                         <li>
@@ -93,7 +94,9 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         </li>
                     </ul>
                 </div>
-                <div className={stylesAside.asideDivider}>&nbsp;</div>
+
+                <div className={stylesAside.asideDivider} />
+
                 <div className={stylesAside.asideInformationLanguages}>
                     <div>
                         <svg viewBox='0 0 36 36'>
@@ -130,7 +133,9 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         </h6>
                     </div>
                 </div>
-                <div className={stylesAside.asideDivider}>&nbsp;</div>
+
+                <div className={stylesAside.asideDivider} />
+
                 <div className={stylesAside.asideInformationSkills}>
                     <div className={stylesAside.asideInformationSkillsBar}>
                         <div className={stylesAside.asideInformationSkillsInfo}>
@@ -224,113 +229,119 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         </div>
                     </div>
                 </div>
-                <div className={stylesAside.asideDivider}>&nbsp;</div>
+
+                <div className={stylesAside.asideDivider} />
+
                 <div className={stylesAside.asideInformationLibrary}>
                     <ul>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 JavaScript, TypeScript
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 NextJS, ReactJS, React Native
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                  NodeJS, DenoJS, NestJS
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 PHP
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 C++, Qt, Poco
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 Electron, Express.js, Discord.js
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 Mongodb, Redis, SQL
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 Pug, HBS, EJS
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 HTML5, CSS3, JS
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 Sass, Styled, Less
                             </span>
                         </li>
                         <li>
-                            <Check />
-
+                            <BsCheck />
                             <span>
                                 Photoshop, Gimp, After Effects
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 Git, Github, GitLab
                             </span>
                         </li>
                         <li>
-                            <Check />
+                            <BsCheck />
                             <span>
                                 Curl, Apt, Apt-Get
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div className={stylesAside.asideDivider}>&nbsp;</div>
+
+                <div className={stylesAside.asideDivider} />
+
                 <div className={classnames(stylesAside.asideInformationCV, 'uppercase')}>
                     <a href={`/static/document/parsa_firoozi_cv-${ props?.content?.language }.pdf`} target='_blank' rel='noreferrer'>
-                        <span>{props?.content?.download_cv}</span>
-                        <Download />
+                        <BsDownload />
+                        <span>
+                            { props?.content?.download_cv }
+                        </span>
                     </a>
                 </div>
             </div>
+
             <div className={stylesAside.asideFooter}>
                 <a href='https://www.instagram.com/hello_im_parsa' target='_blank' rel='noreferrer'>
-                    <Instagram />
+                    <BsInstagram />
                 </a>
                 <a href='https://rarible.com/im-parsa' target='_blank' rel='noreferrer'>
                     <Rarible />
                 </a>
                 <a href='https://dribbble.com/hello_im_parsa' target='_blank' rel='noreferrer'>
-                    <Dribbble />
+                    <BsDribbble />
                 </a>
                 <a href='https://github.com/im-parsa' target='_blank' rel='noreferrer'>
-                    <Github />
+                    <BsGithub />
                 </a>
                 <a href='https://www.linkedin.com/in/im-parsa/' target='_blank' rel='noreferrer'>
-                    <Linkedin />
+                    <BsLinkedin />
                 </a>
             </div>
         </nav>
