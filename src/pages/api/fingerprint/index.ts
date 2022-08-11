@@ -44,7 +44,7 @@ const Fingerprint = async(request: NextApiRequest, response: NextApiResponse) =>
         const ip = requestIp.getClientIp(request);
         const { fingerprint } = fingerPrinter.fingerprint(request);
 
-        const fetchFingerprint = await FingerprintEntity.find({ ip, fingerprint });
+        const fetchFingerprint = await FingerprintEntity.findOne({ ip, fingerprint });
 
         if (!fetchFingerprint)
         {
