@@ -222,7 +222,7 @@ html[data-theme="light"]
     --base-lighter: #f5eaea;
     --base-dark: #e1d3d3;
     --base-darker: #decccc;
-    --base-transparent: rgba(220, 176, 176, 0.5);
+    --base-transparent: rgb(220 176 176 / 50%);
     --base-transparent-dark: rgb(57 55 55 / 65%);
     --base-transparent-darker: rgb(42 40 40 / 80%);
     --base-gradiant: linear-gradient(159deg, rgb(234 221 221) 0%, rgb(236 218 218) 100%);

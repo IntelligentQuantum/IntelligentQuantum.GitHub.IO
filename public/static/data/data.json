@@ -11,11 +11,15 @@
         "currency": "$",
         "typing_effect":
         [
-            "I build desktop and android applications.",
+            "I build desktop, mobile applications.",
             "I build web interfaces.",
-            "I am JavaScripts, TypeScript, PHP, C++ developer.",
-            "I am ReactJS, React Native and NextJS developer.",
-            "I am  NodeJS, DenoJS and NestJS developer."
+            "I build RESTful API's.",
+            "I build games with Unreal, Frostbite and Unity engines.",
+            "I am cyber security enthusiast.",
+            "I am JavaScripts, TypeScript, PHP and C++ developer.",
+            "I am ReactJS and NextJS developer.",
+            "I am NodeJS, DenoJS, NestJS and Poco developer.",
+            "I am Electron, React Native and Qt developer."
         ],
         "technologies": "Frameworks and Technologies",
         "about_me": "Parsa is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.",
@@ -403,11 +407,15 @@
         "my_age": "18",
         "typing_effect":
         [
-            "Ich erstelle Desktop- und Android-Anwendungen.",
-            "Ich baue Webinterfaces.",
-            "Ich bin JavaScript, TypeScript, PHP  und C++ Entwickler.",
-            "Ich bin ReactJS, React Native und NextJS Entwickler.",
-            "Ich bin  NodeJS, DenoJS und NestJS Entwickler."
+            "Ich erstelle Desktop und mobile anwendungen.",
+            "Ich baue webinterfaces.",
+            "Ich baue RESTful APIs.",
+            "Ich baue spiele mit Unreal, Frostbite und Unity engines.",
+            "Ich bin ein enthusiast für cybersicherheit.",
+            "Ich bin JavaScripts, TypeScript, PHP und C++ entwickler.",
+            "Ich bin ReactJS- und NextJS entwickler.",
+            "Ich bin NodeJS, DenoJS, NestJS und Poco entwickler.",
+            "Ich bin Electron, React Native und Qt entwickler."
         ],
         "residence": "Residenz",
         "city": "Stadt",
@@ -737,11 +745,15 @@
         "currency": "ریال",
         "typing_effect":
         [
-            "من اپلیکیشن دسکتاپ و اندروید توسعه میدهم.",
-            "من رابط کاربری وب‌سایت هارا توسعه میدهم.",
-            "من یک توسعه دهند JavaScript، TypeScript، PHP، C++ هستم.",
-            "من یک توسعه دهنده ReactJS، React Native و NextJS هستم.",
-            "من یک توسعه دهنده  NodeJS، DenoJS و NestJS هستم."
+            "من برنامه های دسکتاپ و موبایل می سازم.",
+            "من رابط کاربری وب سایت می سازم.",
+            "من RESTful API را می سازم.",
+            "من با موتورهای Unreal، Frostbite و Unity بازی می سازم.",
+            "من عاشق امنیت سایبری هستم.",
+            "من توسعه دهنده JavaScript، TypeScript، PHP و C++ هستم.",
+            "من توسعه دهنده ReactJS و NextJS هستم.",
+            "من توسعه دهنده NodeJS، DenoJS، NestJS و Poco هستم.",
+            "من توسعه دهنده Electron، React Native و Qt هستم."
         ],
         "technologies": "فریم ورک ها و فناوری ها",
         "about_me": "پارسا یکی از علاقه مندان بزرگ مشکلات حل نشده و یک مهندس نرم افزار بسیار ماهر با بیش از پنج سال تجربه در زمینه توسعه وب، موبایل و نرم افزار است که برای شرکت ها از استارتاپ های کوچک تا بزرگ کار می کند. او از کار با مردم لذت می برد، از تغییرات نمی ترسد، در مهارت های بین فردی بسیار خوب است و همیشه پذیرای چالش های جدید است. او تجربه کار با PHP و C++ و همچنین فریمورک\u200Cهای آن\u200Cها مانند Poco و Qt را دارد، اما روی فناوری\u200Cهای مرتبط با جاوا اسکریپت مانند Typescript، NodeJS، DenoJS، NestJS، NextJS، React و React Native تمرکز دارد.",

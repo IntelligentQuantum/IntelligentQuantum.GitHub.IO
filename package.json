@@ -16,7 +16,7 @@
         "start": "NODE_ENV=production node server.js",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
         "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
-        "lint:scss": "stylelint \\\"./src/styles/**/*.scss\\\" --custom-syntax postcss-scss",
+        "lint:scss": "stylelint \"src/styles/**/*.scss\" --custom-syntax postcss-scss",
         "lint:scss:fix": "npm run lint:scss -- --fix"
     },
     "dependencies": {

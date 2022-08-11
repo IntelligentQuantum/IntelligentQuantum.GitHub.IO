@@ -6,7 +6,6 @@ import { BrowserFingerprint } from 'browser_fingerprint';
 
 import dbConnect from '../../../middlewares/mongodb';
 import FingerprintEntity from '../../../entities/fingerprint.entity';
-import Repositories from '../github/repositories';
 
 const limiter = rateLimit(
     {
@@ -38,7 +37,7 @@ const Fingerprint = async(request: NextApiRequest, response: NextApiResponse) =>
 
     try
     {
-        await limiter.check(response, 10, 'CACHE_TOKEN');
+        await limiter.check(response, 100, 'CACHE_TOKEN');
 
         await dbConnect();
 

@@ -61,15 +61,15 @@
                     {
                         position: relative !important;
 
-                        &:after
+                        &::after
                         {
-                            content: '|';
+                            content: "|";
 
                             display: inline-block;
 
                             position: relative;
 
-                            animation: opacity .8s infinite ease-in-out;
+                            animation: opacity 0.8s infinite ease-in-out;
                         }
                     }
 
@@ -256,7 +256,7 @@
                 {
                     flex-direction: column;
                     align-items: flex-start;
-                    gap: .5rem;
+                    gap: 0.5rem;
                 }
 
                 & > h6
@@ -299,12 +299,12 @@
 
                         width: 5.25rem;
                         height: 5.25rem;
-                        padding: .85rem;
+                        padding: 0.85rem;
                         cursor: pointer;
-                        transition: all .2s;
+                        transition: all 0.2s;
                         border-radius: 10rem;
                         background: var(--base-dark);
-                        border: .3rem solid var(--base-light);
+                        border: 0.3rem solid var(--base-light);
 
                         & > span
                         {
@@ -321,7 +321,7 @@
 
                             &[data-html_logo]
                             {
-                                margin-top: .5rem;
+                                margin-top: 0.5rem;
                             }
                         }
 
@@ -480,7 +480,7 @@
                     font-size: 1.2rem;
                     padding: 0.5rem 1.25rem;
                     border-radius: 10rem;
-                    transition: all .2s;
+                    transition: all 0.2s;
                     background: var(--base-dark);
 
                     &:hover
@@ -493,7 +493,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        gap: .5rem;
+                        gap: 0.5rem;
 
                         color: var(--color-base-text-bold);
 
@@ -547,18 +547,17 @@
 
             & img
             {
-                -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
                 border-radius: 1.5rem;
                 width: 12rem;
                 height: 12rem;
-                opacity: .35;
-                transition: all .2s;
+                opacity: 0.35;
+                transition: all 0.2s;
             }
 
             &:hover img
             {
-                opacity: .75;
+                opacity: 0.75;
             }
         }
     }
@@ -627,6 +626,7 @@ html[data-language="fa"]
     {
         opacity: 0;
     }
+
     100%
     {
         opacity: 1;
