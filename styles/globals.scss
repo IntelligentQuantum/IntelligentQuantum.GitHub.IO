@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+#__next
+{
+    display: grid;
+    grid-template-columns: [aside-start] 30rem [aside-end main-start] calc(100vw - 38rem) [main-end nav-start] 0 [nav-end];
+
+    letter-spacing: 0.5px;
+    padding: 1.4rem;
+    background-color: #191923;
+    overflow: hidden;
+    height: 100vh;
+}
+

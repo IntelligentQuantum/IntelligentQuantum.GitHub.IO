@@ -1,1 +1,0 @@
-# IntelligentQuantum.GitHub.IO
