@@ -2,9 +2,7 @@ import { Fragment } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import Aside from '../components/layouts/aside/aside.component';
 import Main from '../components/layouts/main/main.component';
-import Nav from '../components/layouts/nav/nav.component';
 
 const Home: NextPage = () =>
 {
@@ -16,9 +14,9 @@ const Home: NextPage = () =>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Aside />
-            <Main />
-            <Nav />
+            <Main>
+s
+            </Main>
         </Fragment>
     );
 };

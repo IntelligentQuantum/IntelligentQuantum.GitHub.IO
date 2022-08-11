@@ -1,5 +1,7 @@
 .aside
 {
+    grid-template: aside-start / aside-end;
+
     display: grid;
     grid-template-rows: 23.5rem 1fr 5rem;
 

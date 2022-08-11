@@ -4,7 +4,7 @@ import styles from './main.module.scss';
 
 interface MainProps
 {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 const Main = ({ children }: MainProps) =>

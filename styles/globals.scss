@@ -32,7 +32,7 @@ li
 #__next
 {
     display: grid;
-    grid-template-columns: [aside-start] 30rem [aside-end main-start] calc(100vw - 38rem) [main-end nav-start] 0 [nav-end];
+    grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
 
     letter-spacing: 0.5px;
     padding: 1.4rem;
