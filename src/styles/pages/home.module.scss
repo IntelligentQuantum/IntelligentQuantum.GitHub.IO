@@ -414,6 +414,7 @@
 
         & > div
         {
+            direction: ltr !important;
             overflow: hidden !important;
             width: 100% !important;
             height: 100% !important;
@@ -527,6 +528,7 @@
 
         & > div
         {
+            direction: ltr !important;
             overflow: hidden !important;
             width: 100% !important;
             height: 100% !important;
@@ -607,14 +609,26 @@ html[data-language="fa"]
             margin-right: -1.75rem;
         }
 
-        &RecommendationsContent > div
+        &ServicesContent > a
         {
-            & > img
+            margin: auto 0 0 auto;
+        }
+
+        &Organs > div
+        {
+            direction: rtl !important;
+        }
+
+        &Repos
+        {
+            & > div
             {
-                position: absolute;
-                right: auto;
-                left: 3rem;
-                top: -2.2rem;
+                direction: rtl !important;
+            }
+
+            &ContentStats
+            {
+                margin: auto 0 3rem auto;
             }
         }
     }
