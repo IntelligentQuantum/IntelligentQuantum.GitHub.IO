@@ -1,0 +1,1103 @@
+{
+    "en":
+    {
+        "language": "en",
+        "my_name": "Parsa Firoozi",
+        "my_skills":
+        [
+            "Full-Stack Developer",
+            "Graphic Designer"
+        ],
+        "currency": "$",
+        "typing_effect":
+        [
+            "I build desktop, mobile applications.",
+            "I build web interfaces.",
+            "I build RESTful API's.",
+            "I build games with Unreal, Frostbite and Unity engines.",
+            "I am cyber security enthusiast.",
+            "I am JavaScripts, TypeScript, PHP and C++ developer.",
+            "I am ReactJS and NextJS developer.",
+            "I am NodeJS, DenoJS, NestJS and Poco developer.",
+            "I am Electron, React Native and Qt developer."
+        ],
+        "technologies": "Frameworks and Technologies",
+        "about_me": "Parsa is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.",
+        "download_cv": "Download CV",
+        "order_now": "Order Now",
+        "source_code": "Source Code",
+        "source": "Source",
+        "created_at": "Created At",
+        "send_message": "Send Message",
+        "explore_more": "Explore More",
+        "read_more": "Read More",
+        "blog_not_found": "This blog could not be found",
+        "phone": "Phone Number",
+        "author": "Author",
+        "id": "ID",
+        "category": "Category",
+        "my_phone": "+98 917070566",
+        "whatsapp": "WhatsApp",
+        "telegram": "Telegram",
+        "email": "Email",
+        "gmail": "Gmail",
+        "chmail": "Chmail",
+        "my_email": "hello@parsa-firoozi.ir",
+        "my_gmail": "parsa.firoozi20@gmail.com",
+        "my_chmail": "parsafiroozi20@chmail.ir",
+        "name": "Name",
+        "message": "Message",
+        "residence": "Residence",
+        "city": "City",
+        "age": "Age",
+        "my_residence": "Iran",
+        "my_city": "Shiraz",
+        "my_age": "18",
+        "english": "English",
+        "persian": "Persian",
+        "german": "German",
+        "home": "Home",
+        "contact": "Contact",
+        "portfolio": "Portfolio",
+        "blogs": "Blogs",
+        "hobbies": "Hobbies",
+        "error":
+        {
+            "title": "Error in request",
+            "description": "The requested page could not be found"
+        },
+        "titles":
+        [
+            "What do i make Or am i?",
+            "Services",
+            "Contact Information",
+            "Get in Touch",
+            "Hobbies",
+            "Blogs",
+            "Portfolio",
+            "Repositories",
+            "About me"
+        ],
+        "headers":
+        [
+            "Happy Customers",
+            "Completed Projects",
+            "Years Experience",
+            "Honors and Awards"
+        ],
+        "categories":
+        [
+            "All Categories",
+            "Web Development",
+            "App Development",
+            "Robot Development",
+            "Graphic Design"
+        ],
+        "my_blogs":
+        [
+            {
+                "id": 0,
+                "name": "geometry_similarity_triangle_1",
+                "description": "Proving the theorem of similarity of triangles 1",
+                "created_at": "1639673079877",
+                "category": "educational",
+                "source": "All the contents of authentic geometry books",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
+            },
+            {
+                "id": 1,
+                "name": "geometry_similarity_triangle_2",
+                "description": "Proving the theorem of similarity of triangles 2",
+                "created_at": "1639673079877",
+                "category": "educational",
+                "source": "All the contents of authentic geometry books",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
+            },
+            {
+                "id": 2,
+                "name": "geometry_similarity_triangle_3",
+                "description": "Proving the theorem of similarity of triangles 3",
+                "created_at": "1639673079877",
+                "category": "educational",
+                "source": "All the contents of authentic geometry books",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
+            }
+        ],
+        "my_hobbies":
+        [
+            {
+                "id": 0,
+                "title": "Football",
+                "type": "football",
+                "description": "I have been watching & playing football since I can remember and my favorite player is the best player in football history, Lionel Messi who has most Ballon d'Or in football and most G+A, in other side I really like Antoine Griezmann football & life style he is definitely one of the smartest players in history. Also, Ferran Torres, a new football talent who is one of the best playmakers in the world right now.\nMy favorite teams are Argentina, France and Spain - Barçelona, Juventus and Arsenal."
+            },
+            {
+                "id": 3,
+                "title": "Music",
+                "type": "music",
+                "description": "An arrangement of sounds having melody, rhythm, and usually harmony. I think music is the most beautiful human art. Music has always been relaxing for me and I get a lot of energy with faster rhythms.\nWhen working, nothing is more effective than a good music and I always have a music playing in the background because it makes me feel so good. Finally, I must say that my favorite singer is <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">Shadmehr Aghili</a> and my favorite music is the song <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">\"Kooh\"</a> by Shadmehr Aghili."
+            },
+            {
+                "id": 4,
+                "title": "Guitar",
+                "type": "guitar",
+                "description": "The guitar is a fretted musical instrument that typically has six strings. Why is it another instrument when it's a guitar? Of course, I also have experience playing piano and violin, but my favorite one is guitar. Also, I had a duet and solo concert sponsored by Nava Afarin academy. I am mostly interested in acoustic and electronic guitar. The sound of the guitar gives me immense peace and pleasure. I'm always a fan of acoustic songs and unplugged performances because of the use of different guitars."
+            },
+            {
+                "id": 1,
+                "title": "Space",
+                "type": "space",
+                "description": "I love learning about space and the universe, and everything connected to it, like quantum physics, which proves a variety of dizzying theories, such as parallel universes, Continuity, singularity, time travel, black holes, and white holes."
+            },
+            {
+                "id": 2,
+                "title": "Call Of Duty",
+                "type": "cod",
+                "description": "Call of Duty is a first-person shooter video game franchise published by Activision. I am a fan of the Call of Duty series. The graphics and realism in this game are incredibly well done so that sometimes you feel like you are in the middle of the battlefield. Contrary to what people think, these games taught me not to be afraid and brave, to be a rebel!"
+            },
+            {
+                "id": 5,
+                "title": "Discord",
+                "type": "discord",
+                "description": "I came to Discord around 2017. I really like to be best in everything I am there and in Discord I develop the first, best, open-source, persian economy discord-bot, soo it is very enjoyable for me that I am some of the best persian Discord developer."
+            },
+            {
+                "id": 6,
+                "title": "Instagram",
+                "type": "instagram",
+                "description": "I am graphic designer, too & I have to many poster of football players in my account. I came to Instagram around 2014 and I always wanted to work in social media, and the same thing happened on Instagram and I started producing content in this community."
+            },
+            {
+                "id": 7,
+                "title": "Rarible",
+                "type": "rarible",
+                "description": "I make a lot of my artwork as NFT and sell some of them. I have some activities in the NFT and metaverse world. I use Rarible for  NFT marketplace and Decentraland for the web3 platform. I also use ethereum for blockchain because of its ease of use, better community and more security than other blockchains."
+            }
+        ],
+        "services":
+        [
+            {
+                "id": 0,
+                "title": "Front-End Development",
+                "description": "Front-end web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website."
+            },
+            {
+                "id": 1,
+                "title": "Back-End Development",
+                "description": "Back-end development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
+            },
+            {
+                "id": 2,
+                "title": "Cross-Platform Development",
+                "description": "Cross-platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt."
+            },
+            {
+                "id": 3,
+                "title": "Game Development",
+                "description": "Game Development is the art of creating games and describes the design, development and release of a game with Unreal, Frostbite and Unity engines. It may involve concept generation, design, build, test and release."
+            },
+            {
+                "id": 4,
+                "title": "Cyber-Security",
+                "description": "In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
+            },
+            {
+                "id": 5,
+                "title": "Search Engine Optimization",
+                "description": "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."
+            }
+        ],
+        "my_portfolio":
+        [
+            {
+                "id": 0,
+                "title": "Paraffin",
+                "tag": "web_development",
+                "description": "Paraffin platform for teaching and learning with great content in various categories",
+                "link": "https://paraffin-tutorials.ir",
+                "image": "/static/images/portfolio/web-paraffin.png"
+            },
+            {
+                "id": 1,
+                "title": "Discords City",
+                "tag": "web_development",
+                "description": "Grow your Discord Business in Discords City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks",
+                "link": "https://discords.city",
+                "image": "/static/images/portfolio/web-discords-city.png"
+            },
+            {
+                "id": 2,
+                "title": "MrCheat",
+                "tag": "web_development",
+                "description": "Creating, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games",
+                "link": "https://mrcheat.cc/",
+                "image": "/static/images/portfolio/web-mrcheat.png"
+            },
+            {
+                "id": 17,
+                "title": "Skyro",
+                "tag": "web_development",
+                "description": "Skyro Travel Service Agency is always up-to-date and progressive. We made a pact to make your travel experience pleasant and beautiful.",
+                "link": "https://github.com/skyro-ir",
+                "image": "/static/images/portfolio/web-skyro.png"
+            },
+            {
+                "id": 18,
+                "title": "Infinity RP",
+                "tag": "web_development",
+                "description": "The Infinity Roleplay server is one of the newest and best RP servers in Iran at the moment, which is managed by experienced people on the FiveM platform.",
+                "link": "https://infinity-tm.net",
+                "image": "/static/images/portfolio/web-infinity.png"
+            },
+            {
+                "id": 3,
+                "title": "Nava",
+                "tag": "web_development",
+                "description": "First and best Persian language music and video player with quality and support for all formats along with Discord RPC",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/web-nava.png"
+            },
+            {
+                "id": 4,
+                "title": "random-pic.js",
+                "tag": "web_development",
+                "description": "Website and module for receiving random images in different categories and the ability to size and set limits and restrictions",
+                "link": "https://random-picjs.herokuapp.com",
+                "image": "/static/images/portfolio/web-random-pic-js.png"
+            },
+            {
+                "id": 5,
+                "title": "Headinfo",
+                "tag": "web_development",
+                "description": "Website for everyday tasks and easy-to-do activities that you deal with a lot during the day",
+                "link": "https://headinfo.ir",
+                "image": "/static/images/portfolio/web-headinfo.png"
+            },
+            {
+                "id": 6,
+                "title": "Dubist",
+                "tag": "graphic_design",
+                "description": "English, Persian, German language learning website with features such as flash card and ranking",
+                "link": "/",
+                "image": "/static/images/portfolio/web-dubist.png"
+            },
+            {
+                "id": 7,
+                "title": "PDA",
+                "tag": "web_development",
+                "description": "The first open-source persian Discord API with high and unique quality and speed",
+                "link": "https://github.com/im-parsa/persian-discord-api",
+                "image": "/static/images/portfolio/web-pda.png"
+            },
+            {
+                "id": 8,
+                "title": "LiveSoccer",
+                "tag": "web_development",
+                "description": "Observation and analysis the table of the best and biggest football leagues along with the goal difference scores and the games played",
+                "link": "https://livesoccer.herokuapp.com/",
+                "image": "/static/images/portfolio/web-livesoccer.png"
+            },
+            {
+                "id": 9,
+                "title": "Elite",
+                "tag": "web_development",
+                "description": "Website of Elite Discord Robot Programming Team with 2 officially verified Discord bots",
+                "link": "https://github.com/im-parsa/elite-website",
+                "image": "/static/images/portfolio/web-elite.png"
+            },
+            {
+                "id": 10,
+                "title": "Personal Website",
+                "tag": "web_development",
+                "description": "Open-source personal website",
+                "link": "https://github.com/im-parsa/my-personal-website",
+                "image": "/static/images/portfolio/web-parsa.png"
+            },
+            {
+                "id": 11,
+                "title": "Personal Website",
+                "tag": "web_development",
+                "description": "Personal website for Mr. Shadmehr",
+                "link": "https://shadmehr.info",
+                "image": "/static/images/portfolio/web-shadmehr.png"
+            },
+            {
+                "id": 12,
+                "title": "Wintube",
+                "tag": "app_development",
+                "description": "Desktop application for Linux/Windows/Mac for displaying YouTube videos and movies without filtering and high speed and download capability",
+                "link": "https://wintube.herokuapp.com",
+                "image": "/static/images/portfolio/app-wintube.png"
+            },
+            {
+                "id": 13,
+                "title": "Nava Video Player",
+                "tag": "app_development",
+                "description": "Video player with the support of all files, the ability of RCC, dedicated discord, etc ...",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/app-nava-video-player.png"
+            },
+            {
+                "id": 14,
+                "title": "Nava Music Player",
+                "tag": "app_development",
+                "description": "Music player with the support of all files, the ability of RPC, dedicated discord, etc ...",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/app-nava-music-player.png"
+            },
+            {
+                "id": 15,
+                "title": "Setar",
+                "tag": "robot_development",
+                "description": "First & Best persian music player bot in discord community",
+                "link": "https://github.com/SeTar-Bot",
+                "image": "/static/images/portfolio/bot-setar.png"
+            },
+            {
+                "id": 16,
+                "title": "Elite",
+                "tag": "robot_development",
+                "description": "Best persian security bot in discord community",
+                "link": "https://top.gg/bot/730584726401843221",
+                "image": "/static/images/portfolio/bot-elite.png"
+            }
+        ]
+    },
+    "de":
+    {
+        "language": "de",
+        "my_name": "Parsa Firoozi",
+        "my_skills":
+        [
+            "Full-Stack-Entwickler",
+            "Grafikdesigner"
+        ],
+        "technologies": "Frameworks und Technologien",
+        "about_me": "Parsa ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrung in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Poco und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native.",
+        "currency": "€",
+        "send_message": "Nachricht Senden",
+        "source_code": "Quell Code",
+        "order_now": "Jetzt Bestellen",
+        "source": "Quell",
+        "created_at": "Hergestellt in",
+        "message": "Nachricht",
+        "explore_more": "JETZT ENTDECKEN",
+        "download_cv": "Lebenslauf HERUNTERLADEN",
+        "read_more": "Weiterlesen",
+        "blog_not_found": "Der Blog konnte nicht gefunden werden",
+        "phone": "Telefon Nummer",
+        "author": "Autor",
+        "id": "ID",
+        "category": "Kategorie",
+        "my_phone": "+98 917070566",
+        "whatsapp": "WhatsApp",
+        "telegram": "Telegram",
+        "email": "Email",
+        "gmail": "Gmail",
+        "chmail": "Chmail",
+        "my_email": "hello@parsa-firoozi.ir",
+        "my_gmail": "parsa.firoozi20@gmail.com",
+        "my_chmail": "parsafiroozi20@chmail.ir",
+        "name": "Name",
+        "my_residence": "Iran",
+        "my_city": "Shiraz",
+        "my_age": "18",
+        "typing_effect":
+        [
+            "Ich erstelle Desktop und mobile anwendungen.",
+            "Ich baue webinterfaces.",
+            "Ich baue RESTful APIs.",
+            "Ich baue spiele mit Unreal, Frostbite und Unity engines.",
+            "Ich bin ein enthusiast für cybersicherheit.",
+            "Ich bin JavaScripts, TypeScript, PHP und C++ entwickler.",
+            "Ich bin ReactJS- und NextJS entwickler.",
+            "Ich bin NodeJS, DenoJS, NestJS und Poco entwickler.",
+            "Ich bin Electron, React Native und Qt entwickler."
+        ],
+        "residence": "Residenz",
+        "city": "Stadt",
+        "age": "Alter",
+        "english": "Englisch",
+        "persian": "Persisch",
+        "german": "Deutsch",
+        "home": "Heimat",
+        "contact": "Kontakt",
+        "portfolio": "Portfolio",
+        "blogs": "Blogs",
+        "hobbies": "Hobbys",
+        "error":
+        {
+            "title": "Fehler bei der Anfrage",
+            "description": "Die angeforderte Seite konnte nicht gefunden werden"
+        },
+        "titles":
+        [
+            "Was mache ich oder bin ich?",
+            "Dienstleistungen",
+            "Kontakt Informationen",
+            "In Kontakt Kommen",
+            "Hobbys",
+            "Blogs",
+            "Portfolio",
+            "Lagerstätten",
+            "über mich"
+        ],
+        "my_blogs":
+        [
+            {
+                "id": 0,
+                "name": "geometry_similarity_triangle_1",
+                "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 1",
+                "created_at": "1639673079877",
+                "category": "lehrreich",
+                "source": "Alle Inhalte authentischer Geometriebücher",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
+            },
+            {
+                "id": 1,
+                "name": "geometry_similarity_triangle_2",
+                "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 2",
+                "created_at": "1639673079877",
+                "category": "lehrreich",
+                "source": "Alle Inhalte authentischer Geometriebücher",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
+            },
+            {
+                "id": 2,
+                "name": "geometry_similarity_triangle_3",
+                "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 3",
+                "created_at": "1639673079877",
+                "category": "lehrreich",
+                "source": "Alle Inhalte authentischer Geometriebücher",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
+            }
+        ],
+        "headers":
+        [
+            "Zufriedene Kunden",
+            "Fertige Projekte",
+            "Jahre Erfahrung",
+            "Ehren und Auszeichnungen"
+        ],
+        "categories":
+        [
+            "Alle Kategorien",
+            "Web Entwicklung",
+            "App Entwicklung",
+            "Roboter Entwicklung",
+            "Grafik Design"
+        ],
+        "my_hobbies":
+        [
+            {
+                "id": 0,
+                "title": "Fußball",
+                "type": "football",
+                "description": "Seitdem schaue und spiele ich Fußball seit ich denken kann und mein Lieblingsspieler ist der beste Spieler in der Fußballgeschichte, Lionel Messi, der die meisten Ballon d'Or im Fußball und die meisten G+A hat, auf der anderen Seite Ich mag Antoine Griezmann Fußball und seinen Lebensstil sehr, er ist definitiv einer der klügsten Spieler der Geschichte. Außerdem Ferran Torres, ein neues Fußballtalent, das derzeit einer der besten Spielmacher der Welt ist.\nMeine Lieblingsmannschaften sind Argentinien, Frankreich und Spanien."
+            },
+            {
+                "id": 3,
+                "title": "Musik",
+                "type": "music",
+                "description": "Eine Anordnung von Klängen mit Melodie, Rhythmus und normalerweise Harmonie. Ich denke, Musik ist die schönste menschliche Kunst. Musik war für mich schon immer entspannend und ich bekomme viel Energie mit schnelleren Rhythmen. Bei der Arbeit ist nichts effektiver als gute Musik und ich habe immer eine Musik im Hintergrund, weil es mir so gut tut. Abschließend muss ich sagen, dass mein Lieblingssänger <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">Shadmehr Aghili</a> ist und meine Lieblingsmusik das Lied <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">„Kooh“</a> von Shadmehr Aghili ist."
+            },
+            {
+                "id": 4,
+                "title": "Gitarre",
+                "type": "guitar",
+                "description": "Die Gitarre ist ein Musikinstrument mit Bünden, das typischerweise sechs Saiten hat. Warum ist es ein anderes Instrument, wenn es eine Gitarre ist? Natürlich habe ich auch Erfahrung mit Klavier und Geige, aber am liebsten spiele ich Gitarre. Außerdem hatte ich ein Duett und ein Solokonzert, das von der Nava Afarin Academy gesponsert wurde. Ich interessiere mich hauptsächlich für akustische und elektronische Gitarre. Der Klang der Gitarre gibt mir ungeheure Ruhe und Freude. Ich bin immer ein Fan von akustischen Songs und Unplugged-Auftritten, weil ich verschiedene Gitarren verwende."
+            },
+            {
+                "id": 1,
+                "title": "Platz",
+                "type": "space",
+                "description": "Ich liebe es, über den Weltraum und das Universum zu lernen und alles, was damit zusammenhängt, wie die Quantenphysik, die eine Vielzahl von schwindelerregenden Theorien beweist, wie Paralleluniversen, Kontinuität, Singularität, Zeitreisen, Schwarze Löcher, und weiße Löcher."
+            },
+            {
+                "id": 2,
+                "title": "Ruf der Pflicht",
+                "type": "cod",
+                "description": "Call of Duty ist ein Ego-Shooter-Videospiel-Franchise, das von Activision veröffentlicht wird. Ich bin ein Fan der Call of Duty-Reihe. Die Grafik und der Realismus in diesem Spiel sind unglaublich gut gemacht, sodass Sie manchmal das Gefühl haben, mitten auf dem Schlachtfeld zu sein. Im Gegensatz zu dem, was die Leute denken, haben mich diese Spiele gelehrt, keine Angst zu haben und mutig zu sein, ein Rebell zu sein!"
+            },
+            {
+                "id": 5,
+                "title": "Discord",
+                "type": "discord",
+                "description": "Ich bin um 2017 zu Discord gekommen. Ich mag es wirklich, in allem, was ich dort habe, der Beste zu sein und in Discord entwickle ich den ersten, besten, quelloffenen, persischen Wirtschafts-Discord-Bot, also macht es sehr viel Spaß für mich, dass ich einer der besten persischen Discord-Entwickler bin."
+            },
+            {
+                "id": 6,
+                "title": "Instagram",
+                "type": "instagram",
+                "description": "Ich bin auch Grafikdesigner und habe zu viele Poster von Fußballspielern in meinem Account. Ich bin um 2014 zu Instagram gekommen und wollte immer in sozialen Medien arbeiten, und das gleiche passierte auf Instagram und Ich habe angefangen, Inhalte in dieser Community zu produzieren."
+            },
+            {
+                "id": 7,
+                "title": "Rarible",
+                "type": "rarible",
+                "description": "Ich mache viele meiner Kunstwerke als NFT und verkaufe einige davon. Ich habe einige Aktivitäten in der NFT- und Metaverse-Welt. Ich verwende Rarible für den NFT-Marktplatz und Decentraland für die web3-Plattform. Ich verwende Ethereum auch für Blockchain wegen seiner Benutzerfreundlichkeit, besseren Community und mehr Sicherheit als andere Blockchains."
+            }
+        ],
+        "services":
+        [
+            {
+                "id": 0,
+                "title": "Front-End Entwicklung",
+                "description": "Front-End-Webentwicklung ist die Entwicklung der grafischen Benutzeroberfläche einer Website durch die Verwendung von HTML, ReactJS und NextJS, damit Benutzer diese Website anzeigen und mit ihr interagieren können."
+            },
+            {
+                "id": 1,
+                "title": "Back-End Entwicklung",
+                "description": "Back-End-Entwicklung bedeutet, an serverseitiger Software zu arbeiten, die sich auf alles konzentriert, was Sie auf einer Website basierend auf NodeJS, DenoJS, NestJS, NextJS und Poco nicht sehen können."
+            },
+            {
+                "id": 2,
+                "title": "Plattformübergreifende Entwicklung",
+                "description": "Plattformübergreifende Entwicklung ist die Praxis der Entwicklung von Softwareprodukten oder -diensten für mehrere Plattformen wie Windows, Linux, macOS, Android, iOS oder Softwareumgebungen auf Basis von Electron, React Native und Qt."
+            },
+            {
+                "id": 3,
+                "title": "Spielentwicklung",
+                "description": "Spieleentwicklung ist die Kunst des Erstellens von Spielen und beschreibt das Design, die Entwicklung und die Veröffentlichung eines Spiels mit Unreal-, Frostbite- und Unity-Engines. Es kann die Konzepterstellung, das Design, den Aufbau, das Testen und die Freigabe umfassen."
+            },
+            {
+                "id": 4,
+                "title": "Internet-Sicherheit",
+                "description": "In der digitalen Welt sind unsere Daten sicher, solange wir uns dessen bewusst sind. Die meisten Hacks, die passieren, sind in erster Linie Social-Engineering-Angriffe, bei denen die menschliche Psychologie ausgenutzt wird, indem Daten verwendet werden, die bewusst von Menschen in sozialen Medien bereitgestellt werden."
+            },
+            {
+                "id": 5,
+                "title": "Suchmaschinenoptimierung",
+                "description": "Suchmaschinenoptimierung ist der Prozess der Verbesserung der Qualität und Quantität des Website-Traffics auf eine Website oder eine Webseite von Suchmaschinen. SEO zielt eher auf unbezahlten Verkehr ab als auf direkten oder bezahlten Verkehr."
+            }
+        ],
+        "my_portfolio":
+        [
+            {
+                "id": 0,
+                "title": "Paraffin",
+                "tag": "web_development",
+                "description": "Paraffin-Plattform zum Lehren und Lernen mit tollen Inhalten in verschiedenen Kategorien",
+                "link": "https://paraffin-tutorials.ir",
+                "image": "/static/images/portfolio/web-paraffin.png"
+            },
+            {
+                "id": 1,
+                "title": "Discords City",
+                "tag": "web_development",
+                "description": "Erweitern Sie Ihr Discords Geschäft in Discords City Sie können Ihren Bot oder Server hinzufügen, um Ihr Geschäft auszubauen, und unsere Blogs lesen, um über alle Discord Aktualisierung und Tricks auf dem Laufenden zu bleiben",
+                "link": "https://discords.city",
+                "image": "/static/images/portfolio/web-discords-city.png"
+            },
+            {
+                "id": 2,
+                "title": "MrCheat",
+                "tag": "web_development",
+                "description": "Erstellen, Entwickeln und Verkaufen aller Arten von Cheats und Cheats in verschiedenen Spielen wie Counter, Zola, CS Go und den meisten anderen Shooter-Spielen",
+                "link": "https://mrcheat.cc/",
+                "image": "/static/images/portfolio/web-mrcheat.png"
+            },
+            {
+                "id": 17,
+                "title": "Skyro",
+                "tag": "web_development",
+                "description": "Skyro Travel Service Agency ist immer aktuell und fortschrittlich. Wir haben einen Pakt geschlossen, um Ihr Reiseerlebnis angenehm und schön zu gestalten.",
+                "link": "https://github.com/skyro-ir",
+                "image": "/static/images/portfolio/web-skyro.png"
+            },
+            {
+                "id": 18,
+                "title": "Infinity RP",
+                "tag": "web_development",
+                "description": "Der Infinity Roleplay-Server ist derzeit einer der neuesten und besten RP-Server im Iran, der von erfahrenen Personen auf der FiveM-Plattform verwaltet wird.",
+                "link": "https://infinity-tm.net",
+                "image": "/static/images/portfolio/web-infinity.png"
+            },
+            {
+                "id": 3,
+                "title": "Nava",
+                "tag": "web_development",
+                "description": "Ersten und besten persischen Musik- und Videoplayers mit Qualität und Unterstützung für alle Formate zusammen mit RPC Discord",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/web-nava.png"
+            },
+            {
+                "id": 4,
+                "title": "random-pic.js",
+                "tag": "web_development",
+                "description": "Website und Anwendungsmodul zum Empfangen von Zufallsbildern in verschiedenen Kategorien und der Möglichkeit, Größen und Grenzen und Beschränkungen festzulegen",
+                "link": "https://random-picjs.herokuapp.com",
+                "image": "/static/images/portfolio/web-random-pic-js.png"
+            },
+            {
+                "id": 5,
+                "title": "Headinfo",
+                "tag": "web_development",
+                "description": "Website für alltägliche Aufgaben und leicht zu erledigende Aufgaben, mit denen Sie sich tagsüber viel beschäftigen",
+                "link": "https://headinfo.ir",
+                "image": "/static/images/portfolio/web-headinfo.png"
+            },
+            {
+                "id": 6,
+                "title": "Dubist",
+                "tag": "graphic_design",
+                "description": "Englisch, Persisch, Deutsch-Sprachlernwebsite mit Funktionen wie Lernkarte und Ranking",
+                "link": "/",
+                "image": "/static/images/portfolio/web-dubist.png"
+            },
+            {
+                "id": 7,
+                "title": "PDA",
+                "tag": "web_development",
+                "description": "Der erste dediziert persischsprachige Webservice in Form von Open Source mit hoher Qualität und beispielloser Geschwindigkeit",
+                "link": "https://github.com/im-parsa/persian-discord-api",
+                "image": "/static/images/portfolio/web-pda.png"
+            },
+            {
+                "id": 8,
+                "title": "LiveSoccer",
+                "tag": "web_development",
+                "description": "Beobachtung und analyse Tabelle der besten und größten Fußballligen mit Tordifferenzergebnissen und gespielten Spielen zu sehen",
+                "link": "https://livesoccer.herokuapp.com/",
+                "image": "/static/images/portfolio/web-livesoccer.png"
+            },
+            {
+                "id": 9,
+                "title": "Elite",
+                "tag": "web_development",
+                "description": "Elite discord bot programming company mit 2 offiziell verifizierten Discord-Bots",
+                "link": "https://github.com/im-parsa/elite-website",
+                "image": "/static/images/portfolio/web-elite.png"
+            },
+            {
+                "id": 10,
+                "title": "Persönliche Website",
+                "tag": "web_development",
+                "description": "Open-Source-persönliche Website",
+                "link": "https://github.com/im-parsa/my-personal-website",
+                "image": "/static/images/portfolio/web-parsa.png"
+            },
+            {
+                "id": 11,
+                "title": "Persönliche Website",
+                "tag": "web_development",
+                "description": "Persönliche Website für Herrn Shadmehr",
+                "link": "https://shadmehr.info",
+                "image": "/static/images/portfolio/web-shadmehr.png"
+            },
+            {
+                "id": 12,
+                "title": "Wintube",
+                "tag": "app_development",
+                "description": "Desktop-Anwendung mit Linux / Windows / Mac-Unterstützung zum Anzeigen von YouTube-Videos und -Filmen ohne Filterung und Hochgeschwindigkeits- und Download-Fähigkeit",
+                "link": "https://wintube.herokuapp.com",
+                "image": "/static/images/portfolio/app-wintube.png"
+            },
+            {
+                "id": 13,
+                "title": "Nava-Video-Player",
+                "tag": "app_development",
+                "description": "Video mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/app-nava-video-player.png"
+            },
+            {
+                "id": 14,
+                "title": "Nava-Music-Player",
+                "tag": "app_development",
+                "description": "Musik mit Unterstützung für alle Dateien, dedizierte RCC-Fähigkeit, Zwietracht, etc ...",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/app-nava-music-player.png"
+            },
+            {
+                "id": 15,
+                "title": "Setar",
+                "tag": "robot_development",
+                "description": "Der erste und beste offizielle Songplayer und verifizierte Zwietracht",
+                "link": "https://github.com/SeTar-Bot",
+                "image": "/static/images/portfolio/bot-setar.png"
+            },
+            {
+                "id": 16,
+                "title": "Elite",
+                "tag": "robot_development",
+                "description": "Der beste und beliebteste Roboter für Sicherheit und Sicherheit der offiziellen und verifizierten offiziellen Zwietracht",
+                "link": "https://top.gg/bot/730584726401843221",
+                "image": "/static/images/portfolio/bot-elite.png"
+            }
+        ]
+    },
+    "fa":
+    {
+        "language": "fa",
+        "my_name": "پارسا فیروزی",
+        "my_skills":
+        [
+            "توسعه دهنده فول-استک",
+            "طراح گرافیک"
+        ],
+        "currency": "ریال",
+        "typing_effect":
+        [
+            "من برنامه های دسکتاپ و موبایل می سازم.",
+            "من رابط کاربری وب سایت می سازم.",
+            "من RESTful API را می سازم.",
+            "من با موتورهای Unreal، Frostbite و Unity بازی می سازم.",
+            "من عاشق امنیت سایبری هستم.",
+            "من توسعه دهنده JavaScript، TypeScript، PHP و C++ هستم.",
+            "من توسعه دهنده ReactJS و NextJS هستم.",
+            "من توسعه دهنده NodeJS، DenoJS، NestJS و Poco هستم.",
+            "من توسعه دهنده Electron، React Native و Qt هستم."
+        ],
+        "technologies": "فریم ورک ها و فناوری ها",
+        "about_me": "پارسا یکی از علاقه مندان بزرگ مشکلات حل نشده و یک مهندس نرم افزار بسیار ماهر با بیش از پنج سال تجربه در زمینه توسعه وب، موبایل و نرم افزار است که برای شرکت ها از استارتاپ های کوچک تا بزرگ کار می کند. او از کار با مردم لذت می برد، از تغییرات نمی ترسد، در مهارت های بین فردی بسیار خوب است و همیشه پذیرای چالش های جدید است. او تجربه کار با PHP و C++ و همچنین فریمورک\u200Cهای آن\u200Cها مانند Poco و Qt را دارد، اما روی فناوری\u200Cهای مرتبط با جاوا اسکریپت مانند Typescript، NodeJS، DenoJS، NestJS، NextJS، React و React Native تمرکز دارد.",
+        "download_cv": "دانلود رزومه",
+        "send_message": "ارسال پیام",
+        "source_code": "منبع کد",
+        "source": "منبع",
+        "read_more": "بیشتر بخوانید",
+        "phone": "شماره تلفن",
+        "created_at": "تاریخ ساخت",
+        "blog_not_found": "بلاگ مورد نظر یافت نشد",
+        "my_phone": "09170700566",
+        "whatsapp": "واتساپ",
+        "author": "نویسنده",
+        "id": "آیدی",
+        "category": "دسته",
+        "telegram": "تلگرام",
+        "email": "ایمیل",
+        "gmail": "جیمیل",
+        "chmail": "چیمیل",
+        "my_email": "hello@parsa-firoozi.ir",
+        "my_gmail": "parsa.firoozi20@gmail.com",
+        "my_chmail": "parsafiroozi20@chmail.ir",
+        "name": "نام",
+        "message": "پیام",
+        "explore_more": "پروژه ها",
+        "order_now": "سفارش",
+        "residence": "محل اقامت",
+        "city": "شهر",
+        "age": "سن",
+        "my_residence": "ایران",
+        "my_city": "شیراز",
+        "my_age": "18",
+        "english": "انگلیسی",
+        "persian": "فارسی",
+        "german": "آلمانی",
+        "home": "خانه",
+        "contact": "تماس",
+        "portfolio": "نمونه کار ها",
+        "blogs": "بلاگ ها",
+        "hobbies": "سرگرمی ها",
+        "error":
+        {
+            "title": "خطا در درخواست",
+            "description": "صفحه مورد نظر یافت نشد"
+        },
+        "titles":
+        [
+            "من کی هستم و چکار میکنم؟",
+            "خدمات",
+            "اطلاعات تماس",
+            "با من در تماس باش",
+            "سرگرمی ها",
+            "بلاگ ها",
+            "نمونه کار ها",
+            "مخازن",
+            "درباره من"
+        ],
+        "headers":
+        [
+            "مشتریان راضی",
+            "پروژه های تمام شده",
+            "سال تجربه",
+            "جوایز و عنواین"
+        ],
+        "categories":
+        [
+            "تمام دسته بندی ها",
+            "توسعه وب",
+            "توسعه اپلیکیشن",
+            "توسعه ربات",
+            "طراحی گرافیک"
+        ],
+        "my_blogs":
+        [
+            {
+                "id": 0,
+                "name": "geometry_similarity_triangle_1",
+                "description": "اثبات قضیه تشابه مثلث ها ۱",
+                "created_at": "1639673079877",
+                "category": "آموزشی",
+                "source": "تمام مطالب کتاب های معتبر هندسه",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
+            },
+            {
+                "id": 1,
+                "name": "geometry_similarity_triangle_2",
+                "description": "اثبات قضیه تشابه مثلث ها ۲",
+                "created_at": "1639673079877",
+                "category": "آموزشی",
+                "source": "تمام مطالب کتاب های معتبر هندسه",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
+            },
+            {
+                "id": 2,
+                "name": "geometry_similarity_triangle_3",
+                "description": "اثبات قضیه تشابه مثلث ها ۳",
+                "created_at": "1639673079877",
+                "category": "آموزشی",
+                "source": "تمام مطالب کتاب های معتبر هندسه",
+                "image": "/static/images/blogs/background_math.webp",
+                "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
+            }
+        ],
+        "my_hobbies":
+        [
+            {
+                "id": 0,
+                "title": "فوتبال",
+                "type": "football",
+                "description": "من از وقتی که یادم می آید عاشق بازی کردن و دیدن فوتبال بودم. بازیکن مورد علاقه من بهترین بازیکن تاریخ فوتبال هست کسی که بیشترین توپ طلا را دارد و بیشترین گل + پاس گل را دارد همچنین از سبک بازی و زندگی شخصی گریزمان خیلی خوشم می آید او صد در صد یکی از برترین و باهوش ترین هافبک های تهاجمی فوتبال است. همچنین فران تورس استعداد جدید فوتبال که یکی از بهترین وینگر های بازیساز حال حاضر جهان هست. تیم های مورد علاقه من آرژانتین، فرانسه و اسپانیا - بارسلونا، یوونتوس و آرسنال هستند."
+            },
+            {
+                "id": 3,
+                "title": "موسیقی",
+                "type": "music",
+                "description": "بنظر من موسیقی زیبا ترین هنر انسان است. موسیقی همیشه برای من آرامش بخش بوده و هست و با ریتم های سریع تر انرژی زیادی میگیرم.\nدر هنگام کار هیچ چیز اندازه یک موسیقی خوب تاثیرگذار نیست و من همیشه یک موسیقی در بک گراندم در حال اجرا میگذارم چون حس خیلی خوبی بهم میده. در آخر باید بگم خواننده مورد علاقه من <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">شادمهر عقیلی</a> و موزیک مورد علاقم آهنگ <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">\"کوه\"</a> از شادمهر عقیلی هست."
+            },
+            {
+                "id": 4,
+                "title": "گیتار",
+                "type": "guitar",
+                "description": "گیتار یک ساز موسیقی فرت دار است که معمولاً شش سیم دارد. چرا وقتی گیتار است، ساز دیگری است؟ البته من تجربه نواختن پیانو و ویولن را هم دارم اما ساز مورد علاقه من گیتار است. همچنین کنسرت دونوازی و انفرادی به اسپانسری آموزشگاه نوا آفرین داشتم. من بیشتر به گیتار آکوستیک و الکترونیک علاقه دارم. صدای گیتار به من آرامش و لذت بی\u200Cنظیری می\u200Cدهد. من همیشه به دلیل استفاده از گیتارهای مختلف طرفدار آهنگ های آکوستیک و اجراهای بدون پلاگ هستم."
+            },
+            {
+                "id": 1,
+                "title": "کیهان",
+                "type": "space",
+                "description": "من همیشه از یادگیری درباره فضا و کیهان لذت میبردم و همچنین فیزیک کوآنتوم که نظریه های سرگیجه آوری را اثبات میکند مانند جهان های موازی، سیاه چاله ها و سفید چاله ها، تکینگی، پیوستگی."
+            },
+            {
+                "id": 2,
+                "title": "کال آف دیوتی",
+                "type": "cod",
+                "description": "Call of Duty یک مجموعه بازی ویدئویی تیراندازی اول شخص است که توسط Activision منتشر شده است. من از طرفداران سری Call of Duty هستم. گرافیک و واقع گرایی در این بازی فوق العاده خوب انجام شده است به طوری که گاهی اوقات احساس می کنید در میانه میدان نبرد هستید. بر خلاف تصور مردم، این بازی ها به من آموخت که نترس و شجاع باشم، شورشی باشم!"
+            },
+            {
+                "id": 5,
+                "title": "دیسکورد",
+                "type": "discord",
+                "description": "من از ۲۰۱۷ وارد دیسکورد شدم و از عادت همیشه ام دوست داشتم بهترین هر جایی باشم و با یادگیری ماژول ها و لایبری های دیسکورد توانستم دو ربات تایید شده دیسکورد را توسعه دهم و در تیم بهترین ربات های دیسکورد باشم."
+            },
+            {
+                "id": 6,
+                "title": "اینستاگرام",
+                "type": "instagram",
+                "description": "من از سال ۲۰۱۴ وارد اینستاگرام شده با اینکه اوایل فعالیت خاصی نمیکردم ولی از علاقه ام در فعالیت در فضای مجازی چند سال است که طرح های گرافیکی ام را در آنجا به اشتراک میگذارم."
+            },
+            {
+                "id": 7,
+                "title": "راریبل",
+                "type": "rarible",
+                "description": "من بسیاری از آثار هنری خود را به عنوان ان اف تی می سازم و برخی از آنها را می فروشم. من در دنیای ان اف تی و متاورس فعالیت هایی دارم. من از راریبل برای بازار ان اف تی و دیسنترالند برای پلت فرم وب۳ استفاده می کنم. من همچنین از اتریوم برای بلاک چین استفاده می کنم، زیرا استفاده آسان، جامعه بهتر و امنیت بیشتر نسبت به سایر بلاک چین ها است."
+            }
+        ],
+        "services":
+        [
+            {
+                "id": 0,
+                "title": "توسعه فرانت-اند",
+                "description": "توسعه وب فرانت-اند توسعه رابط کاربری گرافیکی یک وب‌سایت با استفاده از HTML، ReactJS و NextJS است تا کاربران بتوانند آن وب‌سایت را مشاهده کرده و با آن تعامل داشته باشند."
+            },
+            {
+                "id": 1,
+                "title": "توسعه بک-اند",
+                "description": "توسعه بک-اند به معنای کار بر روی نرم\u200Cافزار سمت سرور است که بر روی هر چیزی که نمی\u200Cتوانید در یک وب\u200Cسایت ببینید مبتنی بر NodeJS، DenoJS، NestJS، NextJS و Poco."
+            },
+            {
+                "id": 2,
+                "title": "توسعه کراس-پلتفرم",
+                "description": "توسعه کراس-پلتفرم تمرین توسعه محصولات یا خدمات نرم افزاری برای پلتفرم های متعدد مانند ویندوز، لینوکس، macOS، Android، iOS یا محیط های نرم افزاری مبتنی بر Electron، React Native و Qt است."
+            },
+            {
+                "id": 3,
+                "title": "توسعه بازی",
+                "description": "توسعه بازی هنر ساخت بازی است و طراحی، توسعه و انتشار یک بازی با موتورهای Unreal، Frostbite و Unity را توصیف می کند. ممکن است شامل تولید مفهوم، طراحی، ساخت، آزمایش و انتشار باشد."
+            },
+            {
+                "id": 4,
+                "title": "امنیت سایبری",
+                "description": "در دنیای دیجیتال، تا زمانی که ما آگاه باشیم، داده های ما امن هستند. بیشتر هک\u200Cهایی که اتفاق می\u200Cافتند، عمدتاً حملات مهندسی اجتماعی هستند که در آن\u200Cها از روان\u200Cشناسی انسان با استفاده از داده\u200Cهایی که آگاهانه توسط افراد در رسانه\u200Cهای اجتماعی قرار می\u200Cگیرد، سوء استفاده می\u200Cشود."
+            },
+            {
+                "id": 5,
+                "title": "بهینه سازی موتورهای جستجو",
+                "description": "بهینه سازی موتورهای جستجو فرآیند بهبود کیفیت و کمیت ترافیک وب‌سایت به یک وب‌سایت یا یک صفحه وب از موتورهای جستجو است. سئو به جای ترافیک مستقیم یا ترافیک پولی، ترافیک بدون پرداخت را هدف قرار می دهد."
+            }
+        ],
+        "my_portfolio":
+        [
+            {
+                "id": 0,
+                "title": "پارافین",
+                "tag": "web_development",
+                "description": "پارافین پلتفرم آموزش و یادگیری با مطالب فوق العاده در دسته بندی ها مختلف (برنامه نویسی، طراحی گرافیک، بازی، تکنولوژی، ترفند)",
+                "link": "https://paraffin-tutorials.ir",
+                "image": "/static/images/portfolio/web-paraffin.png"
+            },
+            {
+                "id": 1,
+                "title": "دیسکوردز سیتی",
+                "tag": "web_development",
+                "description": "پلتفرمی برای کاربران کامینیوتی دیسکورد که سرور، ربات یا اکانت خودشان را در آن ثبت نام کنند و در اکسپلور ما دیده شوند تا ممبر های بیشتری بدست بیاورند و صفحه بخصوص خود را داشته باشند",
+                "link": "https://discords.city",
+                "image": "/static/images/portfolio/web-discords-city.png"
+            },
+            {
+                "id": 2,
+                "title": "MrCheat",
+                "tag": "web_development",
+                "description": "ساخت، توسعه و فروش انواع چیت و تقلب در بازی های مختلفی مانند کانتر، زولا، سی اس گو و اکثر بازی های شوتر دیگر (در دست ساخت)",
+                "link": "https://mrcheat.cc/",
+                "image": "/static/images/portfolio/web-mrcheat.png"
+            },
+            {
+                "id": 17,
+                "title": "اسکای\u200Cرو",
+                "tag": "web_development",
+                "description": "آژانس خدمات سفر اسکای رو همیشه بروز و پیشرو. ما پیمان بستیم تا تجربه سفر را برایتان دلنشین و زیبا رقم بزنیم.",
+                "link": "https://github.com/skyro-ir",
+                "image": "/static/images/portfolio/web-skyro.png"
+            },
+            {
+                "id": 18,
+                "title": "Infinity RP",
+                "tag": "web_development",
+                "description": "سرور Infinity Roleplay یکی از جدیدترین و بهترین سرورهای RP در حال حاضر ایران است که توسط افراد با تجربه در پلتفرم FiveM مدیریت می شود.",
+                "link": "https://infinity-tm.net",
+                "image": "/static/images/portfolio/web-infinity.png"
+            },
+            {
+                "id": 3,
+                "title": "نوآ",
+                "tag": "web_development",
+                "description": "اولین و برترین موزیک و ویدیو پلیر فارسی زبان با کیفیت و پشتیبانی تمامی فرمت ها به همراه آر پی سی دیسکورد",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/web-nava.png"
+            },
+            {
+                "id": 4,
+                "title": "random-pic.js",
+                "tag": "web_development",
+                "description": "وب‌سایت و ماژولی کاربردی برای دریافت تصاویر تصادفی در دسته بندی های مختلف و قابلیت سایز بندی و گذاشتن لیمیت و محدودیت",
+                "link": "https://random-picjs.herokuapp.com",
+                "image": "/static/images/portfolio/web-random-pic-js.png"
+            },
+            {
+                "id": 5,
+                "title": "Headinfo",
+                "tag": "web_development",
+                "description": "وب‌سایتی برای کارهای روزمره و انجام کار هایی به راحتی آب خوردن که در روز با آنها زیاد سر و کله میزنید (در دست ساخت)",
+                "link": "https://headinfo.ir",
+                "image": "/static/images/portfolio/web-headinfo.png"
+            },
+            {
+                "id": 6,
+                "title": "Dubist",
+                "tag": "graphic_design",
+                "description": "آموزش زبان انگلیسی، فارسی، آلمانی به همراه قابلیت هایی نظیر فلش کارت و رنک بندی (در دست ساخت)",
+                "link": "/",
+                "image": "/static/images/portfolio/web-dubist.png"
+            },
+            {
+                "id": 7,
+                "title": "PDA",
+                "tag": "web_development",
+                "description": "اولین وب سرویس اختصاصی فارسی زبان دیسکورد به صورت اوپن سورس با کیفیت و سرعتی بالا و بی نظیر",
+                "link": "https://github.com/im-parsa/persian-discord-api",
+                "image": "/static/images/portfolio/web-pda.png"
+            },
+            {
+                "id": 8,
+                "title": "LiveSoccer",
+                "tag": "web_development",
+                "description": "مشاهده و آنالیز جدول برترین و بزرگ ترین لیگ های فوتبال به همراه امتیازات تفاضل گل و بازی های انجام شده",
+                "link": "https://livesoccer.herokuapp.com/",
+                "image": "/static/images/portfolio/web-livesoccer.png"
+            },
+            {
+                "id": 9,
+                "title": "Elite",
+                "tag": "web_development",
+                "description": "شرکت الایت تیم برنامه نویسی ربات های دیسکورد با ۲ بات وریفای شده رسمی دیسکورد",
+                "link": "https://github.com/im-parsa/elite-website",
+                "image": "/static/images/portfolio/web-elite.png"
+            },
+            {
+                "id": 10,
+                "title": "وب‌سایت شخصی",
+                "tag": "web_development",
+                "description": "وب‌سایت شخصی اوپن سورس",
+                "link": "https://github.com/im-parsa/my-personal-website",
+                "image": "/static/images/portfolio/web-parsa.png"
+            },
+            {
+                "id": 11,
+                "title": "وب‌سایت شخصی",
+                "tag": "web_development",
+                "description": "وب‌سایت شخصی برای آقای شادمهر",
+                "link": "https://shadmehr.info",
+                "image": "/static/images/portfolio/web-shadmehr.png"
+            },
+            {
+                "id": 12,
+                "title": "Wintube",
+                "tag": "app_development",
+                "description": "اپلیکیشنی برای دسکتاپ قابلیت پشتیبانی لینوکس/ویندوز/مک برای نمایش ویدیو و فیلم های یوتیوب بدون فیلتر و سرعت بالا و قبالیت دانلود",
+                "link": "https://wintube.herokuapp.com",
+                "image": "/static/images/portfolio/app-wintube.png"
+            },
+            {
+                "id": 13,
+                "title": "پخش کننده ویدیو نوآ",
+                "tag": "app_development",
+                "description": "پخش کننده ویدیو و فیلم با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/app-nava-video-player.png"
+            },
+            {
+                "id": 15,
+                "title": "پخش کننده آهنگ نوآ",
+                "tag": "app_development",
+                "description": "پخش کننده موزیک و آهنگ با پشتیبانی تمامی فایل ها قابلیت آر پی سی اختصاصی دیسکورد و غیره ...",
+                "link": "https://nava-org.herokuapp.com",
+                "image": "/static/images/portfolio/app-nava-music-player.png"
+            },
+            {
+                "id": 16,
+                "title": "ستار",
+                "tag": "robot_development",
+                "description": "اولین و برترین ربات پخش کننده آهنگ و وریفای شده رسمی دیسکورد",
+                "link": "https://github.com/SeTar-Bot",
+                "image": "/static/images/portfolio/bot-setar.png"
+            },
+            {
+                "id": 17,
+                "title": "Elite",
+                "tag": "robot_development",
+                "description": "برترین و محبوب ترین ربات سکوریتی و امنیت سرور و وریفای شده رسمی دیسکورد",
+                "link": "https://top.gg/bot/730584726401843221",
+                "image": "/static/images/portfolio/bot-elite.png"
+            }
+        ]
+    }
+}

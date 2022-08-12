@@ -1,0 +1,23 @@
+.filter
+{
+    position: fixed;
+    z-index: 97;
+
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s;
+
+    background: var(--base-transparent-dark);
+
+    &Plus
+    {
+        background: var(--base-transparent-darker);
+    }
+
+    @media only screen and (max-width: 1000px)
+    {
+        z-index: 101;
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "short_name": "im-parsa",
+    "name": "Parsa Firoozi - im-parsa",
+    "icons":
+    [
+        {
+            "src": "/static/images/favicon.png",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        }
+    ],
+    "start_url": "https://im-parsa.tech",
+    "display": "standalone",
+    "theme_color": "#5294E2",
+    "background_color": "#323540"
+}

@@ -1,0 +1,82 @@
+@font-face
+{
+    font-family: yekan;
+    src: url("../../../public/static/fonts/yekan/IRANYekanWeb.eot");
+    src:
+        url("../../../public/static/fonts/yekan/IRANYekanWeb.svg") format("svg"),
+        url("../../../public/static/fonts/yekan/IRANYekanWeb.woff2") format("woff2"),
+        url("../../../public/static/fonts/yekan/IRANYekanWeb.woff") format("woff"),
+        url("../../../public/static/fonts/yekan/IRANYekanWeb.ttf") format("truetype");
+}
+
+.paragraph
+{
+    position: relative;
+
+    color: var(--color-base-text-bold);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.85rem;
+    z-index: 92;
+
+    @media only screen and (max-width: 1000px)
+    {
+        padding: 1.5rem;
+    }
+}
+
+.heading
+{
+    position: relative;
+
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 3rem;
+    z-index: 92;
+
+    @media only screen and (max-width: 1000px)
+    {
+        padding: 1.5rem;
+    }
+
+    &__small
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 0 3rem 2rem;
+
+        @media only screen and (max-width: 1000px)
+        {
+            flex-wrap: wrap;
+        }
+
+        & li
+        {
+            transition: 0.4s ease-in-out;
+            color: var(--color-base-text);
+            margin-right: 1rem;
+            cursor: pointer;
+
+            &:hover
+            {
+                color: var(--color-base-text-bolder);
+            }
+
+            &[data-active="true"]
+            {
+                color: var(--color-base-text-bolder);
+                text-shadow: 0 0 3px var(--color-base-text-shadow);
+            }
+
+            @media only screen and (max-width: 1000px)
+            {
+                margin: 1rem 0;
+            }
+        }
+    }
+}
