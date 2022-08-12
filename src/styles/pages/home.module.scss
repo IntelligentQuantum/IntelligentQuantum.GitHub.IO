@@ -395,7 +395,7 @@
         }
     }
 
-    &Repos
+    &Repositories
     {
         display: flex;
 
@@ -420,6 +420,23 @@
             height: 100% !important;
             padding: 5rem 0 !important;
             margin-top: -5rem !important;
+        }
+
+        &PrevNext
+        {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            padding: 1rem 0;
+
+            & svg
+            {
+                cursor: pointer;
+                width: 2.5rem;
+                height: 2.5rem;
+                fill: var(--color-base-text);
+            }
         }
 
         &Content
@@ -619,7 +636,7 @@ html[data-language="fa"]
             direction: rtl !important;
         }
 
-        &Repos
+        &Repositories
         {
             & > div
             {

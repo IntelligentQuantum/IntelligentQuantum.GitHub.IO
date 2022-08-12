@@ -113,40 +113,40 @@ const BlogView = (props: { content: iContent }) =>
 
                             <div className={stylesBlog.blogView}>
                                 <div className={stylesBlog.blogViewCardHeader}>
-                                <span>
-                                    <p>
-                                        {props?.content?.id}:
-                                    </p>
-                                    {blog.id}
-                                </span>
+                                    <span>
+                                        <p>
+                                            {props?.content?.id}:
+                                        </p>
+                                        {blog.id}
+                                    </span>
 
                                     <span>
-                                    <p>
-                                        {props?.content?.author}:
-                                    </p>
+                                        <p>
+                                            {props?.content?.author}:
+                                        </p>
                                         {props.content.my_name}
-                                </span>
+                                    </span>
 
                                     <span>
-                                    <p>
-                                        {props?.content?.source}:
-                                    </p>
+                                        <p>
+                                            {props?.content?.source}:
+                                        </p>
                                         {blog.source}
-                                </span>
+                                    </span>
 
                                     <span>
-                                    <p>
-                                        {props?.content?.created_at}:
-                                    </p>
+                                        <p>
+                                            {props?.content?.created_at}:
+                                        </p>
                                         {moment(Number(blog.created_at)).format('MMM Do YY')}
-                                </span>
+                                    </span>
 
                                     <span>
-                                    <p>
-                                        {props?.content?.category}:
-                                    </p>
+                                        <p>
+                                            {props?.content?.category}:
+                                        </p>
                                         {blog.category}
-                                </span>
+                                    </span>
                                 </div>
 
                                 <article className={stylesBlog.blogViewCard}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { BsChevronRight } from 'react-icons/bs';
+import { BiChevronRight } from 'react-icons/bi';
 
 import stylesButton from '../../styles/components/button.module.scss';
 
@@ -10,14 +10,14 @@ const ButtonSecondary = (props: { a?: boolean, link: string, text: string }) =>
             ? (
                 <a target='_blank' rel='noreferrer' href={ props.link } className={stylesButton.buttonSecondary} id='button-secondary'>
                     { props.text }
-                    <BsChevronRight />
+                    <BiChevronRight />
                 </a>
             )
             : (
                 <Link href={props.link}>
                     <a className={stylesButton.buttonSecondary} id='button-secondary'>
                         { props.text }
-                        <BsChevronRight />
+                        <BiChevronRight />
                     </a>
                 </Link>
             )

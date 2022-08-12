@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import { CookiesProvider, useCookies } from 'react-cookie';
 import { useDispatch, useSelector, Provider } from 'react-redux';
 
 import type { AppProps } from 'next/app';
@@ -34,11 +33,9 @@ const Navbar = dynamic(() => import('../components/layouts/navbar/navbar.compone
 axios.defaults.withCredentials = true;
 
 if (process.env.NODE_ENV === 'development')
-
     axios.defaults.baseURL = 'http://localhost:3000/api/';
 
 else if (process.env.NODE_ENV === 'production')
-
     axios.defaults.baseURL = 'https://parsa-firoozi.ir/api/';
 
 interface CustomAppProps
@@ -83,7 +80,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 localStorage.setItem('theme', 'dim');
             }
         }
-    }
+    };
     const handleLanguage = (languageV?: iLanguage) =>
     {
         const storageTheme: string = localStorage.getItem('language') || 'eb';
@@ -106,7 +103,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 localStorage.setItem('language', 'en');
             }
         }
-    }
+    };
 
     useEffect(() =>
     {
@@ -265,11 +262,9 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 const MyApp = ({ Component, pageProps }: CustomAppProps) =>
 {
     return (
-        <CookiesProvider>
-            <Provider store={ store }>
-                <AppComponents Component={ Component } pageProps={ pageProps }/>
-            </Provider>
-        </CookiesProvider>
+        <Provider store={ store }>
+            <AppComponents Component={ Component } pageProps={ pageProps }/>
+        </Provider>
     );
 };
 

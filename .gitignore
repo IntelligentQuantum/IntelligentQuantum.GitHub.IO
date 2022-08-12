@@ -3,5 +3,6 @@
 /.idea
 
 .env.local
+package-lock.json
 
 *.zip

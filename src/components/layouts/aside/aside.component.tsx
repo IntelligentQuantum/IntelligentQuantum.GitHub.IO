@@ -3,7 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
-import { BsGithub, BsCheck, BsDownload, BsInstagram, BsLinkedin, BsDribbble } from 'react-icons/bs';
+import { BiCheck, BiDownload } from 'react-icons/bi';
+import { BsGithub, BsInstagram, BsLinkedin, BsDribbble  } from 'react-icons/bs';
 
 import type { iContent } from '../../../interfaces/content';
 import type { iLanguage } from '../../../interfaces/language';
@@ -236,79 +237,79 @@ const Aside = (props: { content: iContent, handleLanguage: (theme?: iLanguage) =
                 <div className={stylesAside.asideInformationLibrary}>
                     <ul>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 JavaScript, TypeScript
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 NextJS, ReactJS, React Native
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                  NodeJS, DenoJS, NestJS
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 PHP
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 C++, Qt, Poco
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 Electron, Express.js, Discord.js
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 Mongodb, Redis, SQL
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 Pug, HBS, EJS
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 HTML5, CSS3, JS
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 Sass, Styled, Less
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 Photoshop, Gimp, After Effects
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 Git, Github, GitLab
                             </span>
                         </li>
                         <li>
-                            <BsCheck />
+                            <BiCheck />
                             <span>
                                 Curl, Apt, Apt-Get
                             </span>
@@ -320,7 +321,7 @@ const Aside = (props: { content: iContent, handleLanguage: (theme?: iLanguage) =
 
                 <div className={classnames(stylesAside.asideInformationCV, 'uppercase')}>
                     <a href={`/static/document/parsa_firoozi_cv-${ props?.content?.language }.pdf`} target='_blank' rel='noreferrer'>
-                        <BsDownload />
+                        <BiDownload />
                         <span>
                             { props?.content?.download_cv }
                         </span>

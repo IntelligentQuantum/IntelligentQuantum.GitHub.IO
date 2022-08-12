@@ -75,7 +75,7 @@
             "Hobbies",
             "Blogs",
             "Portfolio",
-            "Repositories",
+            "Github Repositories",
             "About me"
         ],
         "headers":
@@ -442,7 +442,7 @@
             "Hobbys",
             "Blogs",
             "Portfolio",
-            "Lagerstätten",
+            "Github Lagerstätten",
             "über mich"
         ],
         "my_blogs":
@@ -809,7 +809,7 @@
             "سرگرمی ها",
             "بلاگ ها",
             "نمونه کار ها",
-            "مخازن",
+            "مخازن گیت هاب",
             "درباره من"
         ],
         "headers":

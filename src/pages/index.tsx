@@ -5,9 +5,12 @@ import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
 import axios, { AxiosResponse } from 'axios';
-import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Keyboard, Autoplay, Navigation, Pagination } from 'swiper';
+import { Keyboard, Autoplay, Navigation } from 'swiper';
+import React, { useEffect, useRef, useState } from 'react';
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
+
+import useTyped from '../hooks/use-typed';
 
 import type { iOrgan } from '../interfaces/organ';
 import type { iService } from '../interfaces/service';
@@ -35,15 +38,17 @@ import ReactQueryLogo from '../../public/static/images/logos/logo-react-query.pn
 import StyledLogo from '../../public/static/images/logos/logo-styled-component.png';
 import ReactNativeLogo from '../../public/static/images/logos/logo-react-native.png';
 
-import useTyped from '../hooks/use-typed';
-
 const ServiceCard = dynamic(() => import('../components/home/service-card.component'));
-const TooltipPrimary = dynamic(() => import('../components/tooltip/tooltip-primary.component'));
 const RepositoriesCard = dynamic(() => import('../components/home/repository-card.component'));
+const TooltipPrimary = dynamic(() => import('../components/tooltip/tooltip-primary.component'));
 
 const Home = (props: { content: iContent }) =>
 {
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
+
     const typing = useTyped(props.content.typing_effect);
+
     const [organs, setOrgans] = useState<iOrgan[]>([]);
     const [repositories, setRepositories] = useState<iRepository[]>([]);
 
@@ -271,11 +276,12 @@ const Home = (props: { content: iContent }) =>
 
                         <li className={stylesHome.homeAboutMeAsideItem}>
                             <h5>
-                                { props.content.language === 'fa'
-                                    ?
-                                    props.content.services[1].title.split(' ')[1]
-                                    :
-                                    props.content.services[1].title.split(' ')[0]
+                                {
+                                    props.content.language === 'fa'
+                                        ?
+                                        props.content.services[1].title.split(' ')[1]
+                                        :
+                                        props.content.services[1].title.split(' ')[0]
                                 }:
                             </h5>
 
@@ -383,7 +389,7 @@ const Home = (props: { content: iContent }) =>
                 </div>
 
                 <h4 className='heading'>
-                    {props.content.titles[1]}
+                    { props.content.titles[1] }
                 </h4>
                 <div className={stylesHome.homeServices}>
                     {
@@ -400,43 +406,21 @@ const Home = (props: { content: iContent }) =>
                 <h4 className='heading'>
                     {props.content.titles[7]}
                 </h4>
-                <div className={stylesHome.homeRepos}>
+                <div className={stylesHome.homeRepositories}>
                     <Swiper
-                        navigation={true}
-                        modules={
-                            [
-                                Keyboard,
-                                Autoplay,
-                                Navigation,
-                                Pagination
-                            ]}
-                        keyboard={
-                            {
-                                enabled: true
-                            }}
-                        autoplay={
-                            {
-                                delay: 2500,
-                                disableOnInteraction: false
-                            }}
-                        breakpoints={
-                            {
-                                0:
-                                        {
-                                            slidesPerView: 1,
-                                            spaceBetween: 20
-                                        },
-                                650:
-                                        {
-                                            slidesPerView: 2,
-                                            spaceBetween: 20
-                                        },
-                                1400:
-                                        {
-                                            slidesPerView: 3,
-                                            spaceBetween: 20
-                                        }
-                            }}
+                        navigation={{
+                            prevEl: nextRef.current,
+                            nextEl: prevRef.current,
+                        }}
+                        modules={[ Keyboard, Autoplay, Navigation ]}
+                        keyboard={{ enabled: true }}
+                        autoplay={{ delay: 2500, disableOnInteraction: false }}
+                        spaceBetween={ 20 }
+                        breakpoints={{
+                            0: { slidesPerView: 1 },
+                            650: { slidesPerView: 2 },
+                            1400: { slidesPerView: 3 }
+                        }}
                     >
                         {
                             repositories.map((repository: iRepository) =>
@@ -448,48 +432,30 @@ const Home = (props: { content: iContent }) =>
                                     </SwiperSlide>
                                 ))
                         }
+
+                        <div className={stylesHome.homeRepositoriesPrevNext}>
+                            <div ref={nextRef}>
+                                <BiChevronLeft />
+                            </div>
+                            <div ref={prevRef}>
+                                <BiChevronRight />
+                            </div>
+                        </div>
                     </Swiper>
                 </div>
 
                 <div className={stylesHome.homeOrgans}>
                     <Swiper
-                        modules={
-                            [
-                                Keyboard,
-                                Autoplay
-                            ]}
-                        keyboard={
-                            {
-                                enabled: true
-                            }}
-                        autoplay={
-                            {
-                                delay: 2500,
-                                disableOnInteraction: false
-                            }}
-                        breakpoints={
-                            {
-                                0:
-                                        {
-                                            slidesPerView: 1,
-                                            spaceBetween: 20
-                                        },
-                                450:
-                                        {
-                                            slidesPerView: 2,
-                                            spaceBetween: 20
-                                        },
-                                650:
-                                        {
-                                            slidesPerView: 3,
-                                            spaceBetween: 20
-                                        },
-                                1400:
-                                        {
-                                            slidesPerView: 5,
-                                            spaceBetween: 20
-                                        }
-                            }}
+                        modules={[ Keyboard, Autoplay ]}
+                        keyboard={{ enabled: true }}
+                        autoplay={{ delay: 2500, disableOnInteraction: false }}
+                        spaceBetween={ 20 }
+                        breakpoints={{
+                            0: { slidesPerView: 1 },
+                            450: { slidesPerView: 2 },
+                            650: { slidesPerView: 3 },
+                            1400: { slidesPerView: 5 }
+                        }}
                     >
                         {
                             organs.map((organ: iOrgan) =>

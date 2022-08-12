@@ -9,8 +9,8 @@ import Watch from '../../../public/static/icons/icon-github_watch.svg';
 
 const RepositoriesCard = (props: { repository: iRepository }) =>
     (
-        <div className={stylesHome.homeReposContent}>
-            <div className={stylesHome.homeReposContentInfo}>
+        <div className={stylesHome.homeRepositoriesContent}>
+            <div className={stylesHome.homeRepositoriesContentInfo}>
                 <a href={props?.repository?.html_url} target='_blank' rel="noreferrer">
                     { props?.repository?.name }
                     <span>
@@ -19,7 +19,7 @@ const RepositoriesCard = (props: { repository: iRepository }) =>
                 </a>
             </div>
 
-            <ul className={stylesHome.homeReposContentStats}>
+            <ul className={stylesHome.homeRepositoriesContentStats}>
                 <li>
                     <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/stargazers`}>
                         <Star />
