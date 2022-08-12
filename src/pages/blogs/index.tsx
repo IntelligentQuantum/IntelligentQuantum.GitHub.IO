@@ -2,18 +2,15 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-import type { IBlog } from '../../interfaces/blog';
-import type { IContent } from '../../interfaces/content';
+import type { iBlog } from '../../interfaces/blog';
+import type { iContent } from '../../interfaces/content';
 
 import stylesBlog from '../../styles/pages/blog.module.scss';
-import stylesMain from '../../styles/components/main.module.scss';
 
 const Card = dynamic(() => import('../../components/blog/card.component'));
-const Main = dynamic(() => import('../../components/layouts/main/main.component'));
 
-const Blog = (props: { content: IContent }) =>
-{
-    return (
+const Blog = (props: { content: iContent }) =>
+    (
         <>
             <Head>
                 <title>Parsa Firoozi &mdash; Educational and research blogs</title>
@@ -40,32 +37,26 @@ const Blog = (props: { content: IContent }) =>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
                 <meta property='twitter:description' content='Parsa Firoozi Blogs'/>
             </Head>
-            <Main content={props?.content}>
-                <div className={stylesMain.mainContent}>
-                    <span className={stylesMain.mainBackground}/>
-                    <div className="hr"></div>
-                    <section className={stylesBlog.blogSection}>
-                        <h4 className='heading'>
-                            {props?.content?.titles[5]}
-                        </h4>
-                        <section className={stylesBlog.blogItems}>
-                            {
-                                props?.content?.my_blogs?.map((blog: IBlog) =>
-                                    (
-                                        <Card
-                                            key={ blog.name }
-                                            blog={ blog }
-                                            text={ props?.content?.read_more }
-                                        />
-                                    ))
-                            }
-                        </section>
-                    </section>
-                    <span className='hr'/>
+
+            <section className={stylesBlog.blogSection}>
+                <h4 className='heading'>
+                    {props?.content?.titles[5]}
+                </h4>
+
+                <div className={stylesBlog.blogItems}>
+                    {
+                        props?.content?.my_blogs?.map((blog: iBlog) =>
+                            (
+                                <Card
+                                    key={ blog.name }
+                                    blog={ blog }
+                                    text={ props?.content?.read_more }
+                                />
+                            ))
+                    }
                 </div>
-            </Main>
+            </section>
         </>
     );
-};
 
 export default Blog;

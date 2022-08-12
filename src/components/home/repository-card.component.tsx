@@ -1,13 +1,13 @@
 import React from 'react';
 
-import type { IRepository } from '../../interfaces/repository';
+import type { iRepository } from '../../interfaces/repository';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 import Star from '../../../public/static/icons/icon-github_star.svg';
 import Fork from '../../../public/static/icons/icon-github_fork.svg';
 import Watch from '../../../public/static/icons/icon-github_watch.svg';
 
-const RepositoriesCard = (props: { repository: IRepository }) =>
+const RepositoriesCard = (props: { repository: iRepository }) =>
     (
         <div className={stylesHome.homeReposContent}>
             <div className={stylesHome.homeReposContentInfo}>

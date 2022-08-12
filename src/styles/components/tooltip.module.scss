@@ -25,6 +25,24 @@
         border-color: var(--base-darker) transparent transparent;
     }
 
+    &[data-placement='left']
+    {
+        &::after
+        {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            right: -.3rem;
+            left: auto;
+
+            width: .75rem;
+            height: .75rem;
+            background: var(--base-darker);
+            transform: rotate(45deg);
+        }
+    }
+
     &[data-light]
     {
         background: var(--base-light);

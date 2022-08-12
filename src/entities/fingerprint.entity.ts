@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose';
 
-import { IFingerprint } from '../interfaces/fingerprint';
+import { iFingerprint } from '../interfaces/fingerprint';
 
 const fingerprintSchema: Schema = new Schema(
     {
@@ -13,4 +13,4 @@ const fingerprintSchema: Schema = new Schema(
 
 fingerprintSchema.index({ ip: 'text', fingerprint: 'text' });
 
-export default models.Fingerprint || model<IFingerprint>('Fingerprint', fingerprintSchema);
+export default models.Fingerprint || model<iFingerprint>('Fingerprint', fingerprintSchema);

@@ -10,9 +10,3 @@ export const setImagePortfolio = (status: boolean, image?: string, title?: strin
                 title
             }
     });
-
-export const setTagPortfolio = (tag: boolean | string) =>
-    ({
-        type: PortfolioActionTypes.SET_TAG_PORTFOLIO,
-        payload: tag
-    });

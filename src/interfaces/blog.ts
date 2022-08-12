@@ -1,4 +1,4 @@
-export interface IBlog
+export interface iBlog
 {
     id: number,
     name: string,

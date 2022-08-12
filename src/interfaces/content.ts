@@ -1,9 +1,9 @@
-import type { IBlog } from './blog';
-import type { IHobby } from './hobby';
-import type { IService } from './service';
-import type { IPortfolio } from './portfolio';
+import type { iBlog } from './blog';
+import type { iHobby } from './hobby';
+import type { iService } from './service';
+import type { iPortfolio } from './portfolio';
 
-export interface IContent
+export interface iContent
 {
     language: string,
     technologies: string,
@@ -58,8 +58,8 @@ export interface IContent
     titles: string[],
     headers: string[],
     categories: string[],
-    my_blogs: IBlog[],
-    my_hobbies: IHobby[],
-    services: IService[],
-    my_portfolio: IPortfolio[]
+    my_blogs: iBlog[],
+    my_hobbies: iHobby[],
+    services: iService[],
+    my_portfolio: iPortfolio[]
 }

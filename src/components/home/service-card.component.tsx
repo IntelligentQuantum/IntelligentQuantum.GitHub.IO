@@ -1,13 +1,13 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-import type { IService } from '../../interfaces/service';
+import type { iService } from '../../interfaces/service';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
 const ButtonSecondary = dynamic(() => import('../button/button-secondary.component'));
 
-const ServiceCard = (props: { text: string, service: IService }) =>
+const ServiceCard = (props: { text: string, service: iService }) =>
     (
         <div className={stylesHome.homeServicesContent}>
             <h5>

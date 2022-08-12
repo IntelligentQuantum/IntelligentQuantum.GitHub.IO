@@ -1,4 +1,4 @@
-export interface IPortfolio
+export interface iPortfolio
 {
     id: number,
     title: string,

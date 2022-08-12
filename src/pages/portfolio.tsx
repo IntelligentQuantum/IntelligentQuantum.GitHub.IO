@@ -1,34 +1,22 @@
-import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState } from 'react';
 
-import { setTagPortfolio } from '../app/portfolio/portfolio.actions';
+import type { iContent } from '../interfaces/content';
+import type { iPortfolio } from '../interfaces/portfolio';
 
-import type { IContent } from '../interfaces/content';
-import type { IPortfolio } from '../interfaces/portfolio';
-
-import stylesMain from '../styles/components/main.module.scss';
 import stylesPortfolio from '../styles/pages/portfolio.module.scss';
 
 const Card = dynamic(() => import('../components/portfolio/card.component'));
-const Main = dynamic(() => import('../components/layouts/main/main.component'));
 
-const Portfolio = (props: { content: IContent }) =>
+const Portfolio = (props: { content: iContent }) =>
 {
-    const dispatch = useDispatch();
-
-    const tagPortfolio = useSelector((state: any) => state.portfolio.tagPortfolio);
+    const [category, setCategory] = useState<string>('all');
 
     return (
         <>
             <Head>
                 <title>Parsa Firoozi &mdash; Resume and complete portfolio of im-parsa</title>
-
-                <meta charSet='UTF-8' />
-                <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-                <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
 
                 <meta name='Classification' content='Portfolio'/>
                 <meta name='subject' content='Portfolio'/>
@@ -47,62 +35,47 @@ const Portfolio = (props: { content: IContent }) =>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
                 <meta property='twitter:description' content='Parsa Firoozi Portfolio'/>
             </Head>
-            <Main content={props?.content}>
-                <div className={stylesMain.mainContent}>
-                    <span className={stylesMain.mainBackground}/>
-                    <span className='hr'/>
-                    <section className={stylesPortfolio.portfolio}>
-                        <h4 className='heading'>
-                            {props?.content?.titles[6]}
-                        </h4>
-                        <ul className='heading__small'>
-                            <li data-active={tagPortfolio === 'all'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('all'));
-                            }}>
-                                {props?.content?.categories[0]}
-                            </li>
-                            <li data-active={tagPortfolio === 'web_development'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('web_development'));
-                            }}>
-                                {props?.content?.categories[1]}
-                            </li>
-                            <li data-active={tagPortfolio === 'app_development'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('app_development'));
-                            }}>
-                                {props?.content?.categories[2]}
-                            </li>
-                            <li data-active={tagPortfolio === 'robot_development'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('robot_development'));
-                            }}>
-                                {props?.content?.categories[3]}
-                            </li>
-                            <li data-active={tagPortfolio === 'graphic_design'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('graphic_design'));
-                            }}>
-                                {props?.content?.categories[4]}
-                            </li>
-                        </ul>
-                        <div className={stylesPortfolio.portfolioList}>
-                            {
-                                props?.content?.my_portfolio?.map((portfolio: IPortfolio) =>
-                                    (
-                                        <Card
-                                            key={ portfolio?.id }
-                                            portfolio={ portfolio }
-                                            text={ props?.content?.read_more }
-                                        />
-                                    ))
-                            }
-                        </div>
-                    </section>
-                    <span className='hr'/>
+
+            <section className={stylesPortfolio.portfolio}>
+                <h4 className='heading'>
+                    {props.content.titles[6]}
+                </h4>
+
+                <ul className='heading__small'>
+                    <li data-active={category === 'all'} onClick={() => setCategory('all')}>
+                        {props.content.categories[0]}
+                    </li>
+                    <li data-active={category === 'web_development'} onClick={() => setCategory('web_development')}>
+                        {props.content.categories[1]}
+                    </li>
+                    <li data-active={category === 'app_development'} onClick={() => setCategory('app_development')}>
+                        {props.content.categories[2]}
+                    </li>
+                    <li data-active={category === 'robot_development'} onClick={() => setCategory('robot_development')}>
+                        {props.content.categories[3]}
+                    </li>
+                    <li data-active={category === 'graphic_design'} onClick={() => setCategory('graphic_design')}>
+                        {props.content.categories[4]}
+                    </li>
+                </ul>
+
+                <div className={stylesPortfolio.portfolioList}>
+                    {
+                        props.content.my_portfolio.map((portfolio: iPortfolio) =>
+                            (
+                                category === 'all' || portfolio.tag === category
+                                    ?
+                                    <Card
+                                        key={ portfolio.id }
+                                        portfolio={ portfolio }
+                                        text={ props.content.read_more }
+                                    />
+                                    :
+                                    null
+                            ))
+                    }
                 </div>
-            </Main>
+            </section>
         </>
     );
 };

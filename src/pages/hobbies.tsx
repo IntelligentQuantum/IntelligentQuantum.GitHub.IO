@@ -3,16 +3,14 @@ import dynamic from 'next/dynamic';
 import axios, { AxiosResponse } from 'axios';
 import React, { useEffect, useState } from 'react';
 
-import type { IHobby } from '../interfaces/hobby';
-import type { IContent } from '../interfaces/content';
+import type { iHobby } from '../interfaces/hobby';
+import type { iContent } from '../interfaces/content';
 
-import stylesMain from '../styles/components/main.module.scss';
 import stylesHobbies from '../styles/pages/hobbies.module.scss';
 
 const Card = dynamic(() => import('../components/hobbies/card.component'));
-const Main = dynamic(() => import('../components/layouts/main/main.component'));
 
-const Hobbies = (props: { content: IContent }) =>
+const Hobbies = (props: { content: iContent }) =>
 {
     const [players, setPlayers] = useState<any[]>([]);
 
@@ -40,19 +38,11 @@ const Hobbies = (props: { content: IContent }) =>
         getPlayer('398184', 'ferran-torres', 2);
     }, []);
 
-    console.log(players);
-
     return (
         <>
             <Head>
-                <title>Parsa Firoozi &mdash; A few Hobbies of im-parsa</title>
-
-                <meta charSet='UTF-8' />
-                <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-                <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
-
                 <title> Parsa Firoozi &mdash; Hobbies </title>
+
                 <meta name='Classification' content='Hobbies'/>
                 <meta name='subject' content='Hobbies'/>
                 <meta name='description' content='Parsa Firoozi Hobbies'/>
@@ -71,31 +61,22 @@ const Hobbies = (props: { content: IContent }) =>
                 <meta property='twitter:description' content='Parsa Firoozi Hobbies'/>
             </Head>
 
-            <Main content={props?.content}>
-                <div className={stylesMain.mainContent}>
-                    <span className={stylesMain.mainBackground}/>
-                    <span className='hr'/>
+            <section className={stylesHobbies.hobbies}>
+                <h4 className='heading'>
+                    {props.content.titles[4]}
+                </h4>
 
-                    <section className={stylesHobbies.hobbies}>
-                        <h4 className='heading'>
-                            {props?.content?.titles[4]}
-                        </h4>
-
-                        {
-                            props?.content?.my_hobbies.map((hobby: IHobby) =>
-                                <Card
-                                    key={ hobby?.id }
-                                    hobby={ hobby }
-                                    content={ props.content }
-                                    players={ players }
-                                />
-                            )
-                        }
-                    </section>
-
-                    <span className='hr'/>
-                </div>
-            </Main>
+                {
+                    props.content.my_hobbies.map((hobby: iHobby) =>
+                        <Card
+                            key={ hobby.id }
+                            hobby={ hobby }
+                            content={ props.content }
+                            players={ players }
+                        />
+                    )
+                }
+            </section>
         </>
     );
 };

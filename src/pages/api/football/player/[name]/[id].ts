@@ -40,8 +40,6 @@ const Id = async(request: NextApiRequest, response: NextApiResponse) =>
                     const playerInfo = dom.window.document.querySelectorAll('.data-header__label');
                     const playerStats = dom.window.document.querySelectorAll('.zentriert');
 
-                    console.log(playerName);
-
                     if (playerName[1])
                     {
                         response.status(200).json(

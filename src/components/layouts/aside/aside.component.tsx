@@ -5,7 +5,8 @@ import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 import { BsGithub, BsCheck, BsDownload, BsInstagram, BsLinkedin, BsDribbble } from 'react-icons/bs';
 
-import type { IContent } from '../../../interfaces/content';
+import type { iContent } from '../../../interfaces/content';
+import type { iLanguage } from '../../../interfaces/language';
 
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
@@ -16,7 +17,7 @@ import Profile from '../../../../public/static/images/im-parsa.png';
 import Rarible from '../../../../public/static/icons/icon-rarible.svg';
 import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
 
-const Aside = (props: { content: IContent, handleLanguage: any }) =>
+const Aside = (props: { content: iContent, handleLanguage: (theme?: iLanguage) => void }) =>
 {
     const dispatch = useDispatch();
     const openAside: boolean = useSelector((state: any) => state.aside.openAside);

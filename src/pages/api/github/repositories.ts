@@ -2,7 +2,7 @@ import axios from 'axios';
 import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-import type { IRepository } from '../../../interfaces/repository';
+import type { iRepository } from '../../../interfaces/repository';
 
 import rateLimit from '../../../lib/rate-limit';
 import Contact from '../../contact';
@@ -47,11 +47,11 @@ const Repositories = async(request: NextApiRequest, response: NextApiResponse) =
                         items:
                         [
                             ...data
-                                .filter((repo: IRepository) =>
+                                .filter((repo: iRepository) =>
                                 {
                                     return repo?.stargazers_count >= 10;
                                 })
-                                .sort((firstRepo: IRepository, secondRepo: IRepository) =>
+                                .sort((firstRepo: iRepository, secondRepo: iRepository) =>
                                 {
                                     return secondRepo?.stargazers_count - firstRepo?.stargazers_count;
                                 })

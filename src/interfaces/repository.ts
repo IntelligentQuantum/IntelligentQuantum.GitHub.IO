@@ -1,4 +1,4 @@
-export interface IRepository
+export interface iRepository
 {
     id: number,
     node_id: string,

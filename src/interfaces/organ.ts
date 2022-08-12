@@ -1,4 +1,4 @@
-export interface IOrgan
+export interface iOrgan
 {
     login: string,
     id: number,

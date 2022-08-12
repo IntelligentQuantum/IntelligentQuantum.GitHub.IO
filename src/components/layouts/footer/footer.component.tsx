@@ -1,11 +1,11 @@
 import React from 'react';
 import { BsGithub } from 'react-icons/bs';
 
-import type { IContent } from '../../../interfaces/content';
+import type { iContent } from '../../../interfaces/content';
 
 import stylesFooter from '../../../styles/components/footer.module.scss';
 
-const Footer = (props: { content: IContent }) =>
+const Footer = (props: { content: iContent }) =>
     (
         <footer className={stylesFooter.footer}>
             <div className={stylesFooter.footerBox}>

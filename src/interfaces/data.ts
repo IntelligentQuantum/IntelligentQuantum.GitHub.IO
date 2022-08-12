@@ -1,8 +1,8 @@
-import type { IContent } from './content';
+import type { iContent } from './content';
 
-export interface IData
+export interface iData
 {
-    en: IContent,
-    de: IContent,
-    fa: IContent
+    en: iContent,
+    de: iContent,
+    fa: iContent
 }

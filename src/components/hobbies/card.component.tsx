@@ -3,8 +3,8 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import reactHtmlParser from 'html-react-parser';
 
-import type { IHobby } from '../../interfaces/hobby';
-import type { IContent } from '../../interfaces/content';
+import type { iHobby } from '../../interfaces/hobby';
+import type { iContent } from '../../interfaces/content';
 
 import HeroAzur from '../../../public/static/images/hobbies/hero-azur.png';
 import HeroGuitar from '../../../public/static/images/hobbies/hero-guitar.png';
@@ -23,7 +23,7 @@ import stylesHobbies from '../../styles/pages/hobbies.module.scss';
 const TooltipFootball = dynamic(() => import('./tooltip-football.component'));
 const TooltipPrimary = dynamic(() => import('../tooltip/tooltip-primary.component'));
 
-const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby }) =>
+const HobbyCard = (props: { content: iContent, players: any, hobby: iHobby }) =>
     (
         <div className={stylesHobbies.hobbiesBox}>
             <div className={stylesHobbies.hobbiesBoxContent} data-fact_type={props.hobby.type}>

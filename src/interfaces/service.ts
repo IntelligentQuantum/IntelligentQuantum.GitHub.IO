@@ -1,4 +1,4 @@
-export interface IService
+export interface iService
 {
     id: number,
     title: string,
