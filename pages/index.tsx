@@ -1,15 +1,20 @@
-import { Fragment } from 'react';
+import { Fragment, useRef } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Keyboard, Navigation } from 'swiper';
 
-import { BiChevronRight } from 'react-icons/bi';
+import { BiChevronRight, BiChevronLeft, BiStar } from 'react-icons/bi';
+import { AiOutlineEye } from 'react-icons/ai';
+import { GoRepoForked } from 'react-icons/go';
 
 import useTyped from '../hooks/useTyped';
 
 import Main from '../components/layouts/main/main.component';
 
+import 'swiper/css';
 import styles from '../styles/home.module.scss';
 
 const Home: NextPage = () =>
@@ -25,6 +30,9 @@ const Home: NextPage = () =>
         'I am NodeJS, DenoJS, NestJS and Poco developer.',
         'I am Electron, React Native and Qt developer.'
     ]);
+
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
 
     return (
         <Fragment>
@@ -309,6 +317,155 @@ const Home: NextPage = () =>
                                 </a>
                             </Link>
                         </div>
+                    </div>
+
+                    <h4 className={styles.homeHeadingPrimary}>Github Repository</h4>
+                    <div className={styles.homeRepositories}>
+                        <Swiper
+                            modules={[Keyboard, Autoplay, Navigation]}
+                            keyboard={{ enabled: true }}
+                            autoplay={{ delay: 2500, disableOnInteraction: false }}
+                            navigation={{
+                                prevEl: nextRef.current,
+                                nextEl: prevRef.current,
+                            }}
+                            spaceBetween={ 20 }
+                            breakpoints={{
+                                0: { slidesPerView: 1 },
+                                650: { slidesPerView: 2 },
+                                1400: { slidesPerView: 3 }
+                            }}
+                        >
+                            <SwiperSlide >
+                                <div className={styles.homeRepository}>
+                                    <div className={styles.homeRepositoryInfo}>
+                                        <a href='/' target='_blank' rel="noreferrer">
+                                            <span>IntelligentQuantum</span>
+                                            <p>In the digital world, our data is secure as long as we are aware. Most </p>
+                                        </a>
+                                    </div>
+
+                                    <ul className={styles.homeRepositoryStats}>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <BiStar />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <AiOutlineEye />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <GoRepoForked />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className={styles.homeRepository}>
+                                    <div className={styles.homeRepositoryInfo}>
+                                        <a href='/' target='_blank' rel="noreferrer">
+                                            <span>IntelligentQuantum</span>
+                                            <p>In the digital world, our data is secure as long as we are aware. Most </p>
+                                        </a>
+                                    </div>
+
+                                    <ul className={styles.homeRepositoryStats}>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <BiStar />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <AiOutlineEye />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <GoRepoForked />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className={styles.homeRepository}>
+                                    <div className={styles.homeRepositoryInfo}>
+                                        <a href='/' target='_blank' rel="noreferrer">
+                                            <span>IntelligentQuantum</span>
+                                            <p>In the digital world, our data is secure as long as we are aware. Most </p>
+                                        </a>
+                                    </div>
+
+                                    <ul className={styles.homeRepositoryStats}>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <BiStar />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <AiOutlineEye />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <GoRepoForked />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className={styles.homeRepository}>
+                                    <div className={styles.homeRepositoryInfo}>
+                                        <a href='/' target='_blank' rel="noreferrer">
+                                            <span>IntelligentQuantum</span>
+                                            <p>In the digital world, our data is secure as long as we are aware. Most </p>
+                                        </a>
+                                    </div>
+
+                                    <ul className={styles.homeRepositoryStats}>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <BiStar />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <AiOutlineEye />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                        <li className={styles.homeRepositoryStatsItem}>
+                                            <a href="https://">
+                                                <GoRepoForked />
+                                                <span>20</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </SwiperSlide>
+
+                            <div className={styles.homeRepositoryPrevNext}>
+                                <div ref={nextRef}><BiChevronLeft /></div>
+                                <div ref={prevRef}><BiChevronRight /></div>
+                            </div>
+                        </Swiper>
                     </div>
                 </section>
             </Main>

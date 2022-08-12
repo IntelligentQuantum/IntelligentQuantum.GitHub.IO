@@ -4,7 +4,7 @@
     {
         font-size: 1.7rem;
         font-weight: 600;
-        padding: 2rem 3rem;
+        padding: 3rem;
         color: #fafafc;
     }
 
@@ -278,6 +278,97 @@
                 {
                     margin-left: .4rem;
                 }
+            }
+        }
+    }
+
+    &Repositories
+    {
+        padding: 0 3rem;
+    }
+
+    &Repository
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 12rem;
+        background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+        padding: 3rem;
+
+        &Info
+        {
+            & span
+            {
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: #fafafc;
+            }
+
+            & p
+            {
+                padding-top: 1rem;
+                line-height: 1.7;
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: #8c8c8e;
+            }
+        }
+
+        &Stats
+        {
+            margin-top: auto;
+
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            &Item
+            {
+                border-radius: 10rem;
+                padding: 0.5rem 1.25rem;
+                background-color: #1E1E28;
+                color: #8c8c8e;
+                font-weight: 600;
+                transition: all 0.2s;
+                cursor: pointer;
+
+                & a
+                {
+                    display: flex;
+                    align-items: center;
+
+                    & svg
+                    {
+                        color: #FFC107;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        margin-right: 0.5rem;
+                    }
+
+                    & span
+                    {
+                        color: #8c8c8e;
+                    }
+                }
+            }
+        }
+
+        &PrevNext
+        {
+            padding: 1rem 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            & svg
+            {
+                cursor: pointer;
+                width: 2.5rem;
+                height: 2.5rem;
+                fill: #8c8c8e;
             }
         }
     }
