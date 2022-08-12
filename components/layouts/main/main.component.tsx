@@ -11,6 +11,7 @@ const Main = ({ children }: MainProps) =>
 {
     return (
         <main className={styles.main}>
+            <div className={styles.mainBackground} />
             { children }
         </main>
     );

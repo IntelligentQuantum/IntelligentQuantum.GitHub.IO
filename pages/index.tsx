@@ -1,11 +1,31 @@
 import { Fragment } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+
+import { BiChevronRight } from 'react-icons/bi';
+
+import useTyped from '../hooks/useTyped';
 
 import Main from '../components/layouts/main/main.component';
 
+import styles from '../styles/home.module.scss';
+
 const Home: NextPage = () =>
 {
+    const typed = useTyped([
+        'I build desktop, mobile applications.',
+        'I build web interfaces.',
+        'I build RESTFUL and GraphQL API\'s.',
+        'I build games with Unreal, Frostbite and Unity engines.',
+        'I am cyber security enthusiast.',
+        'I am JavaScripts, TypeScript, and C++ developer.',
+        'I am ReactJS and NextJS developer.',
+        'I am NodeJS, DenoJS, NestJS and Poco developer.',
+        'I am Electron, React Native and Qt developer.'
+    ]);
+
     return (
         <Fragment>
             <Head>
@@ -15,7 +35,282 @@ const Home: NextPage = () =>
             </Head>
 
             <Main>
-s
+                <section className={styles.home}>
+                    <header className={styles.homeHeader}>
+                        <div className={styles.homeHeaderTop} />
+                        <div className={styles.homeHeaderContent}>
+                            <h1 className={styles.homeHeaderContentHeading}>What do i make Or am i?</h1>
+
+                            <div className={styles.homeHeaderContentDescription}>
+                                &lt;<i>code</i>&gt;
+                                <span>{ typed }</span>
+                                &lt;/<i>code</i>&gt;
+                            </div>
+
+                            <Link href='/'>
+                                <a className={styles.homeHeaderContentButton}>EXPLORE NOW</a>
+                            </Link>
+                        </div>
+
+                        <div className={styles.homeHeaderLogs}>
+                            <div className={styles.homeHeaderLogsBox}>
+                                <span className={styles.homeHeaderLogsBoxNumber}>196+</span>
+                                <p className={styles.homeHeaderLogsBoxParagraph}>Happy Customers</p>
+                            </div>
+                            <div className={styles.homeHeaderLogsBox}>
+                                <span className={styles.homeHeaderLogsBoxNumber}>198+</span>
+                                <p className={styles.homeHeaderLogsBoxParagraph}>Completed Projects</p>
+                            </div>
+                            <div className={styles.homeHeaderLogsBox}>
+                                <span className={styles.homeHeaderLogsBoxNumber}>9+</span>
+                                <p className={styles.homeHeaderLogsBoxParagraph}>Years Experience</p>
+                            </div>
+                            <div className={styles.homeHeaderLogsBox}>
+                                <span className={styles.homeHeaderLogsBoxNumber}>30+</span>
+                                <p className={styles.homeHeaderLogsBoxParagraph}>Honors and Awards</p>
+                            </div>
+                        </div>
+                    </header>
+
+                    <h4 className={styles.homeHeadingSecondary}>About me</h4>
+                    <div className={styles.homeAbout}>
+                        <h2 className={styles.homeAboutParagraph}>
+                            Hamed is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.
+                        </h2>
+
+                        <ul className={styles.homeAboutFAT}>
+                            <li className={styles.homeAboutFATItem}>
+                                <h6>Frameworks and Technologies;</h6>
+                            </li>
+                            <li className={styles.homeAboutFATItem}>
+                                <h5>Front-End:</h5>
+
+                                <ul className={styles.homeAboutFATItemListLogo}>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-html.png'
+                                                alt='IntelligentQuantum Html Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-sass.png'
+                                                alt='IntelligentQuantum sass Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-styled-component.png'
+                                                alt='IntelligentQuantum Styled Component Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-react.png'
+                                                alt='IntelligentQuantum ReactJS Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-next.png'
+                                                alt='IntelligentQuantum NextJS Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className={styles.homeAboutFATItem}>
+                                <h5>Back-End:</h5>
+
+                                <ul className={styles.homeAboutFATItemListLogo}>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-node.png'
+                                                alt='IntelligentQuantum NodeJS Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-deno.png'
+                                                alt='IntelligentQuantum DenoJS Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-express.png'
+                                                alt='IntelligentQuantum ExpressJS Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-nest.png'
+                                                alt='IntelligentQuantum NestJS Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className={styles.homeAboutFATItem}>
+                                <h5>Cross-Platform:</h5>
+
+                                <ul className={styles.homeAboutFATItemListLogo}>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-electron.png'
+                                                alt='IntelligentQuantum ElectronJS Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-react-native.png'
+                                                alt='IntelligentQuantum React native Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                    <li className={styles.homeAboutFATItemListLogoItem}>
+                                        <span>
+                                            <Image
+                                                src='/images/logos/logo-qt.png'
+                                                alt='IntelligentQuantum QT Logo'
+                                                layout='intrinsic'
+                                                width={25}
+                                                height={25}
+                                            />
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h4 className={styles.homeHeadingPrimary}>Services</h4>
+                    <div className={styles.homeServices}>
+                        <div className={styles.homeServicesContent}>
+                            <h5 className={styles.homeServicesContentHeading}>Front-End Development</h5>
+                            <p className={styles.homeServicesContentParagraph}>
+                                Front-end web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website.
+                            </p>
+                            <Link href='/'>
+                                <a className={styles.homeServicesContentButton}>
+                                    ORDER NOW
+                                    <BiChevronRight />
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={styles.homeServicesContent}>
+                            <h5 className={styles.homeServicesContentHeading}>Back-End Development</h5>
+                            <p className={styles.homeServicesContentParagraph}>
+                                Back-end development means working on server-side software, which focuses on everything you can not see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco.
+                            </p>
+                            <Link href='/'>
+                                <a className={styles.homeServicesContentButton}>
+                                    ORDER NOW
+                                    <BiChevronRight />
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={styles.homeServicesContent}>
+                            <h5 className={styles.homeServicesContentHeading}>Cross-Platform Development</h5>
+                            <p className={styles.homeServicesContentParagraph}>
+                                Cross-platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt.
+                            </p>
+                            <Link href='/'>
+                                <a className={styles.homeServicesContentButton}>
+                                    ORDER NOW
+                                    <BiChevronRight />
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={styles.homeServicesContent}>
+                            <h5 className={styles.homeServicesContentHeading}>Game Development</h5>
+                            <p className={styles.homeServicesContentParagraph}>
+                                Game Development is the art of creating games and describes the design, development and release of a game with Unreal, Frostbite and Unity engines. It may involve concept generation, design, build, test and release.
+                            </p>
+                            <Link href='/'>
+                                <a className={styles.homeServicesContentButton}>
+                                    ORDER NOW
+                                    <BiChevronRight />
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={styles.homeServicesContent}>
+                            <h5 className={styles.homeServicesContentHeading}>Cyber-Security</h5>
+                            <p className={styles.homeServicesContentParagraph}>
+                                In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media.
+                            </p>
+                            <Link href='/'>
+                                <a className={styles.homeServicesContentButton}>
+                                    ORDER NOW
+                                    <BiChevronRight />
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={styles.homeServicesContent}>
+                            <h5 className={styles.homeServicesContentHeading}>Search Engine Optimization</h5>
+                            <p className={styles.homeServicesContentParagraph}>
+                                Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic.
+                            </p>
+                            <Link href='/'>
+                                <a className={styles.homeServicesContentButton}>
+                                    ORDER NOW
+                                    <BiChevronRight />
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
             </Main>
         </Fragment>
     );
