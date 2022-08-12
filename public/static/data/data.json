@@ -135,6 +135,18 @@
                 "description": "I have been watching & playing football since I can remember and my favorite player is the best player in football history, Lionel Messi who has most Ballon d'Or in football and most G+A, in other side I really like Antoine Griezmann football & life style he is definitely one of the smartest players in history. Also, Ferran Torres, a new football talent who is one of the best playmakers in the world right now.\nMy favorite teams are Argentina, France and Spain - Barçelona, Juventus and Arsenal."
             },
             {
+                "id": 3,
+                "title": "Music",
+                "type": "music",
+                "description": "An arrangement of sounds having melody, rhythm, and usually harmony. I think music is the most beautiful human art. Music has always been relaxing for me and I get a lot of energy with faster rhythms.\nWhen working, nothing is more effective than a good music and I always have a music playing in the background because it makes me feel so good. Finally, I must say that my favorite singer is <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">Shadmehr Aghili</a> and my favorite music is the song <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">\"Kooh\"</a> by Shadmehr Aghili."
+            },
+            {
+                "id": 4,
+                "title": "Guitar",
+                "type": "guitar",
+                "description": "The guitar is a fretted musical instrument that typically has six strings. Why is it another instrument when it's a guitar? Of course, I also have experience playing piano and violin, but my favorite one is guitar. Also, I had a duet and solo concert sponsored by Nava Afarin academy. I am mostly interested in acoustic and electronic guitar. The sound of the guitar gives me immense peace and pleasure. I'm always a fan of acoustic songs and unplugged performances because of the use of different guitars."
+            },
+            {
                 "id": 1,
                 "title": "Space",
                 "type": "space",
@@ -144,19 +156,7 @@
                 "id": 2,
                 "title": "Call Of Duty",
                 "type": "cod",
-                "description": "I loved playing, and it is only 'TIME' that has separated me between my love. I enjoy the series of games that the Call Of Duty brings out and Warzone was one of the best, that was wonderfully designed and it was really fun to play."
-            },
-            {
-                "id": 3,
-                "title": "Music",
-                "type": "music",
-                "description": "I love listening to music, I always listen to music when I do work and it makes me feel great. I really enjoy Shadmehr Aghili's songs and voice, and it doubles my energy and makes me feel good."
-            },
-            {
-                "id": 4,
-                "title": "Guitar",
-                "type": "guitar",
-                "description": "I have been playing the guitar since I was 9 years old and I love this instrument and its music. I look for the acoustic version of every song I want to listen. I have 2 concert that in Honar Aftab sallon from Navaafrin  academy."
+                "description": "Call of Duty is a first-person shooter video game franchise published by Activision. I am a fan of the Call of Duty series. The graphics and realism in this game are incredibly well done so that sometimes you feel like you are in the middle of the battlefield. Contrary to what people think, these games taught me not to be afraid and brave, to be a rebel!"
             },
             {
                 "id": 5,
@@ -502,6 +502,18 @@
                 "description": "Seitdem schaue und spiele ich Fußball seit ich denken kann und mein Lieblingsspieler ist der beste Spieler in der Fußballgeschichte, Lionel Messi, der die meisten Ballon d'Or im Fußball und die meisten G+A hat, auf der anderen Seite Ich mag Antoine Griezmann Fußball und seinen Lebensstil sehr, er ist definitiv einer der klügsten Spieler der Geschichte. Außerdem Ferran Torres, ein neues Fußballtalent, das derzeit einer der besten Spielmacher der Welt ist.\nMeine Lieblingsmannschaften sind Argentinien, Frankreich und Spanien."
             },
             {
+                "id": 3,
+                "title": "Musik",
+                "type": "music",
+                "description": "Eine Anordnung von Klängen mit Melodie, Rhythmus und normalerweise Harmonie. Ich denke, Musik ist die schönste menschliche Kunst. Musik war für mich schon immer entspannend und ich bekomme viel Energie mit schnelleren Rhythmen. Bei der Arbeit ist nichts effektiver als gute Musik und ich habe immer eine Musik im Hintergrund, weil es mir so gut tut. Abschließend muss ich sagen, dass mein Lieblingssänger <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">Shadmehr Aghili</a> ist und meine Lieblingsmusik das Lied <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">„Kooh“</a> von Shadmehr Aghili ist."
+            },
+            {
+                "id": 4,
+                "title": "Gitarre",
+                "type": "guitar",
+                "description": "Die Gitarre ist ein Musikinstrument mit Bünden, das typischerweise sechs Saiten hat. Warum ist es ein anderes Instrument, wenn es eine Gitarre ist? Natürlich habe ich auch Erfahrung mit Klavier und Geige, aber am liebsten spiele ich Gitarre. Außerdem hatte ich ein Duett und ein Solokonzert, das von der Nava Afarin Academy gesponsert wurde. Ich interessiere mich hauptsächlich für akustische und elektronische Gitarre. Der Klang der Gitarre gibt mir ungeheure Ruhe und Freude. Ich bin immer ein Fan von akustischen Songs und Unplugged-Auftritten, weil ich verschiedene Gitarren verwende."
+            },
+            {
                 "id": 1,
                 "title": "Platz",
                 "type": "space",
@@ -511,19 +523,7 @@
                 "id": 2,
                 "title": "Ruf der Pflicht",
                 "type": "cod",
-                "description": "Ich habe es geliebt zu spielen, und nur die ZEIT hat mich zwischen meiner Liebe getrennt. Ich genieße die Reihe von Spielen, die Call Of Duty herausbringt, und Warzone war eines der besten, das war wunderbar gestaltet und es hat wirklich Spaß gemacht zu spielen."
-            },
-            {
-                "id": 3,
-                "title": "Musik",
-                "type": "music",
-                "description": "Ich höre sehr gerne Musik, ich höre immer Musik, wenn ich arbeite, und es gibt mir ein tolles Gefühl. Ich mag Shadmehr Aghilis Lieder und Stimme wirklich, und es verdoppelt meine Energie und gibt mir ein gutes Gefühl. "
-            },
-            {
-                "id": 4,
-                "title": "Gitarre",
-                "type": "guitar",
-                "description": "Ich spiele Gitarre seit ich 9 Jahre alt bin und ich liebe dieses Instrument und seine Musik. Ich suche die akustische Version jedes Liedes, das ich hören möchte. Ich habe 2 Konzerte in Honar Aftab-Salon von der Navaafrin-Akademie."
+                "description": "Call of Duty ist ein Ego-Shooter-Videospiel-Franchise, das von Activision veröffentlicht wird. Ich bin ein Fan der Call of Duty-Reihe. Die Grafik und der Realismus in diesem Spiel sind unglaublich gut gemacht, sodass Sie manchmal das Gefühl haben, mitten auf dem Schlachtfeld zu sein. Im Gegensatz zu dem, was die Leute denken, haben mich diese Spiele gelehrt, keine Angst zu haben und mutig zu sein, ein Rebell zu sein!"
             },
             {
                 "id": 5,
@@ -869,6 +869,18 @@
                 "description": "من از وقتی که یادم می آید عاشق بازی کردن و دیدن فوتبال بودم. بازیکن مورد علاقه من بهترین بازیکن تاریخ فوتبال هست کسی که بیشترین توپ طلا را دارد و بیشترین گل + پاس گل را دارد همچنین از سبک بازی و زندگی شخصی گریزمان خیلی خوشم می آید او صد در صد یکی از برترین و باهوش ترین هافبک های تهاجمی فوتبال است. همچنین فران تورس استعداد جدید فوتبال که یکی از بهترین وینگر های بازیساز حال حاضر جهان هست. تیم های مورد علاقه من آرژانتین، فرانسه و اسپانیا - بارسلونا، یوونتوس و آرسنال هستند."
             },
             {
+                "id": 3,
+                "title": "موسیقی",
+                "type": "music",
+                "description": "بنظر من موسیقی زیبا ترین هنر انسان است. موسیقی همیشه برای من آرامش بخش بوده و هست و با ریتم های سریع تر انرژی زیادی میگیرم.\nدر هنگام کار هیچ چیز اندازه یک موسیقی خوب تاثیرگذار نیست و من همیشه یک موسیقی در بک گراندم در حال اجرا میگذارم چون حس خیلی خوبی بهم میده. در آخر باید بگم خواننده مورد علاقه من <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">شادمهر عقیلی</a> و موزیک مورد علاقم آهنگ <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">\"کوه\"</a> از شادمهر عقیلی هست."
+            },
+            {
+                "id": 4,
+                "title": "گیتار",
+                "type": "guitar",
+                "description": "گیتار یک ساز موسیقی فرت دار است که معمولاً شش سیم دارد. چرا وقتی گیتار است، ساز دیگری است؟ البته من تجربه نواختن پیانو و ویولن را هم دارم اما ساز مورد علاقه من گیتار است. همچنین کنسرت دونوازی و انفرادی به اسپانسری آموزشگاه نوا آفرین داشتم. من بیشتر به گیتار آکوستیک و الکترونیک علاقه دارم. صدای گیتار به من آرامش و لذت بی\u200Cنظیری می\u200Cدهد. من همیشه به دلیل استفاده از گیتارهای مختلف طرفدار آهنگ های آکوستیک و اجراهای بدون پلاگ هستم."
+            },
+            {
                 "id": 1,
                 "title": "کیهان",
                 "type": "space",
@@ -878,19 +890,7 @@
                 "id": 2,
                 "title": "کال آف دیوتی",
                 "type": "cod",
-                "description": "منم از بازی کردن خیلی لذت میبرم و تنها زمان است که بین من و بازی کردن فاصله انداخته. کال آف دیوتی بهترین بازی های شوتر را میسازد و یکی از بهترین های ان وارزون است که بازی کردنش بسیار لذت بخش و هیجان انگیز است."
-            },
-            {
-                "id": 3,
-                "title": "آهنگ",
-                "type": "music",
-                "description": "من همیشه موقع کارم آهنگ گوش میدهم زیرا به من حس بسیار خوبی میدهد چه بسا آهنگ شادمهر عقیلی باشد آن وقت انرژیم هم چند برابر میشود به راستی بازگشت همه به سوی اوست و آهنگی جز او سو تفاهم است."
-            },
-            {
-                "id": 4,
-                "title": "گیتار",
-                "type": "guitar",
-                "description": "گیتار ساز محبوب من است و از نظر من بهترین بهترین ساز. از ۹ سالگی به دنبال یادگیری گیتار بودم و ۲ کنسرت در سالن هنر آفتاب شیراز با آکادمی نواآفرین برگذار کرده ام. هر آهنگی که بخواهم گوش بدهم اول به دنبال ورژن آکوستیک آن میگردم زیرا از ریتمی که با گیتار درست میشود بیشتر لذت میبرم و انرژی میگیرم."
+                "description": "Call of Duty یک مجموعه بازی ویدئویی تیراندازی اول شخص است که توسط Activision منتشر شده است. من از طرفداران سری Call of Duty هستم. گرافیک و واقع گرایی در این بازی فوق العاده خوب انجام شده است به طوری که گاهی اوقات احساس می کنید در میانه میدان نبرد هستید. بر خلاف تصور مردم، این بازی ها به من آموخت که نترس و شجاع باشم، شورشی باشم!"
             },
             {
                 "id": 5,

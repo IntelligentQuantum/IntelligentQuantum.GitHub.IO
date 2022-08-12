@@ -28,7 +28,7 @@
             min-height: 36rem;
             padding: 6rem;
 
-            & h1
+            & h2
             {
                 font-size: 5rem;
                 margin: 0 auto auto 0;
@@ -57,7 +57,7 @@
 
                     color: var(--color-base-text-bolder);
 
-                    & > div
+                    &:nth-child(2)
                     {
                         position: relative !important;
 
@@ -574,7 +574,7 @@ html[data-language="fa"]
 
         &HeaderContent
         {
-            & h1
+            & h2
             {
                 margin-left: auto;
                 margin-right: 0;

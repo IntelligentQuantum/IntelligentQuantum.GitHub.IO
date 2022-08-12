@@ -1,5 +1,5 @@
 export interface IFingerprint
 {
     ip: string,
-    fingerprint: object
+    fingerprint: string
 }

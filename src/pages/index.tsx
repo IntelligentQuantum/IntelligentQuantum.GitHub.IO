@@ -37,6 +37,8 @@ import ReactQueryLogo from '../../public/static/images/logos/logo-react-query.pn
 import StyledLogo from '../../public/static/images/logos/logo-styled-component.png';
 import ReactNativeLogo from '../../public/static/images/logos/logo-react-native.png';
 
+import useTyped from '../hooks/use-typed';
+
 const Main = dynamic(() => import('../components/layouts/main/main.component'));
 const ServiceCard = dynamic(() => import('../components/home/service-card.component'));
 const TooltipPrimary = dynamic(() => import('../components/tooltip/tooltip-primary.component'));
@@ -44,6 +46,7 @@ const RepositoriesCard = dynamic(() => import('../components/home/repository-car
 
 const Home = (props: { content: IContent }) =>
 {
+    const typing = useTyped(props.content.typing_effect);
     const [organs, setOrgans] = useState<IOrgan[]>([]);
     const [repositories, setRepositories] = useState<IRepository[]>([]);
 
@@ -96,27 +99,30 @@ const Home = (props: { content: IContent }) =>
                         <header className={stylesHome.homeHeader}>
                             <div className={stylesHome.homeHeaderContent}>
                                 <h2>
-                                    {props?.content?.titles[0]}
+                                    { props.content.titles[0] }
                                 </h2>
 
                                 <div className={stylesHome.homeHeaderContentDescription}>
                                     <span>
-                                &lt;<i>code</i>&gt;
+                                        &lt;<i>code</i>&gt;
                                     </span>
-                                    <ReactTypingEffect
-                                        speed={90}
-                                        text={props?.content?.typing_effect || ['']}
-                                    />
+
                                     <span>
-                                &lt;/<i>code</i>&gt;
+                                        { typing }
+                                    </span>
+
+                                    <span>
+                                        &lt;/<i>code</i>&gt;
                                     </span>
                                 </div>
+
                                 <Link href='/portfolio'>
                                     <a className={classnames(stylesButtons.button, 'align-self-start')}>
-                                        {props?.content?.explore_more}
+                                        { props.content.explore_more }
                                     </a>
                                 </Link>
                             </div>
+
                             <div className={stylesHome.homeHeaderLogs}>
                                 <div className={stylesHome.homeHeaderLogsBox}>
                                     <span>

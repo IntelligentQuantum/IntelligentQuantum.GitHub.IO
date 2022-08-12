@@ -5,7 +5,7 @@ import { IFingerprint } from '../interfaces/fingerprint';
 const fingerprintSchema: Schema = new Schema(
     {
         ip: String,
-        fingerprint: Object
+        fingerprint: String
     },
     {
         timestamps: true

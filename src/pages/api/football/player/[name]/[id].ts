@@ -31,14 +31,16 @@ const Id = async(request: NextApiRequest, response: NextApiResponse) =>
             {
                 if (query?.name && query.id)
                 {
-                    await limiter.check(response, 10, 'CACHE_TOKEN');
+                    await limiter.check(response, 50, 'CACHE_TOKEN');
 
-                    const { data } = await axios.get(`https://www.transfermarkt.com/${query.name}/leistungsdatendetails/spieler/${query.id}`);
+                    const { data } = await axios.get(`https://www.transfermarkt.com/${ query.name }/leistungsdatendetails/spieler/${ query.id }`);
                     const dom = new JSDOM(data);
 
                     const playerName = arrayFilter(dom.window.document.querySelector('.data-header__headline-wrapper')?.textContent?.split(' '));
                     const playerInfo = dom.window.document.querySelectorAll('.data-header__label');
                     const playerStats = dom.window.document.querySelectorAll('.zentriert');
+
+                    console.log(playerName);
 
                     if (playerName[1])
                     {
@@ -51,11 +53,12 @@ const Id = async(request: NextApiRequest, response: NextApiResponse) =>
                                         name: playerName[1],
                                         last_name: playerName[2],
                                         shirt_number: playerName[0]?.split('#')[1],
+                                        profile: dom.window.document.querySelector('.data-header__profile-image')?.getAttribute('src'),
                                         stats:
                                             {
                                                 games: playerStats[7]?.textContent,
                                                 goals: playerStats[8]?.textContent,
-                                                assets: playerStats[9]?.textContent
+                                                assists: playerStats[9]?.textContent
                                             },
                                         info:
                                             {

@@ -1,16 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+import reactHtmlParser from 'html-react-parser';
 
 import type { IHobby } from '../../interfaces/hobby';
+import type { IContent } from '../../interfaces/content';
 
+import HeroAzur from '../../../public/static/images/hobbies/hero-azur.png';
+import HeroGuitar from '../../../public/static/images/hobbies/hero-guitar.png';
+import HeroRarible from '../../../public/static/images/hobbies/hero-rarible.jpg';
+import HeroDiscord from '../../../public/static/images/hobbies/hero-discord.png';
 import HeroMessi from '../../../public/static/images/hobbies/hero-lionel-messi.png';
+import HeroAstronaut from '../../../public/static/images/hobbies/hero-astronaut.png';
+import HeroInstagram from '../../../public/static/images/hobbies/hero-instagram.png';
 import HeroTorres from '../../../public/static/images/hobbies/hero-ferran-torres.png';
+import HeroGhost from '../../../public/static/images/hobbies/hero-ghost-reckoner.png';
+import HeroShadmehr from '../../../public/static/images/hobbies/hero-shadmehr-aghili.png';
 import HeroGriezmann from '../../../public/static/images/hobbies/hero-antoine-griezmann.png';
 
 import stylesHobbies from '../../styles/pages/hobbies.module.scss';
-import TooltipPrimary from "../tooltip/tooltip-primary.component";
 
-const HobbyCard = (props: { hobby: IHobby }) =>
+const TooltipFootball = dynamic(() => import('./tooltip-football.component'));
+const TooltipPrimary = dynamic(() => import('../tooltip/tooltip-primary.component'));
+
+const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby }) =>
     (
         <div className={stylesHobbies.hobbiesBox}>
             <div className={stylesHobbies.hobbiesBoxContent} data-fact_type={props.hobby.type}>
@@ -20,30 +33,34 @@ const HobbyCard = (props: { hobby: IHobby }) =>
                     </h3>
 
                     <p className={stylesHobbies.hobbiesBoxContentBoxDescription} data-fact_type={props.hobby.type}>
-                        { props.hobby.description }
+                        { reactHtmlParser(props.hobby.description) }
                     </p>
                 </div>
 
                 <div className={stylesHobbies.hobbiesBoxContentImages}>
                     {
                         props.hobby.type === 'football'
-                            ? (
-                                <>
-                                    <TooltipPrimary
-                                        placement='left'
-                                        title='messi'
-                                    >
-                                        <span data-hero={true}>
-                                            <Image
-                                                src={ HeroMessi }
-                                                alt='Lionel Messi'
-                                                layout='intrinsic'
-                                                width={290}
-                                                height={365}
-                                            />
-                                        </span>
-                                    </TooltipPrimary>
+                            ?
+                            <>
+                                <TooltipPrimary
+                                    placement={ props.content.language === 'fa' ? 'right' : 'left' }
+                                    render={ <TooltipFootball player={ props?.players[0] }/> }
+                                >
+                                    <span data-hero={true}>
+                                        <Image
+                                            src={ HeroMessi }
+                                            alt='Lionel Messi'
+                                            layout='intrinsic'
+                                            width={290}
+                                            height={365}
+                                        />
+                                    </span>
+                                </TooltipPrimary>
 
+                                <TooltipPrimary
+                                    placement={ props.content.language === 'fa' ? 'right' : 'left' }
+                                    render={ <TooltipFootball player={ props?.players[1] }/> }
+                                >
                                     <span data-hero={true}>
                                         <Image
                                             src={ HeroGriezmann }
@@ -53,6 +70,12 @@ const HobbyCard = (props: { hobby: IHobby }) =>
                                             height={360}
                                         />
                                     </span>
+                                </TooltipPrimary>
+
+                                <TooltipPrimary
+                                    placement={ props.content.language === 'fa' ? 'right' : 'left' }
+                                    render={ <TooltipFootball player={ props?.players[2] }/> }
+                                >
                                     <span data-hero={true}>
                                         <Image
                                             src={ HeroTorres }
@@ -62,26 +85,103 @@ const HobbyCard = (props: { hobby: IHobby }) =>
                                             height={360}
                                         />
                                     </span>
-                                </>
-                            )
-                            : props.hobby.type === 'space'
-                                ? <img className={stylesHobbies.hobbiesBoxContentImagesBackgroundFour} src='/static/images/hobbies/astronaut.png' alt='Astronaut'/>
-                                : props.hobby.type === 'guitar'
-                                    ? <img className={stylesHobbies.hobbiesBoxContentImagesBackgroundFour} src='/static/images/hobbies/guitar.png' alt='Guitar'/>
-                                    : props.hobby.type === 'music'
-                                        ? <img className={stylesHobbies.hobbiesBoxContentImagesBackgroundThree} src='/static/images/hobbies/shadmehr_aghili.png' alt='Shadmehr Aghili'/>
-                                        : props.hobby.type === 'cod'
-                                            ? <>
-                                                <img className={stylesHobbies.hobbiesBoxContentImagesBackgroundOne} src='/static/images/hobbies/azur.png' alt='Azur'/>
-                                                <img className={stylesHobbies.hobbiesBoxContentImagesBackgroundTwo} data-image='two' src='/static/images/hobbies/ghost_reckoner.png' alt='Ghost Reckoner'/>
+                                </TooltipPrimary>
+                            </>
+                            :
+                            props.hobby.type === 'space'
+                                ?
+                                <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
+                                    <Image
+                                        src={ HeroAstronaut }
+                                        alt='Astronaut'
+                                        layout='intrinsic'
+                                        width={420}
+                                        height={420}
+                                    />
+                                </span>
+                                :
+                                props.hobby.type === 'guitar'
+                                    ?
+                                    <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
+                                        <Image
+                                            src={ HeroGuitar }
+                                            alt='Guitar'
+                                            layout='intrinsic'
+                                            width={420}
+                                            height={420}
+                                        />
+                                    </span>
+                                    :
+                                    props.hobby.type === 'music'
+                                        ?
+                                        <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
+                                            <Image
+                                                src={ HeroShadmehr }
+                                                alt='Shadmehr Aghili'
+                                                layout='intrinsic'
+                                                width={420}
+                                                height={420}
+                                            />
+                                        </span>
+                                        :
+                                        props.hobby.type === 'cod'
+                                            ?
+                                            <>
+                                                <span data-hero={true}>
+                                                    <Image
+                                                        src={ HeroAzur }
+                                                        alt='Azur'
+                                                        layout='intrinsic'
+                                                        width={342.4}
+                                                        height={360}
+                                                    />
+                                                </span>
+
+                                                <span data-hero={true}>
+                                                    <Image
+                                                        src={ HeroGhost }
+                                                        alt='Ghost Reckoner'
+                                                        layout='intrinsic'
+                                                        width={291}
+                                                        height={360}
+                                                    />
+                                                </span>
                                             </>
                                             : props.hobby.type === 'discord'
-                                                ? <img className={stylesHobbies.hobbiesBoxContentImagesBackgroundDiscord} src='/static/images/hobbies/discord.png' alt='Discord'/>
+                                                ?
+                                                <span className={stylesHobbies.hobbiesBoxContentImagesLogo} data-discord={true}>
+                                                    <Image
+                                                        src={ HeroDiscord }
+                                                        alt='Discord'
+                                                        layout='intrinsic'
+                                                        width={310}
+                                                        height={170}
+                                                    />
+                                                </span>
                                                 : props.hobby.type === 'instagram'
-                                                    ? <img className={stylesHobbies.hobbiesBoxContentImagesBackgroundInstagram} src='/static/images/hobbies/instagram.png' alt='Instagram'/>
+                                                    ?
+                                                    <span className={stylesHobbies.hobbiesBoxContentImagesLogo}>
+                                                        <Image
+                                                            src={ HeroInstagram }
+                                                            alt='Instagram'
+                                                            layout='intrinsic'
+                                                            width={250}
+                                                            height={250}
+                                                        />
+                                                    </span>
                                                     : props.hobby.type === 'rarible'
-                                                        ? <img className={stylesHobbies.hobbiesBoxContentImagesBackgroundRarible} src='/static/images/hobbies/rarible.jpg' alt='Rarible'/>
-                                                        : null
+                                                        ?
+                                                        <span className={stylesHobbies.hobbiesBoxContentImagesLogo}>
+                                                            <Image
+                                                                src={ HeroRarible }
+                                                                alt='Rarible'
+                                                                layout='intrinsic'
+                                                                width={250}
+                                                                height={250}
+                                                            />
+                                                        </span>
+                                                        :
+                                                        null
                     }
                 </div>
             </div>

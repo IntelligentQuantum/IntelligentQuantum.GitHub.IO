@@ -147,13 +147,16 @@ h6
             &::before
             {
                 content: "";
+
                 display: block;
-                width: 8px;
-                height: 8px;
-                background-color: var(--color-primary);
+
                 position: absolute;
                 top: 0;
                 right: 0;
+
+                width: 8px;
+                height: 8px;
+                background-color: var(--color-primary);
                 border-radius: 50%;
             }
         }

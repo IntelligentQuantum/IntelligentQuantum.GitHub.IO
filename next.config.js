@@ -8,6 +8,7 @@ const nextConfig = withReactSvg(
             {
                 domains:
                     [
+                        'img.a.transfermarkt.technology',
                         'avatars.githubusercontent.com'
                     ],
             },

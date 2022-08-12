@@ -54,9 +54,9 @@ const TooltipPrimary = (props: { title?: string, placement?: 'top' | 'bottom' | 
                 (
                     props?.render
                         ? (
-                            <>
+                            <animated.span style={spring}>
                                 { props.render }
-                            </>
+                            </animated.span>
                         ) : (
                             <animated.span
                                 style={spring}

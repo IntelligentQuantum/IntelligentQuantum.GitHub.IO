@@ -1,6 +1,7 @@
-import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import axios, { AxiosResponse } from 'axios';
+import React, { useEffect, useState } from 'react';
 
 import type { IHobby } from '../interfaces/hobby';
 import type { IContent } from '../interfaces/content';
@@ -13,6 +14,34 @@ const Main = dynamic(() => import('../components/layouts/main/main.component'));
 
 const Hobbies = (props: { content: IContent }) =>
 {
+    const [players, setPlayers] = useState<any[]>([]);
+
+    const getPlayer = async(id: string, name: string, index: number) =>
+    {
+        const array = players;
+
+        await axios.get(`/football/player/${ name }/${ id }`)
+            .then((response: AxiosResponse) =>
+            {
+                array[index] = response.data?.player;
+
+                setPlayers([ ...array]);
+            })
+            .catch((error) =>
+            {
+                console.log(error);
+            });
+    };
+
+    useEffect(() =>
+    {
+        getPlayer('28003', 'lionel-messi', 0);
+        getPlayer('125781', 'antoine-griezmann', 1);
+        getPlayer('398184', 'ferran-torres', 2);
+    }, []);
+
+    console.log(players);
+
     return (
         <>
             <Head>
@@ -57,6 +86,8 @@ const Hobbies = (props: { content: IContent }) =>
                                 <Card
                                     key={ hobby?.id }
                                     hobby={ hobby }
+                                    content={ props.content }
+                                    players={ players }
                                 />
                             )
                         }

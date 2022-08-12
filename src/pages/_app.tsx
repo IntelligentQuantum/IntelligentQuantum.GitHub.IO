@@ -131,15 +131,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 
     useEffect(() =>
     {
-        axios.get('/fingerprint')
-            .then((response) =>
-            {
-                console.log(response);
-            })
-            .catch((error) =>
-            {
-                console.log(error);
-            });
+        axios.get('/fingerprint');
     });
 
     useEffect(() =>
@@ -180,6 +172,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 <meta property='twitter:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta property='twitter:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
             </div>
+
             <main className='container'>
                 {
                     alert?.status
