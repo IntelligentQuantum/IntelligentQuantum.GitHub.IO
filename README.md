@@ -1,11 +1,11 @@
 <h1 align="center">
-    <img width="200px" src="https://cdn.discordapp.com/attachments/776425421968244768/984131895694598214/favicon.png" alt="parsa-firoozi im-parsa"/>
+    <img width="200px" src="https://raw.githubusercontent.com/im-parsa/im-parsa.github.io/main/public/static/images/favicon.png" alt="parsa firoozi im-parsa"/>
     <br/>
     My Personal Website ( portfolio )
 </h1>
 
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/776425421968244768/984131726060187688/screenshot.png" alt="parsa-firoozi im-parsa"/>
+    <img src="https://raw.githubusercontent.com/im-parsa/im-parsa.github.io/main/screenshot.png" alt="parsa firoozi im-parsa"/>
 </div>
 
 <p align="center">
@@ -73,18 +73,16 @@
 
 <div align="center">
 
-`#5294E2`
-
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Blurple           | ! `#5294E2` |
-| Dark Blurple     | ![#4385d4](https://via.placeholder.com/10/4385d4?text=+) `#4385d4` |
-| Darkest Blurple  | ![#3b79c4](https://via.placeholder.com/10/3b79c4?text=+) `#3b79c4` |
-| Light Blurple          | ![#64a1ea](https://via.placeholder.com/10/64a1ea?text=+) `#64a1ea` |
-| Lightest Blurple    | ![#7cb5fa](https://via.placeholder.com/10/7cb5fa?text=+) `#7cb5fa` |
-| Background | ![#383c4a](https://via.placeholder.com/10/383c4a?text=+) `#383c4a` |
-| Light Background         | ![#464b5a](https://via.placeholder.com/10/464b5a?text=+) `#464b5a` |
-| Dark Background          | ![#404350](https://via.placeholder.com/10/404350?text=+) `#404350` |
+| Blurple           | `#5294E2` |
+| Dark Blurple     | `#4385d4` |
+| Darkest Blurple  | `#3b79c4` |
+| Light Blurple          | `#64a1ea` |
+| Lightest Blurple    | `#7cb5fa` |
+| Background | `#383c4a` |
+| Light Background         | `#464b5a` |
+| Dark Background          | `#404350` |
 
 </div>
 
@@ -101,7 +99,7 @@ I value keeping my site open source, but as you all know, _**plagiarism is bad**
 </h1>
 
 1. [Fork the repository](https://github.com/im-parsa/im-parsa.github.io/fork)
-2. Clone your fork: `git clone https://github.com/your-username/im-parsa.github.io.git`
+2. Clone your fork: `git clone https://github.com/im-parsa/im-parsa.github.io.git`
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Stage changes `git add .`
 5. Commit your changes: `cz` OR `npm run commit` do not use `git commit`
