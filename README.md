@@ -73,9 +73,11 @@
 
 <div align="center">
 
+`#5294E2`
+
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Blurple           | ![#5294E2](https://via.placeholder.com/10/5294E2?text=+) `#5294E2` |
+| Blurple           | ! `#5294E2` |
 | Dark Blurple     | ![#4385d4](https://via.placeholder.com/10/4385d4?text=+) `#4385d4` |
 | Darkest Blurple  | ![#3b79c4](https://via.placeholder.com/10/3b79c4?text=+) `#3b79c4` |
 | Light Blurple          | ![#64a1ea](https://via.placeholder.com/10/64a1ea?text=+) `#64a1ea` |
