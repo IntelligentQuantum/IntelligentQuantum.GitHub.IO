@@ -9,6 +9,7 @@ import { useDispatch, useSelector, Provider } from 'react-redux';
 
 import type { AppProps } from 'next/app';
 import type { iTheme } from '../interfaces/theme';
+import type { iContent } from '../interfaces/content';
 import type { iLanguage } from '../interfaces/language';
 
 import store from '../app/store';
@@ -231,17 +232,17 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 }
 
                 <Aside
-                    content={ data[language] }
+                    content={ data[language] as iContent }
                     handleLanguage={ handleLanguage }
                 />
 
                 <Navbar
                     mobile={ true }
-                    content={ data[language] }
+                    content={ data[language] as iContent }
                     handleTheme={ handleTheme }
                 />
 
-                <Main content={ data[language] }>
+                <Main content={ data[language] as iContent }>
                     <Component
                         content={ data[language]}
                         { ...pageProps }
@@ -250,7 +251,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 
                 <Navbar
                     theme={ theme }
-                    content={ data[language] }
+                    content={ data[language] as iContent }
                     handleTheme={ handleTheme }
                     page={ page === 'contact' || page === 'hobbies' || page === 'portfolio' || page === 'blogs' || page === 'home' ? page : 'home' }
                 />

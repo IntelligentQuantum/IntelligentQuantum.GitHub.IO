@@ -7,7 +7,7 @@ import type { iPortfolio } from '../interfaces/portfolio';
 
 import stylesPortfolio from '../styles/pages/portfolio.module.scss';
 
-const PortfolioCard = dynamic(() => import('../components/portfolio/portfolio-card.component'));
+const PortfolioCard = dynamic(() => import('../components/cards/portfolio-card.component'));
 
 const Portfolio = (props: { content: iContent }) =>
 {
