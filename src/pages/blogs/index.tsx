@@ -7,7 +7,7 @@ import type { iContent } from '../../interfaces/content';
 
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
-const Card = dynamic(() => import('../../components/blog/card.component'));
+const Card = dynamic(() => import('../../components/cards/blog-card.component'));
 
 const Blog = (props: { content: iContent }) =>
     (

@@ -15,6 +15,11 @@
     {
         width: 30rem;
 
+        & a
+        {
+            margin-left: 0 !important;
+        }
+
         @media only screen and (max-width: 1000px)
         {
             right: 0 !important;
@@ -335,9 +340,29 @@
                 cursor: pointer;
                 white-space: pre;
                 padding: 0.7rem 3rem;
-                transition: all 0.2s ease;
-
                 color: var(--color-base-text);
+                transition: color .5s, margin-left 2s;
+
+                &:nth-child(1)
+                {
+                    margin-left: 5rem;
+                }
+                &:nth-child(2)
+                {
+                    margin-left: 9rem;
+                }
+                &:nth-child(3)
+                {
+                    margin-left: 13rem;
+                }
+                &:nth-child(4)
+                {
+                    margin-left: 17rem;
+                }
+                &:nth-child(5)
+                {
+                    margin-left: 21rem;
+                }
 
                 &:hover
                 {
@@ -441,22 +466,30 @@
     }
 }
 
+@keyframes list-transition
+{
+    to
+    {
+        margin-right: 0;
+    }
+}
+
 html[data-language="fa"]
 {
     .nav
     {
         right: auto;
         left: 0;
-    }
 
-    .navMobile
-    {
-        direction: initial;
-    }
+        &Mobile
+        {
+            direction: initial;
+        }
 
-    .navContentActive
-    {
-        transform: rotate(-90deg);
+        &ContentActive
+        {
+            transform: rotate(-90deg);
+        }
     }
 
     @media only screen and (min-width: 1000px)

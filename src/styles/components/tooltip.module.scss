@@ -9,6 +9,7 @@
     border-radius: 0.65rem;
     background: var(--base-darker);
     margin-bottom: 0.25rem;
+    box-shadow: 0 0 2rem .5rem var(--base);
 
     &::after
     {
@@ -18,28 +19,29 @@
         top: 100%;
         left: 50%;
 
-        margin-top: -0.25rem;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: var(--base-darker) transparent transparent;
+        width: .75rem;
+        height: .75rem;
+        background: var(--base-darker);
+        transform: rotate(45deg);
     }
 
     &[data-placement='left']
     {
         &::after
         {
-            content: "";
-
-            position: absolute;
-            top: 50%;
+            top: 40%;
             right: -.3rem;
             left: auto;
+        }
+    }
 
-            width: .75rem;
-            height: .75rem;
-            background: var(--base-darker);
-            transform: rotate(45deg);
+    &[data-placement='right']
+    {
+        &::after
+        {
+            top: 40%;
+            left: -.3rem;
+            right: auto;
         }
     }
 

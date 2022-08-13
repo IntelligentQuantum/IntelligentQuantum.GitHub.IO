@@ -5,10 +5,7 @@ import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
 import axios, { AxiosResponse } from 'axios';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Keyboard, Autoplay, Navigation } from 'swiper';
-import React, { useEffect, useRef, useState } from 'react';
-import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
+import React, { useEffect, useState } from 'react';
 
 import useTyped from '../hooks/use-typed';
 
@@ -38,15 +35,13 @@ import ReactQueryLogo from '../../public/static/images/logos/logo-react-query.pn
 import StyledLogo from '../../public/static/images/logos/logo-styled-component.png';
 import ReactNativeLogo from '../../public/static/images/logos/logo-react-native.png';
 
-const ServiceCard = dynamic(() => import('../components/home/service-card.component'));
-const RepositoriesCard = dynamic(() => import('../components/home/repository-card.component'));
-const TooltipPrimary = dynamic(() => import('../components/tooltip/tooltip-primary.component'));
+const OrgansList = dynamic(() => import('../components/lists/organs-list.component'));
+const ServiceCard = dynamic(() => import('../components/cards/service-card.component'));
+const TooltipPrimary = dynamic(() => import('../components/tooltips/tooltip-primary.component'));
+const RepositoriesList = dynamic(() => import('../components/lists/repositories-list.component'));
 
 const Home = (props: { content: iContent }) =>
 {
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
-
     const typing = useTyped(props.content.typing_effect);
 
     const [organs, setOrgans] = useState<iOrgan[]>([]);
@@ -406,76 +401,21 @@ const Home = (props: { content: iContent }) =>
                 <h4 className='heading'>
                     {props.content.titles[7]}
                 </h4>
-                <div className={stylesHome.homeRepositories}>
-                    <Swiper
-                        navigation={{
-                            prevEl: nextRef.current,
-                            nextEl: prevRef.current,
-                        }}
-                        modules={[ Keyboard, Autoplay, Navigation ]}
-                        keyboard={{ enabled: true }}
-                        autoplay={{ delay: 2500, disableOnInteraction: false }}
-                        spaceBetween={ 20 }
-                        breakpoints={{
-                            0: { slidesPerView: 1 },
-                            650: { slidesPerView: 2 },
-                            1400: { slidesPerView: 3 }
-                        }}
-                    >
-                        {
-                            repositories.map((repository: iRepository) =>
-                                (
-                                    <SwiperSlide key={ repository.node_id }>
-                                        <RepositoriesCard
-                                            repository={ repository }
-                                        />
-                                    </SwiperSlide>
-                                ))
-                        }
+                {
+                    props.content.dir === 'rtl'
+                        ?
+                        <>
+                            <RepositoriesList dir='rtl' repositories={ repositories }/>
 
-                        <div className={stylesHome.homeRepositoriesPrevNext}>
-                            <div ref={nextRef}>
-                                <BiChevronLeft />
-                            </div>
-                            <div ref={prevRef}>
-                                <BiChevronRight />
-                            </div>
-                        </div>
-                    </Swiper>
-                </div>
+                            <OrgansList dir='rtl' organs={ organs }/>
+                        </>
+                        :
+                        <>
+                            <RepositoriesList repositories={ repositories }/>
 
-                <div className={stylesHome.homeOrgans}>
-                    <Swiper
-                        modules={[ Keyboard, Autoplay ]}
-                        keyboard={{ enabled: true }}
-                        autoplay={{ delay: 2500, disableOnInteraction: false }}
-                        spaceBetween={ 20 }
-                        breakpoints={{
-                            0: { slidesPerView: 1 },
-                            450: { slidesPerView: 2 },
-                            650: { slidesPerView: 3 },
-                            1400: { slidesPerView: 5 }
-                        }}
-                    >
-                        {
-                            organs.map((organ: iOrgan) =>
-                                (
-                                    <SwiperSlide key={ organ.node_id }>
-                                        <TooltipPrimary title={ organ.login }>
-                                            <a href={`https://github.com/${ organ.login }`} target='_blank' className={stylesHome.homeOrgansContent} rel="noreferrer">
-                                                <Image
-                                                    src={ organ.avatar_url }
-                                                    alt={ organ.login }
-                                                    width={120}
-                                                    height={120}
-                                                />
-                                            </a>
-                                        </TooltipPrimary>
-                                    </SwiperSlide>
-                                ))
-                        }
-                    </Swiper>
-                </div>
+                            <OrgansList organs={ organs }/>
+                        </>
+                }
             </section>
         </>
     );

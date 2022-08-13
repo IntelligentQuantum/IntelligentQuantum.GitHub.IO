@@ -6,7 +6,7 @@ import type { iBlog } from '../../interfaces/blog';
 
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
-const ButtonSecondary = dynamic(() => import('../button/button-secondary.component'));
+const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
 
 const BlogCard = (props: { blog: iBlog, text: string }) =>
     (

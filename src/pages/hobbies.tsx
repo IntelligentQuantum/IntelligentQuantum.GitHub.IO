@@ -8,7 +8,7 @@ import type { iContent } from '../interfaces/content';
 
 import stylesHobbies from '../styles/pages/hobbies.module.scss';
 
-const Card = dynamic(() => import('../components/hobbies/card.component'));
+const HobbyCard = dynamic(() => import('../components/cards/hobby-card.component'));
 
 const Hobbies = (props: { content: iContent }) =>
 {
@@ -68,7 +68,7 @@ const Hobbies = (props: { content: iContent }) =>
 
                 {
                     props.content.my_hobbies.map((hobby: iHobby) =>
-                        <Card
+                        <HobbyCard
                             key={ hobby.id }
                             hobby={ hobby }
                             content={ props.content }

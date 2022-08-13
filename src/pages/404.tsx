@@ -14,8 +14,8 @@ const ErrorPage = (props: { content: iContent }) =>
     return (
         <Error
             title='404'
-            description={props?.content?.blog_not_found}
-            content={props?.content}
+            description={ props.content.blog_not_found }
+            content={ props.content }
         />
     );
 };

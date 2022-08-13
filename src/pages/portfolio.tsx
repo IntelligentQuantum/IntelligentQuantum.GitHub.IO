@@ -7,7 +7,7 @@ import type { iPortfolio } from '../interfaces/portfolio';
 
 import stylesPortfolio from '../styles/pages/portfolio.module.scss';
 
-const Card = dynamic(() => import('../components/portfolio/card.component'));
+const PortfolioCard = dynamic(() => import('../components/portfolio/portfolio-card.component'));
 
 const Portfolio = (props: { content: iContent }) =>
 {
@@ -65,7 +65,7 @@ const Portfolio = (props: { content: iContent }) =>
                             (
                                 category === 'all' || portfolio.tag === category
                                     ?
-                                    <Card
+                                    <PortfolioCard
                                         key={ portfolio.id }
                                         portfolio={ portfolio }
                                         text={ props.content.read_more }

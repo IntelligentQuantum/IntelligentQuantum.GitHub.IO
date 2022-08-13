@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-import reactHtmlParser from 'html-react-parser';
+import parse from 'html-react-parser';
+import reactStringReplace from 'react-string-replace';
 
 import type { iHobby } from '../../interfaces/hobby';
 import type { iContent } from '../../interfaces/content';
@@ -20,11 +21,36 @@ import HeroGriezmann from '../../../public/static/images/hobbies/hero-antoine-gr
 
 import stylesHobbies from '../../styles/pages/hobbies.module.scss';
 
-const TooltipFootball = dynamic(() => import('./tooltip-football.component'));
-const TooltipPrimary = dynamic(() => import('../tooltip/tooltip-primary.component'));
+const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
+const TooltipFootball = dynamic(() => import('../tooltips/tooltip-football.component'));
 
 const HobbyCard = (props: { content: iContent, players: any, hobby: iHobby }) =>
-    (
+{
+    const replaceHobbyTitle = (domhandlerNode: any) =>
+    {
+        if (domhandlerNode.type === 'text' && domhandlerNode.data.includes('KOOH_PLAYER'))
+        {
+            return (
+                <>
+                    {
+                        reactStringReplace(domhandlerNode.data, 'KOOH_PLAYER', () =>
+                            (
+                                <TooltipPrimary
+                                    interactive={ true }
+                                    render={ <iframe src="https://open.spotify.com/embed/track/6kvTtZhjHYOfyPFdzRqJTf?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> }
+                                >
+                                    <strong>
+                                        Kooh
+                                    </strong>
+                                </TooltipPrimary>
+                            ))
+                    }
+                </>
+            );
+        }
+    };
+
+    return (
         <div className={stylesHobbies.hobbiesBox}>
             <div className={stylesHobbies.hobbiesBoxContent} data-fact_type={props.hobby.type}>
                 <div className={stylesHobbies.hobbiesBoxContentBox}>
@@ -33,7 +59,7 @@ const HobbyCard = (props: { content: iContent, players: any, hobby: iHobby }) =>
                     </h3>
 
                     <p className={stylesHobbies.hobbiesBoxContentBoxDescription} data-fact_type={props.hobby.type}>
-                        { reactHtmlParser(props.hobby.description) }
+                        { parse(props.hobby.description, { replace: replaceHobbyTitle }) }
                     </p>
                 </div>
 
@@ -187,5 +213,6 @@ const HobbyCard = (props: { content: iContent, players: any, hobby: iHobby }) =>
             </div>
         </div>
     );
+};
 
 export default HobbyCard;

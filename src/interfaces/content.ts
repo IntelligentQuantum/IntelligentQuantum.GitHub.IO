@@ -6,6 +6,7 @@ import type { iPortfolio } from './portfolio';
 export interface iContent
 {
     language: string,
+    dir: 'rtl' | 'ltr',
     technologies: string,
     about_me: string,
     my_name: string,
@@ -52,8 +53,13 @@ export interface iContent
     hobbies: string,
     error:
         {
-            title: string,
-            description: string
+            not_found:
+                {
+                    title: string,
+                    description: string
+                },
+            empty: string,
+            incorrect_email: string
         },
     titles: string[],
     headers: string[],

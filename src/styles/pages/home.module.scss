@@ -414,7 +414,6 @@
 
         & > div
         {
-            direction: ltr !important;
             overflow: hidden !important;
             width: 100% !important;
             height: 100% !important;
@@ -428,6 +427,7 @@
             align-items: center;
             justify-content: flex-end;
 
+            direction: ltr;
             padding: 1rem 0;
 
             & svg
@@ -545,7 +545,6 @@
 
         & > div
         {
-            direction: ltr !important;
             overflow: hidden !important;
             width: 100% !important;
             height: 100% !important;
@@ -631,16 +630,11 @@ html[data-language="fa"]
             margin: auto 0 0 auto;
         }
 
-        &Organs > div
-        {
-            direction: rtl !important;
-        }
-
         &Repositories
         {
-            & > div
+            &PrevNext
             {
-                direction: rtl !important;
+                justify-content: flex-start;
             }
 
             &ContentStats

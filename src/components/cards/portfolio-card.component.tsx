@@ -8,7 +8,7 @@ import { setImagePortfolio } from '../../app/portfolio/portfolio.actions';
 
 import stylesPortfolio from '../../styles/pages/portfolio.module.scss';
 
-const ButtonSecondary = dynamic(() => import('../button/button-secondary.component'));
+const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
 
 const PortfolioCard = (props: { text: string, portfolio: { image: string, title: string, tag: string, description: string, link: string }}) =>
 {

@@ -6,19 +6,19 @@ import stylesError from '../../styles/components/error.module.scss';
 
 const Error = (props: { content: iContent, title: string, description: string }) =>
 {
-    const error = props?.content?.error;
+    const error = props.content.error.not_found;
 
     return (
         <section className={stylesError.error}>
             <div className={stylesError.errorHeader}>
                 <h2>
-                    { props.title ? props.title : error?.title }
+                    { props.title ? props.title : error.title }
                 </h2>
 
                 <hr />
 
                 <p>
-                    { props.description ? props.description : error?.description }
+                    { props.description ? props.description : error.description }
                 </p>
             </div>
         </section>

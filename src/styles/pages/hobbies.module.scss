@@ -29,7 +29,7 @@
             position: relative;
 
             border-radius: 1rem;
-            margin-bottom: 8rem;
+            margin-bottom: 6rem;
             background-position: center;
             background-size: cover;
             width: 100%;
@@ -128,8 +128,10 @@
                     font-size: 2rem;
                     font-weight: 400;
 
-                    & > a
+                    & > a,
+                    & > strong
                     {
+                        cursor: pointer;
                         font-weight: 600;
                         color: var(--color-base-text-bolder);
                         transition: all .2s;

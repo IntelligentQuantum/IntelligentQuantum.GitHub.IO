@@ -2,6 +2,7 @@
     "en":
     {
         "language": "en",
+        "dir": "ltr",
         "my_name": "Parsa Firoozi",
         "my_skills":
         [
@@ -63,8 +64,13 @@
         "hobbies": "Hobbies",
         "error":
         {
-            "title": "Error in request",
-            "description": "The requested page could not be found"
+            "not_found":
+            {
+                "title": "Error in request",
+                "description": "The requested page could not be found"
+            },
+            "empty": "Please fill this field",
+            "incorrect_email": "This email is incorrect"
         },
         "titles":
         [
@@ -138,7 +144,7 @@
                 "id": 3,
                 "title": "Music",
                 "type": "music",
-                "description": "An arrangement of sounds having melody, rhythm, and usually harmony. I think music is the most beautiful human art. Music has always been relaxing for me and I get a lot of energy with faster rhythms.\nWhen working, nothing is more effective than a good music and I always have a music playing in the background because it makes me feel so good. Finally, I must say that my favorite singer is <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">Shadmehr Aghili</a> and my favorite music is the song <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">\"Kooh\"</a> by Shadmehr Aghili."
+                "description": "An arrangement of sounds having melody, rhythm, and usually harmony. I think music is the most beautiful human art. Music has always been relaxing for me and I get a lot of energy with faster rhythms.\nWhen working, nothing is more effective than a good music and I always have a music playing in the background because it makes me feel so good. Finally, I must say that my favorite singer is <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">Shadmehr Aghili</a> and my favorite music is the song KOOH_PLAYER by Shadmehr Aghili."
             },
             {
                 "id": 4,
@@ -369,6 +375,7 @@
     "de":
     {
         "language": "de",
+        "dir": "ltr",
         "my_name": "Parsa Firoozi",
         "my_skills":
         [
@@ -430,8 +437,13 @@
         "hobbies": "Hobbys",
         "error":
         {
-            "title": "Fehler bei der Anfrage",
-            "description": "Die angeforderte Seite konnte nicht gefunden werden"
+            "not_found":
+            {
+                "title": "Fehler bei der Anfrage",
+                "description": "Die angeforderte Seite konnte nicht gefunden werden"
+            },
+            "empty": "Please fill this field",
+            "incorrect_email": "This email is incorrect"
         },
         "titles":
         [
@@ -505,7 +517,7 @@
                 "id": 3,
                 "title": "Musik",
                 "type": "music",
-                "description": "Eine Anordnung von Klängen mit Melodie, Rhythmus und normalerweise Harmonie. Ich denke, Musik ist die schönste menschliche Kunst. Musik war für mich schon immer entspannend und ich bekomme viel Energie mit schnelleren Rhythmen. Bei der Arbeit ist nichts effektiver als gute Musik und ich habe immer eine Musik im Hintergrund, weil es mir so gut tut. Abschließend muss ich sagen, dass mein Lieblingssänger <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">Shadmehr Aghili</a> ist und meine Lieblingsmusik das Lied <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">„Kooh“</a> von Shadmehr Aghili ist."
+                "description": "Eine Anordnung von Klängen mit Melodie, Rhythmus und normalerweise Harmonie. Ich denke, Musik ist die schönste menschliche Kunst. Musik war für mich schon immer entspannend und ich bekomme viel Energie mit schnelleren Rhythmen. Bei der Arbeit ist nichts effektiver als gute Musik und ich habe immer eine Musik im Hintergrund, weil es mir so gut tut. Abschließend muss ich sagen, dass mein Lieblingssänger <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">Shadmehr Aghili</a> ist und meine Lieblingsmusik das Lied KOOH_PLAYER von Shadmehr Aghili ist."
             },
             {
                 "id": 4,
@@ -736,6 +748,7 @@
     "fa":
     {
         "language": "fa",
+        "dir": "rtl",
         "my_name": "پارسا فیروزی",
         "my_skills":
         [
@@ -797,8 +810,13 @@
         "hobbies": "سرگرمی ها",
         "error":
         {
-            "title": "خطا در درخواست",
-            "description": "صفحه مورد نظر یافت نشد"
+            "not_found":
+            {
+                "title": "خطا در درخواست",
+                "description": "صفحه مورد نظر یافت نشد"
+            },
+            "empty": "Please fill this field",
+            "incorrect_email": "This email is incorrect"
         },
         "titles":
         [
@@ -872,7 +890,7 @@
                 "id": 3,
                 "title": "موسیقی",
                 "type": "music",
-                "description": "بنظر من موسیقی زیبا ترین هنر انسان است. موسیقی همیشه برای من آرامش بخش بوده و هست و با ریتم های سریع تر انرژی زیادی میگیرم.\nدر هنگام کار هیچ چیز اندازه یک موسیقی خوب تاثیرگذار نیست و من همیشه یک موسیقی در بک گراندم در حال اجرا میگذارم چون حس خیلی خوبی بهم میده. در آخر باید بگم خواننده مورد علاقه من <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">شادمهر عقیلی</a> و موزیک مورد علاقم آهنگ <a href=\"https://open.spotify.com/track/6kvTtZhjHYOfyPFdzRqJTf?si=e0aa3a765da44fb5\" target=\"_blank\">\"کوه\"</a> از شادمهر عقیلی هست."
+                "description": "بنظر من موسیقی زیبا ترین هنر انسان است. موسیقی همیشه برای من آرامش بخش بوده و هست و با ریتم های سریع تر انرژی زیادی میگیرم.\nدر هنگام کار هیچ چیز اندازه یک موسیقی خوب تاثیرگذار نیست و من همیشه یک موسیقی در بک گراندم در حال اجرا میگذارم چون حس خیلی خوبی بهم میده. در آخر باید بگم خواننده مورد علاقه من <a href=\"https://open.spotify.com/artist/3IDPcBP4OoTNvm3b4h46cW?si=0567ba04bc374c65\" target=\"_blank\">شادمهر عقیلی</a> و موزیک مورد علاقم آهنگ KOOH_PLAYER از شادمهر عقیلی هست."
             },
             {
                 "id": 4,

@@ -10,15 +10,16 @@ const TooltipFootball = (props: { player: any }) =>
                 <span>
                     {
                         props?.player?.profile
-                            ? (
-                                <Image
-                                    src={ props?.player?.profile }
-                                    alt={ props?.player?.name + ' ' + props?.player?.last_name }
-                                    layout='intrinsic'
-                                    width={46}
-                                    height={60}
-                                />
-                            ) : null
+                            ?
+                            <Image
+                                src={ props?.player?.profile }
+                                alt={ props?.player?.name + ' ' + props?.player?.last_name }
+                                layout='intrinsic'
+                                width={46}
+                                height={60}
+                            />
+                            :
+                            null
                     }
                 </span>
 
