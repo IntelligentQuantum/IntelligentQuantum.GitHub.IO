@@ -1,10 +1,10 @@
 import React from 'react';
 
-import type { iContent } from '../../interfaces/content';
+import type { IContent } from '../../interfaces/content';
 
 import stylesError from '../../styles/components/error.module.scss';
 
-const Error = (props: { content: iContent, title: string, description: string }) =>
+const Error = (props: { content: IContent, title: string, description: string }) =>
 {
     const error = props.content.error.not_found;
 

@@ -1,4 +1,4 @@
-import {iTheme} from '../interfaces/theme';
+import {ITheme} from '../interfaces/theme';
 
 export function arrayFilter(array: any)
 {

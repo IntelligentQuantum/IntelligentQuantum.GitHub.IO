@@ -4,8 +4,8 @@ import classnames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 import { BsMoonFill, BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
 
-import type { iTheme } from '../../../interfaces/theme';
-import type { iContent } from '../../../interfaces/content';
+import type { ITheme } from '../../../interfaces/theme';
+import type { IContent } from '../../../interfaces/content';
 
 import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
 
@@ -15,7 +15,7 @@ import { setActiveFilter } from '../../../app/filter/filter.actions';
 
 import stylesNav from '../../../styles/components/nav.module.scss';
 
-const Navbar = (props: { content: iContent, theme?: iTheme, handleTheme: (theme?: iTheme) => void, mobile?: boolean, page?: 'home' | 'contact' | 'hobbies' | 'portfolio' | 'blogs' }) =>
+const Navbar = (props: { content: IContent, theme?: ITheme, handleTheme: (theme?: ITheme) => void, mobile?: boolean, page?: 'home' | 'contact' | 'hobbies' | 'portfolio' | 'blogs' }) =>
 {
     const dispatch = useDispatch();
 

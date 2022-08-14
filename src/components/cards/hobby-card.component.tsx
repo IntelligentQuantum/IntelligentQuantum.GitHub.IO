@@ -4,8 +4,8 @@ import dynamic from 'next/dynamic';
 import parse from 'html-react-parser';
 import reactStringReplace from 'react-string-replace';
 
-import type { iHobby } from '../../interfaces/hobby';
-import type { iContent } from '../../interfaces/content';
+import type { IHobby } from '../../interfaces/hobby';
+import type { IContent } from '../../interfaces/content';
 
 import HeroAzur from '../../../public/static/images/hobbies/hero-azur.png';
 import HeroGuitar from '../../../public/static/images/hobbies/hero-guitar.png';
@@ -24,7 +24,7 @@ import stylesHobbies from '../../styles/pages/hobbies.module.scss';
 const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
 const TooltipFootball = dynamic(() => import('../tooltips/tooltip-football.component'));
 
-const HobbyCard = (props: { content: iContent, players: any, hobby: iHobby }) =>
+const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby }) =>
 {
     const replaceHobbyTitle = (domhandlerNode: any) =>
     {

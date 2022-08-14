@@ -1,4 +1,4 @@
-export interface iHobby
+export interface IHobby
 {
     id: number,
     title: string,

@@ -6,7 +6,7 @@ import classnames from 'classnames';
 import React, { useState, ChangeEvent } from 'react';
 import { BsEnvelope, BsPerson, BsTextParagraph } from 'react-icons/bs';
 
-import type { iContent } from '../interfaces/content';
+import type { IContent } from '../interfaces/content';
 
 import 'tippy.js/dist/tippy.css';
 import stylesContact from '../styles/pages/contact.module.scss';
@@ -14,7 +14,7 @@ import stylesButton from '../styles/components/button.module.scss';
 
 const TooltipPrimary = dynamic (() => import('../components/tooltips/tooltip-primary.component'));
 
-const Contact = (props: { content: iContent }) =>
+const Contact = (props: { content: IContent }) =>
 {
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');

@@ -1,13 +1,13 @@
 import dynamic from 'next/dynamic';
 import React, { ReactNode } from 'react';
 
-import type { iContent } from '../../../interfaces/content';
+import type { IContent } from '../../../interfaces/content';
 
 import stylesMain from '../../../styles/components/main.module.scss';
 
 const Footer = dynamic(() => import('../footer/footer.component'));
 
-const Main = (props: { content: iContent, children: ReactNode }) =>
+const Main = (props: { content: IContent, children: ReactNode }) =>
     (
         <section className={stylesMain.main}>
             <div className={stylesMain.mainContent}>

@@ -5,13 +5,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { SWIPER_CONFIG_2 } from '../../lib/constants';
 
-import type { iOrgan } from '../../interfaces/organ';
+import type { IOrgan } from '../../interfaces/organ';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
 const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
 
-const OrgansList = (props: { dir?: 'rtl' | 'ltr', organs: iOrgan[] }) =>
+const OrgansList = (props: { dir?: 'rtl' | 'ltr', organs: IOrgan[] }) =>
 {
     return (
         <div className={stylesHome.homeOrgans}>
@@ -20,7 +20,7 @@ const OrgansList = (props: { dir?: 'rtl' | 'ltr', organs: iOrgan[] }) =>
                 { ...SWIPER_CONFIG_2 }
             >
                 {
-                    props.organs.map((organ: iOrgan) =>
+                    props.organs.map((organ: IOrgan) =>
                         (
                             <SwiperSlide key={ organ.node_id }>
                                 <TooltipPrimary title={ organ.login }>

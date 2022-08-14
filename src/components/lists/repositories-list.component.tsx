@@ -5,12 +5,12 @@ import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
 import { SWIPER_CONFIG_1 } from '../../lib/constants';
 
-import type { iRepository } from '../../interfaces/repository';
+import type { IRepository } from '../../interfaces/repository';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 const RepositoriesCard = dynamic(() => import('../cards/repository-card.component'));
 
-const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: iRepository[] }) =>
+const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: IRepository[] }) =>
 {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -26,7 +26,7 @@ const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: iRepositor
                 { ...SWIPER_CONFIG_1 }
             >
                 {
-                    props.repositories.map((repository: iRepository) =>
+                    props.repositories.map((repository: IRepository) =>
                         (
                             <SwiperSlide key={ repository.node_id }>
                                 <RepositoriesCard

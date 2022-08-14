@@ -2,7 +2,7 @@ import axios from 'axios';
 import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-import type { iOrgan } from '../../../interfaces/organ';
+import type { IOrgan } from '../../../interfaces/organ';
 
 import rateLimit from '../../../lib/rate-limit';
 
@@ -46,7 +46,7 @@ const Organs = async(request: NextApiRequest, response: NextApiResponse) =>
                         items:
                             [
                                 ...data
-                                    .filter((organ: iOrgan) =>
+                                    .filter((organ: IOrgan) =>
                                     {
                                         return organ?.login !== 'HAGH-Team';
                                     })

@@ -2,14 +2,14 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-import type { iBlog } from '../../interfaces/blog';
-import type { iContent } from '../../interfaces/content';
+import type { IBlog } from '../../interfaces/blog';
+import type { IContent } from '../../interfaces/content';
 
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
 const Card = dynamic(() => import('../../components/cards/blog-card.component'));
 
-const Blog = (props: { content: iContent }) =>
+const Blog = (props: { content: IContent }) =>
     (
         <>
             <Head>
@@ -45,7 +45,7 @@ const Blog = (props: { content: iContent }) =>
 
                 <div className={stylesBlog.blogItems}>
                     {
-                        props?.content?.my_blogs?.map((blog: iBlog) =>
+                        props?.content?.my_blogs?.map((blog: IBlog) =>
                             (
                                 <Card
                                     key={ blog.name }

@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
-import type { iBlog } from '../../interfaces/blog';
+import type { IBlog } from '../../interfaces/blog';
 
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
 const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
 
-const BlogCard = (props: { blog: iBlog, text: string }) =>
+const BlogCard = (props: { blog: IBlog, text: string }) =>
     (
         <div className={stylesBlog.blogItem}>
             <Image

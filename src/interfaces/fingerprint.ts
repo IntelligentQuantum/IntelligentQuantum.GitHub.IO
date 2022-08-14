@@ -1,4 +1,4 @@
-export interface iFingerprint
+export interface IFingerprint
 {
     ip: string,
     fingerprint: string

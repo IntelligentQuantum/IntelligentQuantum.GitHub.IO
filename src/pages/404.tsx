@@ -1,7 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-import type { iContent } from '../interfaces/content';
+import type { IContent } from '../interfaces/content';
 
 import 'moment/locale/de';
 import 'moment/locale/fa';
@@ -9,7 +9,7 @@ import 'moment/locale/en-gb';
 
 const Error = dynamic(() => import('../components/error/error.component'));
 
-const ErrorPage = (props: { content: iContent }) =>
+const ErrorPage = (props: { content: IContent }) =>
 {
     return (
         <Error

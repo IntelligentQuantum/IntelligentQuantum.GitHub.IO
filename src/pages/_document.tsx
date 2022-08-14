@@ -1,4 +1,5 @@
 import React from 'react';
+import Script from 'next/script';
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document
@@ -13,9 +14,9 @@ class MyDocument extends Document
         return (
             <Html lang='en' data-theme='dim' data-language='en' dir='ltr'>
                 <Head>
-                    <link rel="icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>
-                    <link rel="apple-touch-icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>
-                    <link rel="manifest" href="https://parsa-firoozi.ir/static/manifest.json"/>
+                    <link rel='icon' href='https://parsa-firoozi.ir/static/images/favicon.png'/>
+                    <link rel='apple-touch-icon' href='https://parsa-firoozi.ir/static/images/favicon.png'/>
+                    <link rel='manifest' href='https://parsa-firoozi.ir/static/manifest.json'/>
 
                     <meta property='theme-color' content='#5294E2'/>
 
@@ -37,6 +38,19 @@ class MyDocument extends Document
                     <meta property='twitter:title' content='im-parsa'/>
                     <meta property='twitter:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                     <meta property='twitter:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
+
+                    <Script
+                        id='gtm-script'
+                        strategy='afterInteractive'
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                            })(window,document,'script','dataLayer', 'GTM-${ process.env.GTM_ID }');`
+                        }}
+                    />
                 </Head>
 
                 <body>

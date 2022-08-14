@@ -8,9 +8,9 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector, Provider } from 'react-redux';
 
 import type { AppProps } from 'next/app';
-import type { iTheme } from '../interfaces/theme';
-import type { iContent } from '../interfaces/content';
-import type { iLanguage } from '../interfaces/language';
+import type { ITheme } from '../interfaces/theme';
+import type { IContent } from '../interfaces/content';
+import type { ILanguage } from '../interfaces/language';
 
 import store from '../app/store';
 import data from '../../public/static/data/data.json';
@@ -26,8 +26,8 @@ import stylesNav from '../styles/components/nav.module.scss';
 import stylesAlert from '../styles/components/alert.module.scss';
 import stylesFilter from '../styles/components/filter.module.scss';
 import stylesPortfolio from '../styles/pages/portfolio.module.scss';
-import Main from '../components/layouts/main/main.component';
 
+const Main = dynamic(() => import('../components/layouts/main/main.component'));
 const Aside = dynamic(() => import('../components/layouts/aside/aside.component'));
 const Navbar = dynamic(() => import('../components/layouts/navbar/navbar.component'));
 
@@ -52,14 +52,14 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 
     const page = router.pathname.split('/')[1];
 
-    const [theme, setTheme] = useState<iTheme>('dim');
-    const [language, setLanguage] = useState<iLanguage>('en');
+    const [theme, setTheme] = useState<ITheme>('dim');
+    const [language, setLanguage] = useState<ILanguage>('en');
 
     const alert = useSelector((state: any) => state.alert.statusAlert);
     const filter = useSelector((state: any) => state.filter.activeFilter);
     const imagePortfolio = useSelector((state: any) => state.portfolio.imagePortfolio);
 
-    const handleTheme = (themeV?: iTheme) =>
+    const handleTheme = (themeV?: ITheme) =>
     {
         const storageTheme: string = localStorage.getItem('theme') || 'dim';
 
@@ -72,7 +72,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
         {
             if (storageTheme === 'dark' || storageTheme === 'dim' || storageTheme === 'light')
             {
-                setTheme(storageTheme as iTheme);
+                setTheme(storageTheme as ITheme);
                 localStorage.setItem('theme', storageTheme);
             }
             else
@@ -82,7 +82,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
             }
         }
     };
-    const handleLanguage = (languageV?: iLanguage) =>
+    const handleLanguage = (languageV?: ILanguage) =>
     {
         const storageTheme: string = localStorage.getItem('language') || 'eb';
 
@@ -95,7 +95,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
         {
             if (storageTheme === 'en' || storageTheme === 'de' || storageTheme === 'fa')
             {
-                setLanguage(storageTheme as iLanguage);
+                setLanguage(storageTheme as ILanguage);
                 localStorage.setItem('language', storageTheme);
             }
             else
@@ -145,9 +145,9 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 
                 <meta charSet='UTF-8' />
 
-                <link rel="icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>
-                <link rel="apple-touch-icon" href="https://parsa-firoozi.ir/static/images/favicon.png"/>
-                <link rel="manifest" href="https://parsa-firoozi.ir/static/manifest.json"/>
+                <link rel='icon' href='https://parsa-firoozi.ir/static/images/favicon.png'/>
+                <link rel='apple-touch-icon' href='https://parsa-firoozi.ir/static/images/favicon.png'/>
+                <link rel='manifest' href='https://parsa-firoozi.ir/static/manifest.json'/>
 
                 <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
                 <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
@@ -232,17 +232,17 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 }
 
                 <Aside
-                    content={ data[language] as iContent }
+                    content={ data[language] as IContent }
                     handleLanguage={ handleLanguage }
                 />
 
                 <Navbar
                     mobile={ true }
-                    content={ data[language] as iContent }
+                    content={ data[language] as IContent }
                     handleTheme={ handleTheme }
                 />
 
-                <Main content={ data[language] as iContent }>
+                <Main content={ data[language] as IContent }>
                     <Component
                         content={ data[language]}
                         { ...pageProps }
@@ -251,7 +251,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 
                 <Navbar
                     theme={ theme }
-                    content={ data[language] as iContent }
+                    content={ data[language] as IContent }
                     handleTheme={ handleTheme }
                     page={ page === 'contact' || page === 'hobbies' || page === 'portfolio' || page === 'blogs' || page === 'home' ? page : 'home' }
                 />

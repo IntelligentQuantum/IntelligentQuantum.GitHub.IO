@@ -9,10 +9,10 @@ import React, { useEffect, useState } from 'react';
 
 import useTyped from '../hooks/use-typed';
 
-import type { iOrgan } from '../interfaces/organ';
-import type { iService } from '../interfaces/service';
-import type { iContent } from '../interfaces/content';
-import type { iRepository } from '../interfaces/repository';
+import type { IOrgan } from '../interfaces/organ';
+import type { IService } from '../interfaces/service';
+import type { IContent } from '../interfaces/content';
+import type { IRepository } from '../interfaces/repository';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -40,12 +40,12 @@ const ServiceCard = dynamic(() => import('../components/cards/service-card.compo
 const TooltipPrimary = dynamic(() => import('../components/tooltips/tooltip-primary.component'));
 const RepositoriesList = dynamic(() => import('../components/lists/repositories-list.component'));
 
-const Home = (props: { content: iContent }) =>
+const Home = (props: { content: IContent }) =>
 {
     const typing = useTyped(props.content.typing_effect);
 
-    const [organs, setOrgans] = useState<iOrgan[]>([]);
-    const [repositories, setRepositories] = useState<iRepository[]>([]);
+    const [organs, setOrgans] = useState<IOrgan[]>([]);
+    const [repositories, setRepositories] = useState<IRepository[]>([]);
 
     const getRepositories = async() =>
     {
@@ -388,7 +388,7 @@ const Home = (props: { content: iContent }) =>
                 </h4>
                 <div className={stylesHome.homeServices}>
                     {
-                        props.content.services.map((service: iService) =>
+                        props.content.services.map((service: IService) =>
                             <ServiceCard
                                 key={ service.id }
                                 service={ service }

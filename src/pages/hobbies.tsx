@@ -3,14 +3,14 @@ import dynamic from 'next/dynamic';
 import axios, { AxiosResponse } from 'axios';
 import React, { useEffect, useState } from 'react';
 
-import type { iHobby } from '../interfaces/hobby';
-import type { iContent } from '../interfaces/content';
+import type { IHobby } from '../interfaces/hobby';
+import type { IContent } from '../interfaces/content';
 
 import stylesHobbies from '../styles/pages/hobbies.module.scss';
 
 const HobbyCard = dynamic(() => import('../components/cards/hobby-card.component'));
 
-const Hobbies = (props: { content: iContent }) =>
+const Hobbies = (props: { content: IContent }) =>
 {
     const [players, setPlayers] = useState<any[]>([]);
 
@@ -67,7 +67,7 @@ const Hobbies = (props: { content: iContent }) =>
                 </h4>
 
                 {
-                    props.content.my_hobbies.map((hobby: iHobby) =>
+                    props.content.my_hobbies.map((hobby: IHobby) =>
                         <HobbyCard
                             key={ hobby.id }
                             hobby={ hobby }

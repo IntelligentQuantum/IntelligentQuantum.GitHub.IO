@@ -2,14 +2,14 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
 
-import type { iContent } from '../interfaces/content';
-import type { iPortfolio } from '../interfaces/portfolio';
+import type { IContent } from '../interfaces/content';
+import type { IPortfolio } from '../interfaces/portfolio';
 
 import stylesPortfolio from '../styles/pages/portfolio.module.scss';
 
 const PortfolioCard = dynamic(() => import('../components/cards/portfolio-card.component'));
 
-const Portfolio = (props: { content: iContent }) =>
+const Portfolio = (props: { content: IContent }) =>
 {
     const [category, setCategory] = useState<string>('all');
 
@@ -61,7 +61,7 @@ const Portfolio = (props: { content: iContent }) =>
 
                 <div className={stylesPortfolio.portfolioList}>
                     {
-                        props.content.my_portfolio.map((portfolio: iPortfolio) =>
+                        props.content.my_portfolio.map((portfolio: IPortfolio) =>
                             (
                                 category === 'all' || portfolio.tag === category
                                     ?
