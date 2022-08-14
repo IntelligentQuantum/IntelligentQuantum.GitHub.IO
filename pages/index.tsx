@@ -11,10 +11,13 @@ import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 
 import useTyped from '../hooks/useTyped';
 
+import services from '../data/services.data';
+
 import Main from '../components/layouts/main/main.component';
 
 import RepositoryCard from '../components/repository-card/repository-card.component';
 import OrganizationCard from '../components/organization-card/organization-card.component';
+import ServiceCard from '../components/service-card/service-card.component';
 
 import 'swiper/css';
 import styles from '../styles/home.module.scss';
@@ -247,78 +250,18 @@ const Home: NextPage = (props: any) =>
 
                     <h4 className={styles.homeHeadingPrimary}>Services</h4>
                     <div className={styles.homeServices}>
-                        <div className={styles.homeServicesContent}>
-                            <h5 className={styles.homeServicesContentHeading}>Front-End Development</h5>
-                            <p className={styles.homeServicesContentParagraph}>
-                                Front-end web development is the development of the graphical user interface of a website, through the use of HTML, ReactJS and NextJS, so that users can view and interact with that website.
-                            </p>
-                            <Link href='/'>
-                                <a className={styles.homeServicesContentButton}>
-                                    ORDER NOW
-                                    <BiChevronRight />
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={styles.homeServicesContent}>
-                            <h5 className={styles.homeServicesContentHeading}>Back-End Development</h5>
-                            <p className={styles.homeServicesContentParagraph}>
-                                Back-end development means working on server-side software, which focuses on everything you can not see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco.
-                            </p>
-                            <Link href='/'>
-                                <a className={styles.homeServicesContentButton}>
-                                    ORDER NOW
-                                    <BiChevronRight />
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={styles.homeServicesContent}>
-                            <h5 className={styles.homeServicesContentHeading}>Cross-Platform Development</h5>
-                            <p className={styles.homeServicesContentParagraph}>
-                                Cross-platform development is the practice of developing software products or services for multiple platforms such as Windows, Linux, macOS, Android, iOS, or software environments based on Electron, React Native and Qt.
-                            </p>
-                            <Link href='/'>
-                                <a className={styles.homeServicesContentButton}>
-                                    ORDER NOW
-                                    <BiChevronRight />
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={styles.homeServicesContent}>
-                            <h5 className={styles.homeServicesContentHeading}>Game Development</h5>
-                            <p className={styles.homeServicesContentParagraph}>
-                                Game Development is the art of creating games and describes the design, development and release of a game with Unreal, Frostbite and Unity engines. It may involve concept generation, design, build, test and release.
-                            </p>
-                            <Link href='/'>
-                                <a className={styles.homeServicesContentButton}>
-                                    ORDER NOW
-                                    <BiChevronRight />
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={styles.homeServicesContent}>
-                            <h5 className={styles.homeServicesContentHeading}>Cyber-Security</h5>
-                            <p className={styles.homeServicesContentParagraph}>
-                                In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media.
-                            </p>
-                            <Link href='/'>
-                                <a className={styles.homeServicesContentButton}>
-                                    ORDER NOW
-                                    <BiChevronRight />
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={styles.homeServicesContent}>
-                            <h5 className={styles.homeServicesContentHeading}>Search Engine Optimization</h5>
-                            <p className={styles.homeServicesContentParagraph}>
-                                Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic.
-                            </p>
-                            <Link href='/'>
-                                <a className={styles.homeServicesContentButton}>
-                                    ORDER NOW
-                                    <BiChevronRight />
-                                </a>
-                            </Link>
-                        </div>
+                        {
+                            services.map(service =>
+                            {
+                                return (
+                                    <ServiceCard
+                                        key={service.id}
+                                        title={service.title}
+                                        description={service.description}
+                                    />
+                                );
+                            })
+                        }
                     </div>
 
                     <h4 className={styles.homeHeadingPrimary}>Github Repository</h4>

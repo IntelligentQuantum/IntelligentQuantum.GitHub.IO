@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import classes from 'classnames';
 
+import { skills } from '../../../data/skills.data';
+import { libraries } from '../../../data/libraries.data';
+
 import { BsCheck, BsDribbble, BsGithub, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 import { CgSoftwareDownload } from 'react-icons/cg';
-
-import { skills, libraries } from '../../../data';
 
 import styles from './aside.module.scss';
 
@@ -113,12 +114,12 @@ const Aside = () =>
 
                 <ul className={styles.asideInformationLibrariesList}>
                     {
-                        libraries.map(libs =>
+                        libraries.map(library =>
                         {
                             return (
-                                <li className={styles.asideInformationLibrariesListItems} key={libs.id}>
+                                <li className={styles.asideInformationLibrariesListItems} key={library.id}>
                                     <BsCheck />
-                                    <span>{libs.names}</span>
+                                    <span>{library.names}</span>
                                 </li>
                             );
                         })
