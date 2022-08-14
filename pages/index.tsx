@@ -5,19 +5,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Keyboard, Navigation } from 'swiper';
+import axios from 'axios';
 
-import { BiChevronRight, BiChevronLeft, BiStar } from 'react-icons/bi';
-import { AiOutlineEye } from 'react-icons/ai';
-import { GoRepoForked } from 'react-icons/go';
+import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 
 import useTyped from '../hooks/useTyped';
 
 import Main from '../components/layouts/main/main.component';
 
+import RepositoryCard from '../components/repository-card/repository-card.component';
+import OrganizationCard from '../components/organization-card/organization-card.component';
+
 import 'swiper/css';
 import styles from '../styles/home.module.scss';
 
-const Home: NextPage = () =>
+const Home: NextPage = (props: any) =>
 {
     const typed = useTyped([
         'I build desktop, mobile applications.',
@@ -336,135 +338,55 @@ const Home: NextPage = () =>
                                 1400: { slidesPerView: 3 }
                             }}
                         >
-                            <SwiperSlide >
-                                <div className={styles.homeRepository}>
-                                    <div className={styles.homeRepositoryInfo}>
-                                        <a href='/' target='_blank' rel="noreferrer">
-                                            <span>IntelligentQuantum</span>
-                                            <p>In the digital world, our data is secure as long as we are aware. Most </p>
-                                        </a>
-                                    </div>
-
-                                    <ul className={styles.homeRepositoryStats}>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <BiStar />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <AiOutlineEye />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <GoRepoForked />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={styles.homeRepository}>
-                                    <div className={styles.homeRepositoryInfo}>
-                                        <a href='/' target='_blank' rel="noreferrer">
-                                            <span>IntelligentQuantum</span>
-                                            <p>In the digital world, our data is secure as long as we are aware. Most </p>
-                                        </a>
-                                    </div>
-
-                                    <ul className={styles.homeRepositoryStats}>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <BiStar />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <AiOutlineEye />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <GoRepoForked />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={styles.homeRepository}>
-                                    <div className={styles.homeRepositoryInfo}>
-                                        <a href='/' target='_blank' rel="noreferrer">
-                                            <span>IntelligentQuantum</span>
-                                            <p>In the digital world, our data is secure as long as we are aware. Most </p>
-                                        </a>
-                                    </div>
-
-                                    <ul className={styles.homeRepositoryStats}>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <BiStar />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <AiOutlineEye />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <GoRepoForked />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={styles.homeRepository}>
-                                    <div className={styles.homeRepositoryInfo}>
-                                        <a href='/' target='_blank' rel="noreferrer">
-                                            <span>IntelligentQuantum</span>
-                                            <p>In the digital world, our data is secure as long as we are aware. Most </p>
-                                        </a>
-                                    </div>
-
-                                    <ul className={styles.homeRepositoryStats}>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <BiStar />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <AiOutlineEye />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                        <li className={styles.homeRepositoryStatsItem}>
-                                            <a href="https://">
-                                                <GoRepoForked />
-                                                <span>20</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </SwiperSlide>
-
-                            <div className={styles.homeRepositoryPrevNext}>
+                            {
+                                props.repositories.map((repository: any) =>
+                                {
+                                    return (
+                                        <SwiperSlide key={repository.id}>
+                                            <RepositoryCard
+                                                name={repository.name}
+                                                description={repository.description}
+                                                stars={repository.stargazers_count}
+                                                watchers={repository.watchers_count}
+                                                forks={repository.forks}
+                                            />
+                                        </SwiperSlide>
+                                    );
+                                })
+                            }
+                            <div className={styles.homeRepositoriesPrevNext}>
                                 <div ref={nextRef}><BiChevronLeft /></div>
                                 <div ref={prevRef}><BiChevronRight /></div>
                             </div>
+                        </Swiper>
+                    </div>
+
+                    <div className={styles.homeOrganizations}>
+                        <Swiper
+                            modules={[Keyboard, Autoplay]}
+                            keyboard={{ enabled: true }}
+                            autoplay={{ delay: 2500, disableOnInteraction: false }}
+                            spaceBetween={ 20 }
+                            breakpoints={{
+                                0: { slidesPerView: 1 },
+                                450: { slidesPerView: 2 },
+                                650: { slidesPerView: 3 },
+                                1400: { slidesPerView: 5 }
+                            }}
+                        >
+                            {
+                                props.organizations.map((organization: any) =>
+                                {
+                                    return (
+                                        <SwiperSlide key={organization.node_id}>
+                                            <OrganizationCard
+                                                login={organization.login}
+                                                avatarUrl={organization.avatar_url}
+                                            />
+                                        </SwiperSlide>
+                                    );
+                                })
+                            }
                         </Swiper>
                     </div>
                 </section>
@@ -472,5 +394,23 @@ const Home: NextPage = () =>
         </Fragment>
     );
 };
+
+export async function getStaticProps()
+{
+    const repositories = await axios.get('https://api.github.com/users/IntelligentQuantum/repos');
+    const organizations = await axios.get('https://api.github.com/users/IntelligentQuantum/orgs');
+
+    if (!repositories.data || !organizations.data)
+        return { notFound: true };
+
+    return {
+        props:
+        {
+            repositories: repositories.data,
+            organizations: organizations.data
+        },
+        revalidate: 86400 // 1 day
+    };
+}
 
 export default Home;

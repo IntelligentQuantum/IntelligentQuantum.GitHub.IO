@@ -15,6 +15,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "axios": "^0.27.2",
         "classnames": "^2.3.1",
         "next": "12.2.4",
         "react": "18.2.0",

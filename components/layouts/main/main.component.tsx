@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Footer from '../footer/footer.component';
+
 import styles from './main.module.scss';
 
 interface MainProps
@@ -13,6 +15,7 @@ const Main = ({ children }: MainProps) =>
         <main className={styles.main}>
             <div className={styles.mainBackground} />
             { children }
+            <Footer />
         </main>
     );
 };
