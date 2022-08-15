@@ -1,8 +1,9 @@
 .aside
 {
-    grid-template: aside-start / aside-end;
     display: grid;
     grid-template-rows: 25rem 1fr 5rem;
+    grid-template: aside-start / aside-end;
+
     overflow: hidden;
 
     @media only screen and (max-width: 1000px)

@@ -17,6 +17,7 @@ import stylesBlog from '../../styles/pages/blog.module.scss';
 
 const Error = dynamic(() => import('../../components/error/error.component'));
 const Loader = dynamic(() => import('../../components/loader/loader.component'));
+const ItemMotion = dynamic(() => import('../../components/animations/item.component'));
 
 const BlogView = (props: { content: IContent }) =>
 {
@@ -105,16 +106,16 @@ const BlogView = (props: { content: IContent }) =>
                                 </span>
                             </div>
 
-                            <div className={stylesBlog.blogViewImage}>
+                            <ItemMotion index={ 0 }  className={stylesBlog.blogViewImage}>
                                 <Image
-                                    src={blog.image}
-                                    alt={blog.name}
+                                    src={ blog.image }
+                                    alt={ blog.name }
                                     layout='fill'
                                 />
-                            </div>
+                            </ItemMotion>
 
                             <div className={stylesBlog.blogView}>
-                                <div className={stylesBlog.blogViewCardHeader}>
+                                <ItemMotion index={ 2 } className={stylesBlog.blogViewCardHeader}>
                                     <span>
                                         <p>
                                             {props?.content?.id}:
@@ -149,15 +150,17 @@ const BlogView = (props: { content: IContent }) =>
                                         </p>
                                         {blog.category}
                                     </span>
-                                </div>
+                                </ItemMotion>
 
-                                <article className={stylesBlog.blogViewCard}>
+                                <ItemMotion index={ 1 } className={stylesBlog.blogViewCard}>
                                     <h3>
                                         {blog.description}
                                     </h3>
 
-                                    {reactHtmlParser(blog.content)}
-                                </article>
+                                    <article>
+                                        {reactHtmlParser(blog.content)}
+                                    </article>
+                                </ItemMotion>
                             </div>
                         </section>
                     </>

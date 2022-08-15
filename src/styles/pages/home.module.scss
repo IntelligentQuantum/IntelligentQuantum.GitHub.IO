@@ -211,7 +211,7 @@
 
             height: 100%;
 
-            & > h2
+            & > h2:not(:first-child)
             {
                 margin: 1.65rem auto 0 0;
             }

@@ -23,30 +23,16 @@ import 'tippy.js/dist/tippy.css';
 import stylesHome from '../styles/pages/home.module.scss';
 import stylesButtons from '../styles/components/button.module.scss';
 
-import QtLogo from '../../public/static/images/logos/logo-qt.png';
-import NodeLogo from '../../public/static/images/logos/logo-node.png';
-import NestLogo from '../../public/static/images/logos/logo-nest.png';
-import DenoLogo from '../../public/static/images/logos/logo-deno.png';
-import SassLogo from '../../public/static/images/logos/logo-sass.png';
-import NextLogo from '../../public/static/images/logos/logo-next.png';
-import HtmlLogo from '../../public/static/images/logos/logo-html.png';
-import ReactLogo from '../../public/static/images/logos/logo-react.png';
-import ExpressLogo from '../../public/static/images/logos/logo-express.png';
-import ElectronLogo from '../../public/static/images/logos/logo-electron.png';
-import ReactQueryLogo from '../../public/static/images/logos/logo-react-query.png';
-import StyledLogo from '../../public/static/images/logos/logo-styled-component.png';
-import ReactNativeLogo from '../../public/static/images/logos/logo-react-native.png';
-
+const TypingEffect = dynamic(() => import('../components/typing-effect'));
 const OrgansList = dynamic(() => import('../components/lists/organs-list.component'));
 const ServiceCard = dynamic(() => import('../components/cards/service-card.component'));
 const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
-const TooltipPrimary = dynamic(() => import('../components/tooltips/tooltip-primary.component'));
+const TechnologyCard = dynamic(() => import('../components/cards/technology-card.component'));
 const RepositoriesList = dynamic(() => import('../components/lists/repositories-list.component'));
+const TooltipPrimary = dynamic(() => import('../components/tooltips/tooltip-primary.component'));
 
 const Home = (props: { content: IContent }) =>
 {
-    const typing = useTyped(props.content.typing_effect);
-
     const [organs, setOrgans] = useState<IOrgan[]>([]);
     const [repositories, setRepositories] = useState<IRepository[]>([]);
 
@@ -100,9 +86,7 @@ const Home = (props: { content: IContent }) =>
                                         &lt;<i>code</i>&gt;
                                 </span>
 
-                                <span>
-                                    { typing }
-                                </span>
+                                <TypingEffect words={props.content.typing_effect}/>
 
                                 <span>
                                         &lt;/<i>code</i>&gt;
@@ -182,7 +166,7 @@ const Home = (props: { content: IContent }) =>
                             {
                                 props.content.about_me.split('NEXT_LINE').map((paragraph: string, index: number) =>
                                     (
-                                        <h2 key={ nanoid() } className={'paragraph text-indent' + (index === 0 ? ' first-letter' : '')}>
+                                        <h2 key={ nanoid() } className={'paragraph' + (index === 0 ? ' first-letter' : ' text-indent') + (props.content.dir === 'rtl' ? ' text-indent' : '')}>
                                             { reactHtmlParser(index === 0 && props.content.dir === 'rtl'
                                                 ? ' &nbsp;' + paragraph
                                                 : paragraph
@@ -195,7 +179,7 @@ const Home = (props: { content: IContent }) =>
                         <ul className={stylesHome.homeAboutMeAside}>
                             <li className={stylesHome.homeAboutMeAsideItem}>
                                 <h6>
-                                    { props.content.technologies }
+                                    { props.content.technologies.title }
                                 </h6>
                             </li>
 
@@ -203,85 +187,27 @@ const Home = (props: { content: IContent }) =>
                                 <h5>
                                     {
                                         props.content.language === 'fa'
-                                            ?
-                                            props.content.services[0].title.split(' ')[1]
-                                            :
-                                            props.content.services[0].title.split(' ')[0]
+                                            ? props.content.services[0].title.split(' ')[1]
+                                            : props.content.services[0].title.split(' ')[0]
                                     }:
                                 </h5>
-
                                 <ul className={stylesHome.homeAboutMeAsideItemList}>
-                                    <TooltipPrimary title='HTML'>
-                                        <li>
-                                            <span data-html_logo={true}>
-                                                <Image
-                                                    src={ HtmlLogo }
-                                                    alt='HTML Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='Sass Stylesheet'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ SassLogo }
-                                                    alt='Sass Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='ReactJS'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ ReactLogo }
-                                                    alt='React Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='Styled Component'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ StyledLogo }
-                                                    alt='Styled Component Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='React Query'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ ReactQueryLogo }
-                                                    alt='React Query Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='NextJS'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ NextLogo }
-                                                    alt='Next Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
+                                    {
+                                        props.content.technologies.front_end.map((technology: { title: string, icon: string }, index: number) =>
+                                            (
+                                                <TooltipPrimary key={ nanoid() } title={ technology.title }>
+                                                    <li>
+                                                        <span>
+                                                            <Image
+                                                                src={ technology.icon }
+                                                                alt={ technology.title + ' Logo' }
+                                                                layout='fill'
+                                                            />
+                                                        </span>
+                                                    </li>
+                                                </TooltipPrimary>
+                                            ))
+                                    }
                                 </ul>
                             </li>
 
@@ -289,61 +215,21 @@ const Home = (props: { content: IContent }) =>
                                 <h5>
                                     {
                                         props.content.language === 'fa'
-                                            ?
-                                            props.content.services[1].title.split(' ')[1]
-                                            :
-                                            props.content.services[1].title.split(' ')[0]
+                                            ? props.content.services[1].title.split(' ')[1]
+                                            : props.content.services[1].title.split(' ')[0]
                                     }:
                                 </h5>
-
                                 <ul className={stylesHome.homeAboutMeAsideItemList}>
-                                    <TooltipPrimary title='NodeJS'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ NodeLogo }
-                                                    alt='NodeJS Logo'
-                                                    layout='fill'
+                                    {
+                                        props.content.technologies.back_end.map((technology: { title: string, icon: string }, index: number) =>
+                                            (
+                                                <TechnologyCard
+                                                    key={ nanoid() }
+                                                    index={ index }
+                                                    technology={ technology }
                                                 />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='ExpressJS'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ ExpressLogo }
-                                                    alt='Express Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='NestJS'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ NestLogo }
-                                                    alt='Nest Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='DenoJS'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ DenoLogo }
-                                                    alt='Deno Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
+                                            ))
+                                    }
                                 </ul>
                             </li>
 
@@ -351,49 +237,21 @@ const Home = (props: { content: IContent }) =>
                                 <h5>
                                     {
                                         props.content.language === 'fa'
-                                            ?
-                                            props.content.services[2].title.split(' ')[1]
-                                            :
-                                            props.content.services[2].title.split(' ')[0]
+                                            ? props.content.services[2].title.split(' ')[1]
+                                            : props.content.services[2].title.split(' ')[0]
                                     }:
                                 </h5>
-
                                 <ul className={stylesHome.homeAboutMeAsideItemList}>
-                                    <TooltipPrimary title='ElectronJS'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ ElectronLogo }
-                                                    alt='Electron Logo'
-                                                    layout='fill'
+                                    {
+                                        props.content.technologies.cross_platform.map((technology: { title: string, icon: string }, index: number) =>
+                                            (
+                                                <TechnologyCard
+                                                    key={ nanoid() }
+                                                    index={ index }
+                                                    technology={ technology }
                                                 />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='React Native'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ ReactNativeLogo }
-                                                    alt='React Native Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
-
-                                    <TooltipPrimary title='Qt'>
-                                        <li>
-                                            <span>
-                                                <Image
-                                                    src={ QtLogo }
-                                                    alt='QT Logo'
-                                                    layout='fill'
-                                                />
-                                            </span>
-                                        </li>
-                                    </TooltipPrimary>
+                                            ))
+                                    }
                                 </ul>
                             </li>
                         </ul>
