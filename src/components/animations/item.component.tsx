@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React, { ReactNode } from 'react';
 
-const ItemMotion = (props: { index: number, className?: string, children: ReactNode }) =>
+const ItemMotion = (props: { index: number, className?: string, onClick?: any, children: ReactNode }) =>
 {
     const variants =
         {
@@ -13,10 +13,11 @@ const ItemMotion = (props: { index: number, className?: string, children: ReactN
         <motion.li
             initial='hidden'
             whileInView='visible'
-            viewport={{ once: true }}
             className={ props.className }
             variants={ variants }
             custom={ props.index }
+            viewport={{ once: true }}
+            onClick={ props.onClick }
         >
             { props.children }
         </motion.li>

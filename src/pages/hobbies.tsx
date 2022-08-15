@@ -11,6 +11,7 @@ import type { IContent } from '../interfaces/content';
 import stylesHobbies from '../styles/pages/hobbies.module.scss';
 
 const HobbyCard = dynamic(() => import('../components/cards/hobby-card.component'));
+const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
 
 const Hobbies = (props: { content: IContent }) =>
 {
@@ -31,19 +32,19 @@ const Hobbies = (props: { content: IContent }) =>
             {
                 console.log(error);
             });
-    }, [players]);
+    }, []);
 
     const getPlayers = useCallback(async() =>
     {
         getPlayer('28003', 'lionel-messi', 0);
         getPlayer('125781', 'antoine-griezmann', 1);
         getPlayer('398184', 'ferran-torres', 2);
-    }, [getPlayer]);
+    }, []);
 
     useEffect(() =>
     {
         getPlayers();
-    }, [getPlayers]);
+    }, []);
 
     return (
         <>
@@ -72,11 +73,10 @@ const Hobbies = (props: { content: IContent }) =>
                 <h4 className='heading'>
                     {props.content.titles[4]}
                 </h4>
-                <ul className={stylesHobbies.hobbiesList}>
+                <ScrollMotion className={stylesHobbies.hobbiesList}>
                     {
-                        props.content.my_hobbies.map((hobby: IHobby, index: number) =>
+                        props.content.my_hobbies.map((hobby: IHobby) =>
                             <HobbyCard
-                                index={ index }
                                 key={ nanoid() }
                                 hobby={ hobby }
                                 players={ players }
@@ -84,7 +84,7 @@ const Hobbies = (props: { content: IContent }) =>
                             />
                         )
                     }
-                </ul>
+                </ScrollMotion>
             </section>
         </>
     );

@@ -89,6 +89,7 @@ const Contact = (props: { content: IContent }) =>
                 <h4 className='heading'>
                     { props.content.titles[2] }
                 </h4>
+
                 <motion.ul className={stylesContact.contactInformation}>
                     <ItemMotion index={ 0 } className={stylesContact.contactInformationContent}>
                         <motion.ul className={stylesContact.contactInformationContentPersonal}>

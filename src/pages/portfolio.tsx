@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
-import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
 import type { IContent } from '../interfaces/content';
@@ -9,6 +8,8 @@ import type { IPortfolio } from '../interfaces/portfolio';
 
 import stylesPortfolio from '../styles/pages/portfolio.module.scss';
 
+const ItemMotion = dynamic(() => import('../components/animations/item.component'));
+const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
 const PortfolioCard = dynamic(() => import('../components/cards/portfolio-card.component'));
 
 const Portfolio = (props: { content: IContent }) =>
@@ -43,32 +44,33 @@ const Portfolio = (props: { content: IContent }) =>
                     {props.content.titles[6]}
                 </h4>
 
-                <ul className='heading__small'>
-                    <li data-active={category === 'all'} onClick={() => setCategory('all')}>
-                        {props.content.categories[0]}
-                    </li>
-                    <li data-active={category === 'web_development'} onClick={() => setCategory('web_development')}>
-                        {props.content.categories[1]}
-                    </li>
-                    <li data-active={category === 'app_development'} onClick={() => setCategory('app_development')}>
-                        {props.content.categories[2]}
-                    </li>
-                    <li data-active={category === 'robot_development'} onClick={() => setCategory('robot_development')}>
-                        {props.content.categories[3]}
-                    </li>
-                    <li data-active={category === 'graphic_design'} onClick={() => setCategory('graphic_design')}>
-                        {props.content.categories[4]}
-                    </li>
-                </ul>
+                <ScrollMotion>
+                    <ul className='heading__small'>
+                        <ItemMotion index={ 0 } data-active={category === 'all'} onClick={() => setCategory('all')}>
+                            {props.content.categories[0]}
+                        </ItemMotion>
+                        <ItemMotion index={ 1 } data-active={category === 'web_development'} onClick={() => setCategory('web_development')}>
+                            {props.content.categories[1]}
+                        </ItemMotion>
+                        <ItemMotion index={ 2 } data-active={category === 'app_development'} onClick={() => setCategory('app_development')}>
+                            {props.content.categories[2]}
+                        </ItemMotion>
+                        <ItemMotion index={ 3 } data-active={category === 'robot_development'} onClick={() => setCategory('robot_development')}>
+                            {props.content.categories[3]}
+                        </ItemMotion>
+                        <ItemMotion index={ 4 } data-active={category === 'graphic_design'} onClick={() => setCategory('graphic_design')}>
+                            {props.content.categories[4]}
+                        </ItemMotion>
+                    </ul>
+                </ScrollMotion>
 
-                <motion.ul className={stylesPortfolio.portfolioList}>
+                <ScrollMotion delay={ .3 } className={stylesPortfolio.portfolioList}>
                     {
-                        props.content.my_portfolio.map((portfolio: IPortfolio, index: number) =>
+                        props.content.my_portfolio.map((portfolio: IPortfolio) =>
                             (
                                 category === 'all' || portfolio.tag === category
                                     ?
                                     <PortfolioCard
-                                        index={ index }
                                         key={ nanoid() }
                                         portfolio={ portfolio }
                                         text={ props.content.read_more }
@@ -77,7 +79,7 @@ const Portfolio = (props: { content: IContent }) =>
                                     null
                             ))
                     }
-                </motion.ul>
+                </ScrollMotion>
             </section>
         </>
     );

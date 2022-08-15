@@ -6,12 +6,11 @@ import type { IBlog } from '../../interfaces/blog';
 
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
-const ItemMotion = dynamic(() => import('../animations/item.component'));
 const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
 
-const BlogCard = (props: { blog: IBlog, index: number, text: string }) =>
+const BlogCard = (props: { blog: IBlog, text: string }) =>
     (
-        <ItemMotion index={ props.index } className={stylesBlog.blogItem}>
+        <div className={stylesBlog.blogItem}>
             <Image
                 src={ props.blog.image }
                 alt={ props.blog.name }
@@ -29,7 +28,7 @@ const BlogCard = (props: { blog: IBlog, index: number, text: string }) =>
                     text={ props.text }
                 />
             </div>
-        </ItemMotion>
+        </div>
     );
 
 export default BlogCard;

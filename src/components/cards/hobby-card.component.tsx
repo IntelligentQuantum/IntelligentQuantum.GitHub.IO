@@ -5,6 +5,7 @@ import parse from 'html-react-parser';
 import reactStringReplace from 'react-string-replace';
 
 import type { IHobby } from '../../interfaces/hobby';
+import type { IPlayer } from '../../interfaces/player';
 import type { IContent } from '../../interfaces/content';
 
 import HeroAzur from '../../../public/static/images/hobbies/hero-azur.png';
@@ -21,11 +22,10 @@ import HeroGriezmann from '../../../public/static/images/hobbies/hero-antoine-gr
 
 import stylesHobbies from '../../styles/pages/hobbies.module.scss';
 
-const ItemMotion = dynamic(() => import('../animations/item.component'));
 const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
 const TooltipFootball = dynamic(() => import('../tooltips/tooltip-football.component'));
 
-const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby, index: number }) =>
+const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby }) =>
 {
     const replaceHobbyTitle = (domHandlerNode: any) =>
     {
@@ -47,7 +47,7 @@ const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby, inde
     };
 
     return (
-        <ItemMotion index={ props.index } className={stylesHobbies.hobbiesBox}>
+        <div className={stylesHobbies.hobbiesBox}>
             <div className={stylesHobbies.hobbiesBoxContent} data-fact_type={props.hobby.type}>
                 <div className={stylesHobbies.hobbiesBoxContentBox}>
                     <h3 className={stylesHobbies.hobbiesBoxContentBoxTitle}>
@@ -207,7 +207,7 @@ const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby, inde
                     }
                 </div>
             </div>
-        </ItemMotion>
+        </div>
     );
 };
 

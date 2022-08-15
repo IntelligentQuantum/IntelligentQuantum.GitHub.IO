@@ -406,9 +406,8 @@ const Home = (props: { content: IContent }) =>
                     </h4>
                     <ul className={stylesHome.homeServices}>
                         {
-                            props.content.services.map((service: IService, index: number) =>
+                            props.content.services.map((service: IService) =>
                                 <ServiceCard
-                                    index={ index }
                                     key={ service.id }
                                     service={ service }
                                     text={ props.content.order_now }

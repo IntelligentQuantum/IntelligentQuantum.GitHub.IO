@@ -8,15 +8,14 @@ import { setImagePortfolio } from '../../app/portfolio/portfolio.actions';
 
 import stylesPortfolio from '../../styles/pages/portfolio.module.scss';
 
-const ItemMotion = dynamic(() => import('../animations/item.component'));
 const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
 
-const PortfolioCard = (props: { index: number, text: string, portfolio: { image: string, title: string, tag: string, description: string, link: string }}) =>
+const PortfolioCard = (props: { text: string, portfolio: { image: string, title: string, tag: string, description: string, link: string }}) =>
 {
     const dispatch = useDispatch();
 
     return (
-        <ItemMotion index={ props.index } className={stylesPortfolio.portfolioItem}>
+        <div className={stylesPortfolio.portfolioItem}>
             <Image
                 onClick={() =>
                 {
@@ -49,7 +48,7 @@ const PortfolioCard = (props: { index: number, text: string, portfolio: { image:
                     text={ props.text}
                 />
             </div>
-        </ItemMotion>
+        </div>
     );
 };
 

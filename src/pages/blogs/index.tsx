@@ -8,6 +8,7 @@ import type { IContent } from '../../interfaces/content';
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
 const Card = dynamic(() => import('../../components/cards/blog-card.component'));
+const ScrollMotion = dynamic(() => import('../../components/animations/scroll.component'));
 
 const Blog = (props: { content: IContent }) =>
     (
@@ -42,20 +43,18 @@ const Blog = (props: { content: IContent }) =>
                 <h4 className='heading'>
                     {props?.content?.titles[5]}
                 </h4>
-
-                <ul className={stylesBlog.blogItems}>
+                <ScrollMotion className={stylesBlog.blogItems}>
                     {
-                        props?.content?.my_blogs?.map((blog: IBlog, index: number) =>
+                        props?.content?.my_blogs?.map((blog: IBlog) =>
                             (
                                 <Card
-                                    index={ index }
                                     key={ blog.name }
                                     blog={ blog }
                                     text={ props?.content?.read_more }
                                 />
                             ))
                     }
-                </ul>
+                </ScrollMotion>
             </section>
         </>
     );

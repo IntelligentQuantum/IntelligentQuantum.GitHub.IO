@@ -115,7 +115,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
     {
         handleTheme();
         handleLanguage();
-    }, []);
+    });
 
     useEffect(() =>
     {

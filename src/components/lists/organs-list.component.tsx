@@ -9,7 +9,6 @@ import type { IOrgan } from '../../interfaces/organ';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
-const ItemMotion = dynamic(() => import('../animations/item.component'));
 const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
 
 const OrgansList = (props: { dir?: 'rtl' | 'ltr', organs: IOrgan[] }) =>
@@ -21,10 +20,10 @@ const OrgansList = (props: { dir?: 'rtl' | 'ltr', organs: IOrgan[] }) =>
                 { ...SWIPER_CONFIG_2 }
             >
                 {
-                    props.organs.map((organ: IOrgan, index: number) =>
+                    props.organs.map((organ: IOrgan) =>
                         (
                             <SwiperSlide key={ organ.node_id }>
-                                <ItemMotion index={ index } className={stylesHome.homeOrgansContent}>
+                                <div className={stylesHome.homeOrgansContent}>
                                     <TooltipPrimary title={ organ.login }>
                                         <a href={`https://github.com/${ organ.login }`} target='_blank' className={stylesHome.homeOrgansContent} rel="noreferrer">
                                             <Image
@@ -35,7 +34,7 @@ const OrgansList = (props: { dir?: 'rtl' | 'ltr', organs: IOrgan[] }) =>
                                             />
                                         </a>
                                     </TooltipPrimary>
-                                </ItemMotion>
+                                </div>
                             </SwiperSlide>
                         ))
                 }
