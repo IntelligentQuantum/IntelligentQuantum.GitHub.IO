@@ -43,18 +43,19 @@ const Blog = (props: { content: IContent }) =>
                     {props?.content?.titles[5]}
                 </h4>
 
-                <div className={stylesBlog.blogItems}>
+                <ul className={stylesBlog.blogItems}>
                     {
-                        props?.content?.my_blogs?.map((blog: IBlog) =>
+                        props?.content?.my_blogs?.map((blog: IBlog, index: number) =>
                             (
                                 <Card
+                                    index={ index }
                                     key={ blog.name }
                                     blog={ blog }
                                     text={ props?.content?.read_more }
                                 />
                             ))
                     }
-                </div>
+                </ul>
             </section>
         </>
     );

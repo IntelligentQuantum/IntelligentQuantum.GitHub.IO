@@ -39,23 +39,20 @@
 
             &Personal
             {
-                padding-bottom: 1.2rem;
-                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
 
-                ul
-                {
-                    height: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                }
+                height: 100%;
+                padding-bottom: 1.2rem;
 
                 li
                 {
-                    width: 100%;
                     display: flex;
-                    justify-content: space-between;
                     align-items: center;
+                    justify-content: space-between;
+
+                    width: 100%;
                 }
 
                 h6
@@ -83,11 +80,12 @@
 
         &Parent
         {
-            width: 100%;
-            padding: 0 3rem;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            width: 100%;
+            padding: 0 3rem;
 
             @media only screen and (max-width: 1000px)
             {
@@ -100,6 +98,7 @@
             &Group
             {
                 display: flex;
+
                 margin: auto;
                 height: 5rem;
                 direction: ltr;
@@ -112,10 +111,11 @@
                 & label
                 {
                     display: flex;
-                    justify-content: center;
                     align-items: center;
+                    justify-content: center;
 
                     direction: ltr;
+
                     text-align: center;
                     font-size: 1.5rem;
                     color: var(--color-base-text);
@@ -131,6 +131,7 @@
                 & textarea
                 {
                     direction: ltr;
+
                     resize: none;
                     height: 100%;
                     width: 100%;
@@ -167,9 +168,10 @@
 
                 &MessageInput
                 {
+                    direction: rtl;
+
                     height: 15rem;
                     margin-bottom: 3rem;
-                    direction: rtl;
 
                     & input,
                     & textarea,

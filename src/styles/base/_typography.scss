@@ -16,8 +16,21 @@
     color: var(--color-base-text-bold);
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.85rem;
     z-index: 92;
+    line-height: 1.5;
+
+    &.first-letter:first-letter
+    {
+        font-size: 500%;
+        padding: .5rem .25rem;
+        margin-right: .5rem;
+        float: left;
+    }
+
+    &.text-indent
+    {
+        text-indent: 3.5rem;
+    }
 
     @media only screen and (max-width: 1000px)
     {

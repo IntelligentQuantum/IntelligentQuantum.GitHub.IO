@@ -1,11 +1,13 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
 import axios, { AxiosResponse } from 'axios';
 import React, { useEffect, useState } from 'react';
+import reactHtmlParser from 'html-react-parser';
 
 import useTyped from '../hooks/use-typed';
 
@@ -37,6 +39,7 @@ import ReactNativeLogo from '../../public/static/images/logos/logo-react-native.
 
 const OrgansList = dynamic(() => import('../components/lists/organs-list.component'));
 const ServiceCard = dynamic(() => import('../components/cards/service-card.component'));
+const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
 const TooltipPrimary = dynamic(() => import('../components/tooltips/tooltip-primary.component'));
 const RepositoriesList = dynamic(() => import('../components/lists/repositories-list.component'));
 
@@ -85,337 +88,356 @@ const Home = (props: { content: IContent }) =>
             </Head>
 
             <section className={stylesHome.home}>
-                <header className={stylesHome.homeHeader}>
-                    <div className={stylesHome.homeHeaderContent}>
-                        <h2>
-                            { props.content.titles[0] }
-                        </h2>
+                <ScrollMotion>
+                    <header className={stylesHome.homeHeader}>
+                        <div className={stylesHome.homeHeaderContent}>
+                            <h3>
+                                { props.content.titles[0] }
+                            </h3>
 
-                        <div className={stylesHome.homeHeaderContentDescription}>
-                            <span>
+                            <div className={stylesHome.homeHeaderContentDescription}>
+                                <span>
                                         &lt;<i>code</i>&gt;
-                            </span>
+                                </span>
 
-                            <span>
-                                { typing }
-                            </span>
+                                <span>
+                                    { typing }
+                                </span>
 
-                            <span>
+                                <span>
                                         &lt;/<i>code</i>&gt;
-                            </span>
+                                </span>
+                            </div>
+
+                            <Link href='/portfolio'>
+                                <a className={classnames(stylesButtons.button, 'align-self-start')}>
+                                    { props.content.explore_more }
+                                </a>
+                            </Link>
                         </div>
 
-                        <Link href='/portfolio'>
-                            <a className={classnames(stylesButtons.button, 'align-self-start')}>
-                                { props.content.explore_more }
-                            </a>
-                        </Link>
+                        <div className={stylesHome.homeHeaderLogs}>
+                            <div className={stylesHome.homeHeaderLogsBox}>
+                                <span>
+                                    <CountUp
+                                        start={0}
+                                        end={99}
+                                        duration={5}
+                                    />
+                                +
+                                </span>
+                                <p>
+                                    {props.content.headers[0]}
+                                </p>
+                            </div>
+                            <div className={stylesHome.homeHeaderLogsBox}>
+                                <span>
+                                    <CountUp
+                                        start={0}
+                                        end={100}
+                                        duration={5}
+                                    />
+                                +
+                                </span>
+                                <p>
+                                    {props.content.headers[1]}
+                                </p>
+                            </div>
+                            <div className={stylesHome.homeHeaderLogsBox}>
+                                <span>
+                                    <CountUp
+                                        start={0}
+                                        end={5}
+                                        duration={5}
+                                    />
+                                +
+                                </span>
+                                <p>
+                                    {props.content.headers[2]}
+                                </p>
+                            </div>
+                            <div className={stylesHome.homeHeaderLogsBox}>
+                                <span>
+                                    <CountUp
+                                        start={0}
+                                        end={20}
+                                        duration={5}
+                                    />
+                                +
+                                </span>
+                                <p>
+                                    {props.content.headers[3]}
+                                </p>
+                            </div>
+                        </div>
+                    </header>
+                </ScrollMotion>
+
+                <ScrollMotion>
+                    <h4 className='heading'>
+                        { props.content.titles[8] }
+                    </h4>
+                    <div className={stylesHome.homeAboutMe}>
+                        <div>
+                            {
+                                props.content.about_me.split('NEXT_LINE').map((paragraph: string, index: number) =>
+                                    (
+                                        <h2 key={ nanoid() } className={'paragraph text-indent' + (index === 0 ? ' first-letter' : '')}>
+                                            { reactHtmlParser(index === 0 && props.content.dir === 'rtl'
+                                                ? ' &nbsp;' + paragraph
+                                                : paragraph
+                                            )}
+                                        </h2>
+                                    ))
+                            }
+                        </div>
+
+                        <ul className={stylesHome.homeAboutMeAside}>
+                            <li className={stylesHome.homeAboutMeAsideItem}>
+                                <h6>
+                                    { props.content.technologies }
+                                </h6>
+                            </li>
+
+                            <li className={stylesHome.homeAboutMeAsideItem}>
+                                <h5>
+                                    {
+                                        props.content.language === 'fa'
+                                            ?
+                                            props.content.services[0].title.split(' ')[1]
+                                            :
+                                            props.content.services[0].title.split(' ')[0]
+                                    }:
+                                </h5>
+
+                                <ul className={stylesHome.homeAboutMeAsideItemList}>
+                                    <TooltipPrimary title='HTML'>
+                                        <li>
+                                            <span data-html_logo={true}>
+                                                <Image
+                                                    src={ HtmlLogo }
+                                                    alt='HTML Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='Sass Stylesheet'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ SassLogo }
+                                                    alt='Sass Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='ReactJS'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ ReactLogo }
+                                                    alt='React Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='Styled Component'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ StyledLogo }
+                                                    alt='Styled Component Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='React Query'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ ReactQueryLogo }
+                                                    alt='React Query Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='NextJS'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ NextLogo }
+                                                    alt='Next Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+                                </ul>
+                            </li>
+
+                            <li className={stylesHome.homeAboutMeAsideItem}>
+                                <h5>
+                                    {
+                                        props.content.language === 'fa'
+                                            ?
+                                            props.content.services[1].title.split(' ')[1]
+                                            :
+                                            props.content.services[1].title.split(' ')[0]
+                                    }:
+                                </h5>
+
+                                <ul className={stylesHome.homeAboutMeAsideItemList}>
+                                    <TooltipPrimary title='NodeJS'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ NodeLogo }
+                                                    alt='NodeJS Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='ExpressJS'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ ExpressLogo }
+                                                    alt='Express Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='NestJS'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ NestLogo }
+                                                    alt='Nest Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='DenoJS'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ DenoLogo }
+                                                    alt='Deno Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+                                </ul>
+                            </li>
+
+                            <li className={stylesHome.homeAboutMeAsideItem}>
+                                <h5>
+                                    {
+                                        props.content.language === 'fa'
+                                            ?
+                                            props.content.services[2].title.split(' ')[1]
+                                            :
+                                            props.content.services[2].title.split(' ')[0]
+                                    }:
+                                </h5>
+
+                                <ul className={stylesHome.homeAboutMeAsideItemList}>
+                                    <TooltipPrimary title='ElectronJS'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ ElectronLogo }
+                                                    alt='Electron Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='React Native'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ ReactNativeLogo }
+                                                    alt='React Native Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+
+                                    <TooltipPrimary title='Qt'>
+                                        <li>
+                                            <span>
+                                                <Image
+                                                    src={ QtLogo }
+                                                    alt='QT Logo'
+                                                    layout='fill'
+                                                />
+                                            </span>
+                                        </li>
+                                    </TooltipPrimary>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
+                </ScrollMotion>
 
-                    <div className={stylesHome.homeHeaderLogs}>
-                        <div className={stylesHome.homeHeaderLogsBox}>
-                            <span>
-                                <CountUp
-                                    start={0}
-                                    end={99}
-                                    duration={5}
+                <ScrollMotion>
+                    <h4 className='heading'>
+                        { props.content.titles[1] }
+                    </h4>
+                    <ul className={stylesHome.homeServices}>
+                        {
+                            props.content.services.map((service: IService, index: number) =>
+                                <ServiceCard
+                                    index={ index }
+                                    key={ service.id }
+                                    service={ service }
+                                    text={ props.content.order_now }
                                 />
-                                +
-                            </span>
-                            <p>
-                                {props.content.headers[0]}
-                            </p>
-                        </div>
-                        <div className={stylesHome.homeHeaderLogsBox}>
-                            <span>
-                                <CountUp
-                                    start={0}
-                                    end={100}
-                                    duration={5}
-                                />
-                                +
-                            </span>
-                            <p>
-                                {props.content.headers[1]}
-                            </p>
-                        </div>
-                        <div className={stylesHome.homeHeaderLogsBox}>
-                            <span>
-                                <CountUp
-                                    start={0}
-                                    end={5}
-                                    duration={5}
-                                />
-                                +
-                            </span>
-                            <p>
-                                {props.content.headers[2]}
-                            </p>
-                        </div>
-                        <div className={stylesHome.homeHeaderLogsBox}>
-                            <span>
-                                <CountUp
-                                    start={0}
-                                    end={20}
-                                    duration={5}
-                                />
-                                +
-                            </span>
-                            <p>
-                                {props.content.headers[3]}
-                            </p>
-                        </div>
-                    </div>
-                </header>
-
-                <h4 className='heading'>
-                    { props.content.titles[8] }
-                </h4>
-                <div className={stylesHome.homeAboutMe}>
-                    <h2 className='paragraph'>
-                        { props.content.about_me }
-                    </h2>
-
-                    <ul className={stylesHome.homeAboutMeAside}>
-                        <li className={stylesHome.homeAboutMeAsideItem}>
-                            <h6>
-                                { props.content.technologies }
-                            </h6>
-                        </li>
-
-                        <li className={stylesHome.homeAboutMeAsideItem}>
-                            <h5>
-                                {
-                                    props.content.language === 'fa'
-                                        ?
-                                        props.content.services[0].title.split(' ')[1]
-                                        :
-                                        props.content.services[0].title.split(' ')[0]
-                                }:
-                            </h5>
-
-                            <ul className={stylesHome.homeAboutMeAsideItemList}>
-                                <TooltipPrimary title='HTML'>
-                                    <li>
-                                        <span data-html_logo={true}>
-                                            <Image
-                                                src={ HtmlLogo }
-                                                alt='HTML Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='Sass Stylesheet'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ SassLogo }
-                                                alt='Sass Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='ReactJS'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ ReactLogo }
-                                                alt='React Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='Styled Component'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ StyledLogo }
-                                                alt='Styled Component Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='React Query'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ ReactQueryLogo }
-                                                alt='React Query Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='NextJS'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ NextLogo }
-                                                alt='Next Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-                            </ul>
-                        </li>
-
-                        <li className={stylesHome.homeAboutMeAsideItem}>
-                            <h5>
-                                {
-                                    props.content.language === 'fa'
-                                        ?
-                                        props.content.services[1].title.split(' ')[1]
-                                        :
-                                        props.content.services[1].title.split(' ')[0]
-                                }:
-                            </h5>
-
-                            <ul className={stylesHome.homeAboutMeAsideItemList}>
-                                <TooltipPrimary title='NodeJS'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ NodeLogo }
-                                                alt='NodeJS Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='ExpressJS'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ ExpressLogo }
-                                                alt='Express Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='NestJS'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ NestLogo }
-                                                alt='Nest Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='DenoJS'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ DenoLogo }
-                                                alt='Deno Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-                            </ul>
-                        </li>
-
-                        <li className={stylesHome.homeAboutMeAsideItem}>
-                            <h5>
-                                {
-                                    props.content.language === 'fa'
-                                        ?
-                                        props.content.services[2].title.split(' ')[1]
-                                        :
-                                        props.content.services[2].title.split(' ')[0]
-                                }:
-                            </h5>
-
-                            <ul className={stylesHome.homeAboutMeAsideItemList}>
-                                <TooltipPrimary title='ElectronJS'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ ElectronLogo }
-                                                alt='Electron Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='React Native'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ ReactNativeLogo }
-                                                alt='React Native Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-
-                                <TooltipPrimary title='Qt'>
-                                    <li>
-                                        <span>
-                                            <Image
-                                                src={ QtLogo }
-                                                alt='QT Logo'
-                                                layout='fill'
-                                            />
-                                        </span>
-                                    </li>
-                                </TooltipPrimary>
-                            </ul>
-                        </li>
+                            )
+                        }
                     </ul>
-                </div>
+                </ScrollMotion>
 
-                <h4 className='heading'>
-                    { props.content.titles[1] }
-                </h4>
-                <div className={stylesHome.homeServices}>
+                <ScrollMotion>
+                    <h4 className='heading'>
+                        {props.content.titles[7]}
+                    </h4>
                     {
-                        props.content.services.map((service: IService) =>
-                            <ServiceCard
-                                key={ service.id }
-                                service={ service }
-                                text={ props.content.order_now }
-                            />
-                        )
+                        props.content.dir === 'rtl'
+                            ?
+                            <>
+                                <RepositoriesList dir='rtl' repositories={ repositories }/>
+
+                                <OrgansList dir='rtl' organs={ organs }/>
+                            </>
+                            :
+                            <>
+                                <RepositoriesList repositories={ repositories }/>
+
+                                <OrgansList organs={ organs }/>
+                            </>
                     }
-                </div>
-
-                <h4 className='heading'>
-                    {props.content.titles[7]}
-                </h4>
-                {
-                    props.content.dir === 'rtl'
-                        ?
-                        <>
-                            <RepositoriesList dir='rtl' repositories={ repositories }/>
-
-                            <OrgansList dir='rtl' organs={ organs }/>
-                        </>
-                        :
-                        <>
-                            <RepositoriesList repositories={ repositories }/>
-
-                            <OrgansList organs={ organs }/>
-                        </>
-                }
+                </ScrollMotion>
             </section>
         </>
     );

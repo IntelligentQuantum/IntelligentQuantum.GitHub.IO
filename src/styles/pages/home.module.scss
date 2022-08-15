@@ -28,7 +28,7 @@
             min-height: 36rem;
             padding: 6rem;
 
-            & h2
+            & h3
             {
                 font-size: 5rem;
                 margin: 0 auto auto 0;
@@ -202,9 +202,19 @@
             grid-template-columns: repeat(1, 1fr);
         }
 
-        & h2
+        & > div
         {
+            display: flex;
+            flex-direction: column;
+
             grid-column: 1 / 3;
+
+            height: 100%;
+
+            & > h2
+            {
+                margin: 1.65rem auto 0 0;
+            }
 
             @media only screen and (max-width: 1400px)
             {
@@ -373,7 +383,7 @@
             background: var(--base-light);
             padding: 3rem;
 
-            & h5
+            & h3
             {
                 margin-bottom: 1.5rem;
                 font-size: 1.4rem;
@@ -590,7 +600,7 @@ html[data-language="fa"]
 
         &HeaderContent
         {
-            & h2
+            & h3
             {
                 margin-left: auto;
                 margin-right: 0;

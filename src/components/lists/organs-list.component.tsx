@@ -9,6 +9,7 @@ import type { IOrgan } from '../../interfaces/organ';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
+const ItemMotion = dynamic(() => import('../animations/item.component'));
 const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
 
 const OrgansList = (props: { dir?: 'rtl' | 'ltr', organs: IOrgan[] }) =>
@@ -20,19 +21,21 @@ const OrgansList = (props: { dir?: 'rtl' | 'ltr', organs: IOrgan[] }) =>
                 { ...SWIPER_CONFIG_2 }
             >
                 {
-                    props.organs.map((organ: IOrgan) =>
+                    props.organs.map((organ: IOrgan, index: number) =>
                         (
                             <SwiperSlide key={ organ.node_id }>
-                                <TooltipPrimary title={ organ.login }>
-                                    <a href={`https://github.com/${ organ.login }`} target='_blank' className={stylesHome.homeOrgansContent} rel="noreferrer">
-                                        <Image
-                                            src={ organ.avatar_url }
-                                            alt={ organ.login }
-                                            width={120}
-                                            height={120}
-                                        />
-                                    </a>
-                                </TooltipPrimary>
+                                <ItemMotion index={ index } className={stylesHome.homeOrgansContent}>
+                                    <TooltipPrimary title={ organ.login }>
+                                        <a href={`https://github.com/${ organ.login }`} target='_blank' className={stylesHome.homeOrgansContent} rel="noreferrer">
+                                            <Image
+                                                src={ organ.avatar_url }
+                                                alt={ organ.login }
+                                                width={120}
+                                                height={120}
+                                            />
+                                        </a>
+                                    </TooltipPrimary>
+                                </ItemMotion>
                             </SwiperSlide>
                         ))
                 }

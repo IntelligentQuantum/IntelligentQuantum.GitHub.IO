@@ -26,16 +26,12 @@ body
 
 html[data-language="fa"]
 {
-    & .swiper-button-next
+    .paragraph.first-letter:first-letter
     {
-        left: 0 !important;
-        right: 2.5rem !important;
-    }
-
-    & .swiper-button-prev
-    {
-        right: 0 !important;
-        left: auto !important;
+        font-size: 100%;
+        padding: 0;
+        margin-right: auto;
+        float: right;
     }
 
     & #button-secondary

@@ -7,9 +7,11 @@ import Star from '../../../public/static/icons/icon-github_star.svg';
 import Fork from '../../../public/static/icons/icon-github_fork.svg';
 import Watch from '../../../public/static/icons/icon-github_watch.svg';
 
-const RepositoriesCard = (props: { repository: IRepository }) =>
+import ItemMotion from '../animations/item.component';
+
+const RepositoriesCard = (props: { index: number, repository: IRepository }) =>
     (
-        <div className={stylesHome.homeRepositoriesContent}>
+        <ItemMotion index={ props.index } className={stylesHome.homeRepositoriesContent}>
             <div className={stylesHome.homeRepositoriesContentInfo}>
                 <a href={props?.repository?.html_url} target='_blank' rel="noreferrer">
                     { props?.repository?.name }
@@ -39,7 +41,7 @@ const RepositoriesCard = (props: { repository: IRepository }) =>
                     </a>
                 </li>
             </ul>
-        </div>
+        </ItemMotion>
     );
 
 export default RepositoriesCard;

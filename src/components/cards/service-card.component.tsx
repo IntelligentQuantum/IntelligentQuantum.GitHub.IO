@@ -5,14 +5,15 @@ import type { IService } from '../../interfaces/service';
 
 import stylesHome from '../../styles/pages/home.module.scss';
 
+const ItemMotion = dynamic(() => import('../animations/item.component'));
 const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
 
-const ServiceCard = (props: { text: string, service: IService }) =>
+const ServiceCard = (props: { text: string, index: number, service: IService }) =>
     (
-        <div className={stylesHome.homeServicesContent}>
-            <h5>
+        <ItemMotion index={ props.index } className={stylesHome.homeServicesContent}>
+            <h3>
                 { props.service.title }
-            </h5>
+            </h3>
             <p>
                 { props.service.description }
             </p>
@@ -20,7 +21,7 @@ const ServiceCard = (props: { text: string, service: IService }) =>
                 link='/contact'
                 text={props.text}
             />
-        </div>
+        </ItemMotion>
     );
 
 export default ServiceCard;

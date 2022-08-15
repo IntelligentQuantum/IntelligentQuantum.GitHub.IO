@@ -1,5 +1,7 @@
 import Head from 'next/head';
+import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
 import type { IContent } from '../interfaces/content';
@@ -59,14 +61,15 @@ const Portfolio = (props: { content: IContent }) =>
                     </li>
                 </ul>
 
-                <div className={stylesPortfolio.portfolioList}>
+                <motion.ul className={stylesPortfolio.portfolioList}>
                     {
-                        props.content.my_portfolio.map((portfolio: IPortfolio) =>
+                        props.content.my_portfolio.map((portfolio: IPortfolio, index: number) =>
                             (
                                 category === 'all' || portfolio.tag === category
                                     ?
                                     <PortfolioCard
-                                        key={ portfolio.id }
+                                        index={ index }
+                                        key={ nanoid() }
                                         portfolio={ portfolio }
                                         text={ props.content.read_more }
                                     />
@@ -74,7 +77,7 @@ const Portfolio = (props: { content: IContent }) =>
                                     null
                             ))
                     }
-                </div>
+                </motion.ul>
             </section>
         </>
     );

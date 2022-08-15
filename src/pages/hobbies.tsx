@@ -1,9 +1,11 @@
 import Head from 'next/head';
+import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
 import axios, { AxiosResponse } from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 import type { IHobby } from '../interfaces/hobby';
+import type { IPlayer } from '../interfaces/player';
 import type { IContent } from '../interfaces/content';
 
 import stylesHobbies from '../styles/pages/hobbies.module.scss';
@@ -12,9 +14,9 @@ const HobbyCard = dynamic(() => import('../components/cards/hobby-card.component
 
 const Hobbies = (props: { content: IContent }) =>
 {
-    const [players, setPlayers] = useState<any[]>([]);
+    const [players, setPlayers] = useState<IPlayer[]>([]);
 
-    const getPlayer = async(id: string, name: string, index: number) =>
+    const getPlayer = useCallback(async(id: string, name: string, index: number) =>
     {
         const array = players;
 
@@ -29,14 +31,19 @@ const Hobbies = (props: { content: IContent }) =>
             {
                 console.log(error);
             });
-    };
+    }, [players]);
 
-    useEffect(() =>
+    const getPlayers = useCallback(async() =>
     {
         getPlayer('28003', 'lionel-messi', 0);
         getPlayer('125781', 'antoine-griezmann', 1);
         getPlayer('398184', 'ferran-torres', 2);
-    }, []);
+    }, [getPlayer]);
+
+    useEffect(() =>
+    {
+        getPlayers();
+    }, [getPlayers]);
 
     return (
         <>
@@ -65,17 +72,19 @@ const Hobbies = (props: { content: IContent }) =>
                 <h4 className='heading'>
                     {props.content.titles[4]}
                 </h4>
-
-                {
-                    props.content.my_hobbies.map((hobby: IHobby) =>
-                        <HobbyCard
-                            key={ hobby.id }
-                            hobby={ hobby }
-                            content={ props.content }
-                            players={ players }
-                        />
-                    )
-                }
+                <ul className={stylesHobbies.hobbiesList}>
+                    {
+                        props.content.my_hobbies.map((hobby: IHobby, index: number) =>
+                            <HobbyCard
+                                index={ index }
+                                key={ nanoid() }
+                                hobby={ hobby }
+                                players={ players }
+                                content={ props.content }
+                            />
+                        )
+                    }
+                </ul>
             </section>
         </>
     );

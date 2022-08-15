@@ -8,6 +8,7 @@ import { SWIPER_CONFIG_1 } from '../../lib/constants';
 import type { IRepository } from '../../interfaces/repository';
 
 import stylesHome from '../../styles/pages/home.module.scss';
+
 const RepositoriesCard = dynamic(() => import('../cards/repository-card.component'));
 
 const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: IRepository[] }) =>
@@ -26,10 +27,11 @@ const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: IRepositor
                 { ...SWIPER_CONFIG_1 }
             >
                 {
-                    props.repositories.map((repository: IRepository) =>
+                    props.repositories.map((repository: IRepository, index: number) =>
                         (
                             <SwiperSlide key={ repository.node_id }>
                                 <RepositoriesCard
+                                    index={ index }
                                     repository={ repository }
                                 />
                             </SwiperSlide>

@@ -21,37 +21,33 @@ import HeroGriezmann from '../../../public/static/images/hobbies/hero-antoine-gr
 
 import stylesHobbies from '../../styles/pages/hobbies.module.scss';
 
+const ItemMotion = dynamic(() => import('../animations/item.component'));
 const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
 const TooltipFootball = dynamic(() => import('../tooltips/tooltip-football.component'));
 
-const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby }) =>
+const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby, index: number }) =>
 {
-    const replaceHobbyTitle = (domhandlerNode: any) =>
+    const replaceHobbyTitle = (domHandlerNode: any) =>
     {
-        if (domhandlerNode.type === 'text' && domhandlerNode.data.includes('KOOH_PLAYER'))
+        if (domHandlerNode.type === 'text' && domHandlerNode.data.includes('KOOH_PLAYER'))
         {
-            return (
-                <>
-                    {
-                        reactStringReplace(domhandlerNode.data, 'KOOH_PLAYER', () =>
-                            (
-                                <TooltipPrimary
-                                    interactive={ true }
-                                    render={ <iframe src="https://open.spotify.com/embed/track/6kvTtZhjHYOfyPFdzRqJTf?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> }
-                                >
-                                    <strong>
-                                        Kooh
-                                    </strong>
-                                </TooltipPrimary>
-                            ))
-                    }
-                </>
-            );
+            return <> {
+                reactStringReplace(domHandlerNode.data, 'KOOH_PLAYER', () =>
+                    (
+                        <TooltipPrimary
+                            interactive={ true }
+                            render={ <iframe src="https://open.spotify.com/embed/track/6kvTtZhjHYOfyPFdzRqJTf?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> }
+                        >
+                            <strong>Kooh</strong>
+                        </TooltipPrimary>
+                    ))
+            }
+            </>;
         }
     };
 
     return (
-        <div className={stylesHobbies.hobbiesBox}>
+        <ItemMotion index={ props.index } className={stylesHobbies.hobbiesBox}>
             <div className={stylesHobbies.hobbiesBoxContent} data-fact_type={props.hobby.type}>
                 <div className={stylesHobbies.hobbiesBoxContentBox}>
                     <h3 className={stylesHobbies.hobbiesBoxContentBoxTitle}>
@@ -211,7 +207,7 @@ const HobbyCard = (props: { content: IContent, players: any, hobby: IHobby }) =>
                     }
                 </div>
             </div>
-        </div>
+        </ItemMotion>
     );
 };
 

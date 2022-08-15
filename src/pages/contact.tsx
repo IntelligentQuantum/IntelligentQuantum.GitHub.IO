@@ -3,6 +3,7 @@ import Head from 'next/head';
 import validator from 'validator';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
+import { motion } from 'framer-motion';
 import React, { useState, ChangeEvent } from 'react';
 import { BsEnvelope, BsPerson, BsTextParagraph } from 'react-icons/bs';
 
@@ -12,6 +13,8 @@ import 'tippy.js/dist/tippy.css';
 import stylesContact from '../styles/pages/contact.module.scss';
 import stylesButton from '../styles/components/button.module.scss';
 
+const ItemMotion = dynamic (() => import('../components/animations/item.component'));
+const ScrollMotion = dynamic (() => import('../components/animations/scroll.component'));
 const TooltipPrimary = dynamic (() => import('../components/tooltips/tooltip-primary.component'));
 
 const Contact = (props: { content: IContent }) =>
@@ -86,205 +89,199 @@ const Contact = (props: { content: IContent }) =>
                 <h4 className='heading'>
                     { props.content.titles[2] }
                 </h4>
+                <motion.ul className={stylesContact.contactInformation}>
+                    <ItemMotion index={ 0 } className={stylesContact.contactInformationContent}>
+                        <motion.ul className={stylesContact.contactInformationContentPersonal}>
+                            <li>
+                                <h6>
+                                    { props.content.residence }:
+                                </h6>
+                                <span>
+                                    { props.content.my_residence }
+                                </span>
+                            </li>
+                            <li>
 
-                <div className={stylesContact.contactInformation}>
-                    <div className={stylesContact.contactInformationContent}>
-                        <div className={stylesContact.contactInformationContentPersonal}>
-                            <ul>
-                                <li>
-                                    <h6>
-                                        { props.content.residence }:
-                                    </h6>
-                                    <span>
-                                        { props.content.my_residence }
-                                    </span>
-                                </li>
+                                <h6>
+                                    { props.content.city }:
+                                </h6>
+                                <span>
+                                    { props.content.my_city }
+                                </span>
+                            </li>
 
-                                <li>
-                                    <h6>
-                                        { props.content.city }:
-                                    </h6>
-                                    <span>
-                                        { props.content.my_city }
-                                    </span>
-                                </li>
+                            <li>
+                                <h6>
+                                    { props.content.age }:
+                                </h6>
+                                <span>
+                                    { props.content.my_age }
+                                </span>
+                            </li>
+                        </motion.ul>
+                    </ItemMotion>
 
-                                <li>
-                                    <h6>
-                                        { props.content.age }:
-                                    </h6>
-                                    <span>
-                                        { props.content.my_age }
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <ItemMotion index={ 1 } className={stylesContact.contactInformationContent}>
+                        <ul className={stylesContact.contactInformationContentPersonal}>
+                            <li>
+                                <h6>
+                                    { props.content.email }:
+                                </h6>
+                                <span>
+                                    { props.content.my_email }
+                                </span>
+                            </li>
 
-                    <div className={stylesContact.contactInformationContent}>
-                        <div className={stylesContact.contactInformationContentPersonal}>
-                            <ul>
-                                <li>
-                                    <h6>
-                                        { props.content.email }:
-                                    </h6>
-                                    <span>
-                                        { props.content.my_email }
-                                    </span>
-                                </li>
+                            <li>
+                                <h6>
+                                    { props.content.gmail }:
+                                </h6>
+                                <span>
+                                    { props.content.my_gmail }
+                                </span>
+                            </li>
 
-                                <li>
-                                    <h6>
-                                        { props.content.gmail }:
-                                    </h6>
-                                    <span>
-                                        { props.content.my_gmail }
-                                    </span>
-                                </li>
+                            <li>
+                                <h6>
+                                    { props.content.chmail }:
+                                </h6>
+                                <span>
+                                    { props.content.my_chmail }
+                                </span>
+                            </li>
+                        </ul>
+                    </ItemMotion>
 
-                                <li>
-                                    <h6>
-                                        { props.content.chmail }:
-                                    </h6>
-                                    <span>
-                                        { props.content.my_chmail }
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <ItemMotion index={ 2 }  className={stylesContact.contactInformationContent}>
+                        <ul className={stylesContact.contactInformationContentPersonal}>
+                            <li>
+                                <h6>
+                                    { props.content.phone }:
+                                </h6>
+                                <span>
+                                    { props.content.my_phone }
+                                </span>
+                            </li>
 
-                    <div className={stylesContact.contactInformationContent}>
-                        <div className={stylesContact.contactInformationContentPersonal}>
-                            <ul>
-                                <li>
-                                    <h6>
-                                        { props.content.phone }:
-                                    </h6>
-                                    <span>
-                                        { props.content.my_phone }
-                                    </span>
-                                </li>
-
-                                <li>
-                                    <h6>
-                                        { props.content.whatsapp }:
-                                    </h6>
-                                    <span>
+                            <li>
+                                <h6>
+                                    { props.content.whatsapp }:
+                                </h6>
+                                <span>
                                                 +
-                                    </span>
-                                </li>
+                                </span>
+                            </li>
 
-                                <li>
-                                    <h6>
-                                        { props.content.telegram }:
-                                    </h6>
-                                    <span>
+                            <li>
+                                <h6>
+                                    { props.content.telegram }:
+                                </h6>
+                                <span>
                                                 +
-                                    </span>
-                                </li>
-                            </ul>
+                                </span>
+                            </li>
+                        </ul>
+                    </ItemMotion>
+                </motion.ul>
+
+                <ScrollMotion delay={ .9 }>
+                    <h4 className='heading'>
+                        { props.content.titles[3] }
+                    </h4>
+                    <div className={stylesContact.contactInTouchParent}>
+                        <div className={stylesContact.contactInTouch}>
+                            <form onSubmit={sendMessage}>
+                                <TooltipPrimary
+                                    placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
+                                    title={ error.name ? props.content.error[error.name] : null }
+                                >
+                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.name}>
+                                        <input
+                                            id='name'
+                                            name='name'
+                                            type='text'
+                                            required={ true }
+                                            placeholder={ props.content.name }
+                                            onBlur={(event: any) =>
+                                            {
+                                                if (!event.target.value)
+                                                    setError({ ...error, name: 'empty' });
+                                                else
+                                                    setError({ ...error, email: null });
+                                            }}
+                                            onFocus={() => setError({ ...error, name: null })}
+                                            onChange={(event: ChangeEvent<HTMLInputElement>) => setName(event.target.value)}
+                                        />
+                                        <label htmlFor='name'>
+                                            <BsPerson />
+                                        </label>
+                                    </div>
+                                </TooltipPrimary>
+
+                                <TooltipPrimary
+                                    placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
+                                    title={ error.email ? props.content.error[error.email] : null }
+                                >
+                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.email}>
+                                        <input
+                                            id='email'
+                                            name='email'
+                                            type='email'
+                                            required={ true }
+                                            placeholder={ props.content.email}
+                                            onBlur={(event: any) =>
+                                            {
+                                                if (!event.target.value)
+                                                    setError({ ...error, email: 'empty' });
+                                                else if (!validator.isEmail(event.target.value))
+                                                    setError({ ...error, email: 'incorrect_email' });
+                                                else
+                                                    setError({ ...error, email: null });
+                                            }}
+                                            onFocus={() => setError({ ...error, email: null })}
+                                            onChange={(event: ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)}
+                                        />
+                                        <label htmlFor='email'>
+                                            <BsEnvelope />
+                                        </label>
+                                    </div>
+                                </TooltipPrimary>
+
+                                <TooltipPrimary
+                                    placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
+                                    title={ error.message ? props.content.error[error.message] : null }
+                                >
+                                    <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupMessageInput)} data-error={error.message}>
+                                        <textarea
+                                            id='message'
+                                            name='message'
+                                            required={true}
+                                            placeholder={ props.content.message }
+                                            onBlur={(event: any) =>
+                                            {
+                                                if (!event.target.value)
+                                                    setError({ ...error, message: 'empty' });
+                                                else
+                                                    setError({ ...error, message: null });
+                                            }}
+                                            onFocus={() => setError({ ...error, message: null })}
+                                            onChange={(event: ChangeEvent<HTMLTextAreaElement>) => setMessage(event.target.value)}
+                                        />
+                                        <label htmlFor='message'>
+                                            <BsTextParagraph />
+                                        </label>
+                                    </div>
+                                </TooltipPrimary>
+
+                                <div className={stylesContact.contactInTouchFormGroup}>
+                                    <button onClick={sendMessage} className={classnames(stylesButton.button, 'align-self-start')}>
+                                        { props.content.send_message}
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
-
-                <h4 className='heading'>
-                    { props.content.titles[3] }
-                </h4>
-
-                <div className={stylesContact.contactInTouchParent}>
-                    <div className={stylesContact.contactInTouch}>
-                        <form onSubmit={sendMessage}>
-                            <TooltipPrimary
-                                placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                title={ error.name ? props.content.error[error.name] : null }
-                            >
-                                <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.name}>
-                                    <input
-                                        id='name'
-                                        name='name'
-                                        type='text'
-                                        required={ true }
-                                        placeholder={ props.content.name }
-                                        onBlur={(event: any) =>
-                                        {
-                                            if (!event.target.value)
-                                                setError({ ...error, name: 'empty' });
-                                            else
-                                                setError({ ...error, email: null });
-                                        }}
-                                        onFocus={() => setError({ ...error, name: null })}
-                                        onChange={(event: ChangeEvent<HTMLInputElement>) => setName(event.target.value)}
-                                    />
-                                    <label htmlFor='name'>
-                                        <BsPerson />
-                                    </label>
-                                </div>
-                            </TooltipPrimary>
-
-                            <TooltipPrimary
-                                placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                title={ error.email ? props.content.error[error.email] : null }
-                            >
-                                <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.email}>
-                                    <input
-                                        id='email'
-                                        name='email'
-                                        type='email'
-                                        required={ true }
-                                        placeholder={ props.content.email}
-                                        onBlur={(event: any) =>
-                                        {
-                                            if (!event.target.value)
-                                                setError({ ...error, email: 'empty' });
-                                            else if (!validator.isEmail(event.target.value))
-                                                setError({ ...error, email: 'incorrect_email' });
-                                            else
-                                                setError({ ...error, email: null });
-                                        }}
-                                        onFocus={() => setError({ ...error, email: null })}
-                                        onChange={(event: ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)}
-                                    />
-                                    <label htmlFor='email'>
-                                        <BsEnvelope />
-                                    </label>
-                                </div>
-                            </TooltipPrimary>
-
-                            <TooltipPrimary
-                                placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                title={ error.message ? props.content.error[error.message] : null }
-                            >
-                                <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupMessageInput)} data-error={error.message}>
-                                    <textarea
-                                        id='message'
-                                        name='message'
-                                        required={true}
-                                        placeholder={ props.content.message }
-                                        onBlur={(event: any) =>
-                                        {
-                                            if (!event.target.value)
-                                                setError({ ...error, message: 'empty' });
-                                            else
-                                                setError({ ...error, message: null });
-                                        }}
-                                        onFocus={() => setError({ ...error, message: null })}
-                                        onChange={(event: ChangeEvent<HTMLTextAreaElement>) => setMessage(event.target.value)}
-                                    />
-                                    <label htmlFor='message'>
-                                        <BsTextParagraph />
-                                    </label>
-                                </div>
-                            </TooltipPrimary>
-
-                            <div className={stylesContact.contactInTouchFormGroup}>
-                                <button onClick={sendMessage} className={classnames(stylesButton.button, 'align-self-start')}>
-                                    { props.content.send_message}
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                </ScrollMotion>
             </section>
         </>
     );
