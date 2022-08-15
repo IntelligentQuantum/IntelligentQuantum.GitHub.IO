@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Keyboard, Navigation } from 'swiper';
 import axios from 'axios';
+import useTranslation from 'next-translate/useTranslation';
 
 import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 
@@ -24,20 +25,21 @@ import styles from '../styles/home.module.scss';
 
 const Home: NextPage = (props: any) =>
 {
-    const typed = useTyped([
-        'I build desktop, mobile applications.',
-        'I build web interfaces.',
-        'I build RESTFUL and GraphQL API\'s.',
-        'I build games with Unreal, Frostbite and Unity engines.',
-        'I am cyber security enthusiast.',
-        'I am JavaScripts, TypeScript, and C++ developer.',
-        'I am ReactJS and NextJS developer.',
-        'I am NodeJS, DenoJS, NestJS and Poco developer.',
-        'I am Electron, React Native and Qt developer.'
-    ]);
-
+    const { t } = useTranslation();
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+
+    const typed = useTyped([
+        t('home:typed.0.desktop'),
+        t('home:typed.1.web'),
+        t('home:typed.2.restfull'),
+        t('home:typed.3.games'),
+        t('home:typed.4.cyber'),
+        t('home:typed.5.languages'),
+        t('home:typed.6.frontend'),
+        t('home:typed.7.backend'),
+        t('home:typed.8.cross'),
+    ]);
 
     return (
         <Fragment>
@@ -52,7 +54,7 @@ const Home: NextPage = (props: any) =>
                     <header className={styles.homeHeader}>
                         <div className={styles.homeHeaderTop} />
                         <div className={styles.homeHeaderContent}>
-                            <h1 className={styles.homeHeaderContentHeading}>What do i make Or am i?</h1>
+                            <h1 className={styles.homeHeaderContentHeading}>{t('home:headers.0.heading')}</h1>
 
                             <div className={styles.homeHeaderContentDescription}>
                                 &lt;<i>code</i>&gt;
@@ -61,39 +63,37 @@ const Home: NextPage = (props: any) =>
                             </div>
 
                             <Link href='/'>
-                                <a className={styles.homeHeaderContentButton}>EXPLORE NOW</a>
+                                <a className={styles.homeHeaderContentButton}>{t('common:explore')}</a>
                             </Link>
                         </div>
 
                         <div className={styles.homeHeaderLogs}>
                             <div className={styles.homeHeaderLogsBox}>
                                 <span className={styles.homeHeaderLogsBoxNumber}>196+</span>
-                                <p className={styles.homeHeaderLogsBoxParagraph}>Happy Customers</p>
+                                <p className={styles.homeHeaderLogsBoxParagraph}>{t('home:headers.1.customers')}</p>
                             </div>
                             <div className={styles.homeHeaderLogsBox}>
                                 <span className={styles.homeHeaderLogsBoxNumber}>198+</span>
-                                <p className={styles.homeHeaderLogsBoxParagraph}>Completed Projects</p>
+                                <p className={styles.homeHeaderLogsBoxParagraph}>{t('home:headers.2.projects')}</p>
                             </div>
                             <div className={styles.homeHeaderLogsBox}>
                                 <span className={styles.homeHeaderLogsBoxNumber}>9+</span>
-                                <p className={styles.homeHeaderLogsBoxParagraph}>Years Experience</p>
+                                <p className={styles.homeHeaderLogsBoxParagraph}>{t('home:headers.3.experience')}</p>
                             </div>
                             <div className={styles.homeHeaderLogsBox}>
                                 <span className={styles.homeHeaderLogsBoxNumber}>30+</span>
-                                <p className={styles.homeHeaderLogsBoxParagraph}>Honors and Awards</p>
+                                <p className={styles.homeHeaderLogsBoxParagraph}>{t('home:headers.4.honors')}</p>
                             </div>
                         </div>
                     </header>
 
-                    <h4 className={styles.homeHeadingSecondary}>About me</h4>
+                    <h4 className={styles.homeHeadingSecondary}>{t('home:about.0.heading')}</h4>
                     <div className={styles.homeAbout}>
-                        <h2 className={styles.homeAboutParagraph}>
-                            Hamed is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native.
-                        </h2>
+                        <h2 className={styles.homeAboutParagraph}>{t('home:about.1.paragraph')}</h2>
 
                         <ul className={styles.homeAboutFAT}>
                             <li className={styles.homeAboutFATItem}>
-                                <h6>Frameworks and Technologies;</h6>
+                                <h6>{t('home:about.2.fat')}</h6>
                             </li>
                             <li className={styles.homeAboutFATItem}>
                                 <h5>Front-End:</h5>
@@ -248,7 +248,7 @@ const Home: NextPage = (props: any) =>
                         </ul>
                     </div>
 
-                    <h4 className={styles.homeHeadingPrimary}>Services</h4>
+                    <h4 className={styles.homeHeadingPrimary}>{t('home:services.6.heading')}</h4>
                     <div className={styles.homeServices}>
                         {
                             services.map(service =>
@@ -256,8 +256,8 @@ const Home: NextPage = (props: any) =>
                                 return (
                                     <ServiceCard
                                         key={service.id}
-                                        title={service.title}
-                                        description={service.description}
+                                        title={t(service.title)}
+                                        description={t(service.description)}
                                     />
                                 );
                             })

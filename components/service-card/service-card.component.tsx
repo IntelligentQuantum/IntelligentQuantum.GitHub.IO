@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 import { BiChevronRight } from 'react-icons/bi';
 
@@ -12,6 +13,8 @@ interface ServiceCardProps
 
 const ServiceCard = ({ title, description }: ServiceCardProps) =>
 {
+    const { t } = useTranslation();
+
     return (
         <div className={styles.serviceCard}>
             <h5 className={styles.serviceCardHeading}>{title}</h5>
@@ -20,7 +23,7 @@ const ServiceCard = ({ title, description }: ServiceCardProps) =>
             </p>
             <Link href='/'>
                 <a className={styles.serviceCardButton}>
-                    ORDER NOW
+                    {t('common:order')}
                     <BiChevronRight />
                 </a>
             </Link>

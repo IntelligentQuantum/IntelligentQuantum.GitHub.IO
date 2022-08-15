@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import classes from 'classnames';
+import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
 
 import { skills } from '../../../data/skills.data';
 import { libraries } from '../../../data/libraries.data';
@@ -12,6 +13,9 @@ import styles from './aside.module.scss';
 
 const Aside = () =>
 {
+    const router = useRouter();
+    const { t } = useTranslation();
+
     return (
         <aside className={styles.aside}>
             <div className={styles.asideUser}>
@@ -31,32 +35,39 @@ const Aside = () =>
                     <Link href='/'>
                         <a className={styles.asideUserName}>IntelligentQuantum</a>
                     </Link>
-                    <span className={styles.asideUserTitle}>Full-Stack Developer</span>
-                    <span className={styles.asideUserTitle}>UI/UX Designer</span>
+                    <span className={styles.asideUserTitle}>{t('common:aside.0.userTitle')}</span>
+                    <span className={styles.asideUserTitle}>{t('common:aside.1.userSubtitle')}</span>
                 </div>
             </div>
 
             <div className={styles.asideInformation}>
                 <div className={styles.asideInformationWebLanguages}>
-                    <span className={classes([styles.asideInformationWebLanguagesOption, styles.asideInformationWebLanguagesOptionActive])}>EN</span>
-                    <span className={styles.asideInformationWebLanguagesOption}>DE</span>
-                    <span className={styles.asideInformationWebLanguagesOption}>FA</span>
+                    {
+                        router.locales?.map(locale =>
+                        {
+                            return (
+                                <Link key={locale} href={router.asPath} locale={locale} >
+                                    <a className={styles.asideInformationWebLanguagesOption}>{locale.toUpperCase()}</a>
+                                </Link>
+                            );
+                        })
+                    }
                 </div>
 
                 <div className={styles.aside__divider} />
 
                 <ul className={styles.asideInformationPersonalList}>
                     <li className={styles.asideInformationPersonalListItem}>
-                        <span>Residence:</span>
+                        <span>{t('common:aside.2.residence')}:</span>
                         <span>Iran</span>
                     </li>
                     <li className={styles.asideInformationPersonalListItem}>
-                        <span>City:</span>
+                        <span>{t('common:aside.3.city')}:</span>
                         <span>Shiraz</span>
                     </li>
                     <li className={styles.asideInformationPersonalListItem}>
-                        <span>Age:</span>
-                        <span>25</span>
+                        <span>{t('common:aside.4.age')}:</span>
+                        <span>{new Date().getFullYear() - 1997}</span>
                     </li>
                 </ul>
 
@@ -69,7 +80,7 @@ const Aside = () =>
                             <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831' strokeDasharray='100, 100'/>
                             <text x='18' y='20.35'>100%</text>
                         </svg>
-                        <span>Persian</span>
+                        <span>{t('common:aside.5.persian')}</span>
                     </div>
                     <div className={styles.asideInformationPersonalLanguagesContent}>
                         <svg viewBox='0 0 36 36'>
@@ -77,7 +88,7 @@ const Aside = () =>
                             <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831' strokeDasharray='50, 100'/>
                             <text x='18' y='20.35'>50%</text>
                         </svg>
-                        <span>English</span>
+                        <span>{t('common:aside.6.english')}</span>
                     </div>
                     <div className={styles.asideInformationPersonalLanguagesContent}>
                         <svg viewBox='0 0 36 36'>
@@ -85,7 +96,7 @@ const Aside = () =>
                             <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831' strokeDasharray='30, 100'/>
                             <text x='18' y='20.35'>30%</text>
                         </svg>
-                        <span>German</span>
+                        <span>{t('common:aside.7.german')}</span>
                     </div>
                 </div>
 
@@ -129,7 +140,7 @@ const Aside = () =>
                 <div className={styles.aside__divider} />
 
                 <a href="#" className={styles.asideInformationCV}>
-                    <span>DOWNLOAD CV</span>
+                    <span>{t('common:aside.8.download')}</span>
                     <CgSoftwareDownload />
                 </a>
             </div>

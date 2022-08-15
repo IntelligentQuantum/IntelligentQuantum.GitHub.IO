@@ -1,0 +1,16 @@
+{
+    "explore": "JETZT ENTDECKEN",
+    "order": "Jetzt Bestellen",
+    "aside":
+    [
+        { "userTitle": "Full-Stack-Entwickler" },
+        { "userSubtitle": "UI/UX Designer" },
+        { "residence": "Residenz" },
+        { "city": "Stadt" },
+        { "age": "Alter" },
+        { "persian": "Persisch" },
+        { "english": "Englisch" },
+        { "german": "Deutsch" },
+        { "download": "Lebenslauf HERUNTERLADEN" }
+    ]
+}

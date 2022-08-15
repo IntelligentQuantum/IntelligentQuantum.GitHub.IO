@@ -1,3 +1,5 @@
+const nextTranslate = require('next-translate');
+
 /** @type {import('next').NextConfig} */
 const nextConfig =
 {
@@ -5,6 +7,7 @@ const nextConfig =
     {
         domains: ['avatars.githubusercontent.com']
     },
+    ...nextTranslate(),
     reactStrictMode: true,
     swcMinify: true
 };

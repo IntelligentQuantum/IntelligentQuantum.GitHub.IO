@@ -1,0 +1,57 @@
+{
+    "test": "Was mache ich oder bin ich?",
+    "typed":
+    [
+        { "desktop": "Ich erstelle Desktop und mobile anwendungen." },
+        { "web": "Ich baue webinterfaces." },
+        { "restfull": "Ich baue RESTful APIs." },
+        { "games": "Ich baue spiele mit Unreal, Frostbite und Unity engines." },
+        { "cyber": "Ich bin ein enthusiast für cybersicherheit." },
+        { "languages": "Ich bin JavaScripts, TypeScript, PHP und C++ entwickler." },
+        { "frontend": "Ich bin ReactJS- und NextJS entwickler." },
+        { "backend": "Ich bin NodeJS, DenoJS, NestJS und Poco entwickler." },
+        { "cross": "Ich bin Electron, React Native und Qt entwickler." }
+    ],
+    "headers":
+    [
+        { "heading": "Was mache ich oder bin ich?" },
+        { "customers": "Zufriedene Kunden" },
+        { "projects": "Fertige Projekte" },
+        { "experience": "Jahre Erfahrung" },
+        { "honors": "Ehren und Auszeichnungen" }
+    ],
+    "about":
+    [
+        { "heading": "über mich" },
+        { "paragraph": "Hamed ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrung in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Poco und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native." },
+        { "fat": "Frameworks und Technologien" }
+    ],
+    "services":
+    [
+        {
+            "title": "Front-End Entwicklung",
+            "description": "Front-End-Webentwicklung ist die Entwicklung der grafischen Benutzeroberfläche einer Website durch die Verwendung von HTML, ReactJS und NextJS, damit Benutzer diese Website anzeigen und mit ihr interagieren können."
+        },
+        {
+            "title": "Back-End Entwicklung",
+            "description": "Back-End-Entwicklung bedeutet, an serverseitiger Software zu arbeiten, die sich auf alles konzentriert, was Sie auf einer Website basierend auf NodeJS, DenoJS, NestJS, NextJS und Poco nicht sehen können."
+        },
+        {
+            "title": "Plattformübergreifende Entwicklung",
+            "description": "Plattformübergreifende Entwicklung ist die Praxis der Entwicklung von Softwareprodukten oder -diensten für mehrere Plattformen wie Windows, Linux, macOS, Android, iOS oder Softwareumgebungen auf Basis von Electron, React Native und Qt."
+        },
+        {
+            "title": "Spielentwicklung",
+            "description": "Spieleentwicklung ist die Kunst des Erstellens von Spielen und beschreibt das Design, die Entwicklung und die Veröffentlichung eines Spiels mit Unreal-, Frostbite- und Unity-Engines. Es kann die Konzepterstellung, das Design, den Aufbau, das Testen und die Freigabe umfassen."
+        },
+        {
+            "title": "Internet-Sicherheit",
+            "description": "In der digitalen Welt sind unsere Daten sicher, solange wir uns dessen bewusst sind. Die meisten Hacks, die passieren, sind in erster Linie Social-Engineering-Angriffe, bei denen die menschliche Psychologie ausgenutzt wird, indem Daten verwendet werden, die bewusst von Menschen in sozialen Medien bereitgestellt werden."
+        },
+        {
+            "title": "Suchmaschinenoptimierung",
+            "description": "Suchmaschinenoptimierung ist der Prozess der Verbesserung der Qualität und Quantität des Website-Traffics auf eine Website oder eine Webseite von Suchmaschinen. SEO zielt eher auf unbezahlten Verkehr ab als auf direkten oder bezahlten Verkehr."
+        },
+        { "heading": "Dienstleistungen" }
+    ]
+}
