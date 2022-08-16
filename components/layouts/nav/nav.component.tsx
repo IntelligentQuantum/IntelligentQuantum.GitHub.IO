@@ -1,11 +1,32 @@
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { WiDaySunny, WiDaySunnyOvercast } from 'react-icons/wi';
-import { IoIosMoon } from 'react-icons/io';
+
+import { BsMoonFill, BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
 
 import styles from './nav.module.scss';
 
 const Nav = () =>
 {
+    const [colorTheme, setColorTheme] = useState('dark');
+
+    useEffect(() =>
+    {
+        const currentTheme = localStorage.getItem('theme');
+        const htmlElement: HTMLElement | null = document.querySelector('html');
+
+        if (currentTheme)
+            setColorTheme(currentTheme);
+
+        if (htmlElement)
+            htmlElement.setAttribute('data-theme', colorTheme);
+    }, [colorTheme]);
+
+    const handleClick = (theme: string) =>
+    {
+        setColorTheme(theme);
+        localStorage.setItem('theme', theme);
+    };
+
     return (
         <nav className={styles.nav}>
             <div className={styles.navHamburger}>
@@ -19,14 +40,14 @@ const Nav = () =>
             </div>
 
             <div className={styles.navTheme}>
-                <span>
-                    <WiDaySunny />
+                <span onClick={() => handleClick('dark')} className={`${ colorTheme === 'dark' ? styles.navThemeActive : null }`}>
+                    <BsMoonFill />
                 </span>
-                <span>
-                    <WiDaySunnyOvercast />
+                <span onClick={() => handleClick('ark')} className={`${ colorTheme === 'ark' ? styles.navThemeActive : null }`}>
+                    <BsCloudMoonFill />
                 </span>
-                <span className={styles.navThemeActive}>
-                    <IoIosMoon />
+                <span onClick={() => handleClick('light')} className={`${ colorTheme === 'light' ? styles.navThemeActive : null }`}>
+                    <BsSunFill />
                 </span>
             </div>
         </nav>
