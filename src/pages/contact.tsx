@@ -86,38 +86,27 @@ const Contact = (props: { content: IContent }) =>
             </Head>
 
             <section className={stylesContact.contact}>
-                <h4 className='heading'>
-                    { props.content.titles[2] }
-                </h4>
-
+                <h4 className='heading'>{ props.content.titles[2] }</h4>
                 <motion.ul className={stylesContact.contactInformation}>
                     <ItemMotion index={ 0 } className={stylesContact.contactInformationContent}>
                         <motion.ul className={stylesContact.contactInformationContentPersonal}>
                             <li>
-                                <h6>
-                                    { props.content.residence }:
-                                </h6>
-                                <span>
+                                <h3>
+                                    <span>{ props.content.residence }: </span>
                                     { props.content.my_residence }
-                                </span>
+                                </h3>
                             </li>
                             <li>
-
-                                <h6>
-                                    { props.content.city }:
-                                </h6>
-                                <span>
+                                <h3>
+                                    <span>{ props.content.city }: </span>
                                     { props.content.my_city }
-                                </span>
+                                </h3>
                             </li>
-
                             <li>
-                                <h6>
-                                    { props.content.age }:
-                                </h6>
-                                <span>
+                                <h3>
+                                    <span>{ props.content.age }: </span>
                                     { new Date().getFullYear() - props.content.my_age }
-                                </span>
+                                </h3>
                             </li>
                         </motion.ul>
                     </ItemMotion>
@@ -125,30 +114,22 @@ const Contact = (props: { content: IContent }) =>
                     <ItemMotion index={ 1 } className={stylesContact.contactInformationContent}>
                         <ul className={stylesContact.contactInformationContentPersonal}>
                             <li>
-                                <h6>
-                                    { props.content.email }:
-                                </h6>
-                                <span>
+                                <h3>
+                                    <span>{ props.content.email }: </span>
                                     { props.content.my_email }
-                                </span>
+                                </h3>
                             </li>
-
                             <li>
-                                <h6>
-                                    { props.content.gmail }:
-                                </h6>
-                                <span>
+                                <h3>
+                                    <span>{ props.content.gmail }: </span>
                                     { props.content.my_gmail }
-                                </span>
+                                </h3>
                             </li>
-
                             <li>
-                                <h6>
-                                    { props.content.chmail }:
-                                </h6>
-                                <span>
+                                <h3>
+                                    <span>{ props.content.chmail }: </span>
                                     { props.content.my_chmail }
-                                </span>
+                                </h3>
                             </li>
                         </ul>
                     </ItemMotion>
@@ -156,29 +137,21 @@ const Contact = (props: { content: IContent }) =>
                     <ItemMotion index={ 2 }  className={stylesContact.contactInformationContent}>
                         <ul className={stylesContact.contactInformationContentPersonal}>
                             <li>
-                                <h6>
-                                    { props.content.phone }:
-                                </h6>
-                                <span>
+                                <h3>
+                                    <span>{ props.content.phone }: </span>
                                     { props.content.my_phone }
+                                </h3>
+                            </li>
+                            <li>
+                                <span>
+                                    <span>{ props.content.whatsapp }: </span>
+                                    +
                                 </span>
                             </li>
-
                             <li>
-                                <h6>
-                                    { props.content.whatsapp }:
-                                </h6>
                                 <span>
-                                                +
-                                </span>
-                            </li>
-
-                            <li>
-                                <h6>
-                                    { props.content.telegram }:
-                                </h6>
-                                <span>
-                                                +
+                                    <span>{ props.content.telegram }: </span>
+                                    +
                                 </span>
                             </li>
                         </ul>
@@ -186,9 +159,7 @@ const Contact = (props: { content: IContent }) =>
                 </motion.ul>
 
                 <ScrollMotion delay={ .9 }>
-                    <h4 className='heading'>
-                        { props.content.titles[3] }
-                    </h4>
+                    <h4 className='heading'>{ props.content.titles[3] }</h4>
                     <div className={stylesContact.contactInTouchParent}>
                         <div className={stylesContact.contactInTouch}>
                             <form onSubmit={sendMessage}>

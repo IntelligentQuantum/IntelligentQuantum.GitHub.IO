@@ -37,48 +37,62 @@
 
             border-radius: var(--border-radius);
             margin-bottom: 6rem;
-            background-position: center;
-            background-size: cover;
             width: 100%;
             height: 38rem;
             padding: 0 6rem;
 
-            &[data-fact_type="football"]
+            &::before
+            {
+                content: "";
+
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                border-radius: var(--border-radius);
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                filter: var(--image-filter);
+            }
+
+            &[data-fact_type="football"]::before
             {
                 background-image: var(--base-gradiant-image-football);
             }
 
-            &[data-fact_type="instagram"]
+            &[data-fact_type="instagram"]::before
             {
                 background-image: var(--base-gradiant-image-instagram);
             }
 
-            &[data-fact_type="discord"]
+            &[data-fact_type="discord"]::before
             {
                 background-image: var(--base-gradiant-image-discord);
             }
 
-            &[data-fact_type="cod"]
+            &[data-fact_type="cod"]::before
             {
                 background-image: var(--base-gradiant-image-cod);
             }
 
-            &[data-fact_type="music"]
+            &[data-fact_type="music"]::before
             {
                 background-image: var(--base-gradiant-image-music);
             }
 
-            &[data-fact_type="guitar"]
+            &[data-fact_type="guitar"]::before
             {
                 background-image: var(--base-gradiant-image-guitar);
             }
 
-            &[data-fact_type="space"]
+            &[data-fact_type="space"]::before
             {
                 background-image: var(--base-gradiant-image-space);
             }
 
-            &[data-fact_type="rarible"]
+            &[data-fact_type="rarible"]::before
             {
                 background-image: var(--base-gradiant-image-rarible);
             }
@@ -90,6 +104,8 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 gap: 3rem;
+
+                position: relative;
 
                 padding: 5rem 0;
                 width: 55%;
@@ -132,7 +148,7 @@
                 &Description
                 {
                     color: var(--color-base-text-bold);
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     font-weight: 400;
 
                     & > a,
@@ -215,7 +231,8 @@
                         margin-left: -5px;
                         width: 1rem;
                         height: 1rem;
-                        background: var(--base);
+                        border-radius: calc(var(--border-radius) / 2.5);
+                        background: var(--base-dark);
                         transform: rotate(45deg);
                     }
 

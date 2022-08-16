@@ -31,31 +31,15 @@
             position: fixed !important;
             left: 50% !important;
             top: 50% !important;
-            transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%);
 
-            width: auto !important;
-            height: auto !important;
-            max-width: 80% !important;
-            max-height: 70% !important;
-            min-width: fit-content !important;
-            min-height: fit-content !important;
+            width: 80%;
 
             & img
             {
-                position: absolute !important;
-                left: 50% !important;
-                top: 50% !important;
-                transform: translate(-50%, -50%) !important;
-
-                width: auto !important;
-                height: auto !important;
-                max-width: 100% !important;
-                max-height: 100% !important;
-                min-width: auto !important;
-                min-height: auto !important;
-                border-radius: var(--border-radius) !important;
-                margin: 0 !important;
-                transition: all 0.2s ease-in-out !important;
+                object-fit: cover;
+                object-position: center;
+                border-radius: var(--border-radius);
             }
 
             @media only screen and (max-width: 1000px)
@@ -65,7 +49,7 @@
 
             @media only screen and (max-width: 900px)
             {
-                width: 96% !important;
+                width: 97.5% !important;
             }
         }
     }
@@ -130,32 +114,15 @@
                 font-weight: 400;
                 margin-bottom: 1.5rem;
             }
-
-            & .button-secondary
-            {
-                width: 100%;
-                display: flex;
-                margin: auto auto 0;
-            }
         }
-
-        & span
-        {
-            position: absolute !important;
-            top: 0 !important;
-            left: 0 !important;
-
-            width: 100% !important;
-            height: 100% !important;
 
             & img
             {
-                object-fit: cover !important;
-                object-position: center !important;
-                filter: brightness(85%) blur(0) !important;
-                transition: 0.4s ease-in-out !important;
+                object-fit: cover;
+                filter: var(--image-filter);
+                object-position: center;
+                transition: 0.4s ease-in-out;
             }
-        }
 
         & i
         {
@@ -193,8 +160,7 @@
 
             & img
             {
-                transform: scale(1.07) !important;
-                filter: brightness(100%) blur(0) !important;
+                transform: scale(1.1);
             }
 
             & .portfolioItemBox
@@ -215,9 +181,10 @@
 
             &Box
             {
-                height: 45%;
                 position: absolute;
                 bottom: 0;
+
+                height: 45%;
             }
         }
     }

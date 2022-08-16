@@ -2,7 +2,7 @@ import axios from 'axios';
 import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-import type { IOrgan } from '../../../interfaces/organ';
+import type { IOrganization } from '../../../interfaces/organization';
 
 import rateLimit from '../../../lib/rate-limit';
 
@@ -12,7 +12,7 @@ const limiter = rateLimit(
         uniqueTokenPerInterval: 500
     });
 
-const Organs = async(request: NextApiRequest, response: NextApiResponse) =>
+const Organizations = async(request: NextApiRequest, response: NextApiResponse) =>
 {
     await NextCors(request, response,
         {
@@ -46,9 +46,9 @@ const Organs = async(request: NextApiRequest, response: NextApiResponse) =>
                         items:
                             [
                                 ...data
-                                    .filter((organ: IOrgan) =>
+                                    .filter((organization: IOrganization) =>
                                     {
-                                        return organ?.login !== 'HAGH-Team';
+                                        return organization?.login !== 'HAGH-Team';
                                     })
                             ]
                     });
@@ -72,4 +72,4 @@ const Organs = async(request: NextApiRequest, response: NextApiResponse) =>
     }
 };
 
-export default Organs;
+export default Organizations;

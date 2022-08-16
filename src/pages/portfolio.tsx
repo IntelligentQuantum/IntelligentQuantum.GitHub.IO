@@ -46,20 +46,20 @@ const Portfolio = (props: { content: IContent }) =>
 
                 <ScrollMotion>
                     <ul className='heading__small'>
-                        <ItemMotion index={ 0 } data-active={category === 'all'} onClick={() => setCategory('all')}>
-                            {props.content.categories[0]}
+                        <ItemMotion index={ 0 } active={category === 'all'} onClick={() => setCategory('all')}>
+                            { props.content.categories[0] }
                         </ItemMotion>
-                        <ItemMotion index={ 1 } data-active={category === 'web_development'} onClick={() => setCategory('web_development')}>
-                            {props.content.categories[1]}
+                        <ItemMotion index={ 1 } active={category === 'web_development'} onClick={() => setCategory('web_development')}>
+                            { props.content.categories[1] }
                         </ItemMotion>
-                        <ItemMotion index={ 2 } data-active={category === 'app_development'} onClick={() => setCategory('app_development')}>
-                            {props.content.categories[2]}
+                        <ItemMotion index={ 2 } active={category === 'app_development'} onClick={() => setCategory('app_development')}>
+                            { props.content.categories[2] }
                         </ItemMotion>
-                        <ItemMotion index={ 3 } data-active={category === 'robot_development'} onClick={() => setCategory('robot_development')}>
-                            {props.content.categories[3]}
+                        <ItemMotion index={ 3 } active={category === 'robot_development'} onClick={() => setCategory('robot_development')}>
+                            { props.content.categories[3] }
                         </ItemMotion>
-                        <ItemMotion index={ 4 } data-active={category === 'graphic_design'} onClick={() => setCategory('graphic_design')}>
-                            {props.content.categories[4]}
+                        <ItemMotion index={ 4 } active={category === 'graphic_design'} onClick={() => setCategory('graphic_design')}>
+                            { props.content.categories[4] }
                         </ItemMotion>
                     </ul>
                 </ScrollMotion>

@@ -1,3 +1,5 @@
+import axios from 'axios';
+import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -5,14 +7,12 @@ import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
-import axios, { AxiosResponse } from 'axios';
 import reactHtmlParser from 'html-react-parser';
-import React, { useEffect, useState } from 'react';
 
-import type { IOrgan } from '../interfaces/organ';
 import type { IService } from '../interfaces/service';
 import type { IContent } from '../interfaces/content';
 import type { IRepository } from '../interfaces/repository';
+import type { IOrganization } from '../interfaces/organization';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -22,49 +22,15 @@ import stylesHome from '../styles/pages/home.module.scss';
 import stylesButtons from '../styles/components/button.module.scss';
 
 const TypingEffect = dynamic(() => import('../components/typing-effect'));
-const OrgansList = dynamic(() => import('../components/lists/organs-list.component'));
 const ServiceCard = dynamic(() => import('../components/cards/service-card.component'));
 const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
 const TechnologyCard = dynamic(() => import('../components/cards/technology-card.component'));
-const RepositoriesList = dynamic(() => import('../components/lists/repositories-list.component'));
 const TooltipPrimary = dynamic(() => import('../components/tooltips/tooltip-primary.component'));
+const RepositoriesList = dynamic(() => import('../components/lists/repositories-list.component'));
+const OrganizationsList = dynamic(() => import('../components/lists/organizations-list.component'));
 
-const Home = (props: { content: IContent }) =>
+const Home = (props: { content: IContent, repositories: IRepository[], organizations: IOrganization[] }) =>
 {
-    const [organs, setOrgans] = useState<IOrgan[]>([]);
-    const [repositories, setRepositories] = useState<IRepository[]>([]);
-
-    const getRepositories = async() =>
-    {
-        await axios.get('/github/repositories')
-            .then((response: AxiosResponse) =>
-            {
-                setRepositories(response.data.items);
-            })
-            .catch((error) =>
-            {
-                console.log(error);
-            });
-    };
-    const getOrgans = async() =>
-    {
-        await axios.get('/github/organs')
-            .then((response: AxiosResponse) =>
-            {
-                setOrgans(response.data.items);
-            })
-            .catch((error) =>
-            {
-                console.log(error);
-            });
-    };
-
-    useEffect(() =>
-    {
-        getOrgans();
-        getRepositories();
-    }, []);
-
     return (
         <>
             <Head>
@@ -75,16 +41,12 @@ const Home = (props: { content: IContent }) =>
                 <ScrollMotion>
                     <header className={stylesHome.homeHeader}>
                         <div className={stylesHome.homeHeaderContent}>
-                            <span>
-                                { props.content.titles[0] }
-                            </span>
-
+                            <span>{ props.content.titles[0] }</span>
                             <div className={stylesHome.homeHeaderContentDescription}>
                                 <span>&lt;<i>code</i>&gt;</span>
                                 <TypingEffect words={props.content.typing_effect}/>
                                 <span>&lt;/<i>code</i>&gt;</span>
                             </div>
-
                             <Link href='/portfolio'>
                                 <a className={classnames(stylesButtons.button, 'align-self-start')}>
                                     { props.content.explore_more }
@@ -102,9 +64,7 @@ const Home = (props: { content: IContent }) =>
                                     />
                                 +
                                 </span>
-                                <p>
-                                    {props.content.headers[0]}
-                                </p>
+                                <p>{ props.content.headers[0] }</p>
                             </div>
                             <div className={stylesHome.homeHeaderLogsBox}>
                                 <span>
@@ -115,9 +75,7 @@ const Home = (props: { content: IContent }) =>
                                     />
                                 +
                                 </span>
-                                <p>
-                                    {props.content.headers[1]}
-                                </p>
+                                <p>{ props.content.headers[1] }</p>
                             </div>
                             <div className={stylesHome.homeHeaderLogsBox}>
                                 <span>
@@ -128,9 +86,7 @@ const Home = (props: { content: IContent }) =>
                                     />
                                 +
                                 </span>
-                                <p>
-                                    {props.content.headers[2]}
-                                </p>
+                                <p>{ props.content.headers[2] }</p>
                             </div>
                             <div className={stylesHome.homeHeaderLogsBox}>
                                 <span>
@@ -141,18 +97,14 @@ const Home = (props: { content: IContent }) =>
                                     />
                                 +
                                 </span>
-                                <p>
-                                    {props.content.headers[3]}
-                                </p>
+                                <p>{ props.content.headers[3] }</p>
                             </div>
                         </div>
                     </header>
                 </ScrollMotion>
 
                 <ScrollMotion>
-                    <h4 className='heading'>
-                        { props.content.titles[8] }
-                    </h4>
+                    <h4 className='heading'>{ props.content.titles[8] }</h4>
                     <div className={stylesHome.homeAboutMe}>
                         <div>
                             {
@@ -169,12 +121,7 @@ const Home = (props: { content: IContent }) =>
                         </div>
 
                         <ul className={stylesHome.homeAboutMeAside}>
-                            <li className={stylesHome.homeAboutMeAsideItem}>
-                                <h6>
-                                    { props.content.technologies.title }
-                                </h6>
-                            </li>
-
+                            <li className={stylesHome.homeAboutMeAsideItem}><h3>{ props.content.technologies.title }</h3></li>
                             <li className={stylesHome.homeAboutMeAsideItem}>
                                 <h5>
                                     {
@@ -202,7 +149,6 @@ const Home = (props: { content: IContent }) =>
                                     }
                                 </ul>
                             </li>
-
                             <li className={stylesHome.homeAboutMeAsideItem}>
                                 <h5>
                                     {
@@ -224,7 +170,6 @@ const Home = (props: { content: IContent }) =>
                                     }
                                 </ul>
                             </li>
-
                             <li className={stylesHome.homeAboutMeAsideItem}>
                                 <h5>
                                     {
@@ -251,9 +196,7 @@ const Home = (props: { content: IContent }) =>
                 </ScrollMotion>
 
                 <ScrollMotion>
-                    <h4 className='heading'>
-                        { props.content.titles[1] }
-                    </h4>
+                    <h4 className='heading'>{ props.content.titles[1] }</h4>
                     <ul className={stylesHome.homeServices}>
                         {
                             props.content.services.map((service: IService) =>
@@ -268,28 +211,44 @@ const Home = (props: { content: IContent }) =>
                 </ScrollMotion>
 
                 <ScrollMotion>
-                    <h4 className='heading'>
-                        {props.content.titles[7]}
-                    </h4>
+                    <h4 className='heading'>{props.content.titles[7]}</h4>
                     {
                         props.content.dir === 'rtl'
                             ?
                             <>
-                                <RepositoriesList dir='rtl' repositories={ repositories }/>
+                                <RepositoriesList dir='rtl' repositories={ props.repositories }/>
 
-                                <OrgansList dir='rtl' organs={ organs }/>
+                                <OrganizationsList dir='rtl' organizations={ props.organizations }/>
                             </>
                             :
                             <>
-                                <RepositoriesList repositories={ repositories }/>
+                                <RepositoriesList repositories={ props.repositories }/>
 
-                                <OrgansList organs={ organs }/>
+                                <OrganizationsList organizations={ props.organizations }/>
                             </>
                     }
                 </ScrollMotion>
             </section>
         </>
     );
+};
+
+export async function getStaticProps()
+{
+    const { data: repositories } = await axios.get('/github/repositories');
+    const { data: organizations } = await axios.get('/github/organizations');
+
+    if (!repositories || !organizations)
+        return { props: { repositories: [], organizations: {} }};
+
+    return {
+        props:
+            {
+                repositories: repositories.items,
+                organizations: organizations.items
+            },
+        revalidate: 86400
+    };
 };
 
 export default Home;

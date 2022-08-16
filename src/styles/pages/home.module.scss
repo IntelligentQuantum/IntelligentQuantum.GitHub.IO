@@ -21,9 +21,8 @@
             justify-content: space-around;
 
             border-radius: var(--border-radius);
-            background-image: var(--base-gradiant-image);
-            background-position: center;
-            background-size: cover;
+            background: var(--base-gradiant-image);
+            background-size: var(--background-size);
             width: 100%;
             min-height: 36rem;
             padding: 6rem;
@@ -271,7 +270,7 @@
                     gap: 0.5rem;
                 }
 
-                & > h6
+                & > h3
                 {
                     font-size: 1.4rem;
                     margin-bottom: 1rem;
@@ -392,13 +391,13 @@
                 font-weight: 600;
             }
 
-            & h4
+            & h5
             {
                 color: var(--color-base-text);
                 margin-bottom: 1.5rem;
                 line-height: 1.85;
-                font-size: 1.1rem;
                 font-weight: 500;
+                font-size: 1.25rem;
             }
 
             & a
@@ -462,7 +461,7 @@
             position: relative;
 
             width: 100%;
-            height: 17rem;
+            height: 18rem;
             background: var(--base-light);
             border-radius: var(--border-radius);
 
@@ -478,15 +477,15 @@
                     color: var(--color-base-text-bolder);
                     font-size: 1.5rem;
                     font-weight: 600;
+                    margin-bottom: 2rem;
+                }
 
-                    & > span
-                    {
-                        margin-top: 0.5rem;
-                        color: var(--color-base-text);
-                        font-style: italic;
-                        font-weight: 300;
-                        font-size: 1.25rem;
-                    }
+                & > span
+                {
+                    margin-top: 0.5rem;
+                    color: var(--color-base-text);
+                    font-weight: 300;
+                    font-size: 1.25rem;
                 }
             }
 
@@ -509,7 +508,6 @@
                     justify-content: center;
 
                     font-size: 1.2rem;
-                    padding: 0.5rem 1.25rem;
                     border-radius: 10rem;
                     transition: all 0.2s;
                     background: var(--base-dark);
@@ -526,6 +524,9 @@
                         justify-content: center;
                         gap: 0.5rem;
 
+                        width: 100%;
+                        height: 100%;
+                        padding: 0.5rem 1.25rem;
                         color: var(--color-base-text-bold);
 
                         & > svg
@@ -540,7 +541,7 @@
         }
     }
 
-    &Organs
+    &Organization
     {
         display: flex;
 

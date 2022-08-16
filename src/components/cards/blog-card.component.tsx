@@ -11,15 +11,17 @@ const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.compon
 const BlogCard = (props: { blog: IBlog, text: string }) =>
     (
         <div className={stylesBlog.blogItem}>
-            <Image
-                src={ props.blog.image }
-                alt={ props.blog.name }
-                layout='fill'
-            />
-            <div className={stylesBlog.blogItemBox}>
-                <h2>
+            <span className={stylesBlog.blogItemImage}>
+                <Image
+                    src={ props.blog.image }
+                    alt={ props.blog.name }
+                    layout='fill'
+                />
+            </span>
+            <div className={stylesBlog.blogItemContent}>
+                <h3>
                     { props.blog.name.split('_').join(' ') }
-                </h2>
+                </h3>
                 <p>
                     { props.blog.description }
                 </p>

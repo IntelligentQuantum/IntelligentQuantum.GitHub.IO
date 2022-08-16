@@ -50,10 +50,7 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
         <div className={stylesHobbies.hobbiesBox}>
             <div className={stylesHobbies.hobbiesBoxContent} data-fact_type={props.hobby.type}>
                 <div className={stylesHobbies.hobbiesBoxContentBox}>
-                    <h3 className={stylesHobbies.hobbiesBoxContentBoxTitle}>
-                        { props.hobby.title }
-                    </h3>
-
+                    <h3 className={stylesHobbies.hobbiesBoxContentBoxTitle}>{ props.hobby.title }</h3>
                     <p className={stylesHobbies.hobbiesBoxContentBoxDescription} data-fact_type={props.hobby.type}>
                         { parse(props.hobby.description, { replace: replaceHobbyTitle }) }
                     </p>
@@ -78,7 +75,6 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                         />
                                     </span>
                                 </TooltipPrimary>
-
                                 <TooltipPrimary
                                     placement={ props.content.language === 'fa' ? 'right' : 'left' }
                                     render={ <TooltipFootball player={ props?.players[1] }/> }
@@ -93,7 +89,6 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                         />
                                     </span>
                                 </TooltipPrimary>
-
                                 <TooltipPrimary
                                     placement={ props.content.language === 'fa' ? 'right' : 'left' }
                                     render={ <TooltipFootball player={ props?.players[2] }/> }
@@ -109,8 +104,7 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                     </span>
                                 </TooltipPrimary>
                             </>
-                            :
-                            props.hobby.type === 'space'
+                            : props.hobby.type === 'space'
                                 ?
                                 <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
                                     <Image
@@ -121,8 +115,7 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                         height={420}
                                     />
                                 </span>
-                                :
-                                props.hobby.type === 'guitar'
+                                : props.hobby.type === 'guitar'
                                     ?
                                     <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
                                         <Image
@@ -133,8 +126,7 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                             height={420}
                                         />
                                     </span>
-                                    :
-                                    props.hobby.type === 'music'
+                                    : props.hobby.type === 'music'
                                         ?
                                         <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
                                             <Image
@@ -145,8 +137,7 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                                 height={420}
                                             />
                                         </span>
-                                        :
-                                        props.hobby.type === 'cod'
+                                        : props.hobby.type === 'cod'
                                             ?
                                             <>
                                                 <span data-hero={true}>
@@ -158,7 +149,6 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                                         height={360}
                                                     />
                                                 </span>
-
                                                 <span data-hero={true}>
                                                     <Image
                                                         src={ HeroGhost }

@@ -11,21 +11,6 @@
     width: 8rem;
     height: 100%;
 
-    &__Open
-    {
-        width: 30rem;
-
-        & a
-        {
-            margin-left: 0 !important;
-        }
-
-        @media only screen and (max-width: 1000px)
-        {
-            right: 0 !important;
-        }
-    }
-
     @media only screen and (max-width: 1000px)
     {
         display: block;
@@ -389,17 +374,16 @@
 
     &Themes
     {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+
         padding-top: 1rem;
-        background: var(--base-dark);
-        display: block;
+        background-color: var(--base-dark);
 
-        &Active
-        {
-            background-color: var(--color-primary) !important;
-            color: var(--color-base-text-bolder) !important;
-        }
-
-        & span
+        & > span
         {
             display: flex;
             align-items: center;
@@ -411,7 +395,6 @@
             cursor: pointer;
             width: 2.8rem;
             height: 2.8rem;
-            margin: auto auto 0.5rem;
 
             &:first-child
             {
@@ -431,16 +414,13 @@
             }
         }
 
-        &[data-open="true"]
+        &__Active
         {
-            display: flex;
-            flex-flow: row;
-            flex-wrap: wrap;
-            justify-content: center;
+            background-color: var(--color-primary) !important;
 
-            & span
+            & > svg
             {
-                margin: auto 1rem;
+                fill: var(--base) !important;
             }
         }
 
@@ -455,9 +435,22 @@
         }
     }
 
-    @media only screen and (max-width: 1000px)
+    &__Open
     {
-        &[data-open="true"]
+        width: 30rem;
+
+        & a
+        {
+            margin-left: 0 !important;
+        }
+
+        & .navThemes
+        {
+            flex-flow: row;
+            gap: 1rem;
+        }
+
+        @media only screen and (max-width: 1000px)
         {
             right: 0;
         }

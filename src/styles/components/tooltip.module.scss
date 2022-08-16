@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 1.4rem;
     border-radius: calc(var(--border-radius)/2);
-    background: var(--base-dark);
+    background: var(--base);
     margin-bottom: 0.25rem;
     box-shadow: 0 0 2rem .5rem var(--base);
 
@@ -22,7 +22,8 @@
         margin-top: -.325rem;
         width: .75rem;
         height: .75rem;
-        background: var(--base-dark);
+        border-radius: calc(var(--border-radius) / 2.5);
+        background: var(--base);
         transform: rotate(45deg);
     }
 
@@ -52,7 +53,7 @@
 
         &::after
         {
-            border-color: var(--base-light) transparent transparent;
+            background: var(--base-light);
         }
     }
 }

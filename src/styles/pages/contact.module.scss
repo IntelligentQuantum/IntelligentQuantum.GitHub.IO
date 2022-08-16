@@ -46,25 +46,37 @@
                 height: 100%;
                 padding-bottom: 1.2rem;
 
-                li
+                & > li
                 {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
 
                     width: 100%;
-                }
 
-                h6
-                {
-                    color: var(--color-base-text-bolder);
-                    font-size: 1.25rem;
-                    font-weight: 300;
-                }
+                    & > h3,
+                    & > span
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
 
-                span
-                {
-                    font-size: 1.25rem;
+                        color: var(--color-base-text-bolder);
+                        font-size: 1.5rem;
+                        font-weight: 300;
+
+                        width: 100%;
+
+                        & > span
+                        {
+                            text-shadow: none;
+                        }
+
+                        @media only screen and (max-width: 1200px)
+                        {
+                            font-size: 1.25rem;
+                        }
+                    }
                 }
             }
         }

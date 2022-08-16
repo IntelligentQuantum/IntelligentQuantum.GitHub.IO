@@ -6,11 +6,7 @@ const TypingEffect = (props: { words: string[] }) =>
 {
     const typing = useTyped(props.words);
 
-    return (
-        <span>
-            { typing }
-        </span>
-    );
+    return (<span className='shadow'>{ typing }</span>);
 };
 
 export default TypingEffect;

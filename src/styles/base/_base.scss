@@ -24,6 +24,12 @@ body
     color: var(--color-base-text);
 }
 
+h1, h2, h3,
+h4, h5, h6
+{
+    color: var(--color-base-text-bolder);
+}
+
 html[data-language="fa"]
 {
     .paragraph.first-letter:first-letter
@@ -64,6 +70,22 @@ html[data-language="fa"]
     }
 }
 
+html[data-theme='dark']
+{
+    font-family: 'VT323', monospace;
+
+    h1, h3, h4, a
+    {
+        text-shadow: 0 0 5px rgba(125,225,125,0.5), 0 0 15px rgba(125,250,125,1);
+    }
+
+    .shadow
+    {
+        color: rgba(153, 250, 153, 0.75) !important;
+        text-shadow: 0 0 5px rgba(125,225,125,0.5), 0 0 15px rgba(125,250,125,1) !important;
+    }
+}
+
 a
 {
     text-decoration: none;
@@ -72,16 +94,6 @@ a
 li
 {
     list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-{
-    color: var(--color-base-text-bolder);
 }
 
 .container
@@ -100,98 +112,9 @@ h6
     }
 }
 
-.loading
+@keyframes pulse
 {
-    display: inline-block;
-
-    position: relative;
-
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: radial-gradient(circle, transparent 21px, var(--base-dark) 21px);
-
-    &Parent
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-    }
-
-    & div
-    {
-        display: block;
-
-        position: absolute;
-
-        box-sizing: border-box;
-        width: 64px;
-        height: 64px;
-        margin: 3px;
-        border: 8px solid var(--color-primary);
-        border-radius: 50%;
-        animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-        border-color: var(--color-primary) transparent transparent transparent;
-
-        &:nth-child(1)
-        {
-            animation-delay: -0.45s;
-
-            &::before
-            {
-                content: "";
-
-                display: block;
-
-                position: absolute;
-                top: 0;
-                right: 0;
-
-                width: 8px;
-                height: 8px;
-                background-color: var(--color-primary);
-                border-radius: 50%;
-            }
-        }
-
-        &:nth-child(2)
-        {
-            animation-delay: -0.3s;
-        }
-
-        &:nth-child(3)
-        {
-            animation-delay: -0.15s;
-        }
-
-        &:nth-child(4)
-        {
-            &::before
-            {
-                content: "";
-
-                display: block;
-
-                position: absolute;
-                top: 0;
-                left: 0;
-
-                width: 8px;
-                height: 8px;
-                background-color: var(--color-primary);
-                border-radius: 50%;
-            }
-        }
-    }
-}
-
-@keyframes loading
-{
-    to
-    {
-        transform: rotate(360deg);
-    }
+    0% { opacity: 0 }
+    50% { opacity: 1 }
+    100% { opacity: 0 }
 }

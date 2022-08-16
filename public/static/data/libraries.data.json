@@ -19,7 +19,7 @@
         },
         {
             "id": 4,
-            "names": ["Electron", "Express.js", "Discord.js"]
+            "names": ["Electron", "Express.js"]
         },
         {
             "id": 5,
@@ -31,7 +31,7 @@
         },
         {
             "id": 7,
-            "names": ["Sass", "Less", "Styled Components"]
+            "names": ["Sass", "Less", "Styled"]
         },
         {
             "id": 8,

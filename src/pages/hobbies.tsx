@@ -1,8 +1,8 @@
+import axios from 'axios';
+import React from 'react';
 import Head from 'next/head';
 import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
-import axios, { AxiosResponse } from 'axios';
-import React, { useEffect, useState, useCallback } from 'react';
 
 import type { IHobby } from '../interfaces/hobby';
 import type { IPlayer } from '../interfaces/player';
@@ -13,39 +13,8 @@ import stylesHobbies from '../styles/pages/hobbies.module.scss';
 const HobbyCard = dynamic(() => import('../components/cards/hobby-card.component'));
 const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
 
-const Hobbies = (props: { content: IContent }) =>
+const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
 {
-    const [players, setPlayers] = useState<IPlayer[]>([]);
-
-    const getPlayer = useCallback(async(id: string, name: string, index: number) =>
-    {
-        const array = players;
-
-        await axios.get(`/football/player/${ name }/${ id }`)
-            .then((response: AxiosResponse) =>
-            {
-                array[index] = response.data?.player;
-
-                setPlayers([ ...array]);
-            })
-            .catch((error) =>
-            {
-                console.log(error);
-            });
-    }, []);
-
-    const getPlayers = useCallback(async() =>
-    {
-        getPlayer('28003', 'lionel-messi', 0);
-        getPlayer('125781', 'antoine-griezmann', 1);
-        getPlayer('398184', 'ferran-torres', 2);
-    }, []);
-
-    useEffect(() =>
-    {
-        getPlayers();
-    }, []);
-
     return (
         <>
             <Head>
@@ -70,16 +39,14 @@ const Hobbies = (props: { content: IContent }) =>
             </Head>
 
             <section className={stylesHobbies.hobbies}>
-                <h4 className='heading'>
-                    {props.content.titles[4]}
-                </h4>
+                <h4 className='heading'>{ props.content.titles[4] }</h4>
                 <ScrollMotion className={stylesHobbies.hobbiesList}>
                     {
                         props.content.my_hobbies.map((hobby: IHobby) =>
                             <HobbyCard
                                 key={ nanoid() }
                                 hobby={ hobby }
-                                players={ players }
+                                players={ props.players }
                                 content={ props.content }
                             />
                         )
@@ -89,5 +56,27 @@ const Hobbies = (props: { content: IContent }) =>
         </>
     );
 };
+
+export async function getStaticProps()
+{
+    const { data: messi } = await axios.get('/football/player/lionel-messi/28003');
+    const { data: griezmann } = await axios.get('/football/player/antoine-griezmann/125781');
+    const { data: torres } = await axios.get('/football/player/ferran-torres/398184');
+
+    if (!messi.player || !griezmann.player || !torres.player)
+    {
+        return {
+            props: { players: [] }
+        };
+    }
+
+    return {
+        props:
+            {
+                players: [messi.player, griezmann.player, torres.player]
+            },
+        revalidate: 86400
+    };
+}
 
 export default Hobbies;

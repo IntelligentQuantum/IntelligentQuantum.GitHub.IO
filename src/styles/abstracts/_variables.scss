@@ -3,16 +3,18 @@ html[data-theme="dark"]
     --color-primary: #20C20E;
     --color-primary-dark: #189d0a;
     --color-primary-light: #2fda1c;
-    --color-base-text: #a7a7a7;
-    --color-base-text-bold: #e1e1e1;
-    --color-base-text-bolder: #fff;
+    --color-base-text: #9aa595;
+    --color-base-text-bold: #dae3d7;
+    --color-base-text-bolder: #f5f8f2;
     --base: #000000;
-    --base-light: #0b0b0b;
-    --base-dark: #101010;
+    --base-light: #090909;
+    --base-dark: #0c0c0c;
     --border-radius: 0;
     --stroke-linecap: none;
-    --base-transparent-dark: rgba(0, 0, 0, 0.9);
-    --base-transparent-darker: rgba(0, 0, 0, 0.98);
+    --background-size: none;
+    --image-filter: grayscale(100%);
+    --base-transparent-dark: rgba(0, 0, 0, .8);
+    --base-transparent-darker: rgba(0, 0, 0, 0.9);
     --base-gradiant-image:
         linear-gradient(
             180deg,
@@ -21,7 +23,7 @@ html[data-theme="dark"]
                 rgba(12, 12, 12,  0.80) 80%,
                 rgba(12, 12, 12, 0.85) 90%
         ),
-        url("../../../public/static/images/background_dark.gif");
+        url("../../../public/static/images/background_dark.gif") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -110,6 +112,7 @@ html[data-theme="dim"]
     --base-dark: #404350;
     --border-radius: 1rem;
     --stroke-linecap: round;
+    --background-size: cover;
     --base-transparent-dark: rgb(20 20 26 / 80%);
     --base-transparent-darker: rgb(20 20 26 / 90%);
     --base-gradiant-image:
@@ -120,7 +123,7 @@ html[data-theme="dim"]
             rgb(70 70 88 / 75%) 80%,
             rgb(64 64 82 / 80%) 90%
         ),
-        url("../../../public/static/images/background_dim.jpg");
+        url("../../../public/static/images/background_dim.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -209,6 +212,7 @@ html[data-theme="light"]
     --base-dark: #ccd0df;
     --border-radius: 1rem;
     --stroke-linecap: round;
+    --background-size: cover;
     --base-transparent: rgba(176, 191, 220, 0.5);
     --base-transparent-dark: rgba(55, 55, 57, 0.65);
     --base-transparent-darker: rgba(40, 40, 42, 0.8);
@@ -220,7 +224,7 @@ html[data-theme="light"]
             rgba(239, 241, 245, 0.7) 70%,
             rgb(255 255 255 / 70%) 90%
         ),
-        url("../../../public/static/images/background_light.jpg");
+        url("../../../public/static/images/background_dim.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -229,7 +233,7 @@ html[data-theme="light"]
             rgba(218, 223, 229, 0.95) 80%,
             rgb(231, 233, 243) 100%
         ),
-        url("../../../public/static/images/background_light-2.jpg");
+        url("../../../public/static/images/background_dim-2.jpg");
     --base-gradiant-image-football:
         radial-gradient(
             rgba(235, 236, 241, 0.5) 0%,

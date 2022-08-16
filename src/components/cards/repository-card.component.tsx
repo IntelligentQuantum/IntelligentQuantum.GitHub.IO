@@ -1,5 +1,4 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 
 import type { IRepository } from '../../interfaces/repository';
 
@@ -14,10 +13,10 @@ const RepositoriesCard = (props: { repository: IRepository }) =>
             <div className={stylesHome.homeRepositoriesContentInfo}>
                 <a href={props?.repository?.html_url} target='_blank' rel="noreferrer">
                     { props?.repository?.name }
-                    <span>
-                        { props?.repository?.description }
-                    </span>
                 </a>
+                <span>
+                    { props?.repository?.description }
+                </span>
             </div>
 
             <ul className={stylesHome.homeRepositoriesContentStats}>

@@ -1,19 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import classnames from 'classnames';
+import { GiMoonBats } from 'react-icons/gi';
 import { useDispatch, useSelector } from 'react-redux';
-import { BsMoonFill, BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
+import { BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
 
-import type { ITheme } from '../../../interfaces/theme';
+import type { ITheme } from '../../../types/theme';
 import type { IContent } from '../../../interfaces/content';
+
+import stylesNav from '../../../styles/components/nav.module.scss';
 
 import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
 
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setOpenNavbar } from '../../../app/navbar/navbar.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
-
-import stylesNav from '../../../styles/components/nav.module.scss';
 
 const Navbar = (props: { content: IContent, theme?: ITheme, handleTheme: (theme?: ITheme) => void, mobile?: boolean, page?: 'home' | 'contact' | 'hobbies' | 'portfolio' | 'blogs' }) =>
 {
@@ -52,9 +53,7 @@ const Navbar = (props: { content: IContent, theme?: ITheme, handleTheme: (theme?
 
                 <div className={stylesNav.navContent}>
                     <div className={stylesNav.navContentActive} data-open={openNavbar}>
-                        <p>
-                            { props.content && props.page ? props.content[props.page] : null }
-                        </p>
+                        <p>{ props.content && props.page ? props.content[props.page] : null }</p>
                     </div>
 
                     <div className={stylesNav.navContentList} data-open={openNavbar}>
@@ -86,14 +85,14 @@ const Navbar = (props: { content: IContent, theme?: ITheme, handleTheme: (theme?
                     </div>
                 </div>
 
-                <div className={stylesNav.navThemes} data-open={openNavbar}>
-                    <span onClick={() => props.handleTheme('dark')} className={props.theme === 'dark' ? stylesNav.navThemesActive : ''}>
-                        <BsMoonFill />
+                <div className={stylesNav.navThemes}>
+                    <span onClick={() => props.handleTheme('dark')} className={props.theme === 'dark' ? stylesNav.navThemes__Active : ''}>
+                        <GiMoonBats />
                     </span>
-                    <span onClick={() => props.handleTheme('dim')} className={props.theme === 'dim' ? stylesNav.navThemesActive : ''}>
+                    <span onClick={() => props.handleTheme('dim')} className={props.theme === 'dim' ? stylesNav.navThemes__Active : ''}>
                         <BsCloudMoonFill />
                     </span>
-                    <span onClick={() => props.handleTheme('light')} className={props.theme === 'light' ? stylesNav.navThemesActive : ''}>
+                    <span onClick={() => props.handleTheme('light')} className={props.theme === 'light' ? stylesNav.navThemes__Active : ''}>
                         <BsSunFill />
                     </span>
                 </div>

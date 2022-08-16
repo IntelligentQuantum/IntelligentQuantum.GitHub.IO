@@ -35,7 +35,7 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
     const openAside: boolean = useSelector((state: any) => state.aside.openAside);
 
     return (
-        <nav className={classnames(stylesAside.aside, 'z-index__101')} data-open={openAside}>
+        <nav className={classnames(stylesAside.aside, 'z-index__101', (openAside ? stylesAside.aside__Open : null))}>
             <div className={stylesAside.asideUser}>
                 <div className={stylesAside.asideUserIcon} onClick={() =>
                 {
@@ -52,9 +52,9 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
                         width={100}
                         height={100}
                     />
-                    <div className={stylesAside.asideUserStatusParent}>
+                    <span className={stylesAside.asideUserStatusParent}>
                         <i className={stylesAside.asideUserStatus}/>
-                    </div>
+                    </span>
                 </div>
                 <h1 className={stylesAside.asideUserName}>{ props.content.my_name }</h1>
                 <h3 className={stylesAside.asideUserSkills}>{ props.content.my_skills[0] }</h3>
@@ -62,32 +62,29 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
             </div>
             <div className={stylesAside.asideInformation}>
                 <ul className={stylesAside.asideInformationLanguage}>
-                    <li onClick={() =>
-                    {
-                        props.handleLanguage('en');
-                    }} className={props.content.language === 'en' ? stylesAside.asideInformationLanguageActive : ''}>EN</li>
-                    <li onClick={() =>
-                    {
-                        props.handleLanguage('de');
-                    }} className={props.content.language === 'de' ? stylesAside.asideInformationLanguageActive : ''}>DE</li>
-                    <li onClick={() =>
-                    {
-                        props.handleLanguage('fa');
-                    }} className={props.content.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</li>
+                    <li onClick={() => props.handleLanguage('en')} className={props.content.language === 'en' ? stylesAside.asideInformationLanguageActive : ''}>EN</li>
+                    <li onClick={() => props.handleLanguage('de')} className={props.content.language === 'de' ? stylesAside.asideInformationLanguageActive : ''}>DE</li>
+                    <li onClick={() => props.handleLanguage('fa')} className={props.content.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</li>
                 </ul>
                 <span className={stylesAside.asideDivider}/>
                 <ul className={stylesAside.asideInformationPersonal}>
                     <li>
-                        <h6>{ props.content.residence }:</h6>
-                        <h3>{ props.content.my_residence }</h3>
+                        <h3>
+                            <span>{ props.content.residence }: </span>
+                            { props.content.my_residence }
+                        </h3>
                     </li>
                     <li>
-                        <h6>{ props.content.city }:</h6>
-                        <h3>{ props.content.my_city }</h3>
+                        <h3>
+                            <span>{ props.content.city }: </span>
+                            { props.content.my_city }
+                        </h3>
                     </li>
                     <li>
-                        <h6>{ props.content.age }:</h6>
-                        <h5>{ new Date().getFullYear() - props.content.my_age }</h5>
+                        <h3>
+                            <span>{ props.content.age }: </span>
+                            { props.content.my_age }
+                        </h3>
                     </li>
                 </ul>
                 <span className={stylesAside.asideDivider}/>
@@ -97,9 +94,7 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
                             (
                                 <li key={ uuidV4() }>
                                     <CircularProgressbar value={language.percentage} text={`${ language.percentage }%`} />
-                                    <h6>
-                                        { props.content[language.name as 'persian' | 'english' | 'german'] }
-                                    </h6>
+                                    <h4>{ props.content[language.name as 'persian' | 'english' | 'german'] }</h4>
                                 </li>
                             ))
                     }
