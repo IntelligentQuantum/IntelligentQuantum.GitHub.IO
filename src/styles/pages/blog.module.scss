@@ -59,7 +59,7 @@
 
     &Item
     {
-        border-radius: 1rem;
+        border-radius: var(--border-radius);
         transition: all 0.35s;
         position: relative;
         background: var(--base-lighter);
@@ -204,7 +204,7 @@
             width: 100%;
             height: 50rem;
             overflow: hidden;
-            border-radius: 1rem;
+            border-radius: var(--border-radius);
             margin-bottom: 2rem;
 
             & img
@@ -246,7 +246,7 @@
             font-weight: 500;
             font-size: 1.5rem;
             min-height: 50rem;
-            border-radius: 1rem;
+            border-radius: var(--border-radius);
 
             background: var(--base-light);
             color: var(--color-base-text-bold);
@@ -287,7 +287,7 @@
                 margin: 0 auto auto;
                 padding: 5rem 3rem;
                 font-size: 1.55rem;
-                border-radius: 1rem;
+                border-radius: var(--border-radius);
 
                 background: var(--base-light);
                 color: var(--color-base-text);

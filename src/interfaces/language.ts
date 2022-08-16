@@ -1,3 +1,6 @@
-declare const VALID_LANGUAGE_VALUES: readonly ['en', 'de', 'fa'];
-
-export type ILanguage = typeof VALID_LANGUAGE_VALUES[number];
+export interface ILanguage
+{
+    id: number,
+    name: string,
+    percentage: number
+}

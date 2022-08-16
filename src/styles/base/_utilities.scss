@@ -44,4 +44,4 @@
 
 .uppercase { text-transform: uppercase; }
 
-iframe { border-radius: 1rem }
+iframe { border-radius: var(--border-radius) }

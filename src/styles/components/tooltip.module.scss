@@ -6,8 +6,8 @@
     padding: 0.5rem 1.5rem;
     text-align: center;
     font-size: 1.4rem;
-    border-radius: 0.65rem;
-    background: var(--base-darker);
+    border-radius: calc(var(--border-radius)/2);
+    background: var(--base-dark);
     margin-bottom: 0.25rem;
     box-shadow: 0 0 2rem .5rem var(--base);
 
@@ -22,7 +22,7 @@
         margin-top: -.325rem;
         width: .75rem;
         height: .75rem;
-        background: var(--base-darker);
+        background: var(--base-dark);
         transform: rotate(45deg);
     }
 

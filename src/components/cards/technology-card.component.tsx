@@ -6,7 +6,7 @@ const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.compone
 
 const TechnologyCard = (props: { index: number, technology: { title: string, icon: string }}) =>
     (
-        <TooltipPrimary title={ props.technology.title }>
+        <TooltipPrimary content={ props.technology.title }>
             <li>
                 <span>
                     <Image

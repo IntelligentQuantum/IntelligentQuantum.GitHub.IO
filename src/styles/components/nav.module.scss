@@ -170,7 +170,7 @@
 
     &Hamburger
     {
-        background: var(--base-darker);
+        background: var(--base-dark);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -289,8 +289,7 @@
 
     &Content
     {
-        background-color: var(--base-dark);
-        text-shadow: 0 0 3px var(--base-transparent);
+        background-color: var(--base-light);
 
         padding-top: 5rem;
         text-align: center;
@@ -372,7 +371,6 @@
                 &[data-active="true"]
                 {
                     color: var(--color-base-text-bolder);
-                    text-shadow: 0 0 5px var(--base-transparent);
                 }
             }
 
@@ -392,7 +390,7 @@
     &Themes
     {
         padding-top: 1rem;
-        background: var(--base-darker);
+        background: var(--base-dark);
         display: block;
 
         &Active
@@ -408,7 +406,7 @@
             justify-content: center;
 
             border-radius: 50%;
-            background-color: var(--base-dark);
+            background-color: var(--base-light);
             transition: all 0.2s;
             cursor: pointer;
             width: 2.8rem;

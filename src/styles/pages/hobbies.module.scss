@@ -35,7 +35,7 @@
 
             position: relative;
 
-            border-radius: 1rem;
+            border-radius: var(--border-radius);
             margin-bottom: 6rem;
             background-position: center;
             background-size: cover;
@@ -201,8 +201,8 @@
                     height: fit-content;
                     padding: 2rem;
                     border-radius: 0.65rem;
-                    background: var(--base-darker);
-                    box-shadow: 0 0 1.25rem -.5rem var(--base-darker);
+                    background: var(--base-dark);
+                    box-shadow: 0 0 1.25rem -.5rem var(--base-dark);
 
                     &::after
                     {
@@ -215,7 +215,7 @@
                         margin-left: -5px;
                         width: 1rem;
                         height: 1rem;
-                        background: var(--base-darker);
+                        background: var(--base);
                         transform: rotate(45deg);
                     }
 
@@ -244,7 +244,7 @@
 
                             width: 4.6rem;
                             height: 6rem;
-                            border-radius: .5rem;
+                            border-radius: var(--border-radius);
                             overflow: hidden;
                             background: var(--base-dark);
                             background-size: cover;
@@ -383,7 +383,7 @@
                     margin-left: 0 !important;
                     margin-bottom: 6rem !important;
                     transform: none !important;
-                    border-radius: 5.5rem;
+                    border-radius: var(--border-radius);
                     overflow: hidden;
 
                     &[data-discord]

@@ -32,7 +32,7 @@
 
         &Content
         {
-            border-radius: 1rem;
+            border-radius: var(--border-radius);
             background: var(--base-light);
             padding: 3rem;
             min-height: 20rem;
@@ -76,7 +76,7 @@
         padding: 3rem;
         height: 100%;
         width: 100%;
-        border-radius: 1rem;
+        border-radius: var(--border-radius);
 
         &Parent
         {
@@ -124,7 +124,7 @@
                     width: 5rem;
                     background: var(--base-dark);
                     transition: 0.4s ease-in-out;
-                    border-radius: 1rem 0 0 1rem;
+                    border-radius: var(--border-radius) 0 0 var(--border-radius);
                 }
 
                 & input,
@@ -140,7 +140,7 @@
                     color: var(--color-base-text-bolder);
                     padding: 2rem 2rem 2rem 1rem;
                     transition: 0.4s ease-in-out;
-                    border-radius: 0 1rem 1rem 0;
+                    border-radius: 0 var(--border-radius) var(--border-radius) 0;
 
                     &:focus-within + label
                     {
@@ -221,7 +221,7 @@ html[data-language="fa"]
                 & textarea
                 {
                     direction: rtl;
-                    border-radius: 1rem 0 0 1rem;
+                    border-radius: var(--border-radius) 0 0 1rem;
                 }
             }
         }

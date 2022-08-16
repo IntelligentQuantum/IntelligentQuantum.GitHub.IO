@@ -8,9 +8,9 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector, Provider } from 'react-redux';
 
 import type { AppProps } from 'next/app';
-import type { ITheme } from '../interfaces/theme';
+import type { ITheme } from '../types/theme';
+import type { ILanguages } from '../types/language';
 import type { IContent } from '../interfaces/content';
-import type { ILanguage } from '../interfaces/language';
 
 import store from '../app/store';
 import data from '../../public/static/data/data.json';
@@ -53,7 +53,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
     const page = router.pathname.split('/')[1];
 
     const [theme, setTheme] = useState<ITheme>('dim');
-    const [language, setLanguage] = useState<ILanguage>('en');
+    const [language, setLanguage] = useState<ILanguages>('en');
 
     const alert = useSelector((state: any) => state.alert.statusAlert);
     const filter = useSelector((state: any) => state.filter.activeFilter);
@@ -82,7 +82,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
             }
         }
     };
-    const handleLanguage = (languageV?: ILanguage) =>
+    const handleLanguage = (languageV?: ILanguages) =>
     {
         const storageTheme: string = localStorage.getItem('language') || 'eb';
 
@@ -95,7 +95,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
         {
             if (storageTheme === 'en' || storageTheme === 'de' || storageTheme === 'fa')
             {
-                setLanguage(storageTheme as ILanguage);
+                setLanguage(storageTheme as ILanguages);
                 localStorage.setItem('language', storageTheme);
             }
             else

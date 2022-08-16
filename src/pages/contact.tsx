@@ -116,7 +116,7 @@ const Contact = (props: { content: IContent }) =>
                                     { props.content.age }:
                                 </h6>
                                 <span>
-                                    { props.content.my_age }
+                                    { new Date().getFullYear() - props.content.my_age }
                                 </span>
                             </li>
                         </motion.ul>
@@ -194,7 +194,7 @@ const Contact = (props: { content: IContent }) =>
                             <form onSubmit={sendMessage}>
                                 <TooltipPrimary
                                     placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                    title={ error.name ? props.content.error[error.name] : null }
+                                    content={ error.name ? props.content.error[error.name] : null }
                                 >
                                     <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.name}>
                                         <input
@@ -221,7 +221,7 @@ const Contact = (props: { content: IContent }) =>
 
                                 <TooltipPrimary
                                     placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                    title={ error.email ? props.content.error[error.email] : null }
+                                    content={ error.email ? props.content.error[error.email] : null }
                                 >
                                     <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.email}>
                                         <input
@@ -250,7 +250,7 @@ const Contact = (props: { content: IContent }) =>
 
                                 <TooltipPrimary
                                     placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                    title={ error.message ? props.content.error[error.message] : null }
+                                    content={ error.message ? props.content.error[error.message] : null }
                                 >
                                     <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupMessageInput)} data-error={error.message}>
                                         <textarea

@@ -4,7 +4,7 @@ import { animated, useSpring } from 'react-spring';
 
 import stylesTooltip from '../../styles/components/tooltip.module.scss';
 
-const TooltipPrimary = (props: { title?: string | number, interactive?: boolean, placement?: 'top' | 'bottom' | 'left' | 'right', render?: ReactElement, light?: boolean, children: ReactElement }) =>
+const TooltipPrimary = (props: { content?: string | number | null, interactive?: boolean, placement?: 'top' | 'bottom' | 'left' | 'right', render?: ReactElement, light?: boolean, children: ReactElement }) =>
 {
     const stylesConfig =
         {
@@ -59,7 +59,7 @@ const TooltipPrimary = (props: { title?: string | number, interactive?: boolean,
                             { props.render }
                         </animated.span>
                         :
-                        props.title
+                        props.content
                             ?
                             <animated.span
                                 style={ spring }
@@ -67,7 +67,7 @@ const TooltipPrimary = (props: { title?: string | number, interactive?: boolean,
                                 className={stylesTooltip.tooltip}
                                 data-placement={ props.placement ?? 'top' }
                             >
-                                { props.title }
+                                { props.content }
                             </animated.span>
                             :
                             null

@@ -6,7 +6,7 @@
     top: 50%;
     left: 50%;
 
-    background-color: var(--base-darker);
+    background-color: var(--base-dark);
     width: 3.25rem;
     height: 3.25rem;
     border-radius: 50%;
@@ -31,7 +31,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        background: var(--base-darker);
+        background: var(--base-dark);
         width: 120%;
         height: 120%;
         border: .25rem solid var(--color-primary);
@@ -54,7 +54,7 @@
 
         position: absolute;
 
-        background-color: var(--base-darker);
+        background-color: var(--base-dark);
         width: 3.25rem;
         height: 5.75rem;
         border-radius: (3.25rem / 2) (3.25rem / 2) 0 0;

@@ -187,7 +187,7 @@ const Home = (props: { content: IContent }) =>
                                     {
                                         props.content.technologies.front_end.map((technology: { title: string, icon: string }, index: number) =>
                                             (
-                                                <TooltipPrimary key={ nanoid() } title={ technology.title }>
+                                                <TooltipPrimary key={ nanoid() } content={ technology.title }>
                                                     <li>
                                                         <span>
                                                             <Image

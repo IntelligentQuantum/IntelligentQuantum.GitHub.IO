@@ -35,15 +35,17 @@
 
     &Divider
     {
+        display: flex;
+
         background: var(--color-base-text);
         width: 100%;
-        height: 1px;
+        height: .1rem;
         opacity: 0.3;
     }
 
     &User
     {
-        background: var(--base-darker);
+        background: var(--base-dark);
 
         display: flex;
         align-items: center;
@@ -139,7 +141,7 @@
         scrollbar-width: none;
         padding: 2rem 3rem;
 
-        background-color: var(--base-dark);
+        background-color: var(--base-light);
 
         &::-webkit-scrollbar
         {
@@ -160,14 +162,14 @@
                 color: var(--base-dark) !important;
             }
 
-            & span
+            & li
             {
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 border-radius: 50%;
-                background-color: var(--base);
+                background-color: var(--base-dark);
                 color: var(--color-base-text-bold);
                 font-weight: 600;
                 transition: all 0.2s;
@@ -179,7 +181,7 @@
                 &:hover
                 {
                     color: var(--color-base-text-bold);
-                    background-color: var(--base-darker);
+                    background-color: var(--base);
                 }
             }
         }
@@ -220,7 +222,7 @@
             margin-top: 2rem;
             margin-bottom: 2.3rem;
 
-            & div
+            & li
             {
                 display: flex;
                 flex-direction: column;
@@ -232,31 +234,20 @@
                     width: 5rem;
                     height: 5rem;
 
-                    & path
-                    {
-                        stroke: var(--color-primary);
-                    }
-
                     & path:nth-child(1)
                     {
-                        fill: none;
-                        stroke: var(--base-darker) !important;
-                        stroke-width: 3.8;
+                        stroke: var(--base);
                     }
 
                     & path:nth-child(2)
                     {
-                        fill: none;
-                        stroke-width: 2.8;
-                        stroke-linecap: round;
-                        animation: progress-bar 1s ease-out forwards;
+                        stroke-linecap: var(--stroke-linecap);
+                        stroke: var(--color-primary);
                     }
 
                     & text
                     {
-                        fill: var(--color-base-text);
-                        font-size: .65em;
-                        text-anchor: middle;
+                        fill: var(--color-base-text) !important;
                     }
                 }
 
@@ -305,17 +296,16 @@
 
                 height: 0.5rem;
                 width: 100%;
-                border-radius: 5rem;
-                background-color: var(--base-darker);
+                border-radius: var(--border-radius);
+                background-color: var(--base);
 
                 & span
                 {
-                    border-radius: 5rem;
-                    width: 100%;
-                    animation: progress-bar 1s ease-in-out;
-                    animation-fill-mode: both;
                     position: absolute;
+
+                    width: 100%;
                     height: 95%;
+                    border-radius: var(--border-radius);
                     background-color: var(--color-primary);
                 }
             }
@@ -397,7 +387,7 @@
 
     &Footer
     {
-        background: var(--base-darker);
+        background: var(--base-dark);
 
         display: flex;
         align-items: center;
@@ -432,19 +422,6 @@
         opacity: 0;
         width: 2.5rem;
         height: 2.5rem;
-    }
-}
-
-@keyframes progress-bar
-{
-    0%
-    {
-        width: 0;
-    }
-
-    100%
-    {
-        width: 100%;
     }
 }
 

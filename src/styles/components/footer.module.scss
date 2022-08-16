@@ -19,7 +19,7 @@
         align-items: center;
         justify-content: space-between;
 
-        border-radius: 1rem 1rem 0 0;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
         padding: 1.6rem 3rem;
         width: 100%;
         background: var(--base-light);
