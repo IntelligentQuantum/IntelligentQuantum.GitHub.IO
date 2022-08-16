@@ -1,10 +1,14 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import { v4 as uuidV4 } from 'uuid';
 import classnames from 'classnames';
-import { useDispatch, useSelector } from 'react-redux';
 import { BiCheck, BiDownload } from 'react-icons/bi';
-import { BsGithub, BsInstagram, BsLinkedin, BsDribbble  } from 'react-icons/bs';
+import { useDispatch, useSelector } from 'react-redux';
+import { BsGithub, BsInstagram, BsLinkedin, BsYoutube, BsTwitter, BsFacebook } from 'react-icons/bs';
+
+import { skills } from '../../../../public/static/data/skills.data.json';
+import { socials } from '../../../../public/static/data/socials.data.json';
+import { libraries } from '../../../../public/static/data/libraries.data.json';
 
 import type { IContent } from '../../../interfaces/content';
 import type { ILanguage } from '../../../interfaces/language';
@@ -15,12 +19,12 @@ import { setActiveFilter } from '../../../app/filter/filter.actions';
 import stylesAside from '../../../styles/components/aside.module.scss';
 
 import Profile from '../../../../public/static/images/im-parsa.png';
-import Rarible from '../../../../public/static/icons/icon-rarible.svg';
 import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
 
 const Aside = (props: { content: IContent, handleLanguage: (theme?: ILanguage) => void }) =>
 {
     const dispatch = useDispatch();
+
     const openAside: boolean = useSelector((state: any) => state.aside.openAside);
 
     return (
@@ -32,7 +36,6 @@ const Aside = (props: { content: IContent, handleLanguage: (theme?: ILanguage) =
                 }}>
                     <Ellipsis />
                 </div>
-
                 <div className={stylesAside.asideUserProfile}>
                     <Image
                         src={Profile}
@@ -46,59 +49,49 @@ const Aside = (props: { content: IContent, handleLanguage: (theme?: ILanguage) =
                         <i className={stylesAside.asideUserStatus}/>
                     </div>
                 </div>
-
                 <h1 className={stylesAside.asideUserName}>
-                    <Link href='/'>
-                        <a>
-                            { props?.content?.my_name }
-                        </a>
-                    </Link>
+                    { props.content.my_name }
                 </h1>
-
                 <h3 className={stylesAside.asideUserSkills}>
-                    { props?.content?.my_skills[0] }
-                    <br/>
-                    { props?.content?.my_skills[1] }
+                    { props.content.my_skills[0] }
+                </h3>
+                <h3 className={stylesAside.asideUserSkills}>
+                    { props.content.my_skills[1] }
                 </h3>
             </div>
-
             <div className={stylesAside.asideInformation}>
                 <div className={stylesAside.asideInformationLanguage}>
                     <span onClick={() =>
                     {
                         props.handleLanguage('en');
-                    }} className={props?.content?.language === 'en' ? stylesAside.asideInformationLanguageActive : ''}>EN</span>
+                    }} className={props.content.language === 'en' ? stylesAside.asideInformationLanguageActive : ''}>EN</span>
                     <span onClick={() =>
                     {
                         props.handleLanguage('de');
-                    }} className={props?.content?.language === 'de' ? stylesAside.asideInformationLanguageActive : ''}>DE</span>
+                    }} className={props.content.language === 'de' ? stylesAside.asideInformationLanguageActive : ''}>DE</span>
                     <span onClick={() =>
                     {
                         props.handleLanguage('fa');
-                    }} className={props?.content?.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</span>
+                    }} className={props.content.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</span>
                 </div>
-
-                <div className={stylesAside.asideDivider} />
-
+                <div className={stylesAside.asideDivider}/>
                 <div className={stylesAside.asideInformationPersonal}>
                     <ul>
                         <li>
-                            <h6>{props?.content?.residence}:</h6>
-                            <span>{props?.content?.my_residence}</span>
+                            <h6>{props.content.residence}:</h6>
+                            <h3>{props.content.my_residence}</h3>
                         </li>
                         <li>
-                            <h6>{props?.content?.city}:</h6>
-                            <span>{props?.content?.my_city}</span>
+                            <h6>{props.content.city}:</h6>
+                            <h3>{props.content.my_city}</h3>
                         </li>
                         <li>
-                            <h6>{props?.content?.age}:</h6>
-                            <span>{props?.content?.my_age}</span>
+                            <h6>{props.content.age}:</h6>
+                            <h5>{new Date().getFullYear() - props.content.my_age}</h5>
                         </li>
                     </ul>
                 </div>
-
-                <div className={stylesAside.asideDivider} />
-
+                <div className={stylesAside.asideDivider}/>
                 <div className={stylesAside.asideInformationLanguages}>
                     <div>
                         <svg viewBox='0 0 36 36'>
@@ -109,7 +102,7 @@ const Aside = (props: { content: IContent, handleLanguage: (theme?: ILanguage) =
                             </text>
                         </svg>
                         <h6>
-                            {props?.content?.persian}
+                            {props.content.persian}
                         </h6>
                     </div>
                     <div>
@@ -120,7 +113,7 @@ const Aside = (props: { content: IContent, handleLanguage: (theme?: ILanguage) =
                                 70%
                             </text>
                         </svg>
-                        <h6>{props?.content?.english}</h6>
+                        <h6>{props.content.english}</h6>
                     </div>
                     <div>
                         <svg viewBox='0 0 36 36'>
@@ -131,220 +124,80 @@ const Aside = (props: { content: IContent, handleLanguage: (theme?: ILanguage) =
                             </text>
                         </svg>
                         <h6>
-                            {props?.content?.german}
+                            {props.content.german}
                         </h6>
                     </div>
                 </div>
-
-                <div className={stylesAside.asideDivider} />
-
-                <div className={stylesAside.asideInformationSkills}>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                Javascript, Typescript
-                            </span>
-                            <span>
-                                90%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '90%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                 NodeJS, NestJS, DenoJS
-                            </span>
-                            <span>
-                                95%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '95%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                ReactJS, NextJS
-                            </span>
-                            <span>
-                                95%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '95%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                Sass, Styled, Css
-                            </span>
-                            <span>
-                                90%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '90%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                Photoshop, Gimp
-                            </span>
-                            <span>
-                                95%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '95%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                C++, Poco, Qt
-                            </span>
-                            <span>
-                                35%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '35%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                PHP
-                            </span>
-                            <span>
-                                50%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '50%' }}/>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={stylesAside.asideDivider} />
-
-                <div className={stylesAside.asideInformationLibrary}>
-                    <ul>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                JavaScript, TypeScript
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                NextJS, ReactJS, React Native
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                 NodeJS, DenoJS, NestJS
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                PHP
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                C++, Qt, Poco
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                Electron, Express.js, Discord.js
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                Mongodb, Redis, SQL
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                Pug, HBS, EJS
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                HTML5, CSS3, JS
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                Sass, Styled, Less
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                Photoshop, Gimp, After Effects
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                Git, Github, GitLab
-                            </span>
-                        </li>
-                        <li>
-                            <BiCheck />
-                            <span>
-                                Curl, Apt, Apt-Get
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className={stylesAside.asideDivider} />
-
+                <div className={stylesAside.asideDivider}/>
+                <ul className={stylesAside.asideInformationSkills}>
+                    {
+                        skills.map((skill: { name: string, progress: string }) =>
+                            (
+                                <li className={stylesAside.asideInformationSkillsBar} key={uuidV4()}>
+                                    <div className={stylesAside.asideInformationSkillsInfo}>
+                                        <h3>{ skill.name }</h3>
+                                        <span>{ skill.progress }</span>
+                                    </div>
+                                    <div className={stylesAside.asideInformationSkillsProgress}>
+                                        <span style={{ maxWidth: skill.progress }}/>
+                                    </div>
+                                </li>
+                            ))
+                    }
+                </ul>
+                <div className={stylesAside.asideDivider}/>
+                <ul className={stylesAside.asideInformationLibrary}>
+                    {
+                        libraries.map((library: { names: string[] }) =>
+                            (
+                                <li key={uuidV4()}>
+                                    <BiCheck />
+                                    <p>
+                                        {
+                                            library.names.map((name: string, indexV: number) =>
+                                                (
+                                                    <>
+                                                        <span key={uuidV4()}>{ name }</span>
+                                                        { library.names.length === (indexV + 1) ? null : ',' }
+                                                    </>
+                                                ))
+                                        }
+                                    </p>
+                                </li>
+                            ))
+                    }
+                </ul>
+                <div className={stylesAside.asideDivider}/>
                 <div className={classnames(stylesAside.asideInformationCV, 'uppercase')}>
-                    <a href={`/static/document/parsa_firoozi_cv-${ props?.content?.language }.pdf`} target='_blank' rel='noreferrer'>
+                    <a href={`/static/document/parsa_firoozi_cv-${ props.content.language }.pdf`} target='_blank' rel='noreferrer'>
                         <BiDownload />
-                        <span>
-                            { props?.content?.download_cv }
-                        </span>
+                        <span>{ props.content.download_cv }</span>
                     </a>
                 </div>
             </div>
-
             <div className={stylesAside.asideFooter}>
-                <a href='https://www.instagram.com/hello_im_parsa' target='_blank' rel='noreferrer'>
-                    <BsInstagram />
-                </a>
-                <a href='https://rarible.com/im-parsa' target='_blank' rel='noreferrer'>
-                    <Rarible />
-                </a>
-                <a href='https://dribbble.com/hello_im_parsa' target='_blank' rel='noreferrer'>
-                    <BsDribbble />
-                </a>
-                <a href='https://github.com/im-parsa' target='_blank' rel='noreferrer'>
-                    <BsGithub />
-                </a>
-                <a href='https://www.linkedin.com/in/im-parsa/' target='_blank' rel='noreferrer'>
-                    <BsLinkedin />
-                </a>
+                {
+                    socials.map((social: { link: string, type: string }) =>
+                        (
+                            <a href={ social.link } target='_blank' rel='noreferrer' key={ uuidV4() }>
+                                {
+                                    social.type === 'INSTAGRAM'
+                                        ? <BsInstagram />
+                                        : social.type === 'FACEBOOK'
+                                            ? <BsFacebook />
+                                            : social.type === 'TWITTER'
+                                                ? <BsTwitter />
+                                                : social.type === 'YOUTUBE'
+                                                    ? <BsYoutube />
+                                                    : social.type === 'GITHUB'
+                                                        ? <BsGithub />
+                                                        : social.type === 'LINKEDIN'
+                                                            ? <BsLinkedin />
+                                                            : null
+                                }
+                            </a>
+                        ))
+                }
             </div>
         </nav>
     );

@@ -6,10 +6,8 @@ import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
 import axios, { AxiosResponse } from 'axios';
-import React, { useEffect, useState } from 'react';
 import reactHtmlParser from 'html-react-parser';
-
-import useTyped from '../hooks/use-typed';
+import React, { useEffect, useState } from 'react';
 
 import type { IOrgan } from '../interfaces/organ';
 import type { IService } from '../interfaces/service';
@@ -77,20 +75,14 @@ const Home = (props: { content: IContent }) =>
                 <ScrollMotion>
                     <header className={stylesHome.homeHeader}>
                         <div className={stylesHome.homeHeaderContent}>
-                            <h3>
+                            <span>
                                 { props.content.titles[0] }
-                            </h3>
+                            </span>
 
                             <div className={stylesHome.homeHeaderContentDescription}>
-                                <span>
-                                        &lt;<i>code</i>&gt;
-                                </span>
-
+                                <span>&lt;<i>code</i>&gt;</span>
                                 <TypingEffect words={props.content.typing_effect}/>
-
-                                <span>
-                                        &lt;/<i>code</i>&gt;
-                                </span>
+                                <span>&lt;/<i>code</i>&gt;</span>
                             </div>
 
                             <Link href='/portfolio'>

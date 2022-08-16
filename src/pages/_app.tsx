@@ -157,20 +157,20 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 <meta name='subject' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta name='description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Portfolio, Full-Stack Developer, Graphic Designer'/>
-                <meta name='author' content='im-parsa'/>
+                <meta name='author' content='Parsa Firoozi'/>
                 <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 
                 <meta property='theme-color' content='#5294E2'/>
 
                 <meta property='og:type' content='website'/>
                 <meta property='og:url' content='https://parsa-firoozi.ir/'/>
-                <meta property='og:title' content='im-parsa'/>
+                <meta property='og:title' content='Parsa Firoozi'/>
                 <meta property='og:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                 <meta property='twitter:card'/>
                 <meta property='twitter:url' content='https://parsa-firoozi.ir/'/>
-                <meta property='twitter:title' content='im-parsa'/>
+                <meta property='twitter:title' content='Parsa Firoozi'/>
                 <meta property='twitter:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta property='twitter:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
             </Head>

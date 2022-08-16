@@ -117,18 +117,9 @@
         &Name
         {
             margin: 1rem 0;
-
-            & a
-            {
-                color: var(--color-base-text-bold);
-                font-size: 1.5rem;
-                transition: 0.4s ease-out;
-
-                &:hover
-                {
-                    color: var(--color-primary);
-                }
-            }
+            color: var(--color-base-text-bold);
+            font-size: 1.5rem;
+            transition: 0.4s ease-out;
         }
 
         &Skills
@@ -207,14 +198,17 @@
 
             & h6
             {
-                color: var(--color-base-text-bold);
+                color: var(--color-base-text);
                 font-size: 1.2rem;
                 font-weight: 300;
             }
 
-            & span
+            & h3,
+            & h5
             {
-                font-size: 1.2rem;
+                font-weight: 400;
+                color: var(--color-base-text-bold);
+                font-size: 1.4rem;
             }
         }
 
@@ -261,7 +255,7 @@
                     & text
                     {
                         fill: var(--color-base-text);
-                        font-size: 0.6em;
+                        font-size: .65em;
                         text-anchor: middle;
                     }
                 }
@@ -291,11 +285,17 @@
                 justify-content: space-between;
                 margin-bottom: 1rem;
 
-                & span:first-child
+                & h3
                 {
                     color: var(--color-base-text-bolder);
                     font-weight: 500;
-                    font-size: 1.2rem;
+                    font-size: 1.35rem;
+                }
+                & span
+                {
+                    color: var(--color-base-text);
+                    font-weight: 300;
+                    font-size: 1.25rem;
                 }
             }
 
@@ -330,9 +330,14 @@
                 display: flex;
                 align-items: center;
 
-                & span
+                & > p
                 {
                     margin: 0 0.5rem;
+
+                    & > span:not(:first-child)
+                    {
+                        margin-left: .5rem;
+                    }
                 }
 
                 &:not(:last-child)

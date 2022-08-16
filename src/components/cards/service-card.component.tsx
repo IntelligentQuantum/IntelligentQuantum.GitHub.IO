@@ -13,9 +13,9 @@ const ServiceCard = (props: { text: string, service: IService }) =>
             <h3>
                 { props.service.title }
             </h3>
-            <p>
+            <h4>
                 { props.service.description }
-            </p>
+            </h4>
             <ButtonSecondary
                 link='/contact'
                 text={props.text}

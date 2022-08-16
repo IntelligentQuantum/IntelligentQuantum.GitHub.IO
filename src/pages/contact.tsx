@@ -65,7 +65,7 @@ const Contact = (props: { content: IContent }) =>
     return (
         <>
             <Head>
-                <title>Parsa Firoozi &mdash; Contact with im-parsa</title>
+                <title>Parsa Firoozi &mdash; Contact with me</title>
 
                 <meta name='Classification' content='Contact'/>
                 <meta name='subject' content='Contact'/>

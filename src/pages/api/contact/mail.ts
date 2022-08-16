@@ -4,7 +4,6 @@ import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import rateLimit from '../../../lib/rate-limit';
-import Fingerprint from '../fingerprint';
 
 const limiter = rateLimit(
     {

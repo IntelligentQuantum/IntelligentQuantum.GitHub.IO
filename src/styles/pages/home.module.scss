@@ -28,8 +28,10 @@
             min-height: 36rem;
             padding: 6rem;
 
-            & h3
+            & > span
             {
+                color: var(--color-base-text-bolder);
+                font-weight: 700;
                 font-size: 5rem;
                 margin: 0 auto auto 0;
             }
@@ -390,10 +392,11 @@
                 font-weight: 600;
             }
 
-            & p
+            & h4
             {
+                color: var(--color-base-text);
                 margin-bottom: 1.5rem;
-                line-height: 1.7;
+                line-height: 1.85;
                 font-size: 1.1rem;
                 font-weight: 500;
             }
@@ -600,7 +603,7 @@ html[data-language="fa"]
 
         &HeaderContent
         {
-            & h3
+            & > span
             {
                 margin-left: auto;
                 margin-right: 0;

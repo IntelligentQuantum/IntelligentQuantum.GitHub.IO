@@ -1,10 +1,12 @@
 .footer
 {
-    padding: 0 3rem;
-    width: 100%;
     display: flex;
+
     position: relative;
     z-index: 95;
+
+    padding: 0 3rem;
+    width: 100%;
 
     @media only screen and (max-width: 1000px)
     {
@@ -13,14 +15,15 @@
 
     &Box
     {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
         border-radius: 1rem 1rem 0 0;
         padding: 1.6rem 3rem;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         background: var(--base-light);
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         font-weight: 500;
 
         @media only screen and (max-width: 1000px)

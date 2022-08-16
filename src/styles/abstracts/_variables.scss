@@ -2,9 +2,7 @@ html[data-theme="dark"]
 {
     --color-primary: #4f40f8;
     --color-primary-dark: #2d20c9;
-    --color-primary-darker: #281cb3;
     --color-primary-light: #7667ff;
-    --color-primary-lighter: #988eff;
     --color-base-text: #a7a7a7;
     --color-base-text-bold: #e1e1e1;
     --color-base-text-bolder: #fff;
@@ -106,9 +104,7 @@ html[data-theme="dim"]
 {
     --color-primary: #5294e2;
     --color-primary-dark: #4385d4;
-    --color-primary-darker: #3b79c4;
     --color-primary-light: #64a1ea;
-    --color-primary-lighter: #7cb5fa;
     --color-base-text: #a7a7a7;
     --color-base-text-bold: #e1e1e1;
     --color-base-text-bolder: #fff;
@@ -208,101 +204,99 @@ html[data-theme="dim"]
 
 html[data-theme="light"]
 {
-    --color-primary: #f52e2e;
-    --color-primary-dark: #e52525;
-    --color-primary-darker: #db2222;
-    --color-primary-light: #fc4242;
-    --color-primary-lighter: #ff5656;
+    --color-primary: #3729cc;
+    --color-primary-dark: #2419a7;
+    --color-primary-light: #5d4ee1;
     --color-base-text: #20202a;
     --color-base-text-bold: #191923;
     --color-base-text-bolder: #101015;
     --color-base-text-shadow: rgb(31 31 80 / 40%);
-    --base: #f3e7e7;
-    --base-light: #ede3e3;
-    --base-lighter: #f5eaea;
-    --base-dark: #e1d3d3;
-    --base-darker: #decccc;
-    --base-transparent: rgb(220 176 176 / 50%);
-    --base-transparent-dark: rgb(57 55 55 / 65%);
-    --base-transparent-darker: rgb(42 40 40 / 80%);
-    --base-gradiant: linear-gradient(159deg, rgb(234 221 221) 0%, rgb(236 218 218) 100%);
+    --base: #e7e9f3;
+    --base-light: #e3e5ed;
+    --base-lighter: #eaedf5;
+    --base-dark: #d3d7e1;
+    --base-darker: #ccd0de;
+    --base-transparent: rgba(176, 191, 220, 0.5);
+    --base-transparent-dark: rgba(55, 55, 57, 0.65);
+    --base-transparent-darker: rgba(40, 40, 42, 0.8);
+    --base-gradiant: linear-gradient(159deg, rgb(221, 225, 234) 0%, rgb(218, 222, 236) 100%);
     --base-gradiant-image:
         linear-gradient(
             180deg,
-            rgb(222 213 213 / 70%) 0%,
-            rgb(234 226 226 / 70%) 50%,
-            rgb(245 239 239 / 70%) 70%,
+            rgba(213, 215, 222, 0.7) 0%,
+            rgba(226, 229, 234, 0.7) 50%,
+            rgba(239, 241, 245, 0.7) 70%,
             rgb(255 255 255 / 70%) 90%
         ),
         url("../../../public/static/images/background_light.jpg");
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
-            rgb(215 196 196 / 80%) 0%,
-            rgb(231 218 218 / 90%) 70%,
-            rgb(229 218 218 / 95%) 80%,
-            rgb(243 231 231) 100%
+            rgba(196, 200, 215, 0.8) 0%,
+            rgba(218, 221, 231, 0.9) 70%,
+            rgba(218, 223, 229, 0.95) 80%,
+            rgb(231, 233, 243) 100%
         ),
         url("../../../public/static/images/background_light-2.jpg");
     --base-gradiant-image-football:
         radial-gradient(
-            rgb(241 235 235 / 50%) 0%,
-            rgb(236 228 228 / 50%) 10%,
-            rgb(239 235 235 / 50%) 50%,
-            rgb(238 227 227 / 50%) 80%
+            rgba(235, 236, 241, 0.5) 0%,
+            rgba(228, 231, 236, 0.5) 10%,
+            rgba(235, 236, 239, 0.5) 50%,
+            rgba(227, 231, 238, 0.5) 80%
         ),
         url("../../../public/static/images/hobbies/background-football.jpg");
     --base-gradiant-image-instagram:
         radial-gradient
-        (rgb(226 209 209 / 80%) 0%, rgb(234 226 226 / 80%) 10%,
-        rgb(231 220 220 / 80%) 50%, rgb(227 214 214 / 80%) 80%),
+        (rgba(209, 212, 226, 0.8) 0%, rgba(226, 227, 234, 0.8) 10%,
+        rgba(220, 223, 231, 0.8) 50%, rgba(214, 217, 227, 0.8) 80%),
         url("../../../public/static/images/hobbies/background-ig.jpg");
     --base-gradiant-image-discord:
         radial-gradient(
-            rgb(203 188 188 / 80%) 0%,
-            rgb(213 198 198 / 80%) 10%,
-            rgb(227 216 216 / 80%) 50%,
-            rgb(210 201 201 / 80%) 80%
+            rgba(188, 193, 203, 0.8) 0%,
+            rgba(198, 201, 213, 0.8) 10%,
+            rgba(216, 219, 227, 0.8) 50%,
+            rgba(201, 204, 210, 0.8) 80%
         ),
         url("../../../public/static/images/hobbies/background-discord.jpg");
     --base-gradiant-image-cod:
         radial-gradient(
-            rgb(241 235 235 / 50%) 0%,
-            rgb(245 239 239 / 50%) 10%,
-            rgb(236 230 230 / 50%) 50%,
-            rgb(236 226 226 / 50%) 80%
+            rgba(235, 237, 241, 0.5) 0%,
+            rgba(239, 241, 245, 0.5) 10%,
+            rgba(230, 231, 236, 0.5) 50%,
+            rgba(226, 228, 236, 0.5) 80%
         ),
         url("../../../public/static/images/hobbies/background-cod.jpg");
     --base-gradiant-image-music:
         radial-gradient(
-            rgb(241 235 235 / 50%) 0%,
-            rgb(246 241 241 / 50%) 10%,
-            rgb(245 236 236 / 50%) 50%,
-            rgb(246 242 242 / 50%) 80%
+            rgba(235, 236, 241, 0.5) 0%,
+            rgba(241, 244, 246, 0.5) 10%,
+            rgba(236, 238, 245, 0.5) 50%,
+            rgba(242, 243, 246, 0.5) 80%
         ),
         url("../../../public/static/images/hobbies/background-shadmehr-aghili.png");
     --base-gradiant-image-guitar:
         radial-gradient(
-            rgb(241 235 235 / 50%) 0%,
-            rgb(238 230 230 / 50%) 10%,
-            rgb(246 240 240 / 50%) 50%,
-            rgb(246 241 241 / 50%) 80%
+            rgba(235, 237, 241, 0.5) 0%,
+            rgba(230, 231, 238, 0.5) 10%,
+            rgba(240, 241, 246, 0.5) 50%,
+            rgba(241, 243, 246, 0.5) 80%
         ),
         url("../../../public/static/images/hobbies/background-guitar.jpg");
     --base-gradiant-image-rarible:
         radial-gradient(
-            rgb(241 235 235 / 50%) 0%,
-            rgb(238 231 231 / 50%) 10%,
-            rgb(241 234 234 / 50%) 50%,
-            rgb(227 214 214 / 50%) 80%
+            rgba(235, 236, 241, 0.5) 0%,
+            rgba(231, 233, 238, 0.5) 10%,
+            rgba(234, 236, 241, 0.5) 50%,
+            rgba(214, 219, 227, 0.5) 80%
         ),
         url("../../../public/static/images/hobbies/background-rarible.jpg");
     --base-gradiant-image-space:
         radial-gradient(
-            rgb(241 235 235 / 50%) 0%,
-            rgb(238 231 231 / 50%) 10%,
-            rgb(241 234 234 / 50%) 50%,
-            rgb(227 214 214 / 50%) 80%
+            rgba(235, 236, 241, 0.5) 0%,
+            rgba(231, 233, 238, 0.5) 10%,
+            rgba(234, 236, 241, 0.5) 50%,
+            rgba(214, 217, 227, 0.5) 80%
         ),
         url("../../../public/static/images/hobbies/background-space.jpg");
 }

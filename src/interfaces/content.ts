@@ -48,7 +48,7 @@ export interface IContent
     age: string,
     my_residence: string,
     my_city: string,
-    my_age: string,
+    my_age: number,
     english: string,
     persian: string,
     german: string,

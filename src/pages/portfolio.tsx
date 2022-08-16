@@ -19,7 +19,7 @@ const Portfolio = (props: { content: IContent }) =>
     return (
         <>
             <Head>
-                <title>Parsa Firoozi &mdash; Resume and complete portfolio of im-parsa</title>
+                <title>Parsa Firoozi &mdash; Resume and portfolio</title>
 
                 <meta name='Classification' content='Portfolio'/>
                 <meta name='subject' content='Portfolio'/>
