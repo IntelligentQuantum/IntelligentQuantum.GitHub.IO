@@ -32,7 +32,7 @@ const Aside = () =>
                 </span>
 
                 <div className={styles.asideUserInfoContainer}>
-                    <Link href='/'>
+                    <Link href='/src/pages'>
                         <a className={styles.asideUserName}>IntelligentQuantum</a>
                     </Link>
                     <span className={styles.asideUserTitle}>{t('common:aside.0.userTitle')}</span>
@@ -139,14 +139,14 @@ const Aside = () =>
 
                 <div className={styles.aside__divider} />
 
-                <a href="#" className={styles.asideInformationCV}>
+                <a href="src/components/layouts/aside/aside.component#" className={styles.asideInformationCV}>
                     <span>{t('common:aside.8.download')}</span>
                     <CgSoftwareDownload />
                 </a>
             </div>
 
             <div className={styles.asideFooter}>
-                <a href="https://www.instagram.com/intelligentquantum/">
+                <a href="src/components/layouts/aside/aside.component">
                     <BsInstagram />
                 </a>
                 <a href="https://dribbble.com/intelligentquantum">
@@ -158,7 +158,7 @@ const Aside = () =>
                 <a href="https://github.com/intelligentquantum">
                     <BsGithub />
                 </a>
-                <a href="https://www.linkedin.com/in/intelligent-quantum-330931177/">
+                <a href="src/components/layouts/aside/aside.component">
                     <BsLinkedin />
                 </a>
             </div>

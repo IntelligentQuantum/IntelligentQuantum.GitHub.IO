@@ -5,16 +5,16 @@
     display: grid;
     grid-template-rows: 7rem 1fr 12rem;
 
-    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
 
     &Hamburger
     {
-        background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+        background: linear-gradient(159deg, rgb(37 37 50 / 98%) 0%, rgb(35 35 45 / 98%) 100%);
 
         position: relative;
         cursor: pointer;
 
-        transition: all .2s;
+        transition: all 0.2s;
 
         &Line
         {
@@ -32,7 +32,7 @@
             &::before,
             &::after
             {
-                content: '';
+                content: "";
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -60,7 +60,7 @@
 
     &Content
     {
-        background-color: #20202A;
+        background-color: #20202a;
         padding-top: 3rem;
         text-align: center;
 
@@ -77,7 +77,7 @@
 
     &Theme
     {
-        background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+        background: linear-gradient(159deg, rgb(37 37 50 / 98%) 0%, rgb(35 35 45 / 98%) 100%);
 
         display: flex;
         align-items: center;
@@ -93,10 +93,10 @@
 
             padding: 0.8rem;
             border-radius: 50%;
-            background-color: #1E1E28;
+            background-color: #1e1e28;
             color: #8c8c8e;
             font-weight: 600;
-            transition: all .2s;
+            transition: all 0.2s;
             cursor: pointer;
 
             & svg
@@ -108,7 +108,7 @@
 
         &Active
         {
-            background-color: #FFC107 !important;
+            background-color: #ffc107 !important;
 
             & svg
             {

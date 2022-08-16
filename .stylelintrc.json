@@ -1,0 +1,15 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules":
+    {
+        "indentation": 4,
+        "selector-class-pattern": null,
+        "block-opening-brace-space-before": null,
+        "unit-allowed-list": ["fr", "deg", "px", "em", "rem", "%", "s", "vw", "vh"],
+        "declaration-empty-line-before": null,
+        "selector-id-pattern": null,
+        "no-descending-specificity": null
+    },
+    "customSyntax": "postcss-scss",
+    "ignoreFiles": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx"]
+}

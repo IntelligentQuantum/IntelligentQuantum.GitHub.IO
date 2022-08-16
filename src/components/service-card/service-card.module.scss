@@ -35,7 +35,7 @@
         &:link,
         &:visited
         {
-            color: #FFC107;
+            color: #ffc107;
             letter-spacing: 1.5px;
             font-weight: 600;
             font-size: 1.1rem;
@@ -45,13 +45,13 @@
         {
             height: 1.5rem;
             width: 1.5rem;
-            fill: #FFC107;
-            transition: all .2s;
+            fill: #ffc107;
+            transition: all 0.2s;
         }
 
         &:hover svg
         {
-            margin-left: .4rem;
+            margin-left: 0.4rem;
         }
     }
 }

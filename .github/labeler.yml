@@ -1,0 +1,19 @@
+Core:
+    - any: ['src/**/*']
+
+UnitTests:
+    - src/**/__test__/**/*.ts
+    - src/**/__test__/**/*.tsx
+
+Documentation:
+    - ./*.md
+
+Bash:
+    - ./*.sh
+    - apps/**/*.sh
+
+Workflow:
+    - .github/workflows/*
+
+Batch:
+    - apps/**/*.bat

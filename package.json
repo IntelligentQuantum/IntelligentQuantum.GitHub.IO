@@ -12,13 +12,17 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "export": "next export",
+        "lint": "next lint",
+        "lint:scss": "stylelint --fix \"src/**/*.scss\" --custom-syntax postcss-scss",
+        "lint:scss:fix": "npm run lint:scss -- --fix"
     },
     "dependencies": {
         "axios": "^0.27.2",
         "classnames": "^2.3.1",
         "next": "12.2.4",
         "next-translate": "^1.5.0",
+        "postcss-scss": "^4.0.4",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-icons": "^4.4.0",
@@ -32,6 +36,9 @@
         "@types/react-dom": "18.0.6",
         "eslint": "8.21.0",
         "eslint-config-next": "12.2.4",
+        "husky": "^8.0.1",
+        "stylelint": "^14.10.0",
+        "stylelint-config-standard": "^27.0.0",
         "typescript": "4.7.4"
     }
 }

@@ -12,7 +12,7 @@
     {
         font-size: 1.7rem;
         font-weight: 600;
-        padding: 5rem 3rem 2rem 3rem;
+        padding: 5rem 3rem 2rem;
         color: #fafafc;
     }
 
@@ -29,10 +29,10 @@
 
             width: 90%;
             height: 3rem;
-            box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+            box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
-            background: rgba(30, 30, 40, 0.88);
+            background: rgb(30 30 40 / 88%);
             margin-left: 3%;
         }
 
@@ -41,7 +41,14 @@
             position: absolute;
             top: -34rem;
 
-            background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%), url('/images/background.jpg');
+            background-image:
+                linear-gradient(
+                    90deg,
+                    rgb(45 45 58 / 90%) 15%,
+                    rgb(45 45 58 / 70%) 50%,
+                    rgb(43 43 53 / 70%) 100%
+                ),
+                url('/images/background.jpg');
             background-position: center;
             background-size: cover;
             width: 96%;
@@ -63,16 +70,16 @@
                 color: white;
                 font-size: 1.7rem;
                 font-weight: 400;
-                font-family: Source Code Pro,monospace;
+                font-family: 'Source Code Pro', monospace;
 
-                & span:after
+                & span::after
                 {
                     content: '|';
                 }
 
                 & i
                 {
-                    color: #FFC107;
+                    color: #ffc107;
                 }
             }
 
@@ -82,9 +89,9 @@
 
                 padding: 1.5rem 3.5rem;
                 text-transform: uppercase;
-                box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+                box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
                 color: #20202a;
-                background: #FFC107;
+                background: #ffc107;
                 letter-spacing: 1.5px;
                 font-weight: 600;
                 border: none;
@@ -109,7 +116,7 @@
                 {
                     font-size: 2.2rem;
                     font-weight: 600;
-                    color: #FFC107;
+                    color: #ffc107;
 
                     &:not(:last-child)
                     {
@@ -144,6 +151,11 @@
             font-weight: 400;
             line-height: 2.85rem;
             text-align: justify;
+
+            &::first-letter
+            {
+                font-size: 3rem;
+            }
         }
 
         &FAT
@@ -202,12 +214,12 @@
                             align-items: center;
                             justify-content: center;
 
-                            border: .3rem solid #252531;
+                            border: 0.3rem solid #252531;
                             width: 5.25rem;
                             height: 5.25rem;
-                            padding: .85rem;
+                            padding: 0.85rem;
                             border-radius: 10rem;
-                            background-color: #1E1E28;
+                            background-color: #1e1e28;
                         }
                     }
                 }

@@ -9,7 +9,7 @@ const RepositoryCard = ({ name, description, stars, watchers, forks }: any) =>
     return (
         <div className={styles.repository}>
             <div className={styles.repositoryInfo}>
-                <a href='/' target='_blank' rel="noreferrer">
+                <a href='/src/pages' target='_blank' rel="noreferrer">
                     <span>{name}</span>
                     <p>{description}</p>
                 </a>
@@ -17,19 +17,19 @@ const RepositoryCard = ({ name, description, stars, watchers, forks }: any) =>
 
             <ul className={styles.repositoryStats}>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="https://">
+                    <a href="src/components/repository-card/repository-card.component">
                         <BiStar />
                         <span>{stars}</span>
                     </a>
                 </li>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="https://">
+                    <a href="src/components/repository-card/repository-card.component">
                         <AiOutlineEye />
                         <span>{watchers}</span>
                     </a>
                 </li>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="https://">
+                    <a href="src/components/repository-card/repository-card.component">
                         <GoRepoForked />
                         <span>{forks}</span>
                     </a>

@@ -5,7 +5,7 @@
     display: grid;
     grid-template-rows: 23.5rem 1fr 5rem;
 
-    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
 
     overflow: hidden;
 
@@ -23,7 +23,7 @@
         flex-direction: column;
         justify-content: center;
 
-        background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+        background: linear-gradient(159deg, rgb(37 37 50 / 98%) 0%, rgb(35 35 45 / 98%) 100%);
 
         &ImageContainer
         {
@@ -40,7 +40,7 @@
 
                 height: 1.5rem;
                 width: 1.5rem;
-                background-color: #FFC107;
+                background-color: #ffc107;
                 border-radius: 50%;
             }
         }
@@ -54,7 +54,6 @@
         {
             display: grid;
             place-items: center;
-
         }
 
         &Name
@@ -67,7 +66,7 @@
 
             &:hover
             {
-                color: #FFC107;
+                color: #ffc107;
             }
         }
 
@@ -88,7 +87,7 @@
             display: none;
         }
 
-        background-color: #20202A;
+        background-color: #20202a;
         padding: 2rem 3rem;
 
         &WebLanguages
@@ -103,7 +102,7 @@
                 place-items: center;
 
                 font-weight: 600;
-                transition: all .2s;
+                transition: all 0.2s;
                 cursor: pointer;
                 width: 3rem;
                 height: 3rem;
@@ -114,7 +113,7 @@
 
                 &Active
                 {
-                    background-color: #FFC107;
+                    background-color: #ffc107;
                     color: #1e1e28;
                 }
             }
@@ -161,6 +160,13 @@
                     flex-direction: column;
                     align-items: center;
 
+                    & span
+                    {
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                        color: #fafafc;
+                    }
+
                     & svg
                     {
                         margin: 1rem;
@@ -169,7 +175,7 @@
 
                         & path
                         {
-                            stroke: #FFC107;
+                            stroke: #ffc107;
                         }
 
                         path:nth-child(1)
@@ -192,13 +198,6 @@
                             font-size: 0.6em;
                             text-anchor: middle;
                         }
-                    }
-
-                    & span
-                    {
-                        font-size: 1.2rem;
-                        font-weight: 300;
-                        color: #fafafc;
                     }
                 }
             }
@@ -247,7 +246,7 @@
                         position: absolute;
                         border-radius: 5rem;
                         height: 95%;
-                        background-color: #FFC107;
+                        background-color: #ffc107;
                     }
                 }
             }
@@ -320,7 +319,7 @@
 
     &Footer
     {
-        background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+        background: linear-gradient(159deg, rgb(37 37 50 / 98%) 0%, rgb(35 35 45 / 98%) 100%);
 
         display: flex;
         align-items: center;
