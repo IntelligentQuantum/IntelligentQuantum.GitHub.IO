@@ -43,7 +43,7 @@ const Nav = () =>
                 <span onClick={() => handleClick('dark')} className={`${ colorTheme === 'dark' ? styles.navThemeActive : null }`}>
                     <BsMoonFill />
                 </span>
-                <span onClick={() => handleClick('dim')} className={`${ colorTheme === 'dim' ? styles.navThemeActive : null }`}>
+                <span onClick={() => handleClick('ark')} className={`${ colorTheme === 'ark' ? styles.navThemeActive : null }`}>
                     <BsCloudMoonFill />
                 </span>
                 <span onClick={() => handleClick('light')} className={`${ colorTheme === 'light' ? styles.navThemeActive : null }`}>

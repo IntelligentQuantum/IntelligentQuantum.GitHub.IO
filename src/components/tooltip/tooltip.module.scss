@@ -2,12 +2,12 @@
 {
     display: inline-block;
 
-    color: white;
+    color: var(--color-base-text-bold);
     padding: 0.5rem 1.5rem;
     text-align: center;
     font-size: 1.4rem;
     border-radius: 0.65rem;
-    background: red;
+    background: var(--base-darker);
     margin-bottom: 0.25rem;
     box-shadow: 0 0 2rem .5rem var(--base);
 
@@ -22,7 +22,7 @@
         margin-top: -.325rem;
         width: .75rem;
         height: .75rem;
-        background: red;
+        background: var(--base-darker);
         transform: rotate(45deg);
     }
 

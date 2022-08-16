@@ -22,7 +22,6 @@ import ServiceCard from '../components/service-card/service-card.component';
 
 import 'swiper/css';
 import styles from '../styles/home.module.scss';
-import Tooltip from "../components/tooltip/tooltip.component";
 
 const Home: NextPage = (props: any) =>
 {
@@ -157,10 +156,7 @@ const Home: NextPage = (props: any) =>
                                 </ul>
                             </li>
                             <li className={styles.homeAboutFATItem}>
-                                <Tooltip content={'sasdasdsad'}>
-                                    <h5>Back-End:</h5>
-                                </Tooltip>
-
+                                <h5>Back-End:</h5>
                                 <ul className={styles.homeAboutFATItemListLogo}>
                                     <li className={styles.homeAboutFATItemListLogoItem}>
                                         <span>

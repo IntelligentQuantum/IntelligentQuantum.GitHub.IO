@@ -140,8 +140,8 @@ const Aside = () =>
                 <div className={styles.aside__divider} />
 
                 <a href="src/components/layouts/aside/aside.component#" className={styles.asideInformationCV}>
-                    <span>{t('common:aside.8.download')}</span>
                     <CgSoftwareDownload />
+                    <span>{t('common:aside.8.download')}</span>
                 </a>
             </div>
 
