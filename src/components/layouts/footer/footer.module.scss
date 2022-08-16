@@ -9,26 +9,26 @@
         align-items: center;
 
         padding: 1.6rem 3rem;
-        background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+        background: var(--base-light);
         box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
         font-size: 1.1rem;
         font-weight: 500;
 
         & span
         {
-            color: #8c8c8e;
+            color: var(--color-base-text);
         }
 
         & a
         {
-            color: #8c8c8e;
+            color: var(--color-base-text);
             transition: all 0.2s;
             display: flex;
             align-items: center;
 
             &:hover
             {
-                color: #ffc107;
+                color: var(--color-primary);
             }
 
             & svg

@@ -1,19 +1,20 @@
 .aside
 {
-    grid-template: aside-start / aside-end;
-
     display: grid;
+    grid-template: aside-start / aside-end;
     grid-template-rows: 23.5rem 1fr 5rem;
 
-    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+    position: relative;
+    z-index: 100;
 
+    box-shadow: 0 3px 8px 0 var(--base-transparent-darker);
     overflow: hidden;
 
     &__divider
     {
-        background: #646466;
+        background: var(--color-base-text);
         width: 100%;
-        height: 1px;
+        height: .1rem;
         opacity: 0.3;
     }
 
@@ -23,7 +24,7 @@
         flex-direction: column;
         justify-content: center;
 
-        background: linear-gradient(159deg, rgb(37 37 50 / 98%) 0%, rgb(35 35 45 / 98%) 100%);
+        background: var(--base-darker);
 
         &ImageContainer
         {
@@ -40,7 +41,7 @@
 
                 height: 1.5rem;
                 width: 1.5rem;
-                background-color: #ffc107;
+                background-color: var(--color-primary);
                 border-radius: 50%;
             }
         }
@@ -58,7 +59,7 @@
 
         &Name
         {
-            color: #fafafc;
+            color: var(--color-base-text-bold);
             font-size: 1.2rem;
             transition: 0.4s ease-out;
             margin: 1rem 0;
@@ -66,13 +67,13 @@
 
             &:hover
             {
-                color: #ffc107;
+                color: var(--color-primary);
             }
         }
 
         &Title
         {
-            color: #8c8c8e;
+            color: var(--color-base-text);
         }
     }
 
@@ -87,7 +88,7 @@
             display: none;
         }
 
-        background-color: #20202a;
+        background-color: var(--base-dark);
         padding: 2rem 3rem;
 
         &WebLanguages
@@ -107,14 +108,14 @@
                 width: 3rem;
                 height: 3rem;
                 border-radius: 50%;
-                background-color: #252531;
-                color: #8c8c8e;
+                background-color: var(--base-darker);
+                color: var(--color-base-text);
                 margin: auto auto 0.5rem;
 
                 &Active
                 {
-                    background-color: #ffc107;
-                    color: #1e1e28;
+                    background-color: var(--color-primary);
+                    color: var(--base);
                 }
             }
         }
@@ -133,7 +134,7 @@
 
                     & span:nth-child(1)
                     {
-                        color: #fafafc;
+                        color: var(--color-base-text-bold);
                         font-size: 1.2rem;
                         font-weight: 300;
                     }
@@ -141,7 +142,7 @@
                     & span:nth-child(2)
                     {
                         font-size: 1.2rem;
-                        color: #8c8c8e;
+                        color: var(--color-base-text);
                     }
                 }
             }
@@ -164,7 +165,7 @@
                     {
                         font-size: 1.2rem;
                         font-weight: 300;
-                        color: #fafafc;
+                        color: var(--color-base-text-bold);
                     }
 
                     & svg
@@ -175,13 +176,13 @@
 
                         & path
                         {
-                            stroke: #ffc107;
+                            stroke: var(--color-primary);
                         }
 
                         path:nth-child(1)
                         {
                             fill: none;
-                            stroke: #191923;
+                            stroke: var(--base);
                             stroke-width: 3.8;
                         }
 
@@ -194,7 +195,7 @@
 
                         & text
                         {
-                            fill: #8c8c8e;
+                            fill: var(--color-base-text);
                             font-size: 0.6em;
                             text-anchor: middle;
                         }
@@ -221,14 +222,14 @@
 
                     & span:first-child
                     {
-                        color: #fafafc;
+                        color: var(--color-base-text-bold);
                         font-weight: 500;
                         font-size: 1.2rem;
                     }
 
                     & span:last-child
                     {
-                        color: #8c8c8e;
+                        color: var(--color-base-text);
                     }
                 }
 
@@ -239,14 +240,14 @@
                     height: 0.5rem;
                     width: 100%;
                     border-radius: 5rem;
-                    background-color: #191923;
+                    background-color: var(--base);
 
                     &Active
                     {
                         position: absolute;
                         border-radius: 5rem;
                         height: 95%;
-                        background-color: #ffc107;
+                        background-color: var(--color-primary);
                     }
                 }
             }
@@ -268,7 +269,7 @@
 
                 & svg
                 {
-                    fill: #ffc107;
+                    fill: var(--color-primary);
                     width: 2rem;
                     height: 2rem;
                     margin-right: 1rem;
@@ -277,7 +278,7 @@
                 & span
                 {
                     font-size: 1.2rem;
-                    color: #8c8c8e;
+                    color: var(--color-base-text);
                 }
             }
         }
@@ -292,7 +293,7 @@
                 display: flex;
                 align-items: center;
 
-                color: #8c8c8e;
+                color: var(--color-base-text);
                 font-size: 1.2rem;
                 font-weight: 400;
                 transition: all 0.4s ease-out;
@@ -302,13 +303,13 @@
             &:hover svg,
             &:active
             {
-                color: #fafafc;
-                fill: #fafafc;
+                color: var(--color-base-text-bold);
+                fill: var(--color-base-text-bold);
             }
 
             & svg
             {
-                fill: #8c8c8e;
+                fill: var(--color-base-text);
                 width: 2rem;
                 height: 2rem;
                 margin-left: 0.8rem;
@@ -319,7 +320,7 @@
 
     &Footer
     {
-        background: linear-gradient(159deg, rgb(37 37 50 / 98%) 0%, rgb(35 35 45 / 98%) 100%);
+        background: var(--base-darker);
 
         display: flex;
         align-items: center;
@@ -327,14 +328,14 @@
 
         & svg
         {
-            fill: #8c8c8e;
+            fill: var(--color-base-text);
             width: 1.4rem;
             height: 1.4rem;
             transition: all 0.4s ease-out;
 
             &:hover
             {
-                fill: #fafafc;
+                fill: var(--color-base-text-bold);
             }
         }
     }

@@ -6,8 +6,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    background: #202029;
-    box-shadow: 0 0.3rem 0.8rem 0 rgb(15 15 20 / 20%);
+    background: var(--base);
 
     &::-webkit-scrollbar
     {
@@ -16,15 +15,7 @@
 
     &Background
     {
-        background-image:
-            linear-gradient(
-                180deg,
-                rgb(30 30 40 / 93%) 0%,
-                rgb(30 30 40 / 96%) 70%,
-                rgb(30 30 40 / 99%) 80%,
-                #1e1e28 100%
-            ),
-            url('/images/background.jpg');
+        background-image: var(--base-gradiant-image-2);
         background-position: center;
         background-size: cover;
         width: 100%;
