@@ -6,7 +6,8 @@ const nextConfig =
     images:
     {
         domains: ['avatars.githubusercontent.com'],
-        loader: 'akamai'
+        loader: 'akamai',
+        path: '/images'
     },
     ...nextTranslate(),
     reactStrictMode: true,
