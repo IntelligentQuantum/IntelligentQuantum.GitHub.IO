@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
+import classnames from 'classnames';
 
 import { skills } from '../../../data/skills.data';
 import { libraries } from '../../../data/libraries.data';
@@ -47,7 +48,7 @@ const Aside = () =>
                         {
                             return (
                                 <Link key={locale} href={router.asPath} locale={locale} >
-                                    <a className={styles.asideInformationWebLanguagesOption}>{locale.toUpperCase()}</a>
+                                    <a className={classnames([styles.asideInformationWebLanguagesOption, [`${ locale === router.locale ? styles.asideInformationWebLanguagesOptionActive : null }`]])}>{locale.toUpperCase()}</a>
                                 </Link>
                             );
                         })
