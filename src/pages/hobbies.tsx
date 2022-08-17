@@ -1,8 +1,9 @@
-import axios from 'axios';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { v4 as uuidV4 } from 'uuid';
 import React, { Fragment } from 'react';
+
+import FootballService from '../lib/football';
 
 import type { IHobby } from '../interfaces/hobby';
 import type { IPlayer } from '../interfaces/player';
@@ -57,25 +58,23 @@ const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
     );
 };
 
-export async function getStaticProps()
+export async function git()
 {
     try
     {
-        const { data: messi } = await axios.get('/football/player/lionel-messi/28003');
-        const { data: griezmann } = await axios.get('/football/player/antoine-griezmann/125781');
-        const { data: torres } = await axios.get('/football/player/ferran-torres/398184');
+        const footballService = new FootballService();
 
-        if (!messi.player || !griezmann.player || !torres.player)
-        {
-            return {
-                props: { players: [] }
-            };
-        }
+        const { player: messi } = await footballService.Player('lionel-messi', '28003');
+        const { player: griezmann } = await footballService.Player('antoine-griezmann', '125781');
+        const { player: torres } = await footballService.Player('ferran-torres', '398184');
+
+        if (!messi || !griezmann || !torres)
+            return { props: { players: [] }};
 
         return {
             props:
                 {
-                    players: [messi.player, griezmann.player, torres.player]
+                    players: [messi, griezmann, torres]
                 },
             revalidate: 3600
         };

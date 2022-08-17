@@ -1,11 +1,8 @@
-import axios from 'axios';
 import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-import type { IRepository } from '../../../interfaces/repository';
-
 import rateLimit from '../../../lib/rate-limit';
-import Contact from '../../contact';
+import RepositoryService from '../../../lib/repositories';
 
 const limiter = rateLimit(
     {
@@ -24,6 +21,8 @@ const Repositories = async(request: NextApiRequest, response: NextApiResponse) =
 
     const { method } = request;
 
+    const repositoryService = new RepositoryService();
+
     switch (method)
     {
         case 'GET':
@@ -32,31 +31,9 @@ const Repositories = async(request: NextApiRequest, response: NextApiResponse) =
             {
                 await limiter.check(response, 10, 'CACHE_TOKEN');
 
-                const { data } = await axios.get(
-                    'https://api.github.com/users/im-parsa/repos',
-                    {
-                        headers:
-                            {
-                                Authorization: `token ${ process.env.GITHUB_ACCESS_TOKEN }`
-                            }
-                    });
+                const { items } = await repositoryService.GET();
 
-                response.status(200).json(
-                    {
-                        status: 'success',
-                        items:
-                        [
-                            ...data
-                                .filter((repo: IRepository) =>
-                                {
-                                    return repo?.stargazers_count >= 10;
-                                })
-                                .sort((firstRepo: IRepository, secondRepo: IRepository) =>
-                                {
-                                    return secondRepo?.stargazers_count - firstRepo?.stargazers_count;
-                                })
-                        ]
-                    });
+                response.status(200).json({ status: 'success', items });
             }
             catch (error)
             {

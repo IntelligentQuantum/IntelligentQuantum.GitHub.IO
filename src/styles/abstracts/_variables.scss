@@ -23,7 +23,7 @@ html[data-theme="dark"]
             rgb(12 12 12 /  80%) 80%,
             rgb(12 12 12 / 85%) 90%
         ),
-        url("../../../public/static/images/background_dark.gif") center;
+        url("../../../public/static/images/background-dark.gif") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -32,7 +32,7 @@ html[data-theme="dark"]
             rgb(0 0 0 / 90%) 80%,
             #000 100%
         ),
-        url("../../../public/static/images/background_dark-2.jpg");
+        url("../../../public/static/images/background-dark-2.png");
     --base-gradiant-image-football:
         radial-gradient(
             rgb(0 0 0 / 50%) 0%,
@@ -123,7 +123,7 @@ html[data-theme="dim"]
             rgb(70 70 88 / 75%) 80%,
             rgb(64 64 82 / 80%) 90%
         ),
-        url("../../../public/static/images/background_dim.jpg") center;
+        url("../../../public/static/images/background-dim.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -132,7 +132,7 @@ html[data-theme="dim"]
             rgb(49 53 66) 80%,
             rgb(55 59 73) 100%
         ),
-        url("../../../public/static/images/background_dim-2.jpg");
+        url("../../../public/static/images/background-dim-2.jpg");
     --base-gradiant-image-football:
         radial-gradient(
             rgb(44 47 59 / 50%) 0%,
@@ -224,7 +224,7 @@ html[data-theme="light"]
             rgb(239 241 245 / 70%) 70%,
             rgb(255 255 255 / 70%) 90%
         ),
-        url("../../../public/static/images/background_dim.jpg") center;
+        url("../../../public/static/images/background-dim.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -233,7 +233,7 @@ html[data-theme="light"]
             rgb(218 223 229 / 95%) 80%,
             rgb(231 233 243) 100%
         ),
-        url("../../../public/static/images/background_dim-2.jpg");
+        url("../../../public/static/images/background-dim-2.jpg");
     --base-gradiant-image-football:
         radial-gradient(
             rgb(235 236 241 / 50%) 0%,

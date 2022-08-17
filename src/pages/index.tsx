@@ -1,4 +1,3 @@
-import axios from 'axios';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,6 +7,9 @@ import CountUp from 'react-countup';
 import { v4 as uuidV4 } from 'uuid';
 import React, { Fragment } from 'react';
 import reactHtmlParser from 'html-react-parser';
+
+import RepositoryService from '../lib/repositories';
+import OrganizationService from '../lib/organizations';
 
 import type { IService } from '../interfaces/service';
 import type { IContent } from '../interfaces/content';
@@ -238,19 +240,18 @@ export async function getStaticProps()
 {
     try
     {
-        const { data: repositories } = await axios.get('/github/repositories');
-        const { data: organizations } = await axios.get('/github/organizations');
+        const repositoryService = new RepositoryService();
+        const organizationService = new OrganizationService();
+
+        const { items: repositories } = await repositoryService.GET();
+        const { items: organizations } = await organizationService.GET();
 
         if (!repositories || !organizations)
             return { props: { repositories: [], organizations: [] }};
 
         return {
-            props:
-                {
-                    repositories: repositories.items,
-                    organizations: organizations.items
-                },
-            revalidate: 3600
+            props: { repositories, organizations },
+            revalidate: 86400
         };
     }
     catch (error)

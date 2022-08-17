@@ -1,10 +1,8 @@
-import axios from 'axios';
 import NextCors from 'nextjs-cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-import type { IOrganization } from '../../../interfaces/organization';
-
 import rateLimit from '../../../lib/rate-limit';
+import OrganizationService from '../../../lib/organizations';
 
 const limiter = rateLimit(
     {
@@ -23,6 +21,8 @@ const Organizations = async(request: NextApiRequest, response: NextApiResponse) 
 
     const { method } = request;
 
+    const organizationService = new OrganizationService();
+
     switch (method)
     {
         case 'GET':
@@ -31,27 +31,9 @@ const Organizations = async(request: NextApiRequest, response: NextApiResponse) 
             {
                 await limiter.check(response, 10, 'CACHE_TOKEN');
 
-                const { data } = await axios.get(
-                    'https://api.github.com/users/im-parsa/orgs',
-                    {
-                        headers:
-                            {
-                                Authorization: `token ${ process.env.GITHUB_ACCESS_TOKEN }`
-                            }
-                    });
+                const { items } = await organizationService.GET();
 
-                response.status(200).json(
-                    {
-                        status: 'success',
-                        items:
-                            [
-                                ...data
-                                    .filter((organization: IOrganization) =>
-                                    {
-                                        return organization?.login !== 'HAGH-Team';
-                                    })
-                            ]
-                    });
+                response.status(200).json({ status: 'success', items });
             }
             catch (error)
             {

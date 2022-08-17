@@ -13,8 +13,6 @@ const TechnologyCard = (props: { index: number, technology: { title: string, ico
                         src={ props.technology.icon }
                         alt={ props.technology.title + ' Logo' }
                         layout='fill'
-                        width={30}
-                        height={30}
                     />
                 </span>
             </li>

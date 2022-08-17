@@ -10,15 +10,11 @@ const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.compon
 const ServiceCard = (props: { text: string, service: IService }) =>
     (
         <div className={stylesHome.homeServicesContent}>
-            <h3>
-                { props.service.title }
-            </h3>
-            <h5>
-                { props.service.description }
-            </h5>
+            <h3>{ props.service.title }</h3>
+            <h5>{ props.service.description }</h5>
             <ButtonSecondary
                 link='/contact'
-                text={props.text}
+                text={ props.text }
             />
         </div>
     );
