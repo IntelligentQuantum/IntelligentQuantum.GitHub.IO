@@ -14,6 +14,7 @@ export interface IContent
             back_end: [{ icon: string, title: string }]
             cross_platform: [{ icon: string, title: string }]
         },
+    descriptions: string[],
     about_me: string,
     my_name: string,
     my_skills: string[],
@@ -37,10 +38,10 @@ export interface IContent
     telegram: string,
     email: string,
     gmail: string,
-    chmail: string,
+    protonmail: string,
     my_email: string,
     my_gmail: string,
-    my_chmail: string,
+    my_protonmail: string,
     name: string,
     message: string,
     residence: string,

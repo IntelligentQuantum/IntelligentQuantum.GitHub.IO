@@ -1,12 +1,12 @@
 import axios from 'axios';
-import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
+import { v4 as uuidV4 } from 'uuid';
+import React, { Fragment } from 'react';
 import reactHtmlParser from 'html-react-parser';
 
 import type { IService } from '../interfaces/service';
@@ -32,9 +32,10 @@ const OrganizationsList = dynamic(() => import('../components/lists/organization
 const Home = (props: { content: IContent, repositories: IRepository[], organizations: IOrganization[] }) =>
 {
     return (
-        <>
+        <Fragment>
             <Head>
-                <title>Parsa Firoozi &mdash; Full-Stack Developer & Graphic Designer</title>
+                <title>{ props.content.my_name } &mdash; { props.content.my_skills.join(' & ') }</title>
+                <meta name='description' content={ props.content.descriptions[0] }/>
             </Head>
 
             <section className={stylesHome.home}>
@@ -110,7 +111,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                             {
                                 props.content.about_me.split('NEXT_LINE').map((paragraph: string, index: number) =>
                                     (
-                                        <h2 key={ nanoid() } className={'paragraph' + (index === 0 ? ' first-letter' : ' text-indent') + (props.content.dir === 'rtl' ? ' text-indent' : '')}>
+                                        <h2 key={ uuidV4() } className={'paragraph' + (index === 0 ? ' first-letter' : ' text-indent') + (props.content.dir === 'rtl' ? ' text-indent' : '')}>
                                             { reactHtmlParser(index === 0 && props.content.dir === 'rtl'
                                                 ? ' &nbsp;' + paragraph
                                                 : paragraph
@@ -134,7 +135,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                     {
                                         props.content.technologies.front_end.map((technology: { title: string, icon: string }, index: number) =>
                                             (
-                                                <TooltipPrimary key={ nanoid() } content={ technology.title }>
+                                                <TooltipPrimary key={ uuidV4() } content={ technology.title }>
                                                     <li>
                                                         <span>
                                                             <Image
@@ -162,7 +163,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                         props.content.technologies.back_end.map((technology: { title: string, icon: string }, index: number) =>
                                             (
                                                 <TechnologyCard
-                                                    key={ nanoid() }
+                                                    key={ uuidV4() }
                                                     index={ index }
                                                     technology={ technology }
                                                 />
@@ -183,7 +184,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                         props.content.technologies.cross_platform.map((technology: { title: string, icon: string }, index: number) =>
                                             (
                                                 <TechnologyCard
-                                                    key={ nanoid() }
+                                                    key={ uuidV4() }
                                                     index={ index }
                                                     technology={ technology }
                                                 />
@@ -201,7 +202,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                         {
                             props.content.services.map((service: IService) =>
                                 <ServiceCard
-                                    key={ service.id }
+                                    key={ uuidV4() }
                                     service={ service }
                                     text={ props.content.order_now }
                                 />
@@ -211,44 +212,51 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                 </ScrollMotion>
 
                 <ScrollMotion>
-                    <h4 className='heading'>{props.content.titles[7]}</h4>
+                    <h4 className='heading'>{ props.content.titles[7] }</h4>
                     {
                         props.content.dir === 'rtl'
                             ?
-                            <>
+                            <Fragment>
                                 <RepositoriesList dir='rtl' repositories={ props.repositories }/>
 
                                 <OrganizationsList dir='rtl' organizations={ props.organizations }/>
-                            </>
+                            </Fragment>
                             :
-                            <>
-                                <RepositoriesList repositories={ props.repositories }/>
+                            <Fragment>
+                                <RepositoriesList dir='ltr' repositories={ props.repositories }/>
 
-                                <OrganizationsList organizations={ props.organizations }/>
-                            </>
+                                <OrganizationsList dir='ltr' organizations={ props.organizations }/>
+                            </Fragment>
                     }
                 </ScrollMotion>
             </section>
-        </>
+        </Fragment>
     );
 };
 
 export async function getStaticProps()
 {
-    const { data: repositories } = await axios.get('/github/repositories');
-    const { data: organizations } = await axios.get('/github/organizations');
+    try
+    {
+        const { data: repositories } = await axios.get('/github/repositories');
+        const { data: organizations } = await axios.get('/github/organizations');
 
-    if (!repositories || !organizations)
-        return { props: { repositories: [], organizations: {} }};
+        if (!repositories || !organizations)
+            return { props: { repositories: [], organizations: [] }};
 
-    return {
-        props:
-            {
-                repositories: repositories.items,
-                organizations: organizations.items
-            },
-        revalidate: 86400
-    };
-};
+        return {
+            props:
+                {
+                    repositories: repositories.items,
+                    organizations: organizations.items
+                },
+            revalidate: 3600
+        };
+    }
+    catch (error)
+    {
+        return { props: { repositories: [], organizations: [] }};
+    }
+}
 
 export default Home;

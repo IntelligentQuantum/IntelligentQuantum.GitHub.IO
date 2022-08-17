@@ -1,8 +1,8 @@
 import axios from 'axios';
-import React from 'react';
 import Head from 'next/head';
-import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
+import { v4 as uuidV4 } from 'uuid';
+import React, { Fragment } from 'react';
 
 import type { IHobby } from '../interfaces/hobby';
 import type { IPlayer } from '../interfaces/player';
@@ -16,7 +16,7 @@ const ScrollMotion = dynamic(() => import('../components/animations/scroll.compo
 const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
 {
     return (
-        <>
+        <Fragment>
             <Head>
                 <title> Parsa Firoozi &mdash; Hobbies </title>
 
@@ -44,7 +44,7 @@ const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
                     {
                         props.content.my_hobbies.map((hobby: IHobby) =>
                             <HobbyCard
-                                key={ nanoid() }
+                                key={ uuidV4() }
                                 hobby={ hobby }
                                 players={ props.players }
                                 content={ props.content }
@@ -53,30 +53,37 @@ const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
                     }
                 </ScrollMotion>
             </section>
-        </>
+        </Fragment>
     );
 };
 
 export async function getStaticProps()
 {
-    const { data: messi } = await axios.get('/football/player/lionel-messi/28003');
-    const { data: griezmann } = await axios.get('/football/player/antoine-griezmann/125781');
-    const { data: torres } = await axios.get('/football/player/ferran-torres/398184');
-
-    if (!messi.player || !griezmann.player || !torres.player)
+    try
     {
+        const { data: messi } = await axios.get('/football/player/lionel-messi/28003');
+        const { data: griezmann } = await axios.get('/football/player/antoine-griezmann/125781');
+        const { data: torres } = await axios.get('/football/player/ferran-torres/398184');
+
+        if (!messi.player || !griezmann.player || !torres.player)
+        {
+            return {
+                props: { players: [] }
+            };
+        }
+
         return {
-            props: { players: [] }
+            props:
+                {
+                    players: [messi.player, griezmann.player, torres.player]
+                },
+            revalidate: 3600
         };
     }
-
-    return {
-        props:
-            {
-                players: [messi.player, griezmann.player, torres.player]
-            },
-        revalidate: 86400
-    };
+    catch (error)
+    {
+        return { props: { players: [] }};
+    }
 }
 
 export default Hobbies;

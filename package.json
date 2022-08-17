@@ -11,7 +11,7 @@
     "scripts": {
         "dev": "next dev",
         "export": "next export",
-        "build": "next build",
+        "build": "NODE_OPTIONS=--max_old_space_size=512 next build",
         "next-start": "next start",
         "start": "NODE_ENV=production node server.js",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
@@ -43,6 +43,7 @@
         "postcss-scss": "^4.0.4",
         "react": "^18.2.0",
         "react-animations": "^1.0.0",
+        "react-circular-progressbar": "^2.1.0",
         "react-countup": "^6.2.0",
         "react-dom": "18.0.0",
         "react-icons": "^4.3.1",

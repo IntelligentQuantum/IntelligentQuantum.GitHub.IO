@@ -3,9 +3,10 @@ import React from 'react';
 import type { IRepository } from '../../interfaces/repository';
 
 import stylesHome from '../../styles/pages/home.module.scss';
-import Star from '../../../public/static/icons/icon-github_star.svg';
-import Fork from '../../../public/static/icons/icon-github_fork.svg';
-import Watch from '../../../public/static/icons/icon-github_watch.svg';
+
+import { BiStar } from 'react-icons/bi';
+import { AiOutlineEye } from 'react-icons/ai';
+import { GoRepoForked } from 'react-icons/go';
 
 const RepositoriesCard = (props: { repository: IRepository }) =>
     (
@@ -14,27 +15,25 @@ const RepositoriesCard = (props: { repository: IRepository }) =>
                 <a href={props?.repository?.html_url} target='_blank' rel="noreferrer">
                     { props?.repository?.name }
                 </a>
-                <span>
-                    { props?.repository?.description }
-                </span>
+                <span>{ props?.repository?.description }</span>
             </div>
 
             <ul className={stylesHome.homeRepositoriesContentStats}>
                 <li>
                     <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/stargazers`}>
-                        <Star />
+                        <BiStar />
                         { props?.repository?.stargazers_count }
                     </a>
                 </li>
                 <li>
                     <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/watchers`}>
-                        <Watch />
+                        <AiOutlineEye />
                         { props?.repository?.watchers_count }
                     </a>
                 </li>
                 <li>
                     <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/network/members`}>
-                        <Fork />
+                        <GoRepoForked />
                         { props?.repository?.forks_count }
                     </a>
                 </li>

@@ -14,7 +14,7 @@ const Blog = (props: { content: IContent }) =>
     (
         <>
             <Head>
-                <title>Parsa Firoozi &mdash; Educational and research blogs</title>
+                <title>Parsa Firoozi &mdash; Educational and Research Blogs</title>
 
                 <meta charSet='UTF-8' />
                 <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
@@ -23,26 +23,24 @@ const Blog = (props: { content: IContent }) =>
 
                 <meta name='Classification' content='Blogs'/>
                 <meta name='subject' content='Blogs'/>
-                <meta name='description' content='Parsa Firoozi Blogs'/>
-                <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Blogs'/>
+                <meta name='description' content='Parsa Firoozi Educational and Research Blogs'/>
+                <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Educational and Research Blogs, Blogs'/>
                 <meta name='author' content='Parsa Firoozi'/>
 
                 <meta property='og:type' content='website'/>
                 <meta property='og:url' content='https://parsa-firoozi.ir/blogs'/>
                 <meta property='og:title' content='Parsa Firoozi'/>
-                <meta property='og:description' content='Parsa Firoozi Blogs'/>
+                <meta property='og:description' content='Parsa Firoozi Educational and Research Blogs'/>
                 <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                 <meta property='twitter:card' content='summary'/>
                 <meta property='twitter:url' content='https://parsa-firoozi.ir/blogs'/>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
-                <meta property='twitter:description' content='Parsa Firoozi Blogs'/>
+                <meta property='twitter:description' content='Parsa Firoozi Educational and Research Blogs'/>
             </Head>
 
             <section className={stylesBlog.blogSection}>
-                <h4 className='heading'>
-                    {props?.content?.titles[5]}
-                </h4>
+                <h4 className='heading'>{ props?.content?.titles[5] }</h4>
                 <ScrollMotion className={stylesBlog.blogItems}>
                     {
                         props?.content?.my_blogs?.map((blog: IBlog) =>

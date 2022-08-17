@@ -70,7 +70,7 @@ const BlogView = (props: { content: IContent }) =>
                     ?
                     <>
                         <Head>
-                            <title>Parsa Firoozi &mdash; {blog.name || ''}</title>
+                            <title>Parsa Firoozi &mdash; { blog.name }</title>
 
                             <meta charSet='UTF-8' />
                             <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
@@ -97,15 +97,9 @@ const BlogView = (props: { content: IContent }) =>
 
                         <section className={stylesBlog.blog}>
                             <div className={stylesBlog.blogHeader}>
-                                <h2>
-                                    {blog.name.split('_').join(' ').charAt(0).toUpperCase() + blog.name.split('_').join(' ').slice(1)}
-                                </h2>
-
-                                <span>
-                                    {blog.category}
-                                </span>
+                                <h2>{ blog.name.split('_').join(' ').charAt(0).toUpperCase() + blog.name.split('_').join(' ').slice(1) }</h2>
+                                <span>{ blog.category }</span>
                             </div>
-
                             <ItemMotion index={ 0 }  className={stylesBlog.blogViewImage}>
                                 <Image
                                     src={ blog.image }
@@ -117,49 +111,30 @@ const BlogView = (props: { content: IContent }) =>
                             <div className={stylesBlog.blogView}>
                                 <ItemMotion index={ 2 } className={stylesBlog.blogViewCardHeader}>
                                     <span>
-                                        <p>
-                                            {props?.content?.id}:
-                                        </p>
-                                        {blog.id}
+                                        <p>{ props?.content?.id }:</p>
+                                        { blog.id }
                                     </span>
-
                                     <span>
-                                        <p>
-                                            {props?.content?.author}:
-                                        </p>
+                                        <p>{ props?.content?.author }:</p>
                                         {props.content.my_name}
                                     </span>
-
                                     <span>
-                                        <p>
-                                            {props?.content?.source}:
-                                        </p>
-                                        {blog.source}
+                                        <p>{ props?.content?.source }:</p>
+                                        { blog.source }
                                     </span>
-
                                     <span>
-                                        <p>
-                                            {props?.content?.created_at}:
-                                        </p>
-                                        {moment(Number(blog.created_at)).format('MMM Do YY')}
+                                        <p>{ props?.content?.created_at }:</p>
+                                        { moment(Number(blog.created_at)).format('MMM Do YY') }
                                     </span>
-
                                     <span>
-                                        <p>
-                                            {props?.content?.category}:
-                                        </p>
-                                        {blog.category}
+                                        <p>{ props?.content?.category }:</p>
+                                        { blog.category }
                                     </span>
                                 </ItemMotion>
 
                                 <ItemMotion index={ 1 } className={stylesBlog.blogViewCard}>
-                                    <h3>
-                                        {blog.description}
-                                    </h3>
-
-                                    <article>
-                                        {reactHtmlParser(blog.content)}
-                                    </article>
+                                    <h3>{ blog.description }</h3>
+                                    <article>{ reactHtmlParser(blog.content) }</article>
                                 </ItemMotion>
                             </div>
                         </section>

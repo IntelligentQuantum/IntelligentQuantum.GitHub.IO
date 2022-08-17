@@ -4,7 +4,7 @@ import validator from 'validator';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import { motion } from 'framer-motion';
-import React, { useState, ChangeEvent } from 'react';
+import React, { useState, ChangeEvent, Fragment } from 'react';
 import { BsEnvelope, BsPerson, BsTextParagraph } from 'react-icons/bs';
 
 import type { IContent } from '../interfaces/content';
@@ -63,7 +63,7 @@ const Contact = (props: { content: IContent }) =>
     };
 
     return (
-        <>
+        <Fragment>
             <Head>
                 <title>Parsa Firoozi &mdash; Contact with me</title>
 
@@ -127,8 +127,8 @@ const Contact = (props: { content: IContent }) =>
                             </li>
                             <li>
                                 <h3>
-                                    <span>{ props.content.chmail }: </span>
-                                    { props.content.my_chmail }
+                                    <span>{ props.content.protonmail }: </span>
+                                    { props.content.my_protonmail }
                                 </h3>
                             </li>
                         </ul>
@@ -255,7 +255,7 @@ const Contact = (props: { content: IContent }) =>
                     </div>
                 </ScrollMotion>
             </section>
-        </>
+        </Fragment>
     );
 };
 

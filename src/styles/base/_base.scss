@@ -9,8 +9,9 @@
 
 html
 {
-    max-width: 200rem;
-    font-size: 62.5%;
+    display: flex;
+
+    font-size: 65%;
     scroll-behavior: smooth;
     letter-spacing: 0.5px;
     font-family: Poppins, sans-serif;
@@ -18,9 +19,12 @@ html
 
 body
 {
+    position: relative;
+
+    margin: 0 auto;
     box-sizing: border-box;
     font-weight: 300;
-    background-color: #191923;
+    background-color: var(--base);
     color: var(--color-base-text);
 }
 
@@ -32,7 +36,7 @@ h4, h5, h6
 
 html[data-language="fa"]
 {
-    .paragraph.first-letter:first-letter
+    .paragraph.first-letter::first-letter
     {
         font-size: 100%;
         padding: 0;
@@ -70,19 +74,27 @@ html[data-language="fa"]
     }
 }
 
-html[data-theme='dark']
+html[data-theme="dark"]
 {
-    font-family: 'VT323', monospace;
+    font-family: "VT323", monospace;
 
-    h1, h3, h4, a
+    h1,
+    h3,
+    h4,
+    a
     {
-        text-shadow: 0 0 5px rgba(125,225,125,0.5), 0 0 15px rgba(125,250,125,1);
+        text-shadow: 0 0 0.5rem rgb(125 225 125 / 50%), 0 0 1.5rem rgb(125 250 125 / 100%);
+
+        & svg
+        {
+            filter: drop-shadow(0 0 0.25rem rgb(125 225 125 / 50%));
+        }
     }
 
     .shadow
     {
-        color: rgba(153, 250, 153, 0.75) !important;
-        text-shadow: 0 0 5px rgba(125,225,125,0.5), 0 0 15px rgba(125,250,125,1) !important;
+        color: rgb(153 250 153 / 75%) !important;
+        text-shadow: 0 0 0.5rem rgb(125 225 125 / 50%), 0 0 1.5rem rgb(125 250 125 / 100%) !important;
     }
 }
 
@@ -96,15 +108,24 @@ li
     list-style: none;
 }
 
-.container
+#__next
 {
     display: grid;
     grid-template-columns:
         [aside-start] 30rem
-        [aside-end main-start] calc(100vw - 38rem)
-        [main-end nav-start] 0 [nav-end];
+        [aside-end main-start] minmax(calc(100vw - 38rem), 200rem)
+        [main-end];
     box-sizing: border-box;
     height: 100vh;
+    width: 100%;
+
+    @media only screen and (min-width: 2000px)
+    {
+        grid-template-columns:
+            [aside-start] 30rem
+            [aside-end main-start] minmax(calc(200rem - 38rem), 200rem)
+            [main-end];
+    }
 
     @media only screen and (max-width: 1000px)
     {
@@ -114,7 +135,7 @@ li
 
 @keyframes pulse
 {
-    0% { opacity: 0 }
-    50% { opacity: 1 }
-    100% { opacity: 0 }
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import classnames from 'classnames';
 import { GiMoonBats } from 'react-icons/gi';
+import { FaEllipsisV } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
 
@@ -9,8 +10,6 @@ import type { ITheme } from '../../../types/theme';
 import type { IContent } from '../../../interfaces/content';
 
 import stylesNav from '../../../styles/components/nav.module.scss';
-
-import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
 
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setOpenNavbar } from '../../../app/navbar/navbar.actions';
@@ -32,7 +31,7 @@ const Navbar = (props: { content: IContent, theme?: ITheme, handleTheme: (theme?
                 {
                     dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!activeFilter));
                 }}>
-                    <Ellipsis />
+                    <FaEllipsisV />
                 </div>
 
                 <div className={stylesNav.navMobileHamburger} onClick={() =>

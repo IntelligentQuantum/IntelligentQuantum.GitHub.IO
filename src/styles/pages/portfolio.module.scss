@@ -69,7 +69,7 @@
 
         @media only screen and (max-width: 1000px)
         {
-            padding: 0 1.5rem;
+            padding: 0 .5rem;
         }
     }
 
@@ -116,13 +116,13 @@
             }
         }
 
-            & img
+        & img
             {
-                object-fit: cover;
-                filter: var(--image-filter);
-                object-position: center;
-                transition: 0.4s ease-in-out;
-            }
+            object-fit: cover;
+            filter: var(--image-filter);
+            object-position: center;
+            transition: 0.4s ease-in-out;
+        }
 
         & i
         {

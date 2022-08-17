@@ -8,7 +8,7 @@
 
     @media only screen and (max-width: 1000px)
     {
-        padding: 1.5rem;
+        padding: .5rem;
     }
 
     &Header
@@ -32,19 +32,20 @@
 
         @media only screen and (max-width: 1000px)
         {
-            margin-top: 2rem;
             flex-direction: column;
             gap: 1.5rem;
+
+            margin-top: 2rem;
         }
     }
 
     &Items
     {
-        padding: 0 3rem;
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
+
+        padding: 0 3rem;
 
         @media only screen and (max-width: 1400px)
         {
@@ -53,7 +54,7 @@
 
         @media only screen and (max-width: 1000px)
         {
-            padding: 0 1.5rem;
+            padding: 0 .5rem;
         }
     }
 
@@ -224,7 +225,7 @@
 
             & span
             {
-                transition: all .2s;
+                transition: all 0.2s;
                 filter: brightness(85%) blur(0);
 
                 &:hover
@@ -311,7 +312,7 @@
 
             @media only screen and (max-width: 1000px)
             {
-                padding: 1.5rem;
+                padding: .5rem;
             }
         }
     }

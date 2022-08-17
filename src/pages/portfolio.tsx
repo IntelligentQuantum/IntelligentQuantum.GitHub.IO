@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { nanoid } from 'nanoid';
 import dynamic from 'next/dynamic';
-import React, { useState } from 'react';
+import { v4 as uuidV4 } from 'uuid';
+import React, { useState, Fragment } from 'react';
 
 import type { IContent } from '../interfaces/content';
 import type { IPortfolio } from '../interfaces/portfolio';
@@ -17,32 +17,30 @@ const Portfolio = (props: { content: IContent }) =>
     const [category, setCategory] = useState<string>('all');
 
     return (
-        <>
+        <Fragment>
             <Head>
-                <title>Parsa Firoozi &mdash; Resume and portfolio</title>
+                <title>Parsa Firoozi &mdash; Resume and Portfolio</title>
 
                 <meta name='Classification' content='Portfolio'/>
                 <meta name='subject' content='Portfolio'/>
-                <meta name='description' content='Parsa Firoozi Portfolio'/>
+                <meta name='description' content='Parsa Firoozi Resume and Portfolio'/>
                 <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Portfolio'/>
                 <meta name='author' content='Parsa Firoozi'/>
 
                 <meta property='og:type' content='website'/>
                 <meta property='og:url' content='https://parsa-firoozi.ir/portfolio'/>
                 <meta property='og:title' content='Parsa Firoozi'/>
-                <meta property='og:description' content='Parsa Firoozi Portfolio'/>
+                <meta property='og:description' content='Parsa Firoozi Resume and Portfolio'/>
                 <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                 <meta property='twitter:card' content='summary'/>
                 <meta property='twitter:url' content='https://parsa-firoozi.ir/portfolio'/>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
-                <meta property='twitter:description' content='Parsa Firoozi Portfolio'/>
+                <meta property='twitter:description' content='Parsa Firoozi Resume and Portfolio'/>
             </Head>
 
             <section className={stylesPortfolio.portfolio}>
-                <h4 className='heading'>
-                    {props.content.titles[6]}
-                </h4>
+                <h4 className='heading'>{ props.content.titles[6] }</h4>
 
                 <ScrollMotion>
                     <ul className='heading__small'>
@@ -71,7 +69,7 @@ const Portfolio = (props: { content: IContent }) =>
                                 category === 'all' || portfolio.tag === category
                                     ?
                                     <PortfolioCard
-                                        key={ nanoid() }
+                                        key={ uuidV4() }
                                         portfolio={ portfolio }
                                         text={ props.content.read_more }
                                     />
@@ -81,7 +79,7 @@ const Portfolio = (props: { content: IContent }) =>
                     }
                 </ScrollMotion>
             </section>
-        </>
+        </Fragment>
     );
 };
 

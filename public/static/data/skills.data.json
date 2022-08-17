@@ -1,35 +1,35 @@
 {
-    "skills":
-        [
-                {
-                    "id": 0,
-                    "name": "HTML",
-                    "progress": "95%"
-                },
-                {
-                    "id": 1,
-                    "name": "CSS",
-                    "progress": "95%"
-                },
-                {
-                    "id": 2,
-                    "name": "Javascript",
-                    "progress": "90%"
-                },
-                {
-                    "id": 3,
-                    "name": "Typescript",
-                    "progress": "85%"
-                },
-                {
-                    "id": 4,
-                    "name": "C++",
-                    "progress": "15%"
-                },
-                {
-                    "id": 5,
-                    "name": "PHP",
-                    "progress": "50%"
-                }
-        ]
+    "items":
+    [
+        {
+            "id": 0,
+            "name": "HTML",
+            "progress": "95%"
+        },
+        {
+            "id": 1,
+            "name": "CSS",
+            "progress": "95%"
+        },
+        {
+            "id": 2,
+            "name": "Javascript",
+            "progress": "90%"
+        },
+        {
+            "id": 3,
+            "name": "Typescript",
+            "progress": "85%"
+        },
+        {
+            "id": 4,
+            "name": "C++",
+            "progress": "15%"
+        },
+        {
+            "id": 5,
+            "name": "PHP",
+            "progress": "50%"
+        }
+    ]
 }

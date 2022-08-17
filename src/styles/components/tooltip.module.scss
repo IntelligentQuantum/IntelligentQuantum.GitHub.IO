@@ -9,7 +9,7 @@
     border-radius: calc(var(--border-radius)/2);
     background: var(--base);
     margin-bottom: 0.25rem;
-    box-shadow: 0 0 2rem .5rem var(--base);
+    box-shadow: 0 0 2rem 0.5rem var(--base);
 
     &::after
     {
@@ -19,30 +19,30 @@
         top: 100%;
         left: 50%;
 
-        margin-top: -.325rem;
-        width: .75rem;
-        height: .75rem;
+        margin-top: -0.325rem;
+        width: 0.75rem;
+        height: 0.75rem;
         border-radius: calc(var(--border-radius) / 2.5);
         background: var(--base);
         transform: rotate(45deg);
     }
 
-    &[data-placement='left']
+    &[data-placement="left"]
     {
         &::after
         {
             top: 40%;
-            right: -.3rem;
+            right: -0.3rem;
             left: auto;
         }
     }
 
-    &[data-placement='right']
+    &[data-placement="right"]
     {
         &::after
         {
             top: 40%;
-            left: -.3rem;
+            left: -0.3rem;
             right: auto;
         }
     }

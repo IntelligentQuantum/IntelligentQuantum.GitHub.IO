@@ -70,7 +70,7 @@ class MyDocument extends Document
                                     email: 'mailto:hello@parsa-firoozi.ir',
                                     image: 'https://parsa-firoozi.ir/static/images/im-parsa.png',
                                     jobTitle: 'Full-Stack Developer',
-                                    url: 'https://www.parsa-firoozi.ir'
+                                    url: 'https://parsa-firoozi.ir'
                                 }
                             )
                         }}

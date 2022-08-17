@@ -4,7 +4,7 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import { useDispatch, useSelector, Provider } from 'react-redux';
 
 import type { AppProps } from 'next/app';
@@ -53,7 +53,6 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
     const page = router.pathname.split('/')[1];
 
     const [theme, setTheme] = useState<ITheme>('dim');
-    const [language, setLanguage] = useState<ILanguages>('en');
 
     const alert = useSelector((state: any) => state.alert.statusAlert);
     const filter = useSelector((state: any) => state.filter.activeFilter);
@@ -82,29 +81,6 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
             }
         }
     };
-    const handleLanguage = (languageV?: ILanguages) =>
-    {
-        const storageTheme: string = localStorage.getItem('language') || 'eb';
-
-        if (languageV)
-        {
-            setLanguage(languageV);
-            localStorage.setItem('language', languageV);
-        }
-        else
-        {
-            if (storageTheme === 'en' || storageTheme === 'de' || storageTheme === 'fa')
-            {
-                setLanguage(storageTheme as ILanguages);
-                localStorage.setItem('language', storageTheme);
-            }
-            else
-            {
-                setLanguage('en');
-                localStorage.setItem('language', 'en');
-            }
-        }
-    };
 
     useEffect(() =>
     {
@@ -114,7 +90,6 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
     useEffect(() =>
     {
         handleTheme();
-        handleLanguage();
     });
 
     useEffect(() =>
@@ -131,15 +106,15 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
 
         if (htmlElement)
         {
-            htmlElement.setAttribute('lang', language);
+            htmlElement.setAttribute('lang', router.locale as string);
             htmlElement.setAttribute('data-theme', theme);
-            htmlElement.setAttribute('data-language', language);
-            htmlElement.setAttribute('dir', (language === 'fa' ? 'rtl' : 'ltr'));
+            htmlElement.setAttribute('data-language', router.locale as string);
+            htmlElement.setAttribute('dir', (router.locale === 'fa' ? 'rtl' : 'ltr'));
         }
-    }, [theme, language]);
+    }, [router.locale, theme]);
 
     return (
-        <>
+        <Fragment>
             <Head>
                 <title>Parsa Firoozi &mdash; Full-Stack Developer & Graphic Designer</title>
 
@@ -152,7 +127,7 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
                 <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
 
-                <meta name='language' content={ language }/>
+                <meta name='language' content={ router.locale }/>
                 <meta name='Classification' content='Portfolio'/>
                 <meta name='subject' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta name='description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
@@ -175,88 +150,85 @@ const AppComponents = ({ Component, pageProps }: CustomAppProps) =>
                 <meta property='twitter:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
             </Head>
 
-            <main className='container'>
-                {
-                    !alert.hidden
-                        ?
-                        <div className={classnames(stylesAlert.alert, stylesAlert['alert' + alert.type.charAt(0).toUpperCase() + alert.type.slice(1)])}>
-                            {alert.message}
-                        </div>
-                        :
-                        null
-                }
-                {
-                    filter
-                        ?
-                        <div
-                            className={stylesFilter.filter}
-                            onClick={() =>
-                            {
-                                dispatch(setOpenAside(false));
-                                dispatch(setOpenNavbar(false));
-                                dispatch(setActiveFilter(false));
-                            }}
-                        />
-                        : null
-                }
-                {
-                    imagePortfolio?.status
-                        ?
-                        <>
-                            <div className={classnames(stylesFilter.filter, stylesFilter.filterPlus, 'z-index__104')} onClick={() =>
-                            {
-                                dispatch(setImagePortfolio(false));
-                            }}/>
-                            <div className={stylesPortfolio.portfolioImage}>
-                                <nav>
-                                    <div className={stylesNav.navMobileHamburgerOpen} onClick={() =>
-                                    {
-                                        dispatch(setImagePortfolio(false));
-                                    }}>
-                                        <div className={stylesNav.navMobileHamburgerOpenLine}>&nbsp;</div>
-                                    </div>
-                                </nav>
-                                <Image
-                                    onClick={() =>
-                                    {
-                                        dispatch(setImagePortfolio(false));
-                                    }}
-                                    src={imagePortfolio.image}
-                                    alt={imagePortfolio.title}
-                                    layout='fill'
-                                />
-                            </div>
-                        </>
-                        :
-                        null
-                }
-
-                <Aside
-                    content={ data[language] as IContent }
-                    handleLanguage={ handleLanguage }
-                />
-
-                <Navbar
-                    mobile={ true }
-                    content={ data[language] as IContent }
-                    handleTheme={ handleTheme }
-                />
-
-                <Main content={ data[language] as IContent }>
-                    <Component
-                        content={ data[language]}
-                        { ...pageProps }
+            {
+                !alert.hidden
+                    ?
+                    <div className={classnames(stylesAlert.alert, stylesAlert['alert' + alert.type.charAt(0).toUpperCase() + alert.type.slice(1)])}>
+                        {alert.message}
+                    </div>
+                    :
+                    null
+            }
+            {
+                filter
+                    ?
+                    <div
+                        className={stylesFilter.filter}
+                        onClick={() =>
+                        {
+                            dispatch(setOpenAside(false));
+                            dispatch(setOpenNavbar(false));
+                            dispatch(setActiveFilter(false));
+                        }}
                     />
-                </Main>
+                    : null
+            }
+            {
+                imagePortfolio?.status
+                    ?
+                    <>
+                        <div className={classnames(stylesFilter.filter, stylesFilter.filterPlus, 'z-index__104')} onClick={() =>
+                        {
+                            dispatch(setImagePortfolio(false));
+                        }}/>
+                        <div className={stylesPortfolio.portfolioImage}>
+                            <nav>
+                                <div className={stylesNav.navMobileHamburgerOpen} onClick={() =>
+                                {
+                                    dispatch(setImagePortfolio(false));
+                                }}>
+                                    <div className={stylesNav.navMobileHamburgerOpenLine}>&nbsp;</div>
+                                </div>
+                            </nav>
+                            <Image
+                                onClick={() =>
+                                {
+                                    dispatch(setImagePortfolio(false));
+                                }}
+                                src={imagePortfolio.image}
+                                alt={imagePortfolio.title}
+                                layout='fill'
+                            />
+                        </div>
+                    </>
+                    :
+                    null
+            }
 
-                <Navbar
-                    theme={ theme }
-                    content={ data[language] as IContent }
-                    handleTheme={ handleTheme }
-                    page={ page === 'contact' || page === 'hobbies' || page === 'portfolio' || page === 'blogs' || page === 'home' ? page : 'home' }
+            <Aside
+                content={ data[router.locale as ILanguages] as IContent }
+            />
+
+            <Navbar
+                mobile={ true }
+                content={ data[router.locale as ILanguages] as IContent }
+                handleTheme={ handleTheme }
+            />
+
+            <Main content={ data[router.locale as ILanguages] as IContent }>
+                <Component
+                    content={ data[router.locale as ILanguages]}
+                    { ...pageProps }
                 />
-            </main>
-        </>
+            </Main>
+
+            <Navbar
+                theme={ theme }
+                content={ data[router.locale as ILanguages] as IContent }
+                handleTheme={ handleTheme }
+                page={ page === 'contact' || page === 'hobbies' || page === 'portfolio' || page === 'blogs' || page === 'home' ? page : 'home' }
+            />
+        </Fragment>
     );
 };
 

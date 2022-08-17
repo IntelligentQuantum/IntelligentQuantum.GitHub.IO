@@ -9,6 +9,10 @@
             "Full-Stack Developer",
             "Graphic Designer"
         ],
+        "descriptions":
+            [
+                "Parsa Firoozi Full-Stack Developer & Graphic Designer. Parsa Firoozi focuses on JavaScript-related technologies like Typescript, NodeJS and React. Parsa Firoozi is also an experienced graphic designer and proficient in Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro and Gimp software's."
+            ],
         "currency": "$",
         "typing_effect":
         [
@@ -83,7 +87,7 @@
                 }
             ]
         },
-        "about_me": "Parsa Firoozi is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big companies. NEXT_LINE He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native. NEXT_LINE He is also an experienced graphic designer and has done many activities on Instagram and YouTube. Parsa is proficient in Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro and Gimp softwares.",
+        "about_me": "Parsa Firoozi is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big companies. NEXT_LINE He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native. NEXT_LINE He is also an experienced graphic designer and has done many art works on Instagram and YouTube. Parsa is proficient in Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro and Gimp softwares.",
         "download_cv": "Download CV",
         "order_now": "Order Now",
         "source_code": "Source Code",
@@ -102,10 +106,10 @@
         "telegram": "Telegram",
         "email": "Email",
         "gmail": "Gmail",
-        "chmail": "Chmail",
+        "protonmail": "ProtonMail",
         "my_email": "hello@parsa-firoozi.ir",
         "my_gmail": "parsa.firoozi20@gmail.com",
-        "my_chmail": "parsafiroozi20@chmail.ir",
+        "my_protonmail": "hello_im_parsa@protonmail.com",
         "name": "Name",
         "message": "Message",
         "residence": "Residence",
@@ -442,6 +446,10 @@
             "Full-Stack-Entwickler",
             "Grafikdesigner"
         ],
+        "descriptions":
+        [
+            "Parsa Firoozi Full-Stack-Entwickler und Grafikdesigner. Parsa Firoozi konzentriert sich auf JavaScript-bezogene Technologien wie Typescript, NodeJS und React. Parsa Firoozi ist auch eine erfahrene Grafikdesignerin und beherrscht die Software Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro und Gimp."
+        ],
         "technologies":
         {
             "title": "Frameworks und Technologien",
@@ -524,10 +532,10 @@
         "telegram": "Telegram",
         "email": "Email",
         "gmail": "Gmail",
-        "chmail": "Chmail",
+        "protonmail": "ProtonMail",
         "my_email": "hello@parsa-firoozi.ir",
         "my_gmail": "parsa.firoozi20@gmail.com",
-        "my_chmail": "parsafiroozi20@chmail.ir",
+        "my_protonmail": "hello_im_parsa@protonmail.com",
         "name": "Name",
         "my_residence": "Iran",
         "my_city": "Shiraz",
@@ -875,6 +883,10 @@
             "توسعه دهنده فول-استک",
             "طراح گرافیک"
         ],
+        "descriptions":
+        [
+            "پارسا فیروزی برنامه نویس فول-استک و طراح گرافیک. پارسا فیروزی بر روی فناوری های مرتبط با جاوا اسکریپت مانند Typescript، NodeJS و React تمرکز دارد. پارسا فیروزی همچنین یک طراح گرافیک مجرب و مسلط به نرم افزارهای Adobe Photoshop، Adobe Illustrator، Adobe Premiere Pro و Gimp است."
+        ],
         "currency": "ریال",
         "typing_effect":
         [
@@ -966,10 +978,10 @@
         "telegram": "تلگرام",
         "email": "ایمیل",
         "gmail": "جیمیل",
-        "chmail": "چیمیل",
+        "protonmail": "پروتونمیل",
         "my_email": "hello@parsa-firoozi.ir",
         "my_gmail": "parsa.firoozi20@gmail.com",
-        "my_chmail": "parsafiroozi20@chmail.ir",
+        "my_protonmail": "hello_im_parsa@protonmail.com",
         "name": "نام",
         "message": "پیام",
         "explore_more": "پروژه ها",

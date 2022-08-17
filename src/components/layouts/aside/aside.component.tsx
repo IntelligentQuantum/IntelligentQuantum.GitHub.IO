@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { v4 as uuidV4 } from 'uuid';
 import classnames from 'classnames';
+import { useRouter } from 'next/router';
+import { FaEllipsisV } from 'react-icons/fa';
 import { BiCheck, BiDownload } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { BsGithub, BsInstagram, BsLinkedin, BsYoutube, BsTwitter, BsFacebook } from 'react-icons/bs';
 
-import { skills } from '../../../../public/static/data/skills.data.json';
-import { socials } from '../../../../public/static/data/socials.data.json';
-import { languages } from '../../../../public/static/data/languages.data.json';
-import { libraries } from '../../../../public/static/data/libraries.data.json';
+import skills from '../../../../public/static/data/skills.data.json';
+import socials from '../../../../public/static/data/socials.data.json';
+import languages from '../../../../public/static/data/languages.data.json';
+import libraries from '../../../../public/static/data/libraries.data.json';
 
 import type { ISkill } from '../../../interfaces/skill';
 import type { ISocial } from '../../../interfaces/social';
 import type { ILibrary } from '../../../interfaces/library';
 import type { IContent } from '../../../interfaces/content';
 import type { ILanguage } from '../../../interfaces/language';
-import type { ILanguages } from '../../../types/language';
 
 import { setOpenAside } from '../../../app/aside/aside.actions';
 import { setActiveFilter } from '../../../app/filter/filter.actions';
@@ -26,22 +28,22 @@ import 'react-circular-progressbar/dist/styles.css';
 import stylesAside from '../../../styles/components/aside.module.scss';
 
 import Profile from '../../../../public/static/images/im-parsa.png';
-import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
 
-const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguages) => void }) =>
+const Aside = (props: { content: IContent }) =>
 {
+    const router = useRouter();
     const dispatch = useDispatch();
 
     const openAside: boolean = useSelector((state: any) => state.aside.openAside);
 
     return (
-        <nav className={classnames(stylesAside.aside, 'z-index__101', (openAside ? stylesAside.aside__Open : null))}>
+        <aside className={classnames(stylesAside.aside, 'z-index__101', (openAside ? stylesAside.aside__Open : null))}>
             <div className={stylesAside.asideUser}>
                 <div className={stylesAside.asideUserIcon} onClick={() =>
                 {
                     dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!openAside));
                 }}>
-                    <Ellipsis />
+                    <FaEllipsisV />
                 </div>
                 <div className={stylesAside.asideUserProfile}>
                     <Image
@@ -62,9 +64,15 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
             </div>
             <div className={stylesAside.asideInformation}>
                 <ul className={stylesAside.asideInformationLanguage}>
-                    <li onClick={() => props.handleLanguage('en')} className={props.content.language === 'en' ? stylesAside.asideInformationLanguageActive : ''}>EN</li>
-                    <li onClick={() => props.handleLanguage('de')} className={props.content.language === 'de' ? stylesAside.asideInformationLanguageActive : ''}>DE</li>
-                    <li onClick={() => props.handleLanguage('fa')} className={props.content.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</li>
+                    <li className={props.content.language === 'en' ? stylesAside.asideInformationLanguage__Active : ''}>
+                        <Link href={ router.pathname } locale='en'><a>EN</a></Link>
+                    </li>
+                    <li className={props.content.language === 'de' ? stylesAside.asideInformationLanguage__Active : ''}>
+                        <Link href={ router.pathname } locale='de'><a>DE</a></Link>
+                    </li>
+                    <li className={props.content.language === 'fa' ? stylesAside.asideInformationLanguage__Active : ''}>
+                        <Link href={ router.pathname } locale='fa'><a>FA</a></Link>
+                    </li>
                 </ul>
                 <span className={stylesAside.asideDivider}/>
                 <ul className={stylesAside.asideInformationPersonal}>
@@ -83,14 +91,14 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
                     <li>
                         <h3>
                             <span>{ props.content.age }: </span>
-                            { props.content.my_age }
+                            { new Date().getFullYear() - props.content.my_age }
                         </h3>
                     </li>
                 </ul>
                 <span className={stylesAside.asideDivider}/>
                 <ul className={stylesAside.asideInformationLanguages}>
                     {
-                        languages.map((language: ILanguage) =>
+                        languages.items.map((language: ILanguage) =>
                             (
                                 <li key={ uuidV4() }>
                                     <CircularProgressbar value={language.percentage} text={`${ language.percentage }%`} />
@@ -102,9 +110,9 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
                 <div className={stylesAside.asideDivider}/>
                 <ul className={stylesAside.asideInformationSkills}>
                     {
-                        skills.map((skill: ISkill) =>
+                        skills.items.map((skill: ISkill) =>
                             (
-                                <li className={stylesAside.asideInformationSkillsBar} key={uuidV4()}>
+                                <li className={stylesAside.asideInformationSkillsBar} key={ uuidV4() }>
                                     <div className={stylesAside.asideInformationSkillsInfo}>
                                         <h3>{ skill.name }</h3>
                                         <span>{ skill.progress }</span>
@@ -119,18 +127,18 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
                 <span className={stylesAside.asideDivider}/>
                 <ul className={stylesAside.asideInformationLibrary}>
                     {
-                        libraries.map((library: ILibrary) =>
+                        libraries.items.map((library: ILibrary) =>
                             (
-                                <li key={uuidV4()}>
+                                <li key={ uuidV4() }>
                                     <BiCheck />
                                     <p>
                                         {
                                             library.names.map((name: string, indexV: number) =>
                                                 (
-                                                    <>
-                                                        <span key={uuidV4()}>{ name }</span>
+                                                    <Fragment key={uuidV4()}>
+                                                        <span>{ name }</span>
                                                         { library.names.length === (indexV + 1) ? null : ',' }
-                                                    </>
+                                                    </Fragment>
                                                 ))
                                         }
                                     </p>
@@ -148,7 +156,7 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
             </div>
             <div className={stylesAside.asideFooter}>
                 {
-                    socials.map((social: ISocial) =>
+                    socials.items.map((social: ISocial) =>
                         (
                             <a href={ social.link } target='_blank' rel='noreferrer' key={ uuidV4() }>
                                 {
@@ -170,7 +178,7 @@ const Aside = (props: { content: IContent, handleLanguage: (language?: ILanguage
                         ))
                 }
             </div>
-        </nav>
+        </aside>
     );
 };
 

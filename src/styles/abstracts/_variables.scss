@@ -1,100 +1,100 @@
 html[data-theme="dark"]
 {
-    --color-primary: #20C20E;
+    --color-primary: #20c20e;
     --color-primary-dark: #189d0a;
     --color-primary-light: #2fda1c;
     --color-base-text: #9aa595;
     --color-base-text-bold: #dae3d7;
     --color-base-text-bolder: #f5f8f2;
-    --base: #000000;
+    --base: #000;
     --base-light: #090909;
     --base-dark: #0c0c0c;
     --border-radius: 0;
     --stroke-linecap: none;
     --background-size: none;
     --image-filter: grayscale(100%);
-    --base-transparent-dark: rgba(0, 0, 0, .8);
-    --base-transparent-darker: rgba(0, 0, 0, 0.9);
+    --base-transparent-dark: rgb(0 0 0 / 80%);
+    --base-transparent-darker: rgb(0 0 0 / 90%);
     --base-gradiant-image:
         linear-gradient(
             180deg,
-                rgba(12, 12, 12,  0.70) 0%,
-                rgba(12, 12, 12,  0.75) 70%,
-                rgba(12, 12, 12,  0.80) 80%,
-                rgba(12, 12, 12, 0.85) 90%
+            rgb(12 12 12 /  70%) 0%,
+            rgb(12 12 12 /  75%) 70%,
+            rgb(12 12 12 /  80%) 80%,
+            rgb(12 12 12 / 85%) 90%
         ),
         url("../../../public/static/images/background_dark.gif") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(0, 0, 0, 0.8) 70%,
-            rgb(0, 0, 0, .9) 80%,
-            #000000 100%
+            rgb(0 0 0 / 70%) 0%,
+            rgb(0 0 0 / 80%) 70%,
+            rgb(0 0 0 / 90%) 80%,
+            #000 100%
         ),
         url("../../../public/static/images/background_dark-2.jpg");
     --base-gradiant-image-football:
         radial-gradient(
-            rgba(0, 0, 0, 0.5) 0%,
-            rgba(0, 0, 0, 0.6) 10%,
-            rgba(0, 0, 0, 0.7) 50%,
-            rgba(0, 0, 0, 0.8) 80%
+            rgb(0 0 0 / 50%) 0%,
+            rgb(0 0 0 / 60%) 10%,
+            rgb(0 0 0 / 70%) 50%,
+            rgb(0 0 0 / 80%) 80%
         ),
         url("../../../public/static/images/hobbies/background-football.jpg");
     --base-gradiant-image-instagram:
         radial-gradient(
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(0, 0, 0, 0.8) 10%,
-            rgba(0, 0, 0, 0.9) 50%,
-            rgba(11, 11, 11, 0.95) 80%
+            rgb(0 0 0 / 70%) 0%,
+            rgb(0 0 0 / 80%) 10%,
+            rgb(0 0 0 / 90%) 50%,
+            rgb(11 11 11 / 95%) 80%
         ),
         url("../../../public/static/images/hobbies/background-ig.jpg");
     --base-gradiant-image-discord:
         radial-gradient(
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(0, 0, 0, 0.8) 10%,
-            rgba(0, 0, 0, 0.9) 50%,
-            rgba(0, 0, 0, 0.95) 80%
+            rgb(0 0 0 / 70%) 0%,
+            rgb(0 0 0 / 80%) 10%,
+            rgb(0 0 0 / 90%) 50%,
+            rgb(0 0 0 / 95%) 80%
         ),
         url("../../../public/static/images/hobbies/background-discord.jpg");
     --base-gradiant-image-cod:
         radial-gradient(
-            rgba(0, 0, 0, 0.5) 0%,
-            rgba(0, 0, 0, 0.6) 10%,
-            rgba(0, 0, 0, 0.7) 50%,
-            rgba(0, 0, 0, 0.8) 80%
+            rgb(0 0 0 / 50%) 0%,
+            rgb(0 0 0 / 60%) 10%,
+            rgb(0 0 0 / 70%) 50%,
+            rgb(0 0 0 / 80%) 80%
         ),
         url("../../../public/static/images/hobbies/background-cod.jpg");
     --base-gradiant-image-music:
         radial-gradient(
-            rgba(0, 0, 0, 0.5) 0%,
-            rgba(0, 0, 0, 0.6) 10%,
-            rgba(0, 0, 0, 0.7) 50%,
-            rgba(0, 0, 0, 0.8) 80%
+            rgb(0 0 0 / 50%) 0%,
+            rgb(0 0 0 / 60%) 10%,
+            rgb(0 0 0 / 70%) 50%,
+            rgb(0 0 0 / 80%) 80%
         ),
         url("../../../public/static/images/hobbies/background-shadmehr-aghili.png");
     --base-gradiant-image-guitar:
         radial-gradient(
-            rgba(0, 0, 0, 0.6) 0%,
-            rgba(0, 0, 0, 0.7) 10%,
-            rgba(0, 0, 0, 0.8) 50%,
-            rgba(0, 0, 0, 0.9) 80%
+            rgb(0 0 0 / 60%) 0%,
+            rgb(0 0 0 / 70%) 10%,
+            rgb(0 0 0 / 80%) 50%,
+            rgb(0 0 0 / 90%) 80%
         ),
         url("../../../public/static/images/hobbies/background-guitar.jpg");
     --base-gradiant-image-rarible:
         radial-gradient(
-            rgba(0, 0, 0, 0.5) 0%,
-            rgba(0, 0, 0, 0.6) 10%,
-            rgba(0, 0, 0, 0.7) 50%,
-            rgba(0, 0, 0, 0.8) 80%
+            rgb(0 0 0 / 50%) 0%,
+            rgb(0 0 0 / 60%) 10%,
+            rgb(0 0 0 / 70%) 50%,
+            rgb(0 0 0 / 80%) 80%
         ),
         url("../../../public/static/images/hobbies/background-rarible.jpg");
     --base-gradiant-image-space:
         radial-gradient(
-            rgba(0, 0, 0, 0.5) 0%,
-            rgba(0, 0, 0, 0.6) 10%,
-            rgba(0, 0, 0, 0.7) 50%,
-            rgba(0, 0, 0, 0.8) 80%
+            rgb(0 0 0 / 50%) 0%,
+            rgb(0 0 0 / 60%) 10%,
+            rgb(0 0 0 / 70%) 50%,
+            rgb(0 0 0 / 80%) 80%
         ),
         url("../../../public/static/images/hobbies/background-space.jpg");
 }
@@ -213,86 +213,86 @@ html[data-theme="light"]
     --border-radius: 1rem;
     --stroke-linecap: round;
     --background-size: cover;
-    --base-transparent: rgba(176, 191, 220, 0.5);
-    --base-transparent-dark: rgba(55, 55, 57, 0.65);
-    --base-transparent-darker: rgba(40, 40, 42, 0.8);
+    --base-transparent: rgb(176 191 220 / 50%);
+    --base-transparent-dark: rgb(55 55 57 / 65%);
+    --base-transparent-darker: rgb(40 40 42 / 80%);
     --base-gradiant-image:
         linear-gradient(
             180deg,
-            rgba(213, 215, 222, 0.7) 0%,
-            rgba(226, 229, 234, 0.7) 50%,
-            rgba(239, 241, 245, 0.7) 70%,
+            rgb(213 215 222 / 70%) 0%,
+            rgb(226 229 234 / 70%) 50%,
+            rgb(239 241 245 / 70%) 70%,
             rgb(255 255 255 / 70%) 90%
         ),
         url("../../../public/static/images/background_dim.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
-            rgba(196, 200, 215, 0.8) 0%,
-            rgba(218, 221, 231, 0.9) 70%,
-            rgba(218, 223, 229, 0.95) 80%,
-            rgb(231, 233, 243) 100%
+            rgb(196 200 215 / 80%) 0%,
+            rgb(218 221 231 / 90%) 70%,
+            rgb(218 223 229 / 95%) 80%,
+            rgb(231 233 243) 100%
         ),
         url("../../../public/static/images/background_dim-2.jpg");
     --base-gradiant-image-football:
         radial-gradient(
-            rgba(235, 236, 241, 0.5) 0%,
-            rgba(228, 231, 236, 0.5) 10%,
-            rgba(235, 236, 239, 0.5) 50%,
-            rgba(227, 231, 238, 0.5) 80%
+            rgb(235 236 241 / 50%) 0%,
+            rgb(228 231 236 / 50%) 10%,
+            rgb(235 236 239 / 50%) 50%,
+            rgb(227 231 238 / 50%) 80%
         ),
         url("../../../public/static/images/hobbies/background-football.jpg");
     --base-gradiant-image-instagram:
         radial-gradient
-        (rgba(209, 212, 226, 0.8) 0%, rgba(226, 227, 234, 0.8) 10%,
-        rgba(220, 223, 231, 0.8) 50%, rgba(214, 217, 227, 0.8) 80%),
+        (rgb(209 212 226 / 80%) 0%, rgb(226 227 234 / 80%) 10%,
+        rgb(220 223 231 / 80%) 50%, rgb(214 217 227 / 80%) 80%),
         url("../../../public/static/images/hobbies/background-ig.jpg");
     --base-gradiant-image-discord:
         radial-gradient(
-            rgba(188, 193, 203, 0.8) 0%,
-            rgba(198, 201, 213, 0.8) 10%,
-            rgba(216, 219, 227, 0.8) 50%,
-            rgba(201, 204, 210, 0.8) 80%
+            rgb(188 193 203 / 80%) 0%,
+            rgb(198 201 213 / 80%) 10%,
+            rgb(216 219 227 / 80%) 50%,
+            rgb(201 204 210 / 80%) 80%
         ),
         url("../../../public/static/images/hobbies/background-discord.jpg");
     --base-gradiant-image-cod:
         radial-gradient(
-            rgba(235, 237, 241, 0.5) 0%,
-            rgba(239, 241, 245, 0.5) 10%,
-            rgba(230, 231, 236, 0.5) 50%,
-            rgba(226, 228, 236, 0.5) 80%
+            rgb(235 237 241 / 50%) 0%,
+            rgb(239 241 245 / 50%) 10%,
+            rgb(230 231 236 / 50%) 50%,
+            rgb(226 228 236 / 50%) 80%
         ),
         url("../../../public/static/images/hobbies/background-cod.jpg");
     --base-gradiant-image-music:
         radial-gradient(
-            rgba(235, 236, 241, 0.5) 0%,
-            rgba(241, 244, 246, 0.5) 10%,
-            rgba(236, 238, 245, 0.5) 50%,
-            rgba(242, 243, 246, 0.5) 80%
+            rgb(235 236 241 / 50%) 0%,
+            rgb(241 244 246 / 50%) 10%,
+            rgb(236 238 245 / 50%) 50%,
+            rgb(242 243 246 / 50%) 80%
         ),
         url("../../../public/static/images/hobbies/background-shadmehr-aghili.png");
     --base-gradiant-image-guitar:
         radial-gradient(
-            rgba(235, 237, 241, 0.5) 0%,
-            rgba(230, 231, 238, 0.5) 10%,
-            rgba(240, 241, 246, 0.5) 50%,
-            rgba(241, 243, 246, 0.5) 80%
+            rgb(235 237 241 / 50%) 0%,
+            rgb(230 231 238 / 50%) 10%,
+            rgb(240 241 246 / 50%) 50%,
+            rgb(241 243 246 / 50%) 80%
         ),
         url("../../../public/static/images/hobbies/background-guitar.jpg");
     --base-gradiant-image-rarible:
         radial-gradient(
-            rgba(235, 236, 241, 0.5) 0%,
-            rgba(231, 233, 238, 0.5) 10%,
-            rgba(234, 236, 241, 0.5) 50%,
-            rgba(214, 219, 227, 0.5) 80%
+            rgb(235 236 241 / 50%) 0%,
+            rgb(231 233 238 / 50%) 10%,
+            rgb(234 236 241 / 50%) 50%,
+            rgb(214 219 227 / 50%) 80%
         ),
         url("../../../public/static/images/hobbies/background-rarible.jpg");
     --base-gradiant-image-space:
         radial-gradient(
-            rgba(235, 236, 241, 0.5) 0%,
-            rgba(231, 233, 238, 0.5) 10%,
-            rgba(234, 236, 241, 0.5) 50%,
-            rgba(214, 217, 227, 0.5) 80%
+            rgb(235 236 241 / 50%) 0%,
+            rgb(231 233 238 / 50%) 10%,
+            rgb(234 236 241 / 50%) 50%,
+            rgb(214 217 227 / 50%) 80%
         ),
         url("../../../public/static/images/hobbies/background-space.jpg");
 }

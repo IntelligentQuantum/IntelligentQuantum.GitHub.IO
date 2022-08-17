@@ -2,6 +2,8 @@
     "extends": "stylelint-config-standard",
     "rules":
     {
+        "at-rule-no-unknown": null,
+        "selector-id-pattern": null,
         "indentation": 4,
         "selector-class-pattern": null,
         "block-opening-brace-space-before": null,

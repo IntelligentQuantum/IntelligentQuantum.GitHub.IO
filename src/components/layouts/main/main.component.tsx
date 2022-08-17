@@ -9,15 +9,13 @@ const Footer = dynamic(() => import('../footer/footer.component'));
 
 const Main = (props: { content: IContent, children: ReactNode }) =>
     (
-        <section className={stylesMain.main}>
+        <main className={stylesMain.main}>
             <div className={stylesMain.mainContent}>
                 <span className={stylesMain.mainBackground}/>
-
                 { props.children }
             </div>
-
             <Footer content={ props.content }/>
-        </section>
+        </main>
     );
 
 export default Main;

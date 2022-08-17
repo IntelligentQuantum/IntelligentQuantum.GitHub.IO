@@ -3,13 +3,13 @@
     display: grid;
     grid-template-rows: 7rem 1fr 12rem;
 
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
 
-    transition: all 0.8s;
     width: 8rem;
     height: 100%;
+    transition: width 0.4s;
 
     @media only screen and (max-width: 1000px)
     {
@@ -31,12 +31,15 @@
 
         @media only screen and (max-width: 1000px)
         {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            position: fixed;
+
             height: 7rem;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
             padding: 0 3rem;
-            position: fixed;
             background: var(--base-dark);
             z-index: 98;
         }
@@ -44,7 +47,10 @@
         &Dots
         {
             display: flex;
-            margin: auto 0;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 2rem;
             height: 2rem;
             width: 2rem;
             fill: var(--color-base-text);
@@ -53,12 +59,15 @@
         &Hamburger
         {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+
             position: relative;
+
             cursor: pointer;
-            padding-right: 1rem;
             transition: all 0.2s;
+            width: 2rem;
+            height: 2rem;
 
             &Line,
             &Line::before,
@@ -325,24 +334,28 @@
                 white-space: pre;
                 padding: 0.7rem 3rem;
                 color: var(--color-base-text);
-                transition: color .2s, margin-left 1.35s;
+                transition: color 0.2s, margin-left 1.35s;
 
                 &:nth-child(1)
                 {
                     margin-left: 5rem;
                 }
+
                 &:nth-child(2)
                 {
                     margin-left: 9rem;
                 }
+
                 &:nth-child(3)
                 {
                     margin-left: 13rem;
                 }
+
                 &:nth-child(4)
                 {
                     margin-left: 17rem;
                 }
+
                 &:nth-child(5)
                 {
                     margin-left: 21rem;
@@ -375,12 +388,13 @@
     &Themes
     {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        flex-direction: column;
         justify-content: center;
-        gap: .5rem;
+        gap: 0.5rem;
 
-        padding-top: 1rem;
+        transition: all 0.8s;
+        padding: 1rem 1rem 0;
         background-color: var(--base-dark);
 
         & > span
@@ -438,6 +452,7 @@
     &__Open
     {
         width: 30rem;
+        transition: width 0.8s;
 
         & a
         {
@@ -446,7 +461,6 @@
 
         & .navThemes
         {
-            flex-flow: row;
             gap: 1rem;
         }
 
