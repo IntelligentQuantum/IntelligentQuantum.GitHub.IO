@@ -135,7 +135,7 @@ const Aside = (props: { content: IContent }) =>
                                         {
                                             library.names.map((name: string, indexV: number) =>
                                                 (
-                                                    <Fragment key={uuidV4()}>
+                                                    <Fragment key={ uuidV4() }>
                                                         <span>{ name }</span>
                                                         { library.names.length === (indexV + 1) ? null : ',' }
                                                     </Fragment>

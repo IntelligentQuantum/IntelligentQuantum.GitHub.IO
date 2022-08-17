@@ -58,7 +58,7 @@ const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
     );
 };
 
-export async function git()
+export async function getStaticProps()
 {
     try
     {
@@ -72,11 +72,8 @@ export async function git()
             return { props: { players: [] }};
 
         return {
-            props:
-                {
-                    players: [messi, griezmann, torres]
-                },
-            revalidate: 3600
+            props: { players: [messi, griezmann, torres ]},
+            revalidate: 86400
         };
     }
     catch (error)

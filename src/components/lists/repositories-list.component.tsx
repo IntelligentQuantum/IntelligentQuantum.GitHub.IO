@@ -29,7 +29,7 @@ const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: IRepositor
                 {
                     props.repositories.map((repository: IRepository) =>
                         (
-                            <SwiperSlide key={ repository.node_id }>
+                            <SwiperSlide key={ uuidV4() }>
                                 <RepositoriesCard
                                     repository={ repository }
                                 />

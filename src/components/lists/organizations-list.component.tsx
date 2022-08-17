@@ -1,6 +1,7 @@
 import React  from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
+import { v4 as uuidV4 } from 'uuid';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { SWIPER_CONFIG_2 } from '../../lib/constants';
@@ -22,7 +23,7 @@ const OrgansList = (props: { dir?: 'rtl' | 'ltr', organizations: IOrganization[]
                 {
                     props.organizations.map((organization: IOrganization) =>
                         (
-                            <SwiperSlide key={ organization.node_id }>
+                            <SwiperSlide key={ uuidV4() }>
                                 <TooltipPrimary content={ organization.login }>
                                     <a href={`https://github.com/${ organization.login }`} target='_blank' className={stylesHome.homeOrganizationContent} rel="noreferrer">
                                         <Image
