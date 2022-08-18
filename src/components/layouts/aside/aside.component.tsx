@@ -5,7 +5,7 @@ import useTranslation from 'next-translate/useTranslation';
 import classnames from 'classnames';
 
 import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
-import { toggleAside } from '../../../redux/features/header/header-slice';
+import { toggleAside, toggleFilter } from '../../../redux/features/header/header-slice';
 
 import { skills } from '../../../data/skills.data';
 import { libraries } from '../../../data/libraries.data';
@@ -24,9 +24,15 @@ const Aside = () =>
     const asideOpen = useAppSelector(state => state.header.asideOpen);
     const dispatch = useAppDispatch();
 
+    const handleToggleClick = () =>
+    {
+        dispatch(toggleAside());
+        dispatch(toggleFilter());
+    };
+
     return (
         <aside className={classnames(styles.aside, { [styles.asideActive]: asideOpen })}>
-            <span className={styles.asideToggleUi} onClick={() => dispatch(toggleAside())}>
+            <span className={styles.asideToggleUi} onClick={handleToggleClick}>
                 <FaEllipsisV />
             </span>
             <div className={styles.asideUser}>

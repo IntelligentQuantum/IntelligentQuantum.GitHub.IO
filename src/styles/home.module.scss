@@ -19,8 +19,7 @@
     &Header
     {
         position: relative;
-
-        padding: 0 3rem;
+        margin: 0 3rem;
 
         &Top
         {
@@ -44,7 +43,7 @@
             background-image: var(--base-gradiant-image);
             background-position: center;
             background-size: cover;
-            width: 96%;
+            width: 100%;
             height: 35rem;
             padding: 6rem;
 
