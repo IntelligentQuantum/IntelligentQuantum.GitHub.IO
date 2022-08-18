@@ -56,9 +56,9 @@ const Home: NextPage = (props: any) =>
                             <h1 className={styles.homeHeaderContentHeading}>{t('home:headers.0.heading')}</h1>
 
                             <div className={styles.homeHeaderContentDescription}>
-                                &lt;<i>code</i>&gt;
+                                <div>&lt;<i>code</i>&gt;</div>
                                 <span>{ typed }</span>
-                                &lt;/<i>code</i>&gt;
+                                <div>&lt;/<i>code</i>&gt;</div>
                             </div>
 
                             <Link href='/src/pages'>
@@ -319,7 +319,7 @@ const Home: NextPage = (props: any) =>
                                 props.organizations.map((organization: any) =>
                                 {
                                     return (
-                                        <SwiperSlide key={organization.node_id}>
+                                        <SwiperSlide style={{ display: 'flex', justifyContent: 'space-evenly' }} key={organization.node_id}>
                                             <OrganizationCard
                                                 login={organization.login}
                                                 avatarUrl={organization.avatar_url}

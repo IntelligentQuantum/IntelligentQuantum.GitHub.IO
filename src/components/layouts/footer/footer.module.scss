@@ -2,6 +2,11 @@
 {
     padding: 0 3rem;
 
+    @media only screen and (max-width: 1000px)
+    {
+        padding: 0;
+    }
+
     &Box
     {
         display: flex;

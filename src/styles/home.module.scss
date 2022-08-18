@@ -53,12 +53,30 @@
 
             &Heading
             {
-                font-size: 5rem;
+                font-size: clamp(1.5rem, 4.5vw, 4rem);
                 color: var(--color-base-text-bold);
+
+                @media screen and (max-width: 1000px)
+                {
+                    text-align: center;
+                }
             }
 
             &Description
             {
+                display: flex;
+
+                @media screen and (max-width: 1000px)
+                {
+                    flex-direction: column;
+                    text-align: center;
+
+                    & > span
+                    {
+                        margin: 0.5rem 0;
+                    }
+                }
+
                 color: white;
                 font-size: 1.7rem;
                 font-weight: 400;
@@ -78,6 +96,12 @@
             &Button
             {
                 align-self: start;
+
+                @media screen and (max-width: 1000px)
+                {
+                    align-self: center;
+                    margin-top: 2rem;
+                }
 
                 padding: 1.5rem 3.5rem;
                 text-transform: uppercase;
@@ -133,6 +157,12 @@
         grid-gap: 2rem;
 
         padding: 0 3rem;
+
+        @media screen and (max-width: 150em)
+        {
+            display: flex;
+            flex-direction: column;
+        }
 
         &Paragraph
         {
@@ -221,16 +251,21 @@
 
     &Services
     {
-        padding: 0 3rem;
+        margin: 0 3rem;
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         grid-gap: 2rem;
+
+        @media screen and (max-width: 500px)
+        {
+            grid-template-columns: 1fr;
+        }
     }
 
     &Repositories
     {
-        padding: 0 3rem;
+        margin: 0 3rem;
 
         &PrevNext
         {
