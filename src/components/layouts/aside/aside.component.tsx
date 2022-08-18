@@ -4,9 +4,13 @@ import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import classnames from 'classnames';
 
+import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
+import { toggleAside } from '../../../redux/features/header/header-slice';
+
 import { skills } from '../../../data/skills.data';
 import { libraries } from '../../../data/libraries.data';
 
+import { FaEllipsisV } from 'react-icons/fa';
 import { BsCheck, BsDribbble, BsGithub, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 import { CgSoftwareDownload } from 'react-icons/cg';
 
@@ -17,8 +21,14 @@ const Aside = () =>
     const router = useRouter();
     const { t } = useTranslation();
 
+    const asideOpen = useAppSelector(state => state.header.asideOpen);
+    const dispatch = useAppDispatch();
+
     return (
-        <aside className={styles.aside}>
+        <aside className={classnames(styles.aside, { [styles.asideActive]: asideOpen })}>
+            <span className={styles.asideToggleUi} onClick={() => dispatch(toggleAside())}>
+                <FaEllipsisV />
+            </span>
             <div className={styles.asideUser}>
                 <span className={styles.asideUserImageContainer}>
                     <Image

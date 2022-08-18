@@ -7,6 +7,18 @@
 
     box-shadow: 0 3px 8px 0 var(--base-transparent-darker);
 
+    @media only screen and (max-width: 1000px)
+    {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        right: -100%;
+
+        transition: 0.4s;
+        width: 27.6517rem;
+        height: 100%;
+    }
+
     &Hamburger
     {
         background: var(--base-darker);

@@ -10,12 +10,46 @@
     box-shadow: 0 3px 8px 0 var(--base-transparent-darker);
     overflow: hidden;
 
+    @media only screen and (max-width: 1000px)
+    {
+        position: fixed;
+        top: 0;
+        z-index: 101;
+
+        transition: 0.4s;
+        left: -100%;
+        height: 100%;
+    }
+
     &__divider
     {
         background: var(--color-base-text);
         width: 100%;
         height: .1rem;
         opacity: 0.3;
+    }
+
+    &ToggleUi
+    {
+        display: none;
+
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+
+        cursor: pointer;
+        font-size: 2rem;
+        color: var(--color-base-text);
+
+        @media only screen and (max-width: 1000px)
+        {
+            display: block;
+        }
+    }
+
+    &Active
+    {
+        left: 0;
     }
 
     &User

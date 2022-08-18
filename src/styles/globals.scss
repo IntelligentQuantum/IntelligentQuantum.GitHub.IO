@@ -36,6 +36,11 @@ li
     display: grid;
     grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
 
+    @media only screen and (max-width: 1000px)
+    {
+        grid-template-columns: [main-start] 1fr [main-end];
+    }
+
     letter-spacing: 0.5px;
     overflow: hidden;
     height: 100vh;
