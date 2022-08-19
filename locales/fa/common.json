@@ -1,0 +1,16 @@
+{
+    "explore": "EXPLORE MORE",
+    "order": "ORDER NOW",
+    "aside":
+    [
+        { "userTitle": "Full-Stack Developer" },
+        { "userSubtitle": "UI/UX Designer" },
+        { "residence": "Residence" },
+        { "city": "City" },
+        { "age": "Age" },
+        { "persian": "Persian" },
+        { "english": "English" },
+        { "german": "German" },
+        { "download": "DOWNLOAD CV" }
+    ]
+}
