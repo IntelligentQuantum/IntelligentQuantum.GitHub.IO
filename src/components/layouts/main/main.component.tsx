@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactNode } from 'react';
 
 import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
 import { toggleNavbar, toggleAside, toggleFilter } from '../../../redux/features/header/header-slice';
@@ -12,7 +12,7 @@ import styles from './main.module.scss';
 
 interface MainProps
 {
-    children?: React.ReactNode;
+    children?: ReactNode;
 }
 
 const Main = ({ children }: MainProps) =>
