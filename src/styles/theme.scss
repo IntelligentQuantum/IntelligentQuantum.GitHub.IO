@@ -1,3 +1,40 @@
+html[data-theme="matrix"]
+{
+    --color-primary: #20C20E;
+    --color-primary-dark: #189d0a;
+    --color-primary-light: #2fda1c;
+    --color-base-text: #9aa595;
+    --color-base-text-bold: #dae3d7;
+    --color-base-text-bolder: #f5f8f2;
+    --base: #000000;
+    --base-light: #090909;
+    --base-dark: #0c0c0c;
+    --border-radius: 0;
+    --stroke-linecap: none;
+    --background-size: none;
+    --image-filter: grayscale(100%);
+    --base-transparent-dark: rgba(0, 0, 0, .8);
+    --base-transparent-darker: rgba(0, 0, 0, 0.9);
+    --base-gradiant-image:
+        linear-gradient(
+                180deg,
+                rgba(12, 12, 12,  0.70) 0%,
+                rgba(12, 12, 12,  0.75) 70%,
+                rgba(12, 12, 12,  0.80) 80%,
+                rgba(12, 12, 12, 0.85) 90%
+        ),
+        url("../../public/images/background_matrix.gif") center;
+    --base-gradiant-image-2:
+        linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.8) 70%,
+                rgb(0, 0, 0, .9) 80%,
+                #000000 100%
+        ),
+        url("../../public/images/background_matrix-2.jpg");
+}
+
 html[data-theme="dark"]
 {
     --color-primary: #ffc107;
