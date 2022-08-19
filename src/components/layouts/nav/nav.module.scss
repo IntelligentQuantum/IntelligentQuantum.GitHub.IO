@@ -10,7 +10,7 @@
     top: 0;
     z-index: 101;
 
-    transition: 0.4s;
+    transition: width 0.4s;
     width: 8rem;
     height: 100%;
 
@@ -21,6 +21,7 @@
 
     &Active
     {
+        transition: 0.4s;
         width: 27.6517rem;
         right: 0;
     }
@@ -73,6 +74,27 @@
             {
                 top: 0.7rem;
             }
+
+            &[data-open="true"]
+            {
+                background-color: transparent;
+
+                &::before
+                {
+                    transform: rotate(45deg);
+                }
+
+                &::after
+                {
+                    transform: rotate(-45deg);
+                }
+
+                &::before,
+                &::after
+                {
+                    top: 0;
+                }
+            }
         }
     }
 
@@ -86,10 +108,45 @@
         {
             display: block;
             transform: rotate(90deg);
+            transition: 0.4s ease-out;
+
+            &[data-open="true"]
+            {
+                opacity: 0;
+                visibility: hidden;
+            }
 
             color: var(--color-base-text);
             font-size: 1.2rem;
             font-weight: 500;
+        }
+
+        &List
+        {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+
+            display: grid;
+            gap: 2rem;
+
+            &[data-open="false"]
+            {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &Item
+            {
+                display: flex;
+
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                cursor: pointer;
+                white-space: pre;
+                color: var(--color-base-text);
+            }
         }
     }
 
@@ -102,6 +159,12 @@
         flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
+
+        &[data-open="true"]
+        {
+            flex-direction: row;
+            gap: 2rem;
+        }
 
         & span
         {
