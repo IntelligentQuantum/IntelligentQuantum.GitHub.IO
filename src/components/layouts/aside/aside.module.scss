@@ -1,7 +1,6 @@
 .aside
 {
     display: grid;
-    grid-template: aside-start / aside-end;
     grid-template-rows: 23.5rem 1fr 5rem;
 
     position: relative;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
-import { toggleAside, toggleFilter } from '../../../redux/features/header/header-slice';
+import { toggleNavbar, toggleAside, toggleFilter } from '../../../redux/features/header/header-slice';
 
 import Footer from '../footer/footer.component';
 
@@ -18,22 +18,29 @@ interface MainProps
 const Main = ({ children }: MainProps) =>
 {
     const filterOpen = useAppSelector(state => state.header.filterOpen);
+    const asideOpen = useAppSelector(state => state.header.asideOpen);
     const dispatch = useAppDispatch();
 
-    const handleToggleClick = () =>
+    const handleToggleAsideClick = () =>
     {
         dispatch(toggleAside());
         dispatch(toggleFilter());
     };
 
+    const handleToggleNavbarClick = () =>
+    {
+        dispatch(toggleNavbar());
+        dispatch(toggleFilter());
+    };
+
     return (
         <main className={styles.main}>
-            { filterOpen ? (<div onClick={handleToggleClick} className={styles.mainFilter} />) : null }
+            { filterOpen ? (<div onClick={asideOpen ? handleToggleAsideClick : handleToggleNavbarClick} className={styles.mainFilter} />) : null }
             <div className={styles.mainHandleToggle}>
-                <span onClick={handleToggleClick}>
+                <span onClick={handleToggleAsideClick}>
                     <FaEllipsisV />
                 </span>
-                <span>
+                <span onClick={handleToggleNavbarClick}>
                     <GiHamburgerMenu />
                 </span>
             </div>

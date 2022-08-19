@@ -34,11 +34,11 @@ li
 #__next
 {
     display: grid;
-    grid-template-columns: [aside-start] 30rem [aside-end main-start] 1fr [main-end nav-start] 8rem [nav-end];
+    grid-template-columns: 30rem minmax(calc(100vw - 38rem), 200rem);
 
     @media only screen and (max-width: 1000px)
     {
-        grid-template-columns: [main-start] 1fr [main-end];
+        grid-template-columns: 1fr;
     }
 
     letter-spacing: 0.5px;

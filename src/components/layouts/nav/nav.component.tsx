@@ -3,7 +3,7 @@ import Link from 'next/link';
 import classnames from 'classnames';
 
 import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
-import { toggleNavbar } from '../../../redux/features/header/header-slice';
+import { toggleNavbar, toggleFilter } from '../../../redux/features/header/header-slice';
 
 import { BsMoonFill, BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
 
@@ -34,9 +34,15 @@ const Nav = () =>
         localStorage.setItem('theme', theme);
     };
 
+    const handleClickNavbar = () =>
+    {
+        dispatch(toggleNavbar());
+        dispatch(toggleFilter());
+    };
+
     return (
-        <nav className={classnames(styles.nav)}>
-            <div className={styles.navHamburger}>
+        <nav className={classnames(styles.nav, { [styles.navActive]: navbarOpen })}>
+            <div className={styles.navHamburger} onClick={handleClickNavbar}>
                 <div className={styles.navHamburgerLine}>&nbsp;</div>
             </div>
 

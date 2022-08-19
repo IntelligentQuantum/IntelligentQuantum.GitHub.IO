@@ -1,22 +1,28 @@
 .nav
 {
-    grid-template: nav-start / nav-end;
-
     display: grid;
     grid-template-rows: 7rem 1fr 12rem;
 
     box-shadow: 0 3px 8px 0 var(--base-transparent-darker);
 
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 101;
+
+    transition: 0.4s;
+    width: 8rem;
+    height: 100%;
+
     @media only screen and (max-width: 1000px)
     {
-        position: fixed;
-        top: 0;
-        z-index: 100;
         right: -100%;
+    }
 
-        transition: 0.4s;
+    &Active
+    {
         width: 27.6517rem;
-        height: 100%;
+        right: 0;
     }
 
     &Hamburger
