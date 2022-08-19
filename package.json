@@ -22,6 +22,7 @@
     "dependencies": {
         "@ionic/react": "^6.1.8",
         "@next/eslint-plugin-next": "^12.2.3",
+        "@reduxjs/toolkit": "^1.8.4",
         "axios": "^0.27.2",
         "browser_fingerprint": "^2.0.4",
         "classnames": "^2.3.1",
@@ -36,6 +37,7 @@
         "mongoose": "^6.5.1",
         "next": "12.1.4",
         "next-react-svg": "^1.1.3",
+        "next-redux-wrapper": "^7.0.5",
         "next-seo": "^5.4.0",
         "next-useragent": "^2.8.0",
         "nextjs-cors": "^2.1.1",

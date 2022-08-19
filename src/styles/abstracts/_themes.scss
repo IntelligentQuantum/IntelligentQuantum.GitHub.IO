@@ -1,4 +1,4 @@
-html[data-theme="dark"]
+html[data-theme="matrix"]
 {
     --color-primary: #20c20e;
     --color-primary-dark: #189d0a;
@@ -23,7 +23,7 @@ html[data-theme="dark"]
             rgb(12 12 12 /  80%) 80%,
             rgb(12 12 12 / 85%) 90%
         ),
-        url("../../../public/static/images/background-dark.gif") center;
+        url("../../../public/static/images/background-matrix.gif") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -32,7 +32,7 @@ html[data-theme="dark"]
             rgb(0 0 0 / 90%) 80%,
             #000 100%
         ),
-        url("../../../public/static/images/background-dark-2.png");
+        url("../../../public/static/images/background-matrix-2.png");
     --base-gradiant-image-football:
         radial-gradient(
             rgb(0 0 0 / 50%) 0%,

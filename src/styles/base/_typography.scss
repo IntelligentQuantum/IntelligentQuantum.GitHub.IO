@@ -34,7 +34,7 @@
 
     @media only screen and (max-width: 1000px)
     {
-        padding: .5rem;
+        padding: 0.5rem;
     }
 }
 
@@ -49,7 +49,7 @@
 
     @media only screen and (max-width: 1000px)
     {
-        padding: 1.5rem .5rem;
+        padding: 1.5rem 0.5rem;
     }
 
     &__small
@@ -67,7 +67,7 @@
         {
             flex-wrap: wrap;
 
-            padding: 0 .5rem 1.5rem;
+            padding: 0 0.5rem 1.5rem;
         }
 
         & li

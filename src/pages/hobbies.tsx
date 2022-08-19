@@ -72,7 +72,7 @@ export async function getStaticProps()
             return { props: { players: [] }};
 
         return {
-            props: { players: [messi, griezmann, torres ]},
+            props: { players: [messi, griezmann, torres] },
             revalidate: 86400
         };
     }

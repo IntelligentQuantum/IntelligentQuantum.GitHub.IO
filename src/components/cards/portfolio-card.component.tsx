@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import { useDispatch } from 'react-redux';
 import { BsArrowsFullscreen } from 'react-icons/bs';
 
-import { setImagePortfolio } from '../../app/portfolio/portfolio.actions';
+import { setPortfolioItem } from '../../store/features/portfolio-slice';
 
 import stylesPortfolio from '../../styles/pages/portfolio.module.scss';
 
@@ -17,31 +17,19 @@ const PortfolioCard = (props: { text: string, portfolio: { image: string, title:
     return (
         <div className={stylesPortfolio.portfolioItem}>
             <Image
-                onClick={() =>
-                {
-                    dispatch(setImagePortfolio(true, props.portfolio.image, props.portfolio.title));
-                }}
+                onClick={() => dispatch(setPortfolioItem({ open: true, image: props.portfolio.image, title: props.portfolio.title }))}
                 src={ props.portfolio.image }
                 alt={ props.portfolio.title }
                 layout='fill'
             />
 
-            <i onClick={() =>
-            {
-                dispatch(setImagePortfolio(true, props.portfolio.image, props.portfolio.title));
-            }}>
+            <i onClick={() => dispatch(setPortfolioItem({ open: true, image: props.portfolio.image, title: props.portfolio.title }))}>
                 <BsArrowsFullscreen size={17}/>
             </i>
 
             <div className={stylesPortfolio.portfolioItemBox}>
-                <h2>
-                    { props.portfolio.title }
-                </h2>
-
-                <p>
-                    { props.portfolio.description }
-                </p>
-
+                <h2>{ props.portfolio.title }</h2>
+                <p>{ props.portfolio.description }</p>
                 <ButtonSecondary
                     a={ true }
                     link={ props.portfolio.link }

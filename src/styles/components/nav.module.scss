@@ -334,7 +334,7 @@
                 white-space: pre;
                 padding: 0.7rem 3rem;
                 color: var(--color-base-text);
-                transition: color 0.2s, margin-left 1.35s;
+                transition: color 0.2s, margin-left 1.35s, margin-right 1.35s;
 
                 &:nth-child(1)
                 {
@@ -484,11 +484,58 @@ html[data-language="fa"]
     .nav
     {
         right: auto;
-        left: 0;
+        left: -150%;
+
+        & a
+        {
+            &:nth-child(1)
+            {
+                margin-right: 5rem;
+            }
+
+            &:nth-child(2)
+            {
+                margin-right: 9rem;
+            }
+
+            &:nth-child(3)
+            {
+                margin-right: 13rem;
+            }
+
+            &:nth-child(4)
+            {
+                margin-right: 17rem;
+            }
+
+            &:nth-child(5)
+            {
+                margin-right: 21rem;
+            }
+        }
+
+        &__Open
+        {
+            & a
+            {
+                margin-right: 0 !important;
+            }
+
+            @media only screen and (max-width: 1000px)
+            {
+                left: 0;
+            }
+        }
+
+        &HamburgerLine
+        {
+            right: 3rem;
+            left: auto;
+        }
 
         &Mobile
         {
-            direction: initial;
+            direction: rtl;
         }
 
         &ContentActive
@@ -505,6 +552,14 @@ html[data-language="fa"]
             left: auto;
 
             transition: all 0.5s ease-in-out;
+        }
+    }
+
+    @keyframes list-transition
+    {
+        to
+        {
+            margin-left: 0;
         }
     }
 }

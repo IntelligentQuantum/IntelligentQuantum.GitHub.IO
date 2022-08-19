@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { v4 as uuidV4 } from 'uuid';
 import classnames from 'classnames';
 import { useRouter } from 'next/router';
 import { FaEllipsisV } from 'react-icons/fa';
+import React, { Fragment, useEffect } from 'react';
 import { BiCheck, BiDownload } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
 import { CircularProgressbar } from 'react-circular-progressbar';
@@ -21,28 +21,42 @@ import type { ILibrary } from '../../../interfaces/library';
 import type { IContent } from '../../../interfaces/content';
 import type { ILanguage } from '../../../interfaces/language';
 
-import { setOpenAside } from '../../../app/aside/aside.actions';
-import { setActiveFilter } from '../../../app/filter/filter.actions';
-
 import 'react-circular-progressbar/dist/styles.css';
 import stylesAside from '../../../styles/components/aside.module.scss';
 
 import Profile from '../../../../public/static/images/im-parsa.png';
+
+import { selectAsideOpen, toggleAside, toggleFilter } from '../../../store/features/header-slice';
 
 const Aside = (props: { content: IContent }) =>
 {
     const router = useRouter();
     const dispatch = useDispatch();
 
-    const openAside: boolean = useSelector((state: any) => state.aside.openAside);
+    const openAside = useSelector(selectAsideOpen);
+
+    const handleClickAside = () =>
+    {
+        dispatch(toggleAside(!openAside));
+        dispatch(toggleFilter(!openAside));
+    };
+
+    useEffect(() =>
+    {
+        const htmlElement: HTMLElement | null = document.querySelector('html');
+
+        if (htmlElement)
+        {
+            htmlElement.setAttribute('lang', router.locale as string);
+            htmlElement.setAttribute('data-language', router.locale as string);
+            htmlElement.setAttribute('dir', (router.locale === 'fa' ? 'rtl' : 'ltr'));
+        }
+    }, [router.locale]);
 
     return (
         <aside className={classnames(stylesAside.aside, 'z-index__101', (openAside ? stylesAside.aside__Open : null))}>
             <div className={stylesAside.asideUser}>
-                <div className={stylesAside.asideUserIcon} onClick={() =>
-                {
-                    dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!openAside));
-                }}>
+                <div className={stylesAside.asideUserIcon} onClick={() => handleClickAside}>
                     <FaEllipsisV />
                 </div>
                 <div className={stylesAside.asideUserProfile}>
