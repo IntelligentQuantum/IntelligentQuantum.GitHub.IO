@@ -85,6 +85,7 @@
                 & span::after
                 {
                     content: '|';
+                    animation: Opacity 0.8s infinite ease-in-out;
                 }
 
                 & i
@@ -288,5 +289,18 @@
     &Organizations
     {
         padding: 4rem 3rem;
+    }
+}
+
+@keyframes Opacity
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
     }
 }
