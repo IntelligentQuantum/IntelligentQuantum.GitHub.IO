@@ -61,7 +61,7 @@ const Home: NextPage = (props: any) =>
                                 <div>&lt;/<i>code</i>&gt;</div>
                             </div>
 
-                            <Link href='/src/pages'>
+                            <Link href='/'>
                                 <a className={styles.homeHeaderContentButton}>{t('common:explore')}</a>
                             </Link>
                         </div>
