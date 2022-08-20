@@ -80,11 +80,11 @@
                 color: white;
                 font-size: 1.7rem;
                 font-weight: 400;
-                font-family: 'Source Code Pro', monospace;
+                font-family: "Source Code Pro", monospace;
 
                 & span::after
                 {
-                    content: '|';
+                    content: "|";
                     animation: Opacity 0.8s infinite ease-in-out;
                 }
 
@@ -113,6 +113,12 @@
                 font-weight: 600;
                 border: none;
                 transition: 0.4s ease-in-out;
+
+                &:hover
+                {
+                    color: var(--color-base-text-bolder);
+                    background: var(--color-primary-light);
+                }
             }
         }
 

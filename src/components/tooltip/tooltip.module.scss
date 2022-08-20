@@ -9,7 +9,7 @@
     border-radius: 0.65rem;
     background: var(--base-darker);
     margin-bottom: 0.25rem;
-    box-shadow: 0 0 2rem .5rem var(--base);
+    box-shadow: 0 0 2rem 0.5rem var(--base);
 
     &::after
     {
@@ -19,9 +19,9 @@
         top: 100%;
         left: 50%;
 
-        margin-top: -.325rem;
-        width: .75rem;
-        height: .75rem;
+        margin-top: -0.325rem;
+        width: 0.75rem;
+        height: 0.75rem;
         background: var(--base-darker);
         transform: rotate(45deg);
     }

@@ -45,6 +45,11 @@
             transition: all 0.2s;
             cursor: pointer;
 
+            &:hover
+            {
+                background: var(--base-lighter);
+            }
+
             & a
             {
                 display: flex;

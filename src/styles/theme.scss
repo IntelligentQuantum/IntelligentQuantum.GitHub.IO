@@ -1,36 +1,36 @@
 html[data-theme="matrix"]
 {
-    --color-primary: #20C20E;
+    --color-primary: #20c20e;
     --color-primary-dark: #189d0a;
     --color-primary-light: #2fda1c;
     --color-base-text: #9aa595;
     --color-base-text-bold: #dae3d7;
     --color-base-text-bolder: #f5f8f2;
-    --base: #000000;
+    --base: #000;
     --base-light: #090909;
     --base-dark: #0c0c0c;
     --border-radius: 0;
     --stroke-linecap: none;
     --background-size: none;
     --image-filter: grayscale(100%);
-    --base-transparent-dark: rgba(0, 0, 0, .8);
-    --base-transparent-darker: rgba(0, 0, 0, 0.9);
+    --base-transparent-dark: rgb(0 0 0 / 80%);
+    --base-transparent-darker: rgb(0 0 0 / 90%);
     --base-gradiant-image:
         linear-gradient(
-                180deg,
-                rgba(12, 12, 12,  0.70) 0%,
-                rgba(12, 12, 12,  0.75) 70%,
-                rgba(12, 12, 12,  0.80) 80%,
-                rgba(12, 12, 12, 0.85) 90%
+            180deg,
+            rgb(12 12 12 /  70%) 0%,
+            rgb(12 12 12 /  75%) 70%,
+            rgb(12 12 12 /  80%) 80%,
+            rgb(12 12 12 / 85%) 90%
         ),
         url("../../public/images/background_matrix.gif") center;
     --base-gradiant-image-2:
         linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0.7) 0%,
-                rgba(0, 0, 0, 0.8) 70%,
-                rgb(0, 0, 0, .9) 80%,
-                #000000 100%
+            180deg,
+            rgb(0 0 0 / 70%) 0%,
+            rgb(0 0 0 / 80%) 70%,
+            rgb(0 0 0 / 90%) 80%,
+            #000 100%
         ),
         url("../../public/images/background_matrix-2.jpg");
 }
@@ -47,24 +47,24 @@ html[data-theme="dark"]
     --base-light: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
     --base-lighter: #343442;
     --base-dark: #20202a;
-    --base-darker: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+    --base-darker: linear-gradient(159deg, rgb(37 37 50 / 98%) 0%, rgb(35 35 45 / 98%) 100%);
     --base-transparent-dark: rgb(30 30 40 / 88%);
     --base-transparent-darker: rgb(20 20 26 / 75%);
     --base-gradiant: linear-gradient(159deg, rgb(38 38 54) 0%, rgb(46 46 59) 100%);
     --base-gradiant-image:
         linear-gradient(
-                90deg,
-                rgb(45 45 58 / 90%) 15%,
-                rgb(45 45 58 / 70%) 50%,
-                rgb(43 43 53 / 70%) 100%
+            90deg,
+            rgb(45 45 58 / 90%) 15%,
+            rgb(45 45 58 / 70%) 50%,
+            rgb(43 43 53 / 70%) 100%
         ),
         url("../../public/images/background_dark.jpg");
     --base-gradiant-image-2:
         linear-gradient(
-                180deg,
-                rgb(32 32 43 / 90%) 70%,
-                rgb(32 32 43) 95%,
-                #202029 100%
+            180deg,
+            rgb(32 32 43 / 90%) 70%,
+            rgb(32 32 43) 95%,
+            #202029 100%
         ),
         url("../../public/images/background_dark.jpg");
 }
@@ -82,25 +82,25 @@ html[data-theme="ark"]
     --base-lighter: #545a6a;
     --base-dark: #404350;
     --base-darker: #323540;
-    --base-transparent-dark: rgba(53, 57, 69, 0.5);
-    --base-transparent-darker: rgba(56, 56, 67, 0.5);
+    --base-transparent-dark: rgb(53 57 69 / 50%);
+    --base-transparent-darker: rgb(56 56 67 / 50%);
     --base-gradiant: linear-gradient(159deg, rgb(57 60 73) 0%, rgb(46 49 59) 100%);
     --base-gradiant-image:
         linear-gradient(
-                180deg,
-                rgb(76 76 102 / 70%) 0%,
-                rgb(78 78 97 / 70%) 70%,
-                rgb(70 70 88 / 75%) 80%,
-                rgb(64 64 82 / 80%) 90%
+            180deg,
+            rgb(76 76 102 / 70%) 0%,
+            rgb(78 78 97 / 70%) 70%,
+            rgb(70 70 88 / 75%) 80%,
+            rgb(64 64 82 / 80%) 90%
         ),
         url("../../public/images/background_dim.jpg");
     --base-gradiant-image-2:
         linear-gradient(
-                180deg,
-                rgb(42 46 59 / 94%) 0%,
-                rgb(45 49 62) 70%,
-                rgb(49 53 66) 80%,
-                rgb(55 59 73) 100%
+            180deg,
+            rgb(42 46 59 / 94%) 0%,
+            rgb(45 49 62) 70%,
+            rgb(49 53 66) 80%,
+            rgb(55 59 73) 100%
         ),
         url("../../public/images/background_dim-2.jpg");
 }
@@ -118,25 +118,25 @@ html[data-theme="light"]
     --base-lighter: #eaedf5;
     --base-dark: #d3d7e1;
     --base-darker: #ccd0de;
-    --base-transparent-dark: rgba(189, 189, 195, 0.65);
-    --base-transparent-darker: rgba(131, 131, 141, 0.8);
-    --base-gradiant: linear-gradient(159deg, rgb(221, 225, 234) 0%, rgb(218, 222, 236) 100%);
+    --base-transparent-dark: rgb(189 189 195 / 65%);
+    --base-transparent-darker: rgb(131 131 141 / 80%);
+    --base-gradiant: linear-gradient(159deg, rgb(221 225 234) 0%, rgb(218 222 236) 100%);
     --base-gradiant-image:
         linear-gradient(
-                180deg,
-                rgba(213, 215, 222, 0.7) 0%,
-                rgba(226, 229, 234, 0.7) 50%,
-                rgba(239, 241, 245, 0.7) 70%,
-                rgb(255 255 255 / 70%) 90%
+            180deg,
+            rgb(213 215 222 / 70%) 0%,
+            rgb(226 229 234 / 70%) 50%,
+            rgb(239 241 245 / 70%) 70%,
+            rgb(255 255 255 / 70%) 90%
         ),
         url("../../public/images/background_dim.jpg");
     --base-gradiant-image-2:
         linear-gradient(
-                180deg,
-                rgba(196, 200, 215, 0.8) 0%,
-                rgba(218, 221, 231, 0.9) 70%,
-                rgba(218, 223, 229, 0.95) 80%,
-                rgb(231, 233, 243) 100%
+            180deg,
+            rgb(196 200 215 / 80%) 0%,
+            rgb(218 221 231 / 90%) 70%,
+            rgb(218 223 229 / 95%) 80%,
+            rgb(231 233 243) 100%
         ),
         url("../../public/images/background_dim-2.jpg");
 }

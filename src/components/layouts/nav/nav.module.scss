@@ -3,6 +3,11 @@
     display: grid;
     grid-template-rows: 7rem 1fr 15rem;
 
+    @media only screen and (max-width: 1000px)
+    {
+        grid-template-rows: 7rem 1fr 6rem;
+    }
+
     box-shadow: 0 3px 8px 0 var(--base-transparent-darker);
 
     position: fixed;
@@ -24,6 +29,7 @@
         transition: 0.4s;
         width: 27.6517rem;
         right: 0;
+        grid-template-rows: 7rem 1fr 6rem;
     }
 
     &Hamburger
@@ -179,6 +185,11 @@
             font-weight: 600;
             transition: all 0.2s;
             cursor: pointer;
+
+            &:hover
+            {
+                background: var(--base-lighter);
+            }
 
             & svg
             {
