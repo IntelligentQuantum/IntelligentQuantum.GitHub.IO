@@ -7,6 +7,7 @@ import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
 import { toggleNavbar, toggleFilter } from '../../../redux/features/header/header-slice';
 
 import { BsMoonFill, BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
+import { GiMoonBats } from 'react-icons/gi';
 
 import styles from './nav.module.scss';
 
@@ -70,6 +71,9 @@ const Nav = () =>
             <div data-open={navbarOpen} className={styles.navTheme}>
                 <span onClick={() => handleClickTheme('dark')} className={`${ colorTheme === 'dark' ? styles.navThemeActive : null }`}>
                     <BsMoonFill />
+                </span>
+                <span onClick={() => handleClickTheme('matrix')} className={`${ colorTheme === 'matrix' ? styles.navThemeActive : null }`}>
+                    <GiMoonBats />
                 </span>
                 <span onClick={() => handleClickTheme('ark')} className={`${ colorTheme === 'ark' ? styles.navThemeActive : null }`}>
                     <BsCloudMoonFill />
