@@ -14,7 +14,11 @@ export interface IContent
             back_end: [{ icon: string, title: string }]
             cross_platform: [{ icon: string, title: string }]
         },
-    descriptions: string[],
+    header:
+        {
+            titles: string[],
+            descriptions: string[]
+        }
     about_me: string,
     my_name: string,
     my_skills: string[],

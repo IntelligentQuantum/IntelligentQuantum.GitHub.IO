@@ -7,9 +7,9 @@
     text-align: center;
     font-size: 1.4rem;
     border-radius: calc(var(--border-radius)/2);
-    background: var(--base);
+    background: var(--base-dark);
     margin-bottom: 0.25rem;
-    box-shadow: 0 0 2rem 0.5rem var(--base);
+    box-shadow: 0 0 2rem 0.5rem var(--base-dark);
 
     &::after
     {
@@ -23,7 +23,7 @@
         width: 0.75rem;
         height: 0.75rem;
         border-radius: calc(var(--border-radius) / 2.5);
-        background: var(--base);
+        background: var(--base-dark);
         transform: rotate(45deg);
     }
 

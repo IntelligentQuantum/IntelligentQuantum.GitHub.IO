@@ -55,22 +55,26 @@
 
         &Icon
         {
+            display: none;
+
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+
             & svg
             {
-                display: none;
-
-                position: absolute;
-                right: 2rem;
-                top: 2rem;
-
                 width: 2rem;
                 height: 2rem;
                 fill: var(--color-base-text);
+            }
 
-                @media only screen and (max-width: 1000px)
-                {
-                    display: block;
-                }
+            @media only screen and (max-width: 1000px)
+            {
+                display: block;
             }
         }
 
@@ -473,7 +477,7 @@ html[data-language="fa"]
             }
         }
 
-        &UserIcon svg
+        &UserIcon
         {
             right: auto;
             left: 2rem;

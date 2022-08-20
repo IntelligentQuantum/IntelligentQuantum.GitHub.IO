@@ -37,6 +37,7 @@ const Aside = (props: { content: IContent }) =>
 
     const handleClickAside = () =>
     {
+        console.log(!openAside);
         dispatch(toggleAside(!openAside));
         dispatch(toggleFilter(!openAside));
     };
@@ -56,9 +57,9 @@ const Aside = (props: { content: IContent }) =>
     return (
         <aside className={classnames(stylesAside.aside, 'z-index__101', (openAside ? stylesAside.aside__Open : null))}>
             <div className={stylesAside.asideUser}>
-                <div className={stylesAside.asideUserIcon} onClick={() => handleClickAside}>
+                <i className={stylesAside.asideUserIcon} onClick={ handleClickAside }>
                     <FaEllipsisV />
-                </div>
+                </i>
                 <div className={stylesAside.asideUserProfile}>
                     <Image
                         src={Profile}

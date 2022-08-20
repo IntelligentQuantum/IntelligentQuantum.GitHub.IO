@@ -9,7 +9,7 @@
 
     width: 8rem;
     height: 100%;
-    transition: width 0.4s;
+    transition: all 0.4s;
 
     @media only screen and (max-width: 1000px)
     {
@@ -20,8 +20,7 @@
         z-index: 100;
         right: -100%;
 
-        transition: 0.4s;
-        width: 27.6517rem;
+        width: 30rem;
         height: 100%;
     }
 
@@ -232,9 +231,15 @@
                 }
             }
 
-            &:hover,
             &:hover::after,
             &:hover::before
+            {
+                background-color: var(--color-base-text-bolder);
+            }
+
+            &[data-open="false"]:hover,
+            &[data-open="false"]:hover::after,
+            &[data-open="false"]:hover::before
             {
                 background-color: var(--color-base-text-bolder);
             }
@@ -388,16 +393,16 @@
     &Themes
     {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 0.5rem;
+        gap: 1rem;
 
-        transition: all 0.8s;
+        transition: all 0.8s, background-color 0s;
         padding: 1rem 1rem 0;
         background-color: var(--base-dark);
 
-        & > span
+        & > i
         {
             display: flex;
             align-items: center;
@@ -409,11 +414,6 @@
             cursor: pointer;
             width: 2.8rem;
             height: 2.8rem;
-
-            &:first-child
-            {
-                margin-top: 0.5rem;
-            }
 
             &:hover
             {
@@ -452,16 +452,17 @@
     &__Open
     {
         width: 30rem;
-        transition: width 0.8s;
+        transition: all 0.8s;
+
+        & .navThemes
+        {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
 
         & a
         {
             margin-left: 0 !important;
-        }
-
-        & .navThemes
-        {
-            gap: 1rem;
         }
 
         @media only screen and (max-width: 1000px)
@@ -484,7 +485,13 @@ html[data-language="fa"]
     .nav
     {
         right: auto;
-        left: -150%;
+        left: 0;
+
+        @media only screen and (max-width: 1000px)
+        {
+            right: auto;
+            left: -150%;
+        }
 
         & a
         {

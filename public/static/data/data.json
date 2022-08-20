@@ -9,10 +9,17 @@
             "Full-Stack Developer",
             "Graphic Designer"
         ],
-        "descriptions":
+        "header":
+        {
+            "titles":
+            [
+                "Parsa Firoozi — Full-Stack Developer & Graphic Designer"
+            ],
+            "descriptions":
             [
                 "Parsa Firoozi Full-Stack Developer & Graphic Designer. Parsa Firoozi focuses on JavaScript-related technologies like Typescript, NodeJS and React. Parsa Firoozi is also an experienced graphic designer and proficient in Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro and Gimp software's."
-            ],
+            ]
+        },
         "currency": "$",
         "typing_effect":
         [
@@ -257,7 +264,7 @@
             {
                 "id": 1,
                 "title": "Back-End Development",
-                "description": "Back-end development means working on server-side software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
+                "description": "Back-end development means working on server-side of the software, which focuses on everything you can't see on a website based on NodeJS, DenoJS, NestJS, NextJS and Poco."
             },
             {
                 "id": 2,
@@ -272,7 +279,7 @@
             {
                 "id": 4,
                 "title": "Cyber-Security",
-                "description": "In the digital world, our data is secure as long as we are aware. Most hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
+                "description": "In the digital world, our data is secure as long as we are know. Most of the hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
             },
             {
                 "id": 5,
@@ -443,13 +450,20 @@
         "my_name": "Parsa Firoozi",
         "my_skills":
         [
-            "Full-Stack-Entwickler",
+            "Full-Stack Entwickler",
             "Grafikdesigner"
         ],
-        "descriptions":
-        [
-            "Parsa Firoozi Full-Stack-Entwickler und Grafikdesigner. Parsa Firoozi konzentriert sich auf JavaScript-bezogene Technologien wie Typescript, NodeJS und React. Parsa Firoozi ist auch eine erfahrene Grafikdesignerin und beherrscht die Software Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro und Gimp."
-        ],
+        "header":
+        {
+            "titles":
+            [
+                "Parsa Firoozi — Full-Stack Entwickler & Grafikdesigner"
+            ],
+            "descriptions":
+            [
+                "Parsa Firoozi Full-Stack-Entwickler und Grafikdesigner. Parsa Firoozi konzentriert sich auf JavaScript-bezogene Technologien wie Typescript, NodeJS und React. Parsa Firoozi ist auch eine erfahrene Grafikdesignerin und beherrscht die Software Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro und Gimp."
+            ]
+        },
         "technologies":
         {
             "title": "Frameworks und Technologien",
@@ -511,7 +525,7 @@
                 }
             ]
         },
-        "about_me": "Parsa Firoozi ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrung in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. NEXT_LINE Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Poco und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native. NEXT_LINE Er ist auch ein erfahrener Grafikdesigner und hat viele Aktivitäten auf Instagram und YouTube durchgeführt. Parsa beherrscht die Software Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro und Gimp.",
+        "about_me": "Parsa Firoozi ist ein großer Enthusiast für ungelöste Probleme und ein Hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrungen in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. NEXT_LINE Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Zwischenmenschlichen Kommunikation und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Poco und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native. NEXT_LINE Er ist auch ein erfahrener Grafikdesigner und hat viele Aktivitäten auf Instagram und YouTube durchgeführt. Parsa beherrscht die Software Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro und Gimp.",
         "currency": "€",
         "send_message": "Nachricht Senden",
         "source_code": "Quell Code",
@@ -519,7 +533,7 @@
         "source": "Quell",
         "created_at": "Hergestellt in",
         "message": "Nachricht",
-        "explore_more": "JETZT ENTDECKEN",
+        "explore_more": "Mehr Erkunden",
         "download_cv": "Lebenslauf HERUNTERLADEN",
         "read_more": "Weiterlesen",
         "blog_not_found": "Der Blog konnte nicht gefunden werden",
@@ -542,15 +556,15 @@
         "my_age": 2004,
         "typing_effect":
         [
-            "Ich erstelle Desktop und mobile anwendungen.",
+            "Ich erstelle Desktop und Mobile Application.",
             "Ich baue webinterfaces.",
             "Ich baue RESTful APIs.",
-            "Ich baue spiele mit Unreal, Frostbite und Unity engines.",
-            "Ich bin ein enthusiast für cybersicherheit.",
-            "Ich bin JavaScripts, TypeScript, PHP und C++ entwickler.",
-            "Ich bin ReactJS- und NextJS entwickler.",
-            "Ich bin NodeJS, DenoJS, NestJS und Poco entwickler.",
-            "Ich bin Electron, React Native und Qt entwickler."
+            "Ich baue Spiele mit Unreal, Frostbite und Unity engines.",
+            "Ich bin ein Entwickler für Cybersicherheit.",
+            "Ich bin JavaScripts, TypeScript, PHP und C++ Entwickler.",
+            "Ich bin ReactJS- und NextJS Entwickler.",
+            "Ich bin NodeJS, DenoJS, NestJS und Poco Entwickler.",
+            "Ich bin Electron, React Native und Qt Entwickler."
         ],
         "residence": "Residenz",
         "city": "Stadt",
@@ -575,7 +589,7 @@
         },
         "titles":
         [
-            "Was mache ich oder bin ich?",
+            "Was mache ich und wer bin ich?",
             "Dienstleistungen",
             "Kontakt Informationen",
             "In Kontakt Kommen",
@@ -583,7 +597,7 @@
             "Blogs",
             "Portfolio",
             "Github Lagerstätten",
-            "über mich"
+            "Über mich"
         ],
         "my_blogs":
         [
@@ -689,7 +703,7 @@
             {
                 "id": 0,
                 "title": "Front-End Entwicklung",
-                "description": "Front-End-Webentwicklung ist die Entwicklung der grafischen Benutzeroberfläche einer Website durch die Verwendung von HTML, ReactJS und NextJS, damit Benutzer diese Website anzeigen und mit ihr interagieren können."
+                "description": "Front-End-Webentwicklung ist die Entwicklung der grafischen Benutzeroberfläche einer Website durch die Verwendung von HTML, ReactJS und NextJS, damit Benutzer dieser Website anzeigen und mit ihr interagieren können."
             },
             {
                 "id": 1,
@@ -698,8 +712,8 @@
             },
             {
                 "id": 2,
-                "title": "Plattformübergreifende Entwicklung",
-                "description": "Plattformübergreifende Entwicklung ist die Praxis der Entwicklung von Softwareprodukten oder -diensten für mehrere Plattformen wie Windows, Linux, macOS, Android, iOS oder Softwareumgebungen auf Basis von Electron, React Native und Qt."
+                "title": "Cross-Platform Entwicklung",
+                "description": "Cross-Platform Entwicklung ist die Praxis der Entwicklung von Softwareprodukten oder -diensten für mehrere Plattformen wie Windows, Linux, macOS, Android, iOS oder Softwareumgebungen auf Basis von Electron, React Native und Qt."
             },
             {
                 "id": 3,
@@ -883,10 +897,17 @@
             "توسعه دهنده فول-استک",
             "طراح گرافیک"
         ],
-        "descriptions":
-        [
-            "پارسا فیروزی برنامه نویس فول-استک و طراح گرافیک. پارسا فیروزی بر روی فناوری های مرتبط با جاوا اسکریپت مانند Typescript، NodeJS و React تمرکز دارد. پارسا فیروزی همچنین یک طراح گرافیک مجرب و مسلط به نرم افزارهای Adobe Photoshop، Adobe Illustrator، Adobe Premiere Pro و Gimp است."
-        ],
+        "header":
+        {
+            "titles":
+            [
+                "پارسا فیروزی — توسعه دهنده فول-استک و طراح گرافیک"
+            ],
+            "descriptions":
+            [
+                "پارسا فیروزی برنامه نویس فول-استک و طراح گرافیک. پارسا فیروزی بر روی فناوری های مرتبط با جاوا اسکریپت مانند Typescript، NodeJS و React تمرکز دارد. پارسا فیروزی همچنین یک طراح گرافیک مجرب و مسلط به نرم افزارهای Adobe Photoshop، Adobe Illustrator، Adobe Premiere Pro و Gimp است."
+            ]
+        },
         "currency": "ریال",
         "typing_effect":
         [

@@ -8,7 +8,10 @@ import type { IHobby } from '../../interfaces/hobby';
 import type { IPlayer } from '../../interfaces/player';
 import type { IContent } from '../../interfaces/content';
 
+import HeroNeo from '../../../public/static/images/hobbies/hero-neo.png';
 import HeroAzur from '../../../public/static/images/hobbies/hero-azur.png';
+import HeroTommy from '../../../public/static/images/hobbies/hero-tommy.png';
+import HeroCooper from '../../../public/static/images/hobbies/hero-cooper.png';
 import HeroGuitar from '../../../public/static/images/hobbies/hero-guitar.png';
 import HeroRarible from '../../../public/static/images/hobbies/hero-rarible.jpg';
 import HeroDiscord from '../../../public/static/images/hobbies/hero-discord.png';
@@ -104,96 +107,127 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                     </span>
                                 </TooltipPrimary>
                             </>
-                            : props.hobby.type === 'space'
+                            : props.hobby.type === 'movie'
                                 ?
-                                <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
-                                    <Image
-                                        src={ HeroAstronaut }
-                                        alt='Astronaut'
-                                        layout='intrinsic'
-                                        width={420}
-                                        height={420}
-                                    />
-                                </span>
-                                : props.hobby.type === 'guitar'
+                                <>
+                                    <span data-hero={true}>
+                                        <Image
+                                            src={ HeroNeo }
+                                            alt='Neo Matrix'
+                                            layout='intrinsic'
+                                            width={290}
+                                            height={365}
+                                        />
+                                    </span>
+                                    <span data-hero={true}>
+                                        <Image
+                                            src={ HeroCooper }
+                                            alt='Cooper Interstellar'
+                                            layout='intrinsic'
+                                            width={290}
+                                            height={365}
+                                        />
+                                    </span>
+                                    <span data-hero={true}>
+                                        <Image
+                                            src={ HeroTommy }
+                                            alt='Tommy Peaky Blinders'
+                                            layout='intrinsic'
+                                            width={290}
+                                            height={365}
+                                        />
+                                    </span>
+                                </>
+                                : props.hobby.type === 'space'
                                     ?
                                     <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
                                         <Image
-                                            src={ HeroGuitar }
-                                            alt='Guitar'
+                                            src={ HeroAstronaut }
+                                            alt='Astronaut'
                                             layout='intrinsic'
                                             width={420}
                                             height={420}
                                         />
                                     </span>
-                                    : props.hobby.type === 'music'
+                                    : props.hobby.type === 'guitar'
                                         ?
                                         <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
                                             <Image
-                                                src={ HeroShadmehr }
-                                                alt='Shadmehr Aghili'
+                                                src={ HeroGuitar }
+                                                alt='Guitar'
                                                 layout='intrinsic'
                                                 width={420}
                                                 height={420}
                                             />
                                         </span>
-                                        : props.hobby.type === 'cod'
+                                        : props.hobby.type === 'music'
                                             ?
-                                            <>
-                                                <span data-hero={true}>
-                                                    <Image
-                                                        src={ HeroAzur }
-                                                        alt='Azur'
-                                                        layout='intrinsic'
-                                                        width={342.4}
-                                                        height={360}
-                                                    />
-                                                </span>
-                                                <span data-hero={true}>
-                                                    <Image
-                                                        src={ HeroGhost }
-                                                        alt='Ghost Reckoner'
-                                                        layout='intrinsic'
-                                                        width={291}
-                                                        height={360}
-                                                    />
-                                                </span>
-                                            </>
-                                            : props.hobby.type === 'discord'
+                                            <span className={stylesHobbies.hobbiesBoxContentImagesStatic}>
+                                                <Image
+                                                    src={ HeroShadmehr }
+                                                    alt='Shadmehr Aghili'
+                                                    layout='intrinsic'
+                                                    width={420}
+                                                    height={420}
+                                                />
+                                            </span>
+                                            : props.hobby.type === 'cod'
                                                 ?
-                                                <span className={stylesHobbies.hobbiesBoxContentImagesLogo} data-discord={true}>
-                                                    <Image
-                                                        src={ HeroDiscord }
-                                                        alt='Discord'
-                                                        layout='intrinsic'
-                                                        width={310}
-                                                        height={170}
-                                                    />
-                                                </span>
-                                                : props.hobby.type === 'instagram'
-                                                    ?
-                                                    <span className={stylesHobbies.hobbiesBoxContentImagesLogo}>
+                                                <>
+                                                    <span data-hero={true}>
                                                         <Image
-                                                            src={ HeroInstagram }
-                                                            alt='Instagram'
+                                                            src={ HeroAzur }
+                                                            alt='Azur'
                                                             layout='intrinsic'
-                                                            width={250}
-                                                            height={250}
+                                                            width={342.4}
+                                                            height={360}
                                                         />
                                                     </span>
-                                                    : props.hobby.type === 'rarible'
+                                                    <span data-hero={true}>
+                                                        <Image
+                                                            src={ HeroGhost }
+                                                            alt='Ghost Reckoner'
+                                                            layout='intrinsic'
+                                                            width={291}
+                                                            height={360}
+                                                        />
+                                                    </span>
+                                                </>
+                                                : props.hobby.type === 'discord'
+                                                    ?
+                                                    <span className={stylesHobbies.hobbiesBoxContentImagesLogo} data-discord={true}>
+                                                        <Image
+                                                            src={ HeroDiscord }
+                                                            alt='Discord'
+                                                            layout='intrinsic'
+                                                            width={310}
+                                                            height={170}
+                                                        />
+                                                    </span>
+                                                    : props.hobby.type === 'instagram'
                                                         ?
                                                         <span className={stylesHobbies.hobbiesBoxContentImagesLogo}>
                                                             <Image
-                                                                src={ HeroRarible }
-                                                                alt='Rarible'
+                                                                src={ HeroInstagram }
+                                                                alt='Instagram'
                                                                 layout='intrinsic'
                                                                 width={250}
                                                                 height={250}
                                                             />
                                                         </span>
-                                                        :
-                                                        null
+                                                        : props.hobby.type === 'rarible'
+                                                            ?
+                                                            <span className={stylesHobbies.hobbiesBoxContentImagesLogo}>
+                                                                <Image
+                                                                    src={ HeroRarible }
+                                                                    alt='Rarible'
+                                                                    layout='intrinsic'
+                                                                    width={250}
+                                                                    height={250}
+                                                                />
+                                                            </span>
+                                                            :
+                                                            null
                     }
                 </div>
             </div>

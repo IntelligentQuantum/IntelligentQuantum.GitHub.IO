@@ -2,10 +2,10 @@ import axios from 'axios';
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
+import type { AppProps } from 'next/app';
 
 import { wrapper } from '../store/app/store';
 
-import type { AppProps } from 'next/app';
 import type { ILanguages } from '../types/language';
 import type { IContent } from '../interfaces/content';
 

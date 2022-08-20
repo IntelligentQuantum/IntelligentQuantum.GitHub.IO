@@ -36,8 +36,8 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
     return (
         <Fragment>
             <Head>
-                <title>{ props.content.my_name } &mdash; { props.content.my_skills.join(' & ') }</title>
-                <meta name='description' content={ props.content.descriptions[0] }/>
+                <title>{ props.content.header.titles[0] }</title>
+                <meta name='description' content={ props.content.header.descriptions[0] }/>
             </Head>
 
             <section className={stylesHome.home}>
@@ -57,8 +57,8 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                             </Link>
                         </div>
 
-                        <div className={stylesHome.homeHeaderLogs}>
-                            <div className={stylesHome.homeHeaderLogsBox}>
+                        <ul className={stylesHome.homeHeaderLogs}>
+                            <li className={stylesHome.homeHeaderLogsBox}>
                                 <span>
                                     <CountUp
                                         start={0}
@@ -68,8 +68,8 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                 +
                                 </span>
                                 <p>{ props.content.headers[0] }</p>
-                            </div>
-                            <div className={stylesHome.homeHeaderLogsBox}>
+                            </li>
+                            <li className={stylesHome.homeHeaderLogsBox}>
                                 <span>
                                     <CountUp
                                         start={0}
@@ -79,8 +79,8 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                 +
                                 </span>
                                 <p>{ props.content.headers[1] }</p>
-                            </div>
-                            <div className={stylesHome.homeHeaderLogsBox}>
+                            </li>
+                            <li className={stylesHome.homeHeaderLogsBox}>
                                 <span>
                                     <CountUp
                                         start={0}
@@ -90,8 +90,8 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                 +
                                 </span>
                                 <p>{ props.content.headers[2] }</p>
-                            </div>
-                            <div className={stylesHome.homeHeaderLogsBox}>
+                            </li>
+                            <li className={stylesHome.homeHeaderLogsBox}>
                                 <span>
                                     <CountUp
                                         start={0}
@@ -101,8 +101,8 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                 +
                                 </span>
                                 <p>{ props.content.headers[3] }</p>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </header>
                 </ScrollMotion>
 
@@ -215,21 +215,8 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
 
                 <ScrollMotion>
                     <h4 className='heading'>{ props.content.titles[7] }</h4>
-                    {
-                        props.content.dir === 'rtl'
-                            ?
-                            <Fragment>
-                                <RepositoriesList dir='rtl' repositories={ props.repositories }/>
-
-                                <OrganizationsList dir='rtl' organizations={ props.organizations }/>
-                            </Fragment>
-                            :
-                            <Fragment>
-                                <RepositoriesList dir='ltr' repositories={ props.repositories }/>
-
-                                <OrganizationsList dir='ltr' organizations={ props.organizations }/>
-                            </Fragment>
-                    }
+                    <RepositoriesList dir={ props.content.dir } repositories={ props.repositories }/>
+                    <OrganizationsList dir={ props.content.dir } organizations={ props.organizations }/>
                 </ScrollMotion>
             </section>
         </Fragment>

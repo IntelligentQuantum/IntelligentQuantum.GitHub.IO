@@ -85,42 +85,40 @@ const Navbar = (props: { content: IContent, mobile?: boolean }) =>
                 </div>
 
                 <div className={stylesNav.navMobileHamburger} onClick={ handleClickNavbar }>
-                    <div className={classnames(stylesNav.navMobileHamburgerLine, stylesNav.navMobileHamburgerLineOpen)}>&nbsp;</div>
+                    <i className={classnames(stylesNav.navMobileHamburgerLine, stylesNav.navMobileHamburgerLineOpen)}>&nbsp;</i>
                 </div>
             </nav>
             :
             <nav className={classnames(stylesNav.nav, 'z-index__101', (navbarOpen ? stylesNav.nav__Open : null))}>
                 <div className={stylesNav.navHamburger} onClick={ handleClickNavbar }>
-                    <div className={stylesNav.navHamburgerLine} data-open={navbarOpen}>&nbsp;</div>
+                    <span className={stylesNav.navHamburgerLine} data-open={navbarOpen}>&nbsp;</span>
                 </div>
 
                 <div className={stylesNav.navContent}>
-                    <div className={stylesNav.navContentActive} data-open={navbarOpen}>
-                        <p>{ props.content && page ? props.content[page as IPage] : null }</p>
-                    </div>
+                    <p className={stylesNav.navContentActive} data-open={navbarOpen}>{ props.content[page as IPage] }</p>
 
                     <div className={stylesNav.navContentList} data-open={navbarOpen}>
-                        <Link href='/' passHref>
+                        <Link href='/'>
                             <a data-active={page === 'home'} className={stylesNav.navContentItem}>
                                 {props.content.home}
                             </a>
                         </Link>
-                        <Link href='/portfolio' passHref>
+                        <Link href='/portfolio'>
                             <a data-active={page === 'portfolio'} className={stylesNav.navContentItem}>
                                 {props.content.portfolio}
                             </a>
                         </Link>
-                        <Link href='/contact' passHref>
+                        <Link href='/contact'>
                             <a data-active={page === 'contact'} className={stylesNav.navContentItem}>
                                 {props.content.contact}
                             </a>
                         </Link>
-                        <Link href='/hobbies' passHref>
+                        <Link href='/hobbies'>
                             <a data-active={page === 'hobbies'} className={stylesNav.navContentItem}>
                                 {props.content.hobbies}
                             </a>
                         </Link>
-                        <Link href='/blogs' passHref>
+                        <Link href='/blogs'>
                             <a data-active={page === 'blogs'} className={stylesNav.navContentItem}>
                                 {props.content.blogs}
                             </a>
@@ -129,12 +127,12 @@ const Navbar = (props: { content: IContent, mobile?: boolean }) =>
                 </div>
 
                 <div className={stylesNav.navThemes}>
-                    <span onClick={() => handleTheme('dim')} className={theme === 'dim' ? stylesNav.navThemes__Active : ''}>
+                    <i onClick={() => handleTheme('dim')} className={theme === 'dim' ? stylesNav.navThemes__Active : ''}>
                         <BsCloudMoonFill />
-                    </span>
-                    <span onClick={() => handleTheme('light')} className={theme === 'light' ? stylesNav.navThemes__Active : ''}>
+                    </i>
+                    <i onClick={() => handleTheme('light')} className={theme === 'light' ? stylesNav.navThemes__Active : ''}>
                         <BsSunFill />
-                    </span>
+                    </i>
                 </div>
             </nav>
     );

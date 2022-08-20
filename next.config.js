@@ -17,7 +17,6 @@ const nextConfig =
                     ],
             },
         reactStrictMode: true,
-        include: path.resolve(__dirname, 'public/static/icons'),
         swcMinify: true
     };
 
