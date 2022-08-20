@@ -11,8 +11,10 @@ import useTranslation from 'next-translate/useTranslation';
 import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 
 import useTyped from '../hooks/useTyped';
+import Tooltip from '../components/tooltip/tooltip.component';
 
 import services from '../data/services.data';
+import { fats } from '../data/fats.data';
 
 import Main from '../components/layouts/main/main.component';
 
@@ -98,149 +100,77 @@ const Home: NextPage = (props: any) =>
                                 <h5>Front-End:</h5>
 
                                 <ul className={styles.homeAboutFATItemListLogo}>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-html.png'
-                                                alt='IntelligentQuantum Html Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-sass.png'
-                                                alt='IntelligentQuantum sass Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-styled-component.png'
-                                                alt='IntelligentQuantum Styled Component Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-react.png'
-                                                alt='IntelligentQuantum ReactJS Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-next.png'
-                                                alt='IntelligentQuantum NextJS Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
+                                    {
+                                        fats.frontend.map(front =>
+                                        {
+                                            return (
+                                                <Tooltip key={front.id} content={front.name}>
+                                                    <li key={front.id} className={styles.homeAboutFATItemListLogoItem}>
+                                                        <span>
+                                                            <Image
+                                                                src={front.src}
+                                                                alt={front.alt}
+                                                                layout='intrinsic'
+                                                                width={25}
+                                                                height={25}
+                                                            />
+                                                        </span>
+                                                    </li>
+                                                </Tooltip>
+                                            );
+                                        })
+                                    }
                                 </ul>
                             </li>
                             <li className={styles.homeAboutFATItem}>
                                 <h5>Back-End:</h5>
                                 <ul className={styles.homeAboutFATItemListLogo}>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-node.png'
-                                                alt='IntelligentQuantum NodeJS Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-deno.png'
-                                                alt='IntelligentQuantum DenoJS Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-express.png'
-                                                alt='IntelligentQuantum ExpressJS Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-nest.png'
-                                                alt='IntelligentQuantum NestJS Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
+                                    {
+                                        fats.backend.map(back =>
+                                        {
+                                            return (
+                                                <Tooltip key={back.id} content={back.name}>
+                                                    <li key={back.id} className={styles.homeAboutFATItemListLogoItem}>
+                                                        <span>
+                                                            <Image
+                                                                src={back.src}
+                                                                alt={back.alt}
+                                                                layout='intrinsic'
+                                                                width={25}
+                                                                height={25}
+                                                            />
+                                                        </span>
+                                                    </li>
+                                                </Tooltip>
+                                            );
+                                        })
+                                    }
                                 </ul>
                             </li>
                             <li className={styles.homeAboutFATItem}>
                                 <h5>Cross-Platform:</h5>
 
                                 <ul className={styles.homeAboutFATItemListLogo}>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-electron.png'
-                                                alt='IntelligentQuantum ElectronJS Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-react-native.png'
-                                                alt='IntelligentQuantum React native Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
-                                    <li className={styles.homeAboutFATItemListLogoItem}>
-                                        <span>
-                                            <Image
-                                                src='/images/logos/logo-qt.png'
-                                                alt='IntelligentQuantum QT Logo'
-                                                layout='intrinsic'
-                                                width={25}
-                                                height={25}
-                                            />
-                                        </span>
-                                    </li>
+                                    {
+                                        fats.crossPlatforms.map(cross =>
+                                        {
+                                            return (
+                                                <Tooltip key={cross.id} content={cross.name}>
+                                                    <li key={cross.id} className={styles.homeAboutFATItemListLogoItem}>
+                                                        <span>
+                                                            <Image
+                                                                src={cross.src}
+                                                                alt={cross.alt}
+                                                                layout='intrinsic'
+                                                                width={25}
+                                                                height={25}
+                                                            />
+                                                        </span>
+                                                    </li>
+                                                </Tooltip>
+                                            );
+                                        })
+                                    }
                                 </ul>
                             </li>
                         </ul>

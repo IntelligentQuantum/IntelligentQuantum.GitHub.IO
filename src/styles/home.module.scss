@@ -232,9 +232,16 @@
 
                     &Item
                     {
+                        transition: all .2s;
+
                         &:not(:first-child)
                         {
                             margin-left: -1rem;
+                        }
+
+                        &:hover
+                        {
+                            transform: scale(1.25);
                         }
 
                         & span
