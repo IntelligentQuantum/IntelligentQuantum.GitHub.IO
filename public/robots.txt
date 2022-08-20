@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://intelligentquantum.dev/sitemap.xml
