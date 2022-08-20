@@ -6,9 +6,11 @@ html[data-theme="matrix"]
     --color-base-text: #9aa595;
     --color-base-text-bold: #dae3d7;
     --color-base-text-bolder: #f5f8f2;
-    --base: #000;
-    --base-light: #090909;
+    --base: #090909;
+    --base-light: #101010;
+    --base-lighter: #171717;
     --base-dark: #0c0c0c;
+    --base-darker: #151515;
     --border-radius: 0;
     --stroke-linecap: none;
     --background-size: none;
@@ -30,7 +32,7 @@ html[data-theme="matrix"]
             rgb(0 0 0 / 70%) 0%,
             rgb(0 0 0 / 80%) 70%,
             rgb(0 0 0 / 90%) 80%,
-            #000 100%
+            #090909 100%
         ),
         url("../../public/images/background_matrix-2.jpg");
 }
@@ -58,7 +60,7 @@ html[data-theme="dark"]
             rgb(45 45 58 / 70%) 50%,
             rgb(43 43 53 / 70%) 100%
         ),
-        url("../../public/images/background_dark.jpg");
+        url("../../public/images/background_dark.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -93,7 +95,7 @@ html[data-theme="ark"]
             rgb(70 70 88 / 75%) 80%,
             rgb(64 64 82 / 80%) 90%
         ),
-        url("../../public/images/background_dim.jpg");
+        url("../../public/images/background_dim.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -129,7 +131,7 @@ html[data-theme="light"]
             rgb(239 241 245 / 70%) 70%,
             rgb(255 255 255 / 70%) 90%
         ),
-        url("../../public/images/background_dim.jpg");
+        url("../../public/images/background_dim.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,

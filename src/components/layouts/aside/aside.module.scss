@@ -141,7 +141,7 @@
                 width: 3rem;
                 height: 3rem;
                 border-radius: 50%;
-                background-color: var(--base-darker);
+                background: var(--base-light);
                 color: var(--color-base-text);
                 margin: auto auto 0.5rem;
 
@@ -152,7 +152,7 @@
 
                 &Active
                 {
-                    background-color: var(--color-primary);
+                    background: var(--color-primary);
                     color: var(--base);
                 }
             }
@@ -220,7 +220,7 @@
                         path:nth-child(1)
                         {
                             fill: none;
-                            stroke: var(--base);
+                            stroke: var(--base-lighter);
                             stroke-width: 3.8;
                         }
 
@@ -278,14 +278,14 @@
                     height: 0.5rem;
                     width: 100%;
                     border-radius: 5rem;
-                    background-color: var(--base);
+                    background: var(--base-light);
 
                     &Active
                     {
                         position: absolute;
                         border-radius: 5rem;
                         height: 95%;
-                        background-color: var(--color-primary);
+                        background: var(--color-primary);
                     }
                 }
             }
