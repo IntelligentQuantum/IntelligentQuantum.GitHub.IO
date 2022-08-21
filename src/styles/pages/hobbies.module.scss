@@ -96,6 +96,11 @@
                 background-image: var(--base-gradiant-image-rarible);
             }
 
+            &[data-fact_type="movie"]::before
+            {
+                background-image: var(--base-gradiant-image-movie);
+            }
+
             &Box
             {
                 display: flex;

@@ -51,10 +51,10 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
 
     return (
         <div className={stylesHobbies.hobbiesBox}>
-            <div className={stylesHobbies.hobbiesBoxContent} data-fact_type={props.hobby.type}>
+            <div className={stylesHobbies.hobbiesBoxContent} data-fact_type={ props.hobby.type }>
                 <div className={stylesHobbies.hobbiesBoxContentBox}>
                     <h3 className={stylesHobbies.hobbiesBoxContentBoxTitle}>{ props.hobby.title }</h3>
-                    <p className={stylesHobbies.hobbiesBoxContentBoxDescription} data-fact_type={props.hobby.type}>
+                    <p className={stylesHobbies.hobbiesBoxContentBoxDescription} data-fact_type={ props.hobby.type }>
                         { parse(props.hobby.description, { replace: replaceHobbyTitle }) }
                     </p>
                 </div>
@@ -115,7 +115,7 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                             src={ HeroNeo }
                                             alt='Neo Matrix'
                                             layout='intrinsic'
-                                            width={290}
+                                            width={235}
                                             height={365}
                                         />
                                     </span>
@@ -124,7 +124,7 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                             src={ HeroCooper }
                                             alt='Cooper Interstellar'
                                             layout='intrinsic'
-                                            width={290}
+                                            width={152}
                                             height={365}
                                         />
                                     </span>
@@ -133,7 +133,7 @@ const HobbyCard = (props: { content: IContent, players: IPlayer[], hobby: IHobby
                                             src={ HeroTommy }
                                             alt='Tommy Peaky Blinders'
                                             layout='intrinsic'
-                                            width={290}
+                                            width={128}
                                             height={365}
                                         />
                                     </span>

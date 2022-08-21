@@ -24,7 +24,7 @@ import type { ILanguage } from '../../../interfaces/language';
 import 'react-circular-progressbar/dist/styles.css';
 import stylesAside from '../../../styles/components/aside.module.scss';
 
-import Profile from '../../../../public/static/images/im-parsa.png';
+import Profile from '../../../../public/static/images/profile.png';
 
 import { selectAsideOpen, toggleAside, toggleFilter } from '../../../store/features/header-slice';
 

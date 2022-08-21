@@ -1,0 +1,9 @@
+{
+    "schedule": "daily",
+    "ignoredFiles": [],
+    "aggressiveCompression": "false",
+    "compressWiki": "true",
+    "minKBReduced": 500,
+    "prTitle" : "[ImgBot] Image Optimization",
+    "prBody" : "Image optimizations are ready to be merged\nOptimization Ratio: {optimization_ratio}\n<details>\n<summary>Click for more Details.</summary>\n{optimization_details}\n</details>"
+}

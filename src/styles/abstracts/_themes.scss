@@ -149,6 +149,14 @@ html[data-theme="dim"]
             rgb(43 43 57 / 95%) 80%
         ),
         url("../../../public/static/images/hobbies/background-ig.jpg");
+    --base-gradiant-image-movie:
+        radial-gradient(
+                rgb(45 50 62 / 70%) 0%,
+                rgb(46 46 57 / 75%) 10%,
+                rgb(46 46 57 / 80%) 50%,
+                rgb(43 43 57 / 85%) 80%
+        ),
+        url("../../../public/static/images/hobbies/background-movie.jpg");
     --base-gradiant-image-discord:
         radial-gradient(
             rgb(39 42 54 / 70%) 0%,

@@ -68,7 +68,7 @@ class MyDocument extends Document
                                             name: 'Parsa Firoozi'
                                         },
                                     email: 'mailto:hello@parsa-firoozi.ir',
-                                    image: 'https://parsa-firoozi.ir/static/images/im-parsa.png',
+                                    image: 'https://parsa-firoozi.ir/static/images/profile.png',
                                     jobTitle: 'Full-Stack Developer',
                                     url: 'https://parsa-firoozi.ir'
                                 }
