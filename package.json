@@ -33,7 +33,7 @@
         "react-redux": "8.0.2",
         "react-spring": "9.5.2",
         "redux-logger": "3.0.6",
-        "sass": "1.54.4",
+        "sass": "1.54.5",
         "sharp": "0.30.7",
         "swiper": "8.3.2"
     },
