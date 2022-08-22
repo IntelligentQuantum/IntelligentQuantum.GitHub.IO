@@ -8,6 +8,8 @@
         grid-template-columns: 100%;
     }
 
+    position: relative;
+
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -34,6 +36,9 @@
 
     &Background
     {
+        position: absolute;
+        top: 0;
+
         background-image: var(--base-gradiant-image-2);
         background-position: center;
         background-size: cover;
@@ -48,11 +53,16 @@
 
         @media screen and (max-width: 1000px)
         {
+            z-index: 100;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
 
+            height: 7rem;
+
             padding: 2rem 3rem;
+            background: var(--base-darker);
 
             & svg
             {

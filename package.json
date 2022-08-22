@@ -14,6 +14,7 @@
         "build": "next build",
         "start": "next start",
         "export": "next export",
+        "prepare": "husky install",
         "lint": "next lint",
         "lint:scss": "stylelint --fix \"src/**/*.scss\" --custom-syntax postcss-scss",
         "lint:scss:fix": "npm run lint:scss -- --fix"

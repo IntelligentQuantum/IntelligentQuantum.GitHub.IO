@@ -1,0 +1,47 @@
+.contact
+{
+    z-index: 95;
+
+    &Heading
+    {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: var(--color-base-text);
+        padding: 3rem;
+    }
+
+    &Cards
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 2rem;
+
+        padding: 0 3rem;
+
+        &Card
+        {
+            background: var(--base-light);
+            padding: 3rem;
+            min-height: 20rem;
+
+            &List
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+
+                &Item
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    color: var(--color-base-text-bold);
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

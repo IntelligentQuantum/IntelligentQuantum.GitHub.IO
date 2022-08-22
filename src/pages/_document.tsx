@@ -13,6 +13,7 @@ class IQDocument extends Document
             <Html data-theme='dark'>
                 <Head>
                     <meta property='theme-color' content='#5294E2'/>
+                    <meta name="robots" content="all" />
 
                     <meta name='language' content='en'/>
                     <meta name='Classification' content='Portfolio'/>

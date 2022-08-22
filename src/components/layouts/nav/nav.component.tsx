@@ -50,7 +50,12 @@ const Nav = () =>
             </div>
 
             <div className={styles.navContent}>
-                <p data-open={navbarOpen} className={styles.navContentActive}>{ router.pathname === '/' ? 'Home' : router.pathname }</p>
+                <p
+                    data-open={navbarOpen}
+                    className={styles.navContentActive}
+                >
+                    { router.pathname === '/' ? 'HOME' : router.pathname.split('/')[1].toUpperCase() }
+                </p>
 
                 <div data-open={navbarOpen} className={styles.navContentList}>
                     <Link href='/'>
