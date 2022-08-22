@@ -4,6 +4,8 @@ import Head from 'next/head';
 
 import Main from '../components/layouts/main/main.component';
 
+import { BsPerson, BsEnvelope, BsTextParagraph } from 'react-icons/bs';
+
 import styles from '../styles/contact.module.scss';
 
 const Contact: NextPage = () =>
@@ -54,16 +56,16 @@ const Contact: NextPage = () =>
                         <div className={styles.contactCardsCard}>
                             <ul className={styles.contactCardsCardList}>
                                 <li className={styles.contactCardsCardListItem}>
-                                    <span>Residence:</span>
-                                    <span>Iran</span>
+                                    <span>Gmail:</span>
+                                    <span>IntelligentQuantum@Gmail.Com</span>
                                 </li>
                                 <li className={styles.contactCardsCardListItem}>
-                                    <span>City:</span>
-                                    <span>Shiraz</span>
+                                    <span>ProtonMail:</span>
+                                    <span>IntelligentQuantum@ProtonMail.Com</span>
                                 </li>
                                 <li className={styles.contactCardsCardListItem}>
-                                    <span>Age:</span>
-                                    <span>{new Date().getFullYear() - 1997}</span>
+                                    <span>Discord:</span>
+                                    <span>IntelligentQuantum#6439</span>
                                 </li>
                             </ul>
                         </div>
@@ -83,6 +85,49 @@ const Contact: NextPage = () =>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+
+                    <h4 className={styles.contactHeading}>Get in Touch</h4>
+                    <div className={styles.contactForm}>
+                        <form>
+                            <div className={styles.contactFormGroup}>
+                                <label htmlFor="name">
+                                    <BsPerson />
+                                </label>
+                                <input
+                                    id="name"
+                                    name="name"
+                                    type="text"
+                                    placeholder="Name"
+                                />
+                            </div>
+                            <div className={styles.contactFormGroup}>
+                                <label htmlFor="email">
+                                    <BsEnvelope />
+                                </label>
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email"
+                                />
+                            </div>
+                            <div className={styles.contactFormGroup}>
+                                <label htmlFor='message'>
+                                    <BsTextParagraph />
+                                </label>
+                                <textarea
+                                    id='message'
+                                    name='message'
+                                    placeholder='Message'
+                                />
+                            </div>
+                            <div className={styles.contactFormGroup}>
+                                <button>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </section>
             </Main>
