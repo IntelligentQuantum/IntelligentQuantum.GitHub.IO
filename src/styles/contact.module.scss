@@ -18,11 +18,15 @@
 
         padding: 0 3rem;
 
+        @media screen and (max-width: 360px)
+        {
+            padding: 0 1rem;
+        }
+
         &Card
         {
             background: var(--base-light);
             padding: 3rem;
-            min-height: 20rem;
 
             &List
             {
@@ -36,10 +40,15 @@
                     align-items: center;
                     justify-content: space-between;
 
-                    color: var(--color-base-text-bold);
-                    font-size: 1.5rem;
-                    font-weight: 400;
                     width: 100%;
+
+                    & a,
+                    & span
+                    {
+                        color: var(--color-base-text-bold);
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                    }
                 }
             }
         }
@@ -50,6 +59,11 @@
         background: var(--base-light);
         padding: 3rem;
         margin: 0 3rem 2rem;
+
+        @media screen and (max-width: 360px)
+        {
+            margin: 0 1rem 2rem;
+        }
 
         &Group
         {

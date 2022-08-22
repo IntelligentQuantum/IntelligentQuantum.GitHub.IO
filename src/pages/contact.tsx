@@ -57,11 +57,11 @@ const Contact: NextPage = () =>
                             <ul className={styles.contactCardsCardList}>
                                 <li className={styles.contactCardsCardListItem}>
                                     <span>Gmail:</span>
-                                    <span>IntelligentQuantum@Gmail.Com</span>
+                                    <a href="mailto:Intelligentquantum@Gmail.com">IntelligentQuantum</a>
                                 </li>
                                 <li className={styles.contactCardsCardListItem}>
                                     <span>ProtonMail:</span>
-                                    <span>IntelligentQuantum@ProtonMail.Com</span>
+                                    <a href="mailto:Intelligentquantum@ProtonMail.com">IntelligentQuantum</a>
                                 </li>
                                 <li className={styles.contactCardsCardListItem}>
                                     <span>Discord:</span>
