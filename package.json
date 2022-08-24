@@ -20,8 +20,7 @@
         "lint:scss": "stylelint \"src/styles/**/*.scss\" --custom-syntax postcss-scss",
         "lint:scss:fix": "npm run lint:scss -- --fix"
     },
-    "dependencies": {
-        "@next/eslint-plugin-next": "^12.2.3",
+    "dependencies": { 
         "@reduxjs/toolkit": "^1.8.4",
         "axios": "^0.27.2",
         "browser_fingerprint": "^2.0.4",
@@ -62,6 +61,7 @@
         "validator": "^13.7.0"
     },
     "devDependencies": {
+	"@next/eslint-plugin-next": "^12.2.3",
         "@svgr/webpack": "^6.2.1",
         "@testing-library/jest-dom": "^5.16.4",
         "@testing-library/react": "^13.3.0",

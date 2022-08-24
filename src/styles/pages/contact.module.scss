@@ -10,6 +10,7 @@
     &Information
     {
         display: grid;
+        grid-template-rows: auto;
         grid-template-columns: repeat(3, minmax(30rem, 1fr));
         grid-gap: 2rem;
 
@@ -35,13 +36,14 @@
             border-radius: var(--border-radius);
             background: var(--base-light);
             padding: 3rem;
-            min-height: 20rem;
 
             &Personal
             {
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
 
                 height: 100%;
                 padding-bottom: 1.2rem;
@@ -53,6 +55,14 @@
                     justify-content: space-between;
 
                     width: 100%;
+                    overflow-x: scroll;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+
+                    &::-webkit-scrollbar
+                    {
+                        display: none;
+                    }
 
                     & > h3,
                     & > span
@@ -60,6 +70,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        gap: 1rem;
 
                         color: var(--color-base-text-bolder);
                         font-size: 1.5rem;
