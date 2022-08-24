@@ -70,6 +70,9 @@ const Nav = () =>
                     <Link href='/hobbies'>
                         <a data-open={navbarOpen} className={styles.navContentListItem}>HOBBIES</a>
                     </Link>
+                    <Link href='/blogs'>
+                        <a data-open={navbarOpen} className={styles.navContentListItem}>BLOGS</a>
+                    </Link>
                 </div>
             </div>
 

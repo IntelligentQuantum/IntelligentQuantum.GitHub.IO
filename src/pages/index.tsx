@@ -1,5 +1,5 @@
 import { Fragment, useRef } from 'react';
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -265,7 +265,7 @@ const Home: NextPage = (props: any) =>
     );
 };
 
-export async function getStaticProps()
+export const getStaticProps: GetStaticProps = async() =>
 {
     const repositories = await axios.get('https://api.github.com/users/IntelligentQuantum/repos');
     const organizations = await axios.get('https://api.github.com/users/IntelligentQuantum/orgs');
@@ -281,6 +281,6 @@ export async function getStaticProps()
         },
         revalidate: 86400 // 1 day
     };
-}
+};
 
 export default Home;

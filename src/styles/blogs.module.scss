@@ -1,0 +1,141 @@
+.blogs
+{
+    position: relative;
+    z-index: 99;
+
+    &Heading
+    {
+        font-size: 1.7rem;
+        font-weight: 600;
+        padding: 3rem;
+        color: var(--color-base-text-bold) !important;
+    }
+
+    &Cards
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-gap: 2rem;
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+
+        &Card
+        {
+            background: var(--base-lighter);
+            overflow: hidden;
+
+            &Image
+            {
+
+            }
+
+            &Content
+            {
+                padding: 3rem;
+
+                &Title
+                {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: var(--color-base-text-bold);
+                }
+
+                &Paragraph
+                {
+                    color: var(--color-base-text);
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    margin: 1.3rem 0 2rem 0;
+                }
+
+                &Button
+                {
+                    display: flex;
+                    align-items: center;
+
+                    margin-top: auto;
+
+                    &,
+                    &:link,
+                    &:visited
+                    {
+                        color: var(--color-primary);
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                    }
+
+                    svg
+                    {
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        fill: var(--color-primary);
+                        transition: all 0.2s;
+                    }
+
+                    &:hover svg
+                    {
+                        margin-left: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Blog Id Page
+    &BlogId
+    {
+        &Title
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 3rem;
+
+            & span
+            {
+                display: inline;
+                color: var(--color-base-text-bold);
+                background: var(--base-dark);
+                padding: .5rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+
+        &HeadBox
+        {
+            display: grid;
+            place-items: center;
+        }
+
+        &HeadImage
+        {
+            position: relative;
+            padding: 0 3rem;
+
+            width: calc(100% - 6rem);
+            height: 50rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+
+            & img
+            {
+                filter: var(--image-filter);
+                object-position: center;
+                transition: 0.4s ease-in-out;
+            }
+
+            & span
+            {
+                transition: all 0.2s;
+                filter: brightness(85%) blur(0);
+
+                &:hover
+                {
+                    transform: scale(1.07);
+                    filter: brightness(100%) blur(0) var(--image-filter);
+                }
+            }
+        }
+    }
+}
