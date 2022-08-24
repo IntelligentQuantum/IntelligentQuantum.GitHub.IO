@@ -1,124 +1,57 @@
 <h1 align="center">
-    <img width="200px" src="https://raw.githubusercontent.com/im-parsa/im-parsa.github.io/main/public/static/images/favicon.png" alt="parsa firoozi im-parsa"/>
+    <img width="200px" src="https://raw.githubusercontent.com/im-parsa/im-parsa.github.io/main/public/static/images/favicon.png" alt="parsa firoozi"/>
     <br/>
-    My Personal Website ( portfolio )
+    My Personal Website - Portfolio
 </h1>
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/im-parsa/im-parsa.github.io/main/screenshot.png" alt="parsa firoozi im-parsa"/>
+    <img src="https://raw.githubusercontent.com/im-parsa/im-parsa.github.io/main/screenshot.png" alt="parsa firoozi"/>
 </div>
 
-<p align="center">
+<h3 align="center">
     Personal website that written in ReactJS & NextJS, Also its user interface design is like apps
-</p>
+</h3>
 
-<br/>
-
-<p align="center">
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/im-parsa/im-parsa.github.io">
-    &nbsp;
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/im-parsa/im-parsa.github.io">
-    &nbsp;
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-</p>
-
-<h1 align="center">
-    📊 Repo Stats
-</h1>
-
-<p align="center">
-    <img src="https://img.shields.io/github/release/im-parsa/im-parsa.github.io.svg" alt="release">
-    <img src="https://img.shields.io/github/downloads/im-parsa/im-parsa.github.io/total.svg" alt="downloads">
-    <img src="https://img.shields.io/github/forks/im-parsa/im-parsa.github.io.svg" alt="forks">
-    <img src="https://img.shields.io/github/stars/im-parsa/im-parsa.github.io.svg" alt="stars">
-    <img src="https://img.shields.io/github/watchers/im-parsa/im-parsa.github.io.svg" alt="watchers">
-</p>
-
-<br/>
-
-<h1 align="center">
-    💻 Technologies
-</h1>
-
-<div align="center">
-    <img src="https://img.shields.io/badge/JavaScript-323540?style=for-the-badge&logo=JavaScript&logoColor=5294E2" alt="JavaScript" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/TypeScript-323540?style=for-the-badge&logo=TypeScript&logoColor=5294E2" alt="JavaScript" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/SASS-323540?style=for-the-badge&logo=SASS&logoColor=5294E2" alt="SASS" style="border-radius:15px"/>
-    <br/>
-    <img src="https://img.shields.io/badge/ReactJS-323540?style=for-the-badge&logo=React&logoColor=5294E2" alt="ReactJS" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/Next.js-323540?style=for-the-badge&logo=Next.js&logoColor=5294E2" alt="Next.js" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/NPM-323540?style=for-the-badge&logo=NPM&logoColor=5294E2" alt="npm" style="border-radius:15px"/>
-    <img src="https://img.shields.io/badge/Json DB-323540?style=for-the-badge&logo=Json&logoColor=5294E2" alt="React" style="border-radius:15px"/>
-</div>
-
-<h1 align="center">
-    🚀 Getting Started
-</h1>
-
-1. Install Dependencies
-
-   ```sh
-   npm install
-   ```
-
-2. Start the development server
-
-   ```sh
-   npm dev
-   ```
-
-<h1 align="center">
-   🎨 Color Reference
-</h1>
-
-<div align="center">
-
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Blurple           | `#5294E2` |
-| Dark Blurple     | `#4385d4` |
-| Darkest Blurple  | `#3b79c4` |
-| Light Blurple          | `#64a1ea` |
-| Lightest Blurple    | `#7cb5fa` |
-| Background | `#383c4a` |
-| Light Background         | `#464b5a` |
-| Dark Background          | `#404350` |
-
-</div>
-
-<h1 align="center">
-   🚨 Forking this repo (please read!)
-</h1>
+## 🚨 Forking this repo (please read!)
 
 Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
 
 I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
 
-<h1 align="center">
-   🤝 Contributing
-</h1>
+## 🛠 Installation & Set Up
 
-1. [Fork the repository](https://github.com/im-parsa/im-parsa.github.io/fork)
-2. Clone your fork: `git clone https://github.com/im-parsa/im-parsa.github.io.git`
-3. Create your feature branch: `git checkout -b my-new-feature`
-4. Stage changes `git add .`
-5. Commit your changes: `cz` OR `npm run commit` do not use `git commit`
-6. Push to the branch: `git push origin my-new-feature`
-7. Submit a pull request
+1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-<h1 align="center">
-    🌟 Spread the word!
-</h1>
+   ```sh
+   nvm install
+   ```
 
-If you want to say thank you:
-- Add a GitHub Star to the project!
-- Join my discord server [paraffin](https://discord.com/invite/RUrks4JqW6).
-- Follow my profile [im-parsa](https://github.com/im-parsa)
+2. Install dependencies
 
-<br/>
+   ```sh
+   npm install
+   ```
 
-<h1 align="center">
-    ⚠️ License & 📝 Credits
-</h1>
+3. Start the development server
 
-im-parsa.github.io is open-source portfolio-website licensed under the MIT General Public License v3.0. created by [@im-parsa](https://github.com/im-parsa) & [@IntelligentQuantum](https://github.com/IntelligentQuantum).
+   ```sh
+   npm run dev
+   ```
+
+## 🚀 Building and Running for Production
+
+1. Generate a full static production build
+
+   ```sh
+   npm run build
+   ```
+
+1. Preview the site as it will appear once deployed
+
+   ```sh
+   npm start
+   ```
+
+## ⚠️ License & 📝 Credits
+IntelligentQuantum.Dev is open-source portfolio-website licensed under the MIT General Public License v3.0. created by [@im-parsa](https://github.com/im-parsa) & [@IntelligentQuantum](https://github.com/IntelligentQuantum).
+
