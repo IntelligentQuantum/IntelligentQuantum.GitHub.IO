@@ -39,7 +39,7 @@ h4,
 h5,
 h6
 {
-    color: var(--color-base-text-bolder);
+    color: var(--color-base-text) !important;
 }
 
 #__next
@@ -55,4 +55,17 @@ h6
     letter-spacing: 0.5px;
     overflow: hidden;
     height: 100vh;
+}
+
+.markdown-body,
+.markdown-body .highlight pre, .markdown-body pre,
+.markdown-body table tr
+{
+    background-color: transparent !important;
+}
+
+.markdown-body .highlight pre, .markdown-body pre
+{
+    padding: 0 !important;
+    border-radius: 0 !important;
 }

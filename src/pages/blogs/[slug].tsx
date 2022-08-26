@@ -5,10 +5,13 @@ import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import { CodeProps } from 'react-markdown/lib/ast-to-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 
 import { getBlogData, getBlogsFiles } from '../../utils/blogs.util';
 
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import 'github-markdown-css';
 import styles from '../../styles/blogs.module.scss';
 
 const BlogSlug: NextPage = (props: any) =>
@@ -56,38 +59,42 @@ const BlogSlug: NextPage = (props: any) =>
                         </ul>
                     </div>
                     <div className={styles.blogsBlogSlugArticleContent}>
-                        <ReactMarkdown
-                            components={{
-                                code({node, inline, className, children, ...props}: CodeProps)
-                                {
-                                    const match = /language-(\w+)/.exec(className || '');
+                        <div className='markdown-body'>
+                            <ReactMarkdown
+                                rehypePlugins={[rehypeRaw]}
+                                remarkPlugins={[remarkGfm]}
+                                components={{
+                                    code({node, inline, className, children, ...props}: CodeProps)
+                                    {
+                                        const match = /language-(\w+)/.exec(className || '');
 
-                                    return (
-                                        <>
-                                            {
-                                                !inline && match ?
-                                                    (
-                                                        <SyntaxHighlighter
-                                                            style={atomDark as unknown as any}
-                                                            language={match[1]}
-                                                            PreTag="div"
-                                                            {...props}
-                                                        >
-                                                            { String(children).replace(/\n$/, '') }
-                                                        </SyntaxHighlighter>
-                                                    )
-                                                    :
-                                                    (
-                                                        <code className={className} {...props}>{children}</code>
-                                                    )
-                                            }
-                                        </>
-                                    );
-                                }
-                            }}
-                        >
-                            {props.blog.content}
-                        </ReactMarkdown>
+                                        return (
+                                            <>
+                                                {
+                                                    !inline && match ?
+                                                        (
+                                                            <SyntaxHighlighter
+                                                                style={atomDark as unknown as any}
+                                                                language={match[1]}
+                                                                PreTag="div"
+                                                                {...props}
+                                                            >
+                                                                { String(children).replace(/\n$/, '') }
+                                                            </SyntaxHighlighter>
+                                                        )
+                                                        :
+                                                        (
+                                                            <code className={className} {...props}>{children}</code>
+                                                        )
+                                                }
+                                            </>
+                                        );
+                                    }
+                                }}
+                            >
+                                {props.blog.content}
+                            </ReactMarkdown>
+                        </div>
                     </div>
                 </article>
             </section>
