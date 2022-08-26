@@ -19,6 +19,7 @@ body
 {
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
+    color: var(--color-base-text);
 }
 
 a
@@ -29,6 +30,16 @@ a
 li
 {
     list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    color: var(--color-base-text-bolder);
 }
 
 #__next

@@ -17,19 +17,19 @@ const RepositoryCard = ({ name, description, stars, watchers, forks }: any) =>
 
             <ul className={styles.repositoryStats}>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="src/components/repository-card/repository-card.component">
+                    <a href="src/components/home-page/repository-card/repository-card.component">
                         <BiStar />
                         <span>{stars}</span>
                     </a>
                 </li>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="src/components/repository-card/repository-card.component">
+                    <a href="src/components/home-page/repository-card/repository-card.component">
                         <AiOutlineEye />
                         <span>{watchers}</span>
                     </a>
                 </li>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="src/components/repository-card/repository-card.component">
+                    <a href="src/components/home-page/repository-card/repository-card.component">
                         <GoRepoForked />
                         <span>{forks}</span>
                     </a>

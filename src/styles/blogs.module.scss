@@ -24,6 +24,8 @@
             background: var(--base-lighter);
             overflow: hidden;
 
+            max-width: 40rem;
+
             &Image
             {
 
@@ -82,8 +84,8 @@
         }
     }
 
-    // Blog Id Page
-    &BlogId
+    // Blog Slug Page
+    &BlogSlug
     {
         &Title
         {
@@ -91,6 +93,15 @@
             align-items: center;
             justify-content: space-between;
             padding-right: 3rem;
+
+
+            @media only screen and (max-width: 600px)
+            {
+                flex-direction: column;
+                padding-right: 0;
+                margin-bottom: 2rem;
+                width: 100%;
+            }
 
             & span
             {
@@ -135,6 +146,60 @@
                     transform: scale(1.07);
                     filter: brightness(100%) blur(0) var(--image-filter);
                 }
+            }
+        }
+
+        &Article
+        {
+            display: flex;
+            flex-direction: row-reverse;
+            grid-gap: 2rem;
+
+            @media only screen and (max-width: 1500px)
+            {
+                flex-direction: column;
+            }
+
+            padding: 0 3rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+
+            &Author
+            {
+                flex: 0 0 30.6%;
+
+                width: 100%;
+                padding: 3.5rem;
+                max-height: 23rem;
+                font-size: 1.55rem;
+                background: var(--base-light);
+                color: var(--color-base-text);
+
+                ul
+                {
+                    li
+                    {
+                        display: flex;
+                        justify-content: space-between;
+
+                        &:not(:last-child)
+                        {
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+
+            &Content
+            {
+                flex: 0 0 68%;
+                overflow: hidden;
+
+                padding: 3rem;
+                font-weight: 500;
+                font-size: 1.5rem;
+                background: var(--base-light);
+                color: var(--color-base-text-bold);
             }
         }
     }

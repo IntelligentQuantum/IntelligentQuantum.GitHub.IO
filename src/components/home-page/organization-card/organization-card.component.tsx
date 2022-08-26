@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Tooltip from '../tooltip/tooltip.component';
+import Tooltip from '../../ui/tooltip/tooltip.component';
 
 import styles from './organization-card.module.scss';
 

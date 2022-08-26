@@ -2,8 +2,7 @@ import { Fragment } from 'react';
 import type { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
 
-import Aside from '../components/layouts/aside/aside.component';
-import Nav from '../components/layouts/nav/nav.component';
+import Layout from '../components/layouts/layout.component';
 
 import { store } from '../redux/app/store';
 
@@ -14,9 +13,9 @@ function MyApp({ Component, pageProps }: AppProps)
     return (
         <Fragment>
             <Provider store={store}>
-                <Aside />
-                <Component {...pageProps} />
-                <Nav />
+                <Layout>
+                    <Component {...pageProps} />
+                </Layout>
             </Provider>
         </Fragment>
     );
