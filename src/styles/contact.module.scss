@@ -1,5 +1,6 @@
 .contact
 {
+    position: relative;
     z-index: 95;
 
     &Heading
@@ -83,7 +84,18 @@
 
                 &:focus
                 {
+                    border: none;
                     outline: none;
+                }
+
+                &:focus-within + label
+                {
+                    color: var(--base-dark);
+                }
+
+                &::placeholder
+                {
+                    color: var(--color-base-text);
                 }
             }
 
@@ -121,6 +133,15 @@
                     color: var(--color-base-text-bolder);
                     background: var(--color-primary-light);
                 }
+            }
+
+            &Success
+            {
+                align-self: center;
+
+                color: var(--color-success);
+                font-size: 1.4rem;
+                margin-left: 1rem;
             }
         }
     }

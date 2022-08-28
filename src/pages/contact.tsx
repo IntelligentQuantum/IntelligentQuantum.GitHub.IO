@@ -1,6 +1,7 @@
-import { Fragment } from 'react';
+import { Fragment, FormEvent, useState  } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import axios from 'axios';
 
 import { BsPerson, BsEnvelope, BsTextParagraph } from 'react-icons/bs';
 
@@ -8,6 +9,27 @@ import styles from '../styles/contact.module.scss';
 
 const Contact: NextPage = () =>
 {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [success, setSuccess] = useState(false);
+
+    const sendMessageHandler = async(e: FormEvent<HTMLFormElement>) =>
+    {
+        e.preventDefault();
+
+        setSuccess(false);
+        const response = await axios.post('/api/contact', { name, email, message }, { headers: { 'Content-Type': 'application/json' } });
+
+        if (response.status === 200)
+        {
+            setName('');
+            setEmail('');
+            setMessage('');
+            setSuccess(true);
+        }
+    };
+
     return (
         <Fragment>
             <Head>
@@ -86,7 +108,7 @@ const Contact: NextPage = () =>
 
                 <h4 className={styles.contactHeading}>Get in Touch</h4>
                 <div className={styles.contactForm}>
-                    <form>
+                    <form onSubmit={sendMessageHandler}>
                         <div className={styles.contactFormGroup}>
                             <label htmlFor="name">
                                 <BsPerson />
@@ -96,6 +118,9 @@ const Contact: NextPage = () =>
                                 name="name"
                                 type="text"
                                 placeholder="Name"
+                                required
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
                             />
                         </div>
                         <div className={styles.contactFormGroup}>
@@ -107,6 +132,9 @@ const Contact: NextPage = () =>
                                 name="email"
                                 type="email"
                                 placeholder="Email"
+                                required
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
                         <div className={styles.contactFormGroup}>
@@ -117,12 +145,14 @@ const Contact: NextPage = () =>
                                 id='message'
                                 name='message'
                                 placeholder='Message'
+                                required
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
                             />
                         </div>
                         <div className={styles.contactFormGroup}>
-                            <button>
-                                Send Message
-                            </button>
+                            <button>Send Message</button>
+                            { success && <div className={styles.contactFormGroupSuccess}>The message was sent successfully.</div> }
                         </div>
                     </form>
                 </div>
