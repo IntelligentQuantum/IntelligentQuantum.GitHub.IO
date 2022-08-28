@@ -1,0 +1,49 @@
+.projects
+{
+    position: relative;
+    z-index: 98;
+
+    &Heading
+    {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: var(--color-base-text);
+        padding: 3rem;
+    }
+
+    &Menu
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 0 3rem 2rem;
+
+        &Item
+        {
+            cursor: pointer;
+            transition: .4s ease-in-out;
+
+            &:hover
+            {
+                color: var(--color-base-text-bold);
+            }
+        }
+    }
+
+    &Cards
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+
+        padding: 0 3rem 3rem;
+
+        @media only screen and (max-width: 1400px)
+        {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

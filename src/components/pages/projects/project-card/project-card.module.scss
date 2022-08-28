@@ -1,0 +1,9 @@
+.projectCard
+{
+    position: relative;
+    border-radius: var(--border-radius);
+    transition: all .35s;
+    background: var(--base-lighter);
+    height: 30rem;
+    overflow: hidden;
+}

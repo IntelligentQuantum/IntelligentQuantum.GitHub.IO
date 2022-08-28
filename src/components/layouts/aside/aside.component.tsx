@@ -7,8 +7,7 @@ import classnames from 'classnames';
 import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
 import { toggleAside, toggleFilter } from '../../../redux/features/header/header-slice';
 
-import { skills } from '../../../data/skills.data';
-import { libraries } from '../../../data/libraries.data';
+import aside from '../../../data/aside.data.json';
 
 import { FaEllipsisV } from 'react-icons/fa';
 import { BsCheck, BsDribbble, BsGithub, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
@@ -121,7 +120,7 @@ const Aside = () =>
 
                 <div className={styles.asideInformationSkills}>
                     {
-                        skills.map(skill =>
+                        aside.skills.map(skill =>
                         {
                             return (
                                 <div className={styles.asideInformationSkillsBar} key={skill.id}>
@@ -142,7 +141,7 @@ const Aside = () =>
 
                 <ul className={styles.asideInformationLibrariesList}>
                     {
-                        libraries.map(library =>
+                        aside.libraries.map(library =>
                         {
                             return (
                                 <li className={styles.asideInformationLibrariesListItems} key={library.id}>

@@ -2,12 +2,9 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 
 import rateLimit from '../../utils/rate-limit.util';
 
-const limiter = rateLimit({
-    interval: 60 * 1000,
-    uniqueTokenPerInterval: 50
-});
+const limiter = rateLimit({ interval: 60 * 1000, uniqueTokenPerInterval: 50 });
 
-export default async(req: NextApiRequest, res: NextApiResponse) =>
+const ContactApi = async(req: NextApiRequest, res: NextApiResponse) =>
 {
     if (req.method === 'POST')
     {
@@ -64,3 +61,5 @@ export default async(req: NextApiRequest, res: NextApiResponse) =>
         }
     }
 };
+
+export default ContactApi;

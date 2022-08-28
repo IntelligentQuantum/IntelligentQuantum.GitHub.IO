@@ -1,0 +1,25 @@
+{
+    "menus":
+    [
+        {
+            "id": 1,
+            "name": "All Categories"
+        },
+        {
+            "id": 2,
+            "name": "Web Development"
+        },
+        {
+            "id": 3,
+            "name": "App Development"
+        },
+        {
+            "id": 4,
+            "name": "Game Development"
+        },
+        {
+            "id": 5,
+            "name": "Graphic Design"
+        }
+    ]
+}

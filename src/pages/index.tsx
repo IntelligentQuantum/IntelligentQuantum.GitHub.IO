@@ -13,12 +13,11 @@ import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 import useTyped from '../hooks/useTyped';
 import Tooltip from '../components/ui/tooltip/tooltip.component';
 
-import services from '../data/services.data';
-import { fats } from '../data/fats.data';
+import home from '../data/home.data.json';
 
-import RepositoryCard from '../components/home-page/repository-card/repository-card.component';
-import OrganizationCard from '../components/home-page/organization-card/organization-card.component';
-import ServiceCard from '../components/home-page/service-card/service-card.component';
+import RepositoryCard from '../components/pages/home/repository-card/repository-card.component';
+import OrganizationCard from '../components/pages/home/organization-card/organization-card.component';
+import ServiceCard from '../components/pages/home/service-card/service-card.component';
 
 import 'swiper/css';
 import styles from '../styles/home.module.scss';
@@ -97,7 +96,7 @@ const Home: NextPage = (props: any) =>
 
                             <ul className={styles.homeAboutFATItemListLogo}>
                                 {
-                                    fats.frontend.map(front =>
+                                    home.fats.frontend.map(front =>
                                     {
                                         return (
                                             <Tooltip key={front.id} content={front.name}>
@@ -122,7 +121,7 @@ const Home: NextPage = (props: any) =>
                             <h5>Back-End:</h5>
                             <ul className={styles.homeAboutFATItemListLogo}>
                                 {
-                                    fats.backend.map(back =>
+                                    home.fats.backend.map(back =>
                                     {
                                         return (
                                             <Tooltip key={back.id} content={back.name}>
@@ -148,7 +147,7 @@ const Home: NextPage = (props: any) =>
 
                             <ul className={styles.homeAboutFATItemListLogo}>
                                 {
-                                    fats.crossPlatforms.map(cross =>
+                                    home.fats.crossPlatforms.map(cross =>
                                     {
                                         return (
                                             <Tooltip key={cross.id} content={cross.name}>
@@ -175,7 +174,7 @@ const Home: NextPage = (props: any) =>
                 <h4 className={styles.homeHeadingPrimary}>{t('home:services.6.heading')}</h4>
                 <div className={styles.homeServices}>
                     {
-                        services.map(service =>
+                        home.services.map(service =>
                         {
                             return (
                                 <ServiceCard
