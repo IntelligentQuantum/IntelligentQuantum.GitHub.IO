@@ -36,6 +36,7 @@ const ProjectCard = (props: ProjectCardProps) =>
                     className={styles.projectCardContentButton}
                     href={props.link}
                     target='_blank'
+                    rel='noreferrer'
                 >
                     Read More
                     <BiChevronRight />
