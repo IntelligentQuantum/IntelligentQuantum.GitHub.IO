@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import classnames from 'classnames';
 
 import projects from '../data/projects.data.json';
 
@@ -45,7 +46,7 @@ const Projects: NextPage = () =>
                             return (
                                 <li
                                     key={menu.id}
-                                    className={styles.projectsMenuItem}
+                                    className={classnames(styles.projectsMenuItem, { [styles.projectsMenuItemActive]: menu.category === 'Web'})}
                                     onClick={() => menu.category === 'All' ? setCards(projects.cards) : setCards(projects.cards.filter(card => card.category === menu.category))}
                                 >
                                     {menu.name}
