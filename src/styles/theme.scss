@@ -25,7 +25,7 @@ html[data-theme="matrix"]
             rgb(12 12 12 /  80%) 80%,
             rgb(12 12 12 / 85%) 90%
         ),
-        url("../../public/images/background_matrix.gif") center;
+        url("../../public/images/background-matrix.gif") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -34,7 +34,7 @@ html[data-theme="matrix"]
             rgb(0 0 0 / 90%) 80%,
             #090909 100%
         ),
-        url("../../public/images/background_matrix-2.jpg");
+        url("../../public/images/background-matrix-2.jpg");
 }
 
 html[data-theme="dark"]
@@ -61,7 +61,7 @@ html[data-theme="dark"]
             rgb(45 45 58 / 70%) 50%,
             rgb(43 43 53 / 70%) 100%
         ),
-        url("../../public/images/background_dark.jpg") center;
+        url("../../public/images/background-dark.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -69,7 +69,7 @@ html[data-theme="dark"]
             rgb(32 32 43) 95%,
             #202029 100%
         ),
-        url("../../public/images/background_dark.jpg");
+        url("../../public/images/background-dark.jpg");
 }
 
 html[data-theme="ark"]
@@ -97,7 +97,7 @@ html[data-theme="ark"]
             rgb(70 70 88 / 75%) 80%,
             rgb(64 64 82 / 80%) 90%
         ),
-        url("../../public/images/background_dim.jpg") center;
+        url("../../public/images/background-ark.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -106,7 +106,7 @@ html[data-theme="ark"]
             rgb(49 53 66) 80%,
             rgb(55 59 73) 100%
         ),
-        url("../../public/images/background_dim-2.jpg");
+        url("../../public/images/background-ark-2.jpg");
 }
 
 html[data-theme="light"]
@@ -133,7 +133,7 @@ html[data-theme="light"]
             rgb(239 241 245 / 70%) 70%,
             rgb(255 255 255 / 70%) 90%
         ),
-        url("../../public/images/background_dim.jpg") center;
+        url("../../public/images/background-ark.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -142,5 +142,5 @@ html[data-theme="light"]
             rgb(218 223 229 / 95%) 80%,
             rgb(231 233 243) 100%
         ),
-        url("../../public/images/background_dim-2.jpg");
+        url("../../public/images/background-ark-2.jpg");
 }

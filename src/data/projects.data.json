@@ -3,23 +3,79 @@
     [
         {
             "id": 1,
-            "name": "All Categories"
+            "name": "All Categories",
+            "category": "All"
         },
         {
             "id": 2,
-            "name": "Web Development"
+            "name": "Web Development",
+            "category": "Web"
         },
         {
             "id": 3,
-            "name": "App Development"
+            "name": "App Development",
+            "category": "App"
         },
         {
             "id": 4,
-            "name": "Game Development"
+            "name": "Game Development",
+            "category": "Game"
         },
         {
             "id": 5,
-            "name": "Graphic Design"
+            "name": "Graphic Design",
+            "category": "Graphic"
+        }
+    ],
+    "cards":
+    [
+        {
+            "id": 0,
+            "category": "Web",
+            "image": "/images/projects/web-discords.png",
+            "title": "Discords City",
+            "description": "Grow your Discord Business in Discords City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks",
+            "link": "https://discords.city/"
+        },
+        {
+            "id": 1,
+            "category": "Web",
+            "image": "/images/projects/web-mrcheat.png",
+            "title": "MrCheat",
+            "description": "Creating, developing and selling all kinds of cheats and cheats in various games such as Counter, Zula, CS Go and most other shooter games",
+            "link": "https://mrcheat.cc/"
+        },
+        {
+            "id": 2,
+            "category": "Web",
+            "image": "/images/projects/web-paraffin.png",
+            "title": "Paraffin",
+            "description": "Paraffin platform for teaching and learning with great content in various categories",
+            "link": "https://paraffin-tutorials.ir/"
+        },
+        {
+            "id": 3,
+            "category": "Web",
+            "image": "/images/projects/web-skyro.png",
+            "title": "Skyro",
+            "description": "Skyro Travel Service Agency is always up-to-date and progressive. We made a pact to make your travel experience pleasant and beautiful.",
+            "link": "github.com/skyro-ir"
+        },
+        {
+            "id": 4,
+            "category": "Graphic",
+            "image": "/images/projects/graphic-dubist.png",
+            "title": "Dubist",
+            "description": "English, Persian, German language learning website with features such as flash card and ranking",
+            "link": ""
+        },
+        {
+            "id": 5,
+            "category": "Web",
+            "image": "/images/projects/web-azerothcore.png",
+            "title": "AzerothCore API",
+            "description": "World of Warcraft Restful API for developers",
+            "link": "https://github.com/azerothcore/acore-api"
         }
     ]
 }

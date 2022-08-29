@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -10,6 +10,8 @@ import styles from '../styles/projects.module.scss';
 
 const Projects: NextPage = () =>
 {
+    const [cards, setCards] = useState(projects.cards);
+
     return (
         <Fragment>
             <Head>
@@ -41,16 +43,34 @@ const Projects: NextPage = () =>
                         projects.menus.map(menu =>
                         {
                             return (
-                                <li key={menu.id} className={styles.projectsMenuItem}>{menu.name}</li>
+                                <li
+                                    key={menu.id}
+                                    className={styles.projectsMenuItem}
+                                    onClick={() => menu.category === 'All' ? setCards(projects.cards) : setCards(projects.cards.filter(card => card.category === menu.category))}
+                                >
+                                    {menu.name}
+                                </li>
                             );
                         })
                     }
                 </ul>
 
                 <div className={styles.projectsCards}>
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
+                    {
+                        cards.map(card =>
+                        {
+                            return (
+                                <ProjectCard
+                                    key={card.id}
+                                    image={card.image}
+                                    alt={card.title}
+                                    title={card.title}
+                                    description={card.description}
+                                    link={card.link}
+                                />
+                            );
+                        })
+                    }
                 </div>
             </section>
         </Fragment>
