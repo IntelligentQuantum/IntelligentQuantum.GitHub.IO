@@ -1,0 +1,18 @@
+.hobbies
+{
+    position: relative;
+    z-index: 98;
+
+    &Heading
+    {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: var(--color-base-text);
+        padding: 3rem;
+    }
+
+    &Boxes
+    {
+        padding: 0 3rem;
+    }
+}

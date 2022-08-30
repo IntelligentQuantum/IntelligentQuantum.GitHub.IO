@@ -76,6 +76,30 @@
             "title": "AzerothCore API",
             "description": "World of Warcraft Restful API for developers",
             "link": "https://github.com/azerothcore/acore-api"
+        },
+        {
+            "id": 6,
+            "category": "Graphic",
+            "image": "/images/projects/graphic-iq.png",
+            "title": "IQ Portfolio",
+            "description": "Personal Portfolio it designed with Figma",
+            "link": ""
+        },
+        {
+            "id": 7,
+            "category": "Game",
+            "image": "/images/projects/game-trinitycore.png",
+            "title": "TrinityCore World Of Warcraft",
+            "description": "TrinityCore is an MMORPG framework that's built using C++, and using a back-end of MySQL for the DB content.",
+            "link": "https://github.com/TrinityCore/TrinityCore/"
+        },
+        {
+            "id": 8,
+            "category": "Game",
+            "image": "/images/projects/game-azerothcore.png",
+            "title": "AzerothCore World Of Warcraft",
+            "description": "AzerothCore (AC) is an open-source game-server application for World of Warcraft, currently supporting the 3.3.5a game version.",
+            "link": "https://github.com/azerothcore/azerothcore-wotlk/"
         }
     ]
 }

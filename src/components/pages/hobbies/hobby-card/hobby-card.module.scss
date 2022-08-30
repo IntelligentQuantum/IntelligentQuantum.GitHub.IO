@@ -1,0 +1,102 @@
+.hobbyCard
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-height: 38rem;
+    margin-bottom: 4rem;
+
+    background-position: center;
+    background-size: cover;
+
+    padding: 6rem;
+
+    @media only screen and (max-width: 700px)
+    {
+        max-height: fit-content;
+        padding: 2rem;
+    }
+
+    &[data-bg="Discord"]
+    {
+        background-image: var(--base-gradiant-image-discord);
+    }
+
+    &[data-bg="Guitar"]
+    {
+        background-image: var(--base-gradiant-image-guitar);
+    }
+
+    &[data-bg="Instagram"]
+    {
+        background-image: var(--base-gradiant-image-instagram);
+    }
+
+    &[data-bg="Space"]
+    {
+        background-image: var(--base-gradiant-image-space);
+    }
+
+    &Content
+    {
+        flex: 0 0 55%;
+
+        @media only screen and (max-width: 1430px)
+        {
+            flex: 0 0 100%;
+            flex-wrap: wrap;
+        }
+
+        & h3
+        {
+            color: var(--color-base-text-bold);
+            font-size: 4rem;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: 1800px)
+            {
+                font-size: 3rem;
+            }
+        }
+
+        & p
+        {
+            color: var(--color-base-text-bold);
+            font-size: 1.8rem;
+            font-weight: 400;
+
+            @media only screen and (max-width: 1400px)
+            {
+                margin-bottom: 4rem;
+                font-size: 1.5rem;
+            }
+
+            @media only screen and (max-width: 1000px)
+            {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &Image
+    {
+        flex: 0 0 20%;
+        align-self: flex-start;
+
+        @media only screen and (max-width: 1800px)
+        {
+            max-width: 65%;
+        }
+
+        @media only screen and (max-width: 1575px)
+        {
+            padding-right: 0;
+        }
+
+        @media only screen and (max-width: 1430px)
+        {
+            display: none;
+        }
+    }
+}
