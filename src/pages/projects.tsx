@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import classnames from 'classnames';
 
-import projects from '../data/projects.data.json';
+import data from '../data/projects.data.json';
 
 import ProjectCard from '../components/pages/projects/project-card/project-card.component';
 
@@ -11,7 +11,7 @@ import styles from '../styles/projects.module.scss';
 
 const Projects: NextPage = () =>
 {
-    const [cards, setCards] = useState(projects.cards);
+    const [projects, setProjects] = useState({ cards: data.cards, category: 'All' });
 
     return (
         <Fragment>
@@ -41,13 +41,13 @@ const Projects: NextPage = () =>
 
                 <ul className={styles.projectsMenu}>
                     {
-                        projects.menus.map(menu =>
+                        data.menus.map(menu =>
                         {
                             return (
                                 <li
                                     key={menu.id}
-                                    className={classnames(styles.projectsMenuItem, { [styles.projectsMenuItemActive]: menu.category === 'Web'})}
-                                    onClick={() => menu.category === 'All' ? setCards(projects.cards) : setCards(projects.cards.filter(card => card.category === menu.category))}
+                                    className={classnames(styles.projectsMenuItem, { [styles.projectsMenuItemActive]: menu.category === projects.category})}
+                                    onClick={() => menu.category === 'All' ? setProjects({ cards: data.cards, category: menu.category }) : setProjects({ cards: data.cards.filter(card => card.category === menu.category), category: menu.category })}
                                 >
                                     {menu.name}
                                 </li>
@@ -58,7 +58,7 @@ const Projects: NextPage = () =>
 
                 <div className={styles.projectsCards}>
                     {
-                        cards.map(card =>
+                        projects.cards.map(card =>
                         {
                             return (
                                 <ProjectCard
