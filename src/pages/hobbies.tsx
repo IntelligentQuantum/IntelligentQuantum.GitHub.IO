@@ -43,6 +43,7 @@ const Hobbies: NextPage = () =>
                         {
                             return (
                                 <HobbyCard
+                                    key={hobby.id}
                                     src={hobby.src}
                                     title={hobby.title}
                                     description={hobby.description}
