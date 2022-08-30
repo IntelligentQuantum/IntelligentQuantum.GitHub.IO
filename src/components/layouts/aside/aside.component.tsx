@@ -174,7 +174,7 @@ const Aside = () =>
                 <a href='https://github.com/intelligentquantum'>
                     <BsGithub />
                 </a>
-                <a href='https://www.linkedin.com/in/intelligent-quantum-330931177/'>
+                <a href='https://www.linkedin.com/in/IntelligentQuantum/'>
                     <BsLinkedin />
                 </a>
             </div>
