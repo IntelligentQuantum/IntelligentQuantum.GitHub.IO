@@ -1,11 +1,13 @@
 {
+    "root": true,
     "env":
     {
         "browser": true,
         "es2021": true,
         "node": true
     },
-    "extends": "next/core-web-vitals",
+    "extends": ["next/core-web-vitals"],
+    "plugins": ["testing-library"],
     "rules":
     {
         "semi": ["error", "always"],
@@ -15,5 +17,12 @@
         "template-curly-spacing": ["error", "always"],
         "space-before-function-paren": ["error", "never"],
         "quotes": [2, "single", { "avoidEscape": true }]
-    }
+    },
+    "overrides":
+    [
+        {
+            "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+            "extends": ["plugin:testing-library/react"]
+        }
+    ]
 }
