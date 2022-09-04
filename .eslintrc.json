@@ -16,12 +16,5 @@
         "template-curly-spacing": ["error", "always"],
         "space-before-function-paren": ["error", "never"],
         "quotes": [2, "single", { "avoidEscape": true }]
-    },
-    "overrides":
-    [
-        {
-            "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
-            "extends": ["plugin:testing-library/react"]
-        }
-    ]
+    }
 }
