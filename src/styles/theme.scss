@@ -17,31 +17,36 @@ html[data-theme="dark"]
     --base-gradiant: linear-gradient(159deg, rgb(38 38 54) 0%, rgb(46 46 59) 100%);
     --base-gradiant-image:
         linear-gradient(
-            90deg, rgb(45 45 58 / 90%) 15%,
+            90deg,
+            rgb(45 45 58 / 90%) 15%,
             rgb(45 45 58 / 70%) 50%,
             rgb(43 43 53 / 70%) 100%
-        ), url("../../public/images/background-dark.jpg") center;
+        ),
+        url("../../public/images/background-dark.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
             rgb(32 32 43 / 90%) 70%,
             rgb(32 32 43) 95%,
             #202029 100%
-        ), url("../../public/images/background-dark.jpg");
+        ),
+        url("../../public/images/background-dark.jpg");
     --base-gradiant-image-discord:
         radial-gradient(
             rgb(39 42 54 / 70%) 0%,
             rgb(46 46 57 / 80%) 10%,
             rgb(47 47 59 / 90%) 50%,
             rgb(43 43 57 / 95%) 80%
-        ), url("../../public/images/hobbies/background-discord.jpg");
+        ),
+        url("../../public/images/hobbies/background-discord.jpg");
     --base-gradiant-image-guitar:
         radial-gradient(
             rgb(39 43 54 / 60%) 0%,
             rgb(45 45 56 / 70%) 10%,
             rgb(41 41 52 / 80%) 50%,
             rgb(38 38 50 / 90%) 80%
-        ), url("../../public/images/hobbies/background-guitar.jpg");
+        ),
+        url("../../public/images/hobbies/background-guitar.jpg");
     --base-gradiant-image-instagram:
         radial-gradient(
             rgb(45 50 62 / 70%) 0%,
@@ -56,7 +61,8 @@ html[data-theme="dark"]
             rgb(53 53 66 / 60%) 10%,
             rgb(43 43 54 / 70%) 50%,
             rgb(47 47 61 / 80%) 80%
-        ), url("../../public/images/hobbies/background-space.jpg");
+        ),
+        url("../../public/images/hobbies/background-space.jpg");
 }
 
 html[data-theme="matrix"]
@@ -84,43 +90,49 @@ html[data-theme="matrix"]
             rgb(12 12 12 /  75%) 70%,
             rgb(12 12 12 /  80%) 80%,
             rgb(12 12 12 / 85%) 90%
-        ), url("../../public/images/background-matrix.gif") center;
+        ),
+        url("../../public/images/background-matrix.gif") center;
     --base-gradiant-image-2:
         linear-gradient(
-                180deg,
-                rgb(0 0 0 / 70%) 0%,
-                rgb(0 0 0 / 80%) 70%,
-                rgb(0 0 0 / 90%) 80%,
-                #090909 100%
-        ), url("../../public/images/background-matrix-2.jpg");
+            180deg,
+            rgb(0 0 0 / 70%) 0%,
+            rgb(0 0 0 / 80%) 70%,
+            rgb(0 0 0 / 90%) 80%,
+            #090909 100%
+        ),
+        url("../../public/images/background-matrix-2.jpg");
     --base-gradiant-image-discord:
         radial-gradient(
             rgb(0 0 0 / 70%) 0%,
             rgb(0 0 0 / 80%) 10%,
             rgb(0 0 0 / 90%) 50%,
             rgb(0 0 0 / 95%) 80%
-        ), url("../../public/images/hobbies/background-discord.jpg");
+        ),
+        url("../../public/images/hobbies/background-discord.jpg");
     --base-gradiant-image-guitar:
         radial-gradient(
             rgb(0 0 0 / 60%) 0%,
             rgb(0 0 0 / 70%) 10%,
             rgb(0 0 0 / 80%) 50%,
             rgb(0 0 0 / 90%) 80%
-        ), url("../../public/images/hobbies/background-guitar.jpg");
+        ),
+        url("../../public/images/hobbies/background-guitar.jpg");
     --base-gradiant-image-instagram:
         radial-gradient(
             rgb(0 0 0 / 70%) 0%,
             rgb(0 0 0 / 80%) 10%,
             rgb(0 0 0 / 90%) 50%,
             rgb(11 11 11 / 95%) 80%
-        ), url("../../public/images/hobbies/background-ig.jpg");
+        ),
+        url("../../public/images/hobbies/background-ig.jpg");
     --base-gradiant-image-space:
         radial-gradient(
             rgb(0 0 0 / 50%) 0%,
             rgb(0 0 0 / 60%) 10%,
             rgb(0 0 0 / 70%) 50%,
             rgb(0 0 0 / 80%) 80%
-        ), url("../../public/images/hobbies/background-space.jpg");
+        ),
+        url("../../public/images/hobbies/background-space.jpg");
 
     font-family: "VT323", monospace;
 
@@ -163,7 +175,8 @@ html[data-theme="ark"]
             rgb(78 78 97 / 70%) 70%,
             rgb(70 70 88 / 75%) 80%,
             rgb(64 64 82 / 80%) 90%
-        ), url("../../public/images/background-ark.jpg") center;
+        ),
+        url("../../public/images/background-ark.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -171,21 +184,24 @@ html[data-theme="ark"]
             rgb(45 49 62) 70%,
             rgb(49 53 66) 80%,
             rgb(55 59 73) 100%
-        ), url("../../public/images/background-ark-2.jpg");
+        ),
+        url("../../public/images/background-ark-2.jpg");
     --base-gradiant-image-discord:
         radial-gradient(
             rgb(39 42 54 / 70%) 0%,
             rgb(46 46 57 / 80%) 10%,
             rgb(47 47 59 / 90%) 50%,
             rgb(43 43 57 / 95%) 80%
-        ), url("../../public/images/hobbies/background-discord.jpg");
+        ),
+        url("../../public/images/hobbies/background-discord.jpg");
     --base-gradiant-image-guitar:
         radial-gradient(
             rgb(39 43 54 / 60%) 0%,
             rgb(45 45 56 / 70%) 10%,
             rgb(41 41 52 / 80%) 50%,
             rgb(38 38 50 / 90%) 80%
-        ), url("../../public/images/hobbies/background-guitar.jpg");
+        ),
+        url("../../public/images/hobbies/background-guitar.jpg");
     --base-gradiant-image-instagram:
         radial-gradient(
             rgb(45 50 62 / 70%) 0%,
@@ -200,7 +216,8 @@ html[data-theme="ark"]
             rgb(53 53 66 / 60%) 10%,
             rgb(43 43 54 / 70%) 50%,
             rgb(47 47 61 / 80%) 80%
-        ), url("../../public/images/hobbies/background-space.jpg");
+        ),
+        url("../../public/images/hobbies/background-space.jpg");
 }
 
 html[data-theme="light"]
@@ -226,7 +243,8 @@ html[data-theme="light"]
             rgb(226 229 234 / 70%) 50%,
             rgb(239 241 245 / 70%) 70%,
             rgb(255 255 255 / 70%) 90%
-        ), url("../../public/images/background-ark.jpg") center;
+        ),
+        url("../../public/images/background-ark.jpg") center;
     --base-gradiant-image-2:
         linear-gradient(
             180deg,
@@ -234,33 +252,38 @@ html[data-theme="light"]
             rgb(218 221 231 / 90%) 70%,
             rgb(218 223 229 / 95%) 80%,
             rgb(231 233 243) 100%
-        ), url("../../public/images/background-ark-2.jpg");
+        ),
+        url("../../public/images/background-ark-2.jpg");
     --base-gradiant-image-discord:
         radial-gradient(
             rgb(188 193 203 / 80%) 0%,
             rgb(198 201 213 / 80%) 10%,
             rgb(216 219 227 / 80%) 50%,
             rgb(201 204 210 / 80%) 80%
-        ), url("../../public/images/hobbies/background-discord.jpg");
+        ),
+        url("../../public/images/hobbies/background-discord.jpg");
     --base-gradiant-image-guitar:
         radial-gradient(
             rgb(235 237 241 / 50%) 0%,
             rgb(230 231 238 / 50%) 10%,
             rgb(240 241 246 / 50%) 50%,
             rgb(241 243 246 / 50%) 80%
-        ), url("../../public/images/hobbies/background-guitar.jpg");
+        ),
+        url("../../public/images/hobbies/background-guitar.jpg");
     --base-gradiant-image-instagram:
         radial-gradient(
             rgb(235 237 241 / 50%) 0%,
             rgb(230 231 238 / 50%) 10%,
             rgb(240 241 246 / 50%) 50%,
             rgb(241 243 246 / 50%) 80%
-        ), url("../../public/images/hobbies/background-ig.jpg");
+        ),
+        url("../../public/images/hobbies/background-ig.jpg");
     --base-gradiant-image-space:
         radial-gradient(
             rgb(235 236 241 / 50%) 0%,
             rgb(231 233 238 / 50%) 10%,
             rgb(234 236 241 / 50%) 50%,
             rgb(214 217 227 / 50%) 80%
-        ), url("../../public/images/hobbies/background-space.jpg");
+        ),
+        url("../../public/images/hobbies/background-space.jpg");
 }

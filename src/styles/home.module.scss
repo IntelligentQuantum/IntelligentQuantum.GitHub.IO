@@ -94,7 +94,7 @@
                 & span::after
                 {
                     content: "|";
-                    animation: Opacity 0.8s infinite ease-in-out;
+                    animation: opacity 0.8s infinite ease-in-out;
                 }
 
                 & i
@@ -241,7 +241,7 @@
 
                     &Item
                     {
-                        transition: all .2s;
+                        transition: all 0.2s;
 
                         &:not(:first-child)
                         {
@@ -314,7 +314,7 @@
     }
 }
 
-@keyframes Opacity
+@keyframes opacity
 {
     0%
     {

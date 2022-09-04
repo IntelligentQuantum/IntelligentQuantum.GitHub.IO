@@ -2,7 +2,7 @@
 {
     position: relative;
     border-radius: var(--border-radius);
-    transition: all .35s;
+    transition: all 0.35s;
     background: var(--base-lighter);
     height: 30rem;
     overflow: hidden;
@@ -24,7 +24,7 @@
 
         width: 100%;
         background: var(--base-light);
-        transition: .55s ease-in-out;
+        transition: 0.55s ease-in-out;
         transform: translateY(100%);
         overflow: hidden;
 
