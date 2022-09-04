@@ -4,34 +4,47 @@ import { BiStar } from 'react-icons/bi';
 import { AiOutlineEye } from 'react-icons/ai';
 import { GoRepoForked } from 'react-icons/go';
 
-const RepositoryCard = ({ name, description, stars, watchers, forks }: any) =>
+interface RepositoryCardProps
+{
+    name: string;
+    description: string;
+    stars: number;
+    watchers: number;
+    forks: number;
+    repoLink: string;
+    starLink: string;
+    watchLink: string;
+    forkLink: string;
+}
+
+const RepositoryCard = (props: RepositoryCardProps) =>
 {
     return (
         <div className={styles.repository}>
             <div className={styles.repositoryInfo}>
-                <a href='/src/pages' target='_blank' rel="noreferrer">
-                    <span>{name}</span>
-                    <p>{description}</p>
+                <a href={props.repoLink} target='_blank' rel="noreferrer">
+                    <span>{props.name}</span>
+                    <p>{props.description}</p>
                 </a>
             </div>
 
             <ul className={styles.repositoryStats}>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="src/components/pages/home/repository-card/repository-card.component">
+                    <a href={props.starLink}>
                         <BiStar />
-                        <span>{stars}</span>
+                        <span>{props.stars}</span>
                     </a>
                 </li>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="src/components/pages/home/repository-card/repository-card.component">
+                    <a href={props.watchLink}>
                         <AiOutlineEye />
-                        <span>{watchers}</span>
+                        <span>{props.watchers}</span>
                     </a>
                 </li>
                 <li className={styles.repositoryStatsItem}>
-                    <a href="src/components/pages/home/repository-card/repository-card.component">
+                    <a href={props.forkLink}>
                         <GoRepoForked />
-                        <span>{forks}</span>
+                        <span>{props.forks}</span>
                     </a>
                 </li>
             </ul>

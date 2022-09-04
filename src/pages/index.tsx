@@ -215,6 +215,10 @@ const Home: NextPage = (props: any) =>
                                             stars={repository.stargazers_count}
                                             watchers={repository.watchers_count}
                                             forks={repository.forks}
+                                            repoLink={`https://github.com/${ repository.owner.login }/${ repository.name }`}
+                                            starLink={`https://github.com/${ repository.owner.login }/${ repository.name }/stargazers`}
+                                            watchLink={`https://github.com/${ repository.owner.login }/${ repository.name }/watchers`}
+                                            forkLink={`https://github.com/${ repository.owner.login }/${ repository.name }/network/member`}
                                         />
                                     </SwiperSlide>
                                 );

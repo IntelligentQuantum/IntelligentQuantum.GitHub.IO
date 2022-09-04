@@ -21,7 +21,7 @@ const ServiceCard = ({ title, description }: ServiceCardProps) =>
             <p className={styles.serviceCardParagraph}>
                 {description}
             </p>
-            <Link href='/src/pages'>
+            <Link href='/contact'>
                 <a className={styles.serviceCardButton}>
                     {t('common:order')}
                     <BiChevronRight />
