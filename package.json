@@ -42,7 +42,7 @@
         "remark-gfm": "3.0.1",
         "sass": "1.55.0",
         "sharp": "0.31.1",
-        "swiper": "8.4.2"
+        "swiper": "8.4.3"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "5.16.5",
