@@ -1,0 +1,20 @@
+{
+    "items":
+    [
+        {
+            "id": 0,
+            "name": "persian",
+            "percentage": 100
+        },
+        {
+            "id": 1,
+            "name": "english",
+            "percentage": 75
+        },
+        {
+            "id": 2,
+            "name": "german",
+            "percentage": 10
+        }
+    ]
+}

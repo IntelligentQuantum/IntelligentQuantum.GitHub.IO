@@ -1,9 +1,13 @@
-/** @type {import('next').NextConfig} */
 const path = require('path');
-const withReactSvg = require('next-react-svg');
 
-const nextConfig = withReactSvg(
+/** @type {import('next').NextConfig} */
+const nextConfig =
     {
+        i18n:
+            {
+                locales: ['en', 'de', 'fa'],
+                defaultLocale: 'en'
+            },
         images:
             {
                 domains:
@@ -13,15 +17,7 @@ const nextConfig = withReactSvg(
                     ],
             },
         reactStrictMode: true,
-        sassOptions:
-            {
-                includePaths: [path.join(__dirname, 'src/styles')]
-            },
-        include: path.resolve(__dirname, 'public/static/icons'),
-        webpack(config)
-        {
-            return config;
-        }
-    });
+        swcMinify: true
+    };
 
 module.exports = nextConfig;

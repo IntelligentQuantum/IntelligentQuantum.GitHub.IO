@@ -6,9 +6,10 @@
     padding: 0.5rem 1.5rem;
     text-align: center;
     font-size: 1.4rem;
-    border-radius: 0.65rem;
-    background: var(--base-darker);
+    border-radius: calc(var(--border-radius)/2);
+    background: var(--base-dark);
     margin-bottom: 0.25rem;
+    box-shadow: 0 0 2rem 0.5rem var(--base-dark);
 
     &::after
     {
@@ -18,11 +19,32 @@
         top: 100%;
         left: 50%;
 
-        margin-top: -0.25rem;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: var(--base-darker) transparent transparent;
+        margin-top: -0.325rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: calc(var(--border-radius) / 2.5);
+        background: var(--base-dark);
+        transform: rotate(45deg);
+    }
+
+    &[data-placement="left"]
+    {
+        &::after
+        {
+            top: 40%;
+            right: -0.3rem;
+            left: auto;
+        }
+    }
+
+    &[data-placement="right"]
+    {
+        &::after
+        {
+            top: 40%;
+            left: -0.3rem;
+            right: auto;
+        }
     }
 
     &[data-light]
@@ -31,7 +53,7 @@
 
         &::after
         {
-            border-color: var(--base-light) transparent transparent;
+            background: var(--base-light);
         }
     }
 }

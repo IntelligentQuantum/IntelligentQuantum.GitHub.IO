@@ -6,7 +6,19 @@ import type { IPortfolio } from './portfolio';
 export interface IContent
 {
     language: string,
-    technologies: string,
+    dir: 'rtl' | 'ltr',
+    technologies:
+        {
+            title: string,
+            front_end: [{ icon: string, title: string }]
+            back_end: [{ icon: string, title: string }]
+            cross_platform: [{ icon: string, title: string }]
+        },
+    header:
+        {
+            titles: string[],
+            descriptions: string[]
+        }
     about_me: string,
     my_name: string,
     my_skills: string[],
@@ -30,10 +42,10 @@ export interface IContent
     telegram: string,
     email: string,
     gmail: string,
-    chmail: string,
+    protonmail: string,
     my_email: string,
     my_gmail: string,
-    my_chmail: string,
+    my_protonmail: string,
     name: string,
     message: string,
     residence: string,
@@ -41,7 +53,7 @@ export interface IContent
     age: string,
     my_residence: string,
     my_city: string,
-    my_age: string,
+    my_age: number,
     english: string,
     persian: string,
     german: string,
@@ -52,8 +64,13 @@ export interface IContent
     hobbies: string,
     error:
         {
-            title: string,
-            description: string
+            not_found:
+                {
+                    title: string,
+                    description: string
+                },
+            empty: string,
+            incorrect_email: string
         },
     titles: string[],
     headers: string[],

@@ -3,15 +3,17 @@
     grid-template: aside-start / aside-end;
     display: grid;
     grid-template-rows: 25rem 1fr 5rem;
+
     overflow: hidden;
 
     @media only screen and (max-width: 1000px)
     {
-        transition: 0.4s;
-        left: -100%;
         position: fixed;
         top: 0;
         z-index: 101;
+
+        transition: 0.4s;
+        left: -100%;
         height: 100%;
 
         &Footer
@@ -26,7 +28,7 @@
         }
     }
 
-    &[data-open="true"]
+    &__Open
     {
         transition: 0.4s;
         left: 0;
@@ -34,15 +36,17 @@
 
     &Divider
     {
+        display: flex;
+
         background: var(--color-base-text);
         width: 100%;
-        height: 1px;
+        height: 0.1rem;
         opacity: 0.3;
     }
 
     &User
     {
-        background: var(--base-darker);
+        background: var(--base-dark);
 
         display: flex;
         align-items: center;
@@ -51,20 +55,26 @@
 
         &Icon
         {
+            display: none;
+
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+
             & svg
             {
                 width: 2rem;
                 height: 2rem;
                 fill: var(--color-base-text);
-                position: absolute;
-                right: 2rem;
-                top: 2rem;
-                display: none;
+            }
 
-                @media only screen and (max-width: 1000px)
-                {
-                    display: block;
-                }
+            @media only screen and (max-width: 1000px)
+            {
+                display: block;
             }
         }
 
@@ -73,61 +83,58 @@
             position: relative;
 
             border-radius: 50%;
-        }
 
-        &StatusParent
-        {
-            position: absolute;
-            bottom: 0.5rem;
-            right: 1rem;
-            z-index: 100;
-
-            height: 1.5rem;
-            width: 1.5rem;
-
-            &::before
+            & img
             {
-                content: "";
-
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-
-                opacity: 0;
-                background: var(--color-base-text-bold);
-                height: 1rem;
-                width: 1rem;
-                border-radius: 50%;
-                animation: beat 1s infinite ease-in-out;
+                filter: var(--image-filter);
             }
         }
 
         &Status
         {
             position: absolute;
+
             margin-bottom: -1rem;
             height: 1.5rem;
             width: 1.5rem;
             background-color: var(--color-primary);
             border-radius: 50%;
+
+            &Parent
+            {
+                position: absolute;
+                bottom: 0.5rem;
+                right: 1rem;
+                z-index: 100;
+
+                height: 1.5rem;
+                width: 1.5rem;
+
+                &::before
+                {
+                    content: "";
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    opacity: 0;
+                    background: var(--color-base-text-bold);
+                    height: 1rem;
+                    width: 1rem;
+                    border-radius: 50%;
+                    animation: beat 1s infinite ease-in-out;
+                }
+            }
         }
 
         &Name
         {
             margin: 1rem 0;
-
-            & a
-            {
-                color: var(--color-base-text-bold);
-                font-size: 1.5rem;
-                transition: 0.4s ease-out;
-
-                &:hover
-                {
-                    color: var(--color-primary);
-                }
-            }
+            color: var(--color-base-text-bold);
+            font-size: 1.5rem;
+            transition: 0.4s ease-out;
         }
 
         &Skills
@@ -147,7 +154,7 @@
         scrollbar-width: none;
         padding: 2rem 3rem;
 
-        background-color: var(--base-dark);
+        background-color: var(--base-light);
 
         &::-webkit-scrollbar
         {
@@ -162,21 +169,14 @@
 
             margin-bottom: 2rem;
 
-            &Active
-            {
-                background-color: var(--color-primary) !important;
-                color: var(--base-dark) !important;
-            }
-
-            & span
+            & li
             {
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 border-radius: 50%;
-                background-color: var(--base);
-                color: var(--color-base-text-bold);
+                background-color: var(--base-dark);
                 font-weight: 600;
                 transition: all 0.2s;
                 cursor: pointer;
@@ -184,10 +184,38 @@
                 height: 2.8rem;
                 margin: auto auto 0.5rem;
 
+                & > a
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    height: 100%;
+                    width: 100%;
+                    text-shadow: none;
+                    filter: none;
+                    transition: all 0.2s;
+                    color: var(--color-base-text-bold);
+                }
+
                 &:hover
                 {
-                    color: var(--color-base-text-bold);
-                    background-color: var(--base-darker);
+                    background-color: var(--base);
+
+                    & > a
+                    {
+                        color: var(--color-base-text-bold);
+                    }
+                }
+            }
+
+            &__Active
+            {
+                background-color: var(--color-primary) !important;
+
+                & > a
+                {
+                    color: var(--base) !important;
                 }
             }
         }
@@ -199,21 +227,26 @@
 
             & li
             {
-                display: flex;
-                justify-content: space-between;
                 margin-bottom: 0.5rem;
             }
 
-            & h6
+            & h3
             {
-                color: var(--color-base-text-bold);
-                font-size: 1.2rem;
-                font-weight: 300;
-            }
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
-            & span
-            {
-                font-size: 1.2rem;
+                width: 100%;
+                font-weight: 400;
+                color: var(--color-base-text-bold);
+                font-size: 1.4rem;
+
+                & > span
+                {
+                    color: var(--color-base-text);
+                    font-weight: 300;
+                    text-shadow: none;
+                }
             }
         }
 
@@ -225,7 +258,7 @@
             margin-top: 2rem;
             margin-bottom: 2.3rem;
 
-            & div
+            & li
             {
                 display: flex;
                 flex-direction: column;
@@ -237,35 +270,24 @@
                     width: 5rem;
                     height: 5rem;
 
-                    & path
-                    {
-                        stroke: var(--color-primary);
-                    }
-
                     & path:nth-child(1)
                     {
-                        fill: none;
-                        stroke: var(--base-darker) !important;
-                        stroke-width: 3.8;
+                        stroke: var(--base);
                     }
 
                     & path:nth-child(2)
                     {
-                        fill: none;
-                        stroke-width: 2.8;
-                        stroke-linecap: round;
-                        animation: progress-bar 1s ease-out forwards;
+                        stroke-linecap: var(--stroke-linecap);
+                        stroke: var(--color-primary);
                     }
 
                     & text
                     {
-                        fill: var(--color-base-text);
-                        font-size: 0.6em;
-                        text-anchor: middle;
+                        fill: var(--color-base-text) !important;
                     }
                 }
 
-                & h6
+                & h4
                 {
                     color: var(--color-base-text-bold);
                     font-size: 1.2rem;
@@ -290,11 +312,18 @@
                 justify-content: space-between;
                 margin-bottom: 1rem;
 
-                & span:first-child
+                & h3
                 {
                     color: var(--color-base-text-bolder);
                     font-weight: 500;
-                    font-size: 1.2rem;
+                    font-size: 1.35rem;
+                }
+
+                & span
+                {
+                    color: var(--color-base-text);
+                    font-weight: 300;
+                    font-size: 1.25rem;
                 }
             }
 
@@ -304,17 +333,16 @@
 
                 height: 0.5rem;
                 width: 100%;
-                border-radius: 5rem;
-                background-color: var(--base-darker);
+                border-radius: var(--border-radius);
+                background-color: var(--base);
 
                 & span
                 {
-                    border-radius: 5rem;
-                    width: 100%;
-                    animation: progress-bar 1s ease-in-out;
-                    animation-fill-mode: both;
                     position: absolute;
+
+                    width: 100%;
                     height: 95%;
+                    border-radius: var(--border-radius);
                     background-color: var(--color-primary);
                 }
             }
@@ -329,9 +357,14 @@
                 display: flex;
                 align-items: center;
 
-                & span
+                & > p
                 {
-                    margin: 0 0.5rem;
+                    margin-left: 0.5rem;
+
+                    & > span:not(:first-child)
+                    {
+                        margin-left: 0.5rem;
+                    }
                 }
 
                 &:not(:last-child)
@@ -345,7 +378,6 @@
                 fill: var(--color-primary);
                 width: 2rem;
                 height: 2rem;
-                margin-right: 1rem;
             }
 
             & span
@@ -391,7 +423,7 @@
 
     &Footer
     {
-        background: var(--base-darker);
+        background: var(--base-dark);
 
         display: flex;
         align-items: center;
@@ -429,15 +461,32 @@
     }
 }
 
-@keyframes progress-bar
+html[data-language="fa"]
 {
-    0%
+    .aside
     {
-        width: 0;
-    }
+        @media only screen and (max-width: 1000px)
+        {
+            left: auto;
+            right: -100%;
 
-    100%
-    {
-        width: 100%;
+            &Footer
+            {
+                left: auto;
+                right: 0;
+            }
+        }
+
+        &UserIcon
+        {
+            right: auto;
+            left: 2rem;
+        }
+
+        &__Open
+        {
+            transition: 0.4s;
+            right: 0;
+        }
     }
 }

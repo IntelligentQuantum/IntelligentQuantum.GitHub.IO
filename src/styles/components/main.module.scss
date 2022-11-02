@@ -2,22 +2,20 @@
 {
     grid-template: main-start / main-end;
     display: grid;
+    grid-template-columns: calc(100vw - 38rem);
     grid-template-rows: [content-start] 1fr [content-end footer-start] 5rem [footer-end];
 
+    position: relative;
+
+    width: 100%;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
     background: var(--base);
-    position: relative;
 
     &::-webkit-scrollbar
     {
         display: none;
-    }
-
-    & .footer
-    {
-        grid-row: footer-start / footer-end;
     }
 
     &Content
@@ -29,64 +27,27 @@
 
     &Background
     {
+        position: absolute;
+        top: 0;
+
         background-image: var(--base-gradiant-image-2);
         background-position: center;
         background-size: cover;
         width: 100%;
         height: 40rem;
         overflow: hidden;
-        position: absolute;
-        top: 0;
+    }
+
+    @media only screen and (min-width: 2000px)
+    {
+        grid-template-columns: calc(200rem - 38rem);
     }
 
     @media only screen and (max-width: 1000px)
     {
+        grid-template-columns: 100%;
+
         height: 100%;
         padding-top: 6rem;
-    }
-}
-
-html[data-language="fa"]
-{
-    & .aside
-    {
-        @media only screen and (max-width: 1000px)
-        {
-            left: auto;
-            right: -100%;
-
-            & .asideFooter
-            {
-                left: auto;
-                right: 0;
-            }
-        }
-
-        &UserIcon svg
-        {
-            right: auto;
-            left: 2rem;
-        }
-
-        &.open
-        {
-            transition: 0.4s;
-            right: 0;
-        }
-    }
-
-    & .nav
-    {
-        @media only screen and (max-width: 1000px)
-        {
-            right: auto;
-            left: -100%;
-        }
-
-        &.open
-        {
-            transition: 0.4s;
-            left: 0;
-        }
     }
 }

@@ -1,36 +1,65 @@
-import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { v4 as uuidV4 } from 'uuid';
 import classnames from 'classnames';
+import { useRouter } from 'next/router';
+import { FaEllipsisV } from 'react-icons/fa';
+import React, { Fragment, useEffect } from 'react';
+import { BiCheck, BiDownload } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
-import { BsGithub, BsCheck, BsDownload, BsInstagram, BsLinkedin, BsDribbble } from 'react-icons/bs';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import { BsGithub, BsInstagram, BsLinkedin, BsYoutube, BsTwitter, BsFacebook } from 'react-icons/bs';
 
+import skills from '../../../../public/static/data/skills.data.json';
+import socials from '../../../../public/static/data/socials.data.json';
+import languages from '../../../../public/static/data/languages.data.json';
+import libraries from '../../../../public/static/data/libraries.data.json';
+
+import type { ISkill } from '../../../interfaces/skill';
+import type { ISocial } from '../../../interfaces/social';
+import type { ILibrary } from '../../../interfaces/library';
 import type { IContent } from '../../../interfaces/content';
+import type { ILanguage } from '../../../interfaces/language';
 
-import { setOpenAside } from '../../../app/aside/aside.actions';
-import { setActiveFilter } from '../../../app/filter/filter.actions';
-
+import 'react-circular-progressbar/dist/styles.css';
 import stylesAside from '../../../styles/components/aside.module.scss';
 
-import Profile from '../../../../public/static/images/im-parsa.png';
-import Rarible from '../../../../public/static/icons/icon-rarible.svg';
-import Ellipsis from '../../../../public/static/icons/icon-ellipsis.svg';
+import Profile from '../../../../public/static/images/profile-2.png';
 
-const Aside = (props: { content: IContent, handleLanguage: any }) =>
+import { selectAsideOpen, toggleAside, toggleFilter } from '../../../store/features/header-slice';
+
+const Aside = (props: { content: IContent }) =>
 {
+    const router = useRouter();
     const dispatch = useDispatch();
-    const openAside: boolean = useSelector((state: any) => state.aside.openAside);
+
+    const openAside = useSelector(selectAsideOpen);
+
+    const handleClickAside = () =>
+    {
+        console.log(!openAside);
+        dispatch(toggleAside(!openAside));
+        dispatch(toggleFilter(!openAside));
+    };
+
+    useEffect(() =>
+    {
+        const htmlElement: HTMLElement | null = document.querySelector('html');
+
+        if (htmlElement)
+        {
+            htmlElement.setAttribute('lang', router.locale as string);
+            htmlElement.setAttribute('data-language', router.locale as string);
+            htmlElement.setAttribute('dir', (router.locale === 'fa' ? 'rtl' : 'ltr'));
+        }
+    }, [router.locale]);
 
     return (
-        <nav className={classnames(stylesAside.aside, 'z-index__101')} data-open={openAside}>
+        <aside className={classnames(stylesAside.aside, 'z-index__101', (openAside ? stylesAside.aside__Open : null))}>
             <div className={stylesAside.asideUser}>
-                <div className={stylesAside.asideUserIcon} onClick={() =>
-                {
-                    dispatch(setOpenAside(!openAside)); dispatch(setActiveFilter(!openAside));
-                }}>
-                    <Ellipsis />
-                </div>
-
+                <i className={stylesAside.asideUserIcon} onClick={ handleClickAside }>
+                    <FaEllipsisV />
+                </i>
                 <div className={stylesAside.asideUserProfile}>
                     <Image
                         src={Profile}
@@ -40,311 +69,131 @@ const Aside = (props: { content: IContent, handleLanguage: any }) =>
                         width={100}
                         height={100}
                     />
-                    <div className={stylesAside.asideUserStatusParent}>
+                    <span className={stylesAside.asideUserStatusParent}>
                         <i className={stylesAside.asideUserStatus}/>
-                    </div>
+                    </span>
                 </div>
-
-                <h1 className={stylesAside.asideUserName}>
-                    <Link href='/'>
-                        <a>
-                            { props?.content?.my_name }
-                        </a>
-                    </Link>
-                </h1>
-
-                <h3 className={stylesAside.asideUserSkills}>
-                    { props?.content?.my_skills[0] }
-                    <br/>
-                    { props?.content?.my_skills[1] }
-                </h3>
+                <h1 className={stylesAside.asideUserName}>{ props.content.my_name }</h1>
+                <h3 className={stylesAside.asideUserSkills}>{ props.content.my_skills[0] }</h3>
+                <h3 className={stylesAside.asideUserSkills}>{ props.content.my_skills[1] }</h3>
             </div>
-
             <div className={stylesAside.asideInformation}>
-                <div className={stylesAside.asideInformationLanguage}>
-                    <span onClick={() =>
+                <ul className={stylesAside.asideInformationLanguage}>
+                    <li className={props.content.language === 'en' ? stylesAside.asideInformationLanguage__Active : ''}>
+                        <Link href={ router.pathname } locale='en'><a>EN</a></Link>
+                    </li>
+                    <li className={props.content.language === 'de' ? stylesAside.asideInformationLanguage__Active : ''}>
+                        <Link href={ router.pathname } locale='de'><a>DE</a></Link>
+                    </li>
+                    <li className={props.content.language === 'fa' ? stylesAside.asideInformationLanguage__Active : ''}>
+                        <Link href={ router.pathname } locale='fa'><a>FA</a></Link>
+                    </li>
+                </ul>
+                <span className={stylesAside.asideDivider}/>
+                <ul className={stylesAside.asideInformationPersonal}>
+                    <li>
+                        <h3>
+                            <span>{ props.content.residence }: </span>
+                            { props.content.my_residence }
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>{ props.content.city }: </span>
+                            { props.content.my_city }
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>{ props.content.age }: </span>
+                            { new Date().getFullYear() - props.content.my_age }
+                        </h3>
+                    </li>
+                </ul>
+                <span className={stylesAside.asideDivider}/>
+                <ul className={stylesAside.asideInformationLanguages}>
                     {
-                        props.handleLanguage('en');
-                    }} className={props?.content?.language === 'en' ? stylesAside.asideInformationLanguageActive : ''}>EN</span>
-                    <span onClick={() =>
+                        languages.items.map((language: ILanguage) =>
+                            (
+                                <li key={ uuidV4() }>
+                                    <CircularProgressbar value={language.percentage} text={`${ language.percentage }%`} />
+                                    <h4>{ props.content[language.name as 'persian' | 'english' | 'german'] }</h4>
+                                </li>
+                            ))
+                    }
+                </ul>
+                <div className={stylesAside.asideDivider}/>
+                <ul className={stylesAside.asideInformationSkills}>
                     {
-                        props.handleLanguage('de');
-                    }} className={props?.content?.language === 'de' ? stylesAside.asideInformationLanguageActive : ''}>DE</span>
-                    <span onClick={() =>
+                        skills.items.map((skill: ISkill) =>
+                            (
+                                <li className={stylesAside.asideInformationSkillsBar} key={ uuidV4() }>
+                                    <div className={stylesAside.asideInformationSkillsInfo}>
+                                        <h3>{ skill.name }</h3>
+                                        <span>{ skill.progress }</span>
+                                    </div>
+                                    <div className={stylesAside.asideInformationSkillsProgress}>
+                                        <span style={{ maxWidth: skill.progress }}/>
+                                    </div>
+                                </li>
+                            ))
+                    }
+                </ul>
+                <span className={stylesAside.asideDivider}/>
+                <ul className={stylesAside.asideInformationLibrary}>
                     {
-                        props.handleLanguage('fa');
-                    }} className={props?.content?.language === 'fa' ? stylesAside.asideInformationLanguageActive : ''}>FA</span>
-                </div>
-
-                <div className={stylesAside.asideDivider} />
-
-                <div className={stylesAside.asideInformationPersonal}>
-                    <ul>
-                        <li>
-                            <h6>{props?.content?.residence}:</h6>
-                            <span>{props?.content?.my_residence}</span>
-                        </li>
-                        <li>
-                            <h6>{props?.content?.city}:</h6>
-                            <span>{props?.content?.my_city}</span>
-                        </li>
-                        <li>
-                            <h6>{props?.content?.age}:</h6>
-                            <span>{props?.content?.my_age}</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className={stylesAside.asideDivider} />
-
-                <div className={stylesAside.asideInformationLanguages}>
-                    <div>
-                        <svg viewBox='0 0 36 36'>
-                            <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831'/>
-                            <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831' strokeDasharray='100, 100'/>
-                            <text x='18' y='20.35'>
-                                100%
-                            </text>
-                        </svg>
-                        <h6>
-                            {props?.content?.persian}
-                        </h6>
-                    </div>
-                    <div>
-                        <svg viewBox='0 0 36 36'>
-                            <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831'/>
-                            <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831' strokeDasharray='70, 100'/>
-                            <text x='18' y='20.35'>
-                                70%
-                            </text>
-                        </svg>
-                        <h6>{props?.content?.english}</h6>
-                    </div>
-                    <div>
-                        <svg viewBox='0 0 36 36'>
-                            <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831'/>
-                            <path d='M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831' strokeDasharray='10, 100'/>
-                            <text x='18' y='20.35'>
-                                10%
-                            </text>
-                        </svg>
-                        <h6>
-                            {props?.content?.german}
-                        </h6>
-                    </div>
-                </div>
-
-                <div className={stylesAside.asideDivider} />
-
-                <div className={stylesAside.asideInformationSkills}>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                Javascript, Typescript
-                            </span>
-                            <span>
-                                90%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '90%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                 NodeJS, NestJS, DenoJS
-                            </span>
-                            <span>
-                                95%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '95%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                ReactJS, NextJS
-                            </span>
-                            <span>
-                                95%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '95%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                Sass, Styled, Css
-                            </span>
-                            <span>
-                                90%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '90%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                Photoshop, Gimp
-                            </span>
-                            <span>
-                                95%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '95%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                C++, Poco, Qt
-                            </span>
-                            <span>
-                                35%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '35%' }}/>
-                        </div>
-                    </div>
-                    <div className={stylesAside.asideInformationSkillsBar}>
-                        <div className={stylesAside.asideInformationSkillsInfo}>
-                            <span>
-                                PHP
-                            </span>
-                            <span>
-                                50%
-                            </span>
-                        </div>
-                        <div className={stylesAside.asideInformationSkillsProgress}>
-                            <span style={{ maxWidth: '50%' }}/>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={stylesAside.asideDivider} />
-
-                <div className={stylesAside.asideInformationLibrary}>
-                    <ul>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                JavaScript, TypeScript
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                NextJS, ReactJS, React Native
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                 NodeJS, DenoJS, NestJS
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                PHP
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                C++, Qt, Poco
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                Electron, Express.js, Discord.js
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                Mongodb, Redis, SQL
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                Pug, HBS, EJS
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                HTML5, CSS3, JS
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                Sass, Styled, Less
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                Photoshop, Gimp, After Effects
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                Git, Github, GitLab
-                            </span>
-                        </li>
-                        <li>
-                            <BsCheck />
-                            <span>
-                                Curl, Apt, Apt-Get
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className={stylesAside.asideDivider} />
-
+                        libraries.items.map((library: ILibrary) =>
+                            (
+                                <li key={ uuidV4() }>
+                                    <BiCheck />
+                                    <p>
+                                        {
+                                            library.names.map((name: string, indexV: number) =>
+                                                (
+                                                    <Fragment key={ uuidV4() }>
+                                                        <span>{ name }</span>
+                                                        { library.names.length === (indexV + 1) ? null : ',' }
+                                                    </Fragment>
+                                                ))
+                                        }
+                                    </p>
+                                </li>
+                            ))
+                    }
+                </ul>
+                <span className={stylesAside.asideDivider}/>
                 <div className={classnames(stylesAside.asideInformationCV, 'uppercase')}>
-                    <a href={`/static/document/parsa_firoozi_cv-${ props?.content?.language }.pdf`} target='_blank' rel='noreferrer'>
-                        <BsDownload />
-                        <span>
-                            { props?.content?.download_cv }
-                        </span>
+                    <a href={`/static/document/parsa_firoozi_cv-${ props.content.language }.pdf`} target='_blank' rel='noreferrer'>
+                        <BiDownload />
+                        <span>{ props.content.download_cv }</span>
                     </a>
                 </div>
             </div>
-
             <div className={stylesAside.asideFooter}>
-                <a href='https://www.instagram.com/hello_im_parsa' target='_blank' rel='noreferrer'>
-                    <BsInstagram />
-                </a>
-                <a href='https://rarible.com/im-parsa' target='_blank' rel='noreferrer'>
-                    <Rarible />
-                </a>
-                <a href='https://dribbble.com/hello_im_parsa' target='_blank' rel='noreferrer'>
-                    <BsDribbble />
-                </a>
-                <a href='https://github.com/im-parsa' target='_blank' rel='noreferrer'>
-                    <BsGithub />
-                </a>
-                <a href='https://www.linkedin.com/in/im-parsa/' target='_blank' rel='noreferrer'>
-                    <BsLinkedin />
-                </a>
+                {
+                    socials.items.map((social: ISocial) =>
+                        (
+                            <a href={ social.link } target='_blank' rel='noreferrer' key={ uuidV4() }>
+                                {
+                                    social.type === 'INSTAGRAM'
+                                        ? <BsInstagram />
+                                        : social.type === 'FACEBOOK'
+                                            ? <BsFacebook />
+                                            : social.type === 'TWITTER'
+                                                ? <BsTwitter />
+                                                : social.type === 'YOUTUBE'
+                                                    ? <BsYoutube />
+                                                    : social.type === 'GITHUB'
+                                                        ? <BsGithub />
+                                                        : social.type === 'LINKEDIN'
+                                                            ? <BsLinkedin />
+                                                            : null
+                                }
+                            </a>
+                        ))
+                }
             </div>
-        </nav>
+        </aside>
     );
 };
 

@@ -16,12 +16,25 @@
     color: var(--color-base-text-bold);
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.85rem;
     z-index: 92;
+    line-height: 1.5;
+
+    &.first-letter::first-letter
+    {
+        font-size: 500%;
+        padding: 0.5rem 0.25rem;
+        margin-right: 0.5rem;
+        float: left;
+    }
+
+    &.text-indent
+    {
+        text-indent: 3.5rem;
+    }
 
     @media only screen and (max-width: 1000px)
     {
-        padding: 1.5rem;
+        padding: 0.5rem;
     }
 }
 
@@ -36,7 +49,7 @@
 
     @media only screen and (max-width: 1000px)
     {
-        padding: 1.5rem;
+        padding: 1.5rem 0.5rem;
     }
 
     &__small
@@ -53,6 +66,8 @@
         @media only screen and (max-width: 1000px)
         {
             flex-wrap: wrap;
+
+            padding: 0 0.5rem 1.5rem;
         }
 
         & li
@@ -70,7 +85,6 @@
             &[data-active="true"]
             {
                 color: var(--color-base-text-bolder);
-                text-shadow: 0 0 3px var(--color-base-text-shadow);
             }
 
             @media only screen and (max-width: 1000px)

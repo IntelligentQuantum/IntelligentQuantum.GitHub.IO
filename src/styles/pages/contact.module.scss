@@ -2,12 +2,15 @@
 {
     position: relative;
     z-index: 95;
+
     height: auto;
     width: 100%;
+    padding-bottom: 3rem;
 
     &Information
     {
         display: grid;
+        grid-template-rows: auto;
         grid-template-columns: repeat(3, minmax(30rem, 1fr));
         grid-gap: 2rem;
 
@@ -20,7 +23,7 @@
 
         @media only screen and (max-width: 1000px)
         {
-            padding: 1.5rem;
+            padding: 0.5rem;
         }
 
         @media only screen and (max-width: 650px)
@@ -30,42 +33,61 @@
 
         &Content
         {
-            border-radius: 1rem;
+            border-radius: var(--border-radius);
             background: var(--base-light);
             padding: 3rem;
-            min-height: 20rem;
 
             &Personal
             {
-                padding-bottom: 1.2rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+
                 height: 100%;
+                padding-bottom: 1.2rem;
 
-                ul
+                & > li
                 {
-                    height: 100%;
                     display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                }
-
-                li
-                {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
                     align-items: center;
-                }
+                    justify-content: space-between;
 
-                h6
-                {
-                    color: var(--color-base-text-bolder);
-                    font-size: 1.2rem;
-                    font-weight: 300;
-                }
+                    width: 100%;
+                    overflow-x: scroll;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
 
-                span
-                {
-                    font-size: 1.2rem;
+                    &::-webkit-scrollbar
+                    {
+                        display: none;
+                    }
+
+                    & > h3,
+                    & > span
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 1rem;
+
+                        color: var(--color-base-text-bolder);
+                        font-size: 1.5rem;
+                        font-weight: 300;
+
+                        width: 100%;
+
+                        & > span
+                        {
+                            text-shadow: none;
+                        }
+
+                        @media only screen and (max-width: 1200px)
+                        {
+                            font-size: 1.25rem;
+                        }
+                    }
                 }
             }
         }
@@ -77,19 +99,20 @@
         padding: 3rem;
         height: 100%;
         width: 100%;
-        border-radius: 1rem;
+        border-radius: var(--border-radius);
 
         &Parent
         {
-            width: 100%;
-            padding: 0 3rem;
             display: flex;
             justify-content: center;
             align-items: center;
 
+            width: 100%;
+            padding: 0 3rem;
+
             @media only screen and (max-width: 1000px)
             {
-                padding: 0 1.5rem;
+                padding: 0 0.5rem;
             }
         }
 
@@ -98,6 +121,7 @@
             &Group
             {
                 display: flex;
+
                 margin: auto;
                 height: 5rem;
                 direction: ltr;
@@ -110,10 +134,11 @@
                 & label
                 {
                     display: flex;
-                    justify-content: center;
                     align-items: center;
+                    justify-content: center;
 
                     direction: ltr;
+
                     text-align: center;
                     font-size: 1.5rem;
                     color: var(--color-base-text);
@@ -122,13 +147,14 @@
                     width: 5rem;
                     background: var(--base-dark);
                     transition: 0.4s ease-in-out;
-                    border-radius: 1rem 0 0 1rem;
+                    border-radius: var(--border-radius) 0 0 var(--border-radius);
                 }
 
                 & input,
                 & textarea
                 {
                     direction: ltr;
+
                     resize: none;
                     height: 100%;
                     width: 100%;
@@ -137,7 +163,7 @@
                     color: var(--color-base-text-bolder);
                     padding: 2rem 2rem 2rem 1rem;
                     transition: 0.4s ease-in-out;
-                    border-radius: 0 1rem 1rem 0;
+                    border-radius: 0 var(--border-radius) var(--border-radius) 0;
 
                     &:focus-within + label
                     {
@@ -165,9 +191,10 @@
 
                 &MessageInput
                 {
+                    direction: rtl;
+
                     height: 15rem;
                     margin-bottom: 3rem;
-                    direction: rtl;
 
                     & input,
                     & textarea,
@@ -217,7 +244,7 @@ html[data-language="fa"]
                 & textarea
                 {
                     direction: rtl;
-                    border-radius: 1rem 0 0 1rem;
+                    border-radius: var(--border-radius) 0 0 1rem;
                 }
             }
         }

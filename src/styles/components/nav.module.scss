@@ -3,23 +3,13 @@
     display: grid;
     grid-template-rows: 7rem 1fr 12rem;
 
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
 
-    transition: all 0.8s;
     width: 8rem;
     height: 100%;
-
-    &__Open
-    {
-        width: 30rem;
-
-        @media only screen and (max-width: 1000px)
-        {
-            right: 0 !important;
-        }
-    }
+    transition: all 0.4s;
 
     @media only screen and (max-width: 1000px)
     {
@@ -30,8 +20,7 @@
         z-index: 100;
         right: -100%;
 
-        transition: 0.4s;
-        width: 27.6517rem;
+        width: 30rem;
         height: 100%;
     }
 
@@ -41,12 +30,15 @@
 
         @media only screen and (max-width: 1000px)
         {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            position: fixed;
+
             height: 7rem;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
             padding: 0 3rem;
-            position: fixed;
             background: var(--base-dark);
             z-index: 98;
         }
@@ -54,7 +46,10 @@
         &Dots
         {
             display: flex;
-            margin: auto 0;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 2rem;
             height: 2rem;
             width: 2rem;
             fill: var(--color-base-text);
@@ -63,12 +58,15 @@
         &Hamburger
         {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+
             position: relative;
+
             cursor: pointer;
-            padding-right: 1rem;
             transition: all 0.2s;
+            width: 2rem;
+            height: 2rem;
 
             &Line,
             &Line::before,
@@ -165,7 +163,7 @@
 
     &Hamburger
     {
-        background: var(--base-darker);
+        background: var(--base-dark);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -233,9 +231,15 @@
                 }
             }
 
-            &:hover,
             &:hover::after,
             &:hover::before
+            {
+                background-color: var(--color-base-text-bolder);
+            }
+
+            &[data-open="false"]:hover,
+            &[data-open="false"]:hover::after,
+            &[data-open="false"]:hover::before
             {
                 background-color: var(--color-base-text-bolder);
             }
@@ -284,8 +288,7 @@
 
     &Content
     {
-        background-color: var(--base-dark);
-        text-shadow: 0 0 3px var(--base-transparent);
+        background-color: var(--base-light);
 
         padding-top: 5rem;
         text-align: center;
@@ -335,9 +338,33 @@
                 cursor: pointer;
                 white-space: pre;
                 padding: 0.7rem 3rem;
-                transition: all 0.2s ease;
-
                 color: var(--color-base-text);
+                transition: color 0.2s, margin-left 1.35s, margin-right 1.35s;
+
+                &:nth-child(1)
+                {
+                    margin-left: 5rem;
+                }
+
+                &:nth-child(2)
+                {
+                    margin-left: 9rem;
+                }
+
+                &:nth-child(3)
+                {
+                    margin-left: 13rem;
+                }
+
+                &:nth-child(4)
+                {
+                    margin-left: 17rem;
+                }
+
+                &:nth-child(5)
+                {
+                    margin-left: 21rem;
+                }
 
                 &:hover
                 {
@@ -347,7 +374,6 @@
                 &[data-active="true"]
                 {
                     color: var(--color-base-text-bolder);
-                    text-shadow: 0 0 5px var(--base-transparent);
                 }
             }
 
@@ -366,34 +392,28 @@
 
     &Themes
     {
-        padding-top: 1rem;
-        background: var(--base-darker);
-        display: block;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
 
-        &Active
-        {
-            background-color: var(--color-primary) !important;
-            color: var(--color-base-text-bolder) !important;
-        }
+        transition: all 0.8s, background-color 0s;
+        padding: 1rem 1rem 0;
+        background-color: var(--base-dark);
 
-        & span
+        & > i
         {
             display: flex;
             align-items: center;
             justify-content: center;
 
             border-radius: 50%;
-            background-color: var(--base-dark);
+            background-color: var(--base-light);
             transition: all 0.2s;
             cursor: pointer;
             width: 2.8rem;
             height: 2.8rem;
-            margin: auto auto 0.5rem;
-
-            &:first-child
-            {
-                margin-top: 0.5rem;
-            }
 
             &:hover
             {
@@ -408,16 +428,13 @@
             }
         }
 
-        &[data-open="true"]
+        &__Active
         {
-            display: flex;
-            flex-flow: row;
-            flex-wrap: wrap;
-            justify-content: center;
+            background-color: var(--color-primary) !important;
 
-            & span
+            & > svg
             {
-                margin: auto 1rem;
+                fill: var(--base) !important;
             }
         }
 
@@ -432,12 +449,34 @@
         }
     }
 
-    @media only screen and (max-width: 1000px)
+    &__Open
     {
-        &[data-open="true"]
+        width: 30rem;
+        transition: all 0.8s;
+
+        & .navThemes
+        {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        & a
+        {
+            margin-left: 0 !important;
+        }
+
+        @media only screen and (max-width: 1000px)
         {
             right: 0;
         }
+    }
+}
+
+@keyframes list-transition
+{
+    to
+    {
+        margin-right: 0;
     }
 }
 
@@ -447,16 +486,69 @@ html[data-language="fa"]
     {
         right: auto;
         left: 0;
-    }
 
-    .navMobile
-    {
-        direction: initial;
-    }
+        @media only screen and (max-width: 1000px)
+        {
+            right: auto;
+            left: -150%;
+        }
 
-    .navContentActive
-    {
-        transform: rotate(-90deg);
+        & a
+        {
+            &:nth-child(1)
+            {
+                margin-right: 5rem;
+            }
+
+            &:nth-child(2)
+            {
+                margin-right: 9rem;
+            }
+
+            &:nth-child(3)
+            {
+                margin-right: 13rem;
+            }
+
+            &:nth-child(4)
+            {
+                margin-right: 17rem;
+            }
+
+            &:nth-child(5)
+            {
+                margin-right: 21rem;
+            }
+        }
+
+        &__Open
+        {
+            & a
+            {
+                margin-right: 0 !important;
+            }
+
+            @media only screen and (max-width: 1000px)
+            {
+                left: 0;
+            }
+        }
+
+        &HamburgerLine
+        {
+            right: 3rem;
+            left: auto;
+        }
+
+        &Mobile
+        {
+            direction: rtl;
+        }
+
+        &ContentActive
+        {
+            transform: rotate(-90deg);
+        }
     }
 
     @media only screen and (min-width: 1000px)
@@ -467,6 +559,14 @@ html[data-language="fa"]
             left: auto;
 
             transition: all 0.5s ease-in-out;
+        }
+    }
+
+    @keyframes list-transition
+    {
+        to
+        {
+            margin-left: 0;
         }
     }
 }

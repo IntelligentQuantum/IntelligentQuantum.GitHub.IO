@@ -7,7 +7,7 @@
     font-weight: 600;
     border: none;
     transition: 0.2s ease-in-out;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
     cursor: pointer;
 
     &:hover
@@ -21,7 +21,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 0.5rem;
 
         text-transform: uppercase;
         transition: 0.2s ease-in-out;
@@ -33,14 +32,14 @@
         {
             color: var(--color-primary);
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.25rem;
         }
 
         & svg
         {
             transition: 0.4s ease-in-out;
-            height: 1.4rem;
-            width: 1.4rem;
+            height: 2rem;
+            width: 2rem;
             fill: var(--color-primary-light);
         }
 
@@ -48,8 +47,6 @@
         {
             & svg
             {
-                text-shadow: 0 0 1px var(--color-primary-light);
-                filter: drop-shadow(0 0 0.2em #bdbdbd);
                 margin-left: 0.4rem;
             }
         }

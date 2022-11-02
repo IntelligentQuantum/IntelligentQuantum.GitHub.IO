@@ -1,109 +1,85 @@
-import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import { useDispatch, useSelector } from 'react-redux';
-
-import { setTagPortfolio } from '../app/portfolio/portfolio.actions';
+import { v4 as uuidV4 } from 'uuid';
+import React, { useState, Fragment } from 'react';
 
 import type { IContent } from '../interfaces/content';
 import type { IPortfolio } from '../interfaces/portfolio';
 
-import stylesMain from '../styles/components/main.module.scss';
 import stylesPortfolio from '../styles/pages/portfolio.module.scss';
 
-const Card = dynamic(() => import('../components/portfolio/card.component'));
-const Main = dynamic(() => import('../components/layouts/main/main.component'));
+const ItemMotion = dynamic(() => import('../components/animations/item.component'));
+const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
+const PortfolioCard = dynamic(() => import('../components/cards/portfolio-card.component'));
 
 const Portfolio = (props: { content: IContent }) =>
 {
-    const dispatch = useDispatch();
-
-    const tagPortfolio = useSelector((state: any) => state.portfolio.tagPortfolio);
+    const [category, setCategory] = useState<string>('all');
 
     return (
-        <>
+        <Fragment>
             <Head>
-                <title>Parsa Firoozi &mdash; Resume and complete portfolio of im-parsa</title>
-
-                <meta charSet='UTF-8' />
-                <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-                <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
+                <title>Parsa Firoozi &mdash; Resume and Portfolio</title>
 
                 <meta name='Classification' content='Portfolio'/>
                 <meta name='subject' content='Portfolio'/>
-                <meta name='description' content='Parsa Firoozi Portfolio'/>
+                <meta name='description' content='Parsa Firoozi Resume and Portfolio'/>
                 <meta name='keywords' content='im-parsa, Parsa Firoozi, Parsa, Firoozi, Portfolio'/>
                 <meta name='author' content='Parsa Firoozi'/>
 
                 <meta property='og:type' content='website'/>
                 <meta property='og:url' content='https://parsa-firoozi.ir/portfolio'/>
                 <meta property='og:title' content='Parsa Firoozi'/>
-                <meta property='og:description' content='Parsa Firoozi Portfolio'/>
+                <meta property='og:description' content='Parsa Firoozi Resume and Portfolio'/>
                 <meta property='og:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
 
                 <meta property='twitter:card' content='summary'/>
                 <meta property='twitter:url' content='https://parsa-firoozi.ir/portfolio'/>
                 <meta property='twitter:title' content='Parsa Firoozi'/>
-                <meta property='twitter:description' content='Parsa Firoozi Portfolio'/>
+                <meta property='twitter:description' content='Parsa Firoozi Resume and Portfolio'/>
             </Head>
-            <Main content={props?.content}>
-                <div className={stylesMain.mainContent}>
-                    <span className={stylesMain.mainBackground}/>
-                    <span className='hr'/>
-                    <section className={stylesPortfolio.portfolio}>
-                        <h4 className='heading'>
-                            {props?.content?.titles[6]}
-                        </h4>
-                        <ul className='heading__small'>
-                            <li data-active={tagPortfolio === 'all'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('all'));
-                            }}>
-                                {props?.content?.categories[0]}
-                            </li>
-                            <li data-active={tagPortfolio === 'web_development'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('web_development'));
-                            }}>
-                                {props?.content?.categories[1]}
-                            </li>
-                            <li data-active={tagPortfolio === 'app_development'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('app_development'));
-                            }}>
-                                {props?.content?.categories[2]}
-                            </li>
-                            <li data-active={tagPortfolio === 'robot_development'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('robot_development'));
-                            }}>
-                                {props?.content?.categories[3]}
-                            </li>
-                            <li data-active={tagPortfolio === 'graphic_design'} onClick={() =>
-                            {
-                                dispatch(setTagPortfolio('graphic_design'));
-                            }}>
-                                {props?.content?.categories[4]}
-                            </li>
-                        </ul>
-                        <div className={stylesPortfolio.portfolioList}>
-                            {
-                                props?.content?.my_portfolio?.map((portfolio: IPortfolio) =>
-                                    (
-                                        <Card
-                                            key={ portfolio?.id }
-                                            portfolio={ portfolio }
-                                            text={ props?.content?.read_more }
-                                        />
-                                    ))
-                            }
-                        </div>
-                    </section>
-                    <span className='hr'/>
-                </div>
-            </Main>
-        </>
+
+            <section className={stylesPortfolio.portfolio}>
+                <h4 className='heading'>{ props.content.titles[6] }</h4>
+
+                <ScrollMotion>
+                    <ul className='heading__small'>
+                        <ItemMotion index={ 0 } active={category === 'all'} onClick={() => setCategory('all')}>
+                            { props.content.categories[0] }
+                        </ItemMotion>
+                        <ItemMotion index={ 1 } active={category === 'web_development'} onClick={() => setCategory('web_development')}>
+                            { props.content.categories[1] }
+                        </ItemMotion>
+                        <ItemMotion index={ 2 } active={category === 'app_development'} onClick={() => setCategory('app_development')}>
+                            { props.content.categories[2] }
+                        </ItemMotion>
+                        <ItemMotion index={ 3 } active={category === 'robot_development'} onClick={() => setCategory('robot_development')}>
+                            { props.content.categories[3] }
+                        </ItemMotion>
+                        <ItemMotion index={ 4 } active={category === 'graphic_design'} onClick={() => setCategory('graphic_design')}>
+                            { props.content.categories[4] }
+                        </ItemMotion>
+                    </ul>
+                </ScrollMotion>
+
+                <ScrollMotion delay={ .3 } className={stylesPortfolio.portfolioList}>
+                    {
+                        props.content.my_portfolio.map((portfolio: IPortfolio) =>
+                            (
+                                category === 'all' || portfolio.tag === category
+                                    ?
+                                    <PortfolioCard
+                                        key={ uuidV4() }
+                                        portfolio={ portfolio }
+                                        text={ props.content.read_more }
+                                    />
+                                    :
+                                    null
+                            ))
+                    }
+                </ScrollMotion>
+            </section>
+        </Fragment>
     );
 };
 

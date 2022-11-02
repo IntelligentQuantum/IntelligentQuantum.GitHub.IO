@@ -1,0 +1,111 @@
+.loader
+{
+    display: flex;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    background-color: var(--base-dark);
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    animation:
+        spin infinite normal 3.5s
+        cubic-bezier(0.25, 0.58, 0.36, 1.01);
+
+    &::before,
+    &::after
+    {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+
+        border-radius: 50%;
+    }
+
+    &::before
+    {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background: var(--base-dark);
+        width: 120%;
+        height: 120%;
+        border: 0.25rem solid var(--color-primary);
+        z-index: 1;
+    }
+
+    &::after
+    {
+        background: var(--color-primary);
+        width: 3.25rem * 0.8;
+        height: 3.25rem * 0.8;
+        margin: (3.25rem * 0.1) 0 0 (3.25rem * 0.1);
+        z-index: 1;
+    }
+
+    & span
+    {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+
+        background-color: var(--base-dark);
+        width: 3.25rem;
+        height: 5.75rem;
+        border-radius: (3.25rem / 2) (3.25rem / 2) 0 0;
+        transform-origin: 50% 100%;
+        border: 0.25rem solid var(--color-primary);
+        border-bottom: none;
+        margin: (3.25rem / 2) 0 0 (3.25rem / 2);
+        padding: (3.25rem / 8) 0 0 0;
+
+        &::before,
+        &::after
+        {
+            content: "";
+
+            display: block;
+
+            position: absolute;
+
+            border-radius: 50%;
+        }
+
+        &::before
+        {
+            width: (3.25rem / 2);
+            height: (3.25rem / 2);
+            border: 0.25rem solid var(--color-primary);
+        }
+
+        &::after
+        {
+            margin: 0.4rem;
+            width: (3.25rem / 4);
+            height: (3.25rem / 4);
+            background: var(--color-primary);
+        }
+
+        @for $i from 1 through 3
+        {
+            &:nth-child(#{$i})
+            {
+                transform: translate(-50%, -100%) rotate(#{360 / 3 * $i}deg);
+            }
+        }
+    }
+}
+
+@keyframes spin
+{
+    to
+    {
+        transform: rotate(#{360 * 3}deg);
+    }
+}

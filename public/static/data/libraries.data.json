@@ -1,0 +1,49 @@
+{
+    "items":
+    [
+        {
+            "id": 0,
+            "names": ["NextJS", "ReactJS", "React Native"]
+        },
+        {
+            "id": 1,
+            "names": ["NodeJS", "DenoJS", "NestJS"]
+        },
+        {
+            "id": 2,
+            "names": ["Solidity", "Ethereum VM"]
+        },
+        {
+            "id": 3,
+            "names": ["C++", "Qt", "Poco"]
+        },
+        {
+            "id": 4,
+            "names": ["Electron", "Express.js"]
+        },
+        {
+            "id": 5,
+            "names": ["Mongodb", "Redis", "SQL"]
+        },
+        {
+            "id": 6,
+            "names": ["Pug", "HBS", "EJS"]
+        },
+        {
+            "id": 7,
+            "names": ["Sass", "Less", "Styled"]
+        },
+        {
+            "id": 8,
+            "names": ["Photoshop", "Illustrator"]
+        },
+        {
+            "id": 9,
+            "names": ["Git", "Github", "GitLab"]
+        },
+        {
+            "id": 10,
+            "names": ["Curl", "Apt", "Apt-Get"]
+        }
+    ]
+}
