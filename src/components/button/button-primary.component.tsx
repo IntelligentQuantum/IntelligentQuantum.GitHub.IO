@@ -7,7 +7,7 @@ import ArrowKeyboardRight from '../../../public/static/icons/icon-arrow_keyboard
 
 const ButtonPrimary = (props: { link: string, text: string }) =>
     (
-        <Link href={props.link}>
+        <Link href={props.link} legacyBehavior>
             <a className={stylesButton.buttonSecondary} id='buttonSecondary'>
                 {props.text}
                 <ArrowKeyboardRight />

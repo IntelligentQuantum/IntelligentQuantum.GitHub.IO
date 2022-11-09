@@ -23,6 +23,8 @@ import 'tippy.js/dist/tippy.css';
 import stylesHome from '../styles/pages/home.module.scss';
 import stylesButtons from '../styles/components/button.module.scss';
 
+import data from '../../public/static/data/github.json';
+
 const TypingEffect = dynamic(() => import('../components/typing-effect'));
 const ServiceCard = dynamic(() => import('../components/cards/service-card.component'));
 const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
@@ -50,7 +52,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                 <TypingEffect words={props.content.typing_effect}/>
                                 <span>&lt;/<i>code</i>&gt;</span>
                             </div>
-                            <Link href='/portfolio'>
+                            <Link href='/portfolio' legacyBehavior>
                                 <a className={classnames(stylesButtons.button, 'align-self-start')}>
                                     { props.content.explore_more }
                                 </a>
@@ -234,7 +236,7 @@ export async function getStaticProps()
         const { items: organizations } = await organizationService.GET();
 
         if (!repositories || !organizations)
-            return { props: { repositories: [], organizations: [] }};
+            return { props: { repositories: data.repos, organizations: data.orgs }};
 
         return {
             props: { repositories, organizations },

@@ -62,10 +62,8 @@ const BlogView = (props: { content: IContent }) =>
         <>
             {
                 loading
-                    ?
-                    <Loader />
-                    :
-                    null
+                    ? <Loader />
+                    : null
             }
             {
                 blog?.name && !loading
@@ -176,8 +174,7 @@ const BlogView = (props: { content: IContent }) =>
                         description={props?.content?.blog_not_found}
                         content={props?.content}
                     />
-                    :
-                    null
+                    : null
             }
         </>
     );

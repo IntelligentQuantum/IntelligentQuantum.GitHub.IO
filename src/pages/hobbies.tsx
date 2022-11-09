@@ -11,6 +11,8 @@ import type { IContent } from '../interfaces/content';
 
 import stylesHobbies from '../styles/pages/hobbies.module.scss';
 
+import data from '../../public/static/data/hobbies.json';
+
 const HobbyCard = dynamic(() => import('../components/cards/hobby-card.component'));
 const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
 
@@ -69,7 +71,7 @@ export async function getStaticProps()
         const { player: torres } = await footballService.Player('ferran-torres', '398184');
 
         if (!messi || !griezmann || !torres)
-            return { props: { players: [] }};
+            return { props: { players: data.players }};
 
         return {
             props: { players: [messi, griezmann, torres] },

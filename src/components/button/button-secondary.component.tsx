@@ -14,7 +14,7 @@ const ButtonSecondary = (props: { a?: boolean, link: string, text: string }) =>
                 </a>
             )
             : (
-                <Link href={props.link}>
+                <Link href={props.link} legacyBehavior>
                     <a className={stylesButton.buttonSecondary} id='button-secondary'>
                         { props.text }
                         <BsChevronRight />

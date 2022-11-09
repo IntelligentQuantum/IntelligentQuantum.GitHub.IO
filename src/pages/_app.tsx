@@ -29,6 +29,8 @@ const MyApp = ({ Component, pageProps }: AppProps) =>
 
     const content = data[router.locale as ILanguages] as IContent;
 
+    console.log('%cParsa Firoozi', 'color: #5294e2; padding: .5rem; border-radius: .5rem; background: #383c4a; font-family: sans-serif; font-size: 4.5rem; font-weight: bolder;');
+
     return (
         <Main content={ content }>
             <Component

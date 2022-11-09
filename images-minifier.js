@@ -12,8 +12,8 @@ compress_images(
         autoupdate: true
     },
     false,
-    { jpg: { engine: 'mozjpeg', command: ['-quality', '60'] } },
-    { png: { engine: 'pngquant', command: ['--quality=20-50', '-o'] } },
+    { jpg: { engine: 'mozjpeg', command: ['-quality', '70'] } },
+    { png: { engine: 'pngquant', command: ['--quality=50-70', '-o'] } },
     { svg: { engine: 'svgo', command: '--multipass' } },
     { gif: { engine: 'gifsicle', command: ['--colors', '256', '--use-col=web'] } },
     function(error, completed, statistic)

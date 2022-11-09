@@ -98,27 +98,27 @@ const Navbar = (props: { content: IContent, mobile?: boolean }) =>
                     <p className={stylesNav.navContentActive} data-open={navbarOpen}>{ props.content[page as IPage] }</p>
 
                     <div className={stylesNav.navContentList} data-open={navbarOpen}>
-                        <Link href='/'>
+                        <Link href='/' legacyBehavior>
                             <a data-active={page === 'home'} className={stylesNav.navContentItem}>
                                 {props.content.home}
                             </a>
                         </Link>
-                        <Link href='/portfolio'>
+                        <Link href='/portfolio' legacyBehavior>
                             <a data-active={page === 'portfolio'} className={stylesNav.navContentItem}>
                                 {props.content.portfolio}
                             </a>
                         </Link>
-                        <Link href='/contact'>
+                        <Link href='/contact' legacyBehavior>
                             <a data-active={page === 'contact'} className={stylesNav.navContentItem}>
                                 {props.content.contact}
                             </a>
                         </Link>
-                        <Link href='/hobbies'>
+                        <Link href='/hobbies' legacyBehavior>
                             <a data-active={page === 'hobbies'} className={stylesNav.navContentItem}>
                                 {props.content.hobbies}
                             </a>
                         </Link>
-                        <Link href='/blogs'>
+                        <Link href='/blogs' legacyBehavior>
                             <a data-active={page === 'blogs'} className={stylesNav.navContentItem}>
                                 {props.content.blogs}
                             </a>

@@ -10,6 +10,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { BsGithub, BsInstagram, BsLinkedin, BsYoutube, BsTwitter, BsFacebook } from 'react-icons/bs';
 
+import Profile from '../../../../public/static/images/profile-2.png';
+
 import skills from '../../../../public/static/data/skills.data.json';
 import socials from '../../../../public/static/data/socials.data.json';
 import languages from '../../../../public/static/data/languages.data.json';
@@ -24,8 +26,6 @@ import type { ILanguage } from '../../../interfaces/language';
 import 'react-circular-progressbar/dist/styles.css';
 import stylesAside from '../../../styles/components/aside.module.scss';
 
-import Profile from '../../../../public/static/images/profile-2.png';
-
 import { selectAsideOpen, toggleAside, toggleFilter } from '../../../store/features/header-slice';
 
 const Aside = (props: { content: IContent }) =>
@@ -37,7 +37,6 @@ const Aside = (props: { content: IContent }) =>
 
     const handleClickAside = () =>
     {
-        console.log(!openAside);
         dispatch(toggleAside(!openAside));
         dispatch(toggleFilter(!openAside));
     };
@@ -63,11 +62,11 @@ const Aside = (props: { content: IContent }) =>
                 <div className={stylesAside.asideUserProfile}>
                     <Image
                         src={Profile}
-                        alt='Parsa Firoozi'
+                        alt={ props.content.my_name }
                         className={stylesAside.asideUserProfile}
                         layout='intrinsic'
-                        width={100}
-                        height={100}
+                        width={750}
+                        height={750}
                     />
                     <span className={stylesAside.asideUserStatusParent}>
                         <i className={stylesAside.asideUserStatus}/>
@@ -80,13 +79,13 @@ const Aside = (props: { content: IContent }) =>
             <div className={stylesAside.asideInformation}>
                 <ul className={stylesAside.asideInformationLanguage}>
                     <li className={props.content.language === 'en' ? stylesAside.asideInformationLanguage__Active : ''}>
-                        <Link href={ router.pathname } locale='en'><a>EN</a></Link>
+                        <Link href={ router.asPath } locale='en' legacyBehavior><a>EN</a></Link>
                     </li>
                     <li className={props.content.language === 'de' ? stylesAside.asideInformationLanguage__Active : ''}>
-                        <Link href={ router.pathname } locale='de'><a>DE</a></Link>
+                        <Link href={ router.asPath } locale='de' legacyBehavior><a>DE</a></Link>
                     </li>
                     <li className={props.content.language === 'fa' ? stylesAside.asideInformationLanguage__Active : ''}>
-                        <Link href={ router.pathname } locale='fa'><a>FA</a></Link>
+                        <Link href={ router.asPath } locale='fa' legacyBehavior><a>FA</a></Link>
                     </li>
                 </ul>
                 <span className={stylesAside.asideDivider}/>

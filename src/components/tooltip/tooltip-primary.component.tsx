@@ -53,19 +53,18 @@ const TooltipPrimary = (props: { title?: string, placement?: 'top' | 'bottom' | 
             render={() =>
                 (
                     props?.render
-                        ? (
-                            <animated.span style={spring}>
-                                { props.render }
-                            </animated.span>
-                        ) : (
-                            <animated.span
-                                style={spring}
-                                data-dark={props?.light}
-                                className={stylesTooltip.tooltip}
-                            >
-                                { props.title }
-                            </animated.span>
-                        )
+                        ?
+                        <animated.span style={spring}>
+                            { props.render }
+                        </animated.span>
+                        :
+                        <animated.span
+                            style={spring}
+                            data-dark={props?.light}
+                            className={stylesTooltip.tooltip}
+                        >
+                            { props.title }
+                        </animated.span>
                 )}
         >
             { props.children }

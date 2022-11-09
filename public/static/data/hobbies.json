@@ -1,0 +1,32 @@
+{
+    "players":
+        [
+            {
+                "id": "28003",
+                "name": "Lionel",
+                "last_name": "Messi",
+                "shirt_number": "30",
+                "profile": "https://img.a.transfermarkt.technology/portrait/header/28003-1631171950.jpg?lm=1",
+                "stats": { "games": "830", "goals": "695", "assists": "332" },
+                "info": { "height": "1,70", "position": "Second Striker" }
+            },
+            {
+                "id": "125781",
+                "name": "Antoine",
+                "last_name": "Griezmann",
+                "shirt_number": "8",
+                "profile": "https://img.a.transfermarkt.technology/portrait/header/125781-1667568355.jpg?lm=1",
+                "stats": { "games": "616", "goals": "234", "assists": "97" },
+                "info": { "height": "1,76", "position": "Second Striker" }
+            },
+            {
+                "id": "398184",
+                "name": "Ferran",
+                "last_name": "Torres",
+                "shirt_number": "11",
+                "profile": "https://img.a.transfermarkt.technology/portrait/header/398184-1620308050.jpg?lm=1",
+                "stats": { "games": "195", "goals": "38", "assists": "28" },
+                "info": { "height": "1,84", "position": "Left Winger" }
+            }
+        ]
+}
