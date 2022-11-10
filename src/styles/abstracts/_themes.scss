@@ -81,6 +81,14 @@ html[data-theme="matrix"]
             rgb(0 0 0 / 90%) 80%
         ),
         url("../../../public/static/images/hobbies/background-guitar.jpg");
+    --base-gradiant-image-fitness:
+        radial-gradient(
+                rgb(0 0 0 / 60%) 0%,
+                rgb(0 0 0 / 70%) 10%,
+                rgb(0 0 0 / 80%) 50%,
+                rgb(0 0 0 / 90%) 80%
+        ),
+        url("../../../public/static/images/hobbies/background-fitness.png");
     --base-gradiant-image-rarible:
         radial-gradient(
             rgb(0 0 0 / 50%) 0%,
@@ -189,6 +197,14 @@ html[data-theme="dim"]
             rgb(38 38 50 / 90%) 80%
         ),
         url("../../../public/static/images/hobbies/background-guitar.jpg");
+    --base-gradiant-image-fitness:
+        radial-gradient(
+                rgb(39 43 54 / 60%) 0%,
+                rgb(45 45 56 / 70%) 10%,
+                rgb(41 41 52 / 80%) 50%,
+                rgb(38 38 50 / 90%) 80%
+        ),
+        url("../../../public/static/images/hobbies/background-fitness.png");
     --base-gradiant-image-rarible:
         radial-gradient(
             rgb(39 43 54 / 50%) 0%,
@@ -287,6 +303,14 @@ html[data-theme="light"]
             rgb(241 243 246 / 50%) 80%
         ),
         url("../../../public/static/images/hobbies/background-guitar.jpg");
+    --base-gradiant-image-fitness:
+        radial-gradient(
+                rgb(235 237 241 / 50%) 0%,
+                rgb(230 231 238 / 50%) 10%,
+                rgb(240 241 246 / 50%) 50%,
+                rgb(241 243 246 / 50%) 80%
+        ),
+        url("../../../public/static/images/hobbies/background-fitness.png");
     --base-gradiant-image-rarible:
         radial-gradient(
             rgb(235 236 241 / 50%) 0%,

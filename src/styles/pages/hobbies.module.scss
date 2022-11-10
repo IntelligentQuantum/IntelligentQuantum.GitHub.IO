@@ -81,6 +81,11 @@
                 background-image: var(--base-gradiant-image-music);
             }
 
+            &[data-fact_type="fitness"]::before
+            {
+                background-image: var(--base-gradiant-image-fitness);
+            }
+
             &[data-fact_type="guitar"]::before
             {
                 background-image: var(--base-gradiant-image-guitar);
@@ -190,7 +195,7 @@
                 padding-right: 3rem;
                 max-width: 45%;
                 width: fit-content;
-                padding-left: 14rem;
+                padding-left: 20rem;
                 height: 120%;
                 overflow: hidden;
 

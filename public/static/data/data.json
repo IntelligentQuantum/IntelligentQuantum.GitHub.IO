@@ -3,6 +3,7 @@
     {
         "language": "en",
         "dir": "ltr",
+        "alert": "Mahsa Amini is giving the Iranian people a new voice",
         "my_name": "Parsa Firoozi",
         "my_skills":
         [
@@ -76,6 +77,10 @@
                 {
                     "icon": "/static/images/logos/logo-deno.png",
                     "title": "DenoJS"
+                },
+                {
+                    "icon": "/static/images/logos/logo-solidity.png",
+                    "title": "Solidity"
                 }
             ],
             "cross_platform":
@@ -174,32 +179,42 @@
         [
             {
                 "id": 0,
+                "name": "mahsa_amini",
+                "description": "Mahsa Amini: Protesters in Iran take to the streets once more despite crackdown",
+                "created_at": "20221015",
+                "category": "news",
+                "source": "Euro News, AFP, Reuters",
+                "image": "/static/images/blogs/background_mahsa_amini.png",
+                "content": "<div><br><p>Angry demonstrators took to streets across Iran again Saturday despite more than a hundred casualties and continued harsh pushback, including internet access restrictions, as the protest movement sparked by Mahsa Amini's death in custody entered the fifth week.</p><div class=\"u-show-for-small-only\"><div><div></div></div></div><p>The 22-year-old died on 16 September, three days after falling into a coma following her arrest in Tehran by Iran's morality police for an alleged breach of the Islamic republic's strict dress code for women.</p><p>Young women have been at the forefront of the biggest wave of street protests seen in the country for years.</p>\n<br><p>\"Guns, tanks, fireworks; the clerics must get lost,\" women without hijabs chanted at a gathering at Tehran's Shariati Technical and Vocational College in a video widely shared online.</p><br><p data-min-tv-running=\"true\">A video posted by the Norway-based organisation Iran Human Rights purported to show protests in the northeastern city of Mashhad, Iran's second most populous city, with demonstrators chanting \"Clerics get lost\" and drivers honking their horns.</p><br><p>Scores of jeering and whistling protesters hurled projectiles at security forces near a landmark roundabout in Hamedan city, west of Tehran, in footage verified by AFP.</p><p>Despite what online monitor NetBlocks called a \"major disruption to internet traffic\", protesters were also seen pouring onto the streets of the northwestern city of Ardabil in videos shared on Twitter.</p><p>Shopkeepers went on strike in Amini's hometown Saqez -- in the Iranian province of Kurdistan -- and Mahabad in West Azerbaijan, said the @1500tasvir social media channel that monitors protests and police violations.</p><p>They were responding to an appeal for a huge turnout for protests on Saturday under the catchcry \"The beginning of the end!\"</p><p>\"We have to be present in the squares, because the best VPN these days is the street,\" activists declared, referring to virtual private networks used to skirt internet restrictions.</p><br><br><h2>Authorities urge people to 'express anger' against protesters</h2><br><p>In response to the protests, one of Iran's main revolutionary bodies, the Islamic Development Coordination Council, has urged people to \"express their revolutionary anger against sedition and rioters\" after prayers on Saturday evening.</p><p>A call also went out this week for \"retirees\" of the Revolutionary Guards to meet on Saturday given \"the current sensitive situation\", according to a journalist at Shargh newspaper.</p><div class=\"ads small-12 column text-center show-for-small-only u-show-for-small-only\"><div class=\"enw-MPU \"><div data-ad-name=\"adzone-mpu\" data-ad-index=\"2\" class=\"enw-MPU__img advertising js-adzone\" data-ad-id=\"adzone-mpu_02\" id=\"adzone-mpu_02\"></div></div></div><p>At the gathering, a Guards commander said three members of its Basij militia had been killed and 850 wounded in Tehran since the start of the \"sedition\", state news agency IRNA said.</p><p>The women-led protests have won support from the US president.</p><p>\"I want you to know that we stand with the citizens, the brave women of Iran,\" Joe Biden said late Friday.</p><p>\"It stunned me what it awakened in Iran. It awakened something that I don't think will be quieted for a long, long time.\"</p><p>Iran \"has to end the violence against its own citizens simply exercising their fundamental rights\", the US leader added.</p><div class=\"ads small-12 column text-center show-for-small-only u-show-for-small-only\"><div class=\"enw-MPU \"><div data-ad-name=\"adzone-mpu\" data-ad-index=\"3\" class=\"enw-MPU__img advertising js-adzone\" data-ad-id=\"adzone-mpu_03\" id=\"adzone-mpu_03\"></div></div></div><p>At least 108 people have been killed in the Amini protests, and at least 93 more have died in separate clashes in Zahedan, the capital of the southeastern province of Sistan-Baluchestan, according to the Iran Human Rights group.</p><br><p>The unrest has continued despite what Amnesty International has called an \"unrelenting brutal crackdown\" that has included an \"all-out attack on child protesters\", leading to the deaths of at least 23 minors, including young girls.</p><br><p>Protesters called on Saturday for demonstrations in the northwestern city of Ardabil over the death of Asra Panahi, a teenage girl from the Azeri ethnic minority who activists say was beaten to death by security forces.</p><p>Officials denied the report, and news agencies close to the Revolutionary Guards quoted her uncle as saying the high school student had died of a heart problem.</p><br><br><h2>New sanctions loom large as Tehran blames riots on foreign 'enemies'</h2><br><p>The crackdown has drawn international condemnation and sanctions on Iran from the UK, Canada and the US.</p><div class=\"ads small-12 column text-center show-for-small-only u-show-for-small-only\"><div class=\"enw-MPU \"><div data-ad-name=\"adzone-mpu\" data-ad-index=\"4\" class=\"enw-MPU__img advertising js-adzone\" data-ad-id=\"adzone-mpu_04\" id=\"adzone-mpu_04\"></div></div></div><p>Iran's supreme leader has accused the country's enemies, including the US and Israel, of fomenting the \"riots\".</p><p>In his toughest warning yet to protesters, Supreme Leader Ayatollah Ali Khamenei -- whose downfall many demonstrators have demanded -- said on Friday that no one should dare think they can uproot the Islamic Republic.  </p><p>Minister of Foreign Affairs Hossein Amir-Abdollahian has called on the EU to adopt a \"realistic approach\" to the Amini protests as the bloc prepares to impose new sanctions on the Islamic republic.</p><p>\"Who would believe that the death of one girl is so important to Westerners?\" he said in a statement on Friday.</p><p>\"If it is so, what did they do regarding the hundreds of thousands of martyrs and deaths in Iraq, Afghanistan, Syria and Lebanon?\" he added.</p><br><p>EU countries agreed this week to level new sanctions, and the move is due to be endorsed at the bloc's foreign ministers meeting in Luxembourg on Monday.</p><p>In response to the protests, the clerical state's security forces have also launched a campaign of mass arrests of artists, dissidents, journalists and athletes.</p><p>Iranian filmmaker Mani Haghighi said the authorities barred him from travelling to the London Film Festival over his support for the protests.</p><p>The British Film Institute said Haghighi had been due to attend the festival for his latest film \"Subtraction\", but the Iranian authorities \"confiscated his passport\".</p><p>\"I cannot put into words the joy and the honour of being able to witness first-hand this great moment in history,\" said Haghighi.</p><p>\"So if this is a punishment for what I've done, then by all means, bring it on.\"</p></div>"
+            },
+            {
+                "id": 0,
                 "name": "geometry_similarity_triangle_1",
                 "description": "Proving the theorem of similarity of triangles 1",
-                "created_at": "1639673079877",
+                "created_at": 1639673079877,
                 "category": "educational",
                 "source": "All the contents of authentic geometry books",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
                 "id": 1,
                 "name": "geometry_similarity_triangle_2",
                 "description": "Proving the theorem of similarity of triangles 2",
-                "created_at": "1639673079877",
+                "created_at": 1639673079877,
                 "category": "educational",
                 "source": "All the contents of authentic geometry books",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
                 "id": 2,
                 "name": "geometry_similarity_triangle_3",
                 "description": "Proving the theorem of similarity of triangles 3",
-                "created_at": "1639673079877",
+                "created_at": 1639673079877,
                 "category": "educational",
                 "source": "All the contents of authentic geometry books",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -222,6 +237,12 @@
                 "title": "Guitar",
                 "type": "guitar",
                 "description": "The guitar is a fretted musical instrument that typically has six strings. Why is it another instrument when it's a guitar? Of course, I also have experience playing piano and violin, but my favorite one is guitar. Also, I had a duet and solo concert sponsored by Nava Afarin academy. I am mostly interested in acoustic and electronic guitar. The sound of the guitar gives me immense peace and pleasure. I'm always a fan of acoustic songs and unplugged performances because of the use of different guitars."
+            },
+            {
+                "id": 8,
+                "title": "Fitness",
+                "type": "fitness",
+                "description": "Since I was a child, I was very interested in various sports, and this made me have a good potential to build my own workout plan. Also, due to various mental issues and my work conditions, I finally made the gym one of the priorities of my daily routine."
             },
             {
                 "id": 1,
@@ -273,8 +294,8 @@
             },
             {
                 "id": 3,
-                "title": "Game Development",
-                "description": "Game Development is the art of creating games and describes the design, development and release of a game with Unreal, Frostbite and Unity engines. It may involve concept generation, design, build, test and release."
+                "title": "Blockchain Development",
+                "description": "Blockchain development is the process of developing and maintaining a blockchain platform. This involves creating the infrastructure that allows for the creation and management of blockchain-based applications and services, such as digital currencies, smart contracts, and distributed applications."
             },
             {
                 "id": 4,
@@ -447,6 +468,7 @@
     {
         "language": "de",
         "dir": "ltr",
+        "alert": "Mahsa Amini gibt dem iranischen Volk eine neue Stimme",
         "my_name": "Parsa Firoozi",
         "my_skills":
         [
@@ -507,6 +529,10 @@
                 {
                     "icon": "/static/images/logos/logo-deno.png",
                     "title": "DenoJS"
+                },
+                {
+                    "icon": "/static/images/logos/logo-solidity.png",
+                    "title": "Solidity"
                 }
             ],
             "cross_platform":
@@ -603,32 +629,42 @@
         [
             {
                 "id": 0,
+                "name": "mahsa_amini",
+                "description": "Mahsa Amini: Demonstranten im Iran gehen trotz hartem Vorgehen erneut auf die Straße",
+                "created_at": "20221015",
+                "category": "Nachrichten",
+                "source": "Euro News, AFP, Reuters",
+                "image": "/static/images/blogs/background_mahsa_amini.png",
+                "content": "<div><br><p>Wütende Demonstranten gingen am Samstag erneut im ganzen Iran auf die Straße, trotz mehr als hundert Opfern und anhaltender harter Gegenwehr, einschließlich Einschränkungen des Internetzugangs, als die Protestbewegung, die durch Mahsa Aminis Tod in Haft ausgelöst wurde, in die fünfte Woche ging.</p><div class=\"u-show-for-small-only\"><div><div></div></div></div><p>Die 22-Jährige starb am 16. September, drei Tage nachdem sie nach ihrer Verhaftung in Teheran durch die iranische Sittenpolizei wegen eines angeblichen Verstoßes gegen die strenge Kleiderordnung der Islamischen Republik für Frauen ins Koma gefallen war.</p><p>Junge Frauen stehen an der Spitze der größten Welle von Straßenprotesten seit Jahren im Land.</p>\n<br><p>„Waffen, Panzer, Feuerwerk; die Geistlichen müssen verschwinden“, skandierten Frauen ohne Kopftuch bei einer Versammlung in Teherans Shariati Technical and Vocational College in einem Video, das online weit verbreitet war.</p><br><p data-min-tv-running=\"true\">Ein von der in Norwegen ansässigen Organisation Iran Human Rights gepostetes Video soll angeblich Proteste in der nordöstlichen Stadt Mashhad, der zweitbevölkerungsreichsten Stadt des Iran, zeigen, wobei Demonstranten „Kleriker verirren“ skandieren und Autofahrer hupten.</p><br><p>Zahlreiche johlende und pfeifende Demonstranten schleuderten Projektile auf Sicherheitskräfte in der Nähe eines markanten Kreisverkehrs in der Stadt Hamedan westlich von Teheran, wie von AFP bestätigtes Filmmaterial zeigt.</p><p>Trotz dessen, was der Online-Monitor NetBlocks als „große Störung des Internetverkehrs“ bezeichnete, wurden Demonstranten auch in Videos gesehen, die auf Twitter auf die Straßen der nordwestlichen Stadt Ardabil strömten.</p><p>Ladenbesitzer streikten in Aminis Heimatstadt Saqez – in der iranischen Provinz Kurdistan – und Mahabad in Westaserbaidschan, sagte der Social-Media-Kanal @1500tasvir, der Proteste und Polizeiverstöße überwacht.</p><p>Sie reagierten auf einen Aufruf zu einer großen Beteiligung an Protesten am Samstag unter dem Schlagwort „Der Anfang vom Ende!“.</p><p>„Wir müssen auf den Plätzen präsent sein, denn das beste VPN ist heutzutage die Straße“, erklärten Aktivisten und verwiesen auf virtuelle private Netzwerke, die zur Umgehung von Internetbeschränkungen verwendet werden.</p><br><br><h2>Die Behörden fordern die Menschen auf, „Wut auszudrücken“ gegen Demonstranten</h2><br><p>Als Reaktion auf die Proteste hat eines der wichtigsten revolutionären Organe des Iran, der Islamic Development Coordination Council, die Menschen aufgefordert, nach dem Gebet am Samstagabend „ihrem revolutionären Zorn gegen Aufruhr und Randalierer Ausdruck zu verleihen“.</p><p>Laut einem Journalisten der Zeitung Shargh ging diese Woche auch ein Aufruf für „Rentner“ der Revolutionsgarden aus, sich am Samstag angesichts „der gegenwärtigen heiklen Situation“ zu treffen.</p><div class=\"ads small-12 column text-center show-for-small-only u-show-for-small-only\"><div class=\"enw-MPU \"><div data-ad-name=\"adzone-mpu\" data-ad-index=\"2\" class=\"enw-MPU__img advertising js-adzone\" data-ad-id=\"adzone-mpu_02\" id=\"adzone-mpu_02\"></div></div></div><p>Bei der Versammlung sagte ein Kommandeur der Garde, drei Mitglieder der Basij-Miliz seien seit Beginn der „Aufwiegelung“ in Teheran getötet und 850 verletzt worden, teilte die staatliche Nachrichtenagentur IRNA mit.</p><p>Die von Frauen geführten Proteste haben die Unterstützung des US-Präsidenten gewonnen.</p><p>„Ich möchte, dass Sie wissen, dass wir zu den Bürgerinnen und Bürgern stehen, den mutigen Frauen des Iran“, sagte Joe Biden am späten Freitag.</p><p>„Es hat mich verblüfft, was es im Iran geweckt hat.</p><p>Der Iran „muss die Gewalt gegen seine eigenen Bürger beenden, indem er einfach ihre Grundrechte ausübt“, fügte der US-Führer hinzu.</p><div class=\"ads small-12 column text-center show-for-small-only u-show-for-small-only\"><div class=\"enw-MPU \"><div data-ad-name=\"adzone-mpu\" data-ad-index=\"3\" class=\"enw-MPU__img advertising js-adzone\" data-ad-id=\"adzone-mpu_03\" id=\"adzone-mpu_03\"></div></div></div><p>Laut der iranischen Menschenrechtsgruppe wurden bei den Amini-Protesten mindestens 108 Menschen getötet, und mindestens 93 weitere starben bei separaten Zusammenstößen in Zahedan, der Hauptstadt der südöstlichen Provinz Sistan-Belutschistan.</p><br><p>Die Unruhen gingen weiter, obwohl Amnesty International ein „unerbittliches brutales Vorgehen“ nannte, das einen „umfassenden Angriff auf Kinderprotestierende“ beinhaltete, was zum Tod von mindestens 23 Minderjährigen führte, darunter junge Mädchen.</p><br><p>Demonstranten riefen am Samstag zu Demonstrationen in der nordwestlichen Stadt Ardabil wegen des Todes von Asra Panahi auf, einem jungen Mädchen aus der ethnischen Minderheit der Aserbaidschaner, das nach Angaben von Aktivisten von Sicherheitskräften zu Tode geprügelt wurde.</p><p>Beamte dementierten den Bericht, und den Revolutionsgarden nahestehende Nachrichtenagenturen zitierten ihren Onkel mit den Worten, der Gymnasiast sei an einem Herzproblem gestorben.</p><br><br><h2>Neue Sanktionen drohen groß, da Teheran ausländische „Feinde“ für Unruhen verantwortlich macht</h2><br><p>Das harte Durchgreifen hat internationale Verurteilungen und Sanktionen gegen den Iran aus Großbritannien, Kanada und den USA nach sich gezogen.</p><div class=\"ads small-12 column text-center show-for-small-only u-show-for-small-only\"><div class=\"enw-MPU \"><div data-ad-name=\"adzone-mpu\" data-ad-index=\"4\" class=\"enw-MPU__img advertising js-adzone\" data-ad-id=\"adzone-mpu_04\" id=\"adzone-mpu_04\"></div></div></div><p>Der oberste iranische Führer hat die Feinde des Landes, darunter die USA und Israel, beschuldigt, die „Unruhen“ geschürt zu haben.</p><p>In seiner bisher härtesten Warnung an die Demonstranten sagte der Oberste Führer Ayatollah Ali Khamenei – dessen Sturz viele Demonstranten gefordert haben – am Freitag, dass niemand es wagen sollte zu glauben, dass er die Islamische Republik entwurzeln kann.</p><p>Außenminister Hossein Amir-Abdollahian hat die EU zu einem „realistischen Ansatz“ gegenüber den Amini-Protesten aufgerufen, während sich der Block darauf vorbereitet, neue Sanktionen gegen die Islamische Republik zu verhängen.</p><p>\"Wer würde glauben, dass der Tod eines Mädchens für Westler so wichtig ist?\" sagte er in einer Erklärung am Freitag.</p><p>\"Wenn dem so ist, was haben sie angesichts der Hunderttausenden von Märtyrern und Toten im Irak, in Afghanistan, Syrien und im Libanon getan?\" er fügte hinzu.</p><br><p>Die EU-Länder einigten sich diese Woche darauf, neue Sanktionen zu verhängen, und der Schritt soll auf dem Außenministertreffen des Blocks am Montag in Luxemburg gebilligt werden.</p><p>Als Reaktion auf die Proteste haben die Sicherheitskräfte des Klerikerstaates auch eine Kampagne zur Massenverhaftung von Künstlern, Dissidenten, Journalisten und Sportlern gestartet.\n</p><p>Der iranische Filmemacher Mani Haghighi sagte, die Behörden hätten ihm wegen seiner Unterstützung der Proteste die Reise zum London Film Festival untersagt.</p><p>Das British Film Institute sagte, Haghighi hätte für seinen neuesten Film „Subtraction“ am Festival teilnehmen sollen, aber die iranischen Behörden hätten „seinen Pass beschlagnahmt“.</p><p>„Ich kann die Freude und die Ehre, diesen großen Moment in der Geschichte aus erster Hand miterleben zu können, nicht in Worte fassen“, sagte Haghighi.</p><p>\n\"Also, wenn das eine Strafe für das ist, was ich getan habe, dann mach es auf jeden Fall.\"</p></div>"
+            },
+            {
+                "id": 0,
                 "name": "geometry_similarity_triangle_1",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 1",
-                "created_at": "1639673079877",
-                "category": "lehrreich",
+                "created_at": 1639673079877,
+                "category": "Lehrreich",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
                 "id": 1,
                 "name": "geometry_similarity_triangle_2",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 2",
-                "created_at": "1639673079877",
-                "category": "lehrreich",
+                "created_at": 1639673079877,
+                "category": "Lehrreich",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
                 "id": 2,
                 "name": "geometry_similarity_triangle_3",
                 "description": "Beweis des Ähnlichkeitssatzes von Dreiecken 3",
-                "created_at": "1639673079877",
-                "category": "lehrreich",
+                "created_at": 1639673079877,
+                "category": "Lehrreich",
                 "source": "Alle Inhalte authentischer Geometriebücher",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -666,6 +702,12 @@
                 "title": "Gitarre",
                 "type": "guitar",
                 "description": "Die Gitarre ist ein Musikinstrument mit Bünden, das typischerweise sechs Saiten hat. Warum ist es ein anderes Instrument, wenn es eine Gitarre ist? Natürlich habe ich auch Erfahrung mit Klavier und Geige, aber am liebsten spiele ich Gitarre. Außerdem hatte ich ein Duett und ein Solokonzert, das von der Nava Afarin Academy gesponsert wurde. Ich interessiere mich hauptsächlich für akustische und elektronische Gitarre. Der Klang der Gitarre gibt mir ungeheure Ruhe und Freude. Ich bin immer ein Fan von akustischen Songs und Unplugged-Auftritten, weil ich verschiedene Gitarren verwende."
+            },
+            {
+                "id": 8,
+                "title": "Fitness",
+                "type": "fitness",
+                "description": "Schon als Kind interessierte ich mich sehr für verschiedene Sportarten, wodurch ich ein gutes Potenzial hatte, meinen eigenen Trainingsplan zu erstellen. Auch aufgrund verschiedener psychischer Probleme und meiner Arbeitsbedingungen habe ich das Fitnessstudio schließlich zu einer der Prioritäten meiner täglichen Routine gemacht."
             },
             {
                 "id": 1,
@@ -717,8 +759,8 @@
             },
             {
                 "id": 3,
-                "title": "Spielentwicklung",
-                "description": "Spieleentwicklung ist die Kunst des Erstellens von Spielen und beschreibt das Design, die Entwicklung und die Veröffentlichung eines Spiels mit Unreal-, Frostbite- und Unity-Engines. Es kann die Konzepterstellung, das Design, den Aufbau, das Testen und die Freigabe umfassen."
+                "title": "Blockchain-Entwicklung",
+                "description": "Blockchain-Entwicklung ist der Prozess der Entwicklung und Wartung einer Blockchain-Plattform. Dazu gehört die Schaffung der Infrastruktur, die die Erstellung und Verwaltung von Blockchain-basierten Anwendungen und Diensten wie digitalen Währungen, intelligenten Verträgen und verteilten Anwendungen ermöglicht."
             },
             {
                 "id": 4,
@@ -891,6 +933,7 @@
     {
         "language": "fa",
         "dir": "rtl",
+        "alert": "مهسا امینی صدای تازه ای به مردم ایران می دهد",
         "my_name": "پارسا فیروزی",
         "my_skills":
         [
@@ -964,6 +1007,10 @@
                 {
                     "icon": "/static/images/logos/logo-deno.png",
                     "title": "DenoJS"
+                },
+                {
+                    "icon": "/static/images/logos/logo-solidity.png",
+                    "title": "Solidity"
                 }
             ],
             "cross_platform":
@@ -1064,30 +1111,30 @@
                 "id": 0,
                 "name": "geometry_similarity_triangle_1",
                 "description": "اثبات قضیه تشابه مثلث ها ۱",
-                "created_at": "1639673079877",
+                "created_at": 1639673079877,
                 "category": "آموزشی",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه یک تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو زاویه از دو مثلث با هم برابر باشند، آن دو مثلث با هم متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : چون دو زاویه این دو مثلث برابرند پس زاویه سوم نیز برابر است.</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-1.png\" style=\"height:215px; width:296px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>برای اثبات این قضیه با اندازه ‘A’B روی AB جدا می کنیم و آن را “AB می\u200Cنامیم. به اندازه ی ‘A’C روی AC جدا کرده و آن را نیز “AC نامگذازی می\u200Cکنیم. “B را به “C وصل می\u200Cکنیم. دو مثلث ‘A’B’C و “A”B”C بایکدیگر <strong>هم\u200Cنهشت</strong> هستند، زیرا :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-3.png\" style=\"height:215px; width:296px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-4.png\" style=\"height:115px; width:227px\"></p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_1-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس نتیجه می\u200Cگیریم طبق <strong>قضیه توازی</strong> BC با “B”C موازی است. در نتیجه طبق قضیه اساسی، دو مثلث ABC و ‘A’B’C متشابه هستند. از طرفی چون دو مثلث “AB”C و ‘AB’C با یکدیگر برابرند، پس طبق اصل <strong>تشابه مثلث ها</strong>&nbsp;دو مثلث ABC و ‘A’B’C نیز متشابه هستند.</p>\n"
             },
             {
                 "id": 1,
                 "name": "geometry_similarity_triangle_2",
                 "description": "اثبات قضیه تشابه مثلث ها ۲",
-                "created_at": "1639673079877",
+                "created_at": 1639673079877,
                 "category": "آموزشی",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه دو تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>هرگاه دو ضلع از دو مثلث با هم متناسب و زاویه بین دو ضلع از دو مثلث برابر باشند، آنگاه دو مثلث متشابه\u200Cاند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : برای اثبات این قضیه روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم تا “AB به وجود آید. روی AC نیز به اندازه ‘A’C جدا می\u200Cکنیم تا “AC به وجود آید. همچنین از “B به “C وصل می\u200Cکنیم. دو مثلث “A”B”C و ‘A’B’C با هم برابرند.</h3>\n\n<p>&nbsp;</p>\n\n<h3>زیرا :</h3>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-1.png\" style=\"height:264px; width:300px\"></p>\n\n<p>همچنین در فرض داشتیم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-2.png\"></p>\n\n<h3>در این تناسب به جای ‘A’B و ‘A’C دو ضلع “AB و “AC را جایگذاری می\u200Cکنیم و خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-3.png\" style=\"height:161px; width:294px\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی میدانیم که :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_2-4.png\"></p>\n"
             },
             {
                 "id": 2,
                 "name": "geometry_similarity_triangle_3",
                 "description": "اثبات قضیه تشابه مثلث ها ۳",
-                "created_at": "1639673079877",
+                "created_at": 1639673079877,
                 "category": "آموزشی",
                 "source": "تمام مطالب کتاب های معتبر هندسه",
-                "image": "/static/images/blogs/background_math.webp",
+                "image": "/static/images/blogs/background_math.png",
                 "content": "<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst.png\" style=\"height:434px; width:395px\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-1.png\" style=\"height:178px; width:225px\"></p>\n\n<p>&nbsp;</p>\n\n<h2>قضیه سه تشابه مثلث ها :</h2>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<p>اگر سه ضلع از مثلثی با سه ضلع از مثلث دیگر متناسب باشند آن دو مثلث متشابه هستند.</p>\n\n<p>&nbsp;</p>\n\n<h3>اثبات : روی ضلع AB به اندازه ‘A’B جدا می\u200Cکنیم. پس ‘AB” = A’B و آن را “B می\u200Cنامیم . سپس “B”C را موازی BC را رسم می\u200Cکنیم .</h3>\n\n<h3>&nbsp;</h3>\n\n<h3>در نتیجه خواهیم داشت :</h3>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-2.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-3.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>پس دو مثلث “A”B”C و ‘A’B’C با هم به حالت <strong>سه ضلع</strong> برابرند.</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-4.png\"></p>\n\n<p>&nbsp;</p>\n\n<p>از طرفی چون BC با “B”C موازی است پس طبق <a href=\"https://www.dummies.com/education/math/geometry/definitions-and-theorems-of-parallel-lines/\" target=\"_blank\">قضیه توازی</a> داریم :</p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-5.png\"></p>\n\n<p>&nbsp;</p>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/im-parsa/cdn/main/images/geometry_similarity_triangle/gst_3-6.png\" style=\"height:188px; width:238px\"></p>\n"
             }
         ],
@@ -1110,6 +1157,12 @@
                 "title": "گیتار",
                 "type": "guitar",
                 "description": "گیتار یک ساز موسیقی فرت دار است که معمولاً شش سیم دارد. چرا وقتی گیتار است، ساز دیگری است؟ البته من تجربه نواختن پیانو و ویولن را هم دارم اما ساز مورد علاقه من گیتار است. همچنین کنسرت دونوازی و انفرادی به اسپانسری آموزشگاه نوا آفرین داشتم. من بیشتر به گیتار آکوستیک و الکترونیک علاقه دارم. صدای گیتار به من آرامش و لذت بی\u200Cنظیری می\u200Cدهد. من همیشه به دلیل استفاده از گیتارهای مختلف طرفدار آهنگ های آکوستیک و اجراهای بدون پلاگ هستم."
+            },
+            {
+                "id": 8,
+                "title": "فیتنس",
+                "type": "fitness",
+                "description": "من از بچگی علاقه زیادی به ورزش های مختلف داشتم و این باعث شد پتانسیل خوبی برای پرورش اندام داشته باشم همچنین بدلیل مسائل مختلف روحی و شرایط کاریم درنهایت باشگاه را در یکی از اولویت های روتین روزانم قرار دادم."
             },
             {
                 "id": 1,
@@ -1161,8 +1214,8 @@
             },
             {
                 "id": 3,
-                "title": "توسعه بازی",
-                "description": "توسعه بازی هنر ساخت بازی است و طراحی، توسعه و انتشار یک بازی با موتورهای Unreal، Frostbite و Unity را توصیف می کند. ممکن است شامل تولید مفهوم، طراحی، ساخت، آزمایش و انتشار باشد."
+                "title": "توسعه بلاکچین",
+                "description": "توسعه بلاک چین فرآیند توسعه و نگهداری یک پلت فرم بلاک چین است. این شامل ایجاد زیرساختی است که امکان ایجاد و مدیریت برنامه\u200Cها و خدمات مبتنی بر بلاک چین، مانند ارزهای دیجیتال، قراردادهای هوشمند و برنامه\u200Cهای کاربردی توزیع شده را فراهم می\u200Cکند."
             },
             {
                 "id": 4,

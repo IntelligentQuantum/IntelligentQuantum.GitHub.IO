@@ -4,6 +4,8 @@ import dynamic from 'next/dynamic';
 
 import type { IBlog } from '../../interfaces/blog';
 
+import { capitalizeEachFirstLetter } from '../../utils';
+
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
 const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
@@ -20,7 +22,7 @@ const BlogCard = (props: { blog: IBlog, text: string }) =>
             </span>
             <div className={stylesBlog.blogItemContent}>
                 <h3>
-                    { props.blog.name.split('_').join(' ') }
+                    { capitalizeEachFirstLetter(props.blog.name.split('_').join(' ')) }
                 </h3>
                 <p>
                     { props.blog.description }

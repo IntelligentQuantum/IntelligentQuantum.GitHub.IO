@@ -7,6 +7,7 @@ export interface IContent
 {
     language: string,
     dir: 'rtl' | 'ltr',
+    alert: string,
     technologies:
         {
             title: string,

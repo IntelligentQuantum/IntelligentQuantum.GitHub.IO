@@ -9,6 +9,8 @@ import React, { useEffect, useState } from 'react';
 import type { IBlog } from '../../interfaces/blog';
 import type { IContent } from '../../interfaces/content';
 
+import { capitalizeEachFirstLetter } from '../../utils';
+
 import 'moment/locale/de';
 import 'moment/locale/fa';
 import 'moment/locale/en-gb';
@@ -60,10 +62,8 @@ const BlogView = (props: { content: IContent }) =>
         <>
             {
                 loading
-                    ?
-                    <Loader />
-                    :
-                    null
+                    ? <Loader />
+                    : null
             }
             {
                 blog?.name && !loading
@@ -97,7 +97,7 @@ const BlogView = (props: { content: IContent }) =>
 
                         <section className={stylesBlog.blog}>
                             <div className={stylesBlog.blogHeader}>
-                                <h2>{ blog.name.split('_').join(' ').charAt(0).toUpperCase() + blog.name.split('_').join(' ').slice(1) }</h2>
+                                <h2>{ capitalizeEachFirstLetter(blog.name.split('_').join(' ')) }</h2>
                                 <span>{ blog.category }</span>
                             </div>
                             <ItemMotion index={ 0 }  className={stylesBlog.blogViewImage}>
@@ -124,7 +124,7 @@ const BlogView = (props: { content: IContent }) =>
                                     </span>
                                     <span>
                                         <p>{ props?.content?.created_at }:</p>
-                                        { moment(Number(blog.created_at)).format('MMM Do YY') }
+                                        { moment(blog.created_at).format('MMM Do YY') }
                                     </span>
                                     <span>
                                         <p>{ props?.content?.category }:</p>
@@ -174,8 +174,7 @@ const BlogView = (props: { content: IContent }) =>
                         description={props?.content?.blog_not_found}
                         content={props?.content}
                     />
-                    :
-                    null
+                    : null
             }
         </>
     );

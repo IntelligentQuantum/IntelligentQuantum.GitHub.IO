@@ -2,8 +2,9 @@
 /.next
 /.idea
 
-/images
 images
+/images
+images/*
 images/
 
 .env.local

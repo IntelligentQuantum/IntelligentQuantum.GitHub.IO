@@ -8,14 +8,7 @@ export class RepositoryService
     {
         try
         {
-            const { data } = await axios.get(
-                'https://api.github.com/users/im-parsa/repos',
-                {
-                    headers:
-                        {
-                            Authorization: `token ${ process.env.GITHUB_ACCESS_TOKEN }`
-                        }
-                });
+            const { data } = await axios.get('https://api.github.com/users/im-parsa/repos');
 
             return {
                 items:

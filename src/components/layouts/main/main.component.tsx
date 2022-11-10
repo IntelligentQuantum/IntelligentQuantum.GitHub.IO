@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
@@ -10,6 +11,7 @@ import type { IContent } from '../../../interfaces/content';
 
 import stylesNav from '../../../styles/components/nav.module.scss';
 import stylesMain from '../../../styles/components/main.module.scss';
+import stylesAlert from '../../../styles/components/alert.module.scss';
 import stylesFilter from '../../../styles/components/filter.module.scss';
 import stylesPortfolio from '../../../styles/pages/portfolio.module.scss';
 
@@ -68,7 +70,6 @@ const Main = (props: { content: IContent, children: ReactNode }) =>
                 <meta property='twitter:description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta property='twitter:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
             </Head>
-
             {
                 filterActive
                     ?
@@ -117,6 +118,11 @@ const Main = (props: { content: IContent, children: ReactNode }) =>
                 content={ props.content }
             />
             <main className={stylesMain.main}>
+                <Link href='/blogs/mahsa_amini' legacyBehavior>
+                    <a className={stylesAlert.alert}>
+                        { props.content.alert }
+                    </a>
+                </Link>
                 <div className={stylesMain.mainContent}>
                     <span className={stylesMain.mainBackground}/>
                     { props.children }

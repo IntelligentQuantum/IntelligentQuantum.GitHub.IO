@@ -1,4 +1,35 @@
 .alert
 {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 96;
+    top: 0;
+    right: 0;
+
+    padding: 1rem 0;
+    padding-right: 8rem;
+    width: 100%;
+    background: #F52E2EFF;
+    color: white;
+    font-size: 1.25rem;
+
+    @media only screen and (max-width: 1000px)
+    {
+        z-index: 100;
+        position: fixed;
+
+        padding: 1rem;
+    }
+}
+
+html[data-language="fa"]
+{
+    .alert
+    {
+        padding-right: 0;
+        padding-left: 8rem;
+    }
 }
