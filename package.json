@@ -54,7 +54,7 @@
         "@types/redux-logger": "3.0.9",
         "eslint": "8.27.0",
         "eslint-config-next": "13.0.3",
-        "husky": "8.0.1",
+        "husky": "8.0.2",
         "jest": "29.3.1",
         "jest-environment-jsdom": "29.3.1",
         "stylelint": "14.15.0",
