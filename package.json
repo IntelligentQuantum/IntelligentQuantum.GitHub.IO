@@ -40,7 +40,7 @@
         "redux-logger": "3.0.6",
         "rehype-raw": "6.1.1",
         "remark-gfm": "3.0.1",
-        "sass": "1.56.1",
+        "sass": "1.56.2",
         "sharp": "0.31.2",
         "swiper": "8.4.5"
     },
