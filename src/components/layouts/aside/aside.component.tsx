@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { BsGithub, BsInstagram, BsLinkedin, BsYoutube, BsTwitter, BsFacebook } from 'react-icons/bs';
 
-import Profile from '../../../../public/static/images/profile-2.png';
+import Profile from '../../../../public/static/images/profile.png';
 
 import skills from '../../../../public/static/data/skills.data.json';
 import socials from '../../../../public/static/data/socials.data.json';

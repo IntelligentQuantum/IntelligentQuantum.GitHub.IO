@@ -24,15 +24,12 @@
         "currency": "$",
         "typing_effect":
         [
-            "I build desktop, mobile applications.",
-            "I build web interfaces.",
+            "I develop desktop and mobile applications.",
+            "I design web interfaces.",
             "I build RESTful API's.",
-            "I build games with Unreal, Frostbite and Unity engines.",
-            "I am cyber security enthusiast.",
-            "I am JavaScripts, TypeScript, PHP and C++ developer.",
-            "I am ReactJS and NextJS developer.",
-            "I am NodeJS, DenoJS, NestJS and Poco developer.",
-            "I am Electron, React Native and Qt developer."
+            "I am running full node blockchain core.",
+            "I develop exchange and wallet applications.",
+            "I build games with Unreal, Three.js and Unity engines."
         ],
         "technologies":
         {
@@ -113,7 +110,7 @@
         "author": "Author",
         "id": "ID",
         "category": "Category",
-        "my_phone": "+98 917070566",
+        "my_phone": "+989170700566",
         "whatsapp": "WhatsApp",
         "telegram": "Telegram",
         "email": "Email",
@@ -129,7 +126,7 @@
         "age": "Age",
         "my_residence": "Iran",
         "my_city": "Shiraz",
-        "my_age": 2004,
+        "my_age": 2005,
         "english": "English",
         "persian": "Persian",
         "german": "German",
@@ -299,8 +296,8 @@
             },
             {
                 "id": 4,
-                "title": "Cyber-Security",
-                "description": "In the digital world, our data is secure as long as we are know. Most of the hacks that happen are primarily social engineering attacks in which the human psychology is exploited using data that is put up consciously by people on social media."
+                "title": "Metaverse Development",
+                "description": "Basically, Metaverse is based on augmented, virtual and mixed reality, which is also the base of every app and software created for it. The individual needs to learn these skills to be a Metaverse developer. Apart from this, the person also needs to have good programming skills in a particular language."
             },
             {
                 "id": 5,
@@ -567,7 +564,7 @@
         "author": "Autor",
         "id": "ID",
         "category": "Kategorie",
-        "my_phone": "+98 917070566",
+        "my_phone": "+989170700566",
         "whatsapp": "WhatsApp",
         "telegram": "Telegram",
         "email": "Email",
@@ -579,18 +576,15 @@
         "name": "Name",
         "my_residence": "Iran",
         "my_city": "Shiraz",
-        "my_age": 2004,
+        "my_age": 2005,
         "typing_effect":
         [
-            "Ich erstelle Desktop und Mobile Application.",
-            "Ich baue webinterfaces.",
-            "Ich baue RESTful APIs.",
-            "Ich baue Spiele mit Unreal, Frostbite und Unity engines.",
-            "Ich bin ein Entwickler für Cybersicherheit.",
-            "Ich bin JavaScripts, TypeScript, PHP und C++ Entwickler.",
-            "Ich bin ReactJS- und NextJS Entwickler.",
-            "Ich bin NodeJS, DenoJS, NestJS und Poco Entwickler.",
-            "Ich bin Electron, React Native und Qt Entwickler."
+            "Ich entwickle Desktop- und mobile Anwendungen.",
+            "Ich entwerfe Weboberflächen.",
+            "Ich baue RESTful-APIs.",
+            "Ich führe einen Full-Node-Blockchain-Kern aus.",
+            "Ich entwickle Börsen- und Wallet-Anwendungen.",
+            "Ich erstelle Spiele mit Unreal-, Three.js- und Unity-Engines."
         ],
         "residence": "Residenz",
         "city": "Stadt",
@@ -764,8 +758,8 @@
             },
             {
                 "id": 4,
-                "title": "Internet-Sicherheit",
-                "description": "In der digitalen Welt sind unsere Daten sicher, solange wir uns dessen bewusst sind. Die meisten Hacks, die passieren, sind in erster Linie Social-Engineering-Angriffe, bei denen die menschliche Psychologie ausgenutzt wird, indem Daten verwendet werden, die bewusst von Menschen in sozialen Medien bereitgestellt werden."
+                "title": "Metaverse-Entwicklung",
+                "description": "Metaverse ist ein Virtual-Reality-Projekt, um unsere physische Welt mit dem digitalen Leben, der Welt der Avatare und der nächsten Generation des Internets zu verbinden. Man muss sich diese Fähigkeiten aneignen, um ein Metaverse-Entwickler zu werden. Abgesehen davon sollte man auch über gute Programmierkenntnisse in einer bestimmten Sprache verfügen."
             },
             {
                 "id": 5,
@@ -954,15 +948,12 @@
         "currency": "ریال",
         "typing_effect":
         [
-            "من برنامه های دسکتاپ و موبایل می سازم.",
-            "من رابط کاربری وب سایت می سازم.",
+            "من برنامه های دسکتاپ و موبایل را توسعه می دهم.",
+            "من رابط های وب طراحی می کنم.",
             "من RESTful API را می سازم.",
-            "من با موتورهای Unreal، Frostbite و Unity بازی می سازم.",
-            "من عاشق امنیت سایبری هستم.",
-            "من توسعه دهنده JavaScript، TypeScript، PHP و C++ هستم.",
-            "من توسعه دهنده ReactJS و NextJS هستم.",
-            "من توسعه دهنده NodeJS، DenoJS، NestJS و Poco هستم.",
-            "من توسعه دهنده Electron، React Native و Qt هستم."
+            "من هسته بلاک چین کامل گره را اجرا می کنم.",
+            "من برنامه های صرافی و کیف پول را توسعه می دهم.",
+            "من با موتورهای Unreal، Three.js و Unity بازی می‌سازم."
         ],
         "technologies":
         {
@@ -1059,7 +1050,7 @@
         "age": "سن",
         "my_residence": "ایران",
         "my_city": "شیراز",
-        "my_age": 2004,
+        "my_age": 2005,
         "english": "انگلیسی",
         "persian": "فارسی",
         "german": "آلمانی",
@@ -1219,8 +1210,8 @@
             },
             {
                 "id": 4,
-                "title": "امنیت سایبری",
-                "description": "در دنیای دیجیتال، تا زمانی که ما آگاه باشیم، داده های ما امن هستند. بیشتر هک\u200Cهایی که اتفاق می\u200Cافتند، عمدتاً حملات مهندسی اجتماعی هستند که در آن\u200Cها از روان\u200Cشناسی انسان با استفاده از داده\u200Cهایی که آگاهانه توسط افراد در رسانه\u200Cهای اجتماعی قرار می\u200Cگیرد، سوء استفاده می\u200Cشود."
+                "title": "توسعه متاورس",
+                "description": "متاورس یک پروژه واقعیت مجازی جهت پیوند جهان فیزیکی ما با زندگی دیجیتال، دنیای آواتارها و نسل بعدی اینترنت هست. فرد برای اینکه توسعه دهنده متاورس باشد باید این مهارت ها را بیاموزد. جدا از این، فرد باید مهارت های برنامه نویسی خوبی در یک زبان خاص نیز داشته باشد."
             },
             {
                 "id": 5,

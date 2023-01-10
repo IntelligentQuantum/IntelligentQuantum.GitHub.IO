@@ -7,6 +7,11 @@
     width: 100%;
     padding-bottom: 3rem;
 
+    @media only screen and (max-width: 1000px)
+    {
+        padding-top: 1.5rem;
+    }
+
     &Information
     {
         display: grid;
@@ -23,7 +28,7 @@
 
         @media only screen and (max-width: 1000px)
         {
-            padding: 0.5rem;
+            padding: 0 1.5rem;
         }
 
         @media only screen and (max-width: 650px)
@@ -112,7 +117,7 @@
 
             @media only screen and (max-width: 1000px)
             {
-                padding: 0 0.5rem;
+                padding: 0 1.5rem;
             }
         }
 

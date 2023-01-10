@@ -21,7 +21,7 @@ const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
     return (
         <Fragment>
             <Head>
-                <title> Parsa Firoozi &mdash; Hobbies </title>
+                <title>Parsa Firoozi &mdash; Hobbies</title>
 
                 <meta name='Classification' content='Hobbies'/>
                 <meta name='subject' content='Hobbies'/>

@@ -14,7 +14,7 @@
         "build": "NODE_OPTIONS=--max_old_space_size=512 next build",
         "start": "NODE_ENV=production node server.js",
         "start:next": "next start",
-        "minify:images": "node images-minifier.js",
+        "minify:images": "rm -r ./public/static/images/* && node images-minifier.js",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
         "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
         "lint:scss": "stylelint \"src/styles/**/*.scss\" --custom-syntax postcss-scss",
