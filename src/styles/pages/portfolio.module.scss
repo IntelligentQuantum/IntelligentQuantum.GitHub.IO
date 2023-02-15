@@ -5,6 +5,11 @@
     height: auto;
     width: 100%;
 
+    @media only screen and (max-width: 1000px)
+    {
+        padding-top: 1rem;
+    }
+
     &Image
     {
         position: absolute;
@@ -69,7 +74,7 @@
 
         @media only screen and (max-width: 1000px)
         {
-            padding: 0 0.5rem;
+            padding: 0 1.5rem;
         }
     }
 

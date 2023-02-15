@@ -99,7 +99,7 @@ const Navbar = (props: { content: IContent, mobile?: boolean }) =>
 
                     <div className={stylesNav.navContentList} data-open={navbarOpen}>
                         <Link href='/' legacyBehavior>
-                            <a data-active={page === 'home'} className={stylesNav.navContentItem}>
+                            <a data-active={!page} className={stylesNav.navContentItem}>
                                 {props.content.home}
                             </a>
                         </Link>

@@ -36,21 +36,17 @@ const Contact = (props: { content: IContent }) =>
 
         let errorV = { ...error };
 
-        if (!email)
-            errorV = { ...errorV, email: 'empty' };
+        if (!email) errorV = { ...errorV, email: 'empty' };
         else if (!validator.isEmail(email))
             errorV = { ...errorV, email: 'incorrect_email' };
 
-        if (!name)
-            errorV = { ...errorV, name: 'empty' };
+        if (!name) errorV = { ...errorV, name: 'empty' };
 
-        if (!message)
-            errorV = { ...errorV, message: 'empty' };
+        if (!message) errorV = { ...errorV, message: 'empty' };
 
         setError(errorV);
 
-        if (errorV.email || errorV.name || errorV.message)
-            return;
+        if (errorV.email || errorV.name || errorV.message) return;
 
         await axios.post(
             '/contact/mail',

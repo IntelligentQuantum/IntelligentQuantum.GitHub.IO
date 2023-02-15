@@ -8,7 +8,6 @@ export function arrayFilter(array: any)
 
 export function capitalizeEachFirstLetter(string: string)
 {
-    console.log(string)
     const array = string?.split(' ');
 
     for (let i = 0; i < array.length; i++)
