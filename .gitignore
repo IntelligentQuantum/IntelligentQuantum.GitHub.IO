@@ -2,10 +2,6 @@
 /.next
 /.idea
 
-images/*
-images/
-
-
 .env.local
 package-lock.json
 
