@@ -409,7 +409,6 @@
                     margin-left: 0 !important;
                     margin-bottom: 6rem !important;
                     transform: none !important;
-                    border-radius: var(--border-radius);
                     overflow: hidden;
 
                     &[data-discord]
@@ -424,6 +423,8 @@
 
                     & img
                     {
+
+                        border-radius: var(--border-radius);
                         filter: none !important;
                     }
                 }

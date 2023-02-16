@@ -45,16 +45,16 @@
                         "title": "Sass"
                     },
                     {
-                        "icon": "/static/images/logos/logo-styled-component.png",
-                        "title": "Styled Component"
-                    },
-                    {
                         "icon": "/static/images/logos/logo-react-query.png",
                         "title": "React Query"
                     },
                     {
                         "icon": "/static/images/logos/logo-next.png",
                         "title": "Next"
+                    },
+                    {
+                        "icon": "/static/images/logos/logo-three-js.png",
+                        "title": "Three.js"
                     }
                 ],
             "back_end":
@@ -96,7 +96,7 @@
                 }
             ]
         },
-        "about_me": "Parsa Firoozi is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big companies. NEXT_LINE He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native. NEXT_LINE He is also an experienced graphic designer and has done many art works on Instagram and YouTube. Parsa is proficient in Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro and Gimp softwares.",
+        "about_me": "Parsa Firoozi is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, software development and web3 products working for companies from small startups to big ones. NEXT_LINE He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native. NEXT_LINE He is also an experienced graphic designer and has done many art works on Instagram and YouTube. Parsa is proficient in Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro and Gimp softwares.",
         "download_cv": "Download CV",
         "order_now": "Order Now",
         "source_code": "Source Code",
@@ -497,16 +497,16 @@
                     "title": "Sass"
                 },
                 {
-                    "icon": "/static/images/logos/logo-styled-component.png",
-                    "title": "Styled Component"
-                },
-                {
                     "icon": "/static/images/logos/logo-react-query.png",
                     "title": "React Query"
                 },
                 {
                     "icon": "/static/images/logos/logo-next.png",
                     "title": "Next"
+                },
+                {
+                    "icon": "/static/images/logos/logo-three-js.png",
+                    "title": "Three.js"
                 }
             ],
             "back_end":
@@ -969,16 +969,16 @@
                     "title": "Sass"
                 },
                 {
-                    "icon": "/static/images/logos/logo-styled-component.png",
-                    "title": "Styled Component"
-                },
-                {
                     "icon": "/static/images/logos/logo-react-query.png",
                     "title": "React Query"
                 },
                 {
                     "icon": "/static/images/logos/logo-next.png",
                     "title": "Next"
+                },
+                {
+                    "icon": "/static/images/logos/logo-three-js.png",
+                    "title": "Three.js"
                 }
             ],
             "back_end":
