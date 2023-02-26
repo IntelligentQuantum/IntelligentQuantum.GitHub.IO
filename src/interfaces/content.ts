@@ -60,7 +60,7 @@ export interface IContent
     german: string,
     home: string,
     contact: string,
-    portfolio: string,
+    projects: string,
     blogs: string,
     hobbies: string,
     error:

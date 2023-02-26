@@ -27,6 +27,7 @@ type Props =
 const ProjectCard = ({ text, project }: Props) =>
 {
     const dispatch = useDispatch();
+
     const projectTag = useAppSelector(state => state.layout.project.tag);
 
     const handlePopup = () =>
@@ -39,12 +40,12 @@ const ProjectCard = ({ text, project }: Props) =>
             ?
             <div className={styles.projectsItem}>
                 <Image
-                    onClick={handlePopup}
+                    onClick={ handlePopup }
                     src={ project?.image }
                     alt={ project?.title }
                     layout='fill'
                 />
-                <i onClick={handlePopup}>
+                <i onClick={ handlePopup }>
                     <BsArrowsFullscreen size={17}/>
                 </i>
                 <div className={styles.projectsItemBox}>
@@ -55,7 +56,7 @@ const ProjectCard = ({ text, project }: Props) =>
                         { project?.description }
                     </p>
                     <ButtonSecondary
-                        a={true}
+                        a={ true }
                         link={ project?.link }
                         text={ text }
                     />

@@ -132,7 +132,7 @@
         "german": "German",
         "home": "Home",
         "contact": "Contact",
-        "portfolio": "Portfolio",
+        "projects": "Projects",
         "blogs": "Blogs",
         "hobbies": "Hobbies",
         "error":
@@ -594,7 +594,7 @@
         "german": "Deutsch",
         "home": "Heimat",
         "contact": "Kontakt",
-        "portfolio": "Portfolio",
+        "projects": "Projekte",
         "blogs": "Blogs",
         "hobbies": "Hobbys",
         "error":
@@ -1056,7 +1056,7 @@
         "german": "آلمانی",
         "home": "خانه",
         "contact": "تماس",
-        "portfolio": "نمونه کار ها",
+        "projects": "پروژه ها",
         "blogs": "بلاگ ها",
         "hobbies": "سرگرمی ها",
         "error":

@@ -116,12 +116,12 @@ const Navbar = ({ mobile }: Props) =>
                         </Link>
                         <Link href='/projects' legacyBehavior>
                             <a data-active={page === 'projects'} className={stylesNav.navContentItem}>
-                                {content.portfolio}
+                                { content.projects }
                             </a>
                         </Link>
                         <Link href='/contact/index' legacyBehavior>
                             <a data-active={page === 'contact'} className={stylesNav.navContentItem}>
-                                {content.contact}
+                                { content.contact }
                             </a>
                         </Link>
                         <Link href='/hobbies/index' legacyBehavior>
