@@ -2,9 +2,14 @@ import React from 'react';
 
 import useTyped from '../../hooks/use-typed';
 
-const TypingEffect = (props: { words: string[] }) =>
+type Props =
+    {
+        words: string[]
+    };
+
+const TypingEffect = ({ words }: Props) =>
 {
-    const typing = useTyped(props.words);
+    const typing = useTyped(words);
 
     return (<span className='shadow'>{ typing }</span>);
 };

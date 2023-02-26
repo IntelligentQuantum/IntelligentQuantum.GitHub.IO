@@ -4,14 +4,23 @@ import dynamic from 'next/dynamic';
 
 const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
 
-const TechnologyCard = (props: { index: number, technology: { title: string, icon: string }}) =>
+type Props =
+    {
+        technology:
+            {
+                title: string,
+                icon: string
+            }
+    };
+
+const TechnologyCard = ({ technology }: Props) =>
     (
-        <TooltipPrimary content={ props.technology.title } data-light={ true }>
+        <TooltipPrimary content={ technology.title } data-light={ true }>
             <li>
                 <span>
                     <Image
-                        src={ props.technology.icon }
-                        alt={ props.technology.title + ' Logo' }
+                        src={ technology.icon }
+                        alt={ technology.title + ' Logo' }
                         layout='fill'
                     />
                 </span>

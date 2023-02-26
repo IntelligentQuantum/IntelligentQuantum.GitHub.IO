@@ -2,20 +2,27 @@ import React from 'react';
 import Link from 'next/link';
 import { BiChevronRight } from 'react-icons/bi';
 
-import stylesButton from '../../styles/components/button.module.scss';
+import styles from '../../styles/components/button.module.scss';
 
-const ButtonSecondary = (props: { a?: boolean, link: string, text: string }) =>
+type Props =
+    {
+        a?: boolean,
+        link: string,
+        text: string
+    };
+
+const ButtonSecondary = ({ a, link, text }: Props) =>
     (
-        props.a
+        a
             ?
-            <a target='_blank' rel='noreferrer' href={ props.link } className={stylesButton.buttonSecondary} id='button-secondary'>
-                { props.text }
+            <a target='_blank' rel='noreferrer' href={ link } className={styles.buttonSecondary} id='button-secondary'>
+                { text }
                 <BiChevronRight />
             </a>
             :
-            <Link href={props.link} legacyBehavior>
-                <a className={stylesButton.buttonSecondary} id='button-secondary'>
-                    { props.text }
+            <Link href={ link } legacyBehavior>
+                <a className={styles.buttonSecondary} id='button-secondary'>
+                    { text }
                     <BiChevronRight />
                 </a>
             </Link>

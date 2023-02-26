@@ -10,26 +10,32 @@ import stylesBlog from '../../styles/pages/blog.module.scss';
 
 const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
 
-const BlogCard = (props: { blog: IBlog, text: string }) =>
+type Props =
+    {
+        blog: IBlog,
+        text: string
+    };
+
+const BlogCard = ({ blog, text }: Props) =>
     (
         <div className={stylesBlog.blogItem}>
             <span className={stylesBlog.blogItemImage}>
                 <Image
-                    src={ props.blog.image }
-                    alt={ props.blog.name }
+                    src={ blog.image }
+                    alt={ blog.name }
                     layout='fill'
                 />
             </span>
             <div className={stylesBlog.blogItemContent}>
                 <h3>
-                    { capitalizeEachFirstLetter(props.blog.name.split('_').join(' ')) }
+                    { capitalizeEachFirstLetter(blog.name.split('_').join(' ')) }
                 </h3>
                 <p>
-                    { props.blog.description }
+                    { blog.description }
                 </p>
                 <ButtonSecondary
-                    link={`/blogs/${ props.blog.name }`}
-                    text={ props.text }
+                    link={`/blogs/${ blog.name }`}
+                    text={ text }
                 />
             </div>
         </div>

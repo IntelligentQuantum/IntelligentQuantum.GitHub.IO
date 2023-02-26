@@ -7,14 +7,24 @@ import stylesHome from '../../styles/pages/home.module.scss';
 
 const ButtonSecondary = dynamic(() => import('../buttons/button-secondary.component'));
 
-const ServiceCard = (props: { text: string, service: IService }) =>
+type Props =
+    {
+        text: string,
+        service: IService
+    };
+
+const ServiceCard = ({ text, service }: Props) =>
     (
         <div className={stylesHome.homeServicesContent}>
-            <h3>{ props.service.title }</h3>
-            <h5>{ props.service.description }</h5>
+            <h3>
+                { service.title }
+            </h3>
+            <h5>
+                { service.description }
+            </h5>
             <ButtonSecondary
                 link='/contact'
-                text={ props.text }
+                text={ text }
             />
         </div>
     );

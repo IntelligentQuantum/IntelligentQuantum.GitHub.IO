@@ -3,17 +3,22 @@ import Image from 'next/image';
 
 import stylesHobbies from '../../styles/pages/hobbies.module.scss';
 
-const TooltipFootball = (props: { player: any }) =>
+type Props =
+    {
+        player: any
+    };
+
+const TooltipFootball = ({ player }: Props) =>
     (
         <ul className={stylesHobbies.hobbiesBoxContentImagesTooltip}>
             <li>
                 <span>
                     {
-                        props?.player?.profile
+                        player?.profile
                             ?
                             <Image
-                                src={ props?.player?.profile }
-                                alt={ props?.player?.name + ' ' + props?.player?.last_name }
+                                src={ player?.profile }
+                                alt={ player?.name + ' ' + player?.last_name }
                                 layout='intrinsic'
                                 width={46}
                                 height={60}
@@ -28,13 +33,13 @@ const TooltipFootball = (props: { player: any }) =>
                         Full Name:
                     </p>
                     <span>
-                        { props?.player?.name + ' ' + props?.player?.last_name }
+                        { player?.name + ' ' + player?.last_name }
                     </span>
                     <p>
                         Position:
                     </p>
                     <span>
-                        {props?.player?.info?.position}
+                        {player?.info?.position}
                     </span>
                 </div>
             </li>
@@ -43,7 +48,7 @@ const TooltipFootball = (props: { player: any }) =>
                     Height:
                 </p>
                 <span>
-                    {props?.player?.info?.height}m
+                    {player?.info?.height}m
                 </span>
             </li>
             <li>
@@ -51,7 +56,7 @@ const TooltipFootball = (props: { player: any }) =>
                     Games:
                 </p>
                 <span>
-                    {props?.player?.stats?.games}
+                    {player?.stats?.games}
                 </span>
             </li>
             <li>
@@ -59,7 +64,7 @@ const TooltipFootball = (props: { player: any }) =>
                     Goals:
                 </p>
                 <span>
-                    {props?.player?.stats?.goals}
+                    {player?.stats?.goals}
                 </span>
             </li>
             <li>
@@ -67,7 +72,7 @@ const TooltipFootball = (props: { player: any }) =>
                     Assists:
                 </p>
                 <span>
-                    {props?.player?.stats?.assists}
+                    {player?.stats?.assists}
                 </span>
             </li>
         </ul>

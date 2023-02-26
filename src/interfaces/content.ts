@@ -1,7 +1,7 @@
 import type { IBlog } from './blog';
 import type { IHobby } from './hobby';
 import type { IService } from './service';
-import type { IPortfolio } from './portfolio';
+import type { IProject } from './project';
 
 export interface IContent
 {
@@ -79,5 +79,5 @@ export interface IContent
     my_blogs: IBlog[],
     my_hobbies: IHobby[],
     services: IService[],
-    my_portfolio: IPortfolio[]
+    my_projects: IProject[]
 }

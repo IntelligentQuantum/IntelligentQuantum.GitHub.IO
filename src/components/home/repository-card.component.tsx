@@ -7,35 +7,40 @@ import Star from '../../../public/static/icons/icon-github_star.svg';
 import Fork from '../../../public/static/icons/icon-github_fork.svg';
 import Watch from '../../../public/static/icons/icon-github_watch.svg';
 
-const RepositoriesCard = (props: { repository: IRepository }) =>
+type Props =
+    {
+        repository: IRepository
+    };
+
+const RepositoriesCard = ({ repository }: Props) =>
     (
         <div className={stylesHome.homeReposContent}>
             <div className={stylesHome.homeReposContentInfo}>
-                <a href={props?.repository?.html_url} target='_blank' rel="noreferrer">
-                    { props?.repository?.name }
+                <a href={repository?.html_url} target='_blank' rel="noreferrer">
+                    { repository?.name }
                     <span>
-                        { props?.repository?.description }
+                        { repository?.description }
                     </span>
                 </a>
             </div>
 
             <ul className={stylesHome.homeReposContentStats}>
                 <li>
-                    <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/stargazers`}>
+                    <a href={`https://github.com/${ repository?.owner?.login }/${ repository?.name }/stargazers`}>
                         <Star />
-                        { props?.repository?.stargazers_count }
+                        { repository?.stargazers_count }
                     </a>
                 </li>
                 <li>
-                    <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/watchers`}>
+                    <a href={`https://github.com/${ repository?.owner?.login }/${ repository?.name }/watchers`}>
                         <Watch />
-                        { props?.repository?.watchers_count }
+                        { repository?.watchers_count }
                     </a>
                 </li>
                 <li>
-                    <a href={`https://github.com/${ props?.repository?.owner?.login }/${ props?.repository?.name }/network/members`}>
+                    <a href={`https://github.com/${ repository?.owner?.login }/${ repository?.name }/network/members`}>
                         <Fork />
-                        { props?.repository?.forks_count }
+                        { repository?.forks_count }
                     </a>
                 </li>
             </ul>

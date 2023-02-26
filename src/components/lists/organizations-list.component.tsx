@@ -12,20 +12,26 @@ import stylesHome from '../../styles/pages/home.module.scss';
 
 const TooltipPrimary = dynamic(() => import('../tooltips/tooltip-primary.component'));
 
-const OrgansList = (props: { dir?: 'rtl' | 'ltr', organizations: IOrganization[] }) =>
+type Props =
+    {
+        dir?: 'rtl' | 'ltr',
+        organizations: IOrganization[]
+    };
+
+const OrgansList = ({ dir, organizations }: Props) =>
 {
     return (
         <div className={stylesHome.homeOrganization}>
             <Swiper
-                dir={ props.dir ?? 'ltr' }
+                dir={ dir ?? 'ltr' }
                 { ...SWIPER_CONFIG_2 }
             >
                 {
-                    props.organizations.map((organization: IOrganization) =>
+                    organizations.map((organization: IOrganization) =>
                         (
                             <SwiperSlide key={ uuidV4() }>
                                 <TooltipPrimary content={ organization.login }>
-                                    <a href={`https://github.com/${ organization.login }`} target='_blank' className={stylesHome.homeOrganizationContent} rel="noreferrer">
+                                    <a href={`https://github.com/${ organization.login }`} target='_blank' className={stylesHome.homeOrganizationContent} rel='noreferrer'>
                                         <Image
                                             src={ organization.avatar_url }
                                             alt={ organization.login }

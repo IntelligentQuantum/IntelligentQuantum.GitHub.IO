@@ -12,7 +12,13 @@ import stylesHome from '../../styles/pages/home.module.scss';
 
 const RepositoriesCard = dynamic(() => import('../cards/repository-card.component'));
 
-const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: IRepository[] }) =>
+type Props =
+    {
+        dir?: 'rtl' | 'ltr',
+        repositories: IRepository[]
+    };
+
+const RepositoriesList = ({ dir, repositories }: Props) =>
 {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -20,7 +26,7 @@ const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: IRepositor
     return (
         <div className={stylesHome.homeRepositories}>
             <Swiper
-                dir={ props.dir ?? 'ltr' }
+                dir={ dir ?? 'ltr' }
                 navigation={{
                     prevEl: nextRef.current,
                     nextEl: prevRef.current,
@@ -28,7 +34,7 @@ const RepositoriesList = (props: { dir?: 'rtl' | 'ltr', repositories: IRepositor
                 { ...SWIPER_CONFIG_1 }
             >
                 {
-                    props.repositories.map((repository: IRepository) =>
+                    repositories.map((repository: IRepository) =>
                         (
                             <SwiperSlide key={ uuidV4() }>
                                 <RepositoriesCard
