@@ -4,7 +4,16 @@ import { animated, useSpring } from 'react-spring';
 
 import stylesTooltip from '../../styles/components/tooltip.module.scss';
 
-const TooltipPrimary = (props: { content?: string | number | null, interactive?: boolean, placement?: 'top' | 'bottom' | 'left' | 'right', render?: ReactElement, light?: boolean, children: ReactElement }) =>
+type Props =
+    {
+        content?: string | number | null,
+        interactive?: boolean,
+        placement?: 'top' | 'bottom' | 'left' | 'right',
+        render?: ReactElement, light?: boolean,
+        children: ReactElement
+    };
+
+const TooltipPrimary = ({ content, interactive, placement, render, light, children }: Props) =>
 {
     const stylesConfig =
         {
@@ -46,34 +55,34 @@ const TooltipPrimary = (props: { content?: string | number | null, interactive?:
 
     return (
         <Tooltip
-            interactive={ props.interactive }
+            interactive={ interactive }
             animation={ true }
             onMount={ onMount }
             onHide={ onHide }
-            placement={ props.placement ?? 'top' }
+            placement={ placement ?? 'top' }
             render={() =>
                 (
-                    props.render
+                    render
                         ?
                         <animated.span style={ spring }>
-                            { props.render }
+                            { render }
                         </animated.span>
                         :
-                        props.content
+                        content
                             ?
                             <animated.span
                                 style={ spring }
-                                data-dark={ props?.light }
+                                data-dark={ light }
                                 className={stylesTooltip.tooltip}
-                                data-placement={ props.placement ?? 'top' }
+                                data-placement={ placement ?? 'top' }
                             >
-                                { props.content }
+                                { content }
                             </animated.span>
                             :
                             null
                 )}
         >
-            { props.children }
+            { children }
         </Tooltip>
     );
 };

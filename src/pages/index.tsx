@@ -52,7 +52,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                 <TypingEffect words={props.content.typing_effect}/>
                                 <span>&lt;/<i>code</i>&gt;</span>
                             </div>
-                            <Link href='/portfolio' legacyBehavior>
+                            <Link href='/projects' legacyBehavior>
                                 <a className={classnames(stylesButtons.button, 'align-self-start')}>
                                     { props.content.explore_more }
                                 </a>
@@ -168,7 +168,6 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                             (
                                                 <TechnologyCard
                                                     key={ uuidV4() }
-                                                    index={ index }
                                                     technology={ technology }
                                                 />
                                             ))
@@ -189,7 +188,6 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                             (
                                                 <TechnologyCard
                                                     key={ uuidV4() }
-                                                    index={ index }
                                                     technology={ technology }
                                                 />
                                             ))

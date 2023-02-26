@@ -1,4 +1,4 @@
-export interface IPortfolio
+export interface IProject
 {
     id: number,
     title: string,

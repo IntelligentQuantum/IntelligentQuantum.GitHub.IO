@@ -4,31 +4,47 @@ import validator from 'validator';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 import React, { useState, ChangeEvent, Fragment } from 'react';
 import { BsEnvelope, BsPerson, BsTextParagraph } from 'react-icons/bs';
 
-import type { IContent } from '../interfaces/content';
+import type { ILanguages } from '../../types/language';
+import type { IContent } from '../../interfaces/content';
 
 import 'tippy.js/dist/tippy.css';
-import stylesContact from '../styles/pages/contact.module.scss';
-import stylesButton from '../styles/components/button.module.scss';
+import stylesContact from '../../styles/pages/contact.module.scss';
+import stylesButton from '../../styles/components/button.module.scss';
 
-const ItemMotion = dynamic (() => import('../components/animations/item.component'));
-const ScrollMotion = dynamic (() => import('../components/animations/scroll.component'));
-const TooltipPrimary = dynamic (() => import('../components/tooltips/tooltip-primary.component'));
+import data from '../../../public/static/data/data.json';
 
-const Contact = (props: { content: IContent }) =>
+const ItemMotion = dynamic (() => import('../../components/animations/item.component'));
+const ScrollMotion = dynamic (() => import('../../components/animations/scroll.component'));
+const TooltipPrimary = dynamic (() => import('../../components/tooltips/tooltip-primary.component'));
+
+type Error =
+    {
+        name: 'empty' | null,
+        email: 'empty' | 'incorrect_email' | null,
+        message: 'empty' | null
+    };
+
+const defaultError =
+    {
+        name: null,
+        email: null,
+        message: null
+    };
+
+const Contact = () =>
 {
+    const router = useRouter();
+
+    const content = data[router.locale as ILanguages] as IContent;
+
+    const [error, setError] = useState<Error>(defaultError);
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [message, setMessage] = useState<string>('');
-    const [error, setError] = useState<{ name: 'empty' | null, email: 'empty' | 'incorrect_email' | null, message: 'empty' | null }>(
-        {
-            name: null,
-            email: null,
-            message: null
-        }
-    );
 
     const sendMessage = async(event: { preventDefault: () => void; }) =>
     {
@@ -37,8 +53,7 @@ const Contact = (props: { content: IContent }) =>
         let errorV = { ...error };
 
         if (!email) errorV = { ...errorV, email: 'empty' };
-        else if (!validator.isEmail(email))
-            errorV = { ...errorV, email: 'incorrect_email' };
+        else if (!validator.isEmail(email)) errorV = { ...errorV, email: 'incorrect_email' };
 
         if (!name) errorV = { ...errorV, name: 'empty' };
 
@@ -82,26 +97,26 @@ const Contact = (props: { content: IContent }) =>
             </Head>
 
             <section className={stylesContact.contact}>
-                <h4 className='heading'>{ props.content.titles[2] }</h4>
+                <h4 className='heading'>{ content.titles[2] }</h4>
                 <motion.ul className={stylesContact.contactInformation}>
                     <ItemMotion index={ 0 } className={stylesContact.contactInformationContent}>
                         <motion.ul className={stylesContact.contactInformationContentPersonal}>
                             <li>
                                 <h3>
-                                    <span>{ props.content.residence }: </span>
-                                    { props.content.my_residence }
+                                    <span>{ content.residence }: </span>
+                                    { content.my_residence }
                                 </h3>
                             </li>
                             <li>
                                 <h3>
-                                    <span>{ props.content.city }: </span>
-                                    { props.content.my_city }
+                                    <span>{ content.city }: </span>
+                                    { content.my_city }
                                 </h3>
                             </li>
                             <li>
                                 <h3>
-                                    <span>{ props.content.age }: </span>
-                                    { new Date().getFullYear() - props.content.my_age }
+                                    <span>{ content.age }: </span>
+                                    { new Date().getFullYear() - content.my_age }
                                 </h3>
                             </li>
                         </motion.ul>
@@ -111,20 +126,20 @@ const Contact = (props: { content: IContent }) =>
                         <ul className={stylesContact.contactInformationContentPersonal}>
                             <li>
                                 <h3>
-                                    <span>{ props.content.email }: </span>
-                                    { props.content.my_email }
+                                    <span>{ content.email }: </span>
+                                    { content.my_email }
                                 </h3>
                             </li>
                             <li>
                                 <h3>
-                                    <span>{ props.content.gmail }: </span>
-                                    { props.content.my_gmail }
+                                    <span>{ content.gmail }: </span>
+                                    { content.my_gmail }
                                 </h3>
                             </li>
                             <li>
                                 <h3>
-                                    <span>{ props.content.protonmail }: </span>
-                                    { props.content.my_protonmail }
+                                    <span>{ content.protonmail }: </span>
+                                    { content.my_protonmail }
                                 </h3>
                             </li>
                         </ul>
@@ -134,19 +149,19 @@ const Contact = (props: { content: IContent }) =>
                         <ul className={stylesContact.contactInformationContentPersonal}>
                             <li>
                                 <h3>
-                                    <span>{ props.content.phone }: </span>
-                                    { props.content.my_phone }
+                                    <span>{ content.phone }: </span>
+                                    { content.my_phone }
                                 </h3>
                             </li>
                             <li>
                                 <span>
-                                    <span>{ props.content.whatsapp }: </span>
+                                    <span>{ content.whatsapp }: </span>
                                     +
                                 </span>
                             </li>
                             <li>
                                 <span>
-                                    <span>{ props.content.telegram }: </span>
+                                    <span>{ content.telegram }: </span>
                                     +
                                 </span>
                             </li>
@@ -155,13 +170,13 @@ const Contact = (props: { content: IContent }) =>
                 </motion.ul>
 
                 <ScrollMotion delay={ .9 }>
-                    <h4 className='heading'>{ props.content.titles[3] }</h4>
+                    <h4 className='heading'>{ content.titles[3] }</h4>
                     <div className={stylesContact.contactInTouchParent}>
                         <div className={stylesContact.contactInTouch}>
                             <form onSubmit={sendMessage}>
                                 <TooltipPrimary
-                                    placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                    content={ error.name ? props.content.error[error.name] : null }
+                                    placement={ content.dir === 'rtl' ? 'right' : 'left' }
+                                    content={ error.name ? content.error[error.name] : null }
                                 >
                                     <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.name}>
                                         <input
@@ -169,7 +184,7 @@ const Contact = (props: { content: IContent }) =>
                                             name='name'
                                             type='text'
                                             required={ true }
-                                            placeholder={ props.content.name }
+                                            placeholder={ content.name }
                                             onBlur={(event: any) =>
                                             {
                                                 if (!event.target.value)
@@ -187,8 +202,8 @@ const Contact = (props: { content: IContent }) =>
                                 </TooltipPrimary>
 
                                 <TooltipPrimary
-                                    placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                    content={ error.email ? props.content.error[error.email] : null }
+                                    placement={ content.dir === 'rtl' ? 'right' : 'left' }
+                                    content={ error.email ? content.error[error.email] : null }
                                 >
                                     <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupInput)} data-error={error.email}>
                                         <input
@@ -196,7 +211,7 @@ const Contact = (props: { content: IContent }) =>
                                             name='email'
                                             type='email'
                                             required={ true }
-                                            placeholder={ props.content.email}
+                                            placeholder={ content.email}
                                             onBlur={(event: any) =>
                                             {
                                                 if (!event.target.value)
@@ -216,15 +231,15 @@ const Contact = (props: { content: IContent }) =>
                                 </TooltipPrimary>
 
                                 <TooltipPrimary
-                                    placement={ props.content.dir === 'rtl' ? 'right' : 'left' }
-                                    content={ error.message ? props.content.error[error.message] : null }
+                                    placement={ content.dir === 'rtl' ? 'right' : 'left' }
+                                    content={ error.message ? content.error[error.message] : null }
                                 >
                                     <div className={classnames(stylesContact.contactInTouchFormGroup, stylesContact.contactInTouchFormGroupMessageInput)} data-error={error.message}>
                                         <textarea
                                             id='message'
                                             name='message'
                                             required={true}
-                                            placeholder={ props.content.message }
+                                            placeholder={ content.message }
                                             onBlur={(event: any) =>
                                             {
                                                 if (!event.target.value)
@@ -243,7 +258,7 @@ const Contact = (props: { content: IContent }) =>
 
                                 <div className={stylesContact.contactInTouchFormGroup}>
                                     <button onClick={sendMessage} className={classnames(stylesButton.button, 'align-self-start')}>
-                                        { props.content.send_message}
+                                        { content.send_message}
                                     </button>
                                 </div>
                             </form>

@@ -2,22 +2,34 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { v4 as uuidV4 } from 'uuid';
 import React, { Fragment } from 'react';
+import { useRouter } from 'next/router';
 
-import FootballService from '../lib/football';
+import FootballService from '../../lib/football';
 
-import type { IHobby } from '../interfaces/hobby';
-import type { IPlayer } from '../interfaces/player';
-import type { IContent } from '../interfaces/content';
+import type { IHobby } from '../../interfaces/hobby';
+import type { ILanguages } from '../../types/language';
+import type { IPlayer } from '../../interfaces/player';
+import type { IContent } from '../../interfaces/content';
 
-import stylesHobbies from '../styles/pages/hobbies.module.scss';
+import stylesHobbies from '../../styles/pages/hobbies.module.scss';
 
-import data from '../../public/static/data/hobbies.json';
+import data from '../../../public/static/data/data.json';
+import hobbies from '../../../public/static/data/hobbies.json';
 
-const HobbyCard = dynamic(() => import('../components/cards/hobby-card.component'));
-const ScrollMotion = dynamic(() => import('../components/animations/scroll.component'));
+const HobbyCard = dynamic(() => import('../../components/cards/hobby-card.component'));
+const ScrollMotion = dynamic(() => import('../../components/animations/scroll.component'));
 
-const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
+type Props =
+    {
+        players: IPlayer[]
+    };
+
+const Hobbies = ({ players }: Props) =>
 {
+    const router = useRouter();
+
+    const content = data[router.locale as ILanguages] as IContent;
+
     return (
         <Fragment>
             <Head>
@@ -42,15 +54,14 @@ const Hobbies = (props: { content: IContent, players: IPlayer[] }) =>
             </Head>
 
             <section className={stylesHobbies.hobbies}>
-                <h4 className='heading'>{ props.content.titles[4] }</h4>
+                <h4 className='heading'>{ content.titles[4] }</h4>
                 <ScrollMotion className={stylesHobbies.hobbiesList}>
                     {
-                        props.content.my_hobbies.map((hobby: IHobby) =>
+                        content.my_hobbies.map((hobby: IHobby) =>
                             <HobbyCard
                                 key={ uuidV4() }
                                 hobby={ hobby }
-                                players={ props.players }
-                                content={ props.content }
+                                players={ players }
                             />
                         )
                     }
@@ -71,7 +82,7 @@ export async function getStaticProps()
         const { player: torres } = await footballService.Player('ferran-torres', '398184');
 
         if (!messi || !griezmann || !torres)
-            return { props: { players: data.players }};
+            return { props: { players: hobbies.players }};
 
         return {
             props: { players: [messi, griezmann, torres] },

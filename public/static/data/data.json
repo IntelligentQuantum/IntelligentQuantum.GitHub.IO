@@ -305,7 +305,7 @@
                 "description": "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."
             }
         ],
-        "my_portfolio":
+        "my_projects":
         [
             {
                 "id": 0,
@@ -313,7 +313,7 @@
                 "tag": "web_development",
                 "description": "Paraffin platform for teaching and learning with great content in various categories.",
                 "link": "https://paraffin-tutorials.ir",
-                "image": "/static/images/portfolio/web-paraffin.png"
+                "image": "/static/images/projects/web-paraffin.png"
             },
             {
                 "id": 1,
@@ -321,7 +321,7 @@
                 "tag": "web_development",
                 "description": "Grow your Discord Business in Discords City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks.",
                 "link": "https://discords.city",
-                "image": "/static/images/portfolio/web-discords-city.png"
+                "image": "/static/images/projects/web-discords-city.png"
             },
             {
                 "id": 2,
@@ -329,7 +329,7 @@
                 "tag": "web_development",
                 "description": "Currently, Mr. Cheat should be considered a store website because in addition to cheat activities, we will put products related to Steam and accounts.",
                 "link": "https://mrcheat.cc/",
-                "image": "/static/images/portfolio/web-mrcheat.png"
+                "image": "/static/images/projects/web-mrcheat.png"
             },
             {
                 "id": 3,
@@ -337,7 +337,7 @@
                 "tag": "web_development",
                 "description": "In Mimic Expo, you can observe various events. Be with different people in different positions and gain. The most experience in a metaverse way.",
                 "link": "https://mimicexpo.com/",
-                "image": "/static/images/portfolio/web-mimicexpo.png"
+                "image": "/static/images/projects/web-mimicexpo.png"
             },
             {
                 "id": 4,
@@ -345,7 +345,7 @@
                 "tag": "web_development",
                 "description": "Multichain DeFi Web 3.0 Ecosystem. The next generation gaming ecosystem for ITOs and NFT market.",
                 "link": "https://mimic.place/",
-                "image": "/static/images/portfolio/web-mimicplace.png"
+                "image": "/static/images/projects/web-mimicplace.png"
             },
             {
                 "id": 5,
@@ -353,7 +353,7 @@
                 "tag": "web_development",
                 "description": "The first metaverse school in the world. Whether you are looking for language courses, esoteric courses, computer courses, or any other specialized courses, Mimic school has a wide range of courses available for all age ranges based on metaverse platform.",
                 "link": "https://mimicmetaschool.com/",
-                "image": "/static/images/portfolio/web-mimicschool.png"
+                "image": "/static/images/projects/web-mimicschool.png"
             },
             {
                 "id": 6,
@@ -361,7 +361,7 @@
                 "tag": "web_development",
                 "description": "At CoinEIE, we believe that everyone should be able to earn, hold, spend, share and give their money!",
                 "link": "https://coineie.com/",
-                "image": "/static/images/portfolio/web-coineie.png"
+                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 7,
@@ -369,7 +369,7 @@
                 "tag": "web_development",
                 "description": "Bigo Top is the safest and fastest online store for buying bigolive and like diamonds, which is fully automatically provided to customers.",
                 "link": "https://bigotop.com/",
-                "image": "/static/images/portfolio/web-bigotop.png"
+                "image": "/static/images/projects/web-bigotop.png"
             },
             {
                 "id": 8,
@@ -377,7 +377,7 @@
                 "tag": "web_development",
                 "description": "Skyro Travel Service Agency is always up-to-date and progressive. We made a pact to make your travel experience pleasant and beautiful.",
                 "link": "https://github.com/skyro-ir",
-                "image": "/static/images/portfolio/web-skyro.png"
+                "image": "/static/images/projects/web-skyro.png"
             },
             {
                 "id": 9,
@@ -385,7 +385,7 @@
                 "tag": "web_development",
                 "description": "The Infinity Roleplay server is one of the newest and best RP servers in Iran at the moment, which is managed by experienced people on the FiveM platform.",
                 "link": "https://infinity-tm.net",
-                "image": "/static/images/portfolio/web-infinity.png"
+                "image": "/static/images/projects/web-infinity.png"
             },
             {
                 "id": 10,
@@ -393,7 +393,7 @@
                 "tag": "robot_development",
                 "description": "An Organization that is made by developers who have potential to be something more than a normal discord bot developers, we are here to give you more knowledge.",
                 "link": "https://3tarbot.ir/",
-                "image": "/static/images/portfolio/web-setar.png"
+                "image": "/static/images/projects/web-setar.png"
             },
             {
                 "id": 11,
@@ -401,7 +401,7 @@
                 "tag": "web_development",
                 "description": "First and best Persian language music and video player with quality and support for all formats along with Discord RPC.",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/web-nava.png"
+                "image": "/static/images/projects/web-nava.png"
             },
             {
                 "id": 12,
@@ -409,7 +409,7 @@
                 "tag": "web_development",
                 "description": "Website and module for receiving random images in different categories and the ability to size and set limits and restrictions.",
                 "link": "https://random-picjs.herokuapp.com",
-                "image": "/static/images/portfolio/web-random-pic-js.png"
+                "image": "/static/images/projects/web-random-pic-js.png"
             },
             {
                 "id": 13,
@@ -417,7 +417,7 @@
                 "tag": "web_development",
                 "description": "The first open-source persian Discord API with high and unique quality and speed.",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "image": "/static/images/portfolio/web-pda.png"
+                "image": "/static/images/projects/web-pda.png"
             },
             {
                 "id": 14,
@@ -425,7 +425,7 @@
                 "tag": "web_development",
                 "description": "Open source personal website with full capabilities to provide resume and introduction.",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "image": "/static/images/portfolio/web-parsa.png"
+                "image": "/static/images/projects/web-parsa.png"
             },
             {
                 "id": 15,
@@ -433,7 +433,7 @@
                 "tag": "web_development",
                 "description": "Open source personal website with full capabilities to provide resume and introduction.",
                 "link": "https://shadmehr.info",
-                "image": "/static/images/portfolio/web-shadmehr.png"
+                "image": "/static/images/projects/web-shadmehr.png"
             },
             {
                 "id": 16,
@@ -441,7 +441,7 @@
                 "tag": "app_development",
                 "description": "Desktop application for Linux/Windows/Mac for displaying YouTube videos and movies without filtering and high speed and download capability.",
                 "link": "https://wintube.herokuapp.com",
-                "image": "/static/images/portfolio/app-wintube.png"
+                "image": "/static/images/projects/app-wintube.png"
             },
             {
                 "id": 17,
@@ -449,7 +449,7 @@
                 "tag": "app_development",
                 "description": "Video player with the support of all files, the ability of RCC, dedicated discord, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/app-nava-video-player.png"
+                "image": "/static/images/projects/app-nava-video-player.png"
             },
             {
                 "id": 18,
@@ -457,7 +457,7 @@
                 "tag": "app_development",
                 "description": "Music player with the support of all files, the ability of RPC, dedicated discord, etc ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/app-nava-music-player.png"
+                "image": "/static/images/projects/app-nava-music-player.png"
             }
         ]
     },
@@ -767,7 +767,7 @@
                 "description": "Suchmaschinenoptimierung ist der Prozess der Verbesserung der Qualität und Quantität des Website-Traffics auf eine Website oder eine Webseite von Suchmaschinen. SEO zielt eher auf unbezahlten Verkehr ab als auf direkten oder bezahlten Verkehr."
             }
         ],
-        "my_portfolio":
+        "my_projects":
         [
             {
                 "id": 0,
@@ -775,7 +775,7 @@
                 "tag": "web_development",
                 "description": "Paraffin Plattform zum Lehren und Lernen mit tollen Inhalten in verschiedenen Kategorien.",
                 "link": "https://paraffin-tutorials.ir",
-                "image": "/static/images/portfolio/web-paraffin.png"
+                "image": "/static/images/projects/web-paraffin.png"
             },
             {
                 "id": 1,
@@ -783,7 +783,7 @@
                 "tag": "web_development",
                 "description": "Erweitern Sie Ihr Discord-Geschäft in Discords City Sie können Ihren Bot oder Server hinzufügen, um Ihr Geschäft auszubauen, und unsere Blogs lesen, um über alle Discord-Updates und Tricks auf dem Laufenden zu bleiben.",
                 "link": "https://discords.city",
-                "image": "/static/images/portfolio/web-discords-city.png"
+                "image": "/static/images/projects/web-discords-city.png"
             },
             {
                 "id": 2,
@@ -791,7 +791,7 @@
                 "tag": "web_development",
                 "description": "Derzeit sollte Mr. Cheat als Shop-Website betrachtet werden, da wir zusätzlich zu den Cheat-Aktivitäten Produkte im Zusammenhang mit Steam und Konten anbieten werden.",
                 "link": "https://mrcheat.cc/",
-                "image": "/static/images/portfolio/web-mrcheat.png"
+                "image": "/static/images/projects/web-mrcheat.png"
             },
             {
                 "id": 3,
@@ -799,7 +799,7 @@
                 "tag": "web_development",
                 "description": "In der Mimic Expo können Sie verschiedene Veranstaltungen beobachten. Sei mit verschiedenen Menschen in verschiedenen Positionen und gewinne. die meiste Erfahrung auf metaverse Weise.",
                 "link": "https://mimicexpo.com/",
-                "image": "/static/images/portfolio/web-mimicexpo.png"
+                "image": "/static/images/projects/web-mimicexpo.png"
             },
             {
                 "id": 4,
@@ -807,7 +807,7 @@
                 "tag": "web_development",
                 "description": "Multichain-DeFi-Web-3.0-Ökosystem. Das Gaming-Ökosystem der nächsten Generation für den ITOs- und NFT-Markt.",
                 "link": "https://mimic.place/",
-                "image": "/static/images/portfolio/web-mimicplace.png"
+                "image": "/static/images/projects/web-mimicplace.png"
             },
             {
                 "id": 5,
@@ -815,7 +815,7 @@
                 "tag": "web_development",
                 "description": "Die erste Metaverse-Schule der Welt. Egal, ob Sie nach Sprachkursen, Esoterikkursen, Computerkursen oder anderen Spezialkursen suchen, die Mimic School bietet basierend auf der Metaverse-Plattform eine breite Palette von Kursen für alle Altersgruppen an.",
                 "link": "https://mimicmetaschool.com/",
-                "image": "/static/images/portfolio/web-mimicschool.png"
+                "image": "/static/images/projects/web-mimicschool.png"
             },
             {
                 "id": 6,
@@ -823,7 +823,7 @@
                 "tag": "web_development",
                 "description": "Wir bei CoinEIE glauben, dass jeder in der Lage sein sollte, sein Geld zu verdienen, zu halten, auszugeben, zu teilen und zu geben!",
                 "link": "https://coineie.com/",
-                "image": "/static/images/portfolio/web-coineie.png"
+                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 7,
@@ -831,7 +831,7 @@
                 "tag": "web_development",
                 "description": "Bigo Top ist der sicherste und schnellste Online-Shop für den Kauf von Bigoliven und ähnlichen Diamanten, der den Kunden vollautomatisch zur Verfügung gestellt wird.",
                 "link": "https://bigotop.com/",
-                "image": "/static/images/portfolio/web-bigotop.png"
+                "image": "/static/images/projects/web-bigotop.png"
             },
             {
                 "id": 8,
@@ -839,7 +839,7 @@
                 "tag": "web_development",
                 "description": "Skyro Travel Service Agency ist immer aktuell und fortschrittlich. Wir haben einen Pakt geschlossen, um Ihr Reiseerlebnis angenehm und schön zu gestalten.",
                 "link": "https://github.com/skyro-ir",
-                "image": "/static/images/portfolio/web-skyro.png"
+                "image": "/static/images/projects/web-skyro.png"
             },
             {
                 "id": 9,
@@ -847,7 +847,7 @@
                 "tag": "web_development",
                 "description": "Der Infinity Roleplay-Server ist derzeit einer der neuesten und besten RP-Server im Iran, der von erfahrenen Personen auf der FiveM-Plattform verwaltet wird.",
                 "link": "https://infinity-tm.net",
-                "image": "/static/images/portfolio/web-infinity.png"
+                "image": "/static/images/projects/web-infinity.png"
             },
             {
                 "id": 10,
@@ -855,7 +855,7 @@
                 "tag": "robot_development",
                 "description": "Eine Organisation, die von Entwicklern gegründet wurde, die das Potenzial haben, etwas mehr als ein normaler Discord-Bot-Entwickler zu sein, wir sind hier, um Ihnen mehr Wissen zu vermitteln.",
                 "link": "https://3tarbot.ir/",
-                "image": "/static/images/portfolio/web-setar.png"
+                "image": "/static/images/projects/web-setar.png"
             },
             {
                 "id": 11,
@@ -863,7 +863,7 @@
                 "tag": "web_development",
                 "description": "Erster und bester Musik- und Videoplayer in persischer Sprache mit Qualität und Unterstützung für alle Formate zusammen mit Discord RPC.",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/web-nava.png"
+                "image": "/static/images/projects/web-nava.png"
             },
             {
                 "id": 12,
@@ -871,7 +871,7 @@
                 "tag": "web_development",
                 "description": "Website und Modul zum Empfangen zufälliger Bilder in verschiedenen Kategorien und die Möglichkeit, die Größe zu bestimmen und Grenzen und Einschränkungen festzulegen.",
                 "link": "https://random-picjs.herokuapp.com",
-                "image": "/static/images/portfolio/web-random-pic-js.png"
+                "image": "/static/images/projects/web-random-pic-js.png"
             },
             {
                 "id": 13,
@@ -879,7 +879,7 @@
                 "tag": "web_development",
                 "description": "Die erste persische Open-Source-Discord-API mit hoher und einzigartiger Qualität und Geschwindigkeit.",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "image": "/static/images/portfolio/web-pda.png"
+                "image": "/static/images/projects/web-pda.png"
             },
             {
                 "id": 14,
@@ -887,7 +887,7 @@
                 "tag": "web_development",
                 "description": "Persönliche Open-Source-Website mit allen Funktionen zur Bereitstellung von Lebensläufen und Einführungen.",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "image": "/static/images/portfolio/web-parsa.png"
+                "image": "/static/images/projects/web-parsa.png"
             },
             {
                 "id": 15,
@@ -895,7 +895,7 @@
                 "tag": "web_development",
                 "description": "Persönliche Open-Source-Website mit allen Funktionen zur Bereitstellung von Lebensläufen und Einführungen.",
                 "link": "https://shadmehr.info",
-                "image": "/static/images/portfolio/web-shadmehr.png"
+                "image": "/static/images/projects/web-shadmehr.png"
             },
             {
                 "id": 16,
@@ -903,7 +903,7 @@
                 "tag": "app_development",
                 "description": "Desktop-Anwendung für Linux/Windows/Mac zum Anzeigen von YouTube-Videos und -Filmen ohne Filterung und mit hoher Geschwindigkeit und Download-Fähigkeit.",
                 "link": "https://wintube.herokuapp.com",
-                "image": "/static/images/portfolio/app-wintube.png"
+                "image": "/static/images/projects/app-wintube.png"
             },
             {
                 "id": 17,
@@ -911,7 +911,7 @@
                 "tag": "app_development",
                 "description": "Videoplayer mit Unterstützung aller Dateien, RCC-Fähigkeit, dedizierter Zwietracht usw.",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/app-nava-video-player.png"
+                "image": "/static/images/projects/app-nava-video-player.png"
             },
             {
                 "id": 18,
@@ -919,7 +919,7 @@
                 "tag": "app_development",
                 "description": "Musikplayer mit Unterstützung aller Dateien, RPC-Fähigkeit, dedizierter Zwietracht usw.",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/app-nava-music-player.png"
+                "image": "/static/images/projects/app-nava-music-player.png"
             }
         ]
     },
@@ -1219,7 +1219,7 @@
                 "description": "بهینه سازی موتورهای جستجو فرآیند بهبود کیفیت و کمیت ترافیک وب‌سایت به یک وب‌سایت یا یک صفحه وب از موتورهای جستجو است. سئو به جای ترافیک مستقیم یا ترافیک پولی، ترافیک بدون پرداخت را هدف قرار می دهد."
             }
         ],
-        "my_portfolio":
+        "my_projects":
         [
             {
                 "id": 0,
@@ -1227,7 +1227,7 @@
                 "tag": "web_development",
                 "description": "رسانه ای مرجع برای یادگیری، یاد دادن و کسب درآمد در پارافین شما آموزش هایی با دامنه ای گسترده در دسترس دارید که میتوانید به صورت رایگان از آنها استفاده کنید.",
                 "link": "https://paraffin-tutorials.ir",
-                "image": "/static/images/portfolio/web-paraffin.png"
+                "image": "/static/images/projects/web-paraffin.png"
             },
             {
                 "id": 1,
@@ -1235,7 +1235,7 @@
                 "tag": "web_development",
                 "description": "کسب و کار Discord خود را در Discords City رشد دهید می\u200Cتوانید ربات یا سرور خود را برای رشد کسب\u200Cوکار خود اضافه کنید و وبلاگ\u200Cهای ما را بخوانید تا از همه به\u200Cروزرسانی\u200Cها و ترفندهای Discord به\u200Cروز شوید.",
                 "link": "https://discords.city",
-                "image": "/static/images/portfolio/web-discords-city.png"
+                "image": "/static/images/projects/web-discords-city.png"
             },
             {
                 "id": 2,
@@ -1243,7 +1243,7 @@
                 "tag": "web_development",
                 "description": "در حال حاضر مستر چیت را باید یک وب سایت فروشگاه در نظر گرفت زیرا علاوه بر فعالیت های چیت ، محصولات مرتبط با استیم و اکانت قرار خواهیم داد.",
                 "link": "https://mrcheat.cc/",
-                "image": "/static/images/portfolio/web-mrcheat.png"
+                "image": "/static/images/projects/web-mrcheat.png"
             },
             {
                 "id": 3,
@@ -1251,7 +1251,7 @@
                 "tag": "web_development",
                 "description": "در Mimic Expo می توانید رویدادهای مختلفی را مشاهده کنید. با افراد مختلف در موقعیت های مختلف باشید و به دست آورید. بیشترین تجربه به روش متاورس.",
                 "link": "https://mimicexpo.com/",
-                "image": "/static/images/portfolio/web-mimicexpo.png"
+                "image": "/static/images/projects/web-mimicexpo.png"
             },
             {
                 "id": 4,
@@ -1259,7 +1259,7 @@
                 "tag": "web_development",
                 "description": "اکوسیستم Multichain DeFi Web 3.0. نسل بعدی اکوسیستم بازی برای ITOها و بازار NFT.",
                 "link": "https://mimic.place/",
-                "image": "/static/images/portfolio/web-mimicplace.png"
+                "image": "/static/images/projects/web-mimicplace.png"
             },
             {
                 "id": 5,
@@ -1267,7 +1267,7 @@
                 "tag": "web_development",
                 "description": "اولین مدرسه متاورس در جهان. فرقی نمی\u200Cکند به دنبال دوره\u200Cهای زبان، دوره\u200Cهای باطنی، دوره\u200Cهای کامپیوتر یا هر دوره تخصصی دیگری باشید، مدرسه Mimic طیف گسترده\u200Cای از دوره\u200Cها را برای همه گروه\u200Cهای سنی بر اساس پلتفرم متاورس دارد.",
                 "link": "https://mimicmetaschool.com/",
-                "image": "/static/images/portfolio/web-mimicschool.png"
+                "image": "/static/images/projects/web-mimicschool.png"
             },
             {
                 "id": 6,
@@ -1275,7 +1275,7 @@
                 "tag": "web_development",
                 "description": "در CoinEIE، ما معتقدیم که همه باید بتوانند درآمد داشته باشند، نگه دارند، خرج کنند، به اشتراک بگذارند و پول خود را بدهند!",
                 "link": "https://coineie.com/",
-                "image": "/static/images/portfolio/web-coineie.png"
+                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 7,
@@ -1283,7 +1283,7 @@
                 "tag": "web_development",
                 "description": "بیگو تاپ امن ترین و سریع ترین فروشگاه اینترنتی خرید الماس بیگولایو و لایکی که کاملا به صورت اتوماتیک در اختیار مشتریان قرار گرفته است.",
                 "link": "https://bigotop.com/",
-                "image": "/static/images/portfolio/web-bigotop.png"
+                "image": "/static/images/projects/web-bigotop.png"
             },
             {
                 "id": 8,
@@ -1291,7 +1291,7 @@
                 "tag": "web_development",
                 "description": "آژانس خدمات مسافرتی اسکایرو همیشه به روز و پیشرو است. ما پیمان بسته ایم تا تجربه سفر شما را دلپذیر و زیبا کنیم.",
                 "link": "https://github.com/skyro-ir",
-                "image": "/static/images/portfolio/web-skyro.png"
+                "image": "/static/images/projects/web-skyro.png"
             },
             {
                 "id": 9,
@@ -1299,7 +1299,7 @@
                 "tag": "web_development",
                 "description": "سرور Infinity Roleplay یکی از جدیدترین و بهترین سرورهای RP در حال حاضر ایران است که توسط افراد مجرب در پلتفرم FiveM مدیریت می شود.",
                 "link": "https://infinity-tm.net",
-                "image": "/static/images/portfolio/web-infinity.png"
+                "image": "/static/images/projects/web-infinity.png"
             },
             {
                 "id": 10,
@@ -1307,7 +1307,7 @@
                 "tag": "robot_development",
                 "description": "سازمانی که توسط توسعه دهندگانی ساخته شده است که پتانسیل آن را دارند که چیزی بیشتر از یک توسعه دهندگان ربات ناسازگاری معمولی باشند، ما اینجا هستیم تا دانش بیشتری به شما بدهیم.",
                 "link": "https://3tarbot.ir/",
-                "image": "/static/images/portfolio/web-setar.png"
+                "image": "/static/images/projects/web-setar.png"
             },
             {
                 "id": 11,
@@ -1315,7 +1315,7 @@
                 "tag": "web_development",
                 "description": "اولین و بهترین پخش کننده موزیک و ویدیو فارسی زبان با کیفیت و پشتیبانی از تمامی فرمت ها به همراه Discord RPC.",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/web-nava.png"
+                "image": "/static/images/projects/web-nava.png"
             },
             {
                 "id": 12,
@@ -1323,7 +1323,7 @@
                 "tag": "web_development",
                 "description": "وب سایت و ماژول دریافت تصاویر تصادفی در دسته بندی های مختلف و قابلیت اندازه گیری و تعیین محدودیت و محدودیت.",
                 "link": "https://random-picjs.herokuapp.com",
-                "image": "/static/images/portfolio/web-random-pic-js.png"
+                "image": "/static/images/projects/web-random-pic-js.png"
             },
             {
                 "id": 13,
@@ -1331,7 +1331,7 @@
                 "tag": "web_development",
                 "description": "اولین دیسکورد API متن باز فارسی با کیفیت و سرعت بالا و منحصر به فرد.",
                 "link": "https://github.com/im-parsa/persian-discord-api",
-                "image": "/static/images/portfolio/web-pda.png"
+                "image": "/static/images/projects/web-pda.png"
             },
             {
                 "id": 14,
@@ -1339,7 +1339,7 @@
                 "tag": "web_development",
                 "description": "وب سایت شخصی منبع باز با داشتن قابلیت های کامل جهت ارائه رزومه و معرفی شخص.",
                 "link": "https://github.com/im-parsa/my-personal-website",
-                "image": "/static/images/portfolio/web-parsa.png"
+                "image": "/static/images/projects/web-parsa.png"
             },
             {
                 "id": 15,
@@ -1347,7 +1347,7 @@
                 "tag": "web_development",
                 "description": "وب سایت شخصی منبع باز با داشتن قابلیت های کامل جهت ارائه رزومه و معرفی شخص.",
                 "link": "https://shadmehr.info",
-                "image": "/static/images/portfolio/web-shadmehr.png"
+                "image": "/static/images/projects/web-shadmehr.png"
             },
             {
                 "id": 16,
@@ -1355,7 +1355,7 @@
                 "tag": "app_development",
                 "description": "اپلیکیشن دسکتاپ برای لینوکس/ویندوز/مک برای نمایش ویدیوها و فیلم های یوتیوب بدون فیلتر و سرعت بالا و قابلیت دانلود.",
                 "link": "https://wintube.herokuapp.com",
-                "image": "/static/images/portfolio/app-wintube.png"
+                "image": "/static/images/projects/app-wintube.png"
             },
             {
                 "id": 17,
@@ -1363,7 +1363,7 @@
                 "tag": "app_development",
                 "description": "پخش کننده ویدیو با پشتیبانی از تمامی فایل ها، قابلیت RCC، Discord اختصاصی و ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/app-nava-video-player.png"
+                "image": "/static/images/projects/app-nava-video-player.png"
             },
             {
                 "id": 18,
@@ -1371,7 +1371,7 @@
                 "tag": "app_development",
                 "description": "پخش کننده موسیقی با پشتیبانی از تمامی فایل ها، قابلیت RCC، Discord اختصاصی و ...",
                 "link": "https://nava-org.herokuapp.com",
-                "image": "/static/images/portfolio/app-nava-music-player.png"
+                "image": "/static/images/projects/app-nava-music-player.png"
             }
         ]
     }

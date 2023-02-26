@@ -4,35 +4,58 @@ import Link from 'next/link';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
-import { useDispatch, useSelector } from 'react-redux';
+import { useRouter } from 'next/router';
 import React, { ReactNode, useEffect, Fragment } from 'react';
 
+import type { ILanguages } from '../../../types/language';
 import type { IContent } from '../../../interfaces/content';
 
 import stylesNav from '../../../styles/components/nav.module.scss';
 import stylesMain from '../../../styles/components/main.module.scss';
 import stylesAlert from '../../../styles/components/alert.module.scss';
 import stylesFilter from '../../../styles/components/filter.module.scss';
-import stylesPortfolio from '../../../styles/pages/portfolio.module.scss';
+import stylesProjects from '../../../styles/pages/projects.module.scss';
 
-import { selectPortfolioItem, setPortfolioItem } from '../../../store/features/portfolio-slice';
-import { selectFilterActive, toggleAside, toggleFilter, toggleNavbar } from '../../../store/features/header-slice';
+import data from '../../../../public/static/data/data.json';
+
+import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
+import { toggleAside, toggleFilter, toggleNavbar, projectPopup } from '../../../redux/features/layout/layout-slice';
 
 const Aside = dynamic(() => import('../aside/aside.component'));
 const Navbar = dynamic(() => import('../navbar/navbar.component'));
 const Footer = dynamic(() => import('../footer/footer.component'));
 
-const Main = (props: { content: IContent, children: ReactNode }) =>
-{
-    const dispatch = useDispatch();
+type Props =
+    {
+        children: ReactNode
+    };
 
-    const filterActive = useSelector(selectFilterActive);
-    const portfolioItem = useSelector(selectPortfolioItem);
+const Main = ({ children }: Props) =>
+{
+    const router = useRouter();
+    const dispatch = useAppDispatch();
+
+    const filter = useAppSelector(state => state.layout.filter);
+    const project = useAppSelector(state => state.layout.project.popup);
+
+    const content = data[router.locale as ILanguages] as IContent;
 
     useEffect(() =>
     {
-        axios.get('/fingerprint');
-    });
+        (
+            async() =>
+            {
+                try
+                {
+                    await axios.get('/fingerprint');
+                }
+                catch (exception)
+                {
+                    console.log(exception);
+                }
+            }
+        )();
+    }, []);
 
     return (
         <Fragment>
@@ -48,7 +71,7 @@ const Main = (props: { content: IContent, children: ReactNode }) =>
                 <meta content='ie=edge' httpEquiv='X-UA-Compatible' />
                 <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport' />
 
-                <meta name='language' content={ props.content.language }/>
+                <meta name='language' content={ content.language }/>
                 <meta name='Classification' content='Portfolio'/>
                 <meta name='subject' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
                 <meta name='description' content='Parsa Firoozi Full-Stack Developer & Graphic Designer'/>
@@ -71,7 +94,7 @@ const Main = (props: { content: IContent, children: ReactNode }) =>
                 <meta property='twitter:image' content='https://parsa-firoozi.ir/static/images/favicon.png'/>
             </Head>
             {
-                filterActive
+                filter
                     ?
                     <span
                         className={stylesFilter.filter}
@@ -80,26 +103,26 @@ const Main = (props: { content: IContent, children: ReactNode }) =>
                             dispatch(toggleAside(false));
                             dispatch(toggleNavbar(false));
                             dispatch(toggleFilter(false));
-                            dispatch(setPortfolioItem(false));
+                            dispatch(projectPopup({ open: false }));
                         }}
                     />
                     : null
             }
             {
-                portfolioItem.open && portfolioItem.image && portfolioItem.title
+                project.open && project.image && project.title
                     ?
                     <Fragment>
-                        <div className={classnames(stylesFilter.filter, stylesFilter.filterPlus, 'z-index__104')} onClick={() => dispatch(setPortfolioItem(false))}/>
-                        <div className={stylesPortfolio.portfolioImage}>
+                        <div className={classnames(stylesFilter.filter, stylesFilter.filterPlus, 'z-index__104')} onClick={() => dispatch(projectPopup({ open: false }))}/>
+                        <div className={stylesProjects.projectsImage}>
                             <nav>
-                                <div className={stylesNav.navMobileHamburgerOpen} onClick={() => dispatch(setPortfolioItem(false))}>
+                                <div className={stylesNav.navMobileHamburgerOpen} onClick={() => dispatch(projectPopup({ open: false }))}>
                                     <div className={stylesNav.navMobileHamburgerOpenLine}>&nbsp;</div>
                                 </div>
                             </nav>
                             <Image
-                                onClick={() => dispatch(setPortfolioItem(false))}
-                                src={ portfolioItem.image }
-                                alt={ portfolioItem.title }
+                                onClick={() => dispatch(projectPopup({ open: false }))}
+                                src={ project.image }
+                                alt={ project.title }
                                 layout='fill'
                             />
                         </div>
@@ -107,27 +130,20 @@ const Main = (props: { content: IContent, children: ReactNode }) =>
                     : null
             }
 
-            <Aside
-                content={ props.content }
-            />
-            <Navbar
-                mobile={ true }
-                content={ props.content }
-            />
-            <Navbar
-                content={ props.content }
-            />
+            <Aside />
+            <Navbar mobile={ true }/>
+            <Navbar />
             <main className={stylesMain.main}>
                 <Link href='/blogs/mahsa_amini' legacyBehavior>
                     <a className={stylesAlert.alert}>
-                        { props.content.alert }
+                        { content.alert }
                     </a>
                 </Link>
                 <div className={stylesMain.mainContent}>
                     <span className={stylesMain.mainBackground}/>
-                    { props.children }
+                    { children }
                 </div>
-                <Footer content={ props.content }/>
+                <Footer />
             </main>
         </Fragment>
     );

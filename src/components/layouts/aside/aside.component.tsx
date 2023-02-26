@@ -3,14 +3,16 @@ import Image from 'next/image';
 import { v4 as uuidV4 } from 'uuid';
 import classnames from 'classnames';
 import { useRouter } from 'next/router';
+import { useDispatch } from 'react-redux';
 import { FaEllipsisV } from 'react-icons/fa';
 import React, { Fragment, useEffect } from 'react';
 import { BiCheck, BiDownload } from 'react-icons/bi';
-import { useDispatch, useSelector } from 'react-redux';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { BsGithub, BsInstagram, BsLinkedin, BsYoutube, BsTwitter, BsFacebook } from 'react-icons/bs';
 
 import Profile from '../../../../public/static/images/profile.png';
+
+import data from '../../../../public/static/data/data.json';
 
 import skills from '../../../../public/static/data/skills.data.json';
 import socials from '../../../../public/static/data/socials.data.json';
@@ -18,6 +20,7 @@ import languages from '../../../../public/static/data/languages.data.json';
 import libraries from '../../../../public/static/data/libraries.data.json';
 
 import type { ISkill } from '../../../interfaces/skill';
+import type { ILanguages } from '../../../types/language';
 import type { ISocial } from '../../../interfaces/social';
 import type { ILibrary } from '../../../interfaces/library';
 import type { IContent } from '../../../interfaces/content';
@@ -26,19 +29,22 @@ import type { ILanguage } from '../../../interfaces/language';
 import 'react-circular-progressbar/dist/styles.css';
 import stylesAside from '../../../styles/components/aside.module.scss';
 
-import { selectAsideOpen, toggleAside, toggleFilter } from '../../../store/features/header-slice';
+import { useAppSelector } from '../../../redux/app/hooks';
+import { toggleAside, toggleFilter } from '../../../redux/features/layout/layout-slice';
 
-const Aside = (props: { content: IContent }) =>
+const Aside = () =>
 {
     const router = useRouter();
     const dispatch = useDispatch();
 
-    const openAside = useSelector(selectAsideOpen);
+    const aside: any = useAppSelector(state => state.layout.aside);
+
+    const content = data[router.locale as ILanguages] as IContent;
 
     const handleClickAside = () =>
     {
-        dispatch(toggleAside(!openAside));
-        dispatch(toggleFilter(!openAside));
+        dispatch(toggleAside(!aside));
+        dispatch(toggleFilter(!aside));
     };
 
     useEffect(() =>
@@ -54,7 +60,7 @@ const Aside = (props: { content: IContent }) =>
     }, [router.locale]);
 
     return (
-        <aside className={classnames(stylesAside.aside, 'z-index__101', (openAside ? stylesAside.aside__Open : null))}>
+        <aside className={classnames(stylesAside.aside, 'z-index__101', (aside ? stylesAside.aside__Open : null))}>
             <div className={stylesAside.asideUser}>
                 <i className={stylesAside.asideUserIcon} onClick={ handleClickAside }>
                     <FaEllipsisV />
@@ -62,7 +68,7 @@ const Aside = (props: { content: IContent }) =>
                 <div className={stylesAside.asideUserProfile}>
                     <Image
                         src={Profile}
-                        alt={ props.content.my_name }
+                        alt={ content.my_name }
                         className={stylesAside.asideUserProfile}
                         layout='intrinsic'
                         width={750}
@@ -72,19 +78,19 @@ const Aside = (props: { content: IContent }) =>
                         <i className={stylesAside.asideUserStatus}/>
                     </span>
                 </div>
-                <h1 className={stylesAside.asideUserName}>{ props.content.my_name }</h1>
-                <h3 className={stylesAside.asideUserSkills}>{ props.content.my_skills[0] }</h3>
-                <h3 className={stylesAside.asideUserSkills}>{ props.content.my_skills[1] }</h3>
+                <h1 className={stylesAside.asideUserName}>{ content.my_name }</h1>
+                <h3 className={stylesAside.asideUserSkills}>{ content.my_skills[0] }</h3>
+                <h3 className={stylesAside.asideUserSkills}>{ content.my_skills[1] }</h3>
             </div>
             <div className={stylesAside.asideInformation}>
                 <ul className={stylesAside.asideInformationLanguage}>
-                    <li className={props.content.language === 'en' ? stylesAside.asideInformationLanguage__Active : ''}>
+                    <li className={content.language === 'en' ? stylesAside.asideInformationLanguage__Active : ''}>
                         <Link href={ router.asPath } locale='en' legacyBehavior><a>EN</a></Link>
                     </li>
-                    <li className={props.content.language === 'de' ? stylesAside.asideInformationLanguage__Active : ''}>
+                    <li className={content.language === 'de' ? stylesAside.asideInformationLanguage__Active : ''}>
                         <Link href={ router.asPath } locale='de' legacyBehavior><a>DE</a></Link>
                     </li>
-                    <li className={props.content.language === 'fa' ? stylesAside.asideInformationLanguage__Active : ''}>
+                    <li className={content.language === 'fa' ? stylesAside.asideInformationLanguage__Active : ''}>
                         <Link href={ router.asPath } locale='fa' legacyBehavior><a>FA</a></Link>
                     </li>
                 </ul>
@@ -92,20 +98,20 @@ const Aside = (props: { content: IContent }) =>
                 <ul className={stylesAside.asideInformationPersonal}>
                     <li>
                         <h3>
-                            <span>{ props.content.residence }: </span>
-                            { props.content.my_residence }
+                            <span>{ content.residence }: </span>
+                            { content.my_residence }
                         </h3>
                     </li>
                     <li>
                         <h3>
-                            <span>{ props.content.city }: </span>
-                            { props.content.my_city }
+                            <span>{ content.city }: </span>
+                            { content.my_city }
                         </h3>
                     </li>
                     <li>
                         <h3>
-                            <span>{ props.content.age }: </span>
-                            { new Date().getFullYear() - props.content.my_age }
+                            <span>{ content.age }: </span>
+                            { new Date().getFullYear() - content.my_age }
                         </h3>
                     </li>
                 </ul>
@@ -116,7 +122,7 @@ const Aside = (props: { content: IContent }) =>
                             (
                                 <li key={ uuidV4() }>
                                     <CircularProgressbar value={language.percentage} text={`${ language.percentage }%`} />
-                                    <h4>{ props.content[language.name as 'persian' | 'english' | 'german'] }</h4>
+                                    <h4>{ content[language.name as 'persian' | 'english' | 'german'] }</h4>
                                 </li>
                             ))
                     }
@@ -162,9 +168,9 @@ const Aside = (props: { content: IContent }) =>
                 </ul>
                 <span className={stylesAside.asideDivider}/>
                 <div className={classnames(stylesAside.asideInformationCV, 'uppercase')}>
-                    <a href={`/static/document/parsa_firoozi_cv-${ props.content.language }.pdf`} target='_blank' rel='noreferrer'>
+                    <a href={`/static/document/parsa_firoozi_cv-${ content.language }.pdf`} target='_blank' rel='noreferrer'>
                         <BiDownload />
-                        <span>{ props.content.download_cv }</span>
+                        <span>{ content.download_cv }</span>
                     </a>
                 </div>
             </div>
