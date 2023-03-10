@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import classnames from 'classnames';
 import CountUp from 'react-countup';
 import { v4 as uuidV4 } from 'uuid';
+import { useRouter } from 'next/router';
 import React, { Fragment } from 'react';
 import reactHtmlParser from 'html-react-parser';
 
@@ -13,6 +14,7 @@ import OrganizationService from '../lib/organizations';
 
 import type { IService } from '../interfaces/service';
 import type { IContent } from '../interfaces/content';
+import type { ILanguages } from '../interfaces/language';
 import type { IRepository } from '../interfaces/repository';
 import type { IOrganization } from '../interfaces/organization';
 
@@ -23,7 +25,8 @@ import 'tippy.js/dist/tippy.css';
 import stylesHome from '../styles/pages/home.module.scss';
 import stylesButtons from '../styles/components/button.module.scss';
 
-import data from '../../public/static/data/github.json';
+import data from '../../public/static/data/data.json';
+import github from '../../public/static/data/github.json';
 
 const TypingEffect = dynamic(() => import('../components/typing-effect'));
 const ServiceCard = dynamic(() => import('../components/cards/service-card.component'));
@@ -33,28 +36,38 @@ const TooltipPrimary = dynamic(() => import('../components/tooltips/tooltip-prim
 const RepositoriesList = dynamic(() => import('../components/lists/repositories-list.component'));
 const OrganizationsList = dynamic(() => import('../components/lists/organizations-list.component'));
 
-const Home = (props: { content: IContent, repositories: IRepository[], organizations: IOrganization[] }) =>
+type Props =
+    {
+        repositories: IRepository[],
+        organizations: IOrganization[]
+    };
+
+const Home = ({ repositories, organizations }: Props) =>
 {
+    const router = useRouter();
+
+    const content = data[router.locale as ILanguages] as IContent;
+
     return (
         <Fragment>
             <Head>
-                <title>{ props.content.header.titles[0] }</title>
-                <meta name='description' content={ props.content.header.descriptions[0] }/>
+                <title>{ content.header.titles[0] }</title>
+                <meta name='description' content={ content.header.descriptions[0] }/>
             </Head>
 
             <section className={stylesHome.home}>
                 <ScrollMotion>
                     <header className={stylesHome.homeHeader}>
                         <div className={stylesHome.homeHeaderContent}>
-                            <span>{ props.content.titles[0] }</span>
+                            <span>{ content.titles[0] }</span>
                             <div className={stylesHome.homeHeaderContentDescription}>
                                 <span>&lt;<i>code</i>&gt;</span>
-                                <TypingEffect words={props.content.typing_effect}/>
+                                <TypingEffect words={content.typing_effect}/>
                                 <span>&lt;/<i>code</i>&gt;</span>
                             </div>
                             <Link href='/projects' legacyBehavior>
                                 <a className={classnames(stylesButtons.button, 'align-self-start')}>
-                                    { props.content.explore_more }
+                                    { content.explore_more }
                                 </a>
                             </Link>
                         </div>
@@ -69,7 +82,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                     />
                                 +
                                 </span>
-                                <p>{ props.content.headers[0] }</p>
+                                <p>{ content.headers[0] }</p>
                             </li>
                             <li className={stylesHome.homeHeaderLogsBox}>
                                 <span>
@@ -80,7 +93,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                     />
                                 +
                                 </span>
-                                <p>{ props.content.headers[1] }</p>
+                                <p>{ content.headers[1] }</p>
                             </li>
                             <li className={stylesHome.homeHeaderLogsBox}>
                                 <span>
@@ -91,7 +104,7 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                     />
                                 +
                                 </span>
-                                <p>{ props.content.headers[2] }</p>
+                                <p>{ content.headers[2] }</p>
                             </li>
                             <li className={stylesHome.homeHeaderLogsBox}>
                                 <span>
@@ -102,21 +115,21 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                                     />
                                 +
                                 </span>
-                                <p>{ props.content.headers[3] }</p>
+                                <p>{ content.headers[3] }</p>
                             </li>
                         </ul>
                     </header>
                 </ScrollMotion>
 
                 <ScrollMotion>
-                    <h4 className='heading'>{ props.content.titles[8] }</h4>
+                    <h4 className='heading'>{ content.titles[8] }</h4>
                     <div className={stylesHome.homeAboutMe}>
                         <div>
                             {
-                                props.content.about_me.split('NEXT_LINE').map((paragraph: string, index: number) =>
+                                content.about_me.split('NEXT_LINE').map((paragraph: string, index: number) =>
                                     (
-                                        <h2 key={ uuidV4() } className={'paragraph' + (index === 0 ? ' first-letter' : ' text-indent') + (props.content.dir === 'rtl' ? ' text-indent' : '')}>
-                                            { reactHtmlParser(index === 0 && props.content.dir === 'rtl'
+                                        <h2 key={ uuidV4() } className={'paragraph' + (index === 0 ? ' first-letter' : ' text-indent') + (content.dir === 'rtl' ? ' text-indent' : '')}>
+                                            { reactHtmlParser(index === 0 && content.dir === 'rtl'
                                                 ? ' &nbsp;' + paragraph
                                                 : paragraph
                                             )}
@@ -126,18 +139,18 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                         </div>
 
                         <ul className={stylesHome.homeAboutMeAside}>
-                            <li className={stylesHome.homeAboutMeAsideItem}><h3>{ props.content.technologies.title }</h3></li>
+                            <li className={stylesHome.homeAboutMeAsideItem}><h3>{ content.technologies.title }</h3></li>
                             <li className={stylesHome.homeAboutMeAsideItem}>
                                 <h5>
                                     {
-                                        props.content.language === 'fa'
-                                            ? props.content.services[0].title.split(' ')[1]
-                                            : props.content.services[0].title.split(' ')[0]
+                                        content.language === 'fa'
+                                            ? content.services[0].title.split(' ')[1]
+                                            : content.services[0].title.split(' ')[0]
                                     }:
                                 </h5>
                                 <ul className={stylesHome.homeAboutMeAsideItemList}>
                                     {
-                                        props.content.technologies.front_end.map((technology: { title: string, icon: string }, index: number) =>
+                                        content.technologies.front_end.map((technology: { title: string, icon: string }, index: number) =>
                                             (
                                                 <TooltipPrimary key={ uuidV4() } content={ technology.title }>
                                                     <li>
@@ -157,14 +170,14 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                             <li className={stylesHome.homeAboutMeAsideItem}>
                                 <h5>
                                     {
-                                        props.content.language === 'fa'
-                                            ? props.content.services[1].title.split(' ')[1]
-                                            : props.content.services[1].title.split(' ')[0]
+                                        content.language === 'fa'
+                                            ? content.services[1].title.split(' ')[1]
+                                            : content.services[1].title.split(' ')[0]
                                     }:
                                 </h5>
                                 <ul className={stylesHome.homeAboutMeAsideItemList}>
                                     {
-                                        props.content.technologies.back_end.map((technology: { title: string, icon: string }, index: number) =>
+                                        content.technologies.back_end.map((technology: { title: string, icon: string }, index: number) =>
                                             (
                                                 <TechnologyCard
                                                     key={ uuidV4() }
@@ -177,14 +190,14 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                             <li className={stylesHome.homeAboutMeAsideItem}>
                                 <h5>
                                     {
-                                        props.content.language === 'fa'
-                                            ? props.content.services[2].title.split(' ')[1]
-                                            : props.content.services[2].title.split(' ')[0]
+                                        content.language === 'fa'
+                                            ? content.services[2].title.split(' ')[1]
+                                            : content.services[2].title.split(' ')[0]
                                     }:
                                 </h5>
                                 <ul className={stylesHome.homeAboutMeAsideItemList}>
                                     {
-                                        props.content.technologies.cross_platform.map((technology: { title: string, icon: string }, index: number) =>
+                                        content.technologies.cross_platform.map((technology: { title: string, icon: string }, index: number) =>
                                             (
                                                 <TechnologyCard
                                                     key={ uuidV4() }
@@ -199,14 +212,14 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                 </ScrollMotion>
 
                 <ScrollMotion>
-                    <h4 className='heading'>{ props.content.titles[1] }</h4>
+                    <h4 className='heading'>{ content.titles[1] }</h4>
                     <ul className={stylesHome.homeServices}>
                         {
-                            props.content.services.map((service: IService) =>
+                            content.services.map((service: IService) =>
                                 <ServiceCard
                                     key={ uuidV4() }
                                     service={ service }
-                                    text={ props.content.order_now }
+                                    text={ content.order_now }
                                 />
                             )
                         }
@@ -214,9 +227,9 @@ const Home = (props: { content: IContent, repositories: IRepository[], organizat
                 </ScrollMotion>
 
                 <ScrollMotion>
-                    <h4 className='heading'>{ props.content.titles[7] }</h4>
-                    <RepositoriesList dir={ props.content.dir } repositories={ props.repositories }/>
-                    <OrganizationsList dir={ props.content.dir } organizations={ props.organizations }/>
+                    <h4 className='heading'>{ content.titles[7] }</h4>
+                    <RepositoriesList dir={ content.dir } repositories={ repositories }/>
+                    <OrganizationsList dir={ content.dir } organizations={ organizations }/>
                 </ScrollMotion>
             </section>
         </Fragment>
@@ -234,7 +247,7 @@ export async function getStaticProps()
         const { items: organizations } = await organizationService.GET();
 
         if (!repositories || !organizations)
-            return { props: { repositories: data.repos, organizations: data.orgs }};
+            return { props: { repositories: github.repos, organizations: github.orgs }};
 
         return {
             props: { repositories, organizations },

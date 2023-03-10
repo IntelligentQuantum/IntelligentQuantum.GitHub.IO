@@ -2,8 +2,8 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { BsGithub } from 'react-icons/bs';
 
-import type { ILanguages } from '../../../types/language';
 import type { IContent } from '../../../interfaces/content';
+import type { ILanguages } from '../../../interfaces/language';
 
 import stylesFooter from '../../../styles/components/footer.module.scss';
 

@@ -1,17 +1,26 @@
 import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
 
 import type { IBlog } from '../../interfaces/blog';
 import type { IContent } from '../../interfaces/content';
+import type { ILanguages } from '../../interfaces/language';
 
 import stylesBlog from '../../styles/pages/blog.module.scss';
+
+import data from '../../../public/static/data/data.json';
 
 const Card = dynamic(() => import('../../components/cards/blog-card.component'));
 const ScrollMotion = dynamic(() => import('../../components/animations/scroll.component'));
 
-const Blog = (props: { content: IContent }) =>
-    (
+const Blog = () =>
+{
+    const router = useRouter();
+
+    const content = data[router.locale as ILanguages] as IContent;
+
+    return (
         <>
             <Head>
                 <title>Parsa Firoozi &mdash; Educational and Research Blogs</title>
@@ -40,15 +49,15 @@ const Blog = (props: { content: IContent }) =>
             </Head>
 
             <section className={stylesBlog.blogSection}>
-                <h4 className='heading'>{ props?.content?.titles[5] }</h4>
+                <h4 className='heading'>{ content?.titles[5] }</h4>
                 <ScrollMotion className={stylesBlog.blogItems}>
                     {
-                        props?.content?.my_blogs?.map((blog: IBlog) =>
+                        content?.my_blogs?.map((blog: IBlog) =>
                             (
                                 <Card
                                     key={ blog.name }
                                     blog={ blog }
-                                    text={ props?.content?.read_more }
+                                    text={ content?.read_more }
                                 />
                             ))
                     }
@@ -56,5 +65,6 @@ const Blog = (props: { content: IContent }) =>
             </section>
         </>
     );
+}
 
 export default Blog;

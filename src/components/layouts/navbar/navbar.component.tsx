@@ -6,10 +6,10 @@ import { FaEllipsisV } from 'react-icons/fa';
 import React, { useEffect, useState} from 'react';
 import { BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
 
-import type { IPage } from '../../../types/page';
-import type { ITheme } from '../../../types/theme';
-import type { ILanguages } from '../../../types/language';
+import type { IPage } from '../../../interfaces/page';
+import type { ITheme } from '../../../interfaces/theme';
 import type { IContent } from '../../../interfaces/content';
+import type { ILanguages } from '../../../interfaces/language';
 
 import stylesNav from '../../../styles/components/nav.module.scss';
 
@@ -82,10 +82,7 @@ const Navbar = ({ mobile }: Props) =>
     {
         const htmlElement: HTMLElement | null = document.querySelector('html');
 
-        if (htmlElement)
-        {
-            htmlElement.setAttribute('data-theme', theme);
-        }
+        if (htmlElement) htmlElement.setAttribute('data-theme', theme);
     }, [theme]);
 
     return (
@@ -111,7 +108,7 @@ const Navbar = ({ mobile }: Props) =>
                     <div className={stylesNav.navContentList} data-open={navbar}>
                         <Link href='/' legacyBehavior>
                             <a data-active={!page} className={stylesNav.navContentItem}>
-                                {content.home}
+                                { content.home }
                             </a>
                         </Link>
                         <Link href='/projects' legacyBehavior>
@@ -119,19 +116,19 @@ const Navbar = ({ mobile }: Props) =>
                                 { content.projects }
                             </a>
                         </Link>
-                        <Link href='/contact/index' legacyBehavior>
+                        <Link href='/contact' legacyBehavior>
                             <a data-active={page === 'contact'} className={stylesNav.navContentItem}>
                                 { content.contact }
                             </a>
                         </Link>
-                        <Link href='/hobbies/index' legacyBehavior>
+                        <Link href='/hobbies' legacyBehavior>
                             <a data-active={page === 'hobbies'} className={stylesNav.navContentItem}>
-                                {content.hobbies}
+                                { content.hobbies }
                             </a>
                         </Link>
                         <Link href='/blogs' legacyBehavior>
                             <a data-active={page === 'blogs'} className={stylesNav.navContentItem}>
-                                {content.blogs}
+                                { content.blogs }
                             </a>
                         </Link>
                     </div>

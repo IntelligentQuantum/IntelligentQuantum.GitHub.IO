@@ -8,6 +8,7 @@ import React, { useEffect, useState } from 'react';
 
 import type { IBlog } from '../../interfaces/blog';
 import type { IContent } from '../../interfaces/content';
+import type { ILanguages } from '../../interfaces/language';
 
 import { capitalizeEachFirstLetter } from '../../utils';
 
@@ -17,22 +18,25 @@ import 'moment/locale/en-gb';
 
 import stylesBlog from '../../styles/pages/blog.module.scss';
 
+import data from '../../../public/static/data/data.json';
+
 const Error = dynamic(() => import('../../components/error/error.component'));
 const Loader = dynamic(() => import('../../components/loader/loader.component'));
 const ItemMotion = dynamic(() => import('../../components/animations/item.component'));
 
-const BlogView = (props: { content: IContent }) =>
+const BlogView = () =>
 {
     const router = useRouter();
-
     const { name } = router.query;
+
+    const content = data[router.locale as ILanguages] as IContent;
 
     const [blog, setBlog] = useState<IBlog>();
     const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() =>
     {
-        const blogs = props?.content?.my_blogs;
+        const blogs = content?.my_blogs;
 
         for (let i = 0; i < blogs.length; i++)
         {
@@ -41,9 +45,9 @@ const BlogView = (props: { content: IContent }) =>
         }
 
         setLoading(false);
-    }, [props, setBlog, name, blog]);
+    }, [setBlog, name, blog, content?.my_blogs]);
 
-    switch (props?.content?.language)
+    switch (content?.language)
     {
         case 'en':
             moment.locale('en');
@@ -111,23 +115,23 @@ const BlogView = (props: { content: IContent }) =>
                             <div className={stylesBlog.blogView}>
                                 <ItemMotion index={ 2 } className={stylesBlog.blogViewCardHeader}>
                                     <span>
-                                        <p>{ props?.content?.id }:</p>
+                                        <p>{ content?.id }:</p>
                                         { blog.id }
                                     </span>
                                     <span>
-                                        <p>{ props?.content?.author }:</p>
-                                        {props.content.my_name}
+                                        <p>{ content?.author }:</p>
+                                        { content.my_name }
                                     </span>
                                     <span>
-                                        <p>{ props?.content?.source }:</p>
+                                        <p>{ content?.source }:</p>
                                         { blog.source }
                                     </span>
                                     <span>
-                                        <p>{ props?.content?.created_at }:</p>
+                                        <p>{ content?.created_at }:</p>
                                         { moment(blog.created_at).format('MMM Do YY') }
                                     </span>
                                     <span>
-                                        <p>{ props?.content?.category }:</p>
+                                        <p>{ content?.category }:</p>
                                         { blog.category }
                                     </span>
                                 </ItemMotion>
@@ -171,8 +175,7 @@ const BlogView = (props: { content: IContent }) =>
                     ?
                     <Error
                         title='404'
-                        description={props?.content?.blog_not_found}
-                        content={props?.content}
+                        description={ content?.blog_not_found }
                     />
                     : null
             }

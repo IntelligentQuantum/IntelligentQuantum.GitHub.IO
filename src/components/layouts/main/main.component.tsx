@@ -7,8 +7,8 @@ import classnames from 'classnames';
 import { useRouter } from 'next/router';
 import React, { ReactNode, useEffect, Fragment } from 'react';
 
-import type { ILanguages } from '../../../types/language';
 import type { IContent } from '../../../interfaces/content';
+import type { ILanguages } from '../../../interfaces/language';
 
 import stylesNav from '../../../styles/components/nav.module.scss';
 import stylesMain from '../../../styles/components/main.module.scss';
@@ -40,22 +40,22 @@ const Main = ({ children }: Props) =>
 
     const content = data[router.locale as ILanguages] as IContent;
 
-    useEffect(() =>
-    {
-        (
-            async() =>
-            {
-                try
-                {
-                    await axios.get('/fingerprint');
-                }
-                catch (exception)
-                {
-                    console.log(exception);
-                }
-            }
-        )();
-    }, []);
+    // useEffect(() =>
+    // {
+    //     (
+    //         async() =>
+    //         {
+    //             try
+    //             {
+    //                 await axios.get('/fingerprint');
+    //             }
+    //             catch (exception)
+    //             {
+    //                 console.log(exception);
+    //             }
+    //         }
+    //     )();
+    // }, []);
 
     return (
         <Fragment>

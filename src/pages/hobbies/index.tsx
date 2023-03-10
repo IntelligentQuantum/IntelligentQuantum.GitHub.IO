@@ -7,9 +7,9 @@ import { useRouter } from 'next/router';
 import FootballService from '../../lib/football';
 
 import type { IHobby } from '../../interfaces/hobby';
-import type { ILanguages } from '../../types/language';
 import type { IPlayer } from '../../interfaces/player';
 import type { IContent } from '../../interfaces/content';
+import type { ILanguages } from '../../interfaces/language';
 
 import stylesHobbies from '../../styles/pages/hobbies.module.scss';
 
@@ -78,11 +78,13 @@ export async function getStaticProps()
         const footballService = new FootballService();
 
         const { player: messi } = await footballService.Player('lionel-messi', '28003');
-        const { player: griezmann } = await footballService.Player('antoine-griezmann', '125781');
-        const { player: torres } = await footballService.Player('ferran-torres', '398184');
+        if (!messi?.id) return { props: { players: hobbies.players }};
 
-        if (!messi || !griezmann || !torres)
-            return { props: { players: hobbies.players }};
+        const { player: griezmann } = await footballService.Player('antoine-griezmann', '125781');
+        if (!griezmann?.id) return { props: { players: hobbies.players }};
+
+        const { player: torres } = await footballService.Player('ferran-torres', '398184');
+        if (!torres?.id) return { props: { players: hobbies.players }};
 
         return {
             props: { players: [messi, griezmann, torres] },

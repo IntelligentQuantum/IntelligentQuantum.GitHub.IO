@@ -8,8 +8,8 @@ import { useRouter } from 'next/router';
 import React, { useState, ChangeEvent, Fragment } from 'react';
 import { BsEnvelope, BsPerson, BsTextParagraph } from 'react-icons/bs';
 
-import type { ILanguages } from '../../types/language';
 import type { IContent } from '../../interfaces/content';
+import type { ILanguages } from '../../interfaces/language';
 
 import 'tippy.js/dist/tippy.css';
 import stylesContact from '../../styles/pages/contact.module.scss';

@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import {ILanguages} from '../../types/language';
 import type { IContent } from '../../interfaces/content';
+import type { ILanguages } from '../../interfaces/language';
 
 import stylesError from '../../styles/components/error.module.scss';
 
@@ -10,8 +10,8 @@ import data from '../../../public/static/data/data.json';
 
 type Props =
     {
-        title: string,
-        description: string
+        title?: string,
+        description?: string
     };
 
 const Error = ({ title, description }: Props) =>

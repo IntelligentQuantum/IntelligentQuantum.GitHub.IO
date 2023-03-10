@@ -6,9 +6,9 @@ import { useRouter } from 'next/router';
 import reactStringReplace from 'react-string-replace';
 
 import type { IHobby } from '../../interfaces/hobby';
-import type { ILanguages } from '../../types/language';
 import type { IPlayer } from '../../interfaces/player';
 import type { IContent } from '../../interfaces/content';
+import type { ILanguages } from '../../interfaces/language';
 
 import HeroNeo from '../../../public/static/images/hobbies/hero-neo.png';
 import HeroAzur from '../../../public/static/images/hobbies/hero-azur.png';

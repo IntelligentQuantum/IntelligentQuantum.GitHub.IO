@@ -20,11 +20,10 @@ import languages from '../../../../public/static/data/languages.data.json';
 import libraries from '../../../../public/static/data/libraries.data.json';
 
 import type { ISkill } from '../../../interfaces/skill';
-import type { ILanguages } from '../../../types/language';
 import type { ISocial } from '../../../interfaces/social';
 import type { ILibrary } from '../../../interfaces/library';
 import type { IContent } from '../../../interfaces/content';
-import type { ILanguage } from '../../../interfaces/language';
+import type { ILanguages } from '../../../interfaces/language';
 
 import 'react-circular-progressbar/dist/styles.css';
 import stylesAside from '../../../styles/components/aside.module.scss';
@@ -118,7 +117,7 @@ const Aside = () =>
                 <span className={stylesAside.asideDivider}/>
                 <ul className={stylesAside.asideInformationLanguages}>
                     {
-                        languages.items.map((language: ILanguage) =>
+                        languages.items.map((language) =>
                             (
                                 <li key={ uuidV4() }>
                                     <CircularProgressbar value={language.percentage} text={`${ language.percentage }%`} />

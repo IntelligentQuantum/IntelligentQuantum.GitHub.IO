@@ -47,8 +47,6 @@ export class FootballService
         }
         catch (error)
         {
-            console.log(error);
-
             return { status: 'fail', statusCode: 500, message: 'Internal error' };
         }
     }

@@ -4,9 +4,9 @@ import { v4 as uuidV4 } from 'uuid';
 import { useRouter } from 'next/router';
 import React, { useState, Fragment } from 'react';
 
-import type { ILanguages } from '../../types/language';
 import type { IContent } from '../../interfaces/content';
 import type { IProject } from '../../interfaces/project';
+import type { ILanguages } from '../../interfaces/language';
 
 import styles from '../../styles/pages/projects.module.scss';
 

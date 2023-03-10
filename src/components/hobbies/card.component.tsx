@@ -5,8 +5,8 @@ import { useRouter } from 'next/router';
 import reactHtmlParser from 'html-react-parser';
 
 import type { IHobby } from '../../interfaces/hobby';
-import type { ILanguages } from '../../types/language';
 import type { IContent } from '../../interfaces/content';
+import type { ILanguages } from '../../interfaces/language';
 
 import HeroAzur from '../../../public/static/images/hobbies/hero-azur.png';
 import HeroGuitar from '../../../public/static/images/hobbies/hero-guitar.png';
