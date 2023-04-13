@@ -317,11 +317,11 @@
             },
             {
                 "id": 1,
-                "title": "Discords City",
+                "title": "Discordly City",
                 "tag": "web_development",
-                "description": "Grow your Discord Business in Discords City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks.",
-                "link": "https://discords.city",
-                "image": "/static/images/projects/web-discords-city.png"
+                "description": "Grow your Discord Business in Discordly City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks.",
+                "link": "https://discordly.city",
+                "image": "/static/images/projects/web-discordly-city.png"
             },
             {
                 "id": 2,
@@ -330,6 +330,14 @@
                 "description": "Currently, Mr. Cheat should be considered a store website because in addition to cheat activities, we will put products related to Steam and accounts.",
                 "link": "https://mrcheat.cc/",
                 "image": "/static/images/projects/web-mrcheat.png"
+            },
+            {
+                "id": 6,
+                "title": "Coineie",
+                "tag": "web_development",
+                "description": "At CoinEIE, we believe that everyone should be able to earn, hold, spend, share and give their money!",
+                "link": "https://coineie.com/",
+                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 3,
@@ -354,14 +362,6 @@
                 "description": "The first metaverse school in the world. Whether you are looking for language courses, esoteric courses, computer courses, or any other specialized courses, Mimic school has a wide range of courses available for all age ranges based on metaverse platform.",
                 "link": "https://mimicmetaschool.com/",
                 "image": "/static/images/projects/web-mimicschool.png"
-            },
-            {
-                "id": 6,
-                "title": "Coineie",
-                "tag": "web_development",
-                "description": "At CoinEIE, we believe that everyone should be able to earn, hold, spend, share and give their money!",
-                "link": "https://coineie.com/",
-                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 7,
@@ -394,6 +394,14 @@
                 "description": "An Organization that is made by developers who have potential to be something more than a normal discord bot developers, we are here to give you more knowledge.",
                 "link": "https://3tarbot.ir/",
                 "image": "/static/images/projects/web-setar.png"
+            },
+            {
+                "id": 19,
+                "title": "DNS Changer",
+                "tag": "app_development",
+                "description": "With dnsChanger-desktop you can change your PC's DNS and visit banned sites from within the country.",
+                "link": "https://dnschanger.github.io",
+                "image": "/static/images/projects/app-dns-changer.png"
             },
             {
                 "id": 11,
@@ -779,11 +787,11 @@
             },
             {
                 "id": 1,
-                "title": "Discords City",
+                "title": "Discordly City",
                 "tag": "web_development",
-                "description": "Erweitern Sie Ihr Discord-Geschäft in Discords City Sie können Ihren Bot oder Server hinzufügen, um Ihr Geschäft auszubauen, und unsere Blogs lesen, um über alle Discord-Updates und Tricks auf dem Laufenden zu bleiben.",
-                "link": "https://discords.city",
-                "image": "/static/images/projects/web-discords-city.png"
+                "description": "Erweitern Sie Ihr Discord-Geschäft in Discordly City Sie können Ihren Bot oder Server hinzufügen, um Ihr Geschäft auszubauen, und unsere Blogs lesen, um über alle Discord-Updates und Tricks auf dem Laufenden zu bleiben.",
+                "link": "https://discordly.city",
+                "image": "/static/images/projects/web-discordly-city.png"
             },
             {
                 "id": 2,
@@ -792,6 +800,14 @@
                 "description": "Derzeit sollte Mr. Cheat als Shop-Website betrachtet werden, da wir zusätzlich zu den Cheat-Aktivitäten Produkte im Zusammenhang mit Steam und Konten anbieten werden.",
                 "link": "https://mrcheat.cc/",
                 "image": "/static/images/projects/web-mrcheat.png"
+            },
+            {
+                "id": 6,
+                "title": "Coineie",
+                "tag": "web_development",
+                "description": "Wir bei CoinEIE glauben, dass jeder in der Lage sein sollte, sein Geld zu verdienen, zu halten, auszugeben, zu teilen und zu geben!",
+                "link": "https://coineie.com/",
+                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 3,
@@ -816,14 +832,6 @@
                 "description": "Die erste Metaverse-Schule der Welt. Egal, ob Sie nach Sprachkursen, Esoterikkursen, Computerkursen oder anderen Spezialkursen suchen, die Mimic School bietet basierend auf der Metaverse-Plattform eine breite Palette von Kursen für alle Altersgruppen an.",
                 "link": "https://mimicmetaschool.com/",
                 "image": "/static/images/projects/web-mimicschool.png"
-            },
-            {
-                "id": 6,
-                "title": "Coineie",
-                "tag": "web_development",
-                "description": "Wir bei CoinEIE glauben, dass jeder in der Lage sein sollte, sein Geld zu verdienen, zu halten, auszugeben, zu teilen und zu geben!",
-                "link": "https://coineie.com/",
-                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 7,
@@ -856,6 +864,14 @@
                 "description": "Eine Organisation, die von Entwicklern gegründet wurde, die das Potenzial haben, etwas mehr als ein normaler Discord-Bot-Entwickler zu sein, wir sind hier, um Ihnen mehr Wissen zu vermitteln.",
                 "link": "https://3tarbot.ir/",
                 "image": "/static/images/projects/web-setar.png"
+            },
+            {
+                "id": 19,
+                "title": "DNS Changer",
+                "tag": "app_development",
+                "description": "Mit dnsChanger-desktop können Sie den DNS Ihres PCs ändern und gesperrte Seiten innerhalb des Landes besuchen.",
+                "link": "https://dnschanger.github.io",
+                "image": "/static/images/projects/app-dns-changer.png"
             },
             {
                 "id": 11,
@@ -1231,11 +1247,11 @@
             },
             {
                 "id": 1,
-                "title": "Discords City",
+                "title": "Discordly City",
                 "tag": "web_development",
                 "description": "کسب و کار Discord خود را در Discords City رشد دهید می\u200Cتوانید ربات یا سرور خود را برای رشد کسب\u200Cوکار خود اضافه کنید و وبلاگ\u200Cهای ما را بخوانید تا از همه به\u200Cروزرسانی\u200Cها و ترفندهای Discord به\u200Cروز شوید.",
-                "link": "https://discords.city",
-                "image": "/static/images/projects/web-discords-city.png"
+                "link": "https://discordly.city",
+                "image": "/static/images/projects/web-discordly-city.png"
             },
             {
                 "id": 2,
@@ -1244,6 +1260,14 @@
                 "description": "در حال حاضر مستر چیت را باید یک وب سایت فروشگاه در نظر گرفت زیرا علاوه بر فعالیت های چیت ، محصولات مرتبط با استیم و اکانت قرار خواهیم داد.",
                 "link": "https://mrcheat.cc/",
                 "image": "/static/images/projects/web-mrcheat.png"
+            },
+            {
+                "id": 6,
+                "title": "Coineie",
+                "tag": "web_development",
+                "description": "در CoinEIE، ما معتقدیم که همه باید بتوانند درآمد داشته باشند، نگه دارند، خرج کنند، به اشتراک بگذارند و پول خود را بدهند!",
+                "link": "https://coineie.com/",
+                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 3,
@@ -1268,14 +1292,6 @@
                 "description": "اولین مدرسه متاورس در جهان. فرقی نمی\u200Cکند به دنبال دوره\u200Cهای زبان، دوره\u200Cهای باطنی، دوره\u200Cهای کامپیوتر یا هر دوره تخصصی دیگری باشید، مدرسه Mimic طیف گسترده\u200Cای از دوره\u200Cها را برای همه گروه\u200Cهای سنی بر اساس پلتفرم متاورس دارد.",
                 "link": "https://mimicmetaschool.com/",
                 "image": "/static/images/projects/web-mimicschool.png"
-            },
-            {
-                "id": 6,
-                "title": "Coineie",
-                "tag": "web_development",
-                "description": "در CoinEIE، ما معتقدیم که همه باید بتوانند درآمد داشته باشند، نگه دارند، خرج کنند، به اشتراک بگذارند و پول خود را بدهند!",
-                "link": "https://coineie.com/",
-                "image": "/static/images/projects/web-coineie.png"
             },
             {
                 "id": 7,
@@ -1308,6 +1324,14 @@
                 "description": "سازمانی که توسط توسعه دهندگانی ساخته شده است که پتانسیل آن را دارند که چیزی بیشتر از یک توسعه دهندگان ربات ناسازگاری معمولی باشند، ما اینجا هستیم تا دانش بیشتری به شما بدهیم.",
                 "link": "https://3tarbot.ir/",
                 "image": "/static/images/projects/web-setar.png"
+            },
+            {
+                "id": 19,
+                "title": "DNS Changer",
+                "tag": "app_development",
+                "description": "با dnsChanger-desktop می\u200Cتوانید DNS رایانه شخصی خود را تغییر داده و از سایت\u200Cهای تحریم شده از داخل کشور بازدید کنید.",
+                "link": "https://dnschanger.github.io",
+                "image": "/static/images/projects/app-dns-changer.png"
             },
             {
                 "id": 11,

@@ -20,7 +20,8 @@ const nextConfig =
                     ],
             },
         reactStrictMode: true,
-        swcMinify: true
+        swcMinify: true,
+        staticPageGenerationTimeout: 100000
     };
 
 module.exports = nextConfig;

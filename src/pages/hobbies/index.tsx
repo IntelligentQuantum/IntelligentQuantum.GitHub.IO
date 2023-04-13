@@ -95,6 +95,6 @@ export async function getStaticProps()
     {
         return { props: { players: [] }};
     }
-}
+};
 
 export default Hobbies;
