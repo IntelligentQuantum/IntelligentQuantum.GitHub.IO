@@ -8,11 +8,11 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 
-import { getBlogData, getBlogsFiles } from '../../utils/blogs.util';
+import { getBlogData, getBlogsFiles } from '@/utils/blogs.util';
 
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import 'github-markdown-css';
-import styles from '../../styles/blogs.module.scss';
+import styles from '@/styles/blogs.module.scss';
 
 const BlogSlug: NextPage = (props: any) =>
 {
@@ -28,13 +28,13 @@ const BlogSlug: NextPage = (props: any) =>
                     <span>educational</span>
                 </div>
                 <div className={styles.blogsBlogSlugHeadBox}>
-                    <span className={styles.blogsBlogSlugHeadImage}>
-                        <Image
-                            src={`/images/${ props.blog.image }`}
-                            alt={props.blog.title}
-                            layout='fill'
-                        />
-                    </span>
+                    <Image
+                        src={`/images/${ props.blog.image }`}
+                        alt={props.blog.title}
+                        className={styles.blogsBlogSlugHeadImage}
+                        width={500}
+                        height={500}
+                    />
                 </div>
 
                 <article className={styles.blogsBlogSlugArticle}>
@@ -68,27 +68,25 @@ const BlogSlug: NextPage = (props: any) =>
                                     {
                                         const match = /language-(\w+)/.exec(className || '');
 
-                                        return (
-                                            <>
-                                                {
-                                                    !inline && match ?
-                                                        (
-                                                            <SyntaxHighlighter
-                                                                style={atomDark as unknown as any}
-                                                                language={match[1]}
-                                                                PreTag="div"
-                                                                {...props}
-                                                            >
-                                                                { String(children).replace(/\n$/, '') }
-                                                            </SyntaxHighlighter>
-                                                        )
-                                                        :
-                                                        (
-                                                            <code className={className} {...props}>{children}</code>
-                                                        )
-                                                }
-                                            </>
-                                        );
+                                        return <>
+                                            {
+                                                !inline && match ?
+                                                    (
+                                                        <SyntaxHighlighter
+                                                            style={atomDark as unknown as any}
+                                                            language={match[1]}
+                                                            PreTag="div"
+                                                            {...props}
+                                                        >
+                                                            { String(children).replace(/\n$/, '') }
+                                                        </SyntaxHighlighter>
+                                                    )
+                                                    :
+                                                    (
+                                                        <code className={className} {...props}>{children}</code>
+                                                    )
+                                            }
+                                        </>;
                                     }
                                 }}
                             >

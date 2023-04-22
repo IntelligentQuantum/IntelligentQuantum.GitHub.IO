@@ -253,7 +253,7 @@
                             transform: scale(1.25);
                         }
 
-                        & span
+                        & img
                         {
                             display: flex;
                             align-items: center;
@@ -265,6 +265,7 @@
                             padding: 0.85rem;
                             border-radius: 10rem;
                             background-color: var(--base);
+                            cursor: pointer;
                         }
                     }
                 }

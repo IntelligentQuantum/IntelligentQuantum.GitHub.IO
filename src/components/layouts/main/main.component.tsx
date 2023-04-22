@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
-import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
-import { toggleNavbar, toggleAside, toggleFilter } from '../../../redux/features/header/header-slice';
+import { useAppDispatch, useAppSelector } from '@/redux/app/hooks';
+import { toggleNavbar, toggleAside, toggleFilter } from '@/redux/features/header/header-slice';
 
 import Footer from '../footer/footer.component';
 

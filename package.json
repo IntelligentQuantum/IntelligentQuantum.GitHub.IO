@@ -6,7 +6,7 @@
         "email": "IntelligentQuantum@ProtonMail.Com",
         "url": "https://intelligentquantum.github.io/"
     },
-    "version": "2.4.0",
+    "version": "3.0.0",
     "private": true,
     "scripts": {
         "test": "jest --watch",

@@ -3,11 +3,11 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import classnames from 'classnames';
 
-import data from '../data/projects.data.json';
+import data from '@/data/projects.data.json';
 
-import ProjectCard from '../components/pages/projects/project-card/project-card.component';
+import ProjectCard from '@/components/pages/projects/project-card/project-card.component';
 
-import styles from '../styles/projects.module.scss';
+import styles from '@/styles/projects.module.scss';
 
 const Projects: NextPage = () =>
 {

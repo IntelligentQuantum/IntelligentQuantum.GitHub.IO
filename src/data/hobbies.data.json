@@ -4,31 +4,31 @@
         "src": "/images/hobbies/hero-discord.png",
         "title": "Discord",
         "description": "I came to Discord around 2017. I really like to be best in everything I am there and in Discord I develop the first, best, open-source, persian economy discord-bot, soo it is very enjoyable for me that I am some of the best persian Discord developer.",
-        "width": 250,
-        "height": 250
+        "width": 200,
+        "height": 200
     },
     {
         "id": 1,
         "src": "/images/hobbies/hero-guitar.png",
         "title": "Guitar",
         "description": "The guitar is a fretted musical instrument that typically has six strings. Why is it another instrument when it's a guitar? Of course, I also have experience playing piano and violin, but my favorite one is guitar. Also, I had a duet and solo concert sponsored by Nava Afarin academy. I am mostly interested in acoustic and electronic guitar. The sound of the guitar gives me immense peace and pleasure. I'm always a fan of acoustic songs and unplugged performances because of the use of different guitars.",
-        "width": 400,
-        "height": 400
+        "width": 300,
+        "height": 300
     },
     {
         "id": 2,
         "src": "/images/hobbies/hero-instagram.png",
         "title": "Instagram",
         "description": "I came to Instagram around 2014 and I always wanted to work in social media, and the same thing happened on Instagram and I started producing content in this community.",
-        "width": 250,
-        "height": 250
+        "width": 200,
+        "height": 200
     },
     {
         "id": 3,
         "src": "/images/hobbies/hero-astronaut.png",
         "title": "Space",
         "description": "I love learning about space and the universe, and everything connected to it, like quantum physics, which proves a variety of dizzying theories, such as parallel universes, Continuity, singularity, time travel, black holes, and white holes.",
-        "width": 400,
-        "height": 400
+        "width": 300,
+        "height": 300
     }
 ]

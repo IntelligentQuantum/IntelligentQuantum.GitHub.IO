@@ -4,10 +4,10 @@ import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import classnames from 'classnames';
 
-import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
-import { toggleAside, toggleFilter } from '../../../redux/features/header/header-slice';
+import { useAppDispatch, useAppSelector } from '@/redux/app/hooks';
+import { toggleAside, toggleFilter } from '@/redux/features/header/header-slice';
 
-import aside from '../../../data/aside.data.json';
+import aside from '@/data/aside.data.json';
 
 import { FaEllipsisV } from 'react-icons/fa';
 import { BsCheck, BsDribbble, BsGithub, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
@@ -40,7 +40,6 @@ const Aside = () =>
                         className={styles.asideUserImage}
                         src='/images/IntelligentQuantum.jpg'
                         alt='IntelligentQuantum'
-                        layout='intrinsic'
                         width={100}
                         height={100}
                     />
@@ -48,8 +47,8 @@ const Aside = () =>
                 </span>
 
                 <div className={styles.asideUserInfoContainer}>
-                    <Link href='/'>
-                        <a className={styles.asideUserName}>IntelligentQuantum</a>
+                    <Link href='/' className={styles.asideUserName}>
+                        IntelligentQuantum
                     </Link>
                     <span className={styles.asideUserTitle}>{t('common:aside.0.userTitle')}</span>
                     <span className={styles.asideUserTitle}>{t('common:aside.1.userSubtitle')}</span>
@@ -62,8 +61,12 @@ const Aside = () =>
                         router.locales?.map(locale =>
                         {
                             return (
-                                <Link key={locale} href={router.asPath} locale={locale} >
-                                    <a className={classnames([styles.asideInformationWebLanguagesOption, [`${ locale === router.locale ? styles.asideInformationWebLanguagesOptionActive : null }`]])}>{locale.toUpperCase()}</a>
+                                <Link
+                                    key={locale}
+                                    href={router.asPath}
+                                    locale={locale}
+                                    className={classnames([styles.asideInformationWebLanguagesOption, [`${ locale === router.locale ? styles.asideInformationWebLanguagesOptionActive : null }`]])}>
+                                    {locale.toUpperCase()}
                                 </Link>
                             );
                         })

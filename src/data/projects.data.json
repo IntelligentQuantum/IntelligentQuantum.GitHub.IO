@@ -32,10 +32,10 @@
         {
             "id": 0,
             "category": "Web",
-            "image": "/images/projects/web-discords.png",
-            "title": "Discords City",
-            "description": "Grow your Discord Business in Discords City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks",
-            "link": "https://discords.city/"
+            "image": "/images/projects/web-discordly.png",
+            "title": "Discordly City",
+            "description": "Grow your Discord Business in Discordly City You can add your Bot or Server to grow your business and read our blogs to be updated from all discord updates and tricks.",
+            "link": "https://discordly.city/"
         },
         {
             "id": 1,
@@ -100,6 +100,54 @@
             "title": "AzerothCore World Of Warcraft",
             "description": "AzerothCore (AC) is an open-source game-server application for World of Warcraft, currently supporting the 3.3.5a game version.",
             "link": "https://github.com/azerothcore/azerothcore-wotlk/"
+        },
+        {
+            "id": 9,
+            "category": "Web",
+            "image": "/images/projects/web-coineie.png",
+            "title": "Coineie",
+            "description": "At CoinEIE, we believe that everyone should be able to earn, hold, spend, share and give their money!",
+            "link": "https://coineie.com/"
+        },
+        {
+            "id": 10,
+            "category": "Web",
+            "image": "/images/projects/web-mimicexpo.png",
+            "title": "Mimic Expo",
+            "description": "In Mimic Expo, you can observe various events. Be with different people in different positions and gain. The most experience in a metaverse way.",
+            "link": "https://mimicexpo.com/"
+        },
+        {
+            "id": 11,
+            "category": "Web",
+            "image": "/images/projects/web-mimicplace.png",
+            "title": "Mimic Place",
+            "description": "Multichain DeFi Web 3.0 Ecosystem. The next generation gaming ecosystem for ITOs and NFT market.",
+            "link": "https://mimic.place/"
+        },
+        {
+            "id": 12,
+            "category": "Web",
+            "image": "/images/projects/web-bigotop.png",
+            "title": "Bigo Top",
+            "description": "Bigo Top is the safest and fastest online store for buying bigolive and like diamonds, which is fully automatically provided to customers.",
+            "link": "https://bigotop.com/"
+        },
+        {
+            "id": 13,
+            "category": "Web",
+            "image": "/images/projects/web-mimicschool.png",
+            "title": "Mimic Metaverse School",
+            "description": "The first metaverse school in the world. Whether you are looking for language courses, esoteric courses, computer courses, or any other specialized courses, Mimic school has a wide range of courses available for all age ranges based on metaverse platform.",
+            "link": "https://mimicmetaschool.com/"
+        },
+        {
+            "id": 14,
+            "category": "Web",
+            "image": "/images/projects/web-infinity.png",
+            "title": "Infinity RP",
+            "description": "The Infinity Roleplay server is one of the newest and best RP servers in Iran at the moment, which is managed by experienced people on the FiveM platform.",
+            "link": "https://infinity-tm.net/"
         }
     ]
 }

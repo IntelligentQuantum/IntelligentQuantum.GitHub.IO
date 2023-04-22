@@ -19,15 +19,13 @@ const HobbyCard = (props: HobbyProps) =>
                 <h3>{props.title}</h3>
                 <p>{props.description}</p>
             </div>
-            <span className={styles.hobbyCardImage}>
-                <Image
-                    src={props.src}
-                    alt={props.title}
-                    layout='intrinsic'
-                    width={props.width}
-                    height={props.height}
-                />
-            </span>
+            <Image
+                src={props.src}
+                alt={props.title}
+                className={styles.hobbyCardImage}
+                width={props.width}
+                height={props.height}
+            />
         </div>
     );
 };

@@ -17,13 +17,13 @@ const ProjectCard = (props: ProjectCardProps) =>
 {
     return (
         <div className={styles.projectCard}>
-            <span className={styles.projectCardImage}>
-                <Image
-                    src={props.image}
-                    alt={props.title}
-                    layout={'fill'}
-                />
-            </span>
+            <Image
+                src={props.image}
+                alt={props.title}
+                className={styles.projectCardImage}
+                width={'400'}
+                height={'400'}
+            />
 
             <div className={styles.projectCardContent}>
                 <h2 className={styles.projectCardContentHeading}>

@@ -10,17 +10,17 @@ import useTranslation from 'next-translate/useTranslation';
 
 import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 
-import useTyped from '../hooks/useTyped';
-import Tooltip from '../components/ui/tooltip/tooltip.component';
+import useTyped from '@/hooks/useTyped';
+import Tooltip from '@/components/ui/tooltip/tooltip.component';
 
-import home from '../data/home.data.json';
+import home from '@/data/home.data.json';
 
-import RepositoryCard from '../components/pages/home/repository-card/repository-card.component';
-import OrganizationCard from '../components/pages/home/organization-card/organization-card.component';
-import ServiceCard from '../components/pages/home/service-card/service-card.component';
+import RepositoryCard from '@/components/pages/home/repository-card/repository-card.component';
+import OrganizationCard from '@/components/pages/home/organization-card/organization-card.component';
+import ServiceCard from '@/components/pages/home/service-card/service-card.component';
 
 import 'swiper/css';
-import styles from '../styles/home.module.scss';
+import styles from '@/styles/home.module.scss';
 
 const Home: NextPage = (props: any) =>
 {
@@ -58,18 +58,18 @@ const Home: NextPage = (props: any) =>
                             <div>&lt;/<i>code</i>&gt;</div>
                         </div>
 
-                        <Link href='/'>
-                            <a className={styles.homeHeaderContentButton}>{t('common:explore')}</a>
+                        <Link href='/' className={styles.homeHeaderContentButton}>
+                            {t('common:explore')}
                         </Link>
                     </div>
 
                     <div className={styles.homeHeaderLogs}>
                         <div className={styles.homeHeaderLogsBox}>
-                            <span className={styles.homeHeaderLogsBoxNumber}>196+</span>
+                            <span className={styles.homeHeaderLogsBoxNumber}>194+</span>
                             <p className={styles.homeHeaderLogsBoxParagraph}>{t('home:headers.1.customers')}</p>
                         </div>
                         <div className={styles.homeHeaderLogsBox}>
-                            <span className={styles.homeHeaderLogsBoxNumber}>198+</span>
+                            <span className={styles.homeHeaderLogsBoxNumber}>200+</span>
                             <p className={styles.homeHeaderLogsBoxParagraph}>{t('home:headers.2.projects')}</p>
                         </div>
                         <div className={styles.homeHeaderLogsBox}>
@@ -101,15 +101,12 @@ const Home: NextPage = (props: any) =>
                                         return (
                                             <Tooltip key={front.id} content={front.name}>
                                                 <li key={front.id} className={styles.homeAboutFATItemListLogoItem}>
-                                                    <span>
-                                                        <Image
-                                                            src={front.src}
-                                                            alt={front.alt}
-                                                            layout='intrinsic'
-                                                            width={25}
-                                                            height={25}
-                                                        />
-                                                    </span>
+                                                    <Image
+                                                        src={front.src}
+                                                        alt={front.alt}
+                                                        width={25}
+                                                        height={25}
+                                                    />
                                                 </li>
                                             </Tooltip>
                                         );
@@ -126,15 +123,12 @@ const Home: NextPage = (props: any) =>
                                         return (
                                             <Tooltip key={back.id} content={back.name}>
                                                 <li key={back.id} className={styles.homeAboutFATItemListLogoItem}>
-                                                    <span>
-                                                        <Image
-                                                            src={back.src}
-                                                            alt={back.alt}
-                                                            layout='intrinsic'
-                                                            width={25}
-                                                            height={25}
-                                                        />
-                                                    </span>
+                                                    <Image
+                                                        src={back.src}
+                                                        alt={back.alt}
+                                                        width={25}
+                                                        height={25}
+                                                    />
                                                 </li>
                                             </Tooltip>
                                         );
@@ -152,15 +146,12 @@ const Home: NextPage = (props: any) =>
                                         return (
                                             <Tooltip key={cross.id} content={cross.name}>
                                                 <li key={cross.id} className={styles.homeAboutFATItemListLogoItem}>
-                                                    <span>
-                                                        <Image
-                                                            src={cross.src}
-                                                            alt={cross.alt}
-                                                            layout='intrinsic'
-                                                            width={25}
-                                                            height={25}
-                                                        />
-                                                    </span>
+                                                    <Image
+                                                        src={cross.src}
+                                                        alt={cross.alt}
+                                                        width={25}
+                                                        height={25}
+                                                    />
                                                 </li>
                                             </Tooltip>
                                         );

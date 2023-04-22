@@ -3,11 +3,11 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
 
-import Layout from '../components/layouts/layout.component';
+import Layout from '@/components/layouts/layout.component';
 
-import { store } from '../redux/app/store';
+import { store } from '@/redux/app/store';
 
-import '../styles/globals.scss';
+import '@/styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps)
 {

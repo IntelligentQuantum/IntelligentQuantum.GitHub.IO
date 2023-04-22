@@ -23,7 +23,7 @@
     "about":
     [
         { "heading": "Über mich" },
-        { "paragraph": "Hamed ist ein großer Enthusiast für ungelöste Probleme und ein Hochqualifizierter Softwareentwickler mit mehr als fünf Jahren Erfahrungen in der Web-, Mobil- und Softwareentwicklung, der für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeitet. Er arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Zwischenmenschlichen Kommunikation und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Poco und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native." },
+        { "paragraph": "Hamed ist ein großer Enthusiast für ungelöste Probleme und ein hochqualifizierter Software-Ingenieur mit mehr als neun Jahren Erfahrung mit Web-, Mobil-, Softwareentwicklungs- und Web3-Produkten, die für Unternehmen von kleinen Startups bis hin zu großen Unternehmen arbeiten.\nEr arbeitet gerne mit Menschen, hat keine Angst vor Veränderungen, ist sehr gut im Umgang miteinander und immer offen für neue Herausforderungen. Er hat Erfahrung in der Arbeit mit PHP und C++ sowie deren Frameworks wie Poco und Qt, konzentriert sich aber auf JavaScript-bezogene Technologien wie Typescript, NodeJS, DenoJS, NestJS, NextJS, React und React Native." },
         { "fat": "Frameworks und Technologien" }
     ],
     "services":

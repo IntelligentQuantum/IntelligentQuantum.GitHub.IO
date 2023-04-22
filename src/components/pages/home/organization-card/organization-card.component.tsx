@@ -14,15 +14,12 @@ const OrganizationCard = ({ login, avatarUrl }: any) =>
                 target='_blank'
                 rel="noreferrer"
             >
-                <span>
-                    <Image
-                        src={avatarUrl}
-                        alt={`IntelligentQuantum ${ login }`}
-                        layout='intrinsic'
-                        width={120}
-                        height={120}
-                    />
-                </span>
+                <Image
+                    src={avatarUrl}
+                    alt={`IntelligentQuantum ${ login }`}
+                    width={120}
+                    height={120}
+                />
             </a>
         </Tooltip>
     );

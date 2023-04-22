@@ -1,5 +1,4 @@
 {
-    "test": "Test",
     "typed":
     [
         { "desktop": "I build desktop, mobile applications." },
@@ -23,7 +22,7 @@
     "about":
     [
         { "heading": "About me" },
-        { "paragraph": "Hamed is a big enthusiast of unsolved problems and a highly qualified software engineer with more than five years of experience with web, mobile, and software development working for companies from small startups to big ones. He enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native." },
+        { "paragraph": "Hamed is a big enthusiast of unsolved problems and a highly qualified software engineer with more than nine years of experience with web, mobile, software development and web3 products working for companies from small startups to big ones.\nHe enjoys working with people, is not afraid of changes, is very good at interpersonal skills, and is always open to new challenges. He has experience working with PHP and C++ as well as their frameworks such as Poco and Qt, but he focuses on JavaScript-related technologies like Typescript, NodeJS, DenoJS, NestJS, NextJS, React and React Native." },
         { "fat": "Frameworks and Technologies" }
     ],
     "services":

@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import { getAllBlogs } from '../../utils/blogs.util';
+import { getAllBlogs } from '@/utils/blogs.util';
 
 import { BiChevronRight } from 'react-icons/bi';
 
-import styles from '../../styles/blogs.module.scss';
+import styles from '@/styles/blogs.module.scss';
 
 const Blogs: NextPage = (props: any) =>
 {
@@ -26,24 +26,22 @@ const Blogs: NextPage = (props: any) =>
                         {
                             return (
                                 <div key={blog.slug} className={styles.blogsCardsCard}>
-                                    <span className={styles.blogsCardsCardImage}>
-                                        <Image
-                                            src={'/images/' + blog.image}
-                                            alt={blog.title}
-                                            layout='intrinsic'
-                                            width={1000}
-                                            height={500}
-                                        />
-                                    </span>
+                                    <Image
+                                        src={'/images/' + blog.image}
+                                        alt={blog.title}
+                                        className={styles.blogsCardsCardImage}
+                                        width={500}
+                                        height={500}
+                                    />
 
                                     <div className={styles.blogsCardsCardContent}>
                                         <h3 className={styles.blogsCardsCardContentTitle}>{blog.title}</h3>
                                         <p className={styles.blogsCardsCardContentParagraph}>{blog.excerpt}</p>
-                                        <Link href={'/blogs/' + blog.slug }>
-                                            <a className={styles.blogsCardsCardContentButton}>
-                                                READ MORE
-                                                <BiChevronRight />
-                                            </a>
+                                        <Link
+                                            href={'/blogs/' + blog.slug }
+                                            className={styles.blogsCardsCardContentButton}
+                                        >
+                                            READ MORE<BiChevronRight />
                                         </Link>
                                     </div>
                                 </div>

@@ -2,11 +2,11 @@ import { Fragment } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import hobbies from '../data/hobbies.data.json';
+import hobbies from '@/data/hobbies.data.json';
 
-import HobbyCard from '../components/pages/hobbies/hobby-card/hobby-card.component';
+import HobbyCard from '@/components/pages/hobbies/hobby-card/hobby-card.component';
 
-import styles from '../styles/hobbies.module.scss';
+import styles from '@/styles/hobbies.module.scss';
 
 const Hobbies: NextPage = () =>
 {

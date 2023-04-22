@@ -25,11 +25,15 @@
             background: var(--base-lighter);
             overflow: hidden;
 
-            max-width: 40rem;
+            width: 40rem;
 
             &Image
             {
-                //
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 100%;
             }
 
             &Content
@@ -124,29 +128,10 @@
             position: relative;
             padding: 0 3rem;
 
-            width: calc(100% - 6rem);
+            width: 100%;
             height: 50rem;
             overflow: hidden;
             margin-bottom: 2rem;
-
-            & img
-            {
-                filter: var(--image-filter);
-                object-position: center;
-                transition: 0.4s ease-in-out;
-            }
-
-            & span
-            {
-                transition: all 0.2s;
-                filter: brightness(85%) blur(0);
-
-                &:hover
-                {
-                    transform: scale(1.07);
-                    filter: brightness(100%) blur(0) var(--image-filter);
-                }
-            }
         }
 
         &Article

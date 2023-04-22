@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classnames from 'classnames';
 
-import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
-import { toggleNavbar, toggleFilter } from '../../../redux/features/header/header-slice';
+import { useAppDispatch, useAppSelector } from '@/redux/app/hooks';
+import { toggleNavbar, toggleFilter } from '@/redux/features/header/header-slice';
 
 import { BsMoonFill, BsCloudMoonFill, BsSunFill } from 'react-icons/bs';
 import { GiMoonBats } from 'react-icons/gi';
@@ -58,20 +58,32 @@ const Nav = () =>
                 </p>
 
                 <div data-open={navbarOpen} className={styles.navContentList}>
-                    <Link href='/'>
-                        <a data-open={navbarOpen} className={styles.navContentListItem}>HOME</a>
+                    <Link href='/' data-open={navbarOpen} className={styles.navContentListItem}>
+                        HOME
                     </Link>
-                    <Link href='/projects'>
-                        <a data-open={navbarOpen} className={styles.navContentListItem}>PROJECTS</a>
+                    <Link
+                        href='/projects'
+                        data-open={navbarOpen}
+                        className={styles.navContentListItem}>
+                        PROJECTS
                     </Link>
-                    <Link href='/contact'>
-                        <a data-open={navbarOpen} className={styles.navContentListItem}>CONTACT</a>
+                    <Link
+                        href='/contact'
+                        data-open={navbarOpen}
+                        className={styles.navContentListItem}>
+                        CONTACT
                     </Link>
-                    <Link href='/hobbies'>
-                        <a data-open={navbarOpen} className={styles.navContentListItem}>HOBBIES</a>
+                    <Link
+                        href='/hobbies'
+                        data-open={navbarOpen}
+                        className={styles.navContentListItem}>
+                        HOBBIES
                     </Link>
-                    <Link href='/blogs'>
-                        <a data-open={navbarOpen} className={styles.navContentListItem}>BLOGS</a>
+                    <Link
+                        href='/blogs'
+                        data-open={navbarOpen}
+                        className={styles.navContentListItem}>
+                        BLOGS
                     </Link>
                 </div>
             </div>
